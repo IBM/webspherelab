@@ -73,14 +73,7 @@ A lab on Troubleshooting and Performance Tuning WebSphere Liberty and WebSphere 
    podman system prune --all --force
    podman rmi --all
    ```
-1. Download dependent images:
-   ```
-   podman pull fedora
-   podman pull ibmjava:8-sdk
-   podman pull websphere-liberty
-   podman pull ibmcom/websphere-traditional
-   ```
-1. Use the root connection:
+1. Use the root podman connection:
    ```
    podman system connection default podman-machine-default-root
    ```
@@ -100,12 +93,24 @@ A lab on Troubleshooting and Performance Tuning WebSphere Liberty and WebSphere 
    rm Liberty_Perf_Lab_imagesconverted.md
    ```
 1. If needed, update Liberty build in `MAVEN_LIBERTY_VERSION` in `fedorawasdebug/Containerfile`
-1. `git` add, commit, and push the `WAS_Troubleshooting_Perf_Lab.*` and `Liberty_Perf_Lab.*` files.
+1. `git` add, commit, and push.
 1. Remove any previous IHS zips
 1. Click the first "Download Fix Pack..." link at <https://www.ibm.com/support/pages/fix-list-ibm-http-server-version-90> and follow through the "IBM HTTP Server archive file for 64-bit Linux, x86" link to download `*IHS-ARCHIVE*zip`
 1. `podman manifest create quay.io/ibm/webspherelab:latest`
-1. `podman build -t ibm/webspherelab .`
-1. Run and test the image.
+1. `podman build --platform linux/amd64 --manifest quay.io/ibm/webspherelab:latest .`
+1. Double check the manifest:
+   ```
+   podman manifest inspect quay.io/ibm/webspherelab
+   ```
+1. Run the image:
+   ```
+   podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab
+   ```
+1. Test the image (password `websphere`):
+    * macOS:
+      ```
+      open vnc://localhost:5902
+      ```
 1. `git commit -am "VXX: New version with ..."`
 1. `git push`
 1. `podman login quay.io`

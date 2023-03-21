@@ -14,35 +14,15 @@
 #
 # ======
 #
-# Purpose: This is not designed for production usage but instead as a debugging and learning container.
+# Purpose: This is not designed for production usage but instead as a debugging
+# and learning container.
 #
-# usage:
-# ======
-# Step 1: Build the image:
-#   podman build -t ibm/webspherelab .
-# Step 2: Run the image:
-#   podman run --cap-add SYS_PTRACE --cap-add NET_ADMIN --ulimit core=-1 --ulimit memlock=-1 --ulimit stack=-1 --shm-size="256m" --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it kgibm/fedoradebug
-# Step 3: Remote into the image
-#   Linux:
-#     root: vncviewer localhost:5901
-#     was: vncviewer localhost:5902
-#     Use the password websphere
-#   Mac:
-#     root: open vnc://localhost:5901
-#     was: open vnc://localhost:5902
-#     Use the password websphere
-#   Windows: Remote desktop requires detailed instructions. Consider using a VNC client.
-# Tips:
-#   * To access the host filesystem from the container (and vice versa), add the following to the run command:
-#     Linux: -v /:/host/
-#     Windows: -v //c/:/host/
-#     macOS: -v /tmp/:/hosttmp/
-#       On Docker Desktop, enable non-standard folders with [File Sharing](https://docs.docker.com/docker-for-mac/#preferences)
 # Notes:
-#   * Minimize the number of RUN commands when finalizing a new version to minimize layers to avoid layer restrictions.
+#   * Minimize the number of RUN commands when finalizing a new version because
+#     some builders have maximum layer restrictions.
 
 # https://hub.docker.com/_/fedora
-FROM fedora:latest
+FROM docker.io/fedora:latest
 
 LABEL maintainer="kevin.grigorenko@us.ibm.com"
 
@@ -80,6 +60,7 @@ RUN dnf install -y \
       dstat \
       e2fsprogs \
       emacs \
+      evince \
       fatrace \
       file-devel \
       file-roller-nautilus \
@@ -192,14 +173,12 @@ RUN dnf install -y \
       strace \
       sudo \
       systemtap \
-      tcping \
       tcpdump \
       telnet \
       tigervnc \
       tigervnc-server \
       totem \
       traceroute \
-      trafshow \
       tuned \
       util-linux \
       vim \
@@ -221,7 +200,8 @@ RUN dnf install -y \
       xreader \
       xz
 
-RUN echo "# Install VS Code: https://code.visualstudio.com/docs/setup/linux" && \
+RUN sudo dnf remove -y xfce4-power-manager && \
+    echo "# Install VS Code: https://code.visualstudio.com/docs/setup/linux" && \
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
     printf '[code]\n\
 name=Visual Studio Code\n\
@@ -565,7 +545,7 @@ RUN dbus-uuidgen > /var/lib/dbus/machine-id && \
     echo "################" && \
     echo "# Set the default PDF reader to xreader; otherwise, the default" && \
     echo "# becomes LibreOffice Draw which isn't a great PDF viewer." && \
-    xdg-mime default xreader.desktop application/pdf && \
+    xdg-mime default evince.desktop application/pdf && \
     echo "# cn=Manager,dc=example,dc=com" && \
     sed -i 's/my-domain/example/g' /usr/share/openldap-servers/slapd.ldif && \
     mkdir -p /var/lib/ldap && \
@@ -654,9 +634,7 @@ olcDbMaxSize: 1073741824\n\
     sudo ldapmodify -H ldapi:// -Y EXTERNAL -f /root/openldaploggingdb.ldif && \
     echo "local4.* /var/log/slapd.log" | sudo tee -a /etc/rsyslog.conf
 
-USER was
-
-RUN printf "Built fedoradebug at $(date)\n" >> /tmp/tmp.log && \
+RUN sudo touch /tmp/tmp.log && \
     sudo chmod a+rw /tmp/tmp.log && \
     printf '#!/bin/sh\n\
       echo "Starting /usr/local/bin/xinit.sh at $(date)" >> /tmp/tmp.log\n\
@@ -843,8 +821,8 @@ hide_welcome_screen=true\n\
     echo "# Install Eclipse #" && \
     echo "###################" && \
     echo "# This should match the latest WDT installed below" && \
-    echo "# https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-enterprise-java-and-web-developers" && \
-    sudo wget -q -O /opt/eclipse.tar.gz "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2022-09/R/eclipse-jee-2022-09-R-linux-gtk-x86_64.tar.gz&r=1" && \
+    echo "# https://www.eclipse.org/downloads/packages/release/2023-03/r/eclipse-ide-enterprise-java-and-web-developers" && \
+    sudo wget -q -O /opt/eclipse.tar.gz "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2023-03/R/eclipse-jee-2023-03-R-linux-gtk-x86_64.tar.gz&r=1" && \
     ( \
       cd /opt/ && \
       sudo tar xzf eclipse.tar.gz && \
@@ -869,7 +847,7 @@ hide_welcome_screen=true\n\
       sudo sed -i 's/-Xmx.*/-Xmx1g/g' /opt/gcmv/gcmv.ini && \
       sudo mkdir /home/was/gcmv/ && \
       sudo chown -R was:root /home/was/gcmv/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=GCMV\nExec=/opt/gcmv/gcmv -data workspace_gcmv\nPath=gcmv/\nTerminal=false\n' >> /opt/gcmv/gcmv.desktop && \
+      sudo printf '[Desktop Entry]\nType=Application\nName=GCMV\nExec=/opt/gcmv/gcmv -data workspace_gcmv -vm /opt/openjdk11_ibm/jdk/bin/\nPath=gcmv/\nTerminal=false\n' >> /opt/gcmv/gcmv.desktop && \
       sudo chmod a+x /opt/gcmv/gcmv.desktop && \
       sudo ln -s /opt/gcmv/gcmv.desktop /opt/programs/ && \
       sudo ln -s /opt/programs/gcmv.desktop /home/was/Desktop/ \
@@ -887,7 +865,7 @@ hide_welcome_screen=true\n\
       sudo sed -i 's/-Xmx.*/-Xmx1g/g' /opt/hc/healthcenter.ini && \
       sudo mkdir /home/was/hc/ && \
       sudo chown -R was:root /home/was/hc/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=HealthCenter\nExec=/opt/hc/healthcenter -data workspace_hc\nPath=hc/\nTerminal=false\n' >> /opt/hc/hc.desktop && \
+      sudo printf '[Desktop Entry]\nType=Application\nName=HealthCenter\nExec=/opt/hc/healthcenter -data workspace_hc -vm /opt/openjdk11_ibm/jdk/bin/\nPath=hc/\nTerminal=false\n' >> /opt/hc/hc.desktop && \
       sudo chmod a+x /opt/hc/hc.desktop && \
       sudo ln -s /opt/hc/hc.desktop /opt/programs/ && \
       sudo ln -s /opt/programs/hc.desktop /home/was/Desktop/ \
@@ -1001,11 +979,14 @@ RUN echo "# https://adoptium.net/jmc" && \
 # https://central.sonatype.com/search?smo=true&q=com.ibm.websphere.appserver.runtime%2520wlp-javaee8
 ARG MAVEN_LIBERTY_VERSION="23.0.0.2"
 
+# We use JVM_ARGS instead of OPENJ9_JAVA_OPTIONS because otherwise tWAS and all other Java
+# executions will pick these options up, but we only want to apply them to Liberty (which
+# uniquely parses JVM_ARGS)
 ENV LOG_DIR=/logs \
     WLP_OUTPUT_DIR=/opt/ibm/wlp/output \
     KEYSTORE_REQUIRED=true \
     RANDFILE=/tmp/.rnd \
-    OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport" \
+    JVM_ARGS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport" \
     PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/IBM/WebSphere/AppServer/bin:$PATH \
     WAS_CELL=DefaultCell01 \
     NODE_NAME=DefaultNode01 \
@@ -1082,8 +1063,12 @@ AdminConfig.save()\n' > /work/config/install_app.py && \
     echo "#####################" && \
     echo "# Configure Liberty #" && \
     echo "#####################" && \
-    sudo ln -s $WLP_OUTPUT_DIR/defaultServer /output && \
+    sudo mkdir -p /opt/ibm/wlp/output/defaultServer/.classCache && \
+    sudo chown -R was:root /opt/ibm/wlp/output && \
+    sudo ln -s /opt/ibm/wlp/output/defaultServer /output && \
+    sudo chmod -R a+rx /opt/ibm/wlp/output/defaultServer/.classCache && \
     sudo chown was:root /output && \
+    sudo chmod 777 /output && \
     sudo ln -s /opt/ibm/wlp/usr/servers/defaultServer /config && \
     sudo chown was:root /config && \
     sudo ln -s /opt/ibm /liberty && \
@@ -1097,7 +1082,7 @@ WLP_OUTPUT_DIR=/opt/ibm/wlp/output\n\
 KEYSTORE_REQUIRED=true\n\
 TLS=true\n\
 RANDFILE=/tmp/.rnd\n\
-OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport"\n\
+JVM_ARGS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport"\n\
 \n' >> /config/server.env && \
     /opt/ibm/helpers/runtime/docker-server.sh && \
     cp /opt/problemdetermination/swat.ear /config/dropins/ && \
@@ -1248,25 +1233,16 @@ OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.clas
       sudo wget -q -O /opt/manageprofilesinteractive/manageprofilesInteractive.zip "https://www.ibm.com/support/pages/system/files/support/swg/swgtech.nsf/0/d6ca5180f6619c868525776f0069b7b7/\$FILE/ATTQDXZT.zip/manageprofilesInteractive.zip" && \
       cd /opt/manageprofilesinteractive/ && \
       sudo unzip -q manageprofilesInteractive.zip \
-    ) && \
-    echo "# https://github.com/kgibm/was_data_mining/" && \
-    ( \
-      cd /opt/ && \
-      sudo git clone https://github.com/kgibm/was_data_mining/ \
-    ) && \
-    echo "###############" && \
-    echo "# Install WDT #" && \
-    echo "###############" && \
-    echo "# https://marketplace.eclipse.org/content/ibm-liberty-developer-tools" && \
-    echo "# https://marketplace.eclipse.org/node/1778478/api/p" && \
-    echo "# https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/wdt/" && \
+    )
+
+RUN echo "#########################" && \
+    echo "# Install Liberty Tools #" && \
+    echo "#########################" && \
+    echo "# This replaces the older Liberty Developer Tools." && \
     echo "# Match eclipse/updates using https://en.wikipedia.org/wiki/Eclipse_(software)#Releases" && \
     sudo /opt/eclipse/eclipse -nosplash -application org.eclipse.equinox.p2.director \
-                              -repository https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/wdt/2022-09_comp/,https://download.eclipse.org/releases/2022-09,https://download.eclipse.org/eclipse/updates/4.25,https://download.eclipse.org/webtools/repository/latest \
-                              -installIU com.ibm.wdt.ast.ws.tools.feature.feature.group \
-                              -installIU com.ibm.osgi.wdt.feature.feature.group \
-                              -installIU com.ibm.websphere.wdt.server.tools.main.feature.group \
-                              -installIU com.ibm.wdt.webtools.top.feature.feature.group && \
+                              -repository https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/liberty-tools-eclipse/latest/repository/,https://download.eclipse.org/releases/2023-03/,https://download.eclipse.org/lsp4jakarta/releases/0.1.0/repository,https://download.eclipse.org/jdtls/milestones/1.5.0/repository,https://download.eclipse.org/justj/epp/release/latest,https://download.eclipse.org/justj/jres/17/updates/release/latest,https://download.eclipse.org/technology/epp/packages/latest/,https://download.eclipse.org/releases/latest,https://download.eclipse.org/lsp4mp/releases/0.5.0/repository,https://download.eclipse.org/eclipse/updates/4.27,https://download.eclipse.org/webtools/repository/latest \
+                              -installIU io.openliberty.tools.eclipse.feature.group && \
     echo "# Required after installing anything into Eclipse" && \
     sudo chmod -R a+w /opt/eclipse/configuration && \
     echo "############################" && \
@@ -1826,7 +1802,7 @@ SHELL_X=0\n\
       sudo rm -f *.tar.gz && \
       sudo sed -i 's/-Dcom.ibm.ssl.evaluateHost=true/-Dcom.ibm.ssl.evaluateHost=false/g' /opt/ptt/ptt.ini && \
       printf '#!/bin/sh\n\
-        /opt/ptt/ptt -debug -consoleLog\n\
+        /opt/ptt/ptt -vm /opt/openjdk11_ibm/jdk/bin/ -debug -consoleLog\n\
       ' | sudo tee /opt/ptt/ptt.sh && \
       sudo chmod a+x /opt/ptt/ptt.sh && \
       sudo mkdir /home/was/ptt/ && \

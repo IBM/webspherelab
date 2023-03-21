@@ -228,7 +228,7 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
 
 1.  Start the lab:
 
-    `podman run --cap-add SYS_PTRACE --cap-add NET_ADMIN --ulimit core=-1 --ulimit memlock=-1 --ulimit stack=-1 --shm-size="256m" --rm -p 9080:9080 -p 9443:9443 -p 9043:9043 -p 9081:9081 -p 9444:9444 -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9082:9082 -p 9083:9083 -p 9445:9445 -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 12000:12000 -p 12005:12005 -it quay.io/ibm/webspherelab`
+    `podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
 
 2.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
     
@@ -284,7 +284,7 @@ If you are using Docker Desktop for this lab instead of `podman`:
 
 2.  Start the lab by starting the Docker container from the command line:
 
-    `docker run --cap-add SYS_PTRACE --cap-add NET_ADMIN --ulimit core=-1 --ulimit memlock=-1 --ulimit stack=-1 --shm-size="256m" --rm -p 9080:9080 -p 9443:9443 -p 9043:9043 -p 9081:9081 -p 9444:9444 -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 22:22 -p 9082:9082 -p 9083:9083 -p 9445:9445 -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 12000:12000 -p 12005:12005 -it quay.io/ibm/webspherelab`
+    `docker run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
 
 3.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
     
@@ -2535,7 +2535,7 @@ Saving state of a container would be useful for situations such as multi-day lab
    sha256:c8ff7d9946cca20531f70c89b99f9148841dc4bdf074413f810eeb82e2bd6f77
    ```
 1. Then, when you want to "restore" the container, perform the same `podman run` as before but with the new image you created above:
-   `docker run --cap-add SYS_PTRACE --cap-add NET_ADMIN --ulimit core=-1 --ulimit memlock=-1 --ulimit stack=-1 --shm-size="256m" --rm -p 9080:9080 -p 9443:9443 -p 9043:9043 -p 9081:9081 -p 9444:9444 -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9082:9082 -p 9083:9083 -p 9445:9445 -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 12000:12000 -p 12005:12005 -it fedorawasdebug:saved`
+   `docker run -p 5901:5901 -p 5902:5902 -p 3390:3389 -it fedorawasdebug:saved`
 1. Find the new running container ID:
    ```
    $ podman ps -a
@@ -2568,7 +2568,7 @@ Saving state of a container would be useful for situations such as multi-day lab
    sha256:c8ff7d9946cca20531f70c89b99f9148841dc4bdf074413f810eeb82e2bd6f77
    ```
 1. Then, when you want to \"restore\" the container, perform the same **docker run** but with the new image you created above:
-   `docker run --cap-add SYS_PTRACE --cap-add NET_ADMIN --ulimit core=-1 --ulimit memlock=-1 --ulimit stack=-1 --shm-size="256m" --rm -p 9080:9080 -p 9443:9443 -p 9043:9043 -p 9081:9081 -p 9444:9444 -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9082:9082 -p 9083:9083 -p 9445:9445 -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 12000:12000 -p 12005:12005 -it fedorawasdebug:saved`
+   `docker run -p 5901:5901 -p 5902:5902 -p 3390:3389 -it fedorawasdebug:saved`
 1. The VNC server will need to be manually restarted. Find the running container ID:
    ```
    $ docker ps -a

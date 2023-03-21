@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>IBM Thread and Monitor Dump Analyzer for Java</comment>
+<entry key="IPC.waitSemaphore.desc">IPC.waitSemaphore</entry>
+<entry key="socketread.name">SOCKET READ</entry>
+<entry key="socketread.desc">RMI Transport socket reader thread</entry>
+<entry key="IPC.waitSemaphore.name">IPC.waitSemaphore</entry>
+<entry key="IPC.waitSemaphore.stack">at com/ibm/tools/attach/javaSE/IPC.waitSemaphore(Native Method) 
+at com/ibm/tools/attach/javaSE/CommonDirectory.waitSemaphore(CommonDirectory.java:193) 
+at com/ibm/tools/attach/javaSE/AttachHandler$WaitLoop.waitForNotification(AttachHandler.java:331) 
+at com/ibm/tools/attach/javaSE/AttachHandler$WaitLoop.run(AttachHandler.java:408)
+</entry>
+<entry key="socketread.stack">at java.net.SocketInputStream.socketRead0
+at java.net.SocketInputStream.read
+at com.ibm.rmi.iiop.Connection.readMoreData
+at com.ibm.rmi.iiop.Connection.createInputStream
+at com.ibm.rmi.iiop.Connection.doReaderWorkOnce
+at com.ibm.rmi.transport.ReaderThread.run
+</entry>
+<entry key="version">1.0</entry>
+</properties>

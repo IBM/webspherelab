@@ -1,0 +1,14 @@
+heapdump*_*.zip
+liberty/verbosegc_and_oom/core.*.dmp
+liberty/verbosegc_and_oom/core.*_*.zip
+twas/verbosegc_and_oom/core.*.dmp
+twas/verbosegc_and_oom/core.*_*.zip
+twas/verbosegc_and_oom/heapdump.20200630.223219.3967.0002.phd
+liberty/nativememoryleak/javacore.20191106.200057.228.0003.txt
+twas/tcpdump/diag_capture_9486a72b0326_20210316_164018.pcap
+core.*_Query/
+liberty/verbosegc_and_oom/heapdump.20200804.025944.3576.0002.phd
+liberty/healthcenter/healthcenter051119_232412_9361_1.hcd.trc
+liberty/healthcenter/healthcenter051119_232412_9361_1.hcd.trc.fmt
+liberty/verbosegc_and_oom/heapdump.20200804.025944.3576.0002_Query/
+

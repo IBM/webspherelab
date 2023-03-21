@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>IBM Thread and Monitor Dump Analyzer for Java Technology by Jinwoo Hwang</comment>
+<entry key="Directory.prop">/Users/kevin/git/dockerdebug/fedorawasdebug/supplemental/exampledata/liberty/linperf</entry>
+<entry key="Console.prop"></entry>
+<entry key="Confirm.prop">1</entry>
+<entry key="LookAndFeel.prop">0</entry>
+</properties>

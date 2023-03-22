@@ -335,33 +335,60 @@ If you would like to view or edit text files in the container using a GUI tool, 
 
 <img src="./media/image21.png" width="323" height="442" />
 
-# IBM Java and OpenJ9 Thread Dumps
+# IBM Java and IBM Semeru Runtimes Thread Dumps
 
 Thread dumps are snapshots of process activity, including the thread stacks that show what each thread is doing. Thread dumps are one of the best places to start to investigate problems. If a lot of threads are in similar stacks, then that behavior might be an issue or a symptom of an issue.
 
-For IBM Java or OpenJ9, a thread dump is also called a javacore or javadump. [HotSpot-based thread dumps](https://publib.boulder.ibm.com/httpserv/cookbook/Troubleshooting-Troubleshooting_Java-Troubleshooting_HotSpot_JVM.html#Troubleshooting-Troubleshooting_HotSpot_JVM-Thread_Dump) are covered elsewhere.
+For IBM Java or IBM Semeru Runtimes, a thread dump is also called a javacore or javadump. [HotSpot-based thread dumps](https://publib.boulder.ibm.com/httpserv/cookbook/Troubleshooting-Troubleshooting_Java-Troubleshooting_HotSpot_JVM.html#Troubleshooting-Troubleshooting_HotSpot_JVM-Thread_Dump) are covered elsewhere.
 
-This exercise will demonstrate how to review thread dumps in the free [IBM Thread and Monitor Dump Analyzer (TMDA) tool](https://www.ibm.com/support/pages/ibm-thread-and-monitor-dump-analyzer-java-tmda).
+This exercise will demonstrate how to gather and review thread dumps in the free [IBM Thread and Monitor Dump Analyzer (TMDA) tool](https://www.ibm.com/support/pages/ibm-thread-and-monitor-dump-analyzer-java-tmda).
+
+Thread dumps may be gathered in many different ways. This lab will demonstrate both the [IBM performance, hang, and high CPU MustGather](https://www.ibm.com/support/pages/mustgather-performance-hang-or-high-cpu-issues-websphere-application-server-linux) as well as the Liberty [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?topic=line-generating-liberty-server-dump-from-command) tool.
 
 ## Thread Dumps Theory
 
-An IBM Java or OpenJ9 thread dump is generated in a **javacore\*.txt** in the working directory of the process with a snapshot of process activity, including:
+An IBM Java or IBM Semeru Runtimes thread dump is generated in a **javacore\*.txt** file with a snapshot of process activity, including:
 
--   Each Java thread and its stack.
+- Each Java thread and its stack.
+- A list of all Java synchronization monitors, which thread owns each monitor, and which threads are waiting for the lock on a monitor.
+- Environment information, including Java command line arguments and operating system ulimits.
+- Java heap usage and information about the last few garbage collections.
+- Detailed native memory and classloader information.
 
--   A list of all Java synchronization monitors, which thread owns each monitor, and which threads are waiting for the lock on a monitor.
+Thread dumps generally do not contain sensitive information about user requests, but they may contain sensitive information about the application or environment such as host names and environment variables, so they should be treated sensitively. In general, a thread dump is cheap (pauses the JVM for only a few hundred milliseconds), small (generally less than a few MB), and low risk.
 
--   Environment information, including Java command line arguments and operating system ulimits.
+## server dump
 
--   Java heap usage and information about the last few garbage collections.
+Liberty offers a [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?topic=line-generating-liberty-server-dump-from-command) utility which gathers useful state about the Liberty process as well as optionally requesting a thread dump.
 
--   Detailed native memory and classloader information.
+This lab demonstrates how to gather a `server dump` and review its output.
 
-Thread dumps generally do not contain sensitive information about user requests, but they may contain sensitive information about the application or environment, so they should be treated sensitively.
+1. [Start JMeter](#start-jmeter)
+1. Open a terminal on the lab image.
+1. Run the following command to start the Liberty server dump:
+   ```
+   /opt/ibm/wlp/bin/server dump defaultServer --include=thread
+   ```
+1. Once the command completes, it shows the path to the dump ZIP; for example:
+   ```
+   Dumping server defaultServer.
+   Server defaultServer dump complete in /opt/ibm/wlp/output/defaultServer/defaultServer.dump-23.03.22_14.13.16.zip.
+   ```
+1. Move the dump ZIP to your current directory:
+   ```
+   mv /opt/ibm/wlp/output/defaultServer/*dump*zip .
+   ```
+1. Unzip the dump ZIP:
+   ```
+   unzip *dump*zip
+   ```
+1. List the current directory with `ls -l` to find the dump output; in particular, there is a `javacore*txt` file which was taken due to `--include=thread`, Liberty logs under `logs/`, Liberty configuration such as `server.xml`, and Liberty introspections under the `dump_*` subdirectory.
+1. The server dump ZIP file is generally what you would send to your development team to review a potential problem, or upload it to an IBM Support case.
+1. The next lab will demonstrate how to analyze the `javacore*txt` thread dump files in more detail.
 
 ## linperf.sh
 
-IBM WebSphere Support provides a script called **linperf.sh** as part of the document, ["MustGather: Performance, hang, or high CPU issues with WebSphere Application Server on Linux"](https://www-01.ibm.com/support/docview.wss?uid=swg21115785) (similar scripts exist for other operating systems). This script will be used to gather thread dumps in this lab. Such a script should be pre-installed on all machines where you run Liberty and it should be run when you have performance or hang issues and the resulting files should be uploaded if you open such a support case with IBM.
+IBM WebSphere Support provides a script called **linperf.sh** as part of the document, ["MustGather: Performance, hang, or high CPU issues with WebSphere Application Server on Linux"](https://www.ibm.com/support/pages/mustgather-performance-hang-or-high-cpu-issues-websphere-application-server-linux) (similar scripts exist for other operating systems such as [AIX](https://www.ibm.com/support/pages/mustgather-performance-hang-or-high-cpu-issues-websphere-application-server-aix), [z/OS](https://www.ibm.com/support/pages/mustgather-gathering-data-hang-or-performance-problem-zos), and [Windows](https://www.ibm.com/support/pages/mustgather-performance-hang-or-high-cpu-issues-windows)). This script will be used to gather thread dumps in this lab. Such a script should be pre-installed on all machines where you run Liberty and it should be run when you have performance or hang issues and the resulting files should be uploaded if you open a support case with IBM.
 
 The linperf.sh script is pre-installed in the lab image at **/opt/linperf/linperf.sh**.
 
@@ -396,7 +423,7 @@ We will gather and review thread dumps:
         $ /opt/linperf/linperf.sh 1567
         Tue Apr 23 19:29:26 UTC 2019 MustGather>> linperf.sh script starting [...]
 
-5.  Wait for 4 minutes for the script to finish:
+5.  Wait for 4 minutes for the script to finish before continuing to the next step:
 
     <pre>
     [...]
@@ -407,7 +434,7 @@ We will gather and review thread dumps:
     Tue Apr 23 19:33:33 UTC 2019 MustGather&gt;&gt; Be sure to submit linperf_RESULTS.tar.gz, the javacores, and the server logs as noted in the MustGather.
     </pre>
 
-6.  As mentioned at the end of the script output above, the resulting **linperf_RESULTS.tar.gz** does not include the thread dumps. Move them over to the current directory:
+6.  As mentioned at the end of the script output, the resulting **linperf_RESULTS.tar.gz** does not include the thread dumps. Move them over to the current directory:
 
         mv /opt/ibm/wlp/output/defaultServer/javacore.* .
 
@@ -563,6 +590,11 @@ Next, let's simulate a thread that is using a lot of CPU:
 9.  Finally, kill the server destructively (**kill -9**) because trying to stop it gracefully will not work due to the infinitely looping request:
 
         pkill -9 -f defaultServer
+
+1. Restart the Liberty server for the next lab:
+   ```
+   /opt/ibm/wlp/bin/server start defaultServer
+   ```
 
 # Garbage Collection
 

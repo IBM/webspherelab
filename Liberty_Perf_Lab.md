@@ -73,8 +73,6 @@ Performance tuning is best done with all layers of the stack in mind. This lab w
 
 ## Installation
 
-## Installation
-
 The lab image is about 20GB. If you plan to run this in a classroom setting, perform the installation steps beforehand which includes downloading the image.
 
 This lab assumes the installation and use of `podman` or Docker Desktop to run the lab (other container systems may also work but have not been tested). Choose one or the other:

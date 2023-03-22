@@ -29,7 +29,7 @@
 
 IBM® [WebSphere® Application Server](https://www.ibm.com/cloud/websphere-application-platform) (WAS) is a platform for serving Java™-based applications. WAS comes in two major product forms:
 
-1. [WAS traditional](https://www.ibm.com/docs/en/was-nd/9.0.5?topic=network-deployment-all-operating-systems-version-90) (colloquially, tWAS): Released in 1998 and still fully supported and used by many.
+1. [WAS traditional](https://www.ibm.com/docs/en/was-nd/9.0.5?topic=network-deployment-all-operating-systems-version-90) (colloquially named tWAS): Released in 1998 and still fully supported and used by many.
 
 2. [WebSphere Liberty](https://www.ibm.com/docs/en/was-liberty/nd): Released in 2012 and designed for fast startup, composability, and the cloud. The commercial WebSphere Liberty product is built on top of the open source [OpenLiberty](https://github.com/OpenLiberty/open-liberty). The colloquial term 'Liberty' may refer to WebSphere Liberty, OpenLiberty, or both.
 

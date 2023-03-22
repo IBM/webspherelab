@@ -49,7 +49,7 @@ This lab covers the major tools and techniques for performance tuning WebSphere 
 
 This lab container image comes with WebSphere Liberty pre-installed so installation and configuration steps are skipped.
 
-The way we are using these container images is to run multiple services in the same container (e.g. VNC, Remote Desktop, WebSphere Liberty, a full GUI server, etc.) and although this approach is [valid and supported](https://docs.docker.com/config/containers/multi-service_container/), it is generally not recommended for real-world application deployment usage. For labs that demonstrate how to use WebSphere in containers in production, see [WebSphere Application Server and Docker Tutorials](https://github.com/WASdev/ci.docker.tutorials).
+The way we are using these container images is to run multiple services in the same container (e.g. VNC, Remote Desktop, WebSphere Liberty, a full GUI server, etc.) and although this approach is [valid and supported](https://docs.docker.com/config/containers/multi-service_container/), it is generally not recommended for real-world container images. For labs that demonstrate how to use WebSphere in containers in production, see [WebSphere Application Server and Docker Tutorials](https://github.com/WASdev/ci.docker.tutorials).
 
 ## Operating System
 
@@ -57,7 +57,7 @@ This lab is built on top of Linux (specifically, Fedora Linux, which is the open
 
 ## Java
 
-WebSphere Liberty supports any [Java 8, 11, 17, or 19 edition](https://openliberty.io/docs/latest/java-se.html).
+WebSphere Liberty supports [Java 8, 11, 17, or 19 editions](https://openliberty.io/docs/latest/java-se.html).
 
 This lab uses IBM Java 8. The concepts and techniques apply generally to other Java runtimes although details of other Java runtimes (e.g. [HotSpot](https://publib.boulder.ibm.com/httpserv/cookbook/Java-Java_Virtual_Machines_JVMs-HotSpot_JVM.html)) vary significantly and are covered elsewhere.
 

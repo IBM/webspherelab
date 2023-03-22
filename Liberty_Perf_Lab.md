@@ -396,6 +396,8 @@ When the requestTiming feature is enabled, the server dump command will include 
 
 WebSphere Liberty's [Admin Center](https://www.ibm.com/docs/en/was-liberty/base?topic=liberty-administering-using-admin-center) is an optional, web-based administration and monitoring tool for Liberty servers. Admin Center is enabled with the `adminCenter-1.0` feature as well as configuring administrator credentials.
 
+If you are already using another monitoring product, you may skip this Admin Center lab.
+
 For monitoring statistics to be produced and visualized in Admin Center (or published to monitoring products such as [Instana](https://www.ibm.com/docs/en/instana-observability/current?topic=technologies-monitoring-websphere-liberty)), the Liberty `monitor-1.0` feature is required in a Liberty server's configuration. This feature enables the collection of monitoring statistics which can then be consumed by clients such as the Admin Center, Instana, etc. Note that enabling `monitor-1.0` may have an overhead of up to a few percent although this may be minimized by [filtering to specific statistics, if needed](https://www.ibm.com/docs/en/was-liberty/nd?topic=10-multiple-components-monitoring).
 
 ## Admin Center Lab

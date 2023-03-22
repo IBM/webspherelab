@@ -1,6 +1,6 @@
 # WebSphere Troubleshooting and Performance Lab
 
-This lab demonstrates troubleshooting and performance tuning WebSphere Liberty and WebSphere Application Server traditional covering various topics such as CPU usage, thread dumps, garbage collection, memory analysis, profiling, and more. The container provides a full Linux VM with GUI which runs on Windows, Mac, and Linux hosts through container technology.
+This lab demonstrates troubleshooting and performance tuning WebSphere Liberty and WebSphere Application Server traditional covering various topics such as CPU usage, thread dumps, garbage collection, memory analysis, profiling, and more. The container provides a full Linux VM with GUI which runs on Windows, Mac, and Linux hosts.
 
 Choose the lab you'd like to do:
 

@@ -1400,6 +1400,9 @@ RUN sudo /usr/sbin/slapd -F /etc/openldap/slapd.d -h "ldapi:// ldap://" && \
   <basicRegistry id="basic" realm="BasicRealm">\n\
     <user name="wsadmin" password="%s" />\n\
   </basicRegistry>\n\
+  <administrator-role>\n\
+    <user>wsadmin</user>\n\
+  </administrator-role>\n\
   <ldapRegistry id="LDAP1" realm="SampleLdapIDSRealm" host="localhost" port="389" ignoreCase="true" \n\
                 baseDN="dc=example,dc=com" ldapType="Custom" searchTimeout="60s" recursiveSearch="true"\n\
                 bindDN="cn=Manager,dc=example,dc=com" bindPassword="%s">\n\

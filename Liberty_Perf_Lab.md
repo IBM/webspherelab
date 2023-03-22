@@ -341,7 +341,7 @@ If you would like to view or edit text files in the container using a GUI tool, 
 
 # Request Timing
 
-This lab demonstrates how to enable and use the [slow and hung request detection](https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-slow-hung-request-detection) feature. Note that enabling `requestTiming-1.0` may have a large overhead in high volume environments and ideally its overhead should be measured in a test environment before applying to production; if the overhead is too high, test with request sampling through the [`sampleRate` attribute](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming).
+This lab demonstrates how to enable and use WebSphere Liberty's [slow and hung request detection](https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-slow-hung-request-detection) feature. Note that enabling `requestTiming-1.0` may have a large overhead in high volume environments and ideally its overhead should be measured in a test environment before applying to production; if the overhead is too high, test with request sampling through the [`sampleRate` attribute](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming).
 
 To detect slow and hung requests, the Liberty `requestTiming-1.0` feature is required in a Liberty server's configuration. In addition to enabling the feature, the feature must be configured with a [`requestTiming`](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming) element that specifies the thresholds and other configuration. This lab will be using the following:
 
@@ -391,6 +391,82 @@ The difference between the slow and hung thresholds is that if the hung threshol
 In general, it is a good practice to use `requestTiming`, even in production. Configure the thresholds to values that are at the upper end of acceptable times for the users and the business. Configure and test the `sampleRate` to ensure the overhead of `requestTiming` is acceptable in production.
 
 When the requestTiming feature is enabled, the server dump command will include a snapshot of all the event trees for all requests thus giving a very nice and lightweight way to see active requests in the system at a detailed level (including URI, etc.), in a similar way that thread dumps do the same for thread stacks.
+
+# Admin Center
+
+WebSphere Liberty's [Admin Center](https://www.ibm.com/docs/en/was-liberty/base?topic=liberty-administering-using-admin-center) is an optional, web-based administration and monitoring tool for Liberty servers. Admin Center is enabled with the `adminCenter-1.0` feature as well as configuring administrator credentials.
+
+For monitoring statistics to be produced and visualized in Admin Center (or published to monitoring products such as [Instana](https://www.ibm.com/docs/en/instana-observability/current?topic=technologies-monitoring-websphere-liberty)), the Liberty `monitor-1.0` feature is required in a Liberty server's configuration. This feature enables the collection of monitoring statistics which can then be consumed by clients such as the Admin Center, Instana, etc. Note that enabling `monitor-1.0` may have an overhead of up to a few percent although this may be minimized by [filtering to specific statistics, if needed](https://www.ibm.com/docs/en/was-liberty/nd?topic=10-multiple-components-monitoring).
+
+## Admin Center Lab
+
+This lab will demonstrate how to enable Admin Center and `monitor-1.0` and visualize statistics for the sample application.
+
+1. Modify `/config/server.xml` (for example, using the `Mousepad` program on the Desktop) to add the following before `</server>` and save the file:
+   ```
+   <featureManager><feature>adminCenter-1.0</feature><feature>monitor-1.0</feature></featureManager>
+   ```
+1. Open the browser (for example, using `Applications` in the top left and then `Web Browser`)
+1. Navigate to <https://localhost:9443/adminCenter> and accept the self-signed certificate.
+1. Log in with the user name `wsadmin` and the password `websphere`.
+1. Click on the **Explore** button:\
+   <img src="./media/image124.png" width="640" height="308" />
+1. Click on the \"Monitor\" button:\
+   <img src="./media/image125.png" width="428" height="417" />
+1. [Start JMeter](#start-jmeter)
+1. Go back to the Admin Center Monitor screen and you will see graphs of various statistics for this server:\
+   <img src="./media/monitor1.png" width="815" height="630" />
+1. The [default statistics](https://www.ibm.com/docs/en/was-liberty/nd?topic=center-monitoring-metrics-in-admin) are:
+    * Used Heap Memory: Java heap usage. Note that most modern garbage collectors are generational meaning that trash tends to accumulate in old regions and is cleaned up less often thus leading to a common sawtooth pattern. In some cases, the rise on such a tooth might look like a leak, but may not be.
+    * Loaded Classes: The total number of loaded and unloaded classes.
+    * Active JVM Threads: The number of live, total, and peak threads. Note that this shows all threads, not just the Default Executor threads.
+    * CPU Usage: Average CPU utilization for the process.
+1. Click the pencil button in the top right to edit the displayed statistics:
+   
+   <img src="media/acserveredit.png" width="100" height="148" />
+
+1. Click the plus buttons to the right of `Thread Pool`, `Connection Pool`, and `Sessions`. Note that it's expected that the `+` button won't turn into a checkbox when you click on `Connection Pool` and `Sessions`; these will become checked after one of the subsequent steps below.
+   
+   <img src="media/acservereditcheck.png" width="311" height="458" />
+
+1. Close the metrics side bar:
+   
+   <img src="media/acservereditclose.png" width="311" height="458" />
+
+1. Scroll down to the new statistics boxes. For the `In Use Connections` and `Average Wait Time (ms)` boxes, use the `Select data sources...` dropdown to select `jdbc/TraceDataSource`. Note that if you want to view multiple data sources, it's generally better to create multiple boxes and choose one data source per box instead of checking the `All` box as it's harder to interpret aggregated statistics.
+   
+   <img src="media/monitor2.png" width="378" height="321" />
+
+1. Scroll down to the `Active Sessions` box and use the `Select sessions...` dropdown to select `default_host/daytrader`. As above, if you want to view sessions for multiple applications, it's generally better to create separate boxes.
+   
+   <img src="media/monitor3.png" width="418" height="321" />
+
+1. Click the `Save` button at the top right to make the box selections permanent:
+   
+   <img src="media/acmonitorsave.png" width="234" height="137" />
+
+1. This completes the section on server-level statistics. The available statistics are limited but generally these statistics are the most important for 80% or more of monitoring situations. For more detailed monitoring, use monitoring products such as [Instana](https://www.ibm.com/docs/en/instana-observability/current?topic=technologies-monitoring-websphere-liberty).
+1. Next, you will view application-level statistics. Click on `Applications` on the left side:
+   
+   <img src="media/monitor4.png" width="225" height="222" />
+
+1. Click on the `daytrader` box title:
+   
+   <img src="media/monitor5.png" width="591" height="364" />
+
+1. Click on the `Monitor` button on the left:
+   
+   <img src="media/monitor6.png" width="420" height="220" />
+
+1. By default, there are boxes for `Request Count` which is the total number of HTTP requests, and `Average Response Time (ns)` which is the average response time in nanoseconds.
+   
+   <img src="media/monitor7.png" width="827" height="419" />
+
+1. For each box, click on the dropdown and select `Show Legend` to show the legends:
+   
+   <img src="media/monitor8.png" width="577" height="304" />
+
+1. As with server-level statistics, available application-level statistics in the Admin Center are limited but generally these statistics are the most important for 80% or more of monitoring situations. For more detailed monitoring, use monitoring products such as [Instana](https://www.ibm.com/docs/en/instana-observability/current?topic=technologies-monitoring-websphere-liberty).
 
 # IBM Java and IBM Semeru Runtimes Thread Dumps
 
@@ -824,44 +900,6 @@ Next, let's simulate a memory issue.
     1.  Resolve memory leaks through heapdump analysis.
 
     1.  Decrease the maximum thread pool size.
-
-# Admin Center
-
-The [Admin Center](https://www.ibm.com/docs/en/was-liberty/base?topic=liberty-administering-using-admin-center) is an optional, web-based administration and monitoring tool for Liberty servers. Admin Center is enabled with the `adminCenter-1.0` feature as well as configuring administrator credentials.
-
-For monitoring statistics to be produced and visualized in Admin Center (or published to monitoring products such as [Instana](https://www.ibm.com/docs/en/instana-observability/current?topic=technologies-monitoring-websphere-liberty)), the Liberty `monitor-1.0` feature is required in a Liberty server's configuration. This feature enables the collection of monitoring statistics which can then be consumed by clients such as the Admin Center. Note that enabling `monitor-1.0` may have an overhead of up to a few percent although this may be minimized by [filtering to specific statistics, if needed](https://www.ibm.com/docs/en/was-liberty/nd?topic=10-multiple-components-monitoring).
-
-## Admin Center Lab
-
-This lab will demonstrate how to enable Admin Center and `monitor-1.0` and visualize statistics for the sample application.
-
-1.  Open the **\~/liberty-bikes/build/wlp/usr/servers/frontendServer/server.xml** file from the terminal or in Mousepad.
-
-2.  Add the following to the **featureManager** section:
-
-        <feature>adminCenter-1.0</feature>
-
-3.  Add the following lines anywhere within the **\<server\>** section:
-
-        <quickStartSecurity userName="wsadmin" userPassword="wsadmin" />
-
-4.  Save the server.xml file.
-
-5.  Wait about 5 seconds for the updates to take effect.
-
-6.  Open a browser to https://localhost:12005/adminCenter/
-
-7.  Login with user **wsadmin** and password **wsadmin**
-
-8.  Click on the **Explore** button:\
-    <img src="./media/image124.png" width="640" height="308" />
-
-9.  Click on the \"Monitor\" button:\
-    <img src="./media/image125.png" width="608" height="417" />
-
-10. You will see graphs of various statistics for this server. As you configure additional monitoring (which we will do in subsequent sections), the edit button in the top right will show additional metrics.\
-    <img src="./media/image126.png" width="608" height="598" />
-
 
 # Health Center
 

@@ -395,7 +395,7 @@ The linperf.sh script is pre-installed in the lab image at **/opt/linperf/linper
 
 We will gather and review thread dumps:
 
-> Note: You may skip the data collection steps and use example data packaged at /opt/webspherelab/supplemental/exampledata/liberty/linperf/
+> Note: You may skip the data collection steps 1-8 and start at step 9 with example data packaged at /opt/webspherelab/supplemental/exampledata/liberty/linperf/
 
 1.  [Start JMeter](#start-jmeter)
 

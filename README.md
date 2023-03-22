@@ -7,4 +7,4 @@ Choose the lab you'd like to do:
 * [WebSphere Liberty Performance Lab](Liberty_Perf_Lab.md)
 * [Full Performance Lab including WebSphere Application Server traditional and WebSphere Liberty](WAS_Troubleshooting_Perf_Lab.md)
 
-If you'd like to build this lab yourself and for other background, see the [Details](Details.md) page.
+If you'd like to build this lab yourself using [the Containerfile](Containerfile) and for other background, see the [Details](Details.md) page.

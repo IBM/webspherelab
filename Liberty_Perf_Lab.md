@@ -5,25 +5,23 @@
 
 # Table of Contents
 
--   [Introduction](#introduction)
--   [Core Concepts](#core-concepts)
--   [Installation](#installation)
-    -   [With podman](#installing-podman)
-    -   [With Docker Desktop](#installing-docker-desktop)
--   [Starting the lab](#start-the-container)
-    -   [Start with podman](#start-with-podman)
-    -   [Start with Docker Desktop](#start-with-docker-desktop)
--   [IBM Java and IBM Semeru Runtimes Thread Dumps](#ibm-java-and-ibm-semeru-runtimes-thread-dumps)
--   [Garbage Collection](#garbage-collection)
--   [Health Center Sampling Profiler](#health-center)
--   [WebSphere Liberty](#websphere-liberty)
-    -   [Request Timing](#request-timing)
-    -   [HTTP NCSA Access Log](#http-ncsa-access-log)
--   [Methodology](#methodology)
-    -   [Performance Tuning Tips](#performance-tuning-tips)
-    -   [Liberty Performance Tuning Recipe](#liberty-performance-tuning-recipe)
--   [Appendix](#appendix)
-    -   [Windows Remote Desktop Client](#windows-remote-desktop-client)
+- [Introduction](#introduction)
+- [Core Concepts](#core-concepts)
+- [Installation](#installation)
+    - [With podman](#installing-podman)
+    - [With Docker Desktop](#installing-docker-desktop)
+- [Starting the lab](#start-the-container)
+    - [Start with podman](#start-with-podman)
+    - [Start with Docker Desktop](#start-with-docker-desktop)
+- [Request Timing](#request-timing)
+- [Admin Center](#admin-center)
+- [IBM Java and IBM Semeru Runtimes Thread Dumps](#ibm-java-and-ibm-semeru-runtimes-thread-dumps)
+- [Garbage Collection](#garbage-collection)
+- [Health Center Sampling Profiler](#health-center)
+- [HTTP NCSA Access Log](#http-ncsa-access-log)
+- [Methodology](#methodology)
+- [Appendix](#appendix)
+    - [Windows Remote Desktop Client](#windows-remote-desktop-client)
 
 # Introduction
 
@@ -909,7 +907,7 @@ Next, let's simulate a memory issue.
 
 This lab will demonstrate how to enable Java Health Center, exercise the sample DayTrader application using Apache JMeter, and review the Health Center file in the IBM Java Health Center Client Tool.
 
-##  Health Center Theory
+## Health Center Theory
 
 The Health Center agent gathers sampled CPU profiling data, along with other information:
 
@@ -944,7 +942,7 @@ The key to produce the final Health Center HCD file is that the JVM should be gr
 
 Consider always enabling [HealthCenter in headless mode](https://publib.boulder.ibm.com/httpserv/cookbook/Major_Tools-IBM_Java_Health_Center.html#Major_Tools-IBM_Java_Health_Center-Gathering_Data) for post-mortem debugging of issues.
 
-##  Health Center Lab
+## Health Center Lab
 
 > Note: You may skip the data collection steps and use example data packaged at /opt/webspherelab/supplemental/exampledata/liberty/healthcenter/
 
@@ -1100,11 +1098,11 @@ Consider reviewing other common performance tuning and troubleshooting operation
     * If you have `cluster-admin` permissions, use the [MustGather: Performance, hang, or high CPU issues with WebSphere Application Server on Linux on Containers](https://www.ibm.com/support/pages/mustgather-performance-hang-or-high-cpu-issues-websphere-application-server-linux-containers) during performance, hang, and high-CPU issues.
 * You may connect the [JConsole monitoring tool](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html) built into Java and access Liberty enabled with the `monitor-1.0` feature through the [localConnector-1.0](https://www.ibm.com/docs/en/was-liberty/core?topic=jmx-configuring-local-connection-liberty) and/or [restConnector-2.0](https://www.ibm.com/docs/en/was-liberty/core?topic=jmx-configuring-secure-connection-liberty) features; however, note that JConsole has connection complexities and limited capabilities and Admin Center is often enough for basic statistics visualization.
 
-#  Methodology
+# Methodology
 
 The following optional sections review general methodology topics.
 
-##  The Scientific Method
+## The Scientific Method
 
 1.  Observe and measure evidence of the problem. For example: \"Users are receiving HTTP 500 errors when visiting the website.\"
 
@@ -1116,7 +1114,7 @@ The following optional sections review general methodology topics.
 
 5.  Observe and measure experimental evidence. If the problem is not resolved, repeat the steps above; otherwise, create a theory about the cause of the problem.
 
-##  Organizing an Investigation
+## Organizing an Investigation
 
 Keep track of a summary of the situation, a list of problems, hypotheses, and experiments/tests. Use numbered items so that people can easily reference things in phone calls or emails. The summary should be restricted to a single sentence for problems, resolution criteria, statuses, and next steps. Any details are in the subsequent tables. The summary is a difficult skill to learn, so try to constrain yourself to a single (short!) sentence. For example:
 
@@ -1160,25 +1158,25 @@ Keep track of a summary of the situation, a list of problems, hypotheses, and ex
 | 3 | Test problem 1 - hypothesis 1   | 2019-01-03 12:30:00 UTC | 2019-01-01 14:00:00 UTC | Test server1       | Increase Java heap size to 1g | Average response time 4000ms; Website error rate 15% |
 | 4 | Test problem 1 - hypothesis 1   | 2019-01-04 09:00:00 UTC | 2019-01-01 17:00:00 UTC | Production server1 | Increase Java heap size to 1g | Average response time 2000ms; Website error rate 10% |
 
-##  General Performance Tuning Tips
+## General Performance Tuning Tips
 
-1.  Performance tuning is usually about focusing on a few key variables. We will highlight the most common tuning knobs that can often improve the speed of the average application by 200% or more relative to the default configuration. The first step, however, should be to use and be guided by the tools and methodologies. Gather data, analyze it and create hypotheses: then test your hypotheses. Rinse and repeat. As Donald Knuth says: \"Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time \[...\]. Yet we should not pass up our opportunities in that critical 3%. A good programmer will not be lulled into complacency by such reasoning, he will be wise to look carefully at the critical code; but only after that code has been identified. It is often a mistake to make a priori judgments about what parts of a program are really critical, since the universal experience of programmers who have been using measurement tools has been that their intuitive guesses fail.\" (Donald Knuth, Structured Programming with go to Statements, Stanford University, 1974, Association for Computing Machinery)
+1. Performance tuning is usually about focusing on a few key variables. We will highlight the most common tuning knobs that can often improve the speed of the average application by 200% or more relative to the default configuration. The first step, however, should be to use and be guided by the tools and methodologies. Gather data, analyze it and create hypotheses: then test your hypotheses. Rinse and repeat. As Donald Knuth says: \"Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time \[...\]. Yet we should not pass up our opportunities in that critical 3%. A good programmer will not be lulled into complacency by such reasoning, he will be wise to look carefully at the critical code; but only after that code has been identified. It is often a mistake to make a priori judgments about what parts of a program are really critical, since the universal experience of programmers who have been using measurement tools has been that their intuitive guesses fail.\" (Donald Knuth, Structured Programming with go to Statements, Stanford University, 1974, Association for Computing Machinery)
 
-2.  There is a seemingly daunting number of tuning knobs. Unless you are trying to squeeze out every last drop of performance, we do not recommend a close study of every tuning option.
+2. There is a seemingly daunting number of tuning knobs. Unless you are trying to squeeze out every last drop of performance, we do not recommend a close study of every tuning option.
 
-3.  In general, we advocate a bottom-up approach. For example, with a typical WebSphere Application Server application, start with the operating system, then Java, then WAS, then the application, etc. Ideally, investigate these at the same time. The main goal of a performance tuning exercise is to iteratively determine the bottleneck restricting response times and throughput. For example, investigate operating system CPU and memory usage, followed by Java garbage collection usage and/or thread dumps/sampling profilers, followed by WAS PMI, etc.
+3. In general, we advocate a bottom-up approach. For example, with a typical WebSphere Application Server application, start with the operating system, then Java, then WAS, then the application, etc. Ideally, investigate these at the same time. The main goal of a performance tuning exercise is to iteratively determine the bottleneck restricting response times and throughput. For example, investigate operating system CPU and memory usage, followed by Java garbage collection usage and/or thread dumps/sampling profilers, followed by WAS PMI, etc.
 
-4.  One of the most difficult aspects of performance tuning is understanding whether or not the architecture of the system, or even the test itself, is valid and/or optimal.
+4. One of the most difficult aspects of performance tuning is understanding whether or not the architecture of the system, or even the test itself, is valid and/or optimal.
 
-5.  Meticulously describe and track the problem, each test and its results.
+5. Meticulously describe and track the problem, each test and its results.
 
-6.  Use basic statistics (minimums, maximums, averages, medians, and standard deviations) instead of spot observations.
+6. Use basic statistics (minimums, maximums, averages, medians, and standard deviations) instead of spot observations.
 
-7.  When benchmarking, use a repeatable test that accurately models production behavior, and avoid short term benchmarks which may not have time to warm up.
+7. When benchmarking, use a repeatable test that accurately models production behavior, and avoid short term benchmarks which may not have time to warm up.
 
-8.  Take the time to automate as much as possible: not just the testing itself, but also data gathering and analysis. This will help you iterate and test more hypotheses.
+8. Take the time to automate as much as possible: not just the testing itself, but also data gathering and analysis. This will help you iterate and test more hypotheses.
 
-9.  Make sure you are using the latest version of every product because there are often performance or tooling improvements available.
+9. Make sure you are using the latest version of every product because there are often performance or tooling improvements available.
 
 10. When researching problems, you can either analyze or isolate them. Analyzing means taking particular symptoms and generating hypotheses on how to change those symptoms. Isolating means eliminating issues singly until you\'ve discovered important facts. In general, we have found through experience that analysis is preferable to isolation.
 

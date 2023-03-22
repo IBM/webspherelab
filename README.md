@@ -97,6 +97,9 @@ A lab on Troubleshooting and Performance Tuning WebSphere Liberty and WebSphere 
 1. Remove any previous IHS zips
 1. Click the first "Download Fix Pack..." link at <https://www.ibm.com/support/pages/fix-list-ibm-http-server-version-90> and follow through the "IBM HTTP Server archive file for 64-bit Linux, x86" link to download `*IHS-ARCHIVE*zip`
 1. `podman manifest create quay.io/ibm/webspherelab:latest`
+    1. If there is an error, instead run:
+        1. `podman manifest inspect quay.io/ibm/webspherelab | jq '.manifests[].digest' | tr '\n' ' ' | sed 's/"//g'`
+        1. For each digest, run `podman manifest remove $DIGEST quay.io/ibm/webspherelab`
 1. `podman build --platform linux/amd64 --manifest quay.io/ibm/webspherelab:latest .`
 1. Double check the manifest:
    ```

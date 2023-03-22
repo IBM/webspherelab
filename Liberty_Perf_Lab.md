@@ -45,7 +45,7 @@ WAS traditional and Liberty share some source code but [differ in significant wa
 
 ### What's in the lab?
 
-This lab covers the major tools and techniques for performance tuning WebSphere Liberty. This is a subset of the [WebSphere Performance and Troubleshooting Lab](https://github.com/ibm/webspherelab/blob/master/WAS_Troubleshooting_Perf_Lab.md) which also covers WAS traditional, and troubleshooting labs.
+This lab covers the major tools and techniques for performance tuning WebSphere Liberty. This is a subset of the [WebSphere Performance and Troubleshooting Lab](https://github.com/ibm/webspherelab/blob/master/WAS_Troubleshooting_Perf_Lab.md) which also covers WAS traditional.
 
 This lab container image comes with WebSphere Liberty pre-installed so installation and configuration steps are skipped.
 
@@ -53,15 +53,15 @@ The way we are using these container images is to run multiple services in the s
 
 ## Operating System
 
-This lab is built on top of Linux (specifically, Fedora Linux, which is the open source foundation of RHEL/CentOS). The concepts and techniques apply generally to other supported operating systems although [details of other operating systems](https://publib.boulder.ibm.com/httpserv/cookbook/Operating_Systems.html) may vary significantly and are covered elsewhere.
+This lab is built on top of Linux (specifically, Fedora Linux, which is the open source foundation of RHEL). The concepts and techniques apply generally to other supported operating systems although [details of other operating systems](https://publib.boulder.ibm.com/httpserv/cookbook/Operating_Systems.html) may vary significantly and are covered elsewhere.
 
 ## Java
 
-WebSphere Liberty supports any [Java 8, 11, or 17 edition](https://openliberty.io/docs/latest/java-se.html).
+WebSphere Liberty supports any [Java 8, 11, 17, or 19 edition](https://openliberty.io/docs/latest/java-se.html).
 
 This lab uses IBM Java 8. The concepts and techniques apply generally to other Java runtimes although details of other Java runtimes (e.g. [HotSpot](https://publib.boulder.ibm.com/httpserv/cookbook/Java-Java_Virtual_Machines_JVMs-HotSpot_JVM.html)) vary significantly and are covered elsewhere.
 
-The IBM Java virtual machine (named J9) has become largely open sourced into the [OpenJ9 project](https://github.com/eclipse/openj9). OpenJ9 ships with OpenJDK through the [IBM Semeru offering](https://developer.ibm.com/languages/java/semeru-runtimes/downloads). OpenJDK is somewhat different than the JDK that IBM Java uses. WebSphere Liberty supports running with newer versions of OpenJDK+OpenJ9, although some IBM Java tooling such as HealthCenter is not yet available in OpenJ9, so the focus of this lab continues to be IBM Java 8.
+The IBM Java virtual machine (named J9) has become largely open sourced into the [OpenJ9 project](https://github.com/eclipse/openj9). OpenJ9 ships with OpenJDK through the [IBM Semeru Runtimes offering](https://developer.ibm.com/languages/java/semeru-runtimes/downloads). OpenJDK is [somewhat different](https://publib.boulder.ibm.com/httpserv/cookbook/Java.html#Java-General) than the JDK that IBM Java uses. Note that some IBM Java tooling such as HealthCenter is not yet available in IBM Semeru Runtimes (except on z/OS) which is why we chose IBM Java 8 for this lab; however, generally, more modern versions of Java would be recommended.
 
 # Core Concepts
 
@@ -77,7 +77,7 @@ Performance tuning is best done with all layers of the stack in mind. This lab w
 
 The lab image is about 20GB. If you plan to run this in a classroom setting, perform the installation steps beforehand which includes downloading the image.
 
-This lab assumes the installation and use of `podman` or Docker Desktop to run the lab. Choose one or the other:
+This lab assumes the installation and use of `podman` or Docker Desktop to run the lab (other container systems may also work but have not been tested). Choose one or the other:
 
 * [Installing `podman`](#installing-podman)
 * [Installing Docker Desktop](#installing-docker-desktop)
@@ -95,16 +95,15 @@ If you are using `podman` instead of Docker Desktop, perform the following steps
 #### podman post-installation steps
 
 1. On macOS and Windows:
-    1. Create the `podman` virtual machine with sufficient memory (at least 4GB and, ideally, at least 8GB), CPU, and disk. For example (memory is in MB):
+    1. Create the `podman` virtual machine with sufficient memory (preferrably at least 4GB and, ideally, at least 8GB), CPU, and disk. For example (memory is in MB):
        ```
        podman machine init --memory 10240 --cpus 4 --disk-size 100
        ```
-       If you already have a podman machine and you'd like to resize it to make it bigger, it's usually simplest to just delete it using `podman machine rm` and then re-create it using the above command.
     1. Start the `podman` virtual machine:
        ```
        podman machine start
        ```
-    1. Switch to a "root" podman:
+    1. Switch to a "root" podman connection:
        ```
        podman system connection default podman-machine-default-root
        ```
@@ -150,7 +149,7 @@ If you are using Docker Desktop instead of `podman`, perform the following steps
 
         1.  Click the **Settings** gear icon in the top right, then click **Resources** on the left.
 
-        1.  Configure sufficient memory (at least 4GB and, ideally, at least 8GB), CPU, and disk.
+        1.  Configure sufficient memory (preferrably at least 4GB and, ideally, at least 8GB), CPU, and disk.
 
         1.  Click **Apply & Restart**\
             \
@@ -194,7 +193,7 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
 
     `podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
 
-2.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
+2.  Wait about 5 minutes until you see the following in the output (if not seen, review any errors):
     
         =========
         = READY =
@@ -220,7 +219,7 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
 
     1.  Windows 3<sup>rd</sup> party VNC client:
 
-        i.  If you are able to install and use a 3<sup>rd</sup> party VNC client (there are a few free options online), then connect to **localhost** on port **5902** with password **websphere**.
+        i.  If you are able to install and use a 3<sup>rd</sup> party VNC client, then connect to **localhost** on port **5902** with password **websphere**.
 
     1.  Windows Remote Desktop client:
 
@@ -250,7 +249,7 @@ If you are using Docker Desktop for this lab instead of `podman`:
 
     `docker run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
 
-3.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
+3.  Wait about 5 minutes until you see the following in the output (if not seen, review any errors):
     
         =========
         = READY =

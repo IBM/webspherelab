@@ -1513,7 +1513,7 @@ environment=\n\
     sudo rm /opt/daytrader7/jmeter_files/daytrader7_mojarra.jmx && \
     sudo chmod a+rw /opt/daytrader7/jmeter_files/daytrader7.jmx && \
     printf '#!/bin/sh\n\
-sleep 180\n\
+sleep 300\n\
 echo -e "\\n\\n=========\\n= READY =\\n=========\\n"\n\
 \n' | sudo tee /usr/local/bin/finished.sh && sudo chmod +x /usr/local/bin/finished.sh && \
     printf '\n\

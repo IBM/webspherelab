@@ -2077,37 +2077,6 @@ If you are having problems, one of the first things to do is to check the Libert
 
 There are two main log files: messages.log and console.log. The two files share a lot of the same output (System.out & System.err), with a large difference being that messages.log has timestamps and console.log does not. In addition, console.log has stdout & stderr such as JVM messages. In general, you only need to look at messages.log; however, there are cases where console.log has additional information.
 
-##  Admin Center
-
-The Admin Center is a web-based administration and monitoring tool for Liberty servers.
-
-1.  Open the **\~/liberty-bikes/build/wlp/usr/servers/frontendServer/server.xml** file from the terminal or in Mousepad.
-
-2.  Add the following to the **featureManager** section:
-
-        <feature>adminCenter-1.0</feature>
-
-3.  Add the following lines anywhere within the **\<server\>** section:
-
-        <quickStartSecurity userName="wsadmin" userPassword="wsadmin" />
-
-4.  Save the server.xml file.
-
-5.  Wait about 5 seconds for the updates to take effect.
-
-6.  Open a browser to https://localhost:12005/adminCenter/
-
-7.  Login with user **wsadmin** and password **wsadmin**
-
-8.  Click on the **Explore** button:\
-    <img src="./media/image124.png" width="640" height="308" />
-
-9.  Click on the \"Monitor\" button:\
-    <img src="./media/image125.png" width="608" height="417" />
-
-10. You will see graphs of various statistics for this server. As you configure additional monitoring (which we will do in subsequent sections), the edit button in the top right will show additional metrics.\
-    <img src="./media/image126.png" width="608" height="598" />
-
 ##  MXBean Monitoring
 
 Key performance indicator statistics gathering is optionally enabled with the [monitor-1.0](http://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_mon.html) feature. This data may be [exposed with Java standard MXBeans](http://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_admin_mbeans.html) through the localConnector-1.0 feature for local machine access, or through the [restConnector-1.0 feature (with ssl-1.0) for remote machine access](http://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_admin_jmx.html). MXBeans may be viewed with Java\'s built-in JConsole tool, the Liberty adminCenter, or through any monitoring tool that supports MXBeans.

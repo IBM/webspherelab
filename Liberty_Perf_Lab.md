@@ -595,6 +595,59 @@ Next, let's simulate a thread that is using a lot of CPU:
    /opt/ibm/wlp/bin/server start defaultServer
    ```
 
+# Request Timing
+
+This lab demonstrates how to enable and use the [slow and hung request detection](https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-slow-hung-request-detection) feature. Note that enabling `requestTiming-1.0` may have a large overhead in high volume environments and ideally its overhead should be measured in a test environment before applying to production; if the overhead is too high, test with request sampling through the [`sampleRate` attribute](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming).
+
+To detect slow and hung requests, the Liberty `requestTiming-1.0` feature is required in a Liberty server's configuration. In addition to enabling the feature, the feature must be configured with a [`requestTiming`](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming) element that specifies the thresholds and other configuration. This lab will be using the following:
+
+```
+<requestTiming slowRequestThreshold="60s" hungRequestThreshold="180s" sampleRate="1" />
+```
+
+The key configuration is the `slowRequestThreshold` which specifies the time after which a request is considered to be "slow" and diagnostics are printed to Liberty logs. In general, this value must be decided with application stakeholders based on service level agreements. Note that if a high volume of requests start to exceed this threshold, there will be some overhead of printing diagnostics to the logs, in which case you can consider increasing the threshold or the `sampleRate`.
+
+The difference between the slow and hung thresholds is that if the hung threshold is exceeded, then Liberty will gather 3 thread dumps, one minute apart for more in-depth diagnostics. This will not be demonstrated in this lab but it is generally advised to configure this threshold.
+
+## requestTiming Lab
+
+1. Modify `/config/server.xml` to add the following before `</server>`:
+   ```
+   <featureManager><feature>requestTiming-1.0</feature></featureManager>
+   <requestTiming slowRequestThreshold="60s" hungRequestThreshold="180s" sampleRate="1" />
+   ```
+2. Execute a request that takes more than one minute by opening a browser to http://localhost:9080/swat/Sleep?duration=65000
+3. After about a minute and the request completes, review the requestTiming warning in `/logs/messages.log` -- for example:
+   ```
+   [3/20/22 16:16:52:250 UTC] 0000007b com.ibm.ws.request.timing.manager.SlowRequestManager         W TRAS0112W: Request AAAAPOsEvAG_AAAAAAAAAAA has been running on thread 00000079 for at least 60003.299ms. The following stack trace shows what this thread is currently running.
+   
+     at java.lang.Thread.sleep(Native Method)
+     at java.lang.Thread.sleep(Thread.java:956)
+     at com.ibm.Sleep.doSleep(Sleep.java:35)
+     at com.ibm.Sleep.doWork(Sleep.java:18)
+     at com.ibm.BaseServlet.service(BaseServlet.java:73)
+     at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+     [...]
+   
+   The following table shows the events that have run during this request.
+   
+   Duration      Operation
+   60008.080ms + websphere.servlet.service | swat | Sleep?duration=65000 
+   ```
+    1. The warning shows a stack at the time `requestTiming` notices the threshold is breached and it's followed be a tree of components of the request. The plus sign (+) indicates that an operation is still in progress. The indentation level indicates which events requested which other events.
+4. Execute a request that takes about three minutes by opening a browser to http://localhost:9080/swat/Sleep?duration=200000
+5. After about five minutes, review the requestTiming warning in `/logs/messages.log` -- in addition to the previous warning, multiple thread dumps are produced:
+   ```
+   [3/20/22 16:22:23:565 UTC] 0000007d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0067I: Java dump request received.
+   [3/20/22 16:22:23:662 UTC] 0000007d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0068I: Java dump created: /opt/ibm/wlp/output/defaultServer/javacore.20220320.162223.17.0001.txt
+   ```
+    1. Thread dumps [will be captured](https://openliberty.io/docs/latest/slow-hung-request-detection.html#_hung_request_detection), one minute apart, after the threshold is breached.
+1. Review the thread dumps using the TMDA tool and see if you can find the captured long-running request.
+
+In general, it is a good practice to use `requestTiming`, even in production. Configure the thresholds to values that are at the upper end of acceptable times for the users and the business. Configure and test the `sampleRate` to ensure the overhead of `requestTiming` is acceptable in production.
+
+When the requestTiming feature is enabled, the server dump command will include a snapshot of all the event trees for all requests thus giving a very nice and lightweight way to see active requests in the system at a detailed level (including URI, etc.), in a similar way that thread dumps do the same for thread stacks.
+
 # Garbage Collection
 
 Garbage collection (GC) automatically frees unused objects. Healthy garbage collection is one of the most important aspects of Java programs. The proportion of time spent in garbage collection versus application time should be [less than 10% and ideally less than 1%](https://publib.boulder.ibm.com/httpserv/cookbook/Major_Tools-Garbage_Collection_and_Memory_Visualizer_GCMV.html#Major_Tools-Garbage_Collection_and_Memory_Visualizer_GCMV-Analysis).
@@ -889,64 +942,17 @@ Consider always enabling [HealthCenter in headless mode](https://publib.boulder.
     \
     <img src="./media/image120.png" width="859" height="482" />
 
-# WebSphere Liberty
+# Other WebSphere Liberty Features
 
 WebSphere Liberty has many built-in troubleshooting and performance features, including:
 
-- Request Timing
 - HTTP NCSA access log
 - Admin Center
 - MXBean Monitoring
-- Server Dumps
 - Event Logging
 - Diagnostic trace
 - Binary logging
 - Timed operations
-
-## Request Timing
-
-WebSphere Liberty's Slow and Hung Request Detection is optionally enabled with the [requestTiming-1.0](https://openliberty.io/docs/latest/slow-hung-request-detection.html) feature.
-
-The slow request detection part of the feature monitors for HTTP requests that exceed a configured threshold and prints a tree of events breaking down the components of the slow request. The hung request detection part of the feature additionally gathers thread dumps after its threshold is exceeded.
-
-### requestTiming Lab
-
-1. Modify `/config/server.xml` to add the following before `</server>`:
-   ```
-   <featureManager><feature>requestTiming-1.0</feature></featureManager>
-   <requestTiming slowRequestThreshold="60s" hungRequestThreshold="180s" sampleRate="1" />
-   ```
-2. Execute a request that takes more than one minute by opening a browser to http://localhost:9080/swat/Sleep?duration=65000
-3. After about a minute and the request completes, review the requestTiming warning in `/logs/messages.log` -- for example:
-   ```
-   [3/20/22 16:16:52:250 UTC] 0000007b com.ibm.ws.request.timing.manager.SlowRequestManager         W TRAS0112W: Request AAAAPOsEvAG_AAAAAAAAAAA has been running on thread 00000079 for at least 60003.299ms. The following stack trace shows what this thread is currently running.
-   
-     at java.lang.Thread.sleep(Native Method)
-     at java.lang.Thread.sleep(Thread.java:956)
-     at com.ibm.Sleep.doSleep(Sleep.java:35)
-     at com.ibm.Sleep.doWork(Sleep.java:18)
-     at com.ibm.BaseServlet.service(BaseServlet.java:73)
-     at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-     [...]
-   
-   The following table shows the events that have run during this request.
-   
-   Duration      Operation
-   60008.080ms + websphere.servlet.service | swat | Sleep?duration=65000 
-   ```
-    1. The warning shows a stack at the time `requestTiming` notices the threshold is breached and it's followed be a tree of components of the request. The plus sign (+) indicates that an operation is still in progress. The indentation level indicates which events requested which other events.
-4. Execute a request that takes about three minutes by opening a browser to http://localhost:9080/swat/Sleep?duration=200000
-5. After about five minutes, review the requestTiming warning in `/logs/messages.log` -- in addition to the previous warning, multiple thread dumps are produced:
-   ```
-   [3/20/22 16:22:23:565 UTC] 0000007d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0067I: Java dump request received.
-   [3/20/22 16:22:23:662 UTC] 0000007d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0068I: Java dump created: /opt/ibm/wlp/output/defaultServer/javacore.20220320.162223.17.0001.txt
-   ```
-    1. Thread dumps [will be captured](https://openliberty.io/docs/latest/slow-hung-request-detection.html#_hung_request_detection), one minute apart, after the threshold is breached.
-1. Review the thread dumps using the TMDA tool and see if you can find the captured long-running request.
-
-In general, it is a good practice to use `requestTiming`, even in production. Configure the thresholds to values that are at the upper end of acceptable times for the users and the business. Configure and test the `sampleRate` to ensure the overhead of `requestTiming` is acceptable in production.
-
-When the requestTiming feature is enabled, the server dump command will include a snapshot of all the event trees for all requests thus giving a very nice and lightweight way to see active requests in the system at a detailed level (including URI, etc.), in a similar way that thread dumps do the same for thread stacks.
 
 ## HTTP NCSA Access Log
 

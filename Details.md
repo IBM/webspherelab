@@ -105,7 +105,7 @@
    ```
 1. Run the image:
    ```
-   podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 12005:12005 -it quay.io/ibm/webspherelab
+   podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 9443:9443 -it quay.io/ibm/webspherelab
    ```
 1. Test the image (password `websphere`):
     * macOS:

@@ -189,7 +189,7 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
 
 1.  Start the lab:
     ```
-    podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 12005:12005 -it quay.io/ibm/webspherelab`
+    podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 12005:12005 -it quay.io/ibm/webspherelab
     ```
 
 2.  Wait about 5 minutes until you see the following in the output (if not seen, review any errors):

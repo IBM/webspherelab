@@ -4,7 +4,7 @@ This lab demonstrates troubleshooting and performance tuning WebSphere Liberty a
 
 Choose the lab you'd like to do:
 
-* [Liberty Performance Lab](Liberty_Perf_Lab.md)
-* [Full Performance Lab including WebSphere Application Server traditional](WAS_Troubleshooting_Perf_Lab.md)
+* [WebSphere Liberty Performance Lab](Liberty_Perf_Lab.md)
+* [Full Performance Lab including WebSphere Application Server traditional and WebSphere Liberty](WAS_Troubleshooting_Perf_Lab.md)
 
 If you'd like to build this lab yourself and for other background, see the [Details](Details.md) page.

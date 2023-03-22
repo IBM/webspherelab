@@ -73,7 +73,7 @@ WAS traditional and Liberty share some source code but [differ in significant wa
 
 ## Lab Screenshots
 
-<img src="./media/image2.png" width="1024" height="788" />
+<img src="./media/image2.png" width="1022" height="764" />
 
 <img src="./media/image3.png" width="1024" height="788" />
 

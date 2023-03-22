@@ -13,7 +13,7 @@
 -   [Starting the lab](#start-the-container)
     -   [Start with podman](#start-with-podman)
     -   [Start with Docker Desktop](#start-with-docker-desktop)
--   [IBM Java and IBM Semeru Runtimes Thread Dumps](#ibm-java-and-openj9-thread-dumps)
+-   [IBM Java and IBM Semeru Runtimes Thread Dumps](#ibm-java-and-ibm-semeru-runtimes-thread-dumps)
 -   [Garbage Collection](#garbage-collection)
 -   [Health Center Sampling Profiler](#health-center)
 -   [WebSphere Liberty](#websphere-liberty)

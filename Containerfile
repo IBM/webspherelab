@@ -511,6 +511,8 @@ RUN dbus-uuidgen > /var/lib/dbus/machine-id && \
     sudo ln -s /usr/share/applications/firefox.desktop /home/was/Desktop/ && \
     sudo chmod a+x /usr/share/applications/org.xfce.mousepad.desktop && \
     sudo ln -s /usr/share/applications/org.xfce.mousepad.desktop /home/was/Desktop/ && \
+    sudo chmod a+x /usr/share/applications/xfce4-terminal.desktop && \
+    sudo ln -s /usr/share/applications/xfce4-terminal.desktop /home/was/Desktop/ && \
     sudo chmod a+x /usr/share/applications/org.wireshark.Wireshark.desktop && \
     sudo ln -s /usr/share/applications/org.wireshark.Wireshark.desktop /home/was/Desktop/ && \
     sudo chmod a+x /usr/share/applications/galculator.desktop && \
@@ -668,7 +670,7 @@ RUN sudo touch /tmp/tmp.log && \
     sudo rm -f /usr/share/applications/xscreensaver-properties.desktop
 
 # Query file mimetype: xdg-mime query filetype $FILE
-RUN xdg-mime default xreader.desktop application/pdf && \
+RUN xdg-mime default evince.desktop application/pdf && \
     xdg-mime default mousepad.desktop text/x-log && \
     xdg-mime default mousepad.desktop text/plain
 

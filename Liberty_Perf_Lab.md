@@ -363,7 +363,7 @@ Liberty offers a [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?to
 
 This lab demonstrates how to gather a `server dump` and review its output.
 
-1. Open a terminal on the lab image.
+1. Open a terminal on the lab image; for example, double click on `Xfce Terminal` on the Desktop.
 1. Run the following command to start the Liberty server dump:
    ```
    /opt/ibm/wlp/bin/server dump defaultServer --include=thread
@@ -399,7 +399,7 @@ We will gather and review thread dumps:
 
 1.  [Start JMeter](#start-jmeter)
 
-2.  Open a terminal on the lab image.
+2.  Open a terminal on the lab image; for example, double click on `Xfce Terminal` on the Desktop.
 
 3.  First, we'll need to find the PID(s) of Liberty. There are a few ways to do this, and you only need to choose one method:
 

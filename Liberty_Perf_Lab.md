@@ -361,7 +361,7 @@ The difference between the slow and hung thresholds is that if the hung threshol
    <requestTiming slowRequestThreshold="60s" hungRequestThreshold="180s" sampleRate="1" />
    ```
 2. Execute a request that takes more than one minute by opening a browser to http://localhost:9080/swat/Sleep?duration=65000
-3. After about a minute and the request completes, review the requestTiming warning in `/logs/messages.log` -- for example:
+3. After about a minute and the request completes, review the requestTiming warning in `/logs/messages.log` (for example, using the `Mousepad` program) -- for example:
    ```
    [3/20/22 16:16:52:250 UTC] 0000007b com.ibm.ws.request.timing.manager.SlowRequestManager         W TRAS0112W: Request AAAAPOsEvAG_AAAAAAAAAAA has been running on thread 00000079 for at least 60003.299ms. The following stack trace shows what this thread is currently running.
    

@@ -35,9 +35,6 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
       glibc
       # We don't install kernel-debuginfo because the underlying kernel won't match
 
-# Notes on the packages:
-# * Firefox crashes switching tabs with SIGBUS errors unless we use docker run --shm-size=...
-#    https://bugzilla.mozilla.org/show_bug.cgi?id=1338771
 RUN dnf install -y \
       arpwatch \
       at \

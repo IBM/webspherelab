@@ -61,7 +61,7 @@ WebSphere Liberty supports [Java 8, 11, 17, or 19 editions](https://openliberty.
 
 This lab uses IBM Java 8. The concepts and techniques apply generally to other Java runtimes although details of other Java runtimes (e.g. [HotSpot](https://publib.boulder.ibm.com/httpserv/cookbook/Java-Java_Virtual_Machines_JVMs-HotSpot_JVM.html)) vary significantly and are covered elsewhere.
 
-The IBM Java virtual machine (named J9) has become largely open sourced into the [OpenJ9 project](https://github.com/eclipse/openj9). OpenJ9 ships with OpenJDK through the [IBM Semeru Runtimes offering](https://developer.ibm.com/languages/java/semeru-runtimes/downloads). OpenJDK is [somewhat different](https://publib.boulder.ibm.com/httpserv/cookbook/Java.html#Java-General) than the JDK that IBM Java uses. Note that some IBM Java tooling such as HealthCenter is not yet available in IBM Semeru Runtimes (except on z/OS) which is why we chose IBM Java 8 for this lab; however, generally, more modern versions of Java would be recommended.
+The IBM Java virtual machine (named J9) has become largely open sourced into the [Eclipse OpenJ9 project](https://github.com/eclipse/openj9). OpenJ9 ships with OpenJDK through the [IBM Semeru Runtimes offering](https://developer.ibm.com/languages/java/semeru-runtimes/downloads). OpenJDK is [somewhat different](https://publib.boulder.ibm.com/httpserv/cookbook/Java.html#Java-General) than the JDK that IBM Java uses. Note that some IBM Java tooling such as HealthCenter is not yet available in IBM Semeru Runtimes (except on z/OS) which is why we chose IBM Java 8 for this lab; however, generally, more modern versions of Java would be recommended.
 
 # Core Concepts
 

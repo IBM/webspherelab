@@ -363,7 +363,6 @@ Liberty offers a [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?to
 
 This lab demonstrates how to gather a `server dump` and review its output.
 
-1. [Start JMeter](#start-jmeter)
 1. Open a terminal on the lab image.
 1. Run the following command to start the Liberty server dump:
    ```

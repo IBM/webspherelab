@@ -359,7 +359,7 @@ Thread dumps generally do not contain sensitive information about user requests,
 
 ## server dump
 
-Liberty offers a [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?topic=line-generating-liberty-server-dump-from-command) utility which gathers useful state about the Liberty process as well as optionally requesting a thread dump.
+Liberty offers a [`server dump`](https://www.ibm.com/docs/en/was-liberty/core?topic=line-generating-liberty-server-dump-from-command) utility which gathers useful state about the Liberty process, logs, configuration and, optionally, requests a thread dump.
 
 This lab demonstrates how to gather a `server dump` and review its output.
 

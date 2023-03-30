@@ -227,8 +227,9 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
     <img src="./media/image12.png" width="463" height="393" />
 
 1.  Start the lab:
-
-    `podman run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
+    ```
+    podman run --privileged --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab
+    ```
 
 2.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
     
@@ -283,8 +284,9 @@ If you are using Docker Desktop for this lab instead of `podman`:
     <img src="./media/image12.png" width="463" height="393" />
 
 2.  Start the lab by starting the Docker container from the command line:
-
-    `docker run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab`
+    ```
+    docker run --privileged --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab
+    ```
 
 3.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
     

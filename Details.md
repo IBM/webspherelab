@@ -120,12 +120,11 @@
    ```
    podman tag quay.io/ibm/webspherelab quay.io/ibm/webspherelab:VXX
    ```
-1. Do the same for the `latest` tag
 1. Push all the VXX images:
    ```
    podman push quay.io/ibm/webspherelab:VXX
    ```
-1. After all VXX versions are pushed, push the latest tags:
+1. Push the latest tags:
    ```
    podman push quay.io/ibm/webspherelab:latest
    ```

@@ -1234,17 +1234,7 @@ JVM_ARGS="-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX
       sudo unzip -q manageprofilesInteractive.zip \
     )
 
-RUN echo "#########################" && \
-    echo "# Install Liberty Tools #" && \
-    echo "#########################" && \
-    echo "# This replaces the older Liberty Developer Tools." && \
-    echo "# Match eclipse/updates using https://en.wikipedia.org/wiki/Eclipse_(software)#Releases" && \
-    sudo /opt/eclipse/eclipse -nosplash -application org.eclipse.equinox.p2.director \
-                              -repository https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/liberty-tools-eclipse/latest/repository/,https://download.eclipse.org/releases/2023-03/,https://download.eclipse.org/lsp4jakarta/releases/0.1.0/repository,https://download.eclipse.org/jdtls/milestones/1.5.0/repository,https://download.eclipse.org/justj/epp/release/latest,https://download.eclipse.org/justj/jres/17/updates/release/latest,https://download.eclipse.org/technology/epp/packages/latest/,https://download.eclipse.org/releases/latest,https://download.eclipse.org/lsp4mp/releases/0.5.0/repository,https://download.eclipse.org/eclipse/updates/4.27,https://download.eclipse.org/webtools/repository/latest \
-                              -installIU io.openliberty.tools.eclipse.feature.group && \
-    echo "# Required after installing anything into Eclipse" && \
-    sudo chmod -R a+w /opt/eclipse/configuration && \
-    echo "############################" && \
+RUN echo "############################" && \
     echo "# Add supervisord programs #" && \
     echo "############################" && \
     echo "# Deployed applications at http://localhost:9080/ and https://localhost:9443/" && \

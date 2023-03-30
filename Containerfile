@@ -49,6 +49,7 @@ RUN dnf install -y \
       bison-devel \
       bless \
       bonnie++ \
+      chromium \
       cmake \
       collectl \
       dbus-glib.i686 \
@@ -713,7 +714,9 @@ RUN echo "# https://fedoraproject.org/wiki/Alternatives_system" && \
     echo "# https://www.eclipse.org/mat/" && \
     sudo mkdir -p /opt/mat/ibmjava/ && \
     sudo mkdir -p /opt/mat/openj9/ && \
+    echo "# Download MAT1" && \
     sudo wget -q -O /opt/mat/ibmjava/mat.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer.openj9-linux.gtk.x86_64.tar.gz && \
+    echo "# Download MAT2" && \
     sudo wget -q -O /opt/mat/openj9/mat-openj9.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer-linux.gtk.x86_64.tar.gz && \
     ( \
       cd /opt/mat/ibmjava/ && \
@@ -819,7 +822,6 @@ hide_welcome_screen=true\n\
     echo "###################" && \
     echo "# Install Eclipse #" && \
     echo "###################" && \
-    echo "# This should match the latest WDT installed below" && \
     echo "# https://www.eclipse.org/downloads/packages/release/2023-03/r/eclipse-ide-enterprise-java-and-web-developers" && \
     sudo wget -q -O /opt/eclipse.tar.gz "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2023-03/R/eclipse-jee-2023-03-R-linux-gtk-x86_64.tar.gz&r=1" && \
     ( \
@@ -1264,7 +1266,7 @@ command=/work/start_server.sh\n\
 stdout_logfile=/dev/stdout\n\
 stdout_logfile_maxbytes=0\n\
 redirect_stderr=true\n\
-startsecs=180\n\
+startsecs=300\n\
 startretries=0\n\
 autorestart=false\n\
 priority=50\n\

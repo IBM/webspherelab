@@ -116,9 +116,9 @@
 1. `git push`
 1. `podman login quay.io`
 1. `podman images`
-1. For each of the above images (e.g. `$NAME`=`quay.io/ibm/webspherelab`):
+1. Tag the image with the version:
    ```
-   podman tag $IMAGEID $NAME:VXX
+   podman tag quay.io/ibm/webspherelab quay.io/ibm/webspherelab:VXX
    ```
 1. Do the same for the `latest` tag
 1. Push all the VXX images:

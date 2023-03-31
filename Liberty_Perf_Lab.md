@@ -119,12 +119,13 @@ The following section on Docker Desktop should be skipped since you are using `p
 
 If you are using Docker Desktop instead of `podman`, perform the following steps to install Docker Desktop and then perform the [Docker Desktop post-installation steps](#docker-desktop-post-installation-steps):
 
-* Windows ("Requires Microsoft Windows 10 Professional or Enterprise 64-bit.")
-    * Download: <https://hub.docker.com/editions/community/docker-ce-desktop-windows>
-    * For details, see <https://docs.docker.com/desktop/windows/install/>
-* macOS ("must be version 10.15 or newer")
-    * Download: <https://hub.docker.com/editions/community/docker-ce-desktop-mac>
-    * For details, see <https://docs.docker.com/desktop/mac/install/>
+* Windows (we recommend using WSL2):
+    * Required:
+      > * Windows 11 64-bit: Home or Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
+      > * Windows 10 64-bit: Home or Pro 21H1 (build 19043) or higher, or Enterprise or Education 20H2 (build 19042) or higher.
+    * Download: <https://docs.docker.com/desktop/install/windows-install/>
+* macOS ("macOS must be version 11 or newer"):
+    * Download: <https://docs.docker.com/desktop/install/mac-install/>
 * For a Linux host, simply install and start Docker (e.g. `sudo systemctl start docker`):
     * For an example, see <https://docs.docker.com/engine/install/fedora/>
 
@@ -152,7 +153,7 @@ If you are using Docker Desktop instead of `podman`, perform the following steps
             macOS:\
             <img src="./media/image149.png" width="672" height="720" />
 
-    1. Windows uses the WSL2 backend which defaults to 50% of RAM or 8GB, whichever is less, and the same number of CPUs as the host. This may be overridden with a [`%UserProfile%\.wslconfig` file](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configuration-setting-for-wslconfig) with, for example:
+    1. The Windows WSL2 backend defaults to 50% of RAM or 8GB, whichever is less, and the same number of CPUs as the host. This may be overridden with a [`%UserProfile%\.wslconfig` file](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configuration-setting-for-wslconfig) with, for example (preferrably at least 4GB and, ideally, at least 8GB):
        ```
        [wsl2]
        memory=10GB
@@ -358,7 +359,7 @@ The difference between the slow and hung thresholds is that if the hung threshol
    <featureManager><feature>requestTiming-1.0</feature></featureManager>
    <requestTiming slowRequestThreshold="60s" hungRequestThreshold="180s" sampleRate="1" />
    ```
-2. Execute a request that takes more than one minute by opening a browser to http://localhost:9080/swat/Sleep?duration=65000
+2. Execute a request that takes more than one minute by opening a browser to <http://localhost:9080/swat/Sleep?duration=65000>
 3. After about a minute and the request completes, review the requestTiming warning in `/logs/messages.log` (for example, using the `Mousepad` program) -- for example:
    ```
    [3/20/22 16:16:52:250 UTC] 0000007b com.ibm.ws.request.timing.manager.SlowRequestManager         W TRAS0112W: Request AAAAPOsEvAG_AAAAAAAAAAA has been running on thread 00000079 for at least 60003.299ms. The following stack trace shows what this thread is currently running.

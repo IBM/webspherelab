@@ -350,7 +350,7 @@ To detect slow and hung requests, the Liberty `requestTiming-1.0` feature is req
 
 The key configuration is the `slowRequestThreshold` which specifies the time after which a request is considered to be "slow" and diagnostics are printed to Liberty logs. In general, this value must be decided with application stakeholders based on service level agreements. Note that if a high volume of requests start to exceed this threshold, there will be some overhead of printing diagnostics to the logs, in which case you can consider increasing the threshold or the `sampleRate`.
 
-The difference between the slow and hung thresholds is that if the hung threshold is exceeded, then Liberty will gather 3 thread dumps, one minute apart for more in-depth diagnostics. This will not be demonstrated in this lab but it is generally advised to configure this threshold.
+The difference between the slow and hung thresholds is that if the hung threshold is exceeded, then Liberty will gather 3 thread dumps, one minute apart for more in-depth diagnostics. This will not be demonstrated in this lab but it is generally advised to configure both thresholds.
 
 ## requestTiming Lab
 
@@ -385,7 +385,7 @@ The difference between the slow and hung thresholds is that if the hung threshol
    [3/20/22 16:22:23:662 UTC] 0000007d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0068I: Java dump created: /opt/ibm/wlp/output/defaultServer/javacore.20220320.162223.17.0001.txt
    ```
     1. Thread dumps [will be captured](https://openliberty.io/docs/latest/slow-hung-request-detection.html#_hung_request_detection), one minute apart, after the threshold is breached.
-1. Review the thread dumps using the TMDA tool and see if you can find the captured long-running request.
+1. Detailed steps on analyzing thread dumps are covered in a subsequent lab.
 
 In general, it is a good practice to use `requestTiming`, even in production. Configure the thresholds to values that are at the upper end of acceptable times for the users and the business. Configure and test the `sampleRate` to ensure the overhead of `requestTiming` is acceptable in production.
 

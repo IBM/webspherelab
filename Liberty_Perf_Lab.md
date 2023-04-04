@@ -312,17 +312,17 @@ If you are using Docker Desktop for this lab instead of `podman`:
     \
     <img src="./media/image17.png" width="1008" height="375" />
 
-    1.  If there are any errors, review the WAS logs:
+    1.  If there are any errors, review the logs:
 
         1.  **/logs/messages.log**
 
 ### Stop JMeter
 
-1.  You may stop a JMeter test by clicking the STOP button:
+1.  Stop a JMeter test by clicking the STOP button:
 
     <img src="./media/image18.png" width="1021" height="278" />
 
-2.  You may click the broom button to clear the results in preparation for the next test:
+2.  Click the broom button to clear the results in preparation for the next test:
 
     <img src="./media/image19.png" width="1021" height="278" />
 
@@ -340,7 +340,7 @@ If you would like to view or edit text files in the container using a GUI tool, 
 
 # Request Timing
 
-This lab demonstrates how to enable and use WebSphere Liberty's [slow and hung request detection](https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-slow-hung-request-detection) feature. Note that enabling `requestTiming-1.0` may have a large overhead in high volume environments and ideally its overhead should be measured in a test environment before applying to production; if the overhead is too high, test with request sampling through the [`sampleRate` attribute](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming).
+This lab demonstrates how to enable and use WebSphere Liberty's [slow and hung request detection](https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-slow-hung-request-detection) feature. You can specify a threshold for what the application stakeholders define as an excessively slow web request and Liberty watches requests and prints a stack trace and other details when a request exceeds such a threshold. Note that enabling `requestTiming-1.0` may have a large overhead in high volume environments and ideally its overhead should be measured in a test environment before applying to production; if the overhead is too high, test with request sampling through the [`sampleRate` attribute](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming).
 
 To detect slow and hung requests, the Liberty `requestTiming-1.0` feature is required in a Liberty server's configuration. In addition to enabling the feature, the feature must be configured with a [`requestTiming`](https://www.ibm.com/docs/en/was-liberty/nd?topic=configuration-requesttiming) element that specifies the thresholds and other configuration. This lab will be using the following:
 

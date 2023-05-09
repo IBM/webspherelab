@@ -99,6 +99,7 @@
         1. `podman manifest inspect quay.io/ibm/webspherelab | jq '.manifests[].digest' | tr '\n' ' ' | sed 's/"//g'`
         1. For each digest, run `podman manifest remove $DIGEST quay.io/ibm/webspherelab`
 1. `podman build --platform linux/amd64 --manifest quay.io/ibm/webspherelab:latest .`
+1. `podman build --platform linux/arm64 --manifest quay.io/ibm/webspherelab:latest .`
 1. Double check the manifest:
    ```
    podman manifest inspect quay.io/ibm/webspherelab

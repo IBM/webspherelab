@@ -52,7 +52,6 @@ RUN dnf install -y \
       chromium \
       cmake \
       collectl \
-      dbus-glib.i686 \
       dconf-editor \
       dia \
       dstat \
@@ -97,7 +96,6 @@ RUN dnf install -y \
       kexec-tools \
       less \
       libnsl \
-      libnsl.i686 \
       libreoffice \
       llvm \
       lshw \
@@ -154,7 +152,6 @@ RUN dnf install -y \
       qt \
       R \
       R-devel \
-      redhat-lsb.i686 \
       rsyslog \
       ruby \
       ruby-devel \
@@ -197,6 +194,13 @@ RUN dnf install -y \
       xrdp \
       xreader \
       xz
+
+RUN if [ "$(uname -m)" = "x86_64" ]; then \
+      dnf install -y \
+        dbus-glib.i686 \
+        libnsl.i686 \
+        redhat-lsb.i686; \
+    fi
 
 RUN sudo dnf remove -y xfce4-power-manager && \
     echo "# Install VS Code: https://code.visualstudio.com/docs/setup/linux" && \
@@ -713,29 +717,29 @@ RUN echo "# https://fedoraproject.org/wiki/Alternatives_system" && \
     echo "# Eclipse Memory Analyzer Tool (MAT)" && \
     echo "# https://www.eclipse.org/mat/" && \
     sudo mkdir -p /opt/mat/ibmjava/ && \
-    sudo mkdir -p /opt/mat/openj9/ && \
+    sudo mkdir -p /opt/mat/semeru/ && \
     echo "# Download MAT1" && \
-    sudo wget -q -O /opt/mat/ibmjava/mat.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer.openj9-linux.gtk.x86_64.tar.gz && \
+    sudo wget -q -O /opt/mat/ibmjava/mat-ibmjava.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer.semeru-linux.gtk.$(uname -m).tar.gz && \
     echo "# Download MAT2" && \
-    sudo wget -q -O /opt/mat/openj9/mat-openj9.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer-linux.gtk.x86_64.tar.gz && \
+    sudo wget -q -O /opt/mat/semeru/mat-semeru.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/iema/com.ibm.java.diagnostics.memory.analyzer.MemoryAnalyzer.ibmjava-linux.gtk.$(uname -m).tar.gz && \
     ( \
       cd /opt/mat/ibmjava/ && \
-      sudo tar xzf mat.tar.gz && \
-      sudo rm -f mat.tar.gz && \
-      cd /opt/mat/openj9/ && \
-      sudo tar xzf mat-openj9.tar.gz && \
-      sudo rm -f mat-openj9.tar.gz && \
+      sudo tar xzf mat-ibmjava.tar.gz && \
+      sudo rm -f mat-ibmjava.tar.gz && \
+      cd /opt/mat/semeru/ && \
+      sudo tar xzf mat-semeru.tar.gz && \
+      sudo rm -f mat-semeru.tar.gz && \
       sudo mkdir -p /home/was/mat/ibmjava/ && \
-      sudo mkdir -p /home/was/mat/openj9/ && \
+      sudo mkdir -p /home/was/mat/semeru/ && \
       sudo chown -R was:root /home/was/mat/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=MAT (IBM Java)\nExec=/opt/mat/ibmjava/MemoryAnalyzer -data matibmjavaworkspace -vm /opt/openjdk11_ibm/jdk/bin/\nPath=mat/ibmjava/\nTerminal=false\n' >> /opt/mat/ibmjava/mat.desktop && \
-      sudo chmod a+x /opt/mat/ibmjava/mat.desktop && \
-      sudo ln -s /opt/mat/ibmjava/mat.desktop /opt/programs/ && \
-      sudo ln -s /opt/programs/mat.desktop /home/was/Desktop/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=MAT (IBM Semeru)\nExec=/opt/mat/openj9/MemoryAnalyzer -data matopenj9workspace -vm /opt/openjdk11_ibm/jdk/bin/\nPath=mat/openj9/\nTerminal=false\n' >> /opt/mat/openj9/mat-openj9.desktop && \
-      sudo chmod a+x /opt/mat/openj9/mat-openj9.desktop && \
-      sudo ln -s /opt/mat/openj9/mat-openj9.desktop /opt/programs/ && \
-      sudo ln -s /opt/programs/mat-openj9.desktop /home/was/Desktop/ \
+      sudo printf '[Desktop Entry]\nType=Application\nName=MAT (IBM Java)\nExec=/opt/mat/ibmjava/MemoryAnalyzer -data matibmjavaworkspace -vm /opt/semeru17/jdk/bin/\nPath=mat/ibmjava/\nTerminal=false\n' >> /opt/mat/ibmjava/mat-ibmjava.desktop && \
+      sudo chmod a+x /opt/mat/ibmjava/mat-ibmjava.desktop && \
+      sudo ln -s /opt/mat/ibmjava/mat-ibmjava.desktop /opt/programs/ && \
+      sudo ln -s /opt/programs/mat-ibmjava.desktop /home/was/Desktop/ && \
+      sudo printf '[Desktop Entry]\nType=Application\nName=MAT (IBM Semeru Runtimes)\nExec=/opt/mat/semeru/MemoryAnalyzer -data matsemeruworkspace -vm /opt/semeru17/jdk/bin/\nPath=mat/semeru/\nTerminal=false\n' >> /opt/mat/semeru/mat-semeru.desktop && \
+      sudo chmod a+x /opt/mat/semeru/mat-semeru.desktop && \
+      sudo ln -s /opt/mat/semeru/mat-semeru.desktop /opt/programs/ && \
+      sudo ln -s /opt/programs/mat-semeru.desktop /home/was/Desktop/ \
     ) && \
     sudo mkdir -p /home/was/matibmjavaworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
     sudo chown -R was /home/was/matibmjavaworkspace/ && \
@@ -747,19 +751,19 @@ hide_welcome_screen=true\n\
 ' > /home/was/matibmjavaworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
     sudo cp /home/was/matibmjavaworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs /root/matibmjavaworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
     sudo chown root /home/was/matibmjavaworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
-    sudo mkdir -p /home/was/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
-    sudo chown -R was /home/was/matopenj9workspace/ && \
-    sudo mkdir -p /root/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
+    sudo mkdir -p /home/was/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
+    sudo chown -R was /home/was/matsemeruworkspace/ && \
+    sudo mkdir -p /root/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
     printf 'bytes_display=Smart\n\
 eclipse.preferences.version=1\n\
 hideGettingStartedWizard=false\n\
 hide_welcome_screen=true\n\
-' > /home/was/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
-    sudo cp /home/was/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs /root/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
-    sudo chown root /home/was/matopenj9workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
+' > /home/was/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
+    sudo cp /home/was/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs /root/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/ && \
+    sudo chown root /home/was/matsemeruworkspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mat.ui.prefs && \
     echo "# Increase the default max heap size" && \
     sudo sed -i 's/-Xmx1024m/-Xmx2g/g' /opt/mat/ibmjava/MemoryAnalyzer.ini && \
-    sudo sed -i 's/-Xmx1024m/-Xmx2g/g' /opt/mat/openj9/MemoryAnalyzer.ini && \
+    sudo sed -i 's/-Xmx1024m/-Xmx2g/g' /opt/mat/semeru/MemoryAnalyzer.ini && \
     echo "# IBM Runtime Diagnostic Code Injection for the Java Platform (RDCI or Java Surgery)" && \
     echo "# https://www.ibm.com/support/pages/ibm-runtime-diagnostic-code-injection-java-platform-java-surgery" && \
     ( \
@@ -823,7 +827,7 @@ hide_welcome_screen=true\n\
     echo "# Install Eclipse #" && \
     echo "###################" && \
     echo "# https://www.eclipse.org/downloads/packages/release/2023-03/r/eclipse-ide-enterprise-java-and-web-developers" && \
-    sudo wget -q -O /opt/eclipse.tar.gz "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2023-03/R/eclipse-jee-2023-03-R-linux-gtk-x86_64.tar.gz&r=1" && \
+    sudo wget -q -O /opt/eclipse.tar.gz "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2023-03/R/eclipse-jee-2023-03-R-linux-gtk-$(uname -m).tar.gz&r=1" && \
     ( \
       cd /opt/ && \
       sudo tar xzf eclipse.tar.gz && \
@@ -840,7 +844,7 @@ hide_welcome_screen=true\n\
     echo "# Install GCMV #" && \
     echo "################" && \
     sudo mkdir -p /opt/gcmv/ && \
-    sudo wget -q -O /opt/gcmv/gcmv.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/gcmv/com.ibm.java.diagnostics.visualizer.product-linux.gtk.x86_64.tar.gz && \
+    sudo wget -q -O /opt/gcmv/gcmv.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/gcmv/com.ibm.java.diagnostics.visualizer.product-linux.gtk.$(uname -m).tar.gz && \
     ( \
       cd /opt/gcmv/ && \
       sudo tar xzf gcmv.tar.gz && \
@@ -848,7 +852,7 @@ hide_welcome_screen=true\n\
       sudo sed -i 's/-Xmx.*/-Xmx1g/g' /opt/gcmv/gcmv.ini && \
       sudo mkdir /home/was/gcmv/ && \
       sudo chown -R was:root /home/was/gcmv/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=GCMV\nExec=/opt/gcmv/gcmv -data workspace_gcmv -vm /opt/openjdk11_ibm/jdk/bin/\nPath=gcmv/\nTerminal=false\n' >> /opt/gcmv/gcmv.desktop && \
+      sudo printf '[Desktop Entry]\nType=Application\nName=GCMV\nExec=/opt/gcmv/gcmv -data workspace_gcmv -vm /opt/semeru11/jdk/bin/\nPath=gcmv/\nTerminal=false\n' >> /opt/gcmv/gcmv.desktop && \
       sudo chmod a+x /opt/gcmv/gcmv.desktop && \
       sudo ln -s /opt/gcmv/gcmv.desktop /opt/programs/ && \
       sudo ln -s /opt/programs/gcmv.desktop /home/was/Desktop/ \
@@ -858,7 +862,7 @@ hide_welcome_screen=true\n\
     echo "#########################" && \
     echo "# https://www.ibm.com/support/knowledgecenter/en/SS3KLZ/com.ibm.java.diagnostics.healthcenter.doc/homepage/plugin-homepage-hc.html" && \
     sudo mkdir -p /opt/hc/ && \
-    sudo wget -q -O /opt/hc/hc.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/hc/com.ibm.java.diagnostics.healthcenter.rcp-linux.gtk.x86_64.tar.gz && \
+    sudo wget -q -O /opt/hc/hc.tar.gz https://public.dhe.ibm.com/software/websphere/appserv/support/tools/hc/com.ibm.java.diagnostics.healthcenter.rcp-linux.gtk.$(uname -m).tar.gz && \
     ( \
       cd /opt/hc/ && \
       sudo tar xzf hc.tar.gz && \
@@ -866,7 +870,7 @@ hide_welcome_screen=true\n\
       sudo sed -i 's/-Xmx.*/-Xmx1g/g' /opt/hc/healthcenter.ini && \
       sudo mkdir /home/was/hc/ && \
       sudo chown -R was:root /home/was/hc/ && \
-      sudo printf '[Desktop Entry]\nType=Application\nName=HealthCenter\nExec=/opt/hc/healthcenter -data workspace_hc -vm /opt/openjdk11_ibm/jdk/bin/\nPath=hc/\nTerminal=false\n' >> /opt/hc/hc.desktop && \
+      sudo printf '[Desktop Entry]\nType=Application\nName=HealthCenter\nExec=/opt/hc/healthcenter -data workspace_hc -vm /opt/semeru11/jdk/bin/\nPath=hc/\nTerminal=false\n' >> /opt/hc/hc.desktop && \
       sudo chmod a+x /opt/hc/hc.desktop && \
       sudo ln -s /opt/hc/hc.desktop /opt/programs/ && \
       sudo ln -s /opt/programs/hc.desktop /home/was/Desktop/ \
@@ -926,35 +930,35 @@ RUN echo "#####################" && \
           ) \
         done \
       done && \
-    echo "####################" && \
-    echo "# OpenJDK + Semeru #" && \
-    echo "####################" && \
+    echo "#######################" && \
+    echo "# IBM Semeru Runtimes #" && \
+    echo "#######################" && \
     echo "# https://developer.ibm.com/languages/java/semeru-runtimes/downloads" && \
     echo "# ibm for Open Edition and ibm_ce for Certified Edition" && \
     for v in 8 11 17; do \
         for j in ibm; do \
           ( \
-            sudo mkdir /opt/openjdk${v}_${j}/ && \
-            echo "# Downloading Semeru ${v}_${j}" && \
-            sudo curl --silent --output /opt/openjdk${v}_${j}/semeru.tar.gz -L "https://www.ibm.com/semeru-runtimes/api/v3/binary/latest/${v}/ga/linux/x64/jdk/openj9/normal/${j}" && \
-            cd /opt/openjdk${v}_${j}/ && \
-            sudo tar xzf /opt/openjdk${v}_${j}/semeru.tar.gz && \
-            sudo rm /opt/openjdk${v}_${j}/semeru.tar.gz && \
+            sudo mkdir /opt/semeru${v}/ && \
+            echo "# Downloading Semeru ${v}" && \
+            sudo curl --silent --output /opt/semeru${v}/semeru.tar.gz -L "https://www.ibm.com/semeru-runtimes/api/v3/binary/latest/${v}/ga/linux/x64/jdk/openj9/normal/${j}" && \
+            cd /opt/semeru${v}/ && \
+            sudo tar xzf /opt/semeru${v}/semeru.tar.gz && \
+            sudo rm /opt/semeru${v}/semeru.tar.gz && \
             sudo mv jdk* jdk && \
             sudo alternatives --install \
-                /usr/bin/java java /opt/openjdk${v}_${j}/jdk/bin/java 89999999 \
-                --slave /usr/bin/javac javac /opt/openjdk${v}_${j}/jdk/bin/javac \
-                --slave /usr/bin/jar jar /opt/openjdk${v}_${j}/jdk/bin/jar \
-                --slave /usr/bin/javah javah /opt/openjdk${v}_${j}/jdk/bin/javah \
-                --slave /usr/bin/javap javap /opt/openjdk${v}_${j}/jdk/javap \
-                --slave /usr/bin/javadoc javadoc /opt/openjdk${v}_${j}/jdk/bin/javadoc \
-                --slave /usr/bin/javaws javaws /opt/openjdk${v}_${j}/jdk/bin/javaws \
-                --slave /usr/bin/jconsole jconsole /opt/openjdk${v}_${j}/jdk/bin/jconsole \
-                --slave /usr/bin/jdmpview jdmpview /opt/openjdk${v}_${j}/jdk/bin/jdmpview \
-                --slave /usr/bin/keytool keytool /opt/openjdk${v}_${j}/jdk/bin/keytool \
-                --slave /usr/bin/jdb jdb /opt/openjdk${v}_${j}/jdk/bin/jdb \
-                --slave /usr/bin/ControlPanel ControlPanel /opt/openjdk${v}_${j}/jdk/bin/ControlPanel \
-                --family openjdk && \
+                /usr/bin/java java /opt/semeru${v}/jdk/bin/java 89999999 \
+                --slave /usr/bin/javac javac /opt/semeru${v}/jdk/bin/javac \
+                --slave /usr/bin/jar jar /opt/semeru${v}/jdk/bin/jar \
+                --slave /usr/bin/javah javah /opt/semeru${v}/jdk/bin/javah \
+                --slave /usr/bin/javap javap /opt/semeru${v}/jdk/javap \
+                --slave /usr/bin/javadoc javadoc /opt/semeru${v}/jdk/bin/javadoc \
+                --slave /usr/bin/javaws javaws /opt/semeru${v}/jdk/bin/javaws \
+                --slave /usr/bin/jconsole jconsole /opt/semeru${v}/jdk/bin/jconsole \
+                --slave /usr/bin/jdmpview jdmpview /opt/semeru${v}/jdk/bin/jdmpview \
+                --slave /usr/bin/keytool keytool /opt/semeru${v}/jdk/bin/keytool \
+                --slave /usr/bin/jdb jdb /opt/semeru${v}/jdk/bin/jdb \
+                --slave /usr/bin/ControlPanel ControlPanel /opt/semeru${v}/jdk/bin/ControlPanel \
+                --family semeru && \
             sudo alternatives --auto java \
           ) \
         done \
@@ -963,7 +967,7 @@ RUN echo "#####################" && \
 RUN echo "# https://adoptium.net/jmc" && \
     sudo mkdir /opt/jmc && \
     cd /opt/jmc && \
-    sudo curl --silent --output jmc.tar.gz -L https://github.com/adoptium/jmc-build/releases/download/8.3.0/org.openjdk.jmc-8.3.0-linux.gtk.x86_64.tar.gz && \
+    sudo curl --silent --output jmc.tar.gz -L https://github.com/adoptium/jmc-build/releases/download/8.3.0/org.openjdk.jmc-8.3.0-linux.gtk.$(uname -m).tar.gz && \
     sudo tar xzf jmc.tar.gz && \
     sudo rm jmc.tar.gz && \
     sudo mv JDK\ Mission\ Control/* . && \
@@ -1708,7 +1712,7 @@ LOG_DIR=/opt/ibm/wlp/usr/servers/test/logs/\n\
 WLP_OUTPUT_DIR=/opt/ibm/wlp/usr/servers/\n\
 ' >> /opt/ibm/wlp/usr/servers/test/server.env && \
     sudo sed -i 's/-Xmx2g/-Xmx3g/g' /opt/mat/ibmjava/MemoryAnalyzer.ini && \
-    sudo sed -i 's/-Xmx2g/-Xmx3g/g' /opt/mat/openj9/MemoryAnalyzer.ini && \
+    sudo sed -i 's/-Xmx2g/-Xmx3g/g' /opt/mat/semeru/MemoryAnalyzer.ini && \
     sudo chmod a+x /opt/sibexplorer/sibexplorer.sh && \
     sudo rm /opt/sibexplorer/*.bat && \
     sudo sed -i 's/SWTJARS=.*/SWTJARS=\/opt\/swt\//g' /opt/sibexplorer/env.sh && \
@@ -1791,12 +1795,12 @@ SHELL_X=0\n\
       echo "# SOAP Port: 8880" && \
       sudo mkdir /opt/ptt/ && \
       cd /opt/ptt/ && \
-      sudo wget -q https://public.dhe.ibm.com/software/websphere/appserv/support/tools/ptt/com.ibm.ptt-linux.gtk.x86_64.tar.gz && \
+      sudo wget -q https://public.dhe.ibm.com/software/websphere/appserv/support/tools/ptt/com.ibm.ptt-linux.gtk.$(uname -m).tar.gz && \
       sudo tar xzf *.tar.gz && \
       sudo rm -f *.tar.gz && \
       sudo sed -i 's/-Dcom.ibm.ssl.evaluateHost=true/-Dcom.ibm.ssl.evaluateHost=false/g' /opt/ptt/ptt.ini && \
       printf '#!/bin/sh\n\
-        /opt/ptt/ptt -vm /opt/openjdk11_ibm/jdk/bin/ -debug -consoleLog\n\
+        /opt/ptt/ptt -vm /opt/semeru11/jdk/bin/ -debug -consoleLog\n\
       ' | sudo tee /opt/ptt/ptt.sh && \
       sudo chmod a+x /opt/ptt/ptt.sh && \
       sudo mkdir /home/was/ptt/ && \

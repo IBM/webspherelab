@@ -24,7 +24,37 @@
 # https://hub.docker.com/_/fedora
 FROM docker.io/fedora:latest
 
-LABEL maintainer="kevin.grigorenko@us.ibm.com"
+ARG NAME=webspherelab
+ARG VERSION=0.1.0
+ARG REVISION=0
+ARG AUTHORS=kevin.grigorenko@us.ibm.com
+ARG VENDOR=IBM
+ARG SUMMARY=WebSphere Troubleshooting and Performance Lab
+ARG DESCRIPTION=WebSphere Troubleshooting and Performance Lab
+ARG URL=https://github.com/IBM/webspherelab
+ARG SOURCE=https://github.com/IBM/webspherelab
+# https://spdx.org/licenses/
+ARG LICENSE="Apache-2.0"
+
+# https://github.com/opencontainers/image-spec/blob/main/annotations.md#pre-defined-annotation-keys
+LABEL \
+  org.opencontainers.image.authors="${AUTHORS}" \
+  org.opencontainers.image.vendor="${VENDOR}" \
+  org.opencontainers.image.url="${URL}" \
+  org.opencontainers.image.source="${SOURCE}" \
+  org.opencontainers.image.version="${VERSION}" \
+  org.opencontainers.image.revision="${REVISION}" \
+  vendor="${VENDOR}" \
+  name="${NAME}" \
+  org.opencontainers.image.title="${NAME}" \
+  version="${VERSION}-${REVISION}" \
+  summary="${SUMMARY}" \
+  description="${DESCRIPTION}" \
+  org.opencontainers.image.description="${DESCRIPTION}" \
+  maintainer="${AUTHORS}" \
+  org.opencontainers.image.authors="${AUTHORS}" \
+  org.opencontainers.image.licenses="${LICENSE}" \
+  license="${LICENSE}"
 
 # By default, the Fedora cloud image doesn't install man pages so we disable that and reinstall
 # http://docs.projectatomic.io/container-best-practices/#_removing_documentation

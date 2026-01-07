@@ -1,0 +1,1504 @@
+Execute: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/unix.commands.sh"
+inflated: com/ibm/websphere/rastools/collector/unix.commands.sh
+Execute: "sh" "./com/ibm/websphere/rastools/collector/unix.commands.sh"
+StdErr: + '[' -d OS ']'
++ mkdir OS
++ echo -----------------------------------------------------------
++ echo PATH:
++ tr : '\n'
++ echo /opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin:/opt/IBM/WebSphere/AppServer/java/8.0/bin/:/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin:/opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin:/opt/IBM/WebSphere/AppServer/java/8.0/bin/:/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin:/home/was/.local/bin:/home/was/bin:/opt/IBM/WebSphere/AppServer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ echo -----------------------------------------------------------
++ echo 'Search for commands'
++ LookFor /usr/samples/kernel/vmtune
++ FullPathCmd=/usr/samples/kernel/vmtune
+++ basename /usr/samples/kernel/vmtune
++ Cmd=vmtune
++ Path vmtune
++ Cmd=vmtune
+++ whence vmtune
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin vmtune
++ Cmd=vmtune
++ '[' -x /sbin/vmtune ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin vmtune
++ Cmd=vmtune
++ '[' -x /usr/sbin/vmtune ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo /usr/samples/kernel/vmtune
+++ cut -c 1
++ '[' / = / ']'
++ FullPath /usr/samples/kernel/vmtune
++ PathCmd=/usr/samples/kernel/vmtune
+++ basename /usr/samples/kernel/vmtune
++ Cmd=vmtune
++ '[' -x /usr/samples/kernel/vmtune ']'
++ return 1
++ '[' 1 = 1 ']'
++ printf '%-20s : %-s\n' vmtune '*** Not Found ***'
++ LookFor arp
++ FullPathCmd=arp
+++ basename arp
++ Cmd=arp
++ Path arp
++ Cmd=arp
+++ whence arp
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin arp
++ Cmd=arp
++ '[' -x /sbin/arp ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin arp
++ Cmd=arp
++ '[' -x /usr/sbin/arp ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo arp
+++ cut -c 1
++ '[' / = a ']'
++ printf '%-20s : %-s\n' arp '*** Not Found ***'
++ LookFor bdf
++ FullPathCmd=bdf
+++ basename bdf
++ Cmd=bdf
++ Path bdf
++ Cmd=bdf
+++ whence bdf
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin bdf
++ Cmd=bdf
++ '[' -x /sbin/bdf ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin bdf
++ Cmd=bdf
++ '[' -x /usr/sbin/bdf ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo bdf
+++ cut -c 1
++ '[' / = b ']'
++ printf '%-20s : %-s\n' bdf '*** Not Found ***'
++ LookFor bootinfo
++ FullPathCmd=bootinfo
+++ basename bootinfo
++ Cmd=bootinfo
++ Path bootinfo
++ Cmd=bootinfo
+++ whence bootinfo
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin bootinfo
++ Cmd=bootinfo
++ '[' -x /sbin/bootinfo ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin bootinfo
++ Cmd=bootinfo
++ '[' -x /usr/sbin/bootinfo ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo bootinfo
+++ cut -c 1
++ '[' / = b ']'
++ printf '%-20s : %-s\n' bootinfo '*** Not Found ***'
++ LookFor date
++ FullPathCmd=date
+++ basename date
++ Cmd=date
++ Path date
++ Cmd=date
+++ whence date
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin date
++ Cmd=date
++ '[' -x /sbin/date ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin date
++ Cmd=date
++ '[' -x /usr/sbin/date ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo date
+++ cut -c 1
++ '[' / = d ']'
++ printf '%-20s : %-s\n' date '*** Not Found ***'
++ LookFor df
++ FullPathCmd=df
+++ basename df
++ Cmd=df
++ Path df
++ Cmd=df
+++ whence df
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin df
++ Cmd=df
++ '[' -x /sbin/df ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin df
++ Cmd=df
++ '[' -x /usr/sbin/df ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo df
+++ cut -c 1
++ '[' / = d ']'
++ printf '%-20s : %-s\n' df '*** Not Found ***'
++ LookFor dmesg
++ FullPathCmd=dmesg
+++ basename dmesg
++ Cmd=dmesg
++ Path dmesg
++ Cmd=dmesg
+++ whence dmesg
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin dmesg
++ Cmd=dmesg
++ '[' -x /sbin/dmesg ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin dmesg
++ Cmd=dmesg
++ '[' -x /usr/sbin/dmesg ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo dmesg
+++ cut -c 1
++ '[' / = d ']'
++ printf '%-20s : %-s\n' dmesg '*** Not Found ***'
++ LookFor errpt
++ FullPathCmd=errpt
+++ basename errpt
++ Cmd=errpt
++ Path errpt
++ Cmd=errpt
+++ whence errpt
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin errpt
++ Cmd=errpt
++ '[' -x /sbin/errpt ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin errpt
++ Cmd=errpt
++ '[' -x /usr/sbin/errpt ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo errpt
+++ cut -c 1
++ '[' / = e ']'
++ printf '%-20s : %-s\n' errpt '*** Not Found ***'
++ LookFor free
++ FullPathCmd=free
+++ basename free
++ Cmd=free
++ Path free
++ Cmd=free
+++ whence free
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin free
++ Cmd=free
++ '[' -x /sbin/free ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin free
++ Cmd=free
++ '[' -x /usr/sbin/free ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo free
+++ cut -c 1
++ '[' / = f ']'
++ printf '%-20s : %-s\n' free '*** Not Found ***'
++ LookFor getconf
++ FullPathCmd=getconf
+++ basename getconf
++ Cmd=getconf
++ Path getconf
++ Cmd=getconf
+++ whence getconf
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin getconf
++ Cmd=getconf
++ '[' -x /sbin/getconf ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin getconf
++ Cmd=getconf
++ '[' -x /usr/sbin/getconf ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo getconf
+++ cut -c 1
++ '[' / = g ']'
++ printf '%-20s : %-s\n' getconf '*** Not Found ***'
++ LookFor hostname
++ FullPathCmd=hostname
+++ basename hostname
++ Cmd=hostname
++ Path hostname
++ Cmd=hostname
+++ whence hostname
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin hostname
++ Cmd=hostname
++ '[' -x /sbin/hostname ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin hostname
++ Cmd=hostname
++ '[' -x /usr/sbin/hostname ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo hostname
+++ cut -c 1
++ '[' / = h ']'
++ printf '%-20s : %-s\n' hostname '*** Not Found ***'
++ LookFor id
++ FullPathCmd=id
+++ basename id
++ Cmd=id
++ Path id
++ Cmd=id
+++ whence id
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin id
++ Cmd=id
++ '[' -x /sbin/id ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin id
++ Cmd=id
++ '[' -x /usr/sbin/id ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo id
+++ cut -c 1
++ '[' / = i ']'
++ printf '%-20s : %-s\n' id '*** Not Found ***'
++ LookFor ifconfig
++ FullPathCmd=ifconfig
+++ basename ifconfig
++ Cmd=ifconfig
++ Path ifconfig
++ Cmd=ifconfig
+++ whence ifconfig
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin ifconfig
++ Cmd=ifconfig
++ '[' -x /sbin/ifconfig ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin ifconfig
++ Cmd=ifconfig
++ '[' -x /usr/sbin/ifconfig ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo ifconfig
+++ cut -c 1
++ '[' / = i ']'
++ printf '%-20s : %-s\n' ifconfig '*** Not Found ***'
++ LookFor ioscan
++ FullPathCmd=ioscan
+++ basename ioscan
++ Cmd=ioscan
++ Path ioscan
++ Cmd=ioscan
+++ whence ioscan
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin ioscan
++ Cmd=ioscan
++ '[' -x /sbin/ioscan ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin ioscan
++ Cmd=ioscan
++ '[' -x /usr/sbin/ioscan ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo ioscan
+++ cut -c 1
++ '[' / = i ']'
++ printf '%-20s : %-s\n' ioscan '*** Not Found ***'
++ LookFor iostat
++ FullPathCmd=iostat
+++ basename iostat
++ Cmd=iostat
++ Path iostat
++ Cmd=iostat
+++ whence iostat
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin iostat
++ Cmd=iostat
++ '[' -x /sbin/iostat ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin iostat
++ Cmd=iostat
++ '[' -x /usr/sbin/iostat ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo iostat
+++ cut -c 1
++ '[' / = i ']'
++ printf '%-20s : %-s\n' iostat '*** Not Found ***'
++ LookFor isainfo
++ FullPathCmd=isainfo
+++ basename isainfo
++ Cmd=isainfo
++ Path isainfo
++ Cmd=isainfo
+++ whence isainfo
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin isainfo
++ Cmd=isainfo
++ '[' -x /sbin/isainfo ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin isainfo
++ Cmd=isainfo
++ '[' -x /usr/sbin/isainfo ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo isainfo
+++ cut -c 1
++ '[' / = i ']'
++ printf '%-20s : %-s\n' isainfo '*** Not Found ***'
++ LookFor jar
++ FullPathCmd=jar
+++ basename jar
++ Cmd=jar
++ Path jar
++ Cmd=jar
+++ whence jar
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin jar
++ Cmd=jar
++ '[' -x /sbin/jar ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin jar
++ Cmd=jar
++ '[' -x /usr/sbin/jar ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo jar
+++ cut -c 1
++ '[' / = j ']'
++ printf '%-20s : %-s\n' jar '*** Not Found ***'
++ LookFor java
++ FullPathCmd=java
+++ basename java
++ Cmd=java
++ Path java
++ Cmd=java
+++ whence java
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin java
++ Cmd=java
++ '[' -x /sbin/java ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin java
++ Cmd=java
++ '[' -x /usr/sbin/java ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo java
+++ cut -c 1
++ '[' / = j ']'
++ printf '%-20s : %-s\n' java '*** Not Found ***'
++ LookFor jre
++ FullPathCmd=jre
+++ basename jre
++ Cmd=jre
++ Path jre
++ Cmd=jre
+++ whence jre
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin jre
++ Cmd=jre
++ '[' -x /sbin/jre ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin jre
++ Cmd=jre
++ '[' -x /usr/sbin/jre ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo jre
+++ cut -c 1
++ '[' / = j ']'
++ printf '%-20s : %-s\n' jre '*** Not Found ***'
++ LookFor ksh
++ FullPathCmd=ksh
+++ basename ksh
++ Cmd=ksh
++ Path ksh
++ Cmd=ksh
+++ whence ksh
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin ksh
++ Cmd=ksh
++ '[' -x /sbin/ksh ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin ksh
++ Cmd=ksh
++ '[' -x /usr/sbin/ksh ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo ksh
+++ cut -c 1
++ '[' / = k ']'
++ printf '%-20s : %-s\n' ksh '*** Not Found ***'
++ LookFor lanscan
++ FullPathCmd=lanscan
+++ basename lanscan
++ Cmd=lanscan
++ Path lanscan
++ Cmd=lanscan
+++ whence lanscan
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lanscan
++ Cmd=lanscan
++ '[' -x /sbin/lanscan ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lanscan
++ Cmd=lanscan
++ '[' -x /usr/sbin/lanscan ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lanscan
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lanscan '*** Not Found ***'
++ LookFor lsattr
++ FullPathCmd=lsattr
+++ basename lsattr
++ Cmd=lsattr
++ Path lsattr
++ Cmd=lsattr
+++ whence lsattr
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsattr
++ Cmd=lsattr
++ '[' -x /sbin/lsattr ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsattr
++ Cmd=lsattr
++ '[' -x /usr/sbin/lsattr ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsattr
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsattr '*** Not Found ***'
++ LookFor lscfg
++ FullPathCmd=lscfg
+++ basename lscfg
++ Cmd=lscfg
++ Path lscfg
++ Cmd=lscfg
+++ whence lscfg
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lscfg
++ Cmd=lscfg
++ '[' -x /sbin/lscfg ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lscfg
++ Cmd=lscfg
++ '[' -x /usr/sbin/lscfg ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lscfg
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lscfg '*** Not Found ***'
++ LookFor lsdev
++ FullPathCmd=lsdev
+++ basename lsdev
++ Cmd=lsdev
++ Path lsdev
++ Cmd=lsdev
+++ whence lsdev
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsdev
++ Cmd=lsdev
++ '[' -x /sbin/lsdev ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsdev
++ Cmd=lsdev
++ '[' -x /usr/sbin/lsdev ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsdev
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsdev '*** Not Found ***'
++ LookFor lsfs
++ FullPathCmd=lsfs
+++ basename lsfs
++ Cmd=lsfs
++ Path lsfs
++ Cmd=lsfs
+++ whence lsfs
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsfs
++ Cmd=lsfs
++ '[' -x /sbin/lsfs ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsfs
++ Cmd=lsfs
++ '[' -x /usr/sbin/lsfs ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsfs
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsfs '*** Not Found ***'
++ LookFor lsgroup
++ FullPathCmd=lsgroup
+++ basename lsgroup
++ Cmd=lsgroup
++ Path lsgroup
++ Cmd=lsgroup
+++ whence lsgroup
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsgroup
++ Cmd=lsgroup
++ '[' -x /sbin/lsgroup ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsgroup
++ Cmd=lsgroup
++ '[' -x /usr/sbin/lsgroup ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsgroup
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsgroup '*** Not Found ***'
++ LookFor lslicense
++ FullPathCmd=lslicense
+++ basename lslicense
++ Cmd=lslicense
++ Path lslicense
++ Cmd=lslicense
+++ whence lslicense
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lslicense
++ Cmd=lslicense
++ '[' -x /sbin/lslicense ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lslicense
++ Cmd=lslicense
++ '[' -x /usr/sbin/lslicense ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lslicense
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lslicense '*** Not Found ***'
++ LookFor lsps
++ FullPathCmd=lsps
+++ basename lsps
++ Cmd=lsps
++ Path lsps
++ Cmd=lsps
+++ whence lsps
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsps
++ Cmd=lsps
++ '[' -x /sbin/lsps ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsps
++ Cmd=lsps
++ '[' -x /usr/sbin/lsps ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsps
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsps '*** Not Found ***'
++ LookFor lspv
++ FullPathCmd=lspv
+++ basename lspv
++ Cmd=lspv
++ Path lspv
++ Cmd=lspv
+++ whence lspv
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lspv
++ Cmd=lspv
++ '[' -x /sbin/lspv ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lspv
++ Cmd=lspv
++ '[' -x /usr/sbin/lspv ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lspv
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lspv '*** Not Found ***'
++ LookFor lssrc
++ FullPathCmd=lssrc
+++ basename lssrc
++ Cmd=lssrc
++ Path lssrc
++ Cmd=lssrc
+++ whence lssrc
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lssrc
++ Cmd=lssrc
++ '[' -x /sbin/lssrc ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lssrc
++ Cmd=lssrc
++ '[' -x /usr/sbin/lssrc ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lssrc
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lssrc '*** Not Found ***'
++ LookFor lsuser
++ FullPathCmd=lsuser
+++ basename lsuser
++ Cmd=lsuser
++ Path lsuser
++ Cmd=lsuser
+++ whence lsuser
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsuser
++ Cmd=lsuser
++ '[' -x /sbin/lsuser ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsuser
++ Cmd=lsuser
++ '[' -x /usr/sbin/lsuser ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsuser
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsuser '*** Not Found ***'
++ LookFor lsvg
++ FullPathCmd=lsvg
+++ basename lsvg
++ Cmd=lsvg
++ Path lsvg
++ Cmd=lsvg
+++ whence lsvg
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin lsvg
++ Cmd=lsvg
++ '[' -x /sbin/lsvg ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin lsvg
++ Cmd=lsvg
++ '[' -x /usr/sbin/lsvg ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo lsvg
+++ cut -c 1
++ '[' / = l ']'
++ printf '%-20s : %-s\n' lsvg '*** Not Found ***'
++ LookFor model
++ FullPathCmd=model
+++ basename model
++ Cmd=model
++ Path model
++ Cmd=model
+++ whence model
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin model
++ Cmd=model
++ '[' -x /sbin/model ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin model
++ Cmd=model
++ '[' -x /usr/sbin/model ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo model
+++ cut -c 1
++ '[' / = m ']'
++ printf '%-20s : %-s\n' model '*** Not Found ***'
++ LookFor ndd
++ FullPathCmd=ndd
+++ basename ndd
++ Cmd=ndd
++ Path ndd
++ Cmd=ndd
+++ whence ndd
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin ndd
++ Cmd=ndd
++ '[' -x /sbin/ndd ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin ndd
++ Cmd=ndd
++ '[' -x /usr/sbin/ndd ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo ndd
+++ cut -c 1
++ '[' / = n ']'
++ printf '%-20s : %-s\n' ndd '*** Not Found ***'
++ LookFor netstat
++ FullPathCmd=netstat
+++ basename netstat
++ Cmd=netstat
++ Path netstat
++ Cmd=netstat
+++ whence netstat
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin netstat
++ Cmd=netstat
++ '[' -x /sbin/netstat ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin netstat
++ Cmd=netstat
++ '[' -x /usr/sbin/netstat ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo netstat
+++ cut -c 1
++ '[' / = n ']'
++ printf '%-20s : %-s\n' netstat '*** Not Found ***'
++ LookFor nfsstat
++ FullPathCmd=nfsstat
+++ basename nfsstat
++ Cmd=nfsstat
++ Path nfsstat
++ Cmd=nfsstat
+++ whence nfsstat
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin nfsstat
++ Cmd=nfsstat
++ '[' -x /sbin/nfsstat ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin nfsstat
++ Cmd=nfsstat
++ '[' -x /usr/sbin/nfsstat ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo nfsstat
+++ cut -c 1
++ '[' / = n ']'
++ printf '%-20s : %-s\n' nfsstat '*** Not Found ***'
++ LookFor no
++ FullPathCmd=no
+++ basename no
++ Cmd=no
++ Path no
++ Cmd=no
+++ whence no
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin no
++ Cmd=no
++ '[' -x /sbin/no ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin no
++ Cmd=no
++ '[' -x /usr/sbin/no ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo no
+++ cut -c 1
++ '[' / = n ']'
++ printf '%-20s : %-s\n' no '*** Not Found ***'
++ LookFor nslookup
++ FullPathCmd=nslookup
+++ basename nslookup
++ Cmd=nslookup
++ Path nslookup
++ Cmd=nslookup
+++ whence nslookup
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin nslookup
++ Cmd=nslookup
++ '[' -x /sbin/nslookup ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin nslookup
++ Cmd=nslookup
++ '[' -x /usr/sbin/nslookup ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo nslookup
+++ cut -c 1
++ '[' / = n ']'
++ printf '%-20s : %-s\n' nslookup '*** Not Found ***'
++ LookFor patchadd
++ FullPathCmd=patchadd
+++ basename patchadd
++ Cmd=patchadd
++ Path patchadd
++ Cmd=patchadd
+++ whence patchadd
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin patchadd
++ Cmd=patchadd
++ '[' -x /sbin/patchadd ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin patchadd
++ Cmd=patchadd
++ '[' -x /usr/sbin/patchadd ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo patchadd
+++ cut -c 1
++ '[' / = p ']'
++ printf '%-20s : %-s\n' patchadd '*** Not Found ***'
++ LookFor prtconf
++ FullPathCmd=prtconf
+++ basename prtconf
++ Cmd=prtconf
++ Path prtconf
++ Cmd=prtconf
+++ whence prtconf
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin prtconf
++ Cmd=prtconf
++ '[' -x /sbin/prtconf ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin prtconf
++ Cmd=prtconf
++ '[' -x /usr/sbin/prtconf ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo prtconf
+++ cut -c 1
++ '[' / = p ']'
++ printf '%-20s : %-s\n' prtconf '*** Not Found ***'
++ LookFor psrinfo
++ FullPathCmd=psrinfo
+++ basename psrinfo
++ Cmd=psrinfo
++ Path psrinfo
++ Cmd=psrinfo
+++ whence psrinfo
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin psrinfo
++ Cmd=psrinfo
++ '[' -x /sbin/psrinfo ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin psrinfo
++ Cmd=psrinfo
++ '[' -x /usr/sbin/psrinfo ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo psrinfo
+++ cut -c 1
++ '[' / = p ']'
++ printf '%-20s : %-s\n' psrinfo '*** Not Found ***'
++ LookFor runlevel
++ FullPathCmd=runlevel
+++ basename runlevel
++ Cmd=runlevel
++ Path runlevel
++ Cmd=runlevel
+++ whence runlevel
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin runlevel
++ Cmd=runlevel
++ '[' -x /sbin/runlevel ']'
++ printf '%-20s : %-9s : %s\n' runlevel sbin /sbin/runlevel
++ LSL runlevel /sbin/runlevel
++ Cmd=runlevel
++ PATHcmd=/sbin/runlevel
+++ ls -l /sbin/runlevel
++ lsl='lrwxrwxrwx. 1 root root 16 Oct  2 12:06 /sbin/runlevel -> ../bin/systemctl'
+++ ls -lL /sbin/runlevel
++ lslL='-rwxr-xr-x. 1 root root 223688 Oct  2 12:06 /sbin/runlevel'
++ printf '%-20s : %-9s : %s\n' runlevel 'ls -l' 'lrwxrwxrwx. 1 root root 16 Oct  2 12:06 /sbin/runlevel -> ../bin/systemctl'
++ '[' 'lrwxrwxrwx. 1 root root 16 Oct  2 12:06 /sbin/runlevel -> ../bin/systemctl' '!=' '-rwxr-xr-x. 1 root root 223688 Oct  2 12:06 /sbin/runlevel' ']'
++ printf '%-20s : %-9s : %s\n' runlevel 'ls -lL' '-rwxr-xr-x. 1 root root 223688 Oct  2 12:06 /sbin/runlevel'
++ return 0
++ '[' 1 = 0 ']'
++ LookFor sh
++ FullPathCmd=sh
+++ basename sh
++ Cmd=sh
++ Path sh
++ Cmd=sh
+++ whence sh
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin sh
++ Cmd=sh
++ '[' -x /sbin/sh ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin sh
++ Cmd=sh
++ '[' -x /usr/sbin/sh ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo sh
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' sh '*** Not Found ***'
++ LookFor showmount
++ FullPathCmd=showmount
+++ basename showmount
++ Cmd=showmount
++ Path showmount
++ Cmd=showmount
+++ whence showmount
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin showmount
++ Cmd=showmount
++ '[' -x /sbin/showmount ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin showmount
++ Cmd=showmount
++ '[' -x /usr/sbin/showmount ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo showmount
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' showmount '*** Not Found ***'
++ LookFor showrev
++ FullPathCmd=showrev
+++ basename showrev
++ Cmd=showrev
++ Path showrev
++ Cmd=showrev
+++ whence showrev
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin showrev
++ Cmd=showrev
++ '[' -x /sbin/showrev ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin showrev
++ Cmd=showrev
++ '[' -x /usr/sbin/showrev ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo showrev
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' showrev '*** Not Found ***'
++ LookFor swap
++ FullPathCmd=swap
+++ basename swap
++ Cmd=swap
++ Path swap
++ Cmd=swap
+++ whence swap
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin swap
++ Cmd=swap
++ '[' -x /sbin/swap ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin swap
++ Cmd=swap
++ '[' -x /usr/sbin/swap ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo swap
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' swap '*** Not Found ***'
++ LookFor swapinfo
++ FullPathCmd=swapinfo
+++ basename swapinfo
++ Cmd=swapinfo
++ Path swapinfo
++ Cmd=swapinfo
+++ whence swapinfo
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin swapinfo
++ Cmd=swapinfo
++ '[' -x /sbin/swapinfo ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin swapinfo
++ Cmd=swapinfo
++ '[' -x /usr/sbin/swapinfo ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo swapinfo
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' swapinfo '*** Not Found ***'
++ LookFor swlist
++ FullPathCmd=swlist
+++ basename swlist
++ Cmd=swlist
++ Path swlist
++ Cmd=swlist
+++ whence swlist
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin swlist
++ Cmd=swlist
++ '[' -x /sbin/swlist ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin swlist
++ Cmd=swlist
++ '[' -x /usr/sbin/swlist ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo swlist
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' swlist '*** Not Found ***'
++ LookFor sysdef
++ FullPathCmd=sysdef
+++ basename sysdef
++ Cmd=sysdef
++ Path sysdef
++ Cmd=sysdef
+++ whence sysdef
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin sysdef
++ Cmd=sysdef
++ '[' -x /sbin/sysdef ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin sysdef
++ Cmd=sysdef
++ '[' -x /usr/sbin/sysdef ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo sysdef
+++ cut -c 1
++ '[' / = s ']'
++ printf '%-20s : %-s\n' sysdef '*** Not Found ***'
++ LookFor top
++ FullPathCmd=top
+++ basename top
++ Cmd=top
++ Path top
++ Cmd=top
+++ whence top
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin top
++ Cmd=top
++ '[' -x /sbin/top ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin top
++ Cmd=top
++ '[' -x /usr/sbin/top ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo top
+++ cut -c 1
++ '[' / = t ']'
++ printf '%-20s : %-s\n' top '*** Not Found ***'
++ LookFor type
++ FullPathCmd=type
+++ basename type
++ Cmd=type
++ Path type
++ Cmd=type
+++ whence type
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin type
++ Cmd=type
++ '[' -x /sbin/type ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin type
++ Cmd=type
++ '[' -x /usr/sbin/type ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo type
+++ cut -c 1
++ '[' / = t ']'
++ printf '%-20s : %-s\n' type '*** Not Found ***'
++ LookFor ulimit
++ FullPathCmd=ulimit
+++ basename ulimit
++ Cmd=ulimit
++ Path ulimit
++ Cmd=ulimit
+++ whence ulimit
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin ulimit
++ Cmd=ulimit
++ '[' -x /sbin/ulimit ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin ulimit
++ Cmd=ulimit
++ '[' -x /usr/sbin/ulimit ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo ulimit
+++ cut -c 1
++ '[' / = u ']'
++ printf '%-20s : %-s\n' ulimit '*** Not Found ***'
++ LookFor uname
++ FullPathCmd=uname
+++ basename uname
++ Cmd=uname
++ Path uname
++ Cmd=uname
+++ whence uname
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin uname
++ Cmd=uname
++ '[' -x /sbin/uname ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin uname
++ Cmd=uname
++ '[' -x /usr/sbin/uname ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo uname
+++ cut -c 1
++ '[' / = u ']'
++ printf '%-20s : %-s\n' uname '*** Not Found ***'
++ LookFor vmstat
++ FullPathCmd=vmstat
+++ basename vmstat
++ Cmd=vmstat
++ Path vmstat
++ Cmd=vmstat
+++ whence vmstat
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin vmstat
++ Cmd=vmstat
++ '[' -x /sbin/vmstat ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin vmstat
++ Cmd=vmstat
++ '[' -x /usr/sbin/vmstat ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo vmstat
+++ cut -c 1
++ '[' / = v ']'
++ printf '%-20s : %-s\n' vmstat '*** Not Found ***'
++ LookFor whence
++ FullPathCmd=whence
+++ basename whence
++ Cmd=whence
++ Path whence
++ Cmd=whence
+++ whence whence
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin whence
++ Cmd=whence
++ '[' -x /sbin/whence ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin whence
++ Cmd=whence
++ '[' -x /usr/sbin/whence ']'
++ return 1
++ '[' 1 = 1 ']'
+++ cut -c 1
+++ echo whence
++ '[' / = w ']'
++ printf '%-20s : %-s\n' whence '*** Not Found ***'
++ LookFor which
++ FullPathCmd=which
+++ basename which
++ Cmd=which
++ Path which
++ Cmd=which
+++ whence which
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin which
++ Cmd=which
++ '[' -x /sbin/which ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin which
++ Cmd=which
++ '[' -x /usr/sbin/which ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo which
+++ cut -c 1
++ '[' / = w ']'
++ printf '%-20s : %-s\n' which '*** Not Found ***'
++ LookFor who
++ FullPathCmd=who
+++ basename who
++ Cmd=who
++ Path who
++ Cmd=who
+++ whence who
+./com/ibm/websphere/rastools/collector/unix.commands.sh: line 28: whence: command not found
++ PATHcmd=
++ '[' 0 = 127 ']'
++ return 1
++ '[' 1 = 1 ']'
++ Sbin who
++ Cmd=who
++ '[' -x /sbin/who ']'
++ return 1
++ '[' 1 = 1 ']'
++ UsrSbin who
++ Cmd=who
++ '[' -x /usr/sbin/who ']'
++ return 1
++ '[' 1 = 1 ']'
+++ echo who
+++ cut -c 1
++ '[' / = w ']'
++ printf '%-20s : %-s\n' who '*** Not Found ***'
++ echo -----------------------------------------------------------
+Execute: "rm" "com/ibm/websphere/rastools/collector/unix.commands.sh"

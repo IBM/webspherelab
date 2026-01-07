@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product SYSTEM "product.dtd">
+<product name="IBM WebSphere Application Server">
+  <id>BASE</id>
+  <version>9.0.5.26</version>
+  <build-info
+    date="11/14/25"
+    level="f5262545.03"/>
+</product>

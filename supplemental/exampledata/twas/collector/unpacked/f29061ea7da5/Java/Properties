@@ -1,0 +1,150 @@
+                   java.vendor = IBM Corporation
+             sun.java.launcher = SUN_STANDARD
+                       os.name = Linux
+           sun.boot.class.path = /opt/IBM/WebSphere/AppServer/endorsed_apis/jaxw
+                                 s-api.jar:/opt/IBM/WebSphere/AppServer/endorsed
+                                 _apis/jaxb-api.jar:/opt/IBM/WebSphere/AppServer
+                                 /endorsed_apis/javax.j2ee.annotation.jar:/opt/I
+                                 BM/WebSphere/AppServer/java/8.0/jre/lib/amd64/c
+                                 ompressedrefs/jclSC180/vm.jar:/opt/IBM/WebSpher
+                                 e/AppServer/java/8.0/jre/lib/se-service.jar:/op
+                                 t/IBM/WebSphere/AppServer/java/8.0/jre/lib/math
+                                 .jar:/opt/IBM/WebSphere/AppServer/java/8.0/jre/
+                                 lib/ibmorb.jar:/opt/IBM/WebSphere/AppServer/jav
+                                 a/8.0/jre/lib/ibmorbapi.jar:/opt/IBM/WebSphere/
+                                 AppServer/java/8.0/jre/lib/ibmcfw.jar:/opt/IBM/
+                                 WebSphere/AppServer/java/8.0/jre/lib/ibmpkcs.ja
+                                 r:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib
+                                 /ibmcertpathfw.jar:/opt/IBM/WebSphere/AppServer
+                                 /java/8.0/jre/lib/ibmjgssfw.jar:/opt/IBM/WebSph
+                                 ere/AppServer/java/8.0/jre/lib/ibmjssefw.jar:/o
+                                 pt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ibm
+                                 saslfw.jar:/opt/IBM/WebSphere/AppServer/java/8.
+                                 0/jre/lib/ibmjcefw.jar:/opt/IBM/WebSphere/AppSe
+                                 rver/java/8.0/jre/lib/ibmjgssprovider.jar:/opt/
+                                 IBM/WebSphere/AppServer/java/8.0/jre/lib/ibmjss
+                                 eprovider2.jar:/opt/IBM/WebSphere/AppServer/jav
+                                 a/8.0/jre/lib/ibmcertpathprovider.jar:/opt/IBM/
+                                 WebSphere/AppServer/java/8.0/jre/lib/xmldsigfw.
+                                 jar:/opt/IBM/WebSphere/AppServer/java/8.0/jre/l
+                                 ib/xml.jar:/opt/IBM/WebSphere/AppServer/java/8.
+                                 0/jre/lib/charsets.jar:/opt/IBM/WebSphere/AppSe
+                                 rver/java/8.0/jre/lib/resources.jar:/opt/IBM/We
+                                 bSphere/AppServer/java/8.0/jre/lib/rt.jar:/opt/
+                                 IBM/WebSphere/AppServer/java/8.0/jre/lib/dataac
+                                 cess.jar
+  java.vm.specification.vendor = Oracle Corporation
+          java.runtime.version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55)
+                     user.name = was
+                 java.compiler = j9jit29
+              was.install.root = /opt/IBM/WebSphere/AppServer
+                   os.encoding = UTF-8
+                 user.language = en
+com.ibm.oti.vm.bootstrap.library.path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/a
+                                 md64/compressedrefs:/opt/IBM/WebSphere/AppServe
+                                 r/java/8.0/jre/lib/amd64
+         sun.boot.library.path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/a
+                                 md64/compressedrefs:/opt/IBM/WebSphere/AppServe
+                                 r/java/8.0/jre/lib/amd64
+                  java.version = 1.8.0_471
+     java.util.logging.manager = com.ibm.ws.bootstrap.WsLogManager
+                 user.timezone = UTC
+     com.ibm.system.agent.path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/a
+                                 md64
+           sun.arch.data.model = 64
+          com.ibm.zero.version = 2
+            java.endorsed.dirs = /opt/IBM/WebSphere/AppServer/endorsed_apis:/opt
+                                 /IBM/WebSphere/AppServer/java/8.0/jre/lib/endor
+                                 sed
+com.ibm.oti.vm.library.version = 29
+              sun.jnu.encoding = UTF-8
+             file.encoding.pkg = sun.io
+                file.separator = /
+       java.specification.name = Java Platform API Specification
+            java.class.version = 52.0
+                  user.country = US
+                     java.home = /opt/IBM/WebSphere/AppServer/java/8.0/jre
+                  java.vm.info = JRE 1.8.0 Linux amd64-64-Bit Compressed Referen
+                                 ces 20250916_102651 (JIT enabled, AOT enabled)
+
+                                 OpenJ9   - 404c8144a62
+OMR      - 41bf6208d
+IBM
+                                       - 8e661b7
+                    os.version = 6.17.7-300.fc43.aarch64
+                path.separator = :
+               java.vm.version = 2.9
+             com.ibm.fips.mode = 140-2
+           java.awt.printerjob = sun.print.PSPrinterJob
+       sun.io.unicode.encoding = UnicodeLittle
+java.specification.maintenance.version = 6
+                   awt.toolkit = sun.awt.X11.XToolkit
+java.lang.stringBuffer.growAggressively = false
+     ibm.signalhandling.sigint = true
+                     user.home = /home/was
+            com.ibm.cpu.endian = little
+     java.specification.vendor = Oracle Corporation
+   ibm.signalhandling.sigchain = true
+             java.library.path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/a
+                                 md64/compressedrefs:/opt/IBM/WebSphere/AppServe
+                                 r/java/8.0/jre/lib/amd64:/usr/lib64:/usr/lib
+               java.vendor.url = http://www.ibm.com
+                java.vm.vendor = IBM Corporation
+              java.fullversion = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55)
+                                 
+JRE 1.8.0 Linux amd64-64-Bit Compressed Refere
+                                 nces 20250916_102651 (JIT enabled, AOT enabled)
+                                 
+OpenJ9   - 404c8144a62
+OMR      - 41bf6208d
+IB
+                                 M      - 8e661b7
+             java.runtime.name = Java(TM) SE Runtime Environment
+              sun.java.command = com.ibm.ws.bootstrap.WSLauncher com.ibm.websphe
+                                 re.rastools.collector.Collector -InstallRoot /o
+                                 pt/IBM/WebSphere/AppServer -JavaHome /opt/IBM/W
+                                 ebSphere/AppServer/java/8.0 -ConfigRoot /opt/IB
+                                 M/WebSphere/AppServer/profiles/AppSrv01/config 
+                                 -WasNode DefaultNode01 -CellName DefaultCell01 
+                                 -ProfileRoot /opt/IBM/WebSphere/AppServer/profi
+                                 les/AppSrv01
+               java.class.path = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/
+                                 properties:/opt/IBM/WebSphere/AppServer/propert
+                                 ies:/opt/IBM/WebSphere/AppServer/lib/startup.ja
+                                 r:/opt/IBM/WebSphere/AppServer/lib/bootstrap.ja
+                                 r:/opt/IBM/WebSphere/AppServer/java/8.0/lib/too
+                                 ls.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy
+                                 .jar:/opt/IBM/WebSphere/AppServer/lib/urlprotoc
+                                 ols.jar
+                   ws.ext.dirs = /opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/
+                                 IBM/WebSphere/AppServer/classes:/opt/IBM/WebSph
+                                 ere/AppServer/lib:/opt/IBM/WebSphere/AppServer/
+                                 installedChannels:/opt/IBM/WebSphere/AppServer/
+                                 lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/
+                                 opt/IBM/WebSphere/AppServer/deploytool/itp/plug
+                                 ins/com.ibm.etools.ejbdeploy/runtime
+    java.vm.specification.name = Java Virtual Machine Specification
+         sun.java.launcher.pid = 914
+ java.vm.specification.version = 1.8
+java.util.logging.configureByServer = true
+                sun.cpu.endian = little
+             user.install.root = /opt/IBM/WebSphere/AppServer
+                java.io.tmpdir = /tmp
+           ibm.system.encoding = UTF-8
+                       os.arch = amd64
+          java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+         ibm.signalhandling.rs = false
+                 java.ext.dirs = /opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/W
+                                 ebSphere/AppServer/java/8.0/lib/ext:/opt/IBM/We
+                                 bSphere/AppServer/java/8.0/jre/lib/ext:/opt/IBM
+                                 /WebSphere/AppServer/java/8.0/jre/fips140-2/lib
+                                 /ext
+                      user.dir = /tmp
+                line.separator =   x'0A'
+                  java.vm.name = IBM J9 VM
+    com.ibm.oti.shared.enabled = false
+            com.ibm.vm.bitmode = 64
+             com.ibm.fips.home = /opt/IBM/WebSphere/AppServer/java/8.0/jre
+                 file.encoding = UTF-8
+     com.ibm.oti.configuration = scar
+    java.specification.version = 1.8

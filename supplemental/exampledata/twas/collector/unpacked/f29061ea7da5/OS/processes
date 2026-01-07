@@ -1,0 +1,17 @@
+Execute: "top" "-b" "-n" "1"
+top - 15:50:07 up  1:24,  0 users,  load average: 0.59, 0.56, 0.35
+Tasks:   9 total,   1 running,   8 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  1.5 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   9908.6 total,   4971.9 free,    895.7 used,   4041.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   8805.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    658 was       20   0 5651844 394232 110328 S   6.2   3.9   0:32.41 java
+      1 was       20   0  318144   5144   2660 S   0.0   0.1   0:00.15 start_s+
+    768 was       20   0  329008   3844   2468 S   0.0   0.0   0:00.02 tail
+    769 was       20   0  329008   3796   2424 S   0.0   0.0   0:00.01 tail
+    864 was       20   0  325956   7392   3272 S   0.0   0.1   0:00.07 bash
+    895 was       20   0  325448   5616   2992 S   0.0   0.1   0:00.04 collect+
+    914 was       20   0 3527832 192648  25380 S   0.0   1.9   0:07.60 java
+   1658 was       20   0  328996   3896   2596 S   0.0   0.0   0:00.01 sleep
+   1676 was       20   0  362344   6624   4100 R   0.0   0.1   0:00.02 top

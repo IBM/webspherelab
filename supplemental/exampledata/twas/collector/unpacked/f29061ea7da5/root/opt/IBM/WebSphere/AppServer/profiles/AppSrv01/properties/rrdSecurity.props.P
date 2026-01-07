@@ -1,0 +1,10 @@
+#Enable propagation of LTPA tokens
+LTPAPropagation=True
+
+#Custom security tokens can be passed as attributes of the LTPA token
+#Enable SecurityAttributePropgationEnabled to pass these attributes
+SecurityAttributePropagation=False
+
+#Require the endpoint to use https scheme
+SSLRequired=True
+

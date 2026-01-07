@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841780</millis>
+  <sequence>6</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.Launcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.Launcher</class>
+  <method>fillInCommandLineArguments</method>
+  <thread>1</thread>
+  <message>Incoming arguments are: -WS_CMT_ACTION_REGISTRY, /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/deltaActionRegistry.xml, -WS_CMT_EXTENSION, com.ibm.ws.postinstall.cmext.ConfigManagerExtension, -WS_PI_ACTION_REGISTRY_EXTENSION, /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/registryExtension.xml, -actionTarget, install, -profilePath, /opt/IBM/WebSphere/AppServer/profiles/AppSrv01, -WS_CMT_CONF_DIR, /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service, -permissionsProcessing, true, -NO_CACHE_CREATE, TRUE, -WS_PI_REGISTRY_EXTENSION, /opt/IBM/WebSphere/AppServer/properties/postinstall/registryExtension.xml</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841783</millis>
+  <sequence>7</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.PlatformConstants</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.PlatformConstants</class>
+  <method>getCurrentPlatform</method>
+  <thread>1</thread>
+  <message>Current platform was detected as Linux</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841784</millis>
+  <sequence>8</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of WS_CMT_EXTRINSICS could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841784</millis>
+  <sequence>9</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: WS_CMT_EXTRINSICS, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841784</millis>
+  <sequence>10</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of WS_CMT_EXTENSION_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841784</millis>
+  <sequence>11</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: WS_CMT_EXTENSION_LIB, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>12</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of omitAction could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>13</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: omitAction, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>14</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of omitAction1 could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>15</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: omitAction1, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>16</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of PRE_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841793</millis>
+  <sequence>17</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: PRE_IJC_LIB, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>18</sequence>
+  <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+  <method>getAllFilesInThisDirectory</method>
+  <thread>1</thread>
+  <message>/opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/lib is not a directory, returning an empty list</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>19</sequence>
+  <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+  <method>getAllFilesInThisDirectoryMatchingThisPatternIgnoreCase</method>
+  <thread>1</thread>
+  <message>List of files in /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/lib matching the pattern ^.*\.jar$ is: {  }</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>20</sequence>
+  <logger>com.ibm.ws.install.configmanager.utils.ClassPathModifier</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.utils.ClassPathModifier</class>
+  <method>addAllJARsInDirectoryToClassPath</method>
+  <thread>1</thread>
+  <message>ListJAR files in found in /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/lib is: {  }</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>21</sequence>
+  <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+  <method>getEnvironmentVariableValue</method>
+  <thread>1</thread>
+  <message>Value of POST_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>22</sequence>
+  <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+  <method>getArgumentValue</method>
+  <thread>1</thread>
+  <message>Could not resolve this argument: POST_IJC_LIB, returning null</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841795</millis>
+  <sequence>23</sequence>
+  <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+  <method>executeActions</method>
+  <thread>1</thread>
+  <message>List of all actions found in the repository: [com.ibm.ws.install.configmanager.actionengine.ConfigAction-/opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant]</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841797</millis>
+  <sequence>24</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>preprocessing</method>
+  <thread>1</thread>
+  <message>WAS_HOME =  /opt/IBM/WebSphere/AppServer</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841799</millis>
+  <sequence>25</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>preprocessing</method>
+  <thread>1</thread>
+  <message>Candidate actions (in order) for install processing: detectNewProducts.ant</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>26</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>preprocessing config action /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>27</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>profileUpdate attribute =  true</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>28</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>alwaysExecute attribute =  true</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>29</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>altersFile attribute =  </message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>30</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>action target =  install</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>31</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>permissionsProcessing =  true</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841800</millis>
+  <sequence>32</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>profilePath =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841828</millis>
+  <sequence>33</sequence>
+  <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+  <method>configurationActionPreprocessor</method>
+  <thread>1</thread>
+  <message>management workspace =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/workspace</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841853</millis>
+  <sequence>34</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ANTAction</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ANTAction</class>
+  <method>executeAction</method>
+  <thread>1</thread>
+  <message>Using an InProcess ANT call to execute this action: /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841859</millis>
+  <sequence>35</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.InProcessAntRunner</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.InProcessAntRunner</class>
+  <method>logOutputMessage</method>
+  <thread>1</thread>
+  <message>Buildfile: /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:21</date>
+  <millis>1767800841870</millis>
+  <sequence>36</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>buildStarted</method>
+  <thread>1</thread>
+  <message>Build started.</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842067</millis>
+  <sequence>37</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetStarted</method>
+  <thread>1</thread>
+  <message>Target started for: checkInstalledProducts</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842186</millis>
+  <sequence>38</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetStarted</method>
+  <thread>1</thread>
+  <message>Target started for: deleteNewFile</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842191</millis>
+  <sequence>39</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>messageLogged</method>
+  <thread>1</thread>
+  <message>No new offerings, features or iFixes</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842204</millis>
+  <sequence>40</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>messageLogged</method>
+  <thread>1</thread>
+  <message>Deleting: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/newInstalledProducts.xml</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842206</millis>
+  <sequence>41</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>messageLogged</method>
+  <thread>1</thread>
+  <message>Deleting: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/runPostActions.flag</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842206</millis>
+  <sequence>42</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetFinished</method>
+  <thread>1</thread>
+  <message>Target stopped for: deleteNewFile - SUCCESS</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>43</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetStarted</method>
+  <thread>1</thread>
+  <message>Target started for: updateInstalledProductsXML</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>44</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetFinished</method>
+  <thread>1</thread>
+  <message>Target stopped for: updateInstalledProductsXML - SUCCESS</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>45</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetFinished</method>
+  <thread>1</thread>
+  <message>Target stopped for: checkInstalledProducts - SUCCESS</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>46</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetStarted</method>
+  <thread>1</thread>
+  <message>Target started for: install</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>47</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>targetFinished</method>
+  <thread>1</thread>
+  <message>Target stopped for: install - SUCCESS</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842211</millis>
+  <sequence>48</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+  <method>buildFinished</method>
+  <thread>1</thread>
+  <message>Build stopped - SUCCESS</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842212</millis>
+  <sequence>49</sequence>
+  <logger>com.ibm.ws.install.configmanager.actionengine.ANTAction</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.actionengine.ANTAction</class>
+  <method>executeAction</method>
+  <thread>1</thread>
+  <message>Result of executing /opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant was: true</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842235</millis>
+  <sequence>50</sequence>
+  <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+  <method>executeAllActionsFound</method>
+  <thread>1</thread>
+  <message>Configuration action succeeded: com.ibm.ws.install.configmanager.actionengine.ConfigAction-/opt/IBM/WebSphere/AppServer/properties/service/productDir/PreConfigActions/service/actions/detectNewProducts.ant</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842235</millis>
+  <sequence>51</sequence>
+  <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+  <method>launch</method>
+  <thread>1</thread>
+  <message>No errors were encountered while executing the repository actions</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:22</date>
+  <millis>1767800842236</millis>
+  <sequence>52</sequence>
+  <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+  <method>launch</method>
+  <thread>1</thread>
+  <message>Returning with return code: INSTCONFSUCCESS</message>
+</record>
+</log>

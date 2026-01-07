@@ -1,0 +1,4 @@
+
+Attempting to destroy all caches in cacheDir /tmp/javasharedresources/
+
+JVMSHRC806I Compressed references persistent shared cache "sharedcc_was" has been destroyed. Use option -Xnocompressedrefs if you want to destroy a non-compressed references cache.

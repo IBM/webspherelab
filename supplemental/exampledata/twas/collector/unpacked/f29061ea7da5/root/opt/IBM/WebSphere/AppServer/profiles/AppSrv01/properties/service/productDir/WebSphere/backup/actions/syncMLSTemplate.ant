@@ -1,0 +1,42 @@
+<project name="syncMLSTemplate" default="install" basedir=".">
+
+	<taskdef name="wscmtlog"
+        classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+	<target name="uninstall">
+	</target>
+
+	<!-- ========================================================== -->
+	<target name="install" description="sync missing server template files" depends="init,shouldSync,syncFolder">
+	</target>
+	<target name="init">
+		<loadproperties srcFile="${profilePath}/properties/profileKey.metadata"/>
+		<wscmtlog> serverType = ${com.ibm.ws.profile.type}</wscmtlog>
+		<echo message="serverType = ${com.ibm.ws.profile.type}" />
+		<property name="srcDir" value="${WAS_HOME}/profileTemplates/management/documents/config/templates/servertypes" />
+		<property name="folder" value="MANAGED_LIBERTY_SERVER" />
+		<property name="targetDir" value="${profilePath}/config/templates/servertypes" />
+		<condition property="isDmgr" value="true">
+			<equals arg1="${com.ibm.ws.profile.type}" arg2="DEPLOYMENT_MANAGER"/>
+		</condition>
+		<wscmtlog message="isDmgr=${isDmgr}"/>
+		<echo message="isDmgr = ${isDmgr}" />
+		<echo message="WAS_HOME = ${WAS_HOME}" />
+		<echo message="profilePath = ${profilePath}" />
+		<echo message="targetDir = ${targetDir}" />
+	</target>
+
+	<target name="shouldSync">
+		<condition property="shouldSync">
+			<and>
+				<istrue value="${isDmgr}"/>
+			</and>
+		</condition>
+	</target>
+	<target name="syncFolder" if="shouldSync" >
+		<sync todir="${targetDir}/MANAGED_LIBERTY_SERVER" overwrite="true">
+  			<fileset dir="${srcDir}/MANAGED_LIBERTY_SERVER"/>
+		</sync>
+	</target>
+
+</project>

@@ -1,0 +1,13 @@
+<bundles>
+   <directory path="plugins"> 
+      <bundle>com.ibm.ws.jaxrs20.jar</bundle>
+      <bundle>com.ibm.ws.prereq.jaxrs20.jar</bundle>
+      <bundle>javax.ws.rs-api-2.0.jar</bundle>
+   </directory>
+   <directory path="plugins">
+     <exclude-bundle>selectableBundles/jaxrs/com.ibm.ws.jaxrs.jar</exclude-bundle>
+     <exclude-bundle>selectableBundles/jaxrs/com.ibm.ws.prereq.jaxrs.jar</exclude-bundle>
+     <exclude-bundle>selectableBundles/jaxrs/javax.j2ee.jaxrs.jar</exclude-bundle >
+   </directory>
+</bundles>
+

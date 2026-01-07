@@ -1,0 +1,4446 @@
+Execute: "rpm" "-qai"
+Name        : gpg-pubkey
+Version     : fd431d51
+Release     : 4ae0493b
+Architecture: (none)
+Install Date: Thu Dec 18 20:59:22 2025
+Group       : Public Keys
+Size        : 0
+License     : pubkey
+Signature   : (none)
+Source RPM  : (none)
+Build Date  : Thu Oct 22 11:59:55 2009
+Build Host  : localhost
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. (release key 2) <security@redhat.com>
+Summary     : gpg(Red Hat, Inc. (release key 2) <security@redhat.com>)
+Description :
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: rpm-4.14.3 (NSS-3)
+
+mQINBErgSTsBEACh2A4b0O9t+vzC9VrVtL1AKvUWi9OPCjkvR7Xd8DtJxeeMZ5eF
+0HtzIG58qDRybwUe89FZprB1ffuUKzdE+HcL3FbNWSSOXVjZIersdXyH3NvnLLLF
+0DNRB2ix3bXG9Rh/RXpFsNxDp2CEMdUvbYCzE79K1EnUTVh1L0Of023FtPSZXX0c
+u7Pb5DI5lX5YeoXO6RoodrIGYJsVBQWnrWw4xNTconUfNPk0EGZtEnzvH2zyPoJh
+XGF+Ncu9XwbalnYde10OCvSWAZ5zTCpoLMTvQjWpbCdWXJzCm6G+/hx9upke546H
+5IjtYm4dTIVTnc3wvDiODgBKRzOl9rEOCIgOuGtDxRxcQkjrC+xvg5Vkqn7vBUyW
+9pHedOU+PoF3DGOM+dqv+eNKBvh9YF9ugFAQBkcG7viZgvGEMGGUpzNgN7XnS1gj
+/DPo9mZESOYnKceve2tIC87p2hqjrxOHuI7fkZYeNIcAoa83rBltFXaBDYhWAKS1
+PcXS1/7JzP0ky7d0L6Xbu/If5kqWQpKwUInXtySRkuraVfuK3Bpa+X1XecWi24JY
+HVtlNX025xx1ewVzGNCTlWn1skQN2OOoQTV4C8/qFpTW6DTWYurd4+fE0OJFJZQF
+buhfXYwmRlVOgN5i77NTIJZJQfYFj38c/Iv5vZBPokO6mffrOTv3MHWVgQARAQAB
+tDNSZWQgSGF0LCBJbmMuIChyZWxlYXNlIGtleSAyKSA8c2VjdXJpdHlAcmVkaGF0
+LmNvbT6JAjYEEwECACAFAkrgSTsCGwMGCwkIBwMCBBUCCAMEFgIDAQIeAQIXgAAK
+CRAZni+R/UMdUWzpD/9s5SFR/ZF3yjY5VLUFLMXIKUztNN3oc45fyLdTI3+UClKC
+2tEruzYjqNHhqAEXa2sN1fMrsuKec61Ll2NfvJjkLKDvgVIh7kM7aslNYVOP6BTf
+C/JJ7/ufz3UZmyViH/WDl+AYdgk3JqCIO5w5ryrC9IyBzYv2m0HqYbWfphY3uHw5
+un3ndLJcu8+BGP5F+ONQEGl+DRH58Il9Jp3HwbRa7dvkPgEhfFR+1hI+Btta2C7E
+0/2NKzCxZw7Lx3PBRcU92YKyaEihfy/aQKZCAuyfKiMvsmzs+4poIX7I9NQCJpyE
+IGfINoZ7VxqHwRn/d5mw2MZTJjbzSf+Um9YJyA0iEEyD6qjriWQRbuxpQXmlAJbh
+8okZ4gbVFv1F8MzK+4R8VvWJ0XxgtikSo72fHjwha7MAjqFnOq6eo6fEC/75g3NL
+Ght5VdpGuHk0vbdENHMC8wS99e5qXGNDued3hlTavDMlEAHl34q2H9nakTGRF5Ki
+JUfNh3DVRGhg8cMIti21njiRh7gyFI2OccATY7bBSr79JhuNwelHuxLrCFpY7V25
+OFktl15jZJaMxuQBqYdBgSay2G0U6D1+7VsWufpzd/Abx1/c3oi9ZaJvW22kAggq
+dzdA27UUYjWvx42w9menJwh/0jeQcTecIUd0d0rFcw/c1pvgMMl/Q73yzKgKYw==
+=zbHE
+-----END PGP PUBLIC KEY BLOCK-----
+
+Name        : libgcc
+Version     : 8.5.0
+Release     : 28.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:26 2025
+Group       : System Environment/Libraries
+Size        : 190224
+License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+Signature   : RSA/SHA256, Fri Jun 27 08:22:16 2025, Key ID 199e2f91fd431d51
+Source RPM  : gcc-8.5.0-28.el8_10.src.rpm
+Build Date  : Mon Jun 23 12:00:00 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://gcc.gnu.org
+Summary     : GCC version 8 shared support library
+Description :
+This package contains GCC shared support library which is needed
+e.g. for exception handling support.
+Name        : filesystem
+Version     : 3.8
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:26 2025
+Group       : System Environment/Base
+Size        : 0
+License     : Public Domain
+Signature   : RSA/SHA256, Mon Jun 21 11:17:44 2021, Key ID 199e2f91fd431d51
+Source RPM  : filesystem-3.8-6.el8.src.rpm
+Build Date  : Mon Jun 21 09:53:08 2021
+Build Host  : x86-039.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pagure.io/filesystem
+Summary     : The basic directory layout for a Linux system
+Description :
+The filesystem package is one of the basic packages that is installed
+on a Linux system. Filesystem contains the basic directory layout
+for a Linux operating system, including the correct permissions for
+the directories.
+Name        : python3-setuptools-wheel
+Version     : 39.2.0
+Release     : 9.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Applications/System
+Size        : 347790
+License     : MIT
+Signature   : RSA/SHA256, Tue Jun 24 08:43:25 2025, Key ID 199e2f91fd431d51
+Source RPM  : python-setuptools-39.2.0-9.el8_10.src.rpm
+Build Date  : Fri Jun 20 12:35:00 2025
+Build Host  : ppc-hv-04-lp11.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pypi.python.org/pypi/setuptools
+Summary     : The setuptools wheel
+Description :
+A Python wheel of setuptools to use with venv.
+Name        : basesystem
+Version     : 11
+Release     : 5.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Base
+Size        : 0
+License     : Public Domain
+Signature   : RSA/SHA256, Fri Dec 14 21:49:21 2018, Key ID 199e2f91fd431d51
+Source RPM  : basesystem-11-5.el8.src.rpm
+Build Date  : Sun Aug 12 08:40:06 2018
+Build Host  : s390-015.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+Summary     : The skeleton package which defines a simple Red Hat Enterprise Linux system
+Description :
+Basesystem defines the components of a basic Red Hat Enterprise Linux system
+(for example, the package installation order to use during bootstrapping).
+Basesystem should be in every installation of a system, and it
+should never be removed.
+Name        : publicsuffix-list-dafsa
+Version     : 20180723
+Release     : 1.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 64502
+License     : MPLv2.0
+Signature   : RSA/SHA256, Sat Dec 15 00:46:44 2018, Key ID 199e2f91fd431d51
+Source RPM  : publicsuffix-list-20180723-1.el8.src.rpm
+Build Date  : Sun Aug 12 17:23:58 2018
+Build Host  : x86-vm-06.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://publicsuffix.org/
+Summary     : Cross-vendor public domain suffix database in DAFSA form
+Description :
+The Public Suffix List is a cross-vendor initiative to provide
+an accurate list of domain name suffixes, maintained by the hard work
+of Mozilla volunteers and by submissions from registries.
+Software using the Public Suffix List will be able to determine where
+cookies may and may not be set, protecting the user from being
+tracked across sites.
+
+This package includes a DAFSA representation of the Public Suffix List
+for runtime loading.
+Name        : pcre2
+Version     : 10.32
+Release     : 3.el8_6
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 656742
+License     : BSD
+Signature   : RSA/SHA256, Thu May 19 11:28:52 2022, Key ID 199e2f91fd431d51
+Source RPM  : pcre2-10.32-3.el8_6.src.rpm
+Build Date  : Mon May 16 11:44:25 2022
+Build Host  : x86-vm-56.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.pcre.org/
+Summary     : Perl-compatible regular expression library
+Description :
+PCRE2 is a re-working of the original PCRE (Perl-compatible regular
+expression) library to provide an entirely new API.
+
+PCRE2 is written in C, and it has its own API. There are three sets of
+functions, one for the 8-bit library, which processes strings of bytes, one
+for the 16-bit library, which processes strings of 16-bit values, and one for
+the 32-bit library, which processes strings of 32-bit values. There are no C++
+wrappers. This package provides support for strings in 8-bit and UTF-8
+encodings. Install pcre2-utf16 or pcre2-utf32 packages for the other ones.
+
+The distribution does contain a set of C wrapper functions for the 8-bit
+library that are based on the POSIX regular expression API (see the pcre2posix
+man page). These can be found in a library called libpcre2posix. Note that
+this just provides a POSIX calling interface to PCRE2; the regular expressions
+themselves still follow Perl syntax and semantics. The POSIX API is
+restricted, and does not give full access to all of PCRE2's facilities.
+Name        : ncurses-libs
+Version     : 6.1
+Release     : 10.20180224.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 955832
+License     : MIT
+Signature   : RSA/SHA256, Tue Aug 15 14:55:30 2023, Key ID 199e2f91fd431d51
+Source RPM  : ncurses-6.1-10.20180224.el8.src.rpm
+Build Date  : Tue Aug 15 11:38:48 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://invisible-island.net/ncurses/ncurses.html
+Summary     : Ncurses libraries
+Description :
+The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains the ncurses libraries.
+Name        : glibc-common
+Version     : 2.28
+Release     : 251.el8_10.27
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 7997180
+License     : LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature   : RSA/SHA256, Tue Dec  2 12:22:45 2025, Key ID 199e2f91fd431d51
+Source RPM  : glibc-2.28-251.el8_10.27.src.rpm
+Build Date  : Thu Nov 20 17:35:37 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/glibc/
+Summary     : Common binaries and locale data for glibc
+Description :
+The glibc-common package includes common binaries for the GNU libc
+libraries, as well as national language (locale) support.
+Name        : bash
+Version     : 4.4.20
+Release     : 6.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 6865564
+License     : GPLv3+
+Signature   : RSA/SHA256, Tue Jul 15 19:31:10 2025, Key ID 199e2f91fd431d51
+Source RPM  : bash-4.4.20-6.el8_10.src.rpm
+Build Date  : Mon Jul  7 13:01:06 2025
+Build Host  : x86-vm-09.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnu.org/software/bash
+Summary     : The GNU Bourne Again shell
+Description :
+The GNU Bourne Again shell (Bash) is a shell or command language
+interpreter that is compatible with the Bourne shell (sh). Bash
+incorporates useful features from the Korn shell (ksh) and the C shell
+(csh). Most sh scripts can be run by bash without modification.
+Name        : zlib
+Version     : 1.2.11
+Release     : 25.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 199975
+License     : zlib and Boost
+Signature   : RSA/SHA256, Fri May 19 12:31:25 2023, Key ID 199e2f91fd431d51
+Source RPM  : zlib-1.2.11-25.el8.src.rpm
+Build Date  : Wed May 17 18:39:07 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.zlib.net/
+Summary     : The compression and decompression library
+Description :
+Zlib is a general-purpose, patent-free, lossless data compression
+library which is used by many different programs.
+Name        : bzip2-libs
+Version     : 1.0.6
+Release     : 28.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 75061
+License     : BSD
+Signature   : RSA/SHA256, Tue Jan 14 14:31:13 2025, Key ID 199e2f91fd431d51
+Source RPM  : bzip2-1.0.6-28.el8_10.src.rpm
+Build Date  : Mon Jan 13 10:32:12 2025
+Build Host  : x86-vm-02.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.bzip.org/
+Summary     : Libraries for applications using bzip2
+Description :
+
+Libraries for applications using the bzip2 compression format.
+Name        : sqlite-libs
+Version     : 3.26.0
+Release     : 20.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 1166537
+License     : Public Domain
+Signature   : RSA/SHA256, Fri Jul 25 05:16:15 2025, Key ID 199e2f91fd431d51
+Source RPM  : sqlite-3.26.0-20.el8_10.src.rpm
+Build Date  : Mon Jul 21 17:55:26 2025
+Build Host  : x86-vm-57.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.sqlite.org/
+Summary     : Shared library for the sqlite3 embeddable SQL database engine.
+Description :
+This package contains the shared library for sqlite.
+Name        : libcap
+Version     : 2.48
+Release     : 6.el8_9
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 164901
+License     : BSD or GPLv2
+Signature   : RSA/SHA256, Wed Dec 13 23:30:50 2023, Key ID 199e2f91fd431d51
+Source RPM  : libcap-2.48-6.el8_9.src.rpm
+Build Date  : Wed Dec 13 13:51:45 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://sites.google.com/site/fullycapable/
+Summary     : Library for getting and setting POSIX.1e capabilities
+Description :
+libcap is a library for getting and setting POSIX.1e (formerly POSIX 6)
+draft 15 capabilities.
+Name        : libxcrypt
+Version     : 4.1.1
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 185892
+License     : LGPLv2+ and BSD and Public Domain
+Signature   : RSA/SHA256, Mon May  3 12:25:29 2021, Key ID 199e2f91fd431d51
+Source RPM  : libxcrypt-4.1.1-6.el8.src.rpm
+Build Date  : Fri Apr 30 16:04:37 2021
+Build Host  : x86-037.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/besser82/libxcrypt
+Summary     : Extended crypt library for DES, MD5, Blowfish and others
+Description :
+libxcrypt is a modern library for one-way hashing of passwords.  It
+supports DES, MD5, SHA-2-256, SHA-2-512, and bcrypt-based password
+hashes, and provides the traditional Unix 'crypt' and 'crypt_r'
+interfaces, as well as a set of extended interfaces pioneered by
+Openwall Linux, 'crypt_rn', 'crypt_ra', 'crypt_gensalt',
+'crypt_gensalt_rn', and 'crypt_gensalt_ra'.
+
+libxcrypt is intended to be used by login(1), passwd(1), and other
+similar programs; that is, to hash a small number of passwords during
+an interactive authentication dialogue with a human.  It is not
+suitable for use in bulk password-cracking applications, or in any
+other situation where speed is more important than careful handling of
+sensitive data.  However, it *is* intended to be fast and lightweight
+enough for use in servers that must field thousands of login attempts
+per minute.
+
+On Linux-based systems, by default libxcrypt will be binary backward
+compatible with the libcrypt.so.1 shipped as part of the GNU C Library.
+This means that all existing binary executables linked against glibc's
+libcrypt should work unmodified with this library's libcrypt.so.1.  We
+have taken pains to provide exactly the same "symbol versions" as were
+used by glibc on various CPU architectures, and to account for the
+variety of ways in which the Openwall extensions were patched into
+glibc's libcrypt by some Linux distributions.  (For instance,
+compatibility symlinks for SuSE's "libowcrypt" are provided.)
+
+However, the converse is not true: programs linked against libxcrypt
+will not work with glibc's libcrypt.  Also, programs that use certain
+legacy APIs supplied by glibc's libcrypt ('encrypt', 'encrypt_r',
+'setkey', 'setkey_r', and 'fcrypt') cannot be compiled against libxcrypt.
+Name        : elfutils-libelf
+Version     : 0.190
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 1024034
+License     : GPLv2+ or LGPLv3+
+Signature   : RSA/SHA256, Fri Dec 15 12:26:47 2023, Key ID 199e2f91fd431d51
+Source RPM  : elfutils-0.190-2.el8.src.rpm
+Build Date  : Fri Dec 15 01:13:09 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://elfutils.org/
+Summary     : Library to read and write ELF files
+Description :
+The elfutils-libelf package provides a DSO which allows reading and
+writing ELF files on a high level.  Third party programs depend on
+this package to read internals of ELF files.  The programs of the
+elfutils package use it also to generate new ELF files.
+Name        : expat
+Version     : 2.5.0
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 369520
+License     : MIT
+Signature   : RSA/SHA256, Wed Nov 19 15:42:05 2025, Key ID 199e2f91fd431d51
+Source RPM  : expat-2.5.0-1.el8_10.src.rpm
+Build Date  : Wed Nov 19 09:43:12 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://libexpat.github.io/
+Summary     : An XML parser library
+Description :
+This is expat, the C library for parsing XML, written by James Clark. Expat
+is a stream oriented XML parser. This means that you register handlers with
+the parser prior to starting the parse. These handlers are called when the
+parser discovers the associated structures in the document being parsed. A
+start tag is an example of the kind of structures for which you may
+register handlers.
+Name        : libcom_err
+Version     : 1.45.6
+Release     : 7.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 61393
+License     : MIT
+Signature   : RSA/SHA256, Tue Sep  2 20:58:55 2025, Key ID 199e2f91fd431d51
+Source RPM  : e2fsprogs-1.45.6-7.el8_10.src.rpm
+Build Date  : Tue Sep  2 17:32:13 2025
+Build Host  : x86-039.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://e2fsprogs.sourceforge.net/
+Summary     : Common error description library
+Description :
+This is the common error description library, part of e2fsprogs.
+
+libcom_err is an attempt to present a common error-handling mechanism.
+Name        : libuuid
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 35104
+License     : BSD
+Signature   : RSA/SHA256, Mon Nov 24 17:31:13 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Universally unique ID library
+Description :
+This is the universally unique ID library, part of util-linux.
+
+The libuuid library generates and parses 128-bit universally unique
+id's (UUID's).  A UUID is an identifier that is unique across both
+space and time, with respect to the space of all UUIDs.  A UUID can
+be used for multiple purposes, from tagging objects with an extremely
+short lifetime, to reliably identifying very persistent objects
+across a network.
+
+See also the "uuid" package, which is a separate implementation.
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 11.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 766316
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Mon Feb  5 12:31:09 2024, Key ID 199e2f91fd431d51
+Source RPM  : gmp-6.1.2-11.el8.src.rpm
+Build Date  : Mon Feb  5 10:07:15 2024
+Build Host  : x86-64-03.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+Name        : libacl
+Version     : 2.2.53
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 37864
+License     : LGPLv2+
+Signature   : RSA/SHA256, Thu Oct 19 10:16:37 2023, Key ID 199e2f91fd431d51
+Source RPM  : acl-2.2.53-3.el8.src.rpm
+Build Date  : Fri Oct  6 15:53:02 2023
+Build Host  : x86-vm-07.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://savannah.nongnu.org/projects/acl
+Summary     : Dynamic library for access control list support
+Description :
+This package contains the libacl.so dynamic library which contains
+the POSIX 1003.1e draft standard 17 functions for manipulating access
+control lists.
+Name        : libblkid
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 343960
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 24 17:31:10 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Block device ID library
+Description :
+This is block device identification library, part of util-linux.
+Name        : sed
+Version     : 4.5
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Applications/Text
+Size        : 765062
+License     : GPLv3+
+Signature   : RSA/SHA256, Wed Oct  6 10:26:15 2021, Key ID 199e2f91fd431d51
+Source RPM  : sed-4.5-5.el8.src.rpm
+Build Date  : Wed Oct  6 08:51:21 2021
+Build Host  : x86-vm-14.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sed.sourceforge.net/
+Summary     : A GNU stream text editor
+Description :
+The sed (Stream EDitor) editor is a stream or batch (non-interactive)
+editor.  Sed takes text as input, performs an operation or set of
+operations on the text and outputs the modified text.  The operations
+that sed performs (substitutions, deletions, insertions, etc.) can be
+specified in a script file or from the command line.
+Name        : libstdc++
+Version     : 8.5.0
+Release     : 28.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : System Environment/Libraries
+Size        : 1935548
+License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+Signature   : RSA/SHA256, Fri Jun 27 08:22:17 2025, Key ID 199e2f91fd431d51
+Source RPM  : gcc-8.5.0-28.el8_10.src.rpm
+Build Date  : Mon Jun 23 12:00:00 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://gcc.gnu.org
+Summary     : GNU Standard C++ Library
+Description :
+The libstdc++ package contains a rewritten standard compliant GCC Standard
+C++ Library.
+Name        : p11-kit
+Version     : 0.23.22
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 1650594
+License     : BSD-3-Clause
+Signature   : RSA/SHA256, Thu Nov 30 09:58:17 2023, Key ID 199e2f91fd431d51
+Source RPM  : p11-kit-0.23.22-2.el8.src.rpm
+Build Date  : Wed Nov 29 15:34:06 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://p11-glue.freedesktop.org/p11-kit.html
+Summary     : Library for loading and sharing PKCS#11 modules
+Description :
+p11-kit provides a way to load and enumerate PKCS#11 modules, as well
+as a standard configuration setup for installing PKCS#11 modules in
+such a way that they're discoverable.
+Name        : libunistring
+Version     : 0.9.9
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : System Environment/Libraries
+Size        : 1810828
+License     : GPLv2+ or LGPLv3+
+Signature   : RSA/SHA256, Tue Sep 11 05:54:30 2018, Key ID 199e2f91fd431d51
+Source RPM  : libunistring-0.9.9-3.el8.src.rpm
+Build Date  : Fri Aug 17 20:47:22 2018
+Build Host  : x86-vm-01.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/libunistring/
+Summary     : GNU Unicode string library
+Description :
+This portable C library implements Unicode string types in three flavours:
+(UTF-8, UTF-16, UTF-32), together with functions for character processing
+(names, classifications, properties) and functions for string processing
+(iteration, formatted output, width, word breaks, line breaks, normalization,
+case folding and regular expressions).
+Name        : libgcrypt
+Version     : 1.8.5
+Release     : 7.el8_6
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 1269734
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Apr 27 16:24:06 2022, Key ID 199e2f91fd431d51
+Source RPM  : libgcrypt-1.8.5-7.el8_6.src.rpm
+Build Date  : Tue Apr 26 15:37:50 2022
+Build Host  : x86-vm-56.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnupg.org/
+Summary     : A general-purpose cryptography library
+Description :
+Libgcrypt is a general purpose crypto library based on the code used
+in GNU Privacy Guard.  This is a development version.
+Name        : dmidecode
+Epoch       : 1
+Version     : 3.5
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 236670
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Jan 18 22:41:08 2024, Key ID 199e2f91fd431d51
+Source RPM  : dmidecode-3.5-1.el8.src.rpm
+Build Date  : Wed Dec 20 07:27:34 2023
+Build Host  : x86-64-07.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.nongnu.org/dmidecode/
+Summary     : Tool to analyse BIOS DMI data
+Description :
+dmidecode reports information about x86 & ia64 hardware as described in the
+system BIOS according to the SMBIOS/DMI standard. This information
+typically includes system manufacturer, model name, serial number,
+BIOS version, asset tag as well as a lot of other details of varying
+level of interest and reliability depending on the manufacturer.
+
+This will often include usage status for the CPU sockets, expansion
+slots (e.g. AGP, PCI, ISA) and memory module slots, and the list of
+I/O ports (e.g. serial, parallel, USB).
+Name        : audit-libs
+Version     : 3.1.2
+Release     : 1.el8_10.1
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 308530
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Jun  9 12:09:27 2025, Key ID 199e2f91fd431d51
+Source RPM  : audit-3.1.2-1.el8_10.1.src.rpm
+Build Date  : Mon Jun  9 10:38:53 2025
+Build Host  : x86-037.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://people.redhat.com/sgrubb/audit/
+Summary     : Dynamic library for libaudit
+Description :
+The audit-libs package contains the dynamic libraries needed for
+applications to use the audit framework.
+Name        : libassuan
+Version     : 2.5.1
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 200835
+License     : LGPLv2+ and GPLv3+
+Signature   : RSA/SHA256, Fri Dec 14 23:09:08 2018, Key ID 199e2f91fd431d51
+Source RPM  : libassuan-2.5.1-3.el8.src.rpm
+Build Date  : Sun Aug 12 13:05:23 2018
+Build Host  : x86-vm-05.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnupg.org/
+Summary     : GnuPG IPC library
+Description :
+This is the IPC library used by GnuPG 2, GPGME and a few other
+packages.
+Name        : keyutils-libs
+Version     : 1.5.10
+Release     : 9.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : System Environment/Base
+Size        : 43798
+License     : GPLv2+ and LGPLv2+
+Signature   : RSA/SHA256, Fri Jun 18 07:49:59 2021, Key ID 199e2f91fd431d51
+Source RPM  : keyutils-1.5.10-9.el8.src.rpm
+Build Date  : Wed Jun 16 14:22:40 2021
+Build Host  : x86-vm-56.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://people.redhat.com/~dhowells/keyutils/
+Summary     : Key utilities library
+Description :
+This package provides a wrapper library for the key management facility system
+calls.
+Name        : p11-kit-trust
+Version     : 0.23.22
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 483265
+License     : BSD-3-Clause
+Signature   : RSA/SHA256, Thu Nov 30 09:58:17 2023, Key ID 199e2f91fd431d51
+Source RPM  : p11-kit-0.23.22-2.el8.src.rpm
+Build Date  : Wed Nov 29 15:34:06 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://p11-glue.freedesktop.org/p11-kit.html
+Summary     : System trust module from p11-kit
+Description :
+The p11-kit-trust package contains a system trust PKCS#11 module which
+contains certificate anchors and blocklists.
+Name        : grep
+Version     : 3.1
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Applications/Text
+Size        : 830693
+License     : GPLv3+
+Signature   : RSA/SHA256, Fri Dec 14 22:34:42 2018, Key ID 199e2f91fd431d51
+Source RPM  : grep-3.1-6.el8.src.rpm
+Build Date  : Sun Aug 12 07:50:42 2018
+Build Host  : x86-vm-10.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/grep/
+Summary     : Pattern matching utilities
+Description :
+The GNU versions of commonly used grep utilities. Grep searches through
+textual input for lines which contain a match to a specified pattern and then
+prints the matching lines. GNU's grep utilities include grep, egrep and fgrep.
+
+GNU grep is needed by many scripts, so it shall be installed on every system.
+Name        : dbus-libs
+Epoch       : 1
+Version     : 1.12.8
+Release     : 27.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Development/Libraries
+Size        : 380768
+License     : (GPLv2+ or AFL) and GPLv2+
+Signature   : RSA/SHA256, Wed Jun 18 08:16:21 2025, Key ID 199e2f91fd431d51
+Source RPM  : dbus-1.12.8-27.el8_10.src.rpm
+Build Date  : Tue Jun  3 06:38:56 2025
+Build Host  : x86-vm-09.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/Software/dbus/
+Summary     : Libraries for accessing D-BUS
+Description :
+This package contains lowlevel libraries for accessing D-BUS.
+Name        : dbus-tools
+Epoch       : 1
+Version     : 1.12.8
+Release     : 27.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Development/Libraries
+Size        : 124970
+License     : (GPLv2+ or AFL) and GPLv2+
+Signature   : RSA/SHA256, Wed Jun 18 08:16:21 2025, Key ID 199e2f91fd431d51
+Source RPM  : dbus-1.12.8-27.el8_10.src.rpm
+Build Date  : Tue Jun  3 06:38:56 2025
+Build Host  : x86-vm-09.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/Software/dbus/
+Summary     : D-BUS Tools and Utilities
+Description :
+Tools and utilities to interact with a running D-Bus Message Bus, provided by
+the reference implementation.
+Name        : gdbm
+Epoch       : 1
+Version     : 1.18
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 389593
+License     : GPLv3+
+Signature   : RSA/SHA256, Wed Jul 13 15:02:29 2022, Key ID 199e2f91fd431d51
+Source RPM  : gdbm-1.18-2.el8.src.rpm
+Build Date  : Thu Jul  7 07:34:52 2022
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/gdbm/
+Summary     : A GNU set of database routines which use extensible hashing
+Description :
+Gdbm is a GNU database indexing library, including routines which use
+extensible hashing.  Gdbm works in a similar way to standard UNIX dbm
+routines.  Gdbm is useful for developers who write C applications and
+need access to a simple and efficient database or who are building C
+applications which will use such a database.
+
+If you're a C developer and your programs need access to simple
+database routines, you should install gdbm.  You'll also need to
+install gdbm-devel.
+Name        : shadow-utils
+Epoch       : 2
+Version     : 4.6
+Release     : 23.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Base
+Size        : 4072249
+License     : BSD and GPLv2+
+Signature   : RSA/SHA256, Tue Nov 18 13:42:16 2025, Key ID 199e2f91fd431d51
+Source RPM  : shadow-utils-4.6-23.el8_10.src.rpm
+Build Date  : Fri Nov 14 10:47:40 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://pkg-shadow.alioth.debian.org/
+Summary     : Utilities for managing accounts and shadow password files
+Description :
+The shadow-utils package includes the necessary programs for
+converting UNIX password files to the shadow password format, plus
+programs for managing user and group accounts. The pwconv command
+converts passwords to the shadow password format. The pwunconv command
+unconverts shadow passwords and generates a passwd file (a standard
+UNIX password file). The pwck command checks the integrity of password
+and shadow files. The lastlog command prints out the last login times
+for all users. The useradd, userdel, and usermod commands are used for
+managing user accounts. The groupadd, groupdel, and groupmod commands
+are used for managing group accounts.
+Name        : libpsl
+Version     : 0.20.2
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 70732
+License     : MIT
+Signature   : RSA/SHA256, Thu Jun  4 20:06:05 2020, Key ID 199e2f91fd431d51
+Source RPM  : libpsl-0.20.2-6.el8.src.rpm
+Build Date  : Thu Jun  4 17:13:50 2020
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://rockdaboot.github.io/libpsl
+Summary     : C library for the Publix Suffix List
+Description :
+libpsl is a C library to handle the Public Suffix List. A "public suffix" is a
+domain name under which Internet users can directly register own names.
+
+Browsers and other web clients can use it to
+
+- Avoid privacy-leaking "supercookies";
+- Avoid privacy-leaking "super domain" certificates;
+- Domain highlighting parts of the domain in a user interface;
+- Sorting domain lists by site;
+
+Libpsl...
+
+- has built-in PSL data for fast access;
+- allows to load PSL data from files;
+- checks if a given domain is a "public suffix";
+- provides immediate cookie domain verification;
+- finds the longest public part of a given domain;
+- finds the shortest private part of a given domain;
+- works with international domains (UTF-8 and IDNA2008 Punycode);
+- is thread-safe;
+- handles IDNA2008 UTS#46;
+Name        : gzip
+Version     : 1.9
+Release     : 13.el8_5
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Applications/File
+Size        : 352922
+License     : GPLv3+ and GFDL
+Signature   : RSA/SHA256, Thu Apr 21 14:29:12 2022, Key ID 199e2f91fd431d51
+Source RPM  : gzip-1.9-13.el8_5.src.rpm
+Build Date  : Wed Apr 20 11:10:38 2022
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gzip.org/
+Summary     : The GNU data compression program
+Description :
+The gzip package contains the popular GNU gzip data compression
+program. Gzipped files have a .gz extension.
+
+Gzip should be installed on your system, because it is a
+very commonly used data compression program.
+Name        : cracklib-dicts
+Version     : 2.9.6
+Release     : 15.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 9815016
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 26 16:25:18 2018, Key ID 199e2f91fd431d51
+Source RPM  : cracklib-2.9.6-15.el8.src.rpm
+Build Date  : Mon Nov 26 15:31:53 2018
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sourceforge.net/projects/cracklib/
+Summary     : The standard CrackLib dictionaries
+Description :
+The cracklib-dicts package includes the CrackLib dictionaries.
+CrackLib will need to use the dictionary appropriate to your system,
+which is normally put in /usr/share/dict/words. Cracklib-dicts also
+contains the utilities necessary for the creation of new dictionaries.
+
+If you are installing CrackLib, you should also install cracklib-dicts.
+Name        : acl
+Version     : 2.2.53
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 198492
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Oct 19 10:16:37 2023, Key ID 199e2f91fd431d51
+Source RPM  : acl-2.2.53-3.el8.src.rpm
+Build Date  : Fri Oct  6 15:53:02 2023
+Build Host  : x86-vm-07.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://savannah.nongnu.org/projects/acl
+Summary     : Access control list utilities
+Description :
+This package contains the getfacl and setfacl utilities needed for
+manipulating access control lists.
+Name        : nettle
+Version     : 3.4.1
+Release     : 7.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Development/Libraries
+Size        : 572273
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Jul 15 07:33:54 2021, Key ID 199e2f91fd431d51
+Source RPM  : nettle-3.4.1-7.el8.src.rpm
+Build Date  : Wed Jul 14 13:04:03 2021
+Build Host  : x86-vm-56.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.lysator.liu.se/~nisse/nettle/
+Summary     : A low-level cryptographic library
+Description :
+Nettle is a cryptographic library that is designed to fit easily in more
+or less any context: In crypto toolkits for object-oriented languages
+(C++, Python, Pike, ...), in applications like LSH or GNUPG, or even in
+kernel space.
+Name        : libksba
+Version     : 1.3.5
+Release     : 9.el8_7
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 334047
+License     : (LGPLv3+ or GPLv2+) and GPLv3+
+Signature   : RSA/SHA256, Wed Jan 25 13:30:44 2023, Key ID 199e2f91fd431d51
+Source RPM  : libksba-1.3.5-9.el8_7.src.rpm
+Build Date  : Wed Jan 25 09:35:39 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnupg.org/
+Summary     : CMS and X.509 library
+Description :
+KSBA (pronounced Kasbah) is a library to make X.509 certificates as
+well as the CMS easily accessible by other applications.  Both
+specifications are building blocks of S/MIME and TLS.
+Name        : libnghttp2
+Version     : 1.33.0
+Release     : 6.el8_10.1
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Development/Libraries
+Size        : 168244
+License     : MIT
+Signature   : RSA/SHA256, Wed Apr 10 11:28:23 2024, Key ID 199e2f91fd431d51
+Source RPM  : nghttp2-1.33.0-6.el8_10.1.src.rpm
+Build Date  : Wed Apr 10 08:57:38 2024
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://nghttp2.org/
+Summary     : A library implementing the HTTP/2 protocol
+Description :
+libnghttp2 is a library implementing the Hypertext Transfer Protocol
+version 2 (HTTP/2) protocol in C.
+Name        : libseccomp
+Version     : 2.5.2
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 169805
+License     : LGPLv2
+Signature   : RSA/SHA256, Tue Nov  9 13:32:16 2021, Key ID 199e2f91fd431d51
+Source RPM  : libseccomp-2.5.2-1.el8.src.rpm
+Build Date  : Mon Nov  8 13:18:22 2021
+Build Host  : x86-037.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/seccomp/libseccomp
+Summary     : Enhanced seccomp library
+Description :
+The libseccomp library provides an easy to use interface to the Linux Kernel's
+syscall filtering mechanism, seccomp.  The libseccomp API allows an application
+to specify which syscalls, and optionally which syscall arguments, the
+application is allowed to execute, all of which are enforced by the Linux
+Kernel.
+Name        : gawk
+Version     : 4.2.1
+Release     : 4.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 2699774
+License     : GPLv3+ and GPLv2+ and LGPLv2+ and BSD
+Signature   : RSA/SHA256, Sun Feb 27 12:02:19 2022, Key ID 199e2f91fd431d51
+Source RPM  : gawk-4.2.1-4.el8.src.rpm
+Build Date  : Fri Feb 11 14:22:18 2022
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnu.org/software/gawk/
+Summary     : The GNU version of the AWK text processing utility
+Description :
+The gawk package contains the GNU version of AWK text processing utility. AWK is
+a programming language designed for text processing and typically used as a data
+extraction and reporting tool.
+
+The gawk utility can be used to do quick and easy text pattern matching,
+extracting or reformatting. It is considered to be a standard Linux tool for
+text processing.
+Name        : libnsl2
+Version     : 1.2.0
+Release     : 2.20180605git4a062cf.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 142938
+License     : BSD and LGPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 23:32:12 2018, Key ID 199e2f91fd431d51
+Source RPM  : libnsl2-1.2.0-2.20180605git4a062cf.el8.src.rpm
+Build Date  : Sun Aug 12 13:47:53 2018
+Build Host  : x86-vm-06.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/thkukuk/libnsl
+Summary     : Public client interface library for NIS(YP) and NIS+
+Description :
+This package contains the libnsl library. This library contains
+the public client interface for NIS(YP) and NIS+.
+This code was formerly part of glibc, but is now standalone to
+be able to link against TI-RPC for IPv6 support.
+Name        : krb5-libs
+Version     : 1.18.2
+Release     : 32.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : System Environment/Libraries
+Size        : 2242754
+License     : MIT
+Signature   : RSA/SHA256, Tue May 20 14:41:55 2025, Key ID 199e2f91fd431d51
+Source RPM  : krb5-1.18.2-32.el8_10.src.rpm
+Build Date  : Mon May  5 16:38:56 2025
+Build Host  : x86-vm-14.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://web.mit.edu/kerberos/www/
+Summary     : The non-admin shared libraries used by Kerberos 5
+Description :
+Kerberos is a network authentication system. The krb5-libs package
+contains the shared libraries needed by Kerberos 5. If you are using
+Kerberos, you need to install this package.
+Name        : crypto-policies
+Version     : 20230731
+Release     : 1.git3177e06.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : Unspecified
+Size        : 73739
+License     : LGPLv2+
+Signature   : RSA/SHA256, Thu Aug  3 11:00:56 2023, Key ID 199e2f91fd431d51
+Source RPM  : crypto-policies-20230731-1.git3177e06.el8.src.rpm
+Build Date  : Tue Aug  1 18:18:16 2023
+Build Host  : s390-066.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://gitlab.com/redhat-crypto/fedora-crypto-policies
+Summary     : System-wide crypto policies
+Description :
+This package provides pre-built configuration files with
+cryptographic policies for various cryptographic back-ends,
+such as SSL/TLS libraries.
+Name        : platform-python-setuptools
+Version     : 39.2.0
+Release     : 9.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : Applications/System
+Size        : 2923481
+License     : MIT
+Signature   : RSA/SHA256, Tue Jun 24 08:43:25 2025, Key ID 199e2f91fd431d51
+Source RPM  : python-setuptools-39.2.0-9.el8_10.src.rpm
+Build Date  : Fri Jun 20 12:35:00 2025
+Build Host  : ppc-hv-04-lp11.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pypi.python.org/pypi/setuptools
+Summary     : Easily build and distribute Python 3 packages
+Description :
+Setuptools is a collection of enhancements to the Python distutils that allow
+you to more easily build and distribute Python packages, especially ones that
+have dependencies on other packages.
+
+This package also contains the runtime components of setuptools, necessary to
+execute the software that requires pkg_resources.py.
+Name        : python3-libs
+Version     : 3.6.8
+Release     : 71.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 32410701
+License     : Python
+Signature   : RSA/SHA256, Thu Aug 14 07:37:59 2025, Key ID 199e2f91fd431d51
+Source RPM  : python3-3.6.8-71.el8_10.src.rpm
+Build Date  : Mon Aug 11 14:29:26 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.python.org/
+Summary     : Python runtime libraries
+Description :
+This package contains runtime libraries for use by Python:
+- the majority of the Python standard library
+- a dynamically linked library for use by applications that embed Python as
+  a scripting language, and by the main "python3" executable
+Name        : libpwquality
+Version     : 1.4.4
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 396846
+License     : BSD or GPLv2+
+Signature   : RSA/SHA256, Tue Feb 14 12:40:07 2023, Key ID 199e2f91fd431d51
+Source RPM  : libpwquality-1.4.4-6.el8.src.rpm
+Build Date  : Tue Feb 14 10:16:13 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/libpwquality/libpwquality/
+Summary     : A library for password generation and password quality checking
+Description :
+This is a library for password quality checks and generation
+of random passwords that pass the checks.
+This library uses the cracklib and cracklib dictionaries
+to perform some of the checks.
+Name        : python3-six
+Version     : 1.11.0
+Release     : 8.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 100282
+License     : MIT
+Signature   : RSA/SHA256, Sat Dec 15 00:49:15 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-six-1.11.0-8.el8.src.rpm
+Build Date  : Sun Aug 12 16:23:02 2018
+Build Host  : x86-vm-09.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pypi.python.org/pypi/six
+Summary     : Python 2 and 3 compatibility utilities
+Description :
+python-six provides simple utilities for wrapping over differences between
+Python 2 and Python 3.
+Python 3 version.
+Name        : python3-dateutil
+Epoch       : 1
+Version     : 2.6.1
+Release     : 6.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Development/Languages
+Size        : 596677
+License     : BSD
+Signature   : RSA/SHA256, Sat Dec 15 00:47:47 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-dateutil-2.6.1-6.el8.src.rpm
+Build Date  : Sun Aug 12 13:04:57 2018
+Build Host  : ppc-061.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/dateutil/dateutil
+Summary     : Powerful extensions to the standard datetime module
+Description :
+The dateutil module provides powerful extensions to the standard datetime
+module available in Python.
+
+This is the version for Python 3.
+Name        : glib2
+Version     : 2.56.4
+Release     : 167.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 12288032
+License     : LGPLv2+
+Signature   : RSA/SHA256, Thu Sep 18 18:07:33 2025, Key ID 199e2f91fd431d51
+Source RPM  : glib2-2.56.4-167.el8_10.src.rpm
+Build Date  : Thu Sep 18 16:50:03 2025
+Build Host  : x86-vm-55.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gtk.org
+Summary     : A library of handy utility functions
+Description :
+GLib is the low-level core library that forms the basis for projects
+such as GTK+ and GNOME. It provides data structure handling for C,
+portability wrappers, and interfaces for such runtime functionality
+as an event loop, threads, dynamic loading, and an object system.
+Name        : librhsm
+Version     : 0.0.3
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 76528
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Jan 11 12:01:36 2023, Key ID 199e2f91fd431d51
+Source RPM  : librhsm-0.0.3-5.el8.src.rpm
+Build Date  : Thu Jan  5 16:59:39 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/librhsm
+Summary     : Red Hat Subscription Manager library
+Description :
+Red Hat Subscription Manager library.
+Name        : dbus-glib
+Version     : 0.110
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Libraries
+Size        : 365054
+License     : AFL and GPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 21:59:02 2018, Key ID 199e2f91fd431d51
+Source RPM  : dbus-glib-0.110-2.el8.src.rpm
+Build Date  : Sun Aug 12 09:17:00 2018
+Build Host  : x86-vm-10.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/software/dbus/
+Summary     : GLib bindings for D-Bus
+Description :
+
+D-Bus add-on library to integrate the standard D-Bus library with
+the GLib thread abstraction and main loop.
+Name        : gobject-introspection
+Version     : 1.56.1
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 876479
+License     : GPLv2+, LGPLv2+, MIT
+Signature   : RSA/SHA256, Fri Dec 14 22:33:38 2018, Key ID 199e2f91fd431d51
+Source RPM  : gobject-introspection-1.56.1-1.el8.src.rpm
+Build Date  : Sun Aug 12 11:28:47 2018
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://wiki.gnome.org/Projects/GObjectIntrospection
+Summary     : Introspection system for GObject-based libraries
+Description :
+GObject Introspection can scan C header and source files in order to
+generate introspection "typelib" files.  It also provides an API to examine
+typelib files, useful for creating language bindings among other
+things.
+Name        : virt-what
+Version     : 1.25
+Release     : 4.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 49966
+License     : GPLv2+
+Signature   : RSA/SHA256, Tue Aug  8 12:09:52 2023, Key ID 199e2f91fd431d51
+Source RPM  : virt-what-1.25-4.el8.src.rpm
+Build Date  : Wed Jun 28 13:24:53 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://people.redhat.com/~rjones/virt-what/
+Summary     : Detect if we are running in a virtual machine
+Description :
+virt-what is a shell script which can be used to detect if the program
+is running in a virtual machine.
+
+The program prints out a list of "facts" about the virtual machine,
+derived from heuristics.  One fact is printed per line.
+
+If nothing is printed and the script exits with code 0 (no error),
+then it can mean either that the program is running on bare-metal or
+the program is running inside a type of virtual machine which we don't
+know about or can't detect.
+
+Current types of virtualization detected:
+
+ - alibaba_cloud      Alibaba cloud
+ - alibaba_cloud-ebm
+ - aws                Amazon Web Services
+ - bhyve              FreeBSD hypervisor
+ - docker             Docker container
+ - google_cloud       Google cloud
+ - hyperv             Microsoft Hyper-V
+ - ibm_power-kvm      IBM POWER KVM
+ - ibm_power-lpar_shared IBM POWER LPAR (hardware partition)
+ - ibm_power-lpar_dedicated
+ - ibm_systemz-*      IBM SystemZ Direct / LPAR / z/VM / KVM
+ - illumos-lx         Illumos with Linux syscall emulation
+ - ldoms              Oracle VM Server for SPARC Logical Domains
+ - linux_vserver      Linux VServer container
+ - lxc                Linux LXC container
+ - kvm                Linux Kernel Virtual Machine (KVM)
+ - lkvm               LKVM / kvmtool
+ - nutanix_ahv        Nutanix Acropolis Hypervisor (AHV)
+ - openvz             OpenVZ or Virtuozzo
+ - ovirt              oVirt node
+ - parallels          Parallels Virtual Platform
+ - podman             Podman container
+ - powervm_lx86       IBM PowerVM Lx86 Linux/x86 emulator
+ - qemu               QEMU (unaccelerated)
+ - redhat             Red Hat hypervisor
+ - rhev               Red Hat Enterprise Virtualization
+ - uml                User-Mode Linux (UML)
+ - virtage            Hitachi Virtualization Manager (HVM) Virtage LPAR
+ - virtualbox         VirtualBox
+ - virtualpc          Microsoft VirtualPC
+ - vmm                vmm OpenBSD hypervisor
+ - vmware             VMware
+ - xen                Xen
+ - xen-dom0           Xen dom0 (privileged domain)
+ - xen-domU           Xen domU (paravirtualized guest domain)
+ - xen-hvm            Xen guest fully virtualized (HVM)
+Name        : openldap
+Version     : 2.4.46
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 1006707
+License     : OpenLDAP
+Signature   : RSA/SHA256, Tue Jan 28 18:56:13 2025, Key ID 199e2f91fd431d51
+Source RPM  : openldap-2.4.46-21.el8_10.src.rpm
+Build Date  : Tue Jan 28 01:03:31 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.openldap.org/
+Summary     : LDAP support libraries
+Description :
+OpenLDAP is an open source suite of LDAP (Lightweight Directory Access
+Protocol) applications and development tools. LDAP is a set of
+protocols for accessing directory services (usually phone book style
+information, but other information is possible) over the Internet,
+similar to the way DNS (Domain Name System) information is propagated
+over the Internet. The openldap package contains configuration files,
+libraries, and documentation for OpenLDAP.
+Name        : passwd
+Version     : 0.80
+Release     : 4.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Base
+Size        : 442469
+License     : BSD or GPL+
+Signature   : RSA/SHA256, Tue Feb 15 14:32:20 2022, Key ID 199e2f91fd431d51
+Source RPM  : passwd-0.80-4.el8.src.rpm
+Build Date  : Mon Feb  7 18:27:26 2022
+Build Host  : x86-039.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pagure.io/passwd
+Summary     : An utility for setting or changing passwords using PAM
+Description :
+This package contains a system utility (passwd) which sets
+or changes passwords, using PAM (Pluggable Authentication
+Modules) library.
+Name        : libdb-utils
+Version     : 5.3.28
+Release     : 42.el8_4
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Applications/Databases
+Size        : 369615
+License     : BSD and LGPLv2 and Sleepycat
+Signature   : RSA/SHA256, Thu Sep  9 08:03:36 2021, Key ID 199e2f91fd431d51
+Source RPM  : libdb-5.3.28-42.el8_4.src.rpm
+Build Date  : Thu Sep  9 06:45:59 2021
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.oracle.com/database/berkeley-db/
+Summary     : Command line tools for managing Berkeley DB databases
+Description :
+The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. Berkeley DB includes B+tree, Extended
+Linear Hashing, Fixed and Variable-length record access methods,
+transactions, locking, logging, shared memory caching, and database
+recovery. DB supports C, C++, Java and Perl APIs.
+Name        : python3-libcomps
+Version     : 0.1.18
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 143998
+License     : GPLv2+
+Signature   : RSA/SHA256, Mon Nov 22 13:32:41 2021, Key ID 199e2f91fd431d51
+Source RPM  : libcomps-0.1.18-1.el8.src.rpm
+Build Date  : Tue Nov  9 11:39:02 2021
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/libcomps
+Summary     : Python 3 bindings for libcomps library
+Description :
+Python3 bindings for libcomps library.
+Name        : python3-chardet
+Version     : 3.0.4
+Release     : 7.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Development/Languages
+Size        : 925538
+License     : LGPLv2
+Signature   : RSA/SHA256, Sat Dec 15 00:47:35 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-chardet-3.0.4-7.el8.src.rpm
+Build Date  : Sun Aug 12 12:44:07 2018
+Build Host  : s390-043.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/chardet/chardet
+Summary     : Character encoding auto-detection in Python 3
+Description :
+Character encoding auto-detection in Python. As
+smart as your browser. Open source.
+
+Python 3 version.
+Name        : python3-idna
+Version     : 2.5
+Release     : 7.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 593395
+License     : BSD and Python and Unicode
+Signature   : RSA/SHA256, Thu May  2 09:44:08 2024, Key ID 199e2f91fd431d51
+Source RPM  : python-idna-2.5-7.el8_10.src.rpm
+Build Date  : Fri Apr 26 07:47:44 2024
+Build Host  : s390-048.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/kjd/idna
+Summary     : Internationalized Domain Names in Applications (IDNA)
+Description :
+A library to support the Internationalised Domain Names in Applications (IDNA)
+protocol as specified in RFC 5891 <http://tools.ietf.org/html/rfc5891>.  This
+version of the protocol is often referred to as "IDNA2008" and can produce
+different results from the earlier standard from 2003.
+
+The library is also intended to act as a suitable drop-in replacement for the
+"encodings.idna" module that comes with the Python standard library but
+currently only supports the older 2003 specification.
+Name        : python3-pysocks
+Version     : 1.6.8
+Release     : 3.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 77054
+License     : BSD
+Signature   : RSA/SHA256, Sat Dec 15 00:48:50 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-pysocks-1.6.8-3.el8.src.rpm
+Build Date  : Sun Aug 12 15:36:37 2018
+Build Host  : ppc-061.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/Anorov/PySocks
+Summary     : A Python SOCKS client module
+Description :
+A fork of SocksiPy with bug fixes and extra features.
+
+Acts as a drop-in replacement to the socket module. Featuring:
+
+- SOCKS proxy client for Python 2.6 - 3.x
+- TCP and UDP both supported
+- HTTP proxy client included but not supported or recommended (you should use
+  urllib2's or requests' own HTTP proxy interface)
+- urllib2 handler included.
+Name        : python3-requests
+Version     : 2.20.0
+Release     : 6.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 391069
+License     : ASL 2.0
+Signature   : RSA/SHA256, Wed Jul 30 15:03:13 2025, Key ID 199e2f91fd431d51
+Source RPM  : python-requests-2.20.0-6.el8_10.src.rpm
+Build Date  : Mon Jul 28 10:48:08 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pypi.io/project/requests
+Summary     : HTTP library, written in Python, for human beings
+Description :
+Most existing Python modules for sending HTTP requests are extremely verbose and
+cumbersome. Python’s built-in urllib2 module provides most of the HTTP
+capabilities you should need, but the API is thoroughly broken. This library is
+designed to make HTTP requests easy for developers.
+Name        : python3-syspurpose
+Version     : 1.28.44
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Base
+Size        : 175654
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Jun  3 16:57:45 2025, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-1.28.44-1.el8_10.src.rpm
+Build Date  : Tue Jun  3 08:53:17 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.candlepinproject.org/
+Summary     : A commandline utility for declaring system syspurpose
+Description :
+Provides the syspurpose commandline utility. This utility manages the
+system syspurpose.
+Name        : device-mapper
+Epoch       : 8
+Version     : 1.02.181
+Release     : 15.el8_10.2
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 357932
+License     : GPLv2
+Signature   : RSA/SHA256, Thu Jun 26 07:48:17 2025, Key ID 199e2f91fd431d51
+Source RPM  : lvm2-2.03.14-15.el8_10.2.src.rpm
+Build Date  : Mon Jun  2 17:36:08 2025
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sources.redhat.com/dm
+Summary     : Device mapper utility
+Description :
+This package contains the supporting userspace utility, dmsetup,
+for the kernel device-mapper.
+Name        : cryptsetup-libs
+Version     : 2.3.7
+Release     : 7.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 2145935
+License     : GPLv2+ and LGPLv2+
+Signature   : RSA/SHA256, Wed Jul 12 08:46:28 2023, Key ID 199e2f91fd431d51
+Source RPM  : cryptsetup-2.3.7-7.el8.src.rpm
+Build Date  : Tue Jul 11 14:41:57 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://gitlab.com/cryptsetup/cryptsetup
+Summary     : Cryptsetup shared library
+Description :
+This package contains the cryptsetup shared library, libcryptsetup.
+Name        : elfutils-libs
+Version     : 0.190
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 738239
+License     : GPLv2+ or LGPLv3+
+Signature   : RSA/SHA256, Fri Dec 15 12:26:46 2023, Key ID 199e2f91fd431d51
+Source RPM  : elfutils-0.190-2.el8.src.rpm
+Build Date  : Fri Dec 15 01:13:09 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://elfutils.org/
+Summary     : Libraries to handle compiled objects
+Description :
+The elfutils-libs package contains libraries which implement DWARF, ELF,
+and machine-specific ELF handling and process introspection.  These
+libraries are used by the programs in the elfutils package.  The
+elfutils-devel package enables building other programs using these
+libraries.
+Name        : dbus-daemon
+Epoch       : 1
+Version     : 1.12.8
+Release     : 27.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 559338
+License     : (GPLv2+ or AFL) and GPLv2+
+Signature   : RSA/SHA256, Wed Jun 18 08:16:21 2025, Key ID 199e2f91fd431d51
+Source RPM  : dbus-1.12.8-27.el8_10.src.rpm
+Build Date  : Tue Jun  3 06:38:56 2025
+Build Host  : x86-vm-09.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/Software/dbus/
+Summary     : D-BUS message bus
+Description :
+D-BUS is a system for sending messages between applications. It is
+used both for the system-wide message bus service, and as a
+per-user-login-session messaging facility.
+Name        : systemd
+Version     : 239
+Release     : 82.el8_10.8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 11371259
+License     : LGPLv2+ and MIT and GPLv2+
+Signature   : RSA/SHA256, Mon Oct  6 11:16:43 2025, Key ID 199e2f91fd431d51
+Source RPM  : systemd-239-82.el8_10.8.src.rpm
+Build Date  : Thu Oct  2 12:07:39 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/wiki/Software/systemd
+Summary     : System and Service Manager
+Description :
+systemd is a system and service manager that runs as PID 1 and starts
+the rest of the system. It provides aggressive parallelization
+capabilities, uses socket and D-Bus activation for starting services,
+offers on-demand starting of daemons, keeps track of processes using
+Linux control groups, maintains mount and automount points, and
+implements an elaborate transactional dependency-based service control
+logic. systemd supports SysV and LSB init scripts and works as a
+replacement for sysvinit. Other parts of this package are a logging daemon,
+utilities to control basic system configuration like the hostname,
+date, locale, maintain a list of logged-in users, system accounts,
+runtime directories and settings, and daemons to manage simple network
+configuration, network time synchronization, log forwarding, and name
+resolution.
+Name        : libarchive
+Version     : 3.3.3
+Release     : 6.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 838295
+License     : BSD
+Signature   : RSA/SHA256, Fri Aug 15 12:00:52 2025, Key ID 199e2f91fd431d51
+Source RPM  : libarchive-3.3.3-6.el8_10.src.rpm
+Build Date  : Fri Aug 15 07:50:38 2025
+Build Host  : x86-vm-57.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.libarchive.org/
+Summary     : A library for handling streaming archive formats
+Description :
+Libarchive is a programming library that can create and read several different
+streaming archive formats, including most popular tar variants, several cpio
+formats, and both BSD and GNU ar variants. It can also write shar archives and
+read ISO9660 CDROM images and ZIP archives.
+Name        : ima-evm-utils
+Version     : 1.3.2
+Release     : 12.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 137649
+License     : GPLv2
+Signature   : RSA/SHA256, Mon Feb 22 12:31:54 2021, Key ID 199e2f91fd431d51
+Source RPM  : ima-evm-utils-1.3.2-12.el8.src.rpm
+Build Date  : Fri Feb 19 16:45:33 2021
+Build Host  : x86-039.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://linux-ima.sourceforge.net/
+Summary     : IMA/EVM support utilities
+Description :
+The Trusted Computing Group(TCG) run-time Integrity Measurement Architecture
+(IMA) maintains a list of hash values of executables and other sensitive
+system files, as they are read or executed. These are stored in the file
+systems extended attributes. The Extended Verification Module (EVM) prevents
+unauthorized changes to these extended attributes on the file system.
+ima-evm-utils is used to prepare the file system for these extended attributes.
+Name        : npth
+Version     : 1.5
+Release     : 4.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 47653
+License     : LGPLv2+
+Signature   : RSA/SHA256, Sat Dec 15 00:16:27 2018, Key ID 199e2f91fd431d51
+Source RPM  : npth-1.5-4.el8.src.rpm
+Build Date  : Sun Aug 12 15:41:32 2018
+Build Host  : x86-vm-07.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://git.gnupg.org/cgi-bin/gitweb.cgi?p=npth.git
+Summary     : The New GNU Portable Threads library
+Description :
+nPth is a non-preemptive threads implementation using an API very similar
+to the one known from GNU Pth. It has been designed as a replacement of
+GNU Pth for non-ancient operating systems. In contrast to GNU Pth is is
+based on the system's standard threads implementation. Thus nPth allows
+the use of libraries which are not compatible to GNU Pth.
+Name        : gpgme
+Version     : 1.13.1
+Release     : 12.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 1005040
+License     : LGPLv2+ and GPLv3+
+Signature   : RSA/SHA256, Wed Feb 14 10:25:02 2024, Key ID 199e2f91fd431d51
+Source RPM  : gpgme-1.13.1-12.el8.src.rpm
+Build Date  : Tue Feb 13 10:20:27 2024
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://gnupg.org/related_software/gpgme/
+Summary     : GnuPG Made Easy - high level crypto API
+Description :
+GnuPG Made Easy (GPGME) is a library designed to make access to GnuPG
+easier for applications.  It provides a high-level crypto API for
+encryption, decryption, signing, signature verification and key
+management.
+Name        : libssh-config
+Version     : 0.9.6
+Release     : 16.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 277
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Nov  5 13:15:37 2025, Key ID 199e2f91fd431d51
+Source RPM  : libssh-0.9.6-16.el8_10.src.rpm
+Build Date  : Wed Nov  5 11:08:02 2025
+Build Host  : aarch64-009.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.libssh.org
+Summary     : Configuration files for libssh
+Description :
+The libssh-config package provides the default configuration files for libssh.
+Name        : libcurl
+Version     : 7.61.1
+Release     : 34.el8_10.9
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 597632
+License     : MIT
+Signature   : RSA/SHA256, Fri Nov 21 13:32:03 2025, Key ID 199e2f91fd431d51
+Source RPM  : curl-7.61.1-34.el8_10.9.src.rpm
+Build Date  : Fri Oct 24 10:16:10 2025
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://curl.haxx.se/
+Summary     : A library for getting files from web servers
+Description :
+libcurl is a free and easy-to-use client-side URL transfer library, supporting
+FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP,
+SMTP, POP3 and RTSP. libcurl supports SSL certificates, HTTP POST, HTTP PUT,
+FTP uploading, HTTP form based upload, proxies, cookies, user+password
+authentication (Basic, Digest, NTLM, Negotiate, Kerberos4), file transfer
+resume, http proxy tunneling and more.
+Name        : python3-librepo
+Version     : 1.14.2
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 179998
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Dec  6 15:30:58 2023, Key ID 199e2f91fd431d51
+Source RPM  : librepo-1.14.2-5.el8.src.rpm
+Build Date  : Thu Nov 30 10:51:30 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/librepo
+Summary     : Python 3 bindings for the librepo library
+Description :
+Python 3 bindings for the librepo library.
+Name        : rpm
+Version     : 4.14.3
+Release     : 32.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : System Environment/Base
+Size        : 2087838
+License     : GPLv2+
+Signature   : RSA/SHA256, Tue Oct 22 09:06:57 2024, Key ID 199e2f91fd431d51
+Source RPM  : rpm-4.14.3-32.el8_10.src.rpm
+Build Date  : Mon Oct 21 15:41:01 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.rpm.org/
+Summary     : The RPM package management system
+Description :
+The RPM Package Manager (RPM) is a powerful command line driven
+package management system capable of installing, uninstalling,
+verifying, querying, and updating software packages. Each software
+package consists of an archive of files along with information about
+the package like its version, a description, etc.
+Name        : libmodulemd
+Version     : 2.13.0
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 722354
+License     : MIT
+Signature   : RSA/SHA256, Wed Aug 18 08:11:14 2021, Key ID 199e2f91fd431d51
+Source RPM  : libmodulemd-2.13.0-1.el8.src.rpm
+Build Date  : Thu Aug 12 15:34:22 2021
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/fedora-modularity/libmodulemd
+Summary     : Module metadata manipulation library
+Description :
+C Library for manipulating module metadata files.
+See https://github.com/fedora-modularity/libmodulemd/blob/master/README.md for
+more details.
+Name        : libdnf
+Version     : 0.63.0
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 2421902
+License     : LGPLv2+
+Signature   : RSA/SHA256, Tue Dec 17 15:17:02 2024, Key ID 199e2f91fd431d51
+Source RPM  : libdnf-0.63.0-21.el8_10.src.rpm
+Build Date  : Tue Dec 10 14:20:21 2024
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/libdnf
+Summary     : Library providing simplified C and Python API to libsolv
+Description :
+A Library providing simplified C and Python API to libsolv.
+Name        : python3-hawkey
+Version     : 0.63.0
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 300680
+License     : LGPLv2+
+Signature   : RSA/SHA256, Tue Dec 17 15:17:02 2024, Key ID 199e2f91fd431d51
+Source RPM  : libdnf-0.63.0-21.el8_10.src.rpm
+Build Date  : Tue Dec 10 14:20:21 2024
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/libdnf
+Summary     : Python 3 bindings for the hawkey library
+Description :
+Python 3 bindings for the hawkey library.
+Name        : python3-rpm
+Version     : 4.14.3
+Release     : 32.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Development/Libraries
+Size        : 398541
+License     : GPLv2+
+Signature   : RSA/SHA256, Tue Oct 22 09:06:57 2024, Key ID 199e2f91fd431d51
+Source RPM  : rpm-4.14.3-32.el8_10.src.rpm
+Build Date  : Mon Oct 21 15:41:01 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.rpm.org/
+Summary     : Python 3 bindings for apps which will manipulate RPM packages
+Description :
+The python3-rpm package contains a module that permits applications
+written in the Python programming language to use the interface
+supplied by RPM Package Manager libraries.
+
+This package should be installed if you want to develop Python 3
+programs that will manipulate RPM packages and databases.
+Name        : libreport-filesystem
+Version     : 2.9.5
+Release     : 15.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 0
+License     : GPLv2+
+Signature   : RSA/SHA256, Wed Aug 19 11:20:14 2020, Key ID 199e2f91fd431d51
+Source RPM  : libreport-2.9.5-15.el8.src.rpm
+Build Date  : Wed Aug 19 06:41:51 2020
+Build Host  : x86-vm-09.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://abrt.readthedocs.org/
+Summary     : Filesystem layout for libreport
+Description :
+Filesystem layout for libreport
+Name        : python3-dnf
+Version     : 4.7.0
+Release     : 21.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 1917079
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Jan 30 09:16:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : dnf-4.7.0-21.el8_10.src.rpm
+Build Date  : Wed Jan 29 13:47:27 2025
+Build Host  : aarch64-017.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/dnf
+Summary     : Python 3 interface to DNF
+Description :
+Python 3 interface to DNF.
+Name        : python3-dnf-plugins-core
+Version     : 4.0.21
+Release     : 25.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 908005
+License     : GPLv2+
+Signature   : RSA/SHA256, Tue Jan 16 15:30:49 2024, Key ID 199e2f91fd431d51
+Source RPM  : dnf-plugins-core-4.0.21-25.el8.src.rpm
+Build Date  : Mon Jan 15 16:36:03 2024
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/dnf-plugins-core
+Summary     : Core Plugins for DNF
+Description :
+Core Plugins for DNF, Python 3 interface. This package enhances DNF with builddep,
+config-manager, copr, debug, debuginfo-install, download, needs-restarting,
+groups-manager, repoclosure, repograph, repomanage, reposync, changelog,
+repodiff, system-upgrade, offline-upgrade and offline-distrosync commands.
+Additionally provides generate_completion_cache passive plugin.
+Name        : subscription-manager
+Version     : 1.28.44
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : System Environment/Base
+Size        : 4362374
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Jun  3 16:57:45 2025, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-1.28.44-1.el8_10.src.rpm
+Build Date  : Tue Jun  3 08:53:17 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.candlepinproject.org/
+Summary     : Tools and libraries for subscription and repository management
+Description :
+The Subscription Manager package provides programs and libraries to allow users
+to manage subscriptions and yum repositories from the Red Hat entitlement
+platform.
+Name        : gdb-gdbserver
+Version     : 8.2
+Release     : 20.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Development/Debuggers
+Size        : 656471
+License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ and GPLv2+ with exceptions and GPL+ and LGPLv2+ and LGPLv3+ and BSD and Public Domain and GFDL
+Signature   : RSA/SHA256, Thu May 11 16:30:30 2023, Key ID 199e2f91fd431d51
+Source RPM  : gdb-8.2-20.el8.src.rpm
+Build Date  : Fri Mar 31 21:48:25 2023
+Build Host  : x86-vm-07.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://gnu.org/software/gdb/
+Summary     : A standalone server for GDB (the GNU source-level debugger)
+Description :
+GDB, the GNU debugger, allows you to debug programs written in C, C++,
+Java, and other languages, by executing them in a controlled fashion
+and printing their data.
+
+This package provides a program that allows you to run GDB on a different
+machine than the one which is running the program being debugged.
+Name        : vim-minimal
+Epoch       : 2
+Version     : 8.0.1763
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 1187124
+License     : Vim and MIT
+Signature   : RSA/SHA256, Thu Oct  2 11:45:55 2025, Key ID 199e2f91fd431d51
+Source RPM  : vim-8.0.1763-21.el8_10.src.rpm
+Build Date  : Fri Sep 19 06:39:06 2025
+Build Host  : x86-037.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.vim.org/
+Summary     : A minimal version of the VIM editor
+Description :
+VIM (VIsual editor iMproved) is an updated and improved version of the
+vi editor.  Vi was the first real screen-based editor for UNIX, and is
+still very popular.  VIM improves on vi by adding new features:
+multiple windows, multi-level undo, block highlighting and more. The
+vim-minimal package includes a minimal version of VIM, which is
+installed into /bin/vi for use when only the root partition is
+present. NOTE: The online help is only available when the vim-common
+package is installed.
+Name        : rootfiles
+Version     : 8.1
+Release     : 22.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : System Environment/Base
+Size        : 599
+License     : Public Domain
+Signature   : RSA/SHA256, Sat Dec 15 00:58:44 2018, Key ID 199e2f91fd431d51
+Source RPM  : rootfiles-8.1-22.el8.src.rpm
+Build Date  : Sun Aug 12 17:53:03 2018
+Build Host  : s390-016.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+Summary     : The basic required files for the root user's directory
+Description :
+The rootfiles package contains basic required files that are placed
+in the root user's account.  These files are basically the same
+as those in /etc/skel, which are placed in regular
+users' home directories.
+Name        : libmetalink
+Version     : 0.1.3
+Release     : 7.el8
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:12 2026
+Group       : System Environment/Libraries
+Size        : 75864
+License     : MIT
+Signature   : RSA/SHA256, Fri Dec 14 23:25:42 2018, Key ID 199e2f91fd431d51
+Source RPM  : libmetalink-0.1.3-7.el8.src.rpm
+Build Date  : Sun Aug 12 13:38:12 2018
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://launchpad.net/libmetalink
+Summary     : Metalink library written in C
+Description :
+libmetalink is a Metalink C library. It adds Metalink functionality such as
+parsing Metalink XML files to programs written in C.
+Name        : unzip
+Version     : 6.0
+Release     : 48.el8_10
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:13 2026
+Group       : Applications/Archiving
+Size        : 424053
+License     : BSD
+Signature   : RSA/SHA256, Wed Apr 16 14:23:08 2025, Key ID 199e2f91fd431d51
+Source RPM  : unzip-6.0-48.el8_10.src.rpm
+Build Date  : Wed Apr  9 08:08:14 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.info-zip.org/UnZip.html
+Summary     : A utility for unpacking zip files
+Description :
+The unzip utility is used to list, test, or extract files from a zip
+archive.  Zip archives are commonly found on MS-DOS systems.  The zip
+utility, included in the zip package, creates zip archives.  Zip and
+unzip are both compatible with archives created by PKWARE(R)'s PKZIP
+for MS-DOS, but the programs' options and default behaviors do differ
+in some respects.
+
+Install the unzip package if you need to list, test or extract files from
+a zip archive.
+Name        : openssl
+Epoch       : 1
+Version     : 1.1.1k
+Release     : 14.el8_6
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:13 2026
+Group       : Unspecified
+Size        : 1185648
+License     : OpenSSL and ASL 2.0
+Signature   : RSA/SHA256, Tue Sep 17 12:46:01 2024, Key ID 199e2f91fd431d51
+Source RPM  : openssl-1.1.1k-14.el8_6.src.rpm
+Build Date  : Tue Sep 17 10:11:24 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.openssl.org/
+Summary     : Utilities from the general purpose cryptography library with TLS implementation
+Description :
+The OpenSSL toolkit provides support for secure communications between
+machines. OpenSSL includes a certificate management tool and shared
+libraries which provide various cryptographic algorithms and
+protocols.
+Name        : redhat-release
+Version     : 8.10
+Release     : 0.3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:22 2025
+Group       : System Environment/Base
+Size        : 56652
+License     : GPLv2
+Signature   : RSA/SHA256, Fri Apr 26 07:14:08 2024, Key ID 199e2f91fd431d51
+Source RPM  : redhat-release-8.10-0.3.el8.src.rpm
+Build Date  : Wed Apr 24 12:10:38 2024
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+Summary     : Red Hat Enterprise Linux release file
+Description :
+Red Hat Enterprise Linux release files
+Name        : gpg-pubkey
+Version     : d4082792
+Release     : 5b32db75
+Architecture: (none)
+Install Date: Thu Dec 18 20:59:22 2025
+Group       : Public Keys
+Size        : 0
+License     : pubkey
+Signature   : (none)
+Source RPM  : (none)
+Build Date  : Wed Jun 27 00:33:57 2018
+Build Host  : localhost
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. (auxiliary key) <security@redhat.com>
+Summary     : gpg(Red Hat, Inc. (auxiliary key) <security@redhat.com>)
+Description :
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: rpm-4.14.3 (NSS-3)
+
+mQINBFsy23UBEACUKSphFEIEvNpy68VeW4Dt6qv+mU6am9a2AAl10JANLj1oqWX+
+oYk3en1S6cVe2qehSL5DGVa3HMUZkP3dtbD4SgzXzxPodebPcr4+0QNWigkUisri
+XGL5SCEcOP30zDhZvg+4mpO2jMi7Kc1DLPzBBkgppcX91wa0L1pQzBcvYMPyV/Dh
+KbQHR75WdkP6OA2JXdfC94nxYq+2e0iPqC1hCP3Elh+YnSkOkrawDPmoB1g4+ft/
+xsiVGVy/W0ekXmgvYEHt6si6Y8NwXgnTMqxeSXQ9YUgVIbTpsxHQKGy76T5lMlWX
+4LCOmEVomBJg1SqF6yi9Vu8TeNThaDqT4/DddYInd0OO69s0kGIXalVgGYiW2HOD
+x2q5R1VGCoJxXomz+EbOXY+HpKPOHAjU0DB9MxbU3S248LQ69nIB5uxysy0PSco1
+sdZ8sxRNQ9Dw6on0Nowx5m6Thefzs5iK3dnPGBqHTT43DHbnWc2scjQFG+eZhe98
+Ell/kb6vpBoY4bG9/wCG9qu7jj9Z+BceCNKeHllbezVLCU/Hswivr7h2dnaEFvPD
+O4GqiWiwOF06XaBMVgxA8p2HRw0KtXqOpZk+o+sUvdPjsBw42BB96A1yFX4jgFNA
+PyZYnEUdP6OOv9HSjnl7k/iEkvHq/jGYMMojixlvXpGXhnt5jNyc4GSUJQARAQAB
+tDNSZWQgSGF0LCBJbmMuIChhdXhpbGlhcnkga2V5KSA8c2VjdXJpdHlAcmVkaGF0
+LmNvbT6JAjkEEwECACMFAlsy23UCGwMHCwkIBwMCAQYVCAIJCgsEFgIDAQIeAQIX
+gAAKCRD3b2bD1AgnknqOD/9fB2ASuG2aJIiap4kK58R+RmOVM4qgclAnaG57+vjI
+nKvyfV3NH/keplGNRxwqHekfPCqvkpABwhdGEXIE8ILqnPewIMr6PZNZWNJynZ9i
+eSMzVuCG7jDoGyQ5/6B0f6xeBtTeBDiRl7+Alehet1twuGL1BJUYG0QuLgcEzkaE
+/gkuumeVcazLzz7L12D22nMk66GxmgXfqS5zcbqOAuZwaA6VgSEgFdV2X2JU79zS
+BQJXv7NKc+nDXFG7M7EHjY3Rma3HXkDbkT8bzh9tJV7Z7TlpT829pStWQyoxKCVq
+sEX8WsSapTKA3P9YkYCwLShgZu4HKRFvHMaIasSIZWzLu+RZH/4yyHOhj0QB7XMY
+eHQ6fGSbtJ+K6SrpHOOsKQNAJ0hVbSrnA1cr5+2SDfel1RfYt0W9FA6DoH/S5gAR
+dzT1u44QVwwp3U+eFpHphFy//uzxNMtCjjdkpzhYYhOCLNkDrlRPb+bcoL/6ePSr
+016PA7eEnuC305YU1Ml2WcCn7wQV8x90o33klJmEkWtXh3X39vYtI4nCPIvZn1eP
+Vy+F+wWt4vN2b8oOdlzc2paOembbCo2B+Wapv5Y9peBvlbsDSgqtJABfK8KQq/jK
+Yl3h5elIa1I3uNfczeHOnf1enLOUOlq630yeM/yHizz99G1g+z/guMh5+x/OHraW
+iLkCDQRbMtt1ARAA1lNsWklhS9LoBdolTVtg65FfdFJr47pzKRGYIoGLbcJ155ND
+G+P8UrM06E/ah06EEWuvu2YyyYAz1iYGsCwHAXtbEJh+1tF0iOVx2vnZPgtIGE9V
+P95V5ZvWvB3bdke1z8HadDA+/Ve7fbwXXLa/z9QhSQgsJ8NS8KYnDDjI4EvQtv0i
+PVLY8+u8z6VyiV9RJyn8UEZEJdbFDF9AZAT8103w8SEo/cvIoUbVKZLGcXdAIjCa
+y04u6jsrMp9UGHZX7+srT+9YHDzQixei4IdmxUcqtiNR2/bFHpHCu1pzYjXj968D
+8Ng2txBXDgs16BF/9l++GWKz2dOSH0jdS6sFJ/Dmg7oYnJ2xKSJEmcnV8Z0M1n4w
+XR1t/KeKZe3aR+RXCAEVC5dQ3GbRW2+WboJ6ldgFcVcOv6iOSWP9TrLzFPOpCsIr
+nHE+cMBmPHq3dUm7KeYXQ6wWWmtXlw6widf7cBcGFeELpuU9klzqdKze8qo2oMkf
+rfxIq8zdciPxZXb/75dGWs6dLHQmDpo4MdQVskw5vvwHicMpUpGpxkX7X1XAfdQf
+yIHLGT4ZXuMLIMUPdzJE0Vwt/RtJrZ+feLSv/+0CkkpGHORYroGwIBrJ2RikgcV2
+bc98V/27Kz2ngUCEwnmlhIcrY4IGAAZzUAl0GLHSevPbAREu4fDW4Y+ztOsAEQEA
+AYkCHwQYAQIACQUCWzLbdQIbDAAKCRD3b2bD1AgnkusfD/9U4sPtZfMw6cII167A
+XRZOO195G7oiAnBUw5AW6EK0SAHVZcuW0LMMXnGe9f4UsEUgCNwo5mvLWPxzKqFq
+6/G3kEZVFwZ0qrlLoJPeHNbOcfkeZ9NgD/OhzQmdylM0IwGM9DMrm2YS4EVsmm2b
+53qKIfIyysp1yAGcTnBwBbZ85osNBl2KRDIPhMs0bnmGB7IAvwlSb+xm6vWKECkO
+lwQDO5Kg8YZ8+Z3pn/oS688t/fPXvWLZYUqwR63oWfIaPJI7Ahv2jJmgw1ofL81r
+2CE3T/OydtUeGLzqWJAB8sbUgT3ug0cjtxsHuroQBSYBND3XDb/EQh5GeVVnGKKH
+gESLFAoweoNjDSXrlIu1gFjCDHF4CqBRmNYKrNQjLmhCrSfwkytXESJwlLzFKY8P
+K1yZyTpDC9YK0G7qgrk7EHmH9JAZTQ5V65pp0vR9KvqTU5ewkQDIljD2f3FIqo2B
+SKNCQE+N6NjWaTeNlU75m+yZocKObSPg0zS8FAuSJetNtzXA7ouqk34OoIMQj4gq
+Unh/i1FcZAd4U6Dtr9aRZ6PeLlm6MJ/h582L6fJLNEu136UWDtJj5eBYEzX13l+d
+SC4PEHx7ZZRwQKptl9NkinLZGJztg175paUu8C34sAv+SQnM20c0pdOXAq9GKKhi
+vt61kpkXoRGxjTlc6h+69aidSg==
+=ls8J
+-----END PGP PUBLIC KEY BLOCK-----
+
+Name        : setup
+Version     : 2.12.2
+Release     : 9.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:26 2025
+Group       : System Environment/Base
+Size        : 724747
+License     : Public Domain
+Signature   : RSA/SHA256, Mon Nov 28 13:06:46 2022, Key ID 199e2f91fd431d51
+Source RPM  : setup-2.12.2-9.el8.src.rpm
+Build Date  : Mon Nov 28 11:41:38 2022
+Build Host  : ppc-064.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pagure.io/setup/
+Summary     : A set of system configuration and setup files
+Description :
+The setup package contains a set of important system configuration and
+setup files, such as passwd, group, and profile.
+Name        : tzdata
+Version     : 2025c
+Release     : 1.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Base
+Size        : 1979098
+License     : Public Domain
+Signature   : RSA/SHA256, Fri Dec 12 09:29:54 2025, Key ID 199e2f91fd431d51
+Source RPM  : tzdata-2025c-1.el8.src.rpm
+Build Date  : Thu Dec 11 20:13:35 2025
+Build Host  : ppc-rdu-poc.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.iana.org/time-zones
+Summary     : Timezone data
+Description :
+This package contains data files with rules for various timezones around
+the world.
+Name        : python3-pip-wheel
+Version     : 9.0.3
+Release     : 24.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 899549
+License     : MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
+Signature   : RSA/SHA256, Thu Feb 15 09:38:27 2024, Key ID 199e2f91fd431d51
+Source RPM  : python-pip-9.0.3-24.el8.src.rpm
+Build Date  : Wed Feb 14 15:29:54 2024
+Build Host  : ppc-063.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.pip-installer.org
+Summary     : The pip wheel
+Description :
+A Python wheel of pip to use with venv.
+Name        : subscription-manager-rhsm-certificates
+Version     : 20220623
+Release     : 1.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 27808
+License     : GPLv2
+Signature   : RSA/SHA256, Thu May 18 21:00:40 2023, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-rhsm-certificates-20220623-1.el8.src.rpm
+Build Date  : Wed May 17 12:45:15 2023
+Build Host  : ppc-062.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.candlepinproject.org/
+Summary     : Certificates required to communicate with a Red Hat Unified Entitlement Platform
+Description :
+This package contains certificates required for communicating with the REST interface
+of a Red Hat Unified Entitlement Platform, used for the management of system entitlements
+and to receive access to content.
+Name        : ncurses-base
+Version     : 6.1
+Release     : 10.20180224.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Base
+Size        : 290089
+License     : MIT
+Signature   : RSA/SHA256, Tue Aug 15 14:55:23 2023, Key ID 199e2f91fd431d51
+Source RPM  : ncurses-6.1-10.20180224.el8.src.rpm
+Build Date  : Tue Aug 15 11:41:27 2023
+Build Host  : arm64-010.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://invisible-island.net/ncurses/ncurses.html
+Summary     : Descriptions of common terminals
+Description :
+This package contains descriptions of common terminals. Other terminal
+descriptions are included in the ncurses-term package.
+Name        : libselinux
+Version     : 2.9
+Release     : 10.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 173160
+License     : Public Domain
+Signature   : RSA/SHA256, Wed Jan 29 19:03:25 2025, Key ID 199e2f91fd431d51
+Source RPM  : libselinux-2.9-10.el8_10.src.rpm
+Build Date  : Wed Jan 29 10:57:52 2025
+Build Host  : x86-vm-05.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/SELinuxProject/selinux/wiki
+Summary     : SELinux library and simple utilities
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libselinux provides an API for SELinux applications to get and set
+process and file security contexts and to obtain security policy
+decisions.  Required for any applications that use the SELinux API.
+Name        : glibc-minimal-langpack
+Version     : 2.28
+Release     : 251.el8_10.27
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 0
+License     : LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature   : RSA/SHA256, Tue Dec  2 12:22:58 2025, Key ID 199e2f91fd431d51
+Source RPM  : glibc-2.28-251.el8_10.27.src.rpm
+Build Date  : Thu Nov 20 17:35:37 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/glibc/
+Summary     : Minimal language packs for glibc.
+Description :
+This is a Meta package that is used to install minimal language packs.
+This package ensures you can use C, POSIX, or C.UTF-8 locales, but
+nothing else. It is designed for assembling a minimal system.
+Name        : glibc
+Version     : 2.28
+Release     : 251.el8_10.27
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 6884048
+License     : LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature   : RSA/SHA256, Tue Dec  2 12:22:44 2025, Key ID 199e2f91fd431d51
+Source RPM  : glibc-2.28-251.el8_10.27.src.rpm
+Build Date  : Thu Nov 20 17:35:37 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/glibc/
+Summary     : The GNU libc libraries
+Description :
+The glibc package contains standard libraries which are used by
+multiple programs on the system. In order to save disk space and
+memory, as well as to make upgrading easier, common system code is
+kept in one place and shared between programs. This particular package
+contains the most important sets of shared libraries: the standard C
+library and the standard math library. Without these two libraries, a
+Linux system will not function.
+Name        : libsepol
+Version     : 2.9
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 761624
+License     : LGPLv2+
+Signature   : RSA/SHA256, Tue Aug 24 17:22:06 2021, Key ID 199e2f91fd431d51
+Source RPM  : libsepol-2.9-3.el8.src.rpm
+Build Date  : Tue Aug 24 15:40:36 2021
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/SELinuxProject/selinux/wiki
+Summary     : SELinux binary policy manipulation library
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsepol provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.
+Name        : xz-libs
+Version     : 5.2.4
+Release     : 4.el8_6
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 164967
+License     : Public Domain
+Signature   : RSA/SHA256, Mon Jun  6 10:38:15 2022, Key ID 199e2f91fd431d51
+Source RPM  : xz-5.2.4-4.el8_6.src.rpm
+Build Date  : Tue May 31 14:16:15 2022
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://tukaani.org/xz/
+Summary     : Libraries for decoding LZMA compression
+Description :
+Libraries for decoding files compressed with LZMA or XZ utils.
+Name        : libgpg-error
+Version     : 1.31
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 900810
+License     : LGPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 23:17:46 2018, Key ID 199e2f91fd431d51
+Source RPM  : libgpg-error-1.31-1.el8.src.rpm
+Build Date  : Sun Aug 12 13:25:39 2018
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnupg.org/related_software/libgpg-error/
+Summary     : Library for error values used by GnuPG components
+Description :
+This is a library that defines common error values for all GnuPG
+components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+pinentry, SmartCard Daemon and possibly more in the future.
+Name        : info
+Version     : 6.5
+Release     : 7.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 386126
+License     : GPLv3+
+Signature   : RSA/SHA256, Mon Feb 21 11:32:05 2022, Key ID 199e2f91fd431d51
+Source RPM  : texinfo-6.5-7.el8.src.rpm
+Build Date  : Mon Jan 17 10:55:52 2022
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/texinfo/
+Summary     : A stand-alone TTY-based reader for GNU texinfo documentation
+Description :
+The GNU project uses the texinfo file format for much of its
+documentation. The info package provides a standalone TTY-based
+browser program for viewing texinfo files.
+Name        : libzstd
+Version     : 1.4.4
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 698061
+License     : BSD and GPLv2
+Signature   : RSA/SHA256, Mon Jun  8 09:18:39 2020, Key ID 199e2f91fd431d51
+Source RPM  : zstd-1.4.4-1.el8.src.rpm
+Build Date  : Fri Jun  5 09:22:13 2020
+Build Host  : x86-vm-09.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/facebook/zstd
+Summary     : Zstd shared library
+Description :
+Zstandard compression shared library.
+Name        : popt
+Version     : 1.18
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 126626
+License     : MIT
+Signature   : RSA/SHA256, Mon Jan 18 09:13:29 2021, Key ID 199e2f91fd431d51
+Source RPM  : popt-1.18-1.el8.src.rpm
+Build Date  : Thu Jan  7 11:05:44 2021
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/popt/
+Summary     : C library for parsing command line parameters
+Description :
+Popt is a C library for parsing command line parameters. Popt was
+heavily influenced by the getopt() and getopt_long() functions, but
+it improves on them by allowing more powerful argument expansion.
+Popt can parse arbitrary argv[] style arrays and automatically set
+variables based on command line arguments. Popt allows command line
+arguments to be aliased via configuration files and includes utility
+functions for parsing arbitrary strings into argv[] arrays using
+shell-like rules.
+Name        : libxml2
+Version     : 2.9.7
+Release     : 21.el8_10.3
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 1753138
+License     : MIT
+Signature   : RSA/SHA256, Wed Aug  6 06:45:46 2025, Key ID 199e2f91fd431d51
+Source RPM  : libxml2-2.9.7-21.el8_10.3.src.rpm
+Build Date  : Tue Aug  5 20:44:37 2025
+Build Host  : x86-vm-54.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://xmlsoft.org/
+Summary     : Library providing XML and HTML support
+Description :
+This library allows to manipulate XML files. It includes support
+to read, modify and write XML and HTML files. There is DTDs support
+this includes parsing and validation even with complex DtDs, either
+at parse time or later once the document has been modified. The output
+can be a simple SAX stream or and in-memory DOM like representations.
+In this case one can use the built-in XPath and XPointer implementation
+to select sub nodes or ranges. A flexible Input/Output mechanism is
+available, with existing HTTP and FTP modules and combined to an
+URI library.
+Name        : json-c
+Version     : 0.13.1
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 69282
+License     : MIT
+Signature   : RSA/SHA256, Tue Nov  9 11:52:48 2021, Key ID 199e2f91fd431d51
+Source RPM  : json-c-0.13.1-3.el8.src.rpm
+Build Date  : Tue Nov  9 09:01:26 2021
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/json-c/json-c
+Summary     : JSON implementation in C
+Description :
+JSON-C implements a reference counting object model that allows you
+to easily construct JSON objects in C, output them as JSON formatted
+strings and parse JSON formatted strings back into the C representation
+of JSON objects.  It aims to conform to RFC 7159.
+Name        : libffi
+Version     : 3.1
+Release     : 24.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Libraries
+Size        : 53844
+License     : MIT
+Signature   : RSA/SHA256, Mon Dec  5 09:00:51 2022, Key ID 199e2f91fd431d51
+Source RPM  : libffi-3.1-24.el8.src.rpm
+Build Date  : Mon Nov 28 19:56:38 2022
+Build Host  : x86-vm-56.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sourceware.org/libffi
+Summary     : A portable foreign function interface library
+Description :
+Compilers for high level languages generate code that follow certain
+conventions.  These conventions are necessary, in part, for separate
+compilation to work.  One such convention is the "calling convention".
+The calling convention is a set of assumptions made by the compiler
+about where function arguments will be found on entry to a function.  A
+calling convention also specifies where the return value for a function
+is found.
+
+Some programs may not know at the time of compilation what arguments
+are to be passed to a function.  For instance, an interpreter may be
+told at run-time about the number and types of arguments used to call a
+given function.  `Libffi' can be used in such programs to provide a
+bridge from the interpreter program to compiled code.
+
+The `libffi' library provides a portable, high level programming
+interface to various calling conventions.  This allows a programmer to
+call any function specified by a call interface description at run time.
+
+FFI stands for Foreign Function Interface.  A foreign function
+interface is the popular name for the interface that allows code
+written in one language to call code written in another language.  The
+`libffi' library really only provides the lowest, machine dependent
+layer of a fully featured foreign function interface.  A layer must
+exist above `libffi' that handles type conversions for values passed
+between the two languages.
+Name        : readline
+Version     : 7.0
+Release     : 10.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 462801
+License     : GPLv3+
+Signature   : RSA/SHA256, Sat Dec 15 00:58:13 2018, Key ID 199e2f91fd431d51
+Source RPM  : readline-7.0-10.el8.src.rpm
+Build Date  : Sun Aug 12 17:52:09 2018
+Build Host  : x86-vm-06.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+Summary     : A library for editing typed command lines
+Description :
+The Readline library provides a set of functions that allow users to
+edit command lines. Both Emacs and vi editing modes are available. The
+Readline library includes additional functions for maintaining a list
+of previously-entered command lines for recalling or editing those
+lines, and for performing csh-like history expansion on previous
+commands.
+Name        : libattr
+Version     : 2.4.48
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Unspecified
+Size        : 26834
+License     : LGPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 21:48:48 2018, Key ID 199e2f91fd431d51
+Source RPM  : attr-2.4.48-3.el8.src.rpm
+Build Date  : Sun Aug 12 08:43:07 2018
+Build Host  : x86-vm-02.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://savannah.nongnu.org/projects/attr
+Summary     : Dynamic library for extended attribute support
+Description :
+This package contains the libattr.so dynamic library which contains
+the extended attribute system calls and library functions.
+Name        : coreutils-single
+Version     : 8.30
+Release     : 16.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : System Environment/Base
+Size        : 1360681
+License     : GPLv3+
+Signature   : RSA/SHA256, Wed Nov 19 10:45:47 2025, Key ID 199e2f91fd431d51
+Source RPM  : coreutils-8.30-16.el8_10.src.rpm
+Build Date  : Wed Oct 29 14:17:35 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnu.org/software/coreutils/
+Summary     : coreutils multicall binary
+Description :
+These are the GNU core utilities,
+packaged as a single multicall binary.
+Name        : libmount
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:27 2025
+Group       : Development/Libraries
+Size        : 398298
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 24 17:31:09 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Device mounting library
+Description :
+This is the device mounting library, part of util-linux.
+Name        : libsmartcols
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Development/Libraries
+Size        : 248450
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 24 17:31:09 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Formatting library for ls-like programs.
+Description :
+This is library for ls-like terminal programs, part of util-linux.
+Name        : lua-libs
+Version     : 5.3.4
+Release     : 12.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Development/Languages
+Size        : 247936
+License     : MIT
+Signature   : RSA/SHA256, Thu Aug 19 08:51:45 2021, Key ID 199e2f91fd431d51
+Source RPM  : lua-5.3.4-12.el8.src.rpm
+Build Date  : Wed Aug 18 13:28:39 2021
+Build Host  : x86-037.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.lua.org/
+Summary     : Libraries for lua
+Description :
+This package contains the shared libraries for lua.
+Name        : chkconfig
+Version     : 1.19.2
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 827702
+License     : GPLv2
+Signature   : RSA/SHA256, Tue May 23 14:00:58 2023, Key ID 199e2f91fd431d51
+Source RPM  : chkconfig-1.19.2-1.el8.src.rpm
+Build Date  : Mon May 15 12:04:17 2023
+Build Host  : x86-037.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/fedora-sysv/chkconfig
+Summary     : A system tool for maintaining the /etc/rc*.d hierarchy
+Description :
+Chkconfig is a basic system utility.  It updates and queries runlevel
+information for system services.  Chkconfig manipulates the numerous
+symbolic links in /etc/rc.d, to relieve system administrators of some
+of the drudgery of manually editing the symbolic links.
+Name        : libidn2
+Version     : 2.2.0
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 284362
+License     : (GPLv2+ or LGPLv3+) and GPLv3+
+Signature   : RSA/SHA256, Mon Jun 10 12:13:59 2019, Key ID 199e2f91fd431d51
+Source RPM  : libidn2-2.2.0-1.el8.src.rpm
+Build Date  : Mon Jun 10 10:24:21 2019
+Build Host  : x86-vm-01.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnu.org/software/libidn/#libidn2
+Summary     : Library to support IDNA2008 internationalized domain names
+Description :
+Libidn2 is an implementation of the IDNA2008 specifications in RFC
+5890, 5891, 5892, 5893 and TR46 for internationalized domain names
+(IDN). It is a standalone library, without any dependency on libidn.
+Name        : file-libs
+Version     : 5.33
+Release     : 27.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Applications/File
+Size        : 6385879
+License     : BSD
+Signature   : RSA/SHA256, Wed May 28 09:22:57 2025, Key ID 199e2f91fd431d51
+Source RPM  : file-5.33-27.el8_10.src.rpm
+Build Date  : Tue Apr 15 15:47:19 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.darwinsys.com/file/
+Summary     : Libraries for applications using libmagic
+Description :
+
+Libraries for applications using libmagic.
+Name        : libcap-ng
+Version     : 0.7.11
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 51470
+License     : LGPLv2+
+Signature   : RSA/SHA256, Fri Jun  4 11:01:46 2021, Key ID 199e2f91fd431d51
+Source RPM  : libcap-ng-0.7.11-1.el8.src.rpm
+Build Date  : Wed Jun  2 12:14:46 2021
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://people.redhat.com/sgrubb/libcap-ng
+Summary     : An alternate posix capabilities library
+Description :
+Libcap-ng is a library that makes using posix capabilities easier
+Name        : lz4-libs
+Version     : 1.8.3
+Release     : 5.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 121151
+License     : GPLv2+ and BSD
+Signature   : RSA/SHA256, Mon Jun 23 14:02:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : lz4-1.8.3-5.el8_10.src.rpm
+Build Date  : Fri Jun 20 14:49:02 2025
+Build Host  : x86-vm-15.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://lz4.github.io/lz4/
+Summary     : Libaries for lz4
+Description :
+This package contains the libaries for lz4.
+Name        : gdbm-libs
+Epoch       : 1
+Version     : 1.18
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 118440
+License     : GPLv3+
+Signature   : RSA/SHA256, Wed Jul 13 15:02:30 2022, Key ID 199e2f91fd431d51
+Source RPM  : gdbm-1.18-2.el8.src.rpm
+Build Date  : Thu Jul  7 07:34:52 2022
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/gdbm/
+Summary     : Libraries files for gdbm
+Description :
+Libraries for the Gdbm GNU database indexing library
+Name        : libtasn1
+Version     : 4.13
+Release     : 5.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : System Environment/Libraries
+Size        : 165309
+License     : GPLv3+ and LGPLv2+
+Signature   : RSA/SHA256, Mon Apr  7 17:59:21 2025, Key ID 199e2f91fd431d51
+Source RPM  : libtasn1-4.13-5.el8_10.src.rpm
+Build Date  : Mon Apr  7 11:06:54 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/libtasn1/
+Summary     : The ASN.1 library used in GNUTLS
+Description :
+A library that provides Abstract Syntax Notation One (ASN.1, as specified
+by the X.680 ITU-T recommendation) parsing and structures management, and
+Distinguished Encoding Rules (DER, as per X.690) encoding and decoding functions.
+Name        : pcre
+Version     : 8.42
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 509947
+License     : BSD
+Signature   : RSA/SHA256, Fri Jun  4 08:09:00 2021, Key ID 199e2f91fd431d51
+Source RPM  : pcre-8.42-6.el8.src.rpm
+Build Date  : Wed Jun  2 12:29:50 2021
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.pcre.org/
+Summary     : Perl-compatible regular expression library
+Description :
+PCRE, Perl-compatible regular expression, library has its own native API, but
+a set of wrapper functions that are based on the POSIX API are also supplied
+in the libpcreposix library. Note that this just provides a POSIX calling
+interface to PCRE: the regular expressions themselves still follow Perl syntax
+and semantics. This package provides support for strings in 8-bit and UTF-8
+encodings. Detailed change log is provided by pcre-doc package.
+Name        : systemd-libs
+Version     : 239
+Release     : 82.el8_10.8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : Unspecified
+Size        : 4698702
+License     : LGPLv2+ and MIT
+Signature   : RSA/SHA256, Mon Oct  6 11:16:43 2025, Key ID 199e2f91fd431d51
+Source RPM  : systemd-239-82.el8_10.8.src.rpm
+Build Date  : Thu Oct  2 12:07:39 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/wiki/Software/systemd
+Summary     : systemd libraries
+Description :
+Libraries for systemd and udev.
+Name        : ca-certificates
+Version     : 2025.2.80_v9.0.304
+Release     : 80.2.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:28 2025
+Group       : System Environment/Base
+Size        : 2542497
+License     : MIT AND GPL-2.0-or-later
+Signature   : RSA/SHA256, Fri Oct 24 05:51:19 2025, Key ID 199e2f91fd431d51
+Source RPM  : ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.src.rpm
+Build Date  : Thu Oct 23 17:03:51 2025
+Build Host  : s390x-020.brew-001.prod.bwi.tph.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://fedoraproject.org/wiki/CA-Certificates
+Summary     : The Mozilla CA root certificate bundle
+Description :
+This package contains the set of CA certificates chosen by the
+Mozilla Foundation for use with the Internet PKI.
+Name        : libusbx
+Version     : 1.0.23
+Release     : 4.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 154147
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Aug 17 03:33:59 2020, Key ID 199e2f91fd431d51
+Source RPM  : libusbx-1.0.23-4.el8.src.rpm
+Build Date  : Wed Aug 12 14:33:26 2020
+Build Host  : x86-vm-02.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://libusb.info
+Summary     : Library for accessing USB devices
+Description :
+This package provides a way for applications to access USB devices.
+
+Libusbx is a fork of the original libusb, which is a fully API and ABI
+compatible drop in for the libusb-1.0.9 release. The libusbx fork was
+started by most of the libusb-1.0 developers, after the original libusb
+project did not produce a new release for over 18 months.
+
+Note that this library is not compatible with the original libusb-0.1 series,
+if you need libusb-0.1 compatibility install the libusb package.
+Name        : libsemanage
+Version     : 2.9
+Release     : 12.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 312384
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Apr 23 07:46:14 2025, Key ID 199e2f91fd431d51
+Source RPM  : libsemanage-2.9-12.el8_10.src.rpm
+Build Date  : Wed Apr  9 13:41:19 2025
+Build Host  : x86-vm-57.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/SELinuxProject/selinux/wiki
+Summary     : SELinux binary policy manipulation library
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsemanage provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.
+Name        : libutempter
+Version     : 1.1.6
+Release     : 14.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 52301
+License     : LGPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 23:53:18 2018, Key ID 199e2f91fd431d51
+Source RPM  : libutempter-1.1.6-14.el8.src.rpm
+Build Date  : Sun Aug 12 14:20:20 2018
+Build Host  : x86-vm-06.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : ftp://ftp.altlinux.org/pub/people/ldv/utempter
+Summary     : A privileged helper for utmp/wtmp updates
+Description :
+This library provides interface for terminal emulators such as
+screen and xterm to record user sessions to utmp and wtmp files.
+Name        : libfdisk
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Development/Libraries
+Size        : 438882
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 24 17:31:09 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Partitioning library for fdisk-like programs.
+Description :
+This is library for fdisk-like programs, part of util-linux.
+Name        : cracklib
+Version     : 2.9.6
+Release     : 15.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 239047
+License     : LGPLv2+
+Signature   : RSA/SHA256, Mon Nov 26 16:25:17 2018, Key ID 199e2f91fd431d51
+Source RPM  : cracklib-2.9.6-15.el8.src.rpm
+Build Date  : Mon Nov 26 15:31:53 2018
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sourceforge.net/projects/cracklib/
+Summary     : A password-checking library
+Description :
+CrackLib tests passwords to determine whether they match certain
+security-oriented characteristics, with the purpose of stopping users
+from choosing passwords that are easy to guess. CrackLib performs
+several tests on passwords: it tries to generate words from a username
+and gecos entry and checks those words against the password; it checks
+for simplistic patterns in passwords; and it checks for the password
+in a dictionary.
+
+CrackLib is actually a library containing a particular C function
+which is used to check the password, as well as other C
+functions. CrackLib is not a replacement for a passwd program; it must
+be used in conjunction with an existing passwd program.
+
+Install the cracklib package if you need a program to check users'
+passwords to see if they are at least minimally secure. If you install
+CrackLib, you will also want to install the cracklib-dicts package.
+Name        : which
+Version     : 2.21
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 83404
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Jul  4 11:19:05 2025, Key ID 199e2f91fd431d51
+Source RPM  : which-2.21-21.el8_10.src.rpm
+Build Date  : Thu Jul  3 12:01:49 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+Name        : mpfr
+Version     : 3.1.6
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 594201
+License     : LGPLv3+ and GPLv3+ and GFDL
+Signature   : RSA/SHA256, Sat Dec 15 00:10:30 2018, Key ID 199e2f91fd431d51
+Source RPM  : mpfr-3.1.6-1.el8.src.rpm
+Build Date  : Sun Aug 12 15:27:48 2018
+Build Host  : x86-vm-02.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.mpfr.org/
+Summary     : A C library for multiple-precision floating-point computations
+Description :
+The MPFR library is a C library for multiple-precision floating-point
+computations with "correct rounding". The MPFR is efficient and
+also has a well-defined semantics. It copies the good ideas from the
+ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+(53-bit mantissa). MPFR is based on the GMP multiple-precision library.
+Name        : libcomps
+Version     : 0.1.18
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 219236
+License     : GPLv2+
+Signature   : RSA/SHA256, Mon Nov 22 13:32:41 2021, Key ID 199e2f91fd431d51
+Source RPM  : libcomps-0.1.18-1.el8.src.rpm
+Build Date  : Tue Nov  9 11:39:02 2021
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/libcomps
+Summary     : Comps XML file manipulation library
+Description :
+Libcomps is library for structure-like manipulation with content of
+comps XML files. Supports read/write XML file, structure(s) modification.
+Name        : brotli
+Version     : 1.0.6
+Release     : 3.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 1521892
+License     : MIT
+Signature   : RSA/SHA256, Mon Jan 11 14:53:49 2021, Key ID 199e2f91fd431d51
+Source RPM  : brotli-1.0.6-3.el8.src.rpm
+Build Date  : Thu Oct  1 16:15:06 2020
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/google/brotli
+Summary     : Lossless compression algorithm
+Description :
+Brotli is a generic-purpose lossless compression algorithm that compresses
+data using a combination of a modern variant of the LZ77 algorithm, Huffman
+coding and 2nd order context modeling, with a compression ratio comparable
+to the best currently available general-purpose compression methods.
+It is similar in speed with deflate but offers more dense compression.
+Name        : libnl3
+Version     : 3.7.0
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Development/Libraries
+Size        : 1058816
+License     : LGPLv2
+Signature   : RSA/SHA256, Wed Jul  6 23:03:28 2022, Key ID 199e2f91fd431d51
+Source RPM  : libnl3-3.7.0-1.el8.src.rpm
+Build Date  : Wed Jul  6 17:06:18 2022
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.infradead.org/~tgr/libnl/
+Summary     : Convenience library for kernel netlink sockets
+Description :
+This package contains a convenience library to simplify
+using the Linux kernel's netlink sockets interface for
+network manipulation
+Name        : libsigsegv
+Version     : 2.11
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 46618
+License     : GPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 23:49:14 2018, Key ID 199e2f91fd431d51
+Source RPM  : libsigsegv-2.11-5.el8.src.rpm
+Build Date  : Sun Aug 12 14:10:03 2018
+Build Host  : x86-vm-09.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.gnu.org/software/libsigsegv/
+Summary     : Library for handling page faults in user mode
+Description :
+This is a library for handling page faults in user mode. A page fault
+occurs when a program tries to access to a region of memory that is
+currently not available. Catching and handling a page fault is a useful
+technique for implementing:
+  - pageable virtual memory
+  - memory-mapped access to persistent databases
+  - generational garbage collectors
+  - stack overflow handlers
+  - distributed shared memory
+Name        : libverto
+Version     : 0.3.2
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : Unspecified
+Size        : 26789
+License     : MIT
+Signature   : RSA/SHA256, Mon Jul 11 12:47:46 2022, Key ID 199e2f91fd431d51
+Source RPM  : libverto-0.3.2-2.el8.src.rpm
+Build Date  : Thu Jul  7 14:55:30 2022
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/latchset/libverto
+Summary     : Main loop abstraction library
+Description :
+libverto provides a way for libraries to expose asynchronous interfaces
+without having to choose a particular event loop, offloading this
+decision to the end application which consumes the library.
+
+If you are packaging an application, not library, based on libverto,
+you should depend either on a specific implementation module or you
+can depend on the virtual provides 'libverto-module-base'. This will
+ensure that you have at least one module installed that provides io,
+timeout and signal functionality. Currently glib is the only module
+that does not provide these three because it lacks signal. However,
+glib will support signal in the future.
+Name        : libtirpc
+Version     : 1.1.4
+Release     : 12.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:29 2025
+Group       : System Environment/Libraries
+Size        : 228758
+License     : SISSL and BSD
+Signature   : RSA/SHA256, Sun May  5 14:30:40 2024, Key ID 199e2f91fd431d51
+Source RPM  : libtirpc-1.1.4-12.el8_10.src.rpm
+Build Date  : Sat Apr 27 15:25:34 2024
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://git.linux-nfs.org/?p=steved/libtirpc.git;a=summary
+Summary     : Transport Independent RPC Library
+Description :
+This package contains SunLib's implementation of transport-independent
+RPC (TI-RPC) documentation.  This library forms a piece of the base of
+Open Network Computing (ONC), and is derived directly from the
+Solaris 2.3 source.
+
+TI-RPC is an enhanced version of TS-RPC that requires the UNIX System V
+Transport Layer Interface (TLI) or an equivalent X/Open Transport Interface
+(XTI).  TI-RPC is on-the-wire compatible with the TS-RPC, which is supported
+by almost 70 vendors on all major operating systems.  TS-RPC source code
+(RPCSRC 4.0) remains available from several internet sites.
+Name        : openssl-libs
+Epoch       : 1
+Version     : 1.1.1k
+Release     : 14.el8_6
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : Unspecified
+Size        : 3778138
+License     : OpenSSL and ASL 2.0
+Signature   : RSA/SHA256, Tue Sep 17 12:46:01 2024, Key ID 199e2f91fd431d51
+Source RPM  : openssl-1.1.1k-14.el8_6.src.rpm
+Build Date  : Tue Sep 17 10:11:24 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.openssl.org/
+Summary     : A general purpose cryptography library with TLS implementation
+Description :
+OpenSSL is a toolkit for supporting cryptography. The openssl-libs
+package contains the libraries that are used by various applications which
+support cryptographic algorithms and protocols.
+Name        : crypto-policies-scripts
+Version     : 20230731
+Release     : 1.git3177e06.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : Unspecified
+Size        : 190780
+License     : LGPLv2+
+Signature   : RSA/SHA256, Thu Aug  3 11:00:56 2023, Key ID 199e2f91fd431d51
+Source RPM  : crypto-policies-20230731-1.git3177e06.el8.src.rpm
+Build Date  : Tue Aug  1 18:18:16 2023
+Build Host  : s390-066.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://gitlab.com/redhat-crypto/fedora-crypto-policies
+Summary     : Tool to switch between crypto policies
+Description :
+This package provides a tool update-crypto-policies, which applies
+the policies provided by the crypto-policies package. These can be
+either the pre-built policies from the base package or custom policies
+defined in simple policy definition files.
+
+The package also provides a tool fips-mode-setup, which can be used
+to enable or disable the system FIPS mode.
+Name        : platform-python
+Version     : 3.6.8
+Release     : 71.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:30 2025
+Group       : Unspecified
+Size        : 41206
+License     : Python
+Signature   : RSA/SHA256, Thu Aug 14 07:37:59 2025, Key ID 199e2f91fd431d51
+Source RPM  : python3-3.6.8-71.el8_10.src.rpm
+Build Date  : Mon Aug 11 14:29:26 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.python.org/
+Summary     : Internal interpreter of the Python programming language
+Description :
+This is the internal interpreter of the Python language for the system.
+To use Python yourself, please install one of the available Python 3 packages,
+for example python36.
+Name        : libdb
+Version     : 5.3.28
+Release     : 42.el8_4
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Libraries
+Size        : 1903352
+License     : BSD and LGPLv2 and Sleepycat
+Signature   : RSA/SHA256, Thu Sep  9 08:03:36 2021, Key ID 199e2f91fd431d51
+Source RPM  : libdb-5.3.28-42.el8_4.src.rpm
+Build Date  : Thu Sep  9 06:45:59 2021
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.oracle.com/database/berkeley-db/
+Summary     : The Berkeley DB database library for C
+Description :
+The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. The Berkeley DB includes B+tree, Extended
+Linear Hashing, Fixed and Variable-length record access methods,
+transactions, locking, logging, shared memory caching, and database
+recovery. The Berkeley DB supports C, C++, Java, and Perl APIs. It is
+used by many applications, including Python and Perl, so this should
+be installed on all systems.
+Name        : pam
+Version     : 1.3.1
+Release     : 39.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Base
+Size        : 2654551
+License     : BSD and GPLv2+
+Signature   : RSA/SHA256, Tue Nov 18 10:00:57 2025, Key ID 199e2f91fd431d51
+Source RPM  : pam-1.3.1-39.el8_10.src.rpm
+Build Date  : Fri Nov 14 09:39:42 2025
+Build Host  : x86-vm-14.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.linux-pam.org/
+Summary     : An extensible library which provides authentication for applications
+Description :
+PAM (Pluggable Authentication Modules) is a system security tool that
+allows system administrators to set authentication policy without
+having to recompile programs that handle authentication.
+Name        : util-linux
+Version     : 2.32.1
+Release     : 47.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Base
+Size        : 11576395
+License     : GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
+Signature   : RSA/SHA256, Mon Nov 24 17:31:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : util-linux-2.32.1-47.el8_10.src.rpm
+Build Date  : Mon Nov 10 10:53:12 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : A collection of basic system utilities
+Description :
+The util-linux package contains a large variety of low-level system
+utilities that are necessary for a Linux system to function. Among
+others, Util-linux contains the fdisk configuration tool and the login
+program.
+Name        : gnutls
+Version     : 3.6.16
+Release     : 8.el8_10.4
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Libraries
+Size        : 3012071
+License     : GPLv3+ and LGPLv2+
+Signature   : RSA/SHA256, Tue Sep  9 22:07:45 2025, Key ID 199e2f91fd431d51
+Source RPM  : gnutls-3.6.16-8.el8_10.4.src.rpm
+Build Date  : Tue Sep  9 11:15:54 2025
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnutls.org/
+Summary     : A TLS protocol implementation
+Description :
+GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
+protocols and technologies around them. It provides a simple C language
+application programming interface (API) to access the secure communications
+protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and
+other required structures.
+Name        : json-glib
+Version     : 1.4.4
+Release     : 1.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 530243
+License     : LGPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 22:54:59 2018, Key ID 199e2f91fd431d51
+Source RPM  : json-glib-1.4.4-1.el8.src.rpm
+Build Date  : Tue Oct 16 14:00:50 2018
+Build Host  : x86-vm-05.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://wiki.gnome.org/Projects/JsonGlib
+Summary     : Library for JavaScript Object Notation format
+Description :
+json-glib is a library providing serialization and deserialization support
+for the JavaScript Object Notation (JSON) format.
+Name        : python3-iniparse
+Version     : 0.4
+Release     : 31.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 108846
+License     : MIT and Python
+Signature   : RSA/SHA256, Sat Dec 15 00:48:07 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-iniparse-0.4-31.el8.src.rpm
+Build Date  : Sun Aug 12 13:53:44 2018
+Build Host  : ppc-061.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://code.google.com/p/iniparse/
+Summary     : Python Module for Accessing and Modifying Configuration Data in INI files
+Description :
+iniparse is an INI parser for Python which is API compatible
+with the standard library's ConfigParser, preserves structure of INI
+files (order of sections & options, indentation, comments, and blank
+lines are preserved when data is updated), and is more convenient to
+use.
+Name        : python3-dbus
+Version     : 1.2.4
+Release     : 15.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 524237
+License     : MIT
+Signature   : RSA/SHA256, Thu Jun  6 14:05:45 2019, Key ID 199e2f91fd431d51
+Source RPM  : dbus-python-1.2.4-15.el8.src.rpm
+Build Date  : Thu Jun  6 11:55:16 2019
+Build Host  : x86-vm-05.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/wiki/Software/DBusBindings/
+Summary     : D-Bus bindings for python3
+Description :
+D-Bus bindings for python3.
+Name        : python3-gobject-base
+Version     : 3.28.3
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 1101277
+License     : LGPLv2+ and MIT
+Signature   : RSA/SHA256, Thu Jun 11 21:28:42 2020, Key ID 199e2f91fd431d51
+Source RPM  : pygobject3-3.28.3-2.el8.src.rpm
+Build Date  : Thu Jun 11 20:01:10 2020
+Build Host  : x86-vm-09.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://wiki.gnome.org/Projects/PyGObject
+Summary     : Python 3 bindings for GObject Introspection base package
+Description :
+This package provides the non-cairo specific bits of the GObject Introspection
+library.
+Name        : cyrus-sasl-lib
+Version     : 2.1.27
+Release     : 6.el8_5
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Libraries
+Size        : 726122
+License     : BSD with advertising
+Signature   : RSA/SHA256, Thu Feb 17 22:29:09 2022, Key ID 199e2f91fd431d51
+Source RPM  : cyrus-sasl-2.1.27-6.el8_5.src.rpm
+Build Date  : Thu Feb 17 22:16:29 2022
+Build Host  : x86-vm-15.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://www.cyrusimap.org/sasl/
+Summary     : Shared libraries needed by applications which use Cyrus SASL
+Description :
+The cyrus-sasl-lib package contains shared libraries which are needed by
+applications which use the Cyrus SASL library.
+Name        : libuser
+Version     : 0.62
+Release     : 26.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : System Environment/Base
+Size        : 1936098
+License     : LGPLv2+
+Signature   : RSA/SHA256, Thu Aug 22 13:31:46 2024, Key ID 199e2f91fd431d51
+Source RPM  : libuser-0.62-26.el8_10.src.rpm
+Build Date  : Mon Jul 29 11:50:51 2024
+Build Host  : x86-vm-07.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pagure.io/libuser
+Summary     : A user and group account administration library
+Description :
+The libuser library implements a standardized interface for manipulating
+and administering user and group accounts.  The library uses pluggable
+back-ends to interface to its data sources.
+
+Sample applications modeled after those included with the shadow password
+suite are included.
+Name        : usermode
+Version     : 1.113
+Release     : 2.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Applications/System
+Size        : 854312
+License     : GPLv2+
+Signature   : RSA/SHA256, Fri Aug 27 11:48:39 2021, Key ID 199e2f91fd431d51
+Source RPM  : usermode-1.113-2.el8.src.rpm
+Build Date  : Tue Aug  3 11:12:22 2021
+Build Host  : x86-vm-54.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://pagure.io/usermode/
+Summary     : Tools for certain user account management tasks
+Description :
+The usermode package contains the userhelper program, which can be
+used to allow configured programs to be run with superuser privileges
+by ordinary users.
+Name        : python3-ethtool
+Version     : 0.14
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 92352
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Feb  8 03:06:23 2022, Key ID 199e2f91fd431d51
+Source RPM  : python-ethtool-0.14-5.el8.src.rpm
+Build Date  : Mon Feb  7 16:57:25 2022
+Build Host  : x86-vm-07.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/fedora-python/python-ethtool
+Summary     : Python module to interface with ethtool
+Description :
+Python 3 bindings for the ethtool kernel interface, that allows querying and
+changing of Ethernet card settings, such as speed, port, auto-negotiation, and
+PCI locations.
+Name        : python3-systemd
+Version     : 234
+Release     : 8.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 258017
+License     : LGPLv2+
+Signature   : RSA/SHA256, Sat Dec 15 00:49:29 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-systemd-234-8.el8.src.rpm
+Build Date  : Sun Aug 12 16:42:13 2018
+Build Host  : x86-vm-06.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/systemd/python-systemd
+Summary     : Python module wrapping systemd functionality
+Description :
+Python module for native access to the systemd facilities.
+Functionality includes sending of structured messages to the journal
+and reading journal files, querying machine and boot identifiers and a
+lists of message identifiers provided by systemd. Other functionality
+provided by libsystemd is also wrapped.
+Name        : python3-decorator
+Version     : 4.2.1
+Release     : 2.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 47871
+License     : BSD
+Signature   : RSA/SHA256, Sat Dec 15 00:47:48 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-decorator-4.2.1-2.el8.src.rpm
+Build Date  : Sun Aug 12 12:55:13 2018
+Build Host  : ppc-061.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/micheles/decorator
+Summary     : Module to simplify usage of decorators in python3
+Description :
+The aim of the decorator module is to simplify the usage of decorators for
+the average programmer, and to popularize decorators usage giving examples
+of useful decorators, such as memoize, tracing, redirecting_stdout, locked,
+etc.  The core of this module is a decorator factory called decorator.
+Name        : python3-inotify
+Version     : 0.9.6
+Release     : 13.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Development/Languages
+Size        : 248598
+License     : MIT
+Signature   : RSA/SHA256, Tue Nov 27 12:55:34 2018, Key ID 199e2f91fd431d51
+Source RPM  : python-inotify-0.9.6-13.el8.src.rpm
+Build Date  : Thu Nov 15 10:00:35 2018
+Build Host  : s390-002.fedora-internal.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/seb-m/pyinotify
+Summary     : Monitor filesystem events with Python under Linux
+Description :
+This is a Python 3 module for watching filesystems changes. pyinotify
+can be used for various kind of fs monitoring. pyinotify relies on a
+recent Linux Kernel feature (merged in kernel 2.6.13) called
+inotify. inotify is an event-driven notifier, its notifications are
+exported from kernel space to user space.
+Name        : python3-urllib3
+Version     : 1.24.2
+Release     : 8.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:31 2025
+Group       : Unspecified
+Size        : 621920
+License     : MIT
+Signature   : RSA/SHA256, Wed Jul  3 10:46:02 2024, Key ID 199e2f91fd431d51
+Source RPM  : python-urllib3-1.24.2-8.el8_10.src.rpm
+Build Date  : Wed Jul  3 08:17:41 2024
+Build Host  : aarch64-018.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/shazow/urllib3
+Summary     : Python3 HTTP library with thread-safe connection pooling and file post
+Description :
+Python3 HTTP module with connection pooling and file POST abilities.
+Name        : python3-cloud-what
+Version     : 1.28.44
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Base
+Size        : 74428
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Jun  3 16:57:47 2025, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-1.28.44-1.el8_10.src.rpm
+Build Date  : Tue Jun  3 08:53:17 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.candlepinproject.org/
+Summary     : Python package for detection of public cloud provider
+Description :
+This package contains a Python module for detection and collection of public
+cloud metadata and signatures.
+Name        : kmod-libs
+Version     : 25
+Release     : 20.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 126640
+License     : LGPLv2+
+Signature   : RSA/SHA256, Tue Oct 24 20:02:15 2023, Key ID 199e2f91fd431d51
+Source RPM  : kmod-25-20.el8.src.rpm
+Build Date  : Tue Oct 24 14:34:08 2023
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://git.kernel.org/?p=utils/kernel/kmod/kmod.git;a=summary
+Summary     : Libraries to handle kernel module loading and unloading
+Description :
+The kmod-libs package provides runtime libraries for any application that
+wishes to load or unload Linux kernel modules from the running system.
+Name        : device-mapper-libs
+Epoch       : 8
+Version     : 1.02.181
+Release     : 15.el8_10.2
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 415671
+License     : LGPLv2
+Signature   : RSA/SHA256, Thu Jun 26 07:48:18 2025, Key ID 199e2f91fd431d51
+Source RPM  : lvm2-2.03.14-15.el8_10.2.src.rpm
+Build Date  : Mon Jun  2 17:36:08 2025
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://sourceware.org/lvm2
+Summary     : Device-mapper shared library
+Description :
+This package contains the device-mapper shared library, libdevmapper.
+Name        : elfutils-default-yama-scope
+Version     : 0.190
+Release     : 2.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 1810
+License     : GPLv2+ or LGPLv3+
+Signature   : RSA/SHA256, Fri Dec 15 12:26:37 2023, Key ID 199e2f91fd431d51
+Source RPM  : elfutils-0.190-2.el8.src.rpm
+Build Date  : Fri Dec 15 01:15:46 2023
+Build Host  : arm64-005.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://elfutils.org/
+Summary     : Default yama attach scope sysctl setting
+Description :
+Yama sysctl setting to enable default attach scope settings
+enabling programs to use ptrace attach, access to
+/proc/PID/{mem,personality,stack,syscall}, and the syscalls
+process_vm_readv and process_vm_writev which are used for
+interprocess services, communication and introspection
+(like synchronisation, signaling, debugging, tracing and
+profiling) of processes.
+Name        : dbus-common
+Epoch       : 1
+Version     : 1.12.8
+Release     : 27.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 11044
+License     : (GPLv2+ or AFL) and GPLv2+
+Signature   : RSA/SHA256, Wed Jun 18 08:16:13 2025, Key ID 199e2f91fd431d51
+Source RPM  : dbus-1.12.8-27.el8_10.src.rpm
+Build Date  : Tue Jun  3 06:39:04 2025
+Build Host  : aarch64-034.brew-001.prod.us-east-2.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/Software/dbus/
+Summary     : D-BUS message bus configuration
+Description :
+The dbus-common package provides the configuration and setup files for D-Bus
+implementations to provide a System and User Message Bus.
+Name        : systemd-pam
+Version     : 239
+Release     : 82.el8_10.8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 944472
+License     : LGPLv2+ and MIT and GPLv2+
+Signature   : RSA/SHA256, Mon Oct  6 11:16:43 2025, Key ID 199e2f91fd431d51
+Source RPM  : systemd-239-82.el8_10.8.src.rpm
+Build Date  : Thu Oct  2 12:07:39 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/wiki/Software/systemd
+Summary     : systemd PAM module
+Description :
+Systemd PAM module registers the session with systemd-logind.
+Name        : dbus
+Epoch       : 1
+Version     : 1.12.8
+Release     : 27.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 0
+License     : (GPLv2+ or AFL) and GPLv2+
+Signature   : RSA/SHA256, Wed Jun 18 08:16:21 2025, Key ID 199e2f91fd431d51
+Source RPM  : dbus-1.12.8-27.el8_10.src.rpm
+Build Date  : Tue Jun  3 06:38:56 2025
+Build Host  : x86-vm-09.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.freedesktop.org/Software/dbus/
+Summary     : D-BUS message bus
+Description :
+D-BUS is a system for sending messages between applications. It is
+used both for the system-wide message bus service, and as a
+per-user-login-session messaging facility.
+Name        : tpm2-tss
+Version     : 2.3.2
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 1209190
+License     : BSD
+Signature   : RSA/SHA256, Mon Nov 27 06:26:45 2023, Key ID 199e2f91fd431d51
+Source RPM  : tpm2-tss-2.3.2-6.el8.src.rpm
+Build Date  : Sun Nov 26 14:28:09 2023
+Build Host  : x86-64-01.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/tpm2-software/tpm2-tss
+Summary     : TPM2.0 Software Stack
+Description :
+tpm2-tss is a software stack supporting Trusted Platform Module(TPM) 2.0 system
+APIs. It sits between TPM driver and applications, providing TPM2.0 specified
+APIs for applications to access TPM module through kernel TPM drivers.
+Name        : libyaml
+Version     : 0.1.7
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : System Environment/Libraries
+Size        : 135798
+License     : MIT
+Signature   : RSA/SHA256, Fri Dec 14 23:55:57 2018, Key ID 199e2f91fd431d51
+Source RPM  : libyaml-0.1.7-5.el8.src.rpm
+Build Date  : Sun Aug 12 14:47:00 2018
+Build Host  : x86-vm-05.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://pyyaml.org/
+Summary     : YAML 1.1 parser and emitter written in C
+Description :
+YAML is a data serialization format designed for human readability and
+interaction with scripting languages.  LibYAML is a YAML parser and
+emitter written in C.
+Name        : gnupg2
+Version     : 2.2.20
+Release     : 3.el8_6
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:32 2025
+Group       : Unspecified
+Size        : 9919371
+License     : GPLv3+
+Signature   : RSA/SHA256, Mon Aug  8 18:12:07 2022, Key ID 199e2f91fd431d51
+Source RPM  : gnupg2-2.2.20-3.el8_6.src.rpm
+Build Date  : Mon Aug  8 15:56:24 2022
+Build Host  : x86-038.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnupg.org/
+Summary     : Utility for secure communication and data storage
+Description :
+GnuPG is GNU's tool for secure communication and data storage.  It can
+be used to encrypt data and to create digital signatures.  It includes
+an advanced key management facility and is compliant with the proposed
+OpenPGP Internet standard as described in RFC2440 and the S/MIME
+standard as described by several RFCs.
+
+GnuPG 2.0 is a newer version of GnuPG with additional support for
+S/MIME.  It has a different design philosophy that splits
+functionality up into several modules. The S/MIME and smartcard functionality
+is provided by the gnupg2-smime package.
+Name        : python3-gpg
+Version     : 1.13.1
+Release     : 12.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 1402082
+License     : LGPLv2+ and GPLv3+
+Signature   : RSA/SHA256, Wed Feb 14 10:25:03 2024, Key ID 199e2f91fd431d51
+Source RPM  : gpgme-1.13.1-12.el8.src.rpm
+Build Date  : Tue Feb 13 10:20:27 2024
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://gnupg.org/related_software/gpgme/
+Summary     : gpgme bindings for Python 3
+Description :
+gpgme bindings for Python 3.
+Name        : libssh
+Version     : 0.9.6
+Release     : 16.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 521919
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Nov  5 13:15:37 2025, Key ID 199e2f91fd431d51
+Source RPM  : libssh-0.9.6-16.el8_10.src.rpm
+Build Date  : Wed Nov  5 11:08:39 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.libssh.org
+Summary     : A library implementing the SSH protocol
+Description :
+The ssh library was designed to be used by programmers needing a working SSH
+implementation by the mean of a library. The complete control of the client is
+made by the programmer. With libssh, you can remotely execute programs, transfer
+files, use a secure and transparent tunnel for your remote programs. With its
+Secure FTP implementation, you can play with remote files easily, without
+third-party programs others than libcrypto (from openssl).
+Name        : librepo
+Version     : 1.14.2
+Release     : 5.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 217572
+License     : LGPLv2+
+Signature   : RSA/SHA256, Wed Dec  6 15:30:58 2023, Key ID 199e2f91fd431d51
+Source RPM  : librepo-1.14.2-5.el8.src.rpm
+Build Date  : Thu Nov 30 10:51:30 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/librepo
+Summary     : Repodata downloading library
+Description :
+A library providing C and Python (libcURL like) API to downloading repository
+metadata.
+Name        : curl
+Version     : 7.61.1
+Release     : 34.el8_10.9
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 700917
+License     : MIT
+Signature   : RSA/SHA256, Fri Nov 21 13:32:03 2025, Key ID 199e2f91fd431d51
+Source RPM  : curl-7.61.1-34.el8_10.9.src.rpm
+Build Date  : Fri Oct 24 10:16:10 2025
+Build Host  : x86-038.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://curl.haxx.se/
+Summary     : A utility for getting files from remote servers (FTP, HTTP, and others)
+Description :
+curl is a command line tool for transferring data with URL syntax, supporting
+FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP,
+SMTP, POP3 and RTSP.  curl supports SSL certificates, HTTP POST, HTTP PUT, FTP
+uploading, HTTP form based upload, proxies, cookies, user+password
+authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer
+resume, proxy tunneling and a busload of other useful tricks.
+Name        : rpm-libs
+Version     : 4.14.3
+Release     : 32.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Development/Libraries
+Size        : 743680
+License     : GPLv2+ and LGPLv2+ with exceptions
+Signature   : RSA/SHA256, Tue Oct 22 09:06:57 2024, Key ID 199e2f91fd431d51
+Source RPM  : rpm-4.14.3-32.el8_10.src.rpm
+Build Date  : Mon Oct 21 15:41:01 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.rpm.org/
+Summary     : Libraries for manipulating RPM packages
+Description :
+This package contains the RPM shared libraries.
+Name        : libsolv
+Version     : 0.7.20
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 803755
+License     : BSD
+Signature   : RSA/SHA256, Tue Jun 27 12:46:19 2023, Key ID 199e2f91fd431d51
+Source RPM  : libsolv-0.7.20-6.el8.src.rpm
+Build Date  : Thu Jun 22 06:14:34 2023
+Build Host  : x86-64-02.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/openSUSE/libsolv
+Summary     : Package dependency solver
+Description :
+A free package dependency solver using a satisfiability algorithm. The
+library is based on two major, but independent, blocks:
+
+- Using a dictionary approach to store and retrieve package
+  and dependency information.
+
+- Using satisfiability, a well known and researched topic, for
+  resolving package dependencies.
+Name        : python3-libdnf
+Version     : 0.63.0
+Release     : 21.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 4063682
+License     : LGPLv2+
+Signature   : RSA/SHA256, Tue Dec 17 15:17:02 2024, Key ID 199e2f91fd431d51
+Source RPM  : libdnf-0.63.0-21.el8_10.src.rpm
+Build Date  : Tue Dec 10 14:20:21 2024
+Build Host  : x86-vm-06.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/libdnf
+Summary     : Python 3 bindings for the libdnf library.
+Description :
+Python 3 bindings for the libdnf library.
+Name        : rpm-build-libs
+Version     : 4.14.3
+Release     : 32.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Development/Libraries
+Size        : 216152
+License     : GPLv2+ and LGPLv2+ with exceptions
+Signature   : RSA/SHA256, Tue Oct 22 09:06:57 2024, Key ID 199e2f91fd431d51
+Source RPM  : rpm-4.14.3-32.el8_10.src.rpm
+Build Date  : Mon Oct 21 15:41:01 2024
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.rpm.org/
+Summary     : Libraries for building and signing RPM packages
+Description :
+This package contains the RPM shared libraries for building and signing
+packages.
+Name        : python3-subscription-manager-rhsm
+Version     : 1.28.44
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Development/Libraries
+Size        : 430771
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Jun  3 16:57:46 2025, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-1.28.44-1.el8_10.src.rpm
+Build Date  : Tue Jun  3 08:53:17 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.candlepinproject.org/
+Summary     : A Python library to communicate with a Red Hat Unified Entitlement Platform
+Description :
+A small library for communicating with the REST interface of a Red Hat Unified
+Entitlement Platform. This interface is used for the management of system
+entitlements, certificates, and access to content.
+Name        : dnf-data
+Version     : 4.7.0
+Release     : 21.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 38761
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Jan 30 09:16:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : dnf-4.7.0-21.el8_10.src.rpm
+Build Date  : Wed Jan 29 13:47:27 2025
+Build Host  : aarch64-017.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/dnf
+Summary     : Common data and configuration files for DNF
+Description :
+Common data and configuration files for DNF
+Name        : dnf
+Version     : 4.7.0
+Release     : 21.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 2086202
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Jan 30 09:16:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : dnf-4.7.0-21.el8_10.src.rpm
+Build Date  : Wed Jan 29 13:47:27 2025
+Build Host  : aarch64-017.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/dnf
+Summary     : Package manager
+Description :
+Utility that allows users to manage packages on their systems.
+It supports RPMs, modules and comps groups & environments.
+Name        : dnf-plugin-subscription-manager
+Version     : 1.28.44
+Release     : 1.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : System Environment/Base
+Size        : 94486
+License     : GPLv2
+Signature   : RSA/SHA256, Tue Jun  3 16:57:46 2025, Key ID 199e2f91fd431d51
+Source RPM  : subscription-manager-1.28.44-1.el8_10.src.rpm
+Build Date  : Tue Jun  3 08:53:17 2025
+Build Host  : x86-vm-56.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.candlepinproject.org/
+Summary     : Subscription Manager plugins for DNF
+Description :
+This package provides plugins to interact with repositories and subscriptions
+from the Red Hat entitlement platform; contains subscription-manager and
+product-id plugins.
+Name        : yum
+Version     : 4.7.0
+Release     : 21.el8_10
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 77897
+License     : GPLv2+
+Signature   : RSA/SHA256, Thu Jan 30 09:16:12 2025, Key ID 199e2f91fd431d51
+Source RPM  : dnf-4.7.0-21.el8_10.src.rpm
+Build Date  : Wed Jan 29 13:47:27 2025
+Build Host  : aarch64-017.brew-001.prod.us-east-1.aws.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://github.com/rpm-software-management/dnf
+Summary     : Package manager
+Description :
+Utility that allows users to manage packages on their systems.
+It supports RPMs, modules and comps groups & environments.
+Name        : tar
+Epoch       : 2
+Version     : 1.30
+Release     : 11.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Applications/Archiving
+Size        : 2876632
+License     : GPLv3+
+Signature   : RSA/SHA256, Tue Aug  5 14:32:34 2025, Key ID 199e2f91fd431d51
+Source RPM  : tar-1.30-11.el8_10.src.rpm
+Build Date  : Mon Aug  4 15:17:43 2025
+Build Host  : x86-vm-15.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/tar/
+Summary     : A GNU file archiving program
+Description :
+The GNU tar program saves many files together in one archive and can
+restore individual files (or all of the files) from that archive. Tar
+can also be used to add supplemental files to an archive and to update
+or list files in the archive. Tar includes multivolume support,
+automatic archive compression/decompression, the ability to perform
+remote archives, and the ability to perform incremental and full
+backups.
+
+If you want to use tar for remote backups, you also need to install
+the rmt package on the remote box.
+Name        : findutils
+Epoch       : 1
+Version     : 4.6.0
+Release     : 24.el8_10
+Architecture: x86_64
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Applications/File
+Size        : 1768980
+License     : GPLv3+
+Signature   : RSA/SHA256, Mon Nov 10 11:15:33 2025, Key ID 199e2f91fd431d51
+Source RPM  : findutils-4.6.0-24.el8_10.src.rpm
+Build Date  : Wed Sep  3 13:42:06 2025
+Build Host  : x86-vm-01.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/findutils/
+Summary     : The GNU versions of find utilities (find and xargs)
+Description :
+The findutils package contains programs which will help you locate
+files on your system.  The find utility searches through a hierarchy
+of directories looking for files which match a certain set of criteria
+(such as a file name pattern).  The xargs utility builds and executes
+command lines from standard input arguments (usually lists of file
+names generated by the find command).
+
+You should install findutils because it includes tools that are very
+useful for finding things on your system.
+Name        : langpacks-en
+Version     : 1.0
+Release     : 12.el8
+Architecture: noarch
+Install Date: Thu Dec 18 20:59:33 2025
+Group       : Unspecified
+Size        : 400
+License     : GPLv2+
+Signature   : RSA/SHA256, Fri Dec 14 22:59:37 2018, Key ID 199e2f91fd431d51
+Source RPM  : langpacks-1.0-12.el8.src.rpm
+Build Date  : Sun Aug 12 12:57:35 2018
+Build Host  : s390-043.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+Summary     : English langpacks meta-package
+Description :
+This package provides English langpacks meta-package.
+Name        : wget
+Version     : 1.19.5
+Release     : 12.el8_10
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:13 2026
+Group       : Applications/Internet
+Size        : 2895304
+License     : GPLv3+
+Signature   : RSA/SHA256, Thu Jul 11 07:12:12 2024, Key ID 199e2f91fd431d51
+Source RPM  : wget-1.19.5-12.el8_10.src.rpm
+Build Date  : Thu Jul 11 05:50:36 2024
+Build Host  : x86-vm-15.brew-001.prod.iad2.dc.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/wget/
+Summary     : A utility for retrieving files using the HTTP or FTP protocols
+Description :
+GNU Wget is a file retrieval utility which can use either the HTTP or
+FTP protocols. Wget features include the ability to work in the
+background while you are logged out, recursive retrieval of
+directories, file name wildcard matching, remote file timestamp
+storage and comparison, use of Rest with FTP servers and Range with
+HTTP servers to retrieve files over slow or unstable connections,
+support for Proxy servers, and configurability.
+Name        : procps-ng
+Version     : 3.3.15
+Release     : 14.el8
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:13 2026
+Group       : Applications/System
+Size        : 901092
+License     : GPL+ and GPLv2 and GPLv2+ and GPLv3+ and LGPLv2+
+Signature   : RSA/SHA256, Fri Aug 25 12:49:21 2023, Key ID 199e2f91fd431d51
+Source RPM  : procps-ng-3.3.15-14.el8.src.rpm
+Build Date  : Tue Aug 15 13:49:48 2023
+Build Host  : x86-64-04.build.eng.rdu2.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : https://sourceforge.net/projects/procps-ng/
+Summary     : System and process monitoring utilities
+Description :
+The procps package contains a set of system utilities that provide
+system information. Procps includes ps, free, skill, pkill, pgrep,
+snice, tload, top, uptime, vmstat, pidof, pmap, slabtop, w, watch
+and pwdx.
+The ps command displays a snapshot of running processes. The top command
+provides a repetitive update of the statuses of running processes.
+The free command displays the amounts of free and used memory on your
+system. The skill command sends a terminate command (or another
+specified signal) to a specified set of processes. The snice
+command is used to change the scheduling priority of specified
+processes. The tload command prints a graph of the current system
+load average to a specified tty. The uptime command displays the
+current time, how long the system has been running, how many users
+are logged on, and system load averages for the past one, five,
+and fifteen minutes. The w command displays a list of the users
+who are currently logged on and what they are running. The watch
+program watches a running program. The vmstat command displays
+virtual memory statistics about processes, memory, paging, block
+I/O, traps, and CPU activity. The pwdx command reports the current
+working directory of a process or processes.
+Name        : diffutils
+Version     : 3.6
+Release     : 6.el8
+Architecture: x86_64
+Install Date: Wed Jan  7 06:34:13 2026
+Group       : Applications/Text
+Size        : 1371499
+License     : GPLv3+
+Signature   : RSA/SHA256, Wed Nov 20 16:25:10 2019, Key ID 199e2f91fd431d51
+Source RPM  : diffutils-3.6-6.el8.src.rpm
+Build Date  : Tue Nov 19 14:22:12 2019
+Build Host  : x86-vm-08.build.eng.bos.redhat.com
+Relocations : (not relocatable)
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://www.gnu.org/software/diffutils/diffutils.html
+Summary     : A GNU collection of diff utilities
+Description :
+Diffutils includes four utilities: diff, cmp, diff3 and sdiff. Diff
+compares two files and shows the differences, line by line.  The cmp
+command shows the offset and line numbers where two files differ, or
+cmp can show the characters that differ between the two files.  The
+diff3 command shows the differences between three files.  Diff3 can be
+used when two people have made independent changes to a common
+original; diff3 can produce a merged file that contains both sets of
+changes and warnings about conflicts.  The sdiff command can be used
+to merge two files interactively.
+
+Install diffutils if you need to compare text files.

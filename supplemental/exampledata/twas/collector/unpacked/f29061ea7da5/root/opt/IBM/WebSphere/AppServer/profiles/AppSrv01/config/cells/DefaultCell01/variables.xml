@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables:VariableMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:variables="http://www.ibm.com/websphere/appserver/schemas/5.0/variables.xmi" xmi:id="VariableMap_1">
+  <entries xmi:id="VariableSubstitutionEntry_1" symbolicName="WAS_CELL_NAME" value="DefaultCell01" description="WAS cell name"/>
+  <entries xmi:id="VariableSubstitutionEntry_2" symbolicName="GRID_JOBLOG_ROOT" value="${USER_INSTALL_ROOT}" description="Grid endpoint job logs directory"/>
+  <entries xmi:id="VariableSubstitutionEntry_3" symbolicName="DERBY_JDBC_DRIVER_PATH" value="${WAS_INSTALL_ROOT}/derby/lib" description=""/>
+  <entries xmi:id="VariableSubstitutionEntry_4" symbolicName="GRID_ENDPOINT_DATASOURCE" value="jdbc/pgc" description="Grid Endpoint Datasource JNDI name"/>
+</variables:VariableMap>

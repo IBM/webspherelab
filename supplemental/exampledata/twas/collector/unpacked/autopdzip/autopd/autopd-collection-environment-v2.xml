@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collectionEnvironmentInfo
+	pluginTaxonomyId="SSEQTP"
+	toolName="RasCollector"
+	toolVersion="855"
+	xmlns="http://www.ibm.com/autopd/collectionEnvironment"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ibm.com/autopd/collectionEnvironment../autoPD-collection-env.xsd"
+</collectionEnvironmentInfo>
+

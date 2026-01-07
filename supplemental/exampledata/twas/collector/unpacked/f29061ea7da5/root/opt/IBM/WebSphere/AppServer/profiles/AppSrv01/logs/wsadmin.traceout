@@ -1,0 +1,29 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 6.17.7-300.fc43.aarch64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere/AppServer
+user.install.root = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere/AppServer/java/8.0/jre
+ws.ext.dirs = /opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar
+Java Library path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64:/opt/IBM/WebSphere/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere/AppServer/bin:/opt/IBM/WebSphere/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere/AppServer/bin:/opt/IBM/WebSphere/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[1/7/26 15:47:41:757 UTC] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[1/7/26 15:47:41:981 UTC] 00000001 AbstractShell A   Jython version=2.7
+[1/7/26 15:47:41:982 UTC] 00000001 AbstractShell A   WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+[1/7/26 15:47:41:983 UTC] 00000001 AbstractShell A   WASX7326I: Loaded properties file "/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsadmin.properties"
+[1/7/26 15:47:41:985 UTC] 00000001 AdminControlC W   WASX7072E: The control service is not available.
+[1/7/26 15:47:42:003 UTC] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[1/7/26 15:47:42:473 UTC] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[1/7/26 15:47:43:256 UTC] 00000001 AdminConfigCl A   WASX7208I: Validation settings in effect now: Level=HIGHEST, Cross-validation=true, Output file=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/wsadmin.valout
+[1/7/26 15:47:43:266 UTC] 00000001 AdminAppClien W   WASX7072E: The control service is not available.
+[1/7/26 15:47:44:259 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set serverList [$AdminConfig list Server]"
+[1/7/26 15:47:44:349 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set nameAttr [list name KC_HOME]"
+[1/7/26 15:47:44:351 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set valueAttr [list value "/opt/IBM/WebSphere/AppServer/systemApps/isclite.ear/isclite.war/help"]"
+[1/7/26 15:47:44:351 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set reqAttr [list required false]"
+[1/7/26 15:47:44:352 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set propAttr [list $nameAttr $valueAttr $reqAttr]"
+[1/7/26 15:47:44:352 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "set kcHome KC_HOME"
+[1/7/26 15:47:44:352 UTC] 00000001 AbstractShell A   WASX7090I: Executing command: "foreach server $serverList { set pds [$AdminConfig list JavaProcessDef $server]; foreach pd $pds { set jvms [$AdminConfig showAttribute $pd jvmEntries]; foreach jvm $jvms { set kcIdx 0; set jvmProps [$AdminConfig list Property $jvm]; foreach prop $jvmProps { set kcIdx [string first $kcHome $prop]; if {$kcIdx > -1} {$AdminConfig remove $prop}}}}}"

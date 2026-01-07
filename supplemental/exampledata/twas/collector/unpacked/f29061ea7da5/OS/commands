@@ -1,0 +1,79 @@
+-----------------------------------------------------------
+PATH:
+/opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin
+/opt/IBM/WebSphere/AppServer/java/8.0/bin/
+/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin
+/opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin
+/opt/IBM/WebSphere/AppServer/java/8.0/bin/
+/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin
+/home/was/.local/bin
+/home/was/bin
+/opt/IBM/WebSphere/AppServer/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+-----------------------------------------------------------
+Search for commands
+vmtune               : *** Not Found ***
+arp                  : *** Not Found ***
+bdf                  : *** Not Found ***
+bootinfo             : *** Not Found ***
+date                 : *** Not Found ***
+df                   : *** Not Found ***
+dmesg                : *** Not Found ***
+errpt                : *** Not Found ***
+free                 : *** Not Found ***
+getconf              : *** Not Found ***
+hostname             : *** Not Found ***
+id                   : *** Not Found ***
+ifconfig             : *** Not Found ***
+ioscan               : *** Not Found ***
+iostat               : *** Not Found ***
+isainfo              : *** Not Found ***
+jar                  : *** Not Found ***
+java                 : *** Not Found ***
+jre                  : *** Not Found ***
+ksh                  : *** Not Found ***
+lanscan              : *** Not Found ***
+lsattr               : *** Not Found ***
+lscfg                : *** Not Found ***
+lsdev                : *** Not Found ***
+lsfs                 : *** Not Found ***
+lsgroup              : *** Not Found ***
+lslicense            : *** Not Found ***
+lsps                 : *** Not Found ***
+lspv                 : *** Not Found ***
+lssrc                : *** Not Found ***
+lsuser               : *** Not Found ***
+lsvg                 : *** Not Found ***
+model                : *** Not Found ***
+ndd                  : *** Not Found ***
+netstat              : *** Not Found ***
+nfsstat              : *** Not Found ***
+no                   : *** Not Found ***
+nslookup             : *** Not Found ***
+patchadd             : *** Not Found ***
+prtconf              : *** Not Found ***
+psrinfo              : *** Not Found ***
+runlevel             : sbin      : /sbin/runlevel
+runlevel             : ls -l     : lrwxrwxrwx. 1 root root 16 Oct  2 12:06 /sbin/runlevel -> ../bin/systemctl
+runlevel             : ls -lL    : -rwxr-xr-x. 1 root root 223688 Oct  2 12:06 /sbin/runlevel
+sh                   : *** Not Found ***
+showmount            : *** Not Found ***
+showrev              : *** Not Found ***
+swap                 : *** Not Found ***
+swapinfo             : *** Not Found ***
+swlist               : *** Not Found ***
+sysdef               : *** Not Found ***
+top                  : *** Not Found ***
+type                 : *** Not Found ***
+ulimit               : *** Not Found ***
+uname                : *** Not Found ***
+vmstat               : *** Not Found ***
+whence               : *** Not Found ***
+which                : *** Not Found ***
+who                  : *** Not Found ***
+-----------------------------------------------------------

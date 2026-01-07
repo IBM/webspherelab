@@ -1,0 +1,80 @@
+<!-- PH43148 Dojo CVE-2021-2345: This config action copies the new dojo.zip file under WAS_HOME\systemApps\isclite.ear\isclite.war\WEB-INF to the cell-dmgr config  --> 
+<project name="WEBSPHERE" default="install" basedir="."> 
+
+    <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/> 
+	
+	<target name="detectCurrentOSFamily" description="Detects the current OS family (UNIX or Windows)."> 
+        
+        <condition property="currentOSFamily" value="os/400"> 
+            <equals arg1="${os.name}" arg2="OS/400"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+        <condition property="currentOSFamily" value="windows"> 
+            <os family="windows"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="unix">             
+            <os family="unix"/> 
+        </condition>
+		
+        <wscmtlog>Detected current OS family to be: ${currentOSFamily}</wscmtlog> 
+    </target> 
+
+    <target name="setOSFileSeparator" description="Sets the current file separator for this platform."> 
+        
+        <condition property="separatorFile" value="/">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/> 
+        </condition> 
+        <condition property="separatorFile" value="/">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+        <condition property="separatorFile" value="/">
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+        <condition property="separatorFile" value="\"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition>
+
+		<wscmtlog>File separator: ${separatorFile}</wscmtlog>
+
+    </target>
+
+  <!-- use fileset to do a recursive search for dojo.zip in the cells directory since we don't have access to the cellName variable -->
+  <!-- if the dojo.zip file exists under the cells directory dojo.config will be set to the path where the dojo.zip file exists -->
+	<target name="checkDojoZipExistsInConfig">
+		<fileset dir="${profilePath}${separatorFile}config${separatorFile}cells" id="find.dojo">
+			<include name="**/dojo.zip"/>
+		</fileset>
+		<pathconvert property="dojo.config" refid="find.dojo" setonempty="false"/>
+
+		<available property="foundDojoInConfig" file="${dojo.config}" value="true"/>
+		<wscmtlog>dojo.zip exists in the config: ${foundDojoInConfig}</wscmtlog>
+	</target>
+	
+	<target name="copyDojoZip" description="Copy dojo.zip from systemApps to dmgr config of a cell profile" depends="checkDojoZipExistsInConfig" if="foundDojoInConfig">
+		<wscmtlog>Copying dojo.zip from systemApps to cell-profile config</wscmtlog>
+		<copy
+			file="${WAS_HOME}${separatorFile}systemApps${separatorFile}isclite.ear${separatorFile}isclite.war${separatorFile}WEB-INF${separatorFile}dojo.zip"
+			tofile="${dojo.config}"
+			overwrite="true" failonerror="false"/>
+    </target>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- Install Target                 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <target name="install" depends="detectCurrentOSFamily,
+                                    setOSFileSeparator,
+                                    checkDojoZipExistsInConfig,
+                                    copyDojoZip">
+    </target> 
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!-- Uninstall Target               --> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    <target name="uninstall" description="No uninstall action"> 
+    </target> 
+
+</project>

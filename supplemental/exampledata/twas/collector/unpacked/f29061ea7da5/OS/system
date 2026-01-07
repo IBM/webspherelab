@@ -1,0 +1,247 @@
+----------------------------------------------------------------------------
+Execute: date
+Wed Jan  7 15:50:03 UTC 2026
+----------------------------------------------------------------------------
+Execute: hostname
+----------------------------------------------------------------------------
+Execute: uname -a
+Linux f29061ea7da5 6.17.7-300.fc43.aarch64 #1 SMP PREEMPT_DYNAMIC Sun Nov  2 15:33:04 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+----------------------------------------------------------------------------
+Execute: lsb_release -a
+----------------------------------------------------------------------------
+Execute: cat /proc/meminfo
+MemTotal:       10146384 kB
+MemFree:         5084236 kB
+MemAvailable:    9010044 kB
+Buffers:            1252 kB
+Cached:          3999176 kB
+SwapCached:            0 kB
+Active:           870184 kB
+Inactive:        3693584 kB
+Active(anon):     564000 kB
+Inactive(anon):        0 kB
+Active(file):     306184 kB
+Inactive(file):  3693584 kB
+Unevictable:          12 kB
+Mlocked:              12 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:              6112 kB
+Writeback:             0 kB
+AnonPages:        563352 kB
+Mapped:           211756 kB
+Shmem:               944 kB
+KReclaimable:     137164 kB
+Slab:             286304 kB
+SReclaimable:     137164 kB
+SUnreclaim:       149140 kB
+KernelStack:        5380 kB
+PageTables:         7728 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5073192 kB
+Committed_AS:    4260664 kB
+VmallocTotal:   135288315904 kB
+VmallocUsed:       19460 kB
+VmallocChunk:          0 kB
+Percpu:             1952 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    139264 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:          65536 kB
+CmaFree:           59392 kB
+Balloon:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+----------------------------------------------------------------------------
+Execute: free
+              total        used        free      shared  buff/cache   available
+Mem:       10146384      924556     5084236         944     4137592     9010044
+Swap:             0           0           0
+----------------------------------------------------------------------------
+Execute: df -k
+Filesystem                           1K-blocks      Used Available Use% Mounted on
+overlay                              104266732   8104020  96162712   8% /
+tmpfs                                    65536         0     65536   0% /dev
+462a5d5dfd8d83b5f5c4885db83921e0ac97 971350180 864967524 106382656  90% /tmp/host
+shm                                      64000         0     64000   0% /dev/shm
+tmpfs                                  2029280       712   2028568   1% /etc/hosts
+devtmpfs                               4989492         0   4989492   0% /proc/keys
+----------------------------------------------------------------------------
+Execute: ulimit -a
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 38990
+max locked memory       (kbytes, -l) 8192
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 38990
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+----------------------------------------------------------------------------
+Execute: vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 5084368   1252 4136524    0    0    13   328  328  453  2  1 97  0  0
+----------------------------------------------------------------------------
+Execute: iostat
+----------------------------------------------------------------------------
+Execute: cat /proc/cpuinfo
+processor	: 0
+vendor_id	: VirtualApple
+cpu family	: 6
+model		: 142
+model name	: VirtualApple @ 2.50GHz
+stepping	: 10
+cpu MHz		: 2502.057
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: no
+cpuid level	: 22
+wp		: yes
+flags		: fpu tsc de cx8 apic sep cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cpuid pclmulqdq ssse3 cx16 sse4_1 popcnt sse4_2 aes lahf_lm movbe fma avx f16c rdrand bmi1 avx2 bmi2
+bugs		:
+bogomips	: 5184.11
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: VirtualApple
+cpu family	: 6
+model		: 142
+model name	: VirtualApple @ 2.50GHz
+stepping	: 10
+cpu MHz		: 2502.057
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: no
+cpuid level	: 22
+wp		: yes
+flags		: fpu tsc de cx8 apic sep cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cpuid pclmulqdq ssse3 cx16 sse4_1 popcnt sse4_2 aes lahf_lm movbe fma avx f16c rdrand bmi1 avx2 bmi2
+bugs		:
+bogomips	: 5184.11
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: VirtualApple
+cpu family	: 6
+model		: 142
+model name	: VirtualApple @ 2.50GHz
+stepping	: 10
+cpu MHz		: 2502.057
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: no
+cpuid level	: 22
+wp		: yes
+flags		: fpu tsc de cx8 apic sep cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cpuid pclmulqdq ssse3 cx16 sse4_1 popcnt sse4_2 aes lahf_lm movbe fma avx f16c rdrand bmi1 avx2 bmi2
+bugs		:
+bogomips	: 5184.11
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: VirtualApple
+cpu family	: 6
+model		: 142
+model name	: VirtualApple @ 2.50GHz
+stepping	: 10
+cpu MHz		: 2502.057
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: no
+cpuid level	: 22
+wp		: yes
+flags		: fpu tsc de cx8 apic sep cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cpuid pclmulqdq ssse3 cx16 sse4_1 popcnt sse4_2 aes lahf_lm movbe fma avx f16c rdrand bmi1 avx2 bmi2
+bugs		:
+bogomips	: 5184.11
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+----------------------------------------------------------------------------
+Execute: ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+was            1       0  0 15:46 ?        00:00:00 /bin/bash /work/start_server.sh
+was          658       1 25 15:47 ?        00:00:32 /opt/IBM/WebSphere/AppServer/java/8.0/bin/java -Dosgi.install.area=/opt/IBM/WebSphere/AppServer -Dwas.status.socket=40545 -Dosgi.configuration.area=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration -Djava.awt.headless=true -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev9_8.0_64_%g,nonFatal -Dcom.ibm.xtq.processor.overrideSecureProcessing=true -Xcheck:dump -Djava.security.properties=/opt/IBM/WebSphere/AppServer/properties/java.security -Djava.security.policy=/opt/IBM/WebSphere/AppServer/properties/java.policy -Dcom.ibm.CORBA.ORBPropertyFilePath=/opt/IBM/WebSphere/AppServer/properties -Xbootclasspath/p:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ibmorb.jar -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -verbose:gc -Xverbosegclog:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/verbosegc.%seq.log,10,7000 -Xms50m -Xmx2477m -Xcompressedrefs -Xscmaxaot12M -Xscmx90M -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Djava.ext.dirs=/opt/IBM/WebSphere/AppServer/tivoli/tam:/opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ext -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dpython.cachedir=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/cachedir -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Djava.util.prefs.userRoot=/home/was/ -Xnoloa -Djava.library.path=/opt/IBM/WebSphere/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64:/opt/IBM/WebSphere/AppServer/bin:/opt/IBM/WebSphere/AppServer/nulldllsdir:/usr/lib64:/usr/lib: -Djava.endorsed.dirs=/opt/IBM/WebSphere/AppServer/endorsed_apis:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/endorsed -Djava.security.auth.login.config=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config DefaultCell01 DefaultNode01 server1
+was          768       1  0 15:48 ?        00:00:00 /usr/bin/coreutils --coreutils-prog-shebang=tail /usr/bin/tail -F /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut.log --pid 658 -n +0
+was          769       1  0 15:48 ?        00:00:00 /usr/bin/coreutils --coreutils-prog-shebang=tail /usr/bin/tail -F /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr.log --pid 658 -n +0
+was          864       0  0 15:49 pts/0    00:00:00 bash
+was          895     864  0 15:49 pts/0    00:00:00 /bin/sh /opt/IBM/WebSphere/AppServer/bin/collector.sh
+was          914     895 74 15:49 pts/0    00:00:07 /opt/IBM/WebSphere/AppServer/java/8.0/bin/java -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Duser.install.root=/opt/IBM/WebSphere/AppServer -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Djava.endorsed.dirs=/opt/IBM/WebSphere/AppServer/endorsed_apis:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/endorsed -Djava.ext.dirs=/opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/WebSphere/AppServer/java/8.0/lib/ext:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ext -Xmx1024m -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Djava.util.logging.configureByServer=true -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar com.ibm.ws.bootstrap.WSLauncher com.ibm.websphere.rastools.collector.Collector -InstallRoot /opt/IBM/WebSphere/AppServer -JavaHome /opt/IBM/WebSphere/AppServer/java/8.0 -ConfigRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config -WasNode DefaultNode01 -CellName DefaultCell01 -ProfileRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+was         1374       1  0 15:50 ?        00:00:00 /usr/bin/coreutils --coreutils-prog-shebang=sleep /usr/bin/sleep 1
+was         1386     914  0 15:50 pts/0    00:00:00 sh ./com/ibm/websphere/rastools/collector/linux.system.sh /opt/IBM/WebSphere/AppServer
+was         1400    1386  0 15:50 pts/0    00:00:00 ps -ef
+----------------------------------------------------------------------------
+Execute: cat /proc/pci
+----------------------------------------------------------------------------
+Execute: type java
+java is /opt/IBM/WebSphere/AppServer/java/8.0/bin/java
+----------------------------------------------------------------------------
+Execute: ls -l /opt/IBM/WebSphere/AppServer/java
+total 0
+drwxrwxr-x. 9 was root 176 Jan  7 06:41 8.0
+----------------------------------------------------------------------------
+Execute: ls -lL /opt/IBM/WebSphere/AppServer/java
+total 0
+drwxrwxr-x. 9 was root 176 Jan  7 06:41 8.0
+----------------------------------------------------------------------------
+Execute: java -version
+java version "1.8.0_471"
+Java(TM) SE Runtime Environment (build 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55))
+IBM J9 VM (build 2.9, JRE 1.8.0 Linux amd64-64-Bit Compressed References 20250916_102651 (JIT enabled, AOT enabled)
+OpenJ9   - 404c8144a62
+OMR      - 41bf6208d
+IBM      - 8e661b7)
+JCL - 20251006_01 based on Oracle jdk8u471-b09
+----------------------------------------------------------------------------

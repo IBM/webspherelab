@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE EdgeServerCfg [
+
+	<!ELEMENT EdgeServerCfg (EdgeServer* | MasterCDS* | ConnectionProperties?)>
+        <!ATTLIST EdgeServerCfg 	
+		CacheManager	        CDATA #REQUIRED
+	>
+        
+	<!ELEMENT EdgeServer EMPTY>
+	<!ATTLIST EdgeServer
+		endpoint		CDATA #REQUIRED
+		user			CDATA #IMPLIED
+		userPasswd		CDATA #IMPLIED
+		invalidation-url	CDATA #IMPLIED
+		URI-type		(relative | absolute) "relative"
+	>
+
+	<!ELEMENT MasterCDS EMPTY>
+	<!ATTLIST MasterCDS
+		endpoint			CDATA #REQUIRED
+		domain-name			CDATA #IMPLIED
+	>
+	
+	<!ELEMENT ConnectionProperties EMPTY>
+	<!ATTLIST ConnectionProperties
+		timeOut			CDATA #REQUIRED
+		certFile		CDATA #IMPLIED
+		certPasswd		CDATA #IMPLIED
+		certFileType		CDATA #IMPLIED
+	>
+]>
+
+<EdgeServerCfg  CacheManager="IBM-WAS">
+<!--
+This is an example of how the external cache adapter needs to provide 
+credentials to the caching proxy in order to invalidate items in the cache
+	<EdgeServer
+	    endpoint = "http://serverName:80"
+	    user = "userid1" 
+	    userPasswd = "secret" 
+	    invalidation-url = "/WES_External_Adapter"
+	    URI-type= "absolute"
+	/>
+
+	<EdgeServer
+	    endpoint = "https://server2:443"
+	    user = "userid2"
+	    userPasswd = "anothersecret"
+	    invalidation-url = "/invalidate-dynamic-contents"
+	    URI-type = "absolute"
+	/>
+
+	<MasterCDS
+	    endpoint = "url"	
+	    domain-name = "www.acme.com"
+	/>
+
+	<ConnectionProperties
+	    timeout = "60"
+	    certFile = "/opt/WebSphere/AppServer/java/jre/lib/security/cacerts"
+	    certPasswd = "changeit"
+	    certFileType = "JKS"
+	/>
+
+-->
+</EdgeServerCfg>
+

@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165058</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>init</method>
+  <thread>1</thread>
+  <message>logger initialized</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165059</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>loadTimeouts</method>
+  <thread>1</thread>
+  <message>loading timeout values</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165059</millis>
+  <sequence>2</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>loadTimeouts</method>
+  <thread>1</thread>
+  <message>wsadmin listener retry count = 240000, initialization retry count = 12000</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165059</millis>
+  <sequence>3</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>init</method>
+  <thread>1</thread>
+  <message>Instantiating WasxShell</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165238</millis>
+  <sequence>4</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>init</method>
+  <thread>1</thread>
+  <message>WasxShell instantiated</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165239</millis>
+  <sequence>5</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>init</method>
+  <thread>1</thread>
+  <message>Request/Response file locks created</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165239</millis>
+  <sequence>6</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>sendInitializedMessage</method>
+  <thread>1</thread>
+  <message>Sent initialization status: [wsadmin Listener initialized]</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165239</millis>
+  <sequence>7</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Listener started</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165440</millis>
+  <sequence>8</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165441</millis>
+  <sequence>9</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165441</millis>
+  <sequence>10</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/importConfigArchive.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165442</millis>
+  <sequence>11</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:45</date>
+  <millis>1767768165442</millis>
+  <sequence>12</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminTask importWasprofile { -archive  "/opt/IBM/WebSphere/AppServer/profileTemplates/default/configArchives/AppSrv.car" -options " { { resolvePorts false} { reDeployApps false } } " } 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179265</millis>
+  <sequence>448</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179268</millis>
+  <sequence>449</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179623</millis>
+  <sequence>450</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179623</millis>
+  <sequence>451</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179623</millis>
+  <sequence>452</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/generateProfileKey.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179624</millis>
+  <sequence>453</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:42:59</date>
+  <millis>1767768179624</millis>
+  <sequence>454</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminTask generateProfileKey {-properties " {{com.ibm.ws.profile.name AppSrv01} {com.ibm.ws.profile.type Base} {com.ibm.ws.profile.path {/opt/IBM/WebSphere/AppServer/profiles/AppSrv01}}}"} 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:00</date>
+  <millis>1767768180054</millis>
+  <sequence>461</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:00</date>
+  <millis>1767768180054</millis>
+  <sequence>462</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:06</date>
+  <millis>1767768186896</millis>
+  <sequence>463</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:06</date>
+  <millis>1767768186897</millis>
+  <sequence>464</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:06</date>
+  <millis>1767768186897</millis>
+  <sequence>465</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/hamanager_config.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:06</date>
+  <millis>1767768186897</millis>
+  <sequence>466</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:06</date>
+  <millis>1767768186898</millis>
+  <sequence>467</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-f 
+args[1]=/opt/IBM/WebSphere/AppServer/util/CoreGroupInstallBase.jacl 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187479</millis>
+  <sequence>475</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187480</millis>
+  <sequence>476</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187733</millis>
+  <sequence>477</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187733</millis>
+  <sequence>478</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187734</millis>
+  <sequence>479</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SIBDefineChains.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187734</millis>
+  <sequence>480</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:07</date>
+  <millis>1767768187734</millis>
+  <sequence>481</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-f 
+args[1]=/opt/IBM/WebSphere/AppServer/profileTemplates/default/actions/scripts/sibdefinechains.jacl 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+args[6]=DefaultNode01 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:10</date>
+  <millis>1767768190856</millis>
+  <sequence>493</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:10</date>
+  <millis>1767768190857</millis>
+  <sequence>494</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:11</date>
+  <millis>1767768191011</millis>
+  <sequence>495</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:11</date>
+  <millis>1767768191012</millis>
+  <sequence>496</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:11</date>
+  <millis>1767768191012</millis>
+  <sequence>497</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SIBGenericDeployRAs.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:11</date>
+  <millis>1767768191012</millis>
+  <sequence>498</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:11</date>
+  <millis>1767768191015</millis>
+  <sequence>499</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-f 
+args[1]=/opt/IBM/WebSphere/AppServer/profileTemplates/default/actions/scripts/sibgenericdeployRAs.jacl 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+args[6]=DefaultNode01 
+args[7]=true 
+args[8]=true 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:13</date>
+  <millis>1767768193838</millis>
+  <sequence>517</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:13</date>
+  <millis>1767768193839</millis>
+  <sequence>518</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:14</date>
+  <millis>1767768194040</millis>
+  <sequence>519</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:14</date>
+  <millis>1767768194040</millis>
+  <sequence>520</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:14</date>
+  <millis>1767768194040</millis>
+  <sequence>521</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/keyGeneration.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:14</date>
+  <millis>1767768194041</millis>
+  <sequence>522</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:14</date>
+  <millis>1767768194042</millis>
+  <sequence>523</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminTask prepareKeysForSingleProfile {-profileRoot {/opt/IBM/WebSphere/AppServer/profiles/AppSrv01} -cellName DefaultCell01 -nodeName DefaultNode01 -defaultCertDN {cn=localhost,ou=DefaultCell01,ou=DefaultNode01,o=IBM,c=US} -defaultCertValidityPeriod {1} -rootCertValidityPeriod {15} -rootCertDN {cn=localhost,ou=Root Certificate,ou=DefaultCell01,ou=DefaultNode01,o=IBM,c=US} -keyStorePassword ****************  
+args[2]=-c 
+args[3]=$AdminConfig save 
+args[4]=-lang 
+args[5]=jacl 
+args[6]=-conntype 
+args[7]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204830</millis>
+  <sequence>542</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204831</millis>
+  <sequence>543</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204931</millis>
+  <sequence>544</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204932</millis>
+  <sequence>545</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204932</millis>
+  <sequence>546</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SetSecurity.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204932</millis>
+  <sequence>547</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:24</date>
+  <millis>1767768204933</millis>
+  <sequence>548</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminTask applyProfileSecuritySettings {-enableAdmin true -adminUser wsadmin -adminPwd ****************  
+args[2]=-c 
+args[3]=$AdminConfig save 
+args[4]=-lang 
+args[5]=jacl 
+args[6]=-conntype 
+args[7]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:27</date>
+  <millis>1767768207088</millis>
+  <sequence>559</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:27</date>
+  <millis>1767768207089</millis>
+  <sequence>560</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209107</millis>
+  <sequence>561</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209107</millis>
+  <sequence>562</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209107</millis>
+  <sequence>563</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/uninstallDefaultApplication.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209108</millis>
+  <sequence>564</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209108</millis>
+  <sequence>565</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminApp uninstall DefaultApplication 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209984</millis>
+  <sequence>602</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:29</date>
+  <millis>1767768209984</millis>
+  <sequence>603</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210187</millis>
+  <sequence>604</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210188</millis>
+  <sequence>605</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210188</millis>
+  <sequence>606</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>openTraceFile</method>
+  <thread>1</thread>
+  <message>switching trace logging to file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/uninstallIVTApp.log</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210188</millis>
+  <sequence>607</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>Running Command</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210189</millis>
+  <sequence>608</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>runCommand</method>
+  <thread>1</thread>
+  <message>args[0]=-c 
+args[1]=$AdminApp uninstall ivtApp 
+args[2]=-lang 
+args[3]=jacl 
+args[4]=-conntype 
+args[5]=none 
+</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210635</millis>
+  <sequence>639</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>returnCode=0</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210636</millis>
+  <sequence>640</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Wrote rc=0 to response file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wsadmin.response</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210837</millis>
+  <sequence>641</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Waiting for request</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210837</millis>
+  <sequence>642</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>isRequestAvailable</method>
+  <thread>1</thread>
+  <message>Request found</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210837</millis>
+  <sequence>643</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>processRequest</method>
+  <thread>1</thread>
+  <message>Finished Processing</message>
+</record>
+<record>
+  <date>2026-01-07T06:43:30</date>
+  <millis>1767768210837</millis>
+  <sequence>644</sequence>
+  <logger>com.ibm.ws.profile.wsadmin.WsProfileAdminListener</logger>
+  <level>INFO</level>
+  <class>com.ibm.wsspi.profile.defaulters.GenericDefaulter</class>
+  <method>serviceRequests</method>
+  <thread>1</thread>
+  <message>Exiting</message>
+</record>
+</log>

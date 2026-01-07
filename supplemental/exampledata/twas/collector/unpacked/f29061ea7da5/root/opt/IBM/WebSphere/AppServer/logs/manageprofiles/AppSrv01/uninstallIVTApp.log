@@ -1,0 +1,7 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+ADMA5017I: Uninstallation of ivtApp started.
+ADMA5104I: The server index entry for WebSphere:cell=DefaultCell01,node=DefaultNode01 is updated successfully.
+ADMA5102I: The configuration data for ivtApp from the configuration repository is deleted successfully.
+ADMA5011I: The cleanup of the temp directory for application ivtApp is complete.
+ADMA5106I: Application ivtApp uninstalled successfully.
+

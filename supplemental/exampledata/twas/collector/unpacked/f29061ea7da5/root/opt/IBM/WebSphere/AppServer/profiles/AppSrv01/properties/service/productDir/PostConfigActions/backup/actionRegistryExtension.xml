@@ -1,0 +1,6 @@
+<actions>
+<action path="actions/ejb-deploy-clear-cache.ant" profileUpdate="true" alwaysExecute="true" />
+<action path="actions/clearOSGiCache.ant" profileUpdate="true" alwaysExecute="true" />
+<action path="actions/runiscdeploy.ant" profileUpdate="true" alwaysExecute="true" />
+<action path="actions/clearClassCache.ant" profileUpdate="true" alwaysExecute="true" />
+</actions>

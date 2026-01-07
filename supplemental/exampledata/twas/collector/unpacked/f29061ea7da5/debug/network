@@ -1,0 +1,76 @@
+Execute: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/linux.network.sh"
+inflated: com/ibm/websphere/rastools/collector/linux.network.sh
+Execute: "sh" "./com/ibm/websphere/rastools/collector/linux.network.sh"
+StdErr: + '[' -d OS ']'
++ mkdir OS
++ echo ----------------------------------------------------------------------------
++ echo Execute: hostname
++ hostname
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 13: hostname: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: lanscan
++ lanscan
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 16: lanscan: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -i
++ netstat -i
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 19: netstat: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -in
++ netstat -in
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 22: netstat: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -rv
++ netstat -rv
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 25: netstat: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: ifconfig -a
++ ifconfig -a
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 28: ifconfig: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /proc/sys/net/ipv4/tcp_keepalive_time
++ cat /proc/sys/net/ipv4/tcp_keepalive_time
++ echo ----------------------------------------------------------------------------
++ echo Execute: showmount -e
++ showmount -e
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 34: showmount: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: sysctl -a
++ grep net
++ sysctl -a
++ grep net
+sysctl: permission denied on key 'kernel.cad_pid'
+sysctl: permission denied on key 'kernel.usermodehelper.bset'
+sysctl: permission denied on key 'kernel.usermodehelper.inheritable'
+sysctl: permission denied on key 'net.ipv4.tcp_fastopen_key'
+sysctl: permission denied on key 'net.ipv6.conf.all.stable_secret'
+sysctl: permission denied on key 'net.ipv6.conf.default.stable_secret'
+sysctl: permission denied on key 'net.ipv6.conf.eth0.stable_secret'
+sysctl: permission denied on key 'net.ipv6.conf.lo.stable_secret'
+sysctl: permission denied on key 'vm.mmap_rnd_bits'
+sysctl: permission denied on key 'vm.mmap_rnd_compat_bits'
+sysctl: permission denied on key 'vm.stat_refresh'
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /etc/resolv.conf
++ cat /etc/resolv.conf
++ echo ----------------------------------------------------------------------------
+++ hostname
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 42: hostname: command not found
++ echo Execute: nslookup -querytype=ANY
+++ hostname
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 43: hostname: command not found
++ nslookup -querytype=ANY
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 43: nslookup: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: arp -a
++ arp -a
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 46: arp: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: nfsstat
++ nfsstat
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 49: nfsstat: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /etc/hosts
++ cat /etc/hosts
++ echo ----------------------------------------------------------------------------
+Execute: "rm" "com/ibm/websphere/rastools/collector/linux.network.sh"

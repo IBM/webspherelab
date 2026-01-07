@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="RESTAPIDocs">
+  <display-name>RESTAPIDocs</display-name>
+  <distributable/>
+  <servlet>
+    <servlet-name>RESTAPIDiscoveryServlet</servlet-name>
+    <display-name>RESTAPIDiscoveryServlet</display-name>
+    <description/>
+    <servlet-class>com.ibm.ws.rest.api.discovery.servlet.RESTAPIDiscoveryServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RESTAPIDiscoveryServlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>RESTAPIDocs</web-resource-name>
+      <url-pattern>/*</url-pattern>
+      <http-method>DELETE</http-method>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+      <http-method>PUT</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>allAuthenticatedUsers</role-name>
+    </auth-constraint>
+    <user-data-constraint>
+      <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  <login-config id="LoginConfig_all">
+    <auth-method>BASIC</auth-method>
+    <realm-name>AppRealm</realm-name>
+  </login-config>
+  <security-role id="allAuthenticatedUsers">
+    <description>allAuthenticatedUsers</description>
+    <role-name>allAuthenticatedUsers</role-name>
+  </security-role>
+</web-app>

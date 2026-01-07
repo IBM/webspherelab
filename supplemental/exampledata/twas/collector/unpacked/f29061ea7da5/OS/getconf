@@ -1,0 +1,360 @@
+-----------------------------------------------------------
+Execute: getconf ARG_MAX
+2097152
+-----------------------------------------------------------
+Execute: getconf BC_BASE_MAX
+99
+-----------------------------------------------------------
+Execute: getconf BC_DIM_MAX
+2048
+-----------------------------------------------------------
+Execute: getconf BC_SCALE_MAX
+99
+-----------------------------------------------------------
+Execute: getconf BC_STRING_MAX
+1000
+-----------------------------------------------------------
+Execute: getconf CHARCLASS_NAME_MAX
+2048
+-----------------------------------------------------------
+Execute: getconf CHAR_BIT
+8
+-----------------------------------------------------------
+Execute: getconf CHAR_MAX
+127
+-----------------------------------------------------------
+Execute: getconf CHAR_MIN
+-128
+-----------------------------------------------------------
+Execute: getconf CHILD_MAX
+38990
+-----------------------------------------------------------
+Execute: getconf CLK_TCK
+100
+-----------------------------------------------------------
+Execute: getconf COLL_WEIGHTS_MAX
+255
+-----------------------------------------------------------
+Execute: getconf CPU_CHIP_TYPE
+-----------------------------------------------------------
+Execute: getconf CS_PATH
+/usr/bin
+-----------------------------------------------------------
+Execute: getconf EXPR_NEST_MAX
+32
+-----------------------------------------------------------
+Execute: getconf HW_32_64_CAPABLE
+-----------------------------------------------------------
+Execute: getconf HW_CPU_SUPP_BITS
+-----------------------------------------------------------
+Execute: getconf INT_MAX
+2147483647
+-----------------------------------------------------------
+Execute: getconf INT_MIN
+-2147483648
+-----------------------------------------------------------
+Execute: getconf KERNEL_BITS
+-----------------------------------------------------------
+Execute: getconf LINE_MAX
+2048
+-----------------------------------------------------------
+Execute: getconf LONG_BIT
+64
+-----------------------------------------------------------
+Execute: getconf LONG_MAX
+-----------------------------------------------------------
+Execute: getconf LONG_MIN
+-----------------------------------------------------------
+Execute: getconf MACHINE_MODEL
+-----------------------------------------------------------
+Execute: getconf MB_LEN_MAX
+16
+-----------------------------------------------------------
+Execute: getconf NGROUPS_MAX
+65536
+-----------------------------------------------------------
+Execute: getconf NL_ARGMAX
+4096
+-----------------------------------------------------------
+Execute: getconf NL_LANGMAX
+2048
+-----------------------------------------------------------
+Execute: getconf NL_MSGMAX
+2147483647
+-----------------------------------------------------------
+Execute: getconf NL_NMAX
+2147483647
+-----------------------------------------------------------
+Execute: getconf NL_SETMAX
+2147483647
+-----------------------------------------------------------
+Execute: getconf NL_TEXTMAX
+2147483647
+-----------------------------------------------------------
+Execute: getconf NZERO
+20
+-----------------------------------------------------------
+Execute: getconf OPEN_MAX
+524288
+-----------------------------------------------------------
+Execute: getconf PATH
+/usr/bin
+-----------------------------------------------------------
+Execute: getconf POSIX2_BC_BASE_MAX
+99
+-----------------------------------------------------------
+Execute: getconf POSIX2_BC_DIM_MAX
+2048
+-----------------------------------------------------------
+Execute: getconf POSIX2_BC_SCALE_MAX
+99
+-----------------------------------------------------------
+Execute: getconf POSIX2_BC_STRING_MAX
+1000
+-----------------------------------------------------------
+Execute: getconf POSIX2_CHAR_TERM
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_COLL_WEIGHTS_MAX
+255
+-----------------------------------------------------------
+Execute: getconf POSIX2_C_BIND
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_C_DEV
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_C_VERSION
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_EXPR_NEST_MAX
+32
+-----------------------------------------------------------
+Execute: getconf POSIX2_FORT_DEV
+undefined
+-----------------------------------------------------------
+Execute: getconf POSIX2_FORT_RUN
+undefined
+-----------------------------------------------------------
+Execute: getconf POSIX2_LINE_MAX
+2048
+-----------------------------------------------------------
+Execute: getconf POSIX2_LOCALEDEF
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_RE_DUP_MAX
+32767
+-----------------------------------------------------------
+Execute: getconf POSIX2_SW_DEV
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX2_UPE
+undefined
+-----------------------------------------------------------
+Execute: getconf POSIX2_VERSION
+200809
+-----------------------------------------------------------
+Execute: getconf POSIX_ARG_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_CHILD_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_JOB_CONTROL
+-----------------------------------------------------------
+Execute: getconf POSIX_LINK_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_MAX_CANON
+-----------------------------------------------------------
+Execute: getconf POSIX_MAX_INPUT
+-----------------------------------------------------------
+Execute: getconf POSIX_NAME_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_NGROUPS_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_OPEN_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_PATH_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_PIPE_BUF
+-----------------------------------------------------------
+Execute: getconf POSIX_SAVED_IDS
+-----------------------------------------------------------
+Execute: getconf POSIX_SSIZE_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_STREAM_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_TZNAME_MAX
+-----------------------------------------------------------
+Execute: getconf POSIX_VERSION
+-----------------------------------------------------------
+Execute: getconf RE_DUP_MAX
+32767
+-----------------------------------------------------------
+Execute: getconf SCHAR_MAX
+127
+-----------------------------------------------------------
+Execute: getconf SCHAR_MIN
+-128
+-----------------------------------------------------------
+Execute: getconf SC_PASS_MAX
+-----------------------------------------------------------
+Execute: getconf SC_XOPEN_VERSION
+-----------------------------------------------------------
+Execute: getconf SHRT_MAX
+32767
+-----------------------------------------------------------
+Execute: getconf SHRT_MIN
+-32768
+-----------------------------------------------------------
+Execute: getconf SSIZE_MAX
+32767
+-----------------------------------------------------------
+Execute: getconf STREAM_MAX
+16
+-----------------------------------------------------------
+Execute: getconf TMP_MAX
+-----------------------------------------------------------
+Execute: getconf TZNAME_MAX
+undefined
+-----------------------------------------------------------
+Execute: getconf UCHAR_MAX
+255
+-----------------------------------------------------------
+Execute: getconf UINT_MAX
+4294967295
+-----------------------------------------------------------
+Execute: getconf ULONG_MAX
+18446744073709551615
+-----------------------------------------------------------
+Execute: getconf USHRT_MAX
+65535
+-----------------------------------------------------------
+Execute: getconf WORD_BIT
+32
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFF32_CFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFF32_LDFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFF32_LIBS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFF32_LINTFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFFBIG_CFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFFBIG_LDFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFFBIG_LIBS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_ILP32_OFFBIG_LINTFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_LP64_OFF64_CFLAGS
+-m64
+-----------------------------------------------------------
+Execute: getconf XBS5_LP64_OFF64_LDFLAGS
+-m64
+-----------------------------------------------------------
+Execute: getconf XBS5_LP64_OFF64_LIBS
+
+-----------------------------------------------------------
+Execute: getconf XBS5_LP64_OFF64_LINTFLAGS
+
+-----------------------------------------------------------
+Execute: getconf XOPEN_VERSION
+-----------------------------------------------------------
+Execute: getconf XOPEN_XCU_VERSION
+-----------------------------------------------------------
+Execute: getconf XOPEN_XPG2
+-----------------------------------------------------------
+Execute: getconf XOPEN_XPG3
+-----------------------------------------------------------
+Execute: getconf XOPEN_XPG4
+-----------------------------------------------------------
+Execute: getconf _POSIX_ARG_MAX
+2097152
+-----------------------------------------------------------
+Execute: getconf _POSIX_CHILD_MAX
+38990
+-----------------------------------------------------------
+Execute: getconf _POSIX_JOB_CONTROL
+1
+-----------------------------------------------------------
+Execute: getconf _POSIX_NGROUPS_MAX
+65536
+-----------------------------------------------------------
+Execute: getconf _POSIX_OPEN_MAX
+524288
+-----------------------------------------------------------
+Execute: getconf _POSIX_SAVED_IDS
+1
+-----------------------------------------------------------
+Execute: getconf _POSIX_SSIZE_MAX
+32767
+-----------------------------------------------------------
+Execute: getconf _POSIX_STREAM_MAX
+16
+-----------------------------------------------------------
+Execute: getconf _POSIX_TZNAME_MAX
+undefined
+-----------------------------------------------------------
+Execute: getconf _POSIX_VERSION
+200809
+-----------------------------------------------------------
+Execute: getconf LINK_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+127
+-----------------------------------------------------------
+Execute: getconf MAX_CANON ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf MAX_INPUT ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf NAME_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf PATH_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+4096
+-----------------------------------------------------------
+Execute: getconf PIPE_BUF ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+4096
+-----------------------------------------------------------
+Execute: getconf POSIX_CHOWN_RESTRICTED ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+-----------------------------------------------------------
+Execute: getconf POSIX_NO_TRUNC ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+-----------------------------------------------------------
+Execute: getconf POSIX_VDISABLE ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+-----------------------------------------------------------
+Execute: getconf _POSIX_CHOWN_RESTRICTED ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+1
+-----------------------------------------------------------
+Execute: getconf _POSIX_LINK_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+127
+-----------------------------------------------------------
+Execute: getconf _POSIX_MAX_CANON ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf _POSIX_MAX_INPUT ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf _POSIX_NAME_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+255
+-----------------------------------------------------------
+Execute: getconf _POSIX_NO_TRUNC ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+1
+-----------------------------------------------------------
+Execute: getconf _POSIX_PATH_MAX ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+4096
+-----------------------------------------------------------
+Execute: getconf _POSIX_PIPE_BUF ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+4096
+-----------------------------------------------------------
+Execute: getconf _POSIX_VDISABLE ./com/ibm/websphere/rastools/collector/unix.getconf.sh
+0
+-----------------------------------------------------------

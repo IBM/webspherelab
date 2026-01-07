@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1460658770270">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1460658770270" deploymentId="0" startingWeight="1" binariesURL="/opt/IBM/WebSphere/AppServer/systemApps/SwaggerUI.ear" useMetadataFromBinaries="false" enableDistribution="false" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity="href:DefaultCell01/SwaggerUI" zeroEarCopy="true" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="false" enableClientModule="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1460658770272" enable="false" target="ServerTarget_1460658770272"/>
+    <classloader xmi:id="Classloader_1460658770272" mode="PARENT_FIRST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1460658770272" deploymentId="1" startingWeight="10000" uri="SwaggerUI.war" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1460658770273" target="ServerTarget_1460658770272"/>
+      <classloader xmi:id="Classloader_1460658770273"/>
+    </modules>
+    <properties xmi:id="Property_1460658770273" name="metadata.complete" value="false"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1460658770272" name="server1" nodeName="DefaultNode01"/>
+</appdeployment:Deployment>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdo:datagraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sdo="commonj.sdo" xmlns:wim="http://www.ibm.com/websphere/wim">
+  <wim:Root>
+    <wim:entities xsi:type="wim:PersonAccount">
+      <wim:identifier externalId="169b74dd-adb0-450e-b3e8-c3b536a4dd69" externalName="uid=wsadmin,o=defaultWIMFileBasedRealm"
+          uniqueId="169b74dd-adb0-450e-b3e8-c3b536a4dd69" uniqueName="uid=wsadmin,o=defaultWIMFileBasedRealm"/>
+      <wim:parent>
+        <wim:identifier uniqueName="o=defaultWIMFileBasedRealm"/>
+      </wim:parent>
+      <wim:createTimestamp>2026-01-07T06:43:26.954Z</wim:createTimestamp>
+      <wim:modifyTimestamp>2026-01-07T15:47:19.218+00:00</wim:modifyTimestamp>
+      <wim:password>UEJLREYyV2l0aEhtYWNTSEE1MTI6MTAwMDAwOkF4RVdmbjlHS0w2Nm9BTTFOYjNEV0RDanM3Ni9aaGthUWtxR1JncTZJZkE9OjMyOmpDNk1wR1FOUnN1RVM0VjF0S2RCcTR5QVJKdUJyWmNUVnEzRGtQVXVUWVU9Cg==</wim:password>
+      <wim:uid>wsadmin</wim:uid>
+      <wim:cn>wsadmin</wim:cn>
+      <wim:sn>wsadmin</wim:sn>
+    </wim:entities>
+  </wim:Root>
+</sdo:datagraph>

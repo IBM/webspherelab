@@ -1,0 +1,4 @@
+127.0.0.1	localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1	localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.127.254	host.containers.internal host.docker.internal
+10.88.0.3	f29061ea7da5 nostalgic_heyrovsky

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Collector
+TimeStamp: 2026/01/07 15:49:57 
+

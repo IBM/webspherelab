@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topology.cell:Cell xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:topology.cell="http://www.ibm.com/websphere/appserver/schemas/5.0/topology.cell.xmi" xmi:id="Cell_1" name="DefaultCell01" cellDiscoveryProtocol="TCP" cellType="STANDALONE" cellRegistered="false">
+  <properties xmi:id="Property_1" name="enableAdminAuthorizationCache" value="true"/>
+  <monitoredDirectoryDeployment xmi:id="MonitoredDirectoryDeployment_1"/>
+  <sessionSecurity xmi:id="SessionSecurity_1">
+    <secureSessionCookie xmi:id="SecureSessionCookie_1" cookieDomain="*" cookieName="JSESSIONID" cookiePath="/"/>
+    <secureSessionCookie xmi:id="SecureSessionCookie_2" cookieDomain="*" cookieName="JSESSIONID" cookiePath="/ibm"/>
+    <secureSessionCookie xmi:id="SecureSessionCookie_3" cookieDomain="*" cookieName="SSLJSESSION" cookiePath="/"/>
+  </sessionSecurity>
+</topology.cell:Cell>

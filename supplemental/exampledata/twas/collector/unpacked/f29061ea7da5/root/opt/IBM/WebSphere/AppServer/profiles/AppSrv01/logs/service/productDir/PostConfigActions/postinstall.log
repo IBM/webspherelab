@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-01-07T15:47:44</date>
+  <millis>1767800864669</millis>
+  <sequence>507</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>runPostinstaller</method>
+  <thread>1</thread>
+  <message>-WS_PI_ACTION_REGISTRY_EXTENSION was not specified. Using default value /opt/IBM/WebSphere/AppServer/properties/postinstall/registryExtension.xml
+-DELTA_ACTION_REGISTRY was not specified. Using default value /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/deltaActionRegistry.xml
+</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:44</date>
+  <millis>1767800864669</millis>
+  <sequence>508</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>writeParamsToLog</method>
+  <thread>1</thread>
+  <message>Parameters are:  -PROFILE_MASTER_ACTION_REGISTRY  =  /opt/IBM/WebSphere/AppServer/properties/service/productDir/PostConfigActions/service/masterActionRegistry.xml
+-MASTER_ACTION_REGISTRY  =  /opt/IBM/WebSphere/AppServer/properties/postinstall/masterRegistry.xml
+-WS_CMT_LOG_HOME  =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PostConfigActions
+-WS_PI_ACTION_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere/AppServer/properties/postinstall/registryExtension.xml
+-SUB_ACTION_REGISTRY  =  /opt/IBM/WebSphere/AppServer/properties/postinstall/masterRegistry.xml
+-PROFILE_SUB_ACTION_REGISTRY  =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/cacheActionRegistry.xml
+WAS_HOME  =  /opt/IBM/WebSphere/AppServer
+-WS_CMT_CONF_DIR  =  /opt/IBM/WebSphere/AppServer/properties/service/productDir/PostConfigActions/service
+-PROFILE_ACTION_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere/AppServer/properties/service/productDir/PostConfigActions/service/registryExtension.xml
+-POSTINSTALL_LOG_FILE  =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PostConfigActions/postinstall.log
+-profilePath  =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+-WS_PI_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere/AppServer/properties/postinstall/registryExtension.xml
+-DELTA_ACTION_REGISTRY  =  /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/deltaActionRegistry.xml
+</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:44</date>
+  <millis>1767800864692</millis>
+  <sequence>509</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>launchConfigManager</method>
+  <thread>1</thread>
+  <message>Install or uninstall: install</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:44</date>
+  <millis>1767800864692</millis>
+  <sequence>510</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>launchConfigManagerWithRegistry</method>
+  <thread>1</thread>
+  <message>WS_CMT_LOG_HOME is in /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PostConfigActions/postinstallerConfigActions1767800864692.log</message>
+</record>
+<record>
+  <date>2026-01-07T15:47:52</date>
+  <millis>1767800872207</millis>
+  <sequence>675</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>logReturnCode</method>
+  <thread>1</thread>
+  <message>INSTCONFSUCCESS: All config actions ran successfully with return code 0</message>
+</record>
+</log>

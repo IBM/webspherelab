@@ -1,0 +1,259 @@
+<!-- ======================================================================================================= -->
+<!-- Default Bindings DTD                                                                                    -->
+<!-- For WebSphere Version 6.0                                                                               -->
+<!-- THIS PRODUCT CONTAINS RESTRICTED MATERIALS OF IBM                                                       -->
+<!-- 5724-I63, 5724-H88 (C) COPYRIGHT International Business Machines Corp. 1997, 2004                       -->
+<!-- All Rights Reserved * Licensed Materials - Property of IBM                                              -->
+<!-- US Government Users Restricted Rights - Use, duplication or disclosure                                  -->
+<!-- restricted by GSA ADP Schedule Contract with IBM Corp.                                                  -->
+<!-- ======================================================================================================= -->
+
+<!ELEMENT dfltbndngs (global-bindings?,module-bindings?) >
+
+<!ELEMENT connection-factory (jndi-name,res-auth,login-cfg?,auth-props?)>
+<!ELEMENT data-source (jndi-name,user?,password?,login-cfg?,auth-props?)>
+<!ELEMENT ejb-binding (ejb-name,jndi-name?,data-source?,connection-factory?,ejb-ref-bindings?,resource-ref-bindings?,resource-env-ref-bindings?,message-destination-ref-bindings?, listener-port?, activationspec-jndi-name?)>
+<!ELEMENT ejb-bindings (ejb-binding)+>
+<!ELEMENT ejb-jar-binding ( jar-name, data-source?,connection-factory?,ejb-bindings?,ejb-ref-bindings?,resource-ref-bindings?,resource-env-ref-bindings?,message-destination-ref-bindings?)>
+<!ELEMENT ejb-name (#PCDATA)>
+<!ELEMENT global-bindings (data-source?,connection-factory?,virtual-host?)>
+<!ELEMENT jar-name (#PCDATA)>
+<!ELEMENT java-binding (jar-name,ejb-ref-bindings?,resource-ref-bindings?,resource-env-ref-bindings?,message-destination-ref-bindings?)>
+<!ELEMENT jndi-name (#PCDATA)>
+<!ELEMENT listener-port (#PCDATA)>
+<!ELEMENT activationspec-jndi-name (#PCDATA)>
+<!ELEMENT module-bindings ( ejb-jar-binding | war-binding | java-binding )+ >
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT res-auth (#PCDATA)>
+<!ELEMENT login-cfg (#PCDATA)>
+<!ELEMENT auth-props (#PCDATA)>
+<!ELEMENT ejb-ref-binding (ejb-ref-name, jndi-name)>
+<!ELEMENT ejb-ref-bindings (ejb-ref-binding)+>
+<!ELEMENT ejb-ref-name (#PCDATA)>
+<!ELEMENT resource-env-ref-binding (resource-env-ref-name,jndi-name)>
+<!ELEMENT message-destination-ref-binding (message-destination-ref-name,jndi-name)>
+<!ELEMENT resource-env-ref-bindings (resource-env-ref-binding)+>
+<!ELEMENT message-destination-ref-bindings (message-destination-ref-binding)+>
+<!ELEMENT resource-env-ref-name (#PCDATA)>
+<!ELEMENT message-destination-ref-name (#PCDATA)>
+<!ELEMENT resource-ref-binding (resource-ref-name,jndi-name,login-cfg?,auth-props?)>
+<!ELEMENT resource-ref-bindings (resource-ref-binding)+>
+<!ELEMENT resource-ref-name (#PCDATA)>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT virtual-host (#PCDATA)>
+<!ELEMENT war-binding (jar-name,virtual-host?,ejb-ref-bindings?,resource-ref-bindings?,resource-env-ref-bindings?,message-destination-ref-bindings?)>
+
+<!-- #############################################################
+  
+  Examples
+  ~~~~~~~~
+  
+  1) Explicitly Controlling an EJB JNDI Name
+  
+     <?xml version="1.0"?> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>yourEjb.jar</jar-name>
+           <ejb-bindings> 
+             <ejb-binding> 
+               <ejb-name>YourEjb</ejb-name>  NOTE: this must match the <ejb-name> entry in the EJB jar DD 
+               <jndi-name>com/acme/ejb/YourEjbHome</jndi-name> 
+             </ejb-binding> 
+           </ejb-bindings> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+  
+  2) Explicitly Setting the Connection Factory Binding for an EJB Jar File
+  
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>yourEjb20.jar</jar-name> 
+           <connection-factory> 
+             <jndi-name>eis/jdbc/YourData_CMP</jndi-name> 
+             <res-auth>Container</res-auth> 
+           </connection-factory> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+  3) Explicitly Setting the Connection Factory Binding for a Specific EJB
+  
+     <?xml version="1.0"> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>yourEjb20.jar</jar-name> 
+           <ejb-bindings> 
+             <ejb-binding> 
+               <ejb-name>YourCmp20</ejb-name> NOTE this matches the ejb-name tag in the DD 
+               <connection-factory> 
+                 <jndi-name>eis/jdbc/YourData_CMP</jndi-name> 
+                 <res-auth>PerConnFact</res-auth> 
+               </connection-factory> 
+             </ejb-binding> 
+           </ejb-bindings> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+  4) Overriding a Resource Ref Binding from a war File
+
+     <?xml version="1.0"?> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <war-binding> 
+           <jar-name>hello.war</jar-name> 
+           <resource-ref-bindings> 
+             <resource-ref-binding> 
+               <resource-ref-name>jdbc/MyDataSrc</resource-ref-name> NOTE: must match the resource-ref in the DD
+               <jndi-name>war/override/dataSource</jndi-name> 
+             </resource-ref-binding> 
+           </resource-ref-bindings> 
+         </war-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+  5) Overriding MDB JMS Listener Ports
+  
+     <?xml version="1.0"?> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>YourEjbJar.jar</jar-name> 
+           <ejb-bindings> 
+             <ejb-binding> 
+               <ejb-name>YourMDB</ejb-name> 
+               <listener-port>yourMdbListPort</listener-port> 
+             </ejb-binding> 
+           </ejb-bindings> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+  
+   6) Specifying the virtual host for a war File
+
+     <?xml version="1.0"?> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <war-binding> 
+           <jar-name>hello.war</jar-name> 
+           <virtual-host>myVirtualHost</virtual-host>
+         </war-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+  7) Explicitly Setting the Message Destination Ref JNDI for a Specific EJB
+  
+     <?xml version="1.0"> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>yourEjb21.jar</jar-name> 
+           <ejb-bindings> 
+             <ejb-binding> 
+               <ejb-name>YourSession21</ejb-name> NOTE this matches the ejb-name tag in the DD 
+	           <message-destination-ref-bindings> 
+    	         <message-destination-ref-binding> 
+        	       <message-destination-ref-name>jdbc/MyDataSrc</message-destination-ref-name> NOTE: must match the message-destination-ref-name in the DD
+            	   <jndi-name>eis/somAO</jndi-name> 
+            	 </message-destination-ref-binding> 
+        	   </message-destination-ref-bindings> 
+             </ejb-binding> 
+           </ejb-bindings> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+
+   8) Overriding MDB JMS Activation Spec JNDI Name
+  
+     <?xml version="1.0"?> 
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd"> 
+     <dfltbndngs> 
+       <module-bindings> 
+         <ejb-jar-binding> 
+           <jar-name>YourEjbJar.jar</jar-name> 
+           <ejb-bindings> 
+             <ejb-binding> 
+               <ejb-name>YourMDB</ejb-name> 
+               <activationspec-jndi-name>activationSpecJNDI</activationspec-jndi-name> 
+             </ejb-binding> 
+           </ejb-bindings> 
+         </ejb-jar-binding> 
+       </module-bindings> 
+     </dfltbndngs> 
+     
+     
+   9) Overriding an Ejb Ref Binding for an EJB Jar File
+ 
+     <?xml version="1.0"?>
+     <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd">
+     <dfltbndngs>
+       <module-bindings>
+         <ejb-jar-binding>
+           <jar-name>YourEjbJar.jar</jar-name>
+           <ejb-ref-bindings>
+             <ejb-ref-binding>
+               <ejb-ref-name>YourEjb</ejb-ref-name>
+               <jndi-name>YourEjb/JNDI</jndi-name>
+             </ejb-ref-binding>                                              
+           </ejb-ref-bindings>
+         </ejb-jar-binding>
+       </module-bindings>
+     </dfltbndngs>
+     
+   
+   10) Overriding an Ejb Ref Binding for a war file
+   
+      <?xml version="1.0"?>
+      <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd">
+      <dfltbndngs>
+        <module-bindings>
+          <war-binding>
+            <jar-name>hello.war</jar-name>
+            <ejb-ref-bindings>
+              <ejb-ref-binding>
+                <ejb-ref-name>ejb/Hello</ejb-ref-name>
+                <jndi-name>Hello/JNDI</jndi-name>
+              </ejb-ref-binding>
+            </ejb-ref-bindings>
+          </war-binding>
+        </module-bindings>
+      </dfltbndngs>
+      
+  
+   11) Overriding an Ejb Ref Binding for a specific EJB
+     
+      <?xml version="1.0"?>
+      <!DOCTYPE dfltbndngs SYSTEM "dfltbndngs.dtd">
+      <dfltbndngs>
+        <module-bindings>
+          <ejb-jar-binding>
+            <jar-name>YourEjbJar.jar</jar-name>
+            <ejb-bindings>
+              <ejb-binding>
+	        <ejb-name>YourEjb</ejb-name>
+                <ejb-ref-bindings>
+                  <ejb-ref-binding>
+                    <ejb-ref-name>ejb/YourEjb</ejb-ref-name>
+                    <jndi-name>YourEjb/JNDI</jndi-name>
+                  </ejb-ref-binding>
+                </ejb-ref-bindings>
+              </ejb-binding>
+            </ejb-bindings>
+          </ejb-jar-binding>
+        </module-bindings>
+      </dfltbndngs>
+ 
+ ############################################################# -->
+ 

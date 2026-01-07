@@ -1,0 +1,13 @@
+<bundles>
+  <directory path="plugins">
+    <exclude-bundle>selectableBundles/jpa/com.ibm.ws.jpa.jar</exclude-bundle>
+    <exclude-bundle>selectableBundles/jpa/com.ibm.ws.jpa.container20.jar</exclude-bundle>
+    <exclude-bundle>selectableBundles/jpa/javax.j2ee.persistence-2.0.jar</exclude-bundle>
+    <exclude-bundle>selectableBundles/jpa/com.ibm.ws.cache.jpa.jar</exclude-bundle>
+  </directory>
+  <directory path="plugins">
+    <bundle>com.ibm.ws.jpa.eclipselink.jar</bundle>
+    <bundle>com.ibm.ws.jpa.container21.jar</bundle>
+    <bundle>javax.j2ee.persistence.jar</bundle>
+  </directory>
+</bundles>

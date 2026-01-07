@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.extensions.webappext:WebAppExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.extensions.webappext="webappext.xmi" xmi:id="WebAppExtension_1226080434151" reloadInterval="3" reloadingEnabled="true" additionalClassPath="" fileServingEnabled="true" directoryBrowsingEnabled="false" serveServletsByClassnameEnabled="true" contextRoot="/ibm/api/explorer">
+  <webApp href="WEB-INF/web.xml#SwaggerUI"/>
+  <jspAttributes xmi:id="JSPAttribute_1463001199480" name="reloadEnabled" value="true"/>
+  <jspAttributes xmi:id="JSPAttribute_1463001199481" name="reloadInterval" value="10"/>
+</com.ibm.ejs.models.base.extensions.webappext:WebAppExtension>

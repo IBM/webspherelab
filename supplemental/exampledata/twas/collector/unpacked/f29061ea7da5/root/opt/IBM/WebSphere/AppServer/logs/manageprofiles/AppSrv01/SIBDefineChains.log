@@ -1,0 +1,30 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[DefaultNode01]"
+Application server template: DeveloperServer
+...Application server template: DeveloperServer
+Creating SIB endpoints
+Creating SIB inbound thread pool
+Creating SIB outbound thread pool
+Creating SIB inbound channels
+Creating SIB inbound channel chains
+Creating SIB outbound channels
+Creating SIB outbound channel chains
+Application server template: default
+...Application server template: default
+Creating SIB endpoints
+Creating SIB inbound thread pool
+Creating SIB outbound thread pool
+Creating SIB inbound channels
+Creating SIB inbound channel chains
+Creating SIB outbound channels
+Creating SIB outbound channel chains
+Application server template: defaultZOS
+...Application server template: defaultZOS
+Creating SIB endpoints
+Creating SIB inbound thread pool
+Creating SIB outbound thread pool
+Creating SIB inbound channels
+Creating SIB inbound channel chains
+Creating SIB outbound channels
+Creating SIB outbound channel chains
+Checking for dmgr or adminagent server

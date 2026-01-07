@@ -1,0 +1,22 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 6.17.7-300.fc43.aarch64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere/AppServer
+user.install.root = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere/AppServer/java/8.0/jre
+ws.ext.dirs = /opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar
+Java Library path = /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/amd64:/opt/IBM/WebSphere/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere/AppServer/bin:/opt/IBM/WebSphere/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[1/7/26 15:47:53:397 UTC] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[1/7/26 15:47:53:455 UTC] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[1/7/26 15:47:53:457 UTC] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[1/7/26 15:47:53:467 UTC] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[1/7/26 15:47:53:569 UTC] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[1/7/26 15:47:55:133 UTC] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[1/7/26 15:47:55:223 UTC] 00000001 LaunchCommand I   ADML0069I: The default maximum heap size for the server JVM is 2477 MB (-Xmx2477m).
+[1/7/26 15:47:55:468 UTC] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[1/7/26 15:48:08:704 UTC] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 658

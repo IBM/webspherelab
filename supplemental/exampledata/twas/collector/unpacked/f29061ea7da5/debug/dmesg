@@ -1,0 +1,20 @@
+Execute: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar" "com/ibm/websphere/rastools/collector/unix.dmesg.sh"
+inflated: com/ibm/websphere/rastools/collector/unix.dmesg.sh
+Execute: "sh" "./com/ibm/websphere/rastools/collector/unix.dmesg.sh"
+StdErr: + '[' -d OS ']'
++ mkdir OS
+++ whence dmesg
+./com/ibm/websphere/rastools/collector/unix.dmesg.sh: line 11: whence: command not found
++ PATHdmesg=
++ '[' 0 = 127 ']'
++ echo ---------------------------------------------------------
++ echo dmesg - did not find the command in PATH
++ '[' -x /sbin/dmesg ']'
++ '[' -x /usr/sbin/dmesg ']'
++ '[' -x /bin/dmesg ']'
++ echo ---------------------------------------------------------
++ echo Execute: /bin/dmesg
++ /bin/dmesg
+dmesg: read kernel buffer failed: Operation not permitted
++ echo ---------------------------------------------------------
+Execute: "rm" "com/ibm/websphere/rastools/collector/unix.dmesg.sh"

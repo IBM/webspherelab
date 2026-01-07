@@ -1,0 +1,835 @@
+2026/01/07 15:49:55 Log File name: /tmp/Collector.log
+2026/01/07 15:49:55 Case sensitive: true
+2026/01/07 15:49:55 Inventory file: /opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar
+2026/01/07 15:49:57 Compression:  9
+2026/01/07 15:49:57 User:  null
+2026/01/07 15:49:57 Asking User question.
+The Collector program should be run as user id root because some of
+the commands to be executed require root authority.  However, if you
+proceed, much of what Collector does will work just fine.
+	
+Press Enter to continue or type "exit" to quit.
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/java/8.0
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/lib/WMQ
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedApps
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config
+2026/01/07 15:49:57 Asking User question.
+2026/01/07 15:49:57 User reply is: { }
+2026/01/07 15:49:57 EXECUTE: echo
+2026/01/07 15:49:57 Execute return code: 0
+2026/01/07 15:49:57 EXECUTE: echo
+2026/01/07 15:49:57 Execute return code: 0
+2026/01/07 15:49:57 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/, recursively.
+2026/01/07 15:49:57 379 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/query/cver/BASE/cu.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/model/wimdatagraph.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/coregroupbridge.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/namestore.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/Servlet.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/resources.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/CustomProperties/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/resources-pme.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/variables.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/HTTPTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/serverindex.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/portlet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSymmetricDefault/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/hamanagerservice.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/ibm-portal-topology.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/server-pme.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/isclite/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/META-INF/ibm-application-ha.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/fileRegistry.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/Application.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/RESTAPIDocs/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WS-I RSP/PolicyTypes/WSReliableMessaging/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/ibm-portal-security.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/resources-pme.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/SwaggerUI/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/SwaggerUI/cver/BASE/cu.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/ibmasyncrsp/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/coregroups/DefaultCoreGroup/coregroup.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/generated_web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SystemWSSecurityDefault/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/isclite/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/RESTAPIDocs.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SSL WSTransaction/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/ibmasyncrsp.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSecurityDefault/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/ibm-portal-security.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/query/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/ibm-portlet-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/pmirm.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/ApplicationServer.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deltas/ibmasyncrsp/delta-1213634145093
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ibm-application-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/security.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/idmap.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/was.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/JVM.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/consoleProperties.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deltas/query/delta-1213634096796
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SystemWSSecurityDefault/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/repository/repository.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/sib-service.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/AppServiceGroup.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSReliableMessaging persistent/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/ibm-application-ha.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/defaultBindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/ibmasyncrsp/cver/BASE/cu.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-ResourceProperties-1_2.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/admin-authz.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/amwas.pdjlog.template.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/ibm-application-sa2.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/model/wimextension.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/ibm-portal-topology.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSymmetricDefault/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/isclite/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/naming-authz.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/SSLTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/WebSphereWSDM/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSHTTPS default/PolicyTypes/SSLTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/ibm-portlet-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/adminredirector.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/RESTAPIDocs.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/WebSphereWSDM/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/WebSphereWSDM/cver/BASE/cu.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/components.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/portlet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/config.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/ibm-portal-topology.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/ibm-application-ha.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/LTPA WSSecurity default/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/CustomProperties/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-ServiceGroup-1_2.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/ibmasyncrsp.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username WSSecurity default/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-ResourceLifetime-1_2.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/META-INF/ibm-application-bnd.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WS-I RSP/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/app.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSHTTPS default/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/adminredirector.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/META-INF/application_merged.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/virtualhosts.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/model/wimdomain.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deltas/RESTAPIDocs/delta-1463000981162
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/SwaggerUI/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/SwaggerUI.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WS-I RSP/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Kerberos V5 HTTPS default/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/wim.xmt
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/variables.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/extensionregistry.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/model/wimschema.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/was.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/resources.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WebService.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Kerberos V5 HTTPS default/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/amwas.amjacc.template.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/WSSCCache.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deltas/isclite/delta-1213634142640
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/SwaggerUI.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/variables.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/CustomProperties/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/query/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deltas/SwaggerUI/delta-1767800858734
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ibm-ejb-jar-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SSL WSTransaction/PolicyTypes/WSTransaction/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deltas/WebSphereWSDM/delta-1213634127390
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/generated_web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/ibm-application-ha.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-BaseNotification-1_3.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/RESTAPIDocs/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/audit-authz.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/server-xd-zos.xsl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/adminredirector.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/ststargets.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/META-INF/ibm-application-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/policy/TrustServiceSecurityDefault/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/stsplugins.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSecurityDefault/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/node.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Kerberos V5 HTTPS default/PolicyTypes/SSLTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/CustomProperties/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/ibm-application-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/CustomProperties/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/resources-pme.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username SecureConversation/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/navigation.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/LTPA WSSecurity default/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/JaxwsWebService.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ibm_ejbext.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/library.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/RESTAPIDocs/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-ServiceGroupEntry-1_2.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/EJB.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/was.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSHTTPS default/PolicyTypes/HTTPTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/policy/TrustServiceSymmetricDefault/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSReliableMessaging persistent/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/JMSTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/server-xd.xsl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/multibroker.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/product-info.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSTransaction/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/LTPA WSSecurity default/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/perftuners.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/resources-pme502.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/policy/TrustServiceSymmetricDefault/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/VMServiceGroup.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/console-defs.idx
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/filter.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/pmi-config.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SSL WSTransaction/PolicyTypes/SSLTransport/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/WebSphereWSDM/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/resources-pme502.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/SystemWSSecurityDefault/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/access_control-xacml-2.0-policy-schema-os.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/WSSDistributedCache.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/ws-security.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/ibm-portlet-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSReliableMessaging/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/gridscheduler.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/META-INF/ibm-application-sa2.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/jvms.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/query/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-Resource-1_2.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username WSSecurity default/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ibm-application-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/model/xml.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/resources.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/commonauthz.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/audit.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WS-ResourceMetadataDescriptor-CD-01.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/plugin.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodegroups/DefaultNodeGroup/nodegroup.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/RESTAPIDocs.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/isclite/cver/BASE/cu.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/portletEntities.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/SAMLIssuerConfig.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/SwaggerUI/cver/BASE/cu-ref.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/server.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/DataSource.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/systemapps.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WebSphereDomain.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSHTTPS default/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/resources-pme502.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username SecureConversation/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/hpelModel.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/DomainResourcesServiceGroup.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/namestore-cell.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/installed-channels.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/META-INF/application.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/RESTAPIDocs.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/SwaggerUI.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username SecureConversation/PolicyTypes/WSSecurity/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample V2/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/ibmasyncrsp/cver/BASE/controlOpDefs.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample V2/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Username WSSecurity default/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/ibmasyncrsp.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/META-INF/ibm-application-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/bindingDefinition.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WS-I RSP/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/portlet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/META-INF/ibm-application-ha.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSReliableMessaging persistent/PolicyTypes/WSReliableMessaging/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/adminredirector.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Client sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSymmetricDefault/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cell.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/gridjobclasses/Default/jobclass.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/HTTPTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/ibmasyncrsp.ear/deployments/ibmasyncrsp/ibmasyncrsp.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/ras.rawtracelist.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/ibm-web-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample SHA256/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/META-INF/ibm-application-runtime.props
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/META-INF/ibm-application-bnd.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/wim-policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample SHA256/PolicyTypes/JMSTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/wim-rolemapping.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/authz/access_control-xacml-2.0-context-schema-os.xsd
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/servicesIndex.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/JaxrpcWebService.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/sip_dar.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/J2EEFactory.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/WSAddressing/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/META-INF/ibm-application-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicyTypes/CustomProperties/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/TrustServiceSecurityDefault/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/ibm-portal-security.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/WEB-INF/ibm-portlet-ext.xmi.template
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ejb-jar.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/blas/ibmasyncrsp/bver/BASE/bla.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/stsconfig.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/policy/policyAttachments.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSAddressing default/PolicyTypes/WSAddressing/policy.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/WIMPortlet.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/deployment.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WebSphereCluster.wsdl
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/isclite.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deltas/RESTAPIDocs/delta-1463001077668
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/SwaggerUI.war/WEB-INF/web.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/SwaggerUI.ear/deployments/SwaggerUI/META-INF/MANIFEST.MF
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/node-metadata.properties
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Client sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/namestore-node.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/spi.policy
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/gridclassification/Default_Rules/gridclassrules.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/META-INF/ibm-application-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/ISCAdminPortlet.war/WEB-INF/ibm-web-bnd.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/Kerberos V5 HTTPS default/policySet.xml
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/query.ear/deployments/query/querybean.jar/META-INF/ibm-ejb-jar-ext.xmi
+2026/01/07 15:49:57 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Client sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/WebSphereWSDM.ear/deployments/WebSphereWSDM/WebSphereWSDM.war/WEB-INF/classes/wsdl/WSDM-MUWS-Part2-1_1.wsdl
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/PolicySets/WSAddressing default/policySet.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/wim/config/wimconfig.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Provider sample/PolicyTypes/SSLTransport/bindings.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/servers/server1/server-pme51.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/isclite.ear/deployments/isclite/wasportlet.war/META-INF/MANIFEST.MF
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/nodes/DefaultNode01/namestore.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml HoK Symmetric Provider sample/PolicyTypes/WSReliableMessaging/bindings.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/bindings/Saml Bearer Provider sample/PolicyTypes/WSSecurity/bindings.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/applications/RESTAPIDocs.ear/deployments/RESTAPIDocs/RESTAPIDocs.war/META-INF/swagger.json
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/sts/policy/TrustServiceSecurityDefault/bindingDefinition.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/DefaultCell01/cus/RESTAPIDocs/cver/BASE/cu.xml
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/waspolicies/, recursively.
+2026/01/07 15:49:58 1 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/waspolicies/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/waspolicies/default/policy.xml
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedFilters/, recursively.
+2026/01/07 15:49:58 0 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedFilters/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/plugin*, non-recursively.
+2026/01/07 15:49:58 0 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/setupCmdLine.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/setupCmdLine.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/setupCmdLine.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/bin/setupCmdLine.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/startServer.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/bin/startServer.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopServer.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopServer.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/stopServer.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/bin/stopServer.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startManager.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/startManager.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopManager.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/stopManager.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/stopNode.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/bin/stopNode.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/startNode.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/bin/startNode.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopMWServer.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/stopMWServer.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startMWServer.*, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/bin/startMWServer.*, non-recursively.
+2026/01/07 15:49:58 152 objects identified in directory: /opt/IBM/WebSphere/AppServer/bin/
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/, recursively.
+2026/01/07 15:49:58 21 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/verbosegc.001.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PostConfigActions/postinstallerConfigActions1767800864692.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut.log.owner
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/AboutThisProfile.txt
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/server1.pid
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/WebSphere/postinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/runConfigActions.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/wsadminListener.out
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/startServer.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PostConfigActions/postinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PreConfigActions/postinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/wsadmin.traceout
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/iscinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/wsadmin.valout
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/WebSphere/postinstallerConfigActions1767800842287.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/native_stdout.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/native_stderr.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/service/productDir/PreConfigActions/postinstallerConfigActions1767800841776.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr.log.owner
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/logs/, recursively.
+2026/01/07 15:49:58 21 objects identified in directory: /opt/IBM/WebSphere/AppServer/logs/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/generateProfileKey.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/amjrte_config.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SIBDefineChains.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/clearClassCache/20260107154750.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/createShortcutForProfile.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/copyFiles.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/hamanager_config.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/clearClassCache/20260107064331.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/wsadminListener.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/keyGeneration.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/postinstall/postinstallerConfigActions1767768066379.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/uninstallIVTApp.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/postinstall/fixpack/postinstallerConfigActions1767768068103.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01_create.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/importConfigArchive.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/collect_metadata.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/postinstall/fixpack/postinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/postinstall/postinstall.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SIBGenericDeployRAs.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/SetSecurity.log
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/logs/manageprofiles/AppSrv01/uninstallDefaultApplication.log
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/*.log, non-recursively.
+2026/01/07 15:49:58 0 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/*.log, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/client.policy
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/converter.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/encoding.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/ffdcRun.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/ffdcStart.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/ffdcStop.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/jmx.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.client.props
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.stdclient.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.tools.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/server.policy
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sslbitsizes.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/TraceSettings.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/was.license
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsadmin.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/wsinstance.config
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/wsinstance.config
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsjaas.conf
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsjaas_client.conf
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/migration/MigrationHistory.ser
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/migration/MigrationHistory.ser
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/cachespec.xml
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/cachespec.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/servletcache.xml
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/servletcache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/dynaedge-cfg.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/implfactory.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/implfactory.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/createmq.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/createmq.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/dfltbndngs.dtd
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/j2c.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/j2c.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/soap.client.props
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/jmsserver.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/jmsserver.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/orb.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/portdef.props
+2026/01/07 15:49:58 Including file: /tmp/ssl.client.props.P  (passwords have been covered up)
+2026/01/07 15:49:58 Including file: /tmp/sas.server.props.P  (passwords have been covered up)
+2026/01/07 15:49:58 Including file: /tmp/rrdSecurity.props.P  (passwords have been covered up)
+2026/01/07 15:49:58 Including file: /tmp/sib.client.ssl.properties.P  (passwords have been covered up)
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/TraceFileSetting.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/TraceFileSetting.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/was.policy
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/TraceFileSetting.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/TraceFileSetting.properties
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/version/WAS.product
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/properties/version/history/, non-recursively.
+2026/01/07 15:49:58 0 objects identified in directory: /opt/IBM/WebSphere/AppServer/properties/version/history/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/version/profile.version
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/nodeportdef.props
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/nodeportdef.props
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/version/history.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/version/installed.xml
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/update/, non-recursively.
+2026/01/07 15:49:58 0 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/update/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration/, non-recursively.
+2026/01/07 15:49:58 2 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration/.lastTouched
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration/.configAreaProperties
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/configuration/, non-recursively.
+2026/01/07 15:49:58 3 objects identified in directory: /opt/IBM/WebSphere/AppServer/configuration/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/configuration/config.ini
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/configuration/.lastTouched
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/configuration/.configAreaProperties
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/*.xml, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/*.dtd, non-recursively.
+2026/01/07 15:49:58 109 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/classes/distributedmap.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/properties/classes/distributedmap.properties
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedApps/*.wsdl, recursively.
+2026/01/07 15:49:58 6 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedApps/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/profileRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/wasprofile.properties
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/properties/fsdb/, recursively.
+2026/01/07 15:49:58 2 objects identified in directory: /opt/IBM/WebSphere/AppServer/properties/fsdb/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/fsdb/AppSrv01.sh
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/properties/fsdb/_was_profile_default/default.sh
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/, recursively.
+2026/01/07 15:49:58 26 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/backup/actions/runiscdeploy.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/postinstallerLockFile.lock
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/CopyBluemixUtilityMetadata.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/backup/actions/clearClassCache.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/cacheActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/copyMLSTemplate.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actionRegistryExtension.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/updateSamlEar.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/backup/actions/detectNewProducts.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/backup/actionRegistryExtension.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/cacheActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/updateSwaggerUIEar.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/cacheActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/PH43148.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/updateOAuth20Ear.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/cachedInstalledProducts.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/backup/actions/clearOSGiCache.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/deltaActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/backup/actions/ejb-deploy-clear-cache.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/modifyMaxHeapSizeJspBatchCompiler.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/PH41622.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/deltaActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/deltaActionRegistry.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/backup/actionRegistryExtension.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/syncMLSTemplate.ant
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/backup/actions/PH51849.ant
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/, recursively.
+2026/01/07 15:49:58 27 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/.configAreaProperties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.manager/.fileTable.8
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.equinox.app/.manager/.tmp6472098447771211511.instance
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/.serverRunning
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.contributors.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/wsBundleMetadata/jpa-2.1.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.manager/.tmp5055506326713331158.instance
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.bundledata.3
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.lazy.3
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.state.3
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/wsBundleMetadata/jaxrs-2.0.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.mainData.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.manager/.fileTable.8
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.equinox.app/.manager/.fileTableLock
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.contributions.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.manager/.fileTable.7
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.orphans.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/.lastTouched
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.namespaces.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.extraData.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.update/platform.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/bundles/332/1/bundlefile
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.manager/.tmp5833294848307170813.instance
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.table.1
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.core.runtime/.manager/.fileTableLock
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.manager/.fileTableLock
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/servers/server1/configuration/org.eclipse.osgi/.manager/.fileTable.9
+2026/01/07 15:49:58 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/, recursively.
+2026/01/07 15:49:58 10 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/isclite/ISCAdminPortlet.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/isclite/WIMPortlet.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/WebSphereWSDM/WebSphereWSDM.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/ibmasyncrsp/ibmasyncrsp.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/isclite/isclite.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/query/querybean.jar/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/SwaggerUI/SwaggerUI.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/isclite/wasportlet.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/isclite/adminredirector.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/wscache/RESTAPIDocs/RESTAPIDocs.war/wscache.xml
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/son/epoch.properties
+2026/01/07 15:49:58 Error - File does not exist: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/son/epoch.properties
+2026/01/07 15:49:58 Including file: /opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/security/java.security
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 Including directory: /tmp/*.install.log, recursively.
+2026/01/07 15:49:58 20 objects identified in directory: /tmp/
+2026/01/07 15:49:58 Including file: /etc/hosts
+2026/01/07 15:49:58 EXECUTE: echo
+2026/01/07 15:49:58 Execute return code: 0
+2026/01/07 15:49:58 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/unix.files.sh"
+2026/01/07 15:49:59 Execute return code: 0
+2026/01/07 15:49:59 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/unix.files.sh" "/opt/IBM/WebSphere/AppServer" "/opt/IBM/WebSphere/AppServer/profiles/AppSrv01"
+2026/01/07 15:49:59 Execute return code: 0
+2026/01/07 15:49:59 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/unix.files.sh"
+2026/01/07 15:49:59 Execute return code: 0
+2026/01/07 15:49:59 Including directory: WAS/, non-recursively.
+2026/01/07 15:49:59 3 objects identified in directory: WAS/
+2026/01/07 15:49:59 Including file: WAS/filedir
+2026/01/07 15:49:59 Including file: WAS/filefull
+2026/01/07 15:49:59 Including file: WAS/fileperm
+2026/01/07 15:50:00 EXECUTE: "rm" "-r" "WAS"
+2026/01/07 15:50:00 Execute return code: 0
+2026/01/07 15:50:00 EXECUTE: echo
+2026/01/07 15:50:00 Execute return code: 0
+2026/01/07 15:50:00 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/unix.commands.sh"
+2026/01/07 15:50:00 Execute return code: 0
+2026/01/07 15:50:00 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/unix.commands.sh"
+2026/01/07 15:50:03 Execute return code: 0
+2026/01/07 15:50:03 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/unix.commands.sh"
+2026/01/07 15:50:03 Execute return code: 0
+2026/01/07 15:50:03 Including file: OS/commands
+2026/01/07 15:50:03 EXECUTE: "rm" "-r" "OS"
+2026/01/07 15:50:03 Execute return code: 0
+2026/01/07 15:50:03 EXECUTE: echo
+2026/01/07 15:50:03 Execute return code: 0
+2026/01/07 15:50:03 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/linux.system.sh"
+2026/01/07 15:50:03 Execute return code: 0
+2026/01/07 15:50:03 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/linux.system.sh" "/opt/IBM/WebSphere/AppServer"
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/linux.system.sh"
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 Including directory: OS/, non-recursively.
+2026/01/07 15:50:04 1 objects identified in directory: OS/
+2026/01/07 15:50:04 Including file: OS/system
+2026/01/07 15:50:04 EXECUTE: "rm" "-r" "OS"
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: id
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: env
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: /sbin/runlevel
+2026/01/07 15:50:04 Error - Execute request: 
+2026/01/07 15:50:04 Execute return code: 1
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: echo
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/unix.getconf.sh"
+2026/01/07 15:50:04 Execute return code: 0
+2026/01/07 15:50:04 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/unix.getconf.sh"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/unix.getconf.sh"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 Including directory: OS/, non-recursively.
+2026/01/07 15:50:07 1 objects identified in directory: OS/
+2026/01/07 15:50:07 Including file: OS/getconf
+2026/01/07 15:50:07 EXECUTE: "rm" "-r" "OS"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: echo
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar" "com/ibm/websphere/rastools/collector/unix.dmesg.sh"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/unix.dmesg.sh"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/unix.dmesg.sh"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 Including directory: OS/, non-recursively.
+2026/01/07 15:50:07 1 objects identified in directory: OS/
+2026/01/07 15:50:07 Including file: OS/dmesg
+2026/01/07 15:50:07 EXECUTE: "rm" "-r" "OS"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: echo
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "top" "-b" "-n" "1"
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: echo
+2026/01/07 15:50:07 Execute return code: 0
+2026/01/07 15:50:07 EXECUTE: "/opt/IBM/WebSphere/AppServer/java/8.0/bin/jar" "-xvf" "/opt/IBM/WebSphere/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/linux.network.sh"
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: "sh" "./com/ibm/websphere/rastools/collector/linux.network.sh"
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: "rm" "com/ibm/websphere/rastools/collector/linux.network.sh"
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 Including file: OS/network
+2026/01/07 15:50:08 EXECUTE: "rm" "-r" "OS"
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: echo
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: "rpm" "-qa"
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: echo
+2026/01/07 15:50:08 Execute return code: 0
+2026/01/07 15:50:08 EXECUTE: "rpm" "-qai"
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 EXECUTE: echo
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 EXECUTE: "rpm" "-qa" "--changelog"
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 EXECUTE: "rm" "-r" "com"
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 Including file: /etc/hosts
+2026/01/07 15:50:09 Including file: /etc/nsswitch.conf
+2026/01/07 15:50:09 EXECUTE: "env" "mqver"
+2026/01/07 15:50:09 Execute return code: 127
+2026/01/07 15:50:09 Including directory: /var/mqm/errors/, recursively.
+2026/01/07 15:50:09 0 objects identified in directory: /var/mqm/errors/
+2026/01/07 15:50:09 Including directory: /var/wemps/errors/, recursively.
+2026/01/07 15:50:09 0 objects identified in directory: /var/wemps/errors/
+2026/01/07 15:50:09 Including file: /var/adm/messages
+2026/01/07 15:50:09 Error - File does not exist: /var/adm/messages
+2026/01/07 15:50:09 EXECUTE: "env" dspmq
+2026/01/07 15:50:09 Execute return code: 127
+2026/01/07 15:50:09 Including file: /var/log/messages
+2026/01/07 15:50:09 Error - File does not exist: /var/log/messages
+2026/01/07 15:50:09 EXECUTE: echo
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 EXECUTE: wempsservice
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 EXECUTE: echo
+2026/01/07 15:50:09 Execute return code: 0
+2026/01/07 15:50:09 Collect Java properties.
+2026/01/07 15:50:09          551 Objects gathered.
+2026/01/07 15:50:09 Comment: WebSphere App. Server, rel. 7.0, Collector inv. ver. 7.0
+2026/01/07 15:50:10 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut*, non-recursively.
+2026/01/07 15:50:10 9 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut.log.owner
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemOut.log
+2026/01/07 15:50:10 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr*, non-recursively.
+2026/01/07 15:50:10 9 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr.log
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/SystemErr.log.owner
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/native_stdout.log
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/native_stderr.log
+2026/01/07 15:50:10 Including directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/trace*, non-recursively.
+2026/01/07 15:50:10 9 objects identified in directory: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/
+2026/01/07 15:50:10 Including file: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/activity.log
+2026/01/07 15:50:10 Error - File does not exist: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/activity.log
+2026/01/07 15:50:10 Number possible errors:           17
+2026/01/07 15:50:10 Log File name:  /tmp/Collector.log
+2026/01/07 15:50:10 Output Jar name:  /tmp/f29061ea7da5-DefaultCell01-DefaultNode01-AppSrv01-WASenv.jar

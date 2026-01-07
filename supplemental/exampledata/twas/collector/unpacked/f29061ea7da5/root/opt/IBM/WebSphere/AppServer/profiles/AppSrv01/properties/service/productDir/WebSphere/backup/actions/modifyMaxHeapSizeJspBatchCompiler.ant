@@ -1,0 +1,118 @@
+<!-- ***************************************************************************
+Licensed Materials - Property of IBM
+
+5724-I63, 5724-H88, 5724-H89, 5655-N02, 5724-J08
+ 
+Copyright IBM Corp. 2021 All Rights Reserved.
+
+US Government Users Restricted Rights - Use, duplication or
+disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+***************************************************************************  -->
+<project name="modifyMaxHeapSizeJspBatchCompiler" default="install" basedir=".">
+
+	<taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles" />
+	<taskdef name="replaceTokenInFile" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.ReplaceTokenInFileAntTask"
+			classpath="${WAS_HOME}/plugins/com.ibm.ws.runtime.jar" />
+	
+	<property name="lowHeapSize" value="-Xmx256m"/>
+	<property name="highHeapSize" value="-Xmx1024m"/>
+                                                                                                 
+
+    <target name="detectCurrentOSFamily" description="Detects the current OS family (UNIX or Windows).">
+
+      <condition property="currentOSFamily" value="windows">
+        <os family="windows"/>
+      </condition>
+      <condition property="currentOSFamily" value="unix">
+      	<os family="os/400"/>
+      </condition>
+      <condition property="currentOSFamily" value="unix">            
+    	<os family="z/os"/>
+      </condition>
+      <condition property="currentOSFamily" value="unix">            
+        <os family="unix"/>
+      </condition>
+        
+      <wscmtlog>Detected current OS family to be: ${currentOSFamily}</wscmtlog>
+    </target>
+
+
+    <target name="resolveFullFilePath"
+            description="Resolves the full path of JspBatchCompiler script for the current platform.">
+
+        <condition property="fullFilePath" value="${WAS_HOME}\bin\JspBatchCompiler.bat">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+        <condition property="fullFilePath" value="${WAS_HOME}/bin/JspBatchCompiler.sh">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+        
+        <wscmtlog>Detected fullFilePath to be: ${fullFilePath}</wscmtlog>
+    </target>
+    
+
+	<target name="increaseMaximumHeapSize" description="Increase maximum heap size parameter in ${fullFilePath}">
+		<wscmtlog>*** Proceeding to increase maximum heap size parameter -Xmx from 256m to 1024m***</wscmtlog>
+		<replaceTokenInFile path="${fullFilePath}" token="${lowHeapSize}" value="${highHeapSize}" property="isReplaced" ignorecase="false" />
+		<wscmtlog>*** Did maximum heap size parameter in ${fullFilePath} get modified?: ${isReplaced} ***</wscmtlog>
+	</target>
+
+
+	<target name="decreaseMaximumHeapSize" description="Decrease maximum heap size parameter in ${fullFilePath}">
+		<wscmtlog>*** Proceeding to reverse changes made to maximum heap size parameter -Xmx ***</wscmtlog>
+		<replaceTokenInFile path="${fullFilePath}" token="${highHeapSize}" value="${lowHeapSize}" property="isReplaced" ignorecase="false" />
+		<wscmtlog>*** Did maximum heap size parameter in ${fullFilePath} get modified?: ${isReplaced} ***</wscmtlog>
+	</target>
+
+
+
+	<!-- 
+   ***************************************************************************
+   TARGET: logStartupProperties
+   Log startup properties
+   ***************************************************************************
+   -->
+	<target name="logStartupProperties" description="Log properties passed to script" >
+		<tstamp>
+			<format property="timestamp" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+		<wscmtlog>*** Task to perform: Increase maximum heap size parameter in ${fullFilePath} ***</wscmtlog>
+		<antcall target="increaseMaximumHeapSize" />
+	</target>
+
+
+	<!-- 
+   ***************************************************************************
+   TARGET: callPostinst
+   ***************************************************************************
+   -->
+	<target name="install" description="Calls postinst with various parameters" 
+		depends="detectCurrentOSFamily,
+    			resolveFullFilePath,
+			logStartupProperties" />
+
+
+	<!-- 
+   ***************************************************************************
+   TARGET: logStartupUninstallProperties
+   Log startup properties
+   ***************************************************************************
+   -->
+	<target name="logStartupUninstallProperties" description="Log properties passed to script" >
+		<tstamp>
+			<format property="timestamp" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+		<wscmtlog>*** Task to perform: Reverse the changes made to maximum heap size parameter in ${fullFilePath} ***</wscmtlog>
+		<antcall target="decreaseMaximumHeapSize" />
+	</target>
+
+
+	<!-- 
+   ***************************************************************************
+   TARGET: callPostinstUninstall
+   ***************************************************************************
+   -->
+	<target name="uninstall" description="Calls postinst with various parameters" depends="logStartupUninstallProperties" />
+</project>
+

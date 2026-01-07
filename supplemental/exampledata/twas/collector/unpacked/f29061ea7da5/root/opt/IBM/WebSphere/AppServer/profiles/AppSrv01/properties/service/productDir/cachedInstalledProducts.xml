@@ -1,0 +1,9 @@
+<AllOfferingsOptFeaturesIFixes>
+<offering buildLevel="f5262545.03" id="com.ibm.websphere.ILAN.v90">
+<optionalFeature>WebSphere Application Server traditional</optionalFeature>
+<optionalFeature>EJBDeploy tool for pre-EJB 3.0 modules</optionalFeature>
+<optionalFeature>Embeddable EJB container</optionalFeature>
+<optionalFeature>Sample applications</optionalFeature>
+<optionalFeature>Stand-alone thin clients and resource adapters</optionalFeature>
+</offering>
+</AllOfferingsOptFeaturesIFixes>

@@ -1,0 +1,17 @@
+Application server environment to create: Application server
+Location: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+Disk space required: 200 MB
+Profile name: AppSrv01
+Make this profile the default: True
+Node name: DefaultNode01
+Host name: localhost
+Enable administrative security (recommended): True
+Administrative console port: 9060
+Administrative console secure port: 9043
+HTTP transport port: 9080
+HTTPS transport port: 9443
+Bootstrap port: 2809
+SOAP connector port: 8880
+Run application server as a service: False
+Create a Web server definition: False
+Performance tuning setting: Standard

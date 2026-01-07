@@ -1,0 +1,111 @@
+################################################################################################################################################################################################
+#
+#             SAS Server Properties File (now disabled, use WebConsole GUI and/or security.xml instead)
+#
+#  Properties which used to be specified in this file are now configured via the security.xml file located at:
+#
+#       config/cells/<cellname>/security.xml
+#
+#  The following shows the mapping between properties that used to be set here and the XML values within the 
+#  security.xml file under the CSI and IBM stanzas. 
+#
+#    <CSI xmi:id="IIOPSecurityProtocol_1">
+#      <claims xmi:type="orb.securityprotocol:CommonSecureInterop" xmi:id="CSIv2 Inbound Configuration" stateful="true">
+#	        ### (com.ibm.CSI.claimStateful=true) ###
+#        <layers xmi:type="orb.securityprotocol:IdentityAssertionLayer" xmi:id="IdentityAssertionLayer_1">
+#          <supportedQOP xmi:type="orb.securityprotocol:IdentityAssertionQOP" xmi:id="IdentityAssertionQOP_1" enable="false"/>
+#	        ### (com.ibm.CSI.claimIdentityAssertionSupported=false) ###
+#          <trustedServers xmi:id="ServerIdentity_1" serverId="unix_server_id"/>
+#          <trustedServers xmi:id="ServerIdentity_2" serverId="ldap_server_id"/>
+#	        ### (com.ibm.CSI.trustedPrincipalList=unix_server_id, ldap_server_id) ###
+#        </layers>
+#        <layers xmi:type="orb.securityprotocol:MessageLayer" xmi:id="MessageLayer_1">
+#          <supportedQOP xmi:type="orb.securityprotocol:MessageQOP" xmi:id="MessageQOP_1" establishTrustInClient="true"/>
+#	        ### (com.ibm.CSI.claimClientAuthenticationSupported=true) ###
+#          <requiredQOP xmi:type="orb.securityprotocol:MessageQOP" xmi:id="MessageQOP_2" establishTrustInClient="false"/>
+#	        ### (com.ibm.CSI.claimClientAuthenticationRequired=false) ###
+#        </layers>
+#        <layers xmi:type="orb.securityprotocol:TransportLayer" xmi:id="TransportLayer_1">
+#          <supportedQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_1" establishTrustInClient="false" enableProtection="true" confidentiality="true" integrity="true"/>
+#	        ### (com.ibm.CSI.claimTLClientAuthenticationSupported=false) ###
+#	        ### (com.ibm.CSI.claimTransportAssocSSLTLSSupported=true) ###
+#	        ### (com.ibm.CSI.claimMessageConfidentialitySupported=true) ###
+#	        ### (com.ibm.CSI.claimMessageIntegritySupported=true) ###
+#          <requiredQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_2" establishTrustInClient="false" enableProtection="false" confidentiality="false" integrity="true"/>
+#	        ### (com.ibm.CSI.claimTLClientAuthenticationRequired=false) ###
+#	        ### (com.ibm.CSI.claimTransportAssocSSLTLSRequired=true) ###
+#	        ### (com.ibm.CSI.claimMessageConfidentialityRequired=true) ###
+#	        ### (com.ibm.CSI.claimMessageIntegrityRequired=true) ###
+#          <mutualAuthentication xmi:id="IIOPTransport_1" sslConfig="ORBSSLSettings">
+#	        ### (com.ibm.ssl.csiv2.inbound.*) ###   Note:  All SSL settings from ORBSSLSettings below will be set with this property prefix.
+#            <address xmi:id="CSIv2 SSL Client Certificate Port" port="0"/>
+#	        ### (com.ibm.CSI.ClientCertSSLPort=0) ###
+#          </mutualAuthentication>
+#          <serverAuthentication xmi:id="IIOPTransport_2" sslConfig="ORBSSLSettings">
+#            <address xmi:id="CSIv2 SSL Port" port="0"/>
+#	        ### (com.ibm.CSI.SSLPort=0) ###
+#          </serverAuthentication>
+#        </layers>
+#      </claims>
+#      <performs xmi:type="orb.securityprotocol:CommonSecureInterop" xmi:id="CSIv2 Outbound Configuration" stateful="true" sessionGCInterval="300000" sessionGCIdleTime="900000">
+#	        ### (com.ibm.CSI.claimStateful=true) ###
+#	        ### (com.ibm.CORBA.sessionGCinterval=300000) ###
+#	        ### (com.ibm.CORBA.sessionGCunuseddiscard=300000) ###
+#        <layers xmi:type="orb.securityprotocol:IdentityAssertionLayer" xmi:id="IdentityAssertionLayer_2">
+#          <supportedQOP xmi:type="orb.securityprotocol:IdentityAssertionQOP" xmi:id="IdentityAssertionQOP_2" enable="false"/>
+#	        ### (com.ibm.CSI.performIdentityAssertionSupported=false) ###
+#          <requiredQOP xmi:type="orb.securityprotocol:IdentityAssertionQOP" xmi:id="IdentityAssertionQOP_3" enable="false"/>
+#	        ### (com.ibm.CSI.performIdentityAssertionRequired=false) ###
+#        </layers>
+#        <layers xmi:type="orb.securityprotocol:MessageLayer" xmi:id="MessageLayer_2" authenticationLayerRetryCount="3">
+#	        ### (com.ibm.CORBA.authenticationRetryCount=3) ###
+#          <supportedQOP xmi:type="orb.securityprotocol:MessageQOP" xmi:id="MessageQOP_3" establishTrustInClient="true"/>
+#	        ### (com.ibm.CSI.performClientAuthenticationSupported=true) ###
+#          <requiredQOP xmi:type="orb.securityprotocol:MessageQOP" xmi:id="MessageQOP_4" establishTrustInClient="false"/>
+#	        ### (com.ibm.CSI.performClientAuthenticationRequired=true) ###
+#        </layers>
+#        <layers xmi:type="orb.securityprotocol:TransportLayer" xmi:id="TransportLayer_2">
+#          <supportedQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_3" establishTrustInClient="false" enableProtection="true" confidentiality="true" integrity="true"/>
+#	        ### (com.ibm.CSI.performTLClientAuthenticationSupported=false) ###
+#	        ### (com.ibm.CSI.performTransportAssocSSLTLSSupported=true) ###
+#	        ### (com.ibm.CSI.performMessageConfidentialitySupported=true) ###
+#	        ### (com.ibm.CSI.performMessageIntegritySupported=true) ###
+#          <requiredQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_4" establishTrustInClient="false" enableProtection="false" confidentiality="false" integrity="true"/>
+#	        ### (com.ibm.CSI.performTLClientAuthenticationRequired=false) ###
+#	        ### (com.ibm.CSI.performTransportAssocSSLTLSRequired=true) ###
+#	        ### (com.ibm.CSI.performMessageConfidentialityRequired=true) ###
+#	        ### (com.ibm.CSI.performMessageIntegrityRequired=true) ###
+#          <serverAuthentication xmi:id="IIOPTransport_3" sslConfig="ORBSSLSettings"/>
+#	        ### (com.ibm.ssl.csiv2.outbound.*) ###   Note:  All SSL settings from ORBSSLSettings below will be set with this property prefix.
+#        </layers>
+#      </performs>
+#    </CSI>
+#    <IBM xmi:id="IIOPSecurityProtocol_2">
+#      <claims xmi:type="orb.securityprotocol:SecureAssociationService" xmi:id="SecureAssociationService_1">
+#        <layers xmi:type="orb.securityprotocol:TransportLayer" xmi:id="TransportLayer_3">
+#          <supportedQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_5" enableProtection="true" confidentiality="true" integrity="true"/>
+#	        ### (com.ibm.CORBA.SSLTypeIClientAssociationEnabled=true) ###
+#	        ### (com.ibm.CORBA.standardClaimQOPModels=high) ###
+#	        ### (com.ibm.CORBA.standardClaimQOPModels=medium) ###
+#          <serverAuthentication xmi:id="IIOPTransport_4" sslConfig="ORBSSLSettings">
+#	        ### (com.ibm.ssl.sas.inbound.*) ###   Note:  All SSL settings from ORBSSLSettings below will be set with this property prefix.
+#            <address xmi:id="SAS SSL Port" port="0"/>
+#	        ### (com.ibm.CORBA.SSLPort=0) ###
+#          </serverAuthentication>
+#        </layers>
+#      </claims>
+#      <performs xmi:type="orb.securityprotocol:SecureAssociationService" xmi:id="SecureAssociationService_2">
+#        <layers xmi:type="orb.securityprotocol:TransportLayer" xmi:id="TransportLayer_4">
+#          <supportedQOP xmi:type="orb.securityprotocol:TransportQOP" xmi:id="TransportQOP_6" enableProtection="true" confidentiality="false" integrity="false"/>
+#	        ### (com.ibm.CORBA.SSLTypeIServerAssociationEnabled=true) ###
+#	        ### (com.ibm.CORBA.standardPerformQOPModels=high) ###
+#	        ### (com.ibm.CORBA.standardPerformQOPModels=medium) ###
+#          <serverAuthentication xmi:id="IIOPTransport_5" sslConfig="ORBSSLSettings"/>
+#	        ### (com.ibm.ssl.sas.outbound.*) ###   Note:  All SSL settings from ORBSSLSettings below will be set with this property prefix.
+#        </layers>
+#      </performs>
+#    </IBM>
+#
+#
+#
+################################################################################################################################################################################################

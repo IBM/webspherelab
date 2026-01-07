@@ -1,0 +1,335 @@
+<!-- PH51849: Removal of kc.war module from isclite.ear -->
+<project name="removeKC" default="install" basedir=".">
+
+<taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+    
+	<!-- Find OS type to know filepath format to use appropriate file separator -->
+	<target name="detectCurrentOSFamily" description="Detects the current OS family (UNIX or Windows)."> 
+
+        <condition property="currentOSFamily" value="os/400"> 
+            <equals arg1="${os.name}" arg2="OS/400"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+        <condition property="currentOSFamily" value="windows"> 
+            <os family="windows"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="unix">             
+            <os family="unix"/> 
+        </condition>
+    
+        <wscmtlog>PH51849.ant: Detected current OS family to be: ${currentOSFamily}</wscmtlog> 
+    </target> 
+	
+	<target name="setCurrentOSFamily" description="Sets the current OS family (UNIX, OS400 or Windows)"> 
+        
+        <condition property="isCurrentOSOS400" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="os/400"/> 
+        </condition> 
+        <condition property="isCurrentOSZOS" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="z/os"/> 
+        </condition> 
+        <condition property="isCurrentOSWindows" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition> 
+        <condition property="isCurrentOSUNIX" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+
+        <wscmtlog>PH51849.ant: Set current OS family to: ${currentOSFamily}</wscmtlog> 
+       
+    </target> 	
+	
+	<!-- Pointing to correct wsadmin executable file -->
+	<target name="setExecutable" description="Sets the name of the executable file based on the OS family."> 
+        
+        <condition property="executable" value="${profilePath}/bin/wsadmin">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition> 
+        <condition property="executable" value="${profilePath}/bin/wsadmin.sh"> 
+            <equals arg1="${currentOSFamily}" arg2="z/os"/> 
+        </condition> 
+        <condition property="executable" value="${profilePath}/bin/wsadmin.sh"> 
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+        <condition property="executable" value="${profilePath}\bin\wsadmin.bat"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition> 
+		
+        <wscmtlog>PH51849.ant: The full path of the wsadmin executable is: ${executable}</wscmtlog> 
+    </target> 
+	
+	
+	<!-- ensures wsadmin executable is present and issue warning if it's not found -->
+	<target name="checkExecutableExistence" > 
+        <condition property="runThisConfigAction"> 
+            <and> 
+                <available property="executableExists" file="${executable}" /> 
+	    	</and> 
+        </condition> 
+    </target> 
+
+	
+	<!-- Issues warning when wsadmin executable file is missing -->
+    <target name="issueWarning" unless="runThisConfigAction" description="Issue a warning if executable does not exist"> 		
+        <wscmtlog priority="severe">    
+            PH51849.ant: Executable ${executable} does not exist, therefore it was not executed.
+        </wscmtlog> 
+    </target> 
+	
+	<!-- Profile must have the applications directory before we look for isclite.ear and kc.war module in the config -->
+	 <target name="checkApplicationsDir" if="runThisConfigAction" description="Checks to see if the profile/config/cells/applications directory exists in the config">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications" excludes="*/applications/*" id="applications" />	
+		<pathconvert property="appDir" setonempty="false" refid="applications" pathsep=" "/>
+			
+        <property name="applications.dir" value="${profilePath}/config/cells/${cellName}/applications"/>
+        
+		<available file="${appDir}" type="dir" property="app.dir.exists"/>
+
+	  <wscmtlog>PH51849.ant: Applications directory ${profilePath}/config/cells/${cellName}/applications exists - ${app.dir.exists}</wscmtlog>
+
+    </target>
+   
+	<!-- Verify that islite.ear directory exists because without the isclite.ear there are no kc.war files that can be removed in the config -->
+    <target name="checkIfIsclite.earExists" if="app.dir.exists" description="Checks to see if the ${profilePath}/config/cells/applications/isclite.ear directory exists in the config">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications/isclite.ear" excludes="*/applications/isclite.ear/*" id="iscliteApp" />	
+		<pathconvert property="iscDir" setonempty="false" refid="iscliteApp" pathsep=" "/>
+
+        <property name="isclite.ear.dir" value="${profilePath}/config/cells/${cellName}/applications/isclite.ear"/>
+
+        <available file="${iscDir}" type="dir" property="isclite.ear.dir.exists"/>
+
+      <wscmtlog>PH51849.ant: Isclite directory ${profilePath}/config/cells/${cellName}/applications/isclite.ear exists - ${isclite.ear.dir.exists}</wscmtlog>
+    
+	</target>
+
+    <!-- Verify that kc.war directory exists because there's no need to run the AdminApp.update if kc.war isn't there -->
+    <target name="checkIfKCWarExists" if="isclite.ear.dir.exists" description="Checks to see if the ${profilePath}/config/cells/applications/isclite.ear/deployments/isclite/kc.war directory exists in the config">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications/isclite.ear/deployments/isclite/kc.war" excludes="*/applications/isclite.ear/deployments/isclite/kc.war/*" id="KCwar" />	
+		<pathconvert property="kcDir" setonempty="false" refid="KCwar" pathsep=" "/>
+
+        <property name="kc.war.dir" value="${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/kc.war"/>
+
+        <available file="${kcDir}" type="dir" property="kc.war.dir.exists"/>
+
+      <wscmtlog>PH51849.ant: KC module directory ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/kc.war exists - ${kc.war.dir.exists}</wscmtlog>
+    
+	</target>
+
+	<!-- wsadmin executable requires file separator to be '/' regardless of thes OS, so WAS_HOME needs to be converted -->
+	<target name="convertWASHomeToUNIXStylePath">
+        <path id="id.was.home">
+            <pathelement location="${WAS_HOME}"/>
+        </path>
+    
+        <pathconvert targetos="unix" 
+            property="WAS_HOME_UNIX_STYLE" 
+            refid="id.was.home"/>
+    </target>
+	
+	<!-- wsadmin command to remove KC config files -->
+	<target name="runAdminAppUpdate" if="kc.war.dir.exists" description="Deletes the kc.war module from isclite.ear"> 
+		<wscmtlog>PH51849.ant: Run AdminApp.update in wsadmin to delete kc.war module file in profile's config</wscmtlog>
+        
+		<exec executable="${executable}">
+            <arg line="-conntype NONE" />	
+			<arg line="-lang jython" />
+            <arg line="-c" />
+			<arg value="AdminApp.update('isclite', 'modulefile', '[-operation delete -contenturi kc.war]')" />
+			<arg line="-c" />
+			<arg value="AdminConfig.save()" />
+		</exec>
+	</target>
+	
+	<!-- We need to update the deployConsole.py scripts under the profile bin with the new one under the ${WAS_HOME}/bin dir -->
+	<!-- Check to see that the script exists under ${WAS_HOME}/bin dir -->
+    <target name="checkIfScriptExists" description="Checks to see if the ${WAS_HOME}/bin/deployConsole.py file exists">
+		
+		<dirset dir="${WAS_HOME}" includes="bin" excludes="bin/*" id="binDir"/>	
+		<pathconvert property="homeBinDir" setonempty="false" refid="binDir" pathsep=" "/>
+
+        <property name="home.bin.dir" value="${homeBinDir}"/>
+
+        <available file="${homeBinDir}/deployConsole.py" type="file" property="home.bin.script.exists"/>
+
+      <wscmtlog>PH51849.ant: deployConsole.py script under ${WAS_HOME}/bin exists - ${home.bin.script.exists}</wscmtlog>
+    
+	</target>
+	
+    <!-- Check to see that the script exists under profile dir -->
+    <target name="checkIfScriptExistsInProfile" if="home.bin.script.exists" description="Checks to see if the ${profilePath}/bin/deployConsole.py file exists">
+		
+		<dirset dir="${profilePath}" includes="bin" excludes="bin/*" id="profileBin"/>	
+		<pathconvert property="profileBinDir" setonempty="false" refid="profileBin" pathsep=" "/>
+
+        <property name="profile.bin.dir" value="${profilePath}/bin"/>
+
+        <available file="${profileBinDir}/deployConsole.py" type="file" property="profile.deploy.script.exists"/>
+
+      <wscmtlog>PH51849.ant: deployConsole.py script under ${profilePath}/bin exists - ${profile.deploy.script.exists}</wscmtlog>
+    
+	</target>
+	
+	<!-- Replace deployConsole.py script in ${profilePath}/bin with the one under %{WAS_HOME}/bin -->
+    <target name="replaceDeployScript" if="profile.deploy.script.exists" description="Replace ${profilePath}/bin/deployConsole.py with ${WAS_HOME}/bin/deployConsole.py">
+		
+		<copy file="${WAS_HOME}/bin/deployConsole.py" tofile="${profilePath}/bin/deployConsole.py" overwrite="true" />
+      <wscmtlog>PH51849.ant: Copied deployConsole.py script from ${WAS_HOME}/bin to ${profilePath}/bin</wscmtlog>
+    
+	</target>
+	
+	<!-- Replace kc.war reference in workclass.xml files in profile config -->
+    <target name="checkIfWorkClassDirExists" if="isclite.ear.dir.exists" description="Checks to see if the ${profilePath}/config/cells/applications/isclite.ear/deployments/isclite/workclasses directory exists in the config">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications/isclite.ear/deployments/isclite/workclasses" excludes="*/applications/isclite.ear/deployments/isclite/workclasses/*" id="workClasses" />	
+		<pathconvert property="workclassDir" setonempty="false" refid="workClasses" pathsep=" "/>
+
+        <property name="workclass.dir" value="${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses"/>
+
+        <available file="${workclassDir}" type="dir" property="workclass.dir.exists"/>
+
+      <wscmtlog>PH51849.ant: workclasses directory ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses exists - ${workclass.dir.exists}</wscmtlog>
+    
+	</target>
+	
+	<!-- Check to see that the workclass.xml exists under ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_HTTP_WC -->
+    <target name="checkIfHTTPWorkclassExists" if="workclass.dir.exists" description="Checks to see if the ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_HTTP_WC/workclass.xml file exists">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications/isclite.ear/deployments/isclite/workclasses/Default_HTTP_WC" excludes="*/applications/isclite.ear/deployments/isclite/workclasses/Default_HTTP_WC/*" id="HTTPdir" />	
+		<pathconvert property="httpDir" setonempty="false" refid="HTTPdir" pathsep=" "/>
+
+        <property name="http.dir" value="${httpDir}"/>
+
+        <available file="${httpDir}/workclass.xml" type="file" property="http.workclass.exists"/>
+
+      <wscmtlog>PH51849.ant: workclass.xml file under ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_HTTP_WC/ exists - ${http.workclass.exists}</wscmtlog>
+    
+	</target>
+	
+	<!-- Edit Default_HTTP_WC workclass.xml file -->
+    <target name="editHTTPWorkclass" if="http.workclass.exists" description="Remove kc.war references in workclass.xml">
+
+        <property name="http.workclass" value="${httpDir}/workclass.xml"/>
+		
+		<replaceregexp
+			file="${http.workclass}" 
+			match="^.*kc.war.*$"
+			replace=""
+			byline="true"
+		/>
+      <wscmtlog>PH51849.ant: Removed kc.war references in Default_HTTP_WC workclass.xml</wscmtlog>
+    
+	</target>
+	
+	<!-- Check to see that the workclass.xml exists under ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_JMS_WC -->
+    <target name="checkIfJMSWorkclassExists" if="workclass.dir.exists" description="Checks to see if the ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_JMS_WC/workclass.xml file exists">
+		
+		<dirset dir="${profilePath}/config/cells/" includes="*/applications/isclite.ear/deployments/isclite/workclasses/Default_JMS_WC" excludes="*/applications/isclite.ear/deployments/isclite/workclasses/Default_JMS_WC/*" id="JMSdir" />	
+		<pathconvert property="jmsDir" setonempty="false" refid="JMSdir" pathsep=" "/>
+
+        <property name="jms.dir" value="${jmsDir}"/>
+
+        <available file="${jmsDir}/workclass.xml" type="file" property="jms.workclass.exists"/>
+
+      <wscmtlog>PH51849.ant: workclass.xml file under ${profilePath}/config/cells/${cellName}/applications/isclite.ear/deployments/isclite/workclasses/Default_JMS_WC/ exists - ${jms.workclass.exists}</wscmtlog>
+    
+	</target>
+	
+	<!-- Edit Default_JMS_WC workclass.xml file -->
+    <target name="editJMSWorkclass" if="jms.workclass.exists" description="Remove kc.war references in workclass.xml">
+
+        <property name="jms.workclass" value="${jmsDir}/workclass.xml"/>
+
+		<replaceregexp
+			file="${jms.workclass}" 
+			match="^.*kc.war.*$"
+			replace=""
+			byline="true"
+		/>
+      <wscmtlog>PH51849.ant: Removed kc.war references in Default_JMS_WC workclass.xml</wscmtlog>
+    
+	</target>
+
+	
+	<!-- Remove KC_HOME custom property if it is defined in the JVM -->
+	<target name="removeKCHOME" description="Removes KC_HOME from the JVM properties"> 
+		<wscmtlog>removeKCHOME: Start removing KC_HOME from all jvm entries that have it </wscmtlog> 
+
+		<exec executable="${executable}">
+            <arg line="-conntype NONE" />	
+			<arg line="-lang jacl" />
+			<arg line="-c" />
+            <arg value= "set serverList [$AdminConfig list Server]"/>
+			<arg line="-c" />
+			<arg value= "set nameAttr [list name KC_HOME]"/>
+			<arg line="-c" />
+			<arg value= "set valueAttr [list value &quot;${WAS_HOME_UNIX_STYLE}/systemApps/isclite.ear/isclite.war/help&quot;]"/>
+			<arg line="-c" />
+            <arg value= "set reqAttr [list required false]"/>
+			<arg line="-c" />
+            <arg value= "set propAttr [list $nameAttr $valueAttr $reqAttr]"/>
+			<arg line="-c" />
+            <arg value= "set kcHome KC_HOME"/>
+			<arg line="-c" />
+            <arg value= "foreach server $serverList { set pds [$AdminConfig list JavaProcessDef $server]; foreach pd $pds { set jvms [$AdminConfig showAttribute $pd jvmEntries]; foreach jvm $jvms { set kcIdx 0; set jvmProps [$AdminConfig list Property $jvm]; foreach prop $jvmProps { set kcIdx [string first $kcHome $prop]; if {$kcIdx > -1} {$AdminConfig remove $prop}}}}}"/>
+			
+		</exec>
+		<wscmtlog>removeKCHOME: Finished removing KC_HOME from all jvm entries in server.xml </wscmtlog> 
+		
+	</target>
+	
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+	<!-- Install Target                 --> 
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  	
+	<target name="install" depends="detectCurrentOSFamily,
+            setCurrentOSFamily,
+            setExecutable,
+			checkExecutableExistence,
+            issueWarning,
+			checkApplicationsDir, 
+			checkIfIsclite.earExists,
+            checkIfKCWarExists,
+			convertWASHomeToUNIXStylePath,
+			runAdminAppUpdate,
+			checkIfScriptExists,
+			checkIfScriptExistsInProfile,
+			replaceDeployScript,
+			checkIfWorkClassDirExists,
+			checkIfHTTPWorkclassExists,
+			editHTTPWorkclass,
+			checkIfJMSWorkclassExists,
+			editJMSWorkclass,
+			removeKCHOME
+            "> 
+	</target> 
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+	<!-- Uninstall Target               --> 
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+	<target name="uninstall" description="No uninstall action" depends="detectCurrentOSFamily,
+            setCurrentOSFamily,
+            setExecutable,
+			checkExecutableExistence,
+            issueWarning,
+			checkApplicationsDir, 
+			checkIfIsclite.earExists,
+            checkIfKCWarExists,
+			convertWASHomeToUNIXStylePath,
+			runAdminAppUpdate,
+			checkIfScriptExists,
+			checkIfScriptExistsInProfile,
+			replaceDeployScript,
+			checkIfWorkClassDirExists,
+			checkIfHTTPWorkclassExists,
+			editHTTPWorkclass,
+			checkIfJMSWorkclassExists,
+			editJMSWorkclass,
+			removeKCHOME
+            ">
+	</target>
+
+</project>

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+
+<!-- PM43663 07202011 ljrojas initial checkin  -->
+<project name="WEBSPHERE" default="install" basedir=".">
+
+<taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+<!-- Install Target                 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!--Run iscdeploy -restoreProfiles if either is true -->
+<!-- 1. Any stack product is installed in addition to WebSphere -->
+<!-- 2. Only WebSphere is installed and a config action has created a flag to indicate isdeploy needs to run  -->
+
+
+
+<target name="checkIscdeployflagAndExeExist" >
+  <!--need to set this property outside the condition so it's available to issueWarning target -->
+	<available property="executableExists" file="${executable}" />
+  <condition property="runiscdeploy.yes">
+  	<and>
+			<available file="${profilePath}/properties/service/productDir/WebSphere/runiscdeploy.flag" property="iscdeployflag.exists"/>
+			<available property="executableExists1" file="${executable}" />
+		</and>
+	</condition>
+</target>
+
+<target name="runiscdeploy" if="runiscdeploy.yes">
+<echo level="info" message="Start: Run iscdeploy -restoreProfiles" />
+<wscmtlog>Start: Run iscdeploy -restoreProfiles</wscmtlog>
+	<exec executable="${executable}">
+         <arg value="-restoreProfiles" /> 
+  </exec>
+  <echo level="info" message="End: Run iscdeploy -restoreProfiles" />
+   <wscmtlog>End: Run iscdeploy -restoreProfiles</wscmtlog>
+
+  <delete file="${profilePath}/properties/service/productDir/WebSphere/runiscdeploy.flag" />
+</target>
+
+  <target name="detectCurrentOSFamily"
+            description="Detects the current OS family (UNIX or Windows).">
+
+        <condition property="currentOSFamily" 
+                value="os/400">
+            <equals arg1="${os.name}" 
+                arg2="OS/400"/>
+        </condition>
+		<condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+        <condition property="currentOSFamily" 
+                value="windows">
+            <os family="windows"/>
+        </condition>
+        <condition property="currentOSFamily" 
+                value="unix">            
+            <os family="unix"/>
+        </condition>
+        
+        <wscmtlog>Detected current OS family to be: ${currentOSFamily}</wscmtlog>
+    </target>
+
+    <target name="setCurrentOSFamily"
+            description="Detects the current OS family (UNIX, OS400 or Windows)">
+        
+        <condition property="isCurrentOSOS400" value="true">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition>
+		<condition property="isCurrentOSZOS" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="z/os"/> 
+        </condition>
+        <condition property="isCurrentOSWindows" value="true">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+        <condition property="isCurrentOSUNIX" value="true">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+    </target>
+
+    <target name="setOSFileSeparator"
+            description="Sets the current file separator for this platform (file.separator is unreliable on ANT 1.5.4).">
+            
+        <condition property="separatorFile" 
+                value="/">
+            <equals arg1="${currentOSFamily}" 
+                arg2="os/400"/>
+        </condition>
+		<condition property="separatorFile" 
+                value="/">
+            <equals arg1="${currentOSFamily}" 
+                arg2="z/os"/>
+        </condition>
+        <condition property="separatorFile" 
+                value="/">
+            <equals arg1="${currentOSFamily}" 
+                arg2="unix"/>
+        </condition>
+        <condition property="separatorFile" 
+                value="\">
+            <equals arg1="${currentOSFamily}" 
+                arg2="windows"/>
+        </condition>
+    </target>
+
+    <target name="setExecutable"
+            description="Sets the name of the executable file based on the os family.">
+    
+        <condition property="executable"
+                value="${profilePath}${separatorFile}bin${separatorFile}iscdeploy">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition>
+		<condition property="executable"
+                value="${profilePath}${separatorFile}bin${separatorFile}iscdeploy.sh">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+        <condition property="executable"
+                value="${profilePath}${separatorFile}bin${separatorFile}iscdeploy.sh">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+        <condition property="executable"
+                value="${profilePath}${separatorFile}bin${separatorFile}iscdeploy.bat">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+        
+        <wscmtlog>The full path of the executable is: ${executable}</wscmtlog>
+    </target>
+    
+   
+	
+	<target name="issueWarning" unless="executableExists"
+		description="Issue a warning if executable does not exist">
+		
+		<wscmtlog priority="severe">Executable ${executable} does not exist, therefore it was not executed.</wscmtlog>
+	</target>
+	
+	<target name="install" depends="detectCurrentOSFamily,
+            setCurrentOSFamily,
+            setOSFileSeparator,
+            setExecutable,	
+			checkIscdeployflagAndExeExist, issueWarning, runiscdeploy">
+
+</target>
+	
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+<!-- Uninstall Target                 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+<target name="uninstall" description="No uninstall action">
+
+</target>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+<!-- "help" target (Default Target) -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<target name="help" description="Help Target">
+     <echo level="info" />
+     <echo level="info"  message="Use postinstall.sh to manage product post install service."/>
+     <echo level="info" />
+</target>
+
+</project>

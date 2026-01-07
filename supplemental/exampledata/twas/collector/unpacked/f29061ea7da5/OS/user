@@ -1,0 +1,56 @@
+
+Execute: id
+uid=1001(was) gid=0(root) groups=0(root)
+
+Execute: env
+WAS_HOME=/opt/IBM/WebSphere/AppServer
+WAS_USER_SCRIPT_FILE_NOT_EXISTS=false
+USER_INSTALL_PROP=-Duser.install.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+LANG=C.utf8
+CLIENTSSL=-Dcom.ibm.SSL.ConfigURL=file:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/ssl.client.props
+WAS_EXT_DIRS=/opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+ITP_LOC=/opt/IBM/WebSphere/AppServer/deploytool/itp
+OLDPWD=/opt/IBM/WebSphere/AppServer
+WAS_CELL=DefaultCell01
+WAS_NODE=DefaultNode01
+JAVA_HOME=/opt/IBM/WebSphere/AppServer/java/8.0
+ENABLE_BASIC_LOGGING=true
+JAVA_HIGH_ZIPFDS=200
+QUALIFYNAMES=-qualifyHomeName
+USER_INSTALL_ROOT=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+which_declare=
+WAS_ENDORSED_DIRS=/opt/IBM/WebSphere/AppServer/endorsed_apis:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/endorsed
+container=oci
+SERVERSAS=-Dcom.ibm.CORBA.ConfigURL=file:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.server.props
+SERVER_NAME=server1
+INV_PRF_SPECIFIED=false
+PROFILE_NAME=AppSrv01
+PWD=/tmp
+HOME=/home/was
+OSGI_CFG=-Dosgi.configuration.area=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration
+CLIENTSOAP=-Dcom.ibm.SOAP.ConfigURL=file:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/soap.client.props
+NLSPATH=/usr/lib/locale/%L/LC_MESSAGES/%N:/usr/lib/locale/%L/LC_MESSAGES/%N:
+WAS_LIBPATH=/opt/IBM/WebSphere/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere/AppServer/bin
+CONFIG_ROOT=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config
+ADMIN_USER_NAME=wsadmin
+CLIENTSAS=-Dcom.ibm.CORBA.ConfigURL=file:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.client.props
+STDINCLIENTSAS=-Dcom.ibm.CORBA.ConfigURL=file:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/sas.stdinclient.props
+OSGI_INSTALL=-Dosgi.install.area=/opt/IBM/WebSphere/AppServer
+TERM=xterm
+CLIENT_CONNECTOR_INSTALL_ROOT=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedConnectors
+WAS_USER_SCRIPT=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/setupCmdLine.sh
+NO_DFT_PRF_EXISTS=false
+SHLVL=2
+WAS_JAVA_EXT_DIRS=/opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/WebSphere/AppServer/java/8.0/lib/ext:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ext
+WAS_LOGGING=-Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Djava.util.logging.configureByServer=true
+PATH=/opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin:/opt/IBM/WebSphere/AppServer/java/8.0/bin/:/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin:/opt/IBM/WebSphere/AppServer/java/8.0/ibm_bin:/opt/IBM/WebSphere/AppServer/java/8.0/bin/:/opt/IBM/WebSphere/AppServer/java/8.0/jre/bin:/home/was/.local/bin:/home/was/bin:/opt/IBM/WebSphere/AppServer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+WAS_CLASSPATH=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar
+EXTRACT_PORT_FROM_HOST_HEADER=true
+_=/opt/IBM/WebSphere/AppServer/java/8.0/bin/java
+IBM_JAVA_COMMAND_LINE=/opt/IBM/WebSphere/AppServer/java/8.0/bin/java -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Duser.install.root=/opt/IBM/WebSphere/AppServer -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Djava.endorsed.dirs=/opt/IBM/WebSphere/AppServer/endorsed_apis:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/endorsed -Djava.ext.dirs=/opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/WebSphere/AppServer/java/8.0/lib/ext:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ext -Xmx1024m -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Djava.util.logging.configureByServer=true -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar com.ibm.ws.bootstrap.WSLauncher com.ibm.websphere.rastools.collector.Collector -InstallRoot /opt/IBM/WebSphere/AppServer -JavaHome /opt/IBM/WebSphere/AppServer/java/8.0 -ConfigRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config -WasNode DefaultNode01 -CellName DefaultCell01 -ProfileRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+OPENJ9_JAVA_COMMAND_LINE=/opt/IBM/WebSphere/AppServer/java/8.0/bin/java -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Duser.install.root=/opt/IBM/WebSphere/AppServer -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Djava.endorsed.dirs=/opt/IBM/WebSphere/AppServer/endorsed_apis:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/endorsed -Djava.ext.dirs=/opt/IBM/WebSphere/AppServer/javaext:/opt/IBM/WebSphere/AppServer/java/8.0/lib/ext:/opt/IBM/WebSphere/AppServer/java/8.0/jre/lib/ext -Xmx1024m -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Djava.util.logging.configureByServer=true -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar com.ibm.ws.bootstrap.WSLauncher com.ibm.websphere.rastools.collector.Collector -InstallRoot /opt/IBM/WebSphere/AppServer -JavaHome /opt/IBM/WebSphere/AppServer/java/8.0 -ConfigRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config -WasNode DefaultNode01 -CellName DefaultCell01 -ProfileRoot /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+
+Execute: /sbin/runlevel
+unknown
+
+

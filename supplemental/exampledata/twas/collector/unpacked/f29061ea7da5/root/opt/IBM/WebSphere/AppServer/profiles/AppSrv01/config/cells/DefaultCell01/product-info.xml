@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:properties="http://www.ibm.com/websphere/appserver/schemas/5.0/properties.xmi">
+  <properties:PropertySet xmi:id="PropertySet_4">
+    <properties xmi:id="Property_41" name="name" value="WAS70"/>
+    <properties xmi:id="Property_42" name="start" value="7.0.0.0"/>
+    <properties xmi:id="Property_43" name="end" value="8.0.0.0"/>
+    <properties xmi:id="Property_44" name="featurePropertyName" value="com.ibm.websphere.baseProductVersion"/>
+  </properties:PropertySet>
+  <properties:PropertySet xmi:id="PropertySet_5">
+    <properties xmi:id="Property_45" name="name" value="WAS80"/>
+    <properties xmi:id="Property_46" name="start" value="8.0.0.0"/>
+    <properties xmi:id="Property_47" name="end" value="8.5.0.0"/>
+    <properties xmi:id="Property_48" name="featurePropertyName" value="com.ibm.websphere.baseProductVersion"/>
+  </properties:PropertySet>
+  <properties:PropertySet xmi:id="PropertySet_6">
+    <properties xmi:id="Property_49" name="name" value="WAS85"/>
+    <properties xmi:id="Property_50" name="start" value="8.5.0.0"/>
+    <properties xmi:id="Property_51" name="end" value="9.0.0.0"/>
+    <properties xmi:id="Property_52" name="featurePropertyName" value="com.ibm.websphere.baseProductVersion"/>
+  </properties:PropertySet>
+  <properties:PropertySet xmi:id="PropertySet_8">
+    <properties xmi:id="Property_53" name="name" value="WAS90"/>
+    <properties xmi:id="Property_54" name="start" value="9.0.0.0"/>
+    <properties xmi:id="Property_55" name="end" value="9.9.0.0"/>
+    <properties xmi:id="Property_56" name="featurePropertyName" value="com.ibm.websphere.baseProductVersion"/>
+  </properties:PropertySet>  
+</xmi:XMI>

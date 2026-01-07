@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><profiles>
+    <profile isAReservationTicket="false" isDefault="true" name="AppSrv01" path="/opt/IBM/WebSphere/AppServer/profiles/AppSrv01" template="/opt/IBM/WebSphere/AppServer/profileTemplates/default"/>
+</profiles>

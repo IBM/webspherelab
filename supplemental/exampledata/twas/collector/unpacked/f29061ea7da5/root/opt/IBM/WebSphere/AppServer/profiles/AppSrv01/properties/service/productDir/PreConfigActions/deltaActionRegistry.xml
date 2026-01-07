@@ -1,0 +1,3 @@
+<actions>
+<action path="actions/detectNewProducts.ant" priority="20" isOptional="false" isFatal="true" />
+</actions>

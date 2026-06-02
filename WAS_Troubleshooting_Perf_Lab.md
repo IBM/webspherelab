@@ -10,10 +10,8 @@
 -   [Core Concepts](#core-concepts)
 -   [Installation](#installation)
     -   [With podman](#installing-podman)
-    -   [With Docker Desktop](#installing-docker-desktop)
 -   [Starting the lab](#start-the-container)
     -   [Start with podman](#start-with-podman)
-    -   [Start with Docker Desktop](#start-with-docker-desktop)
 -   [Linux CPU and Memory Usage](#linux-cpu-and-memory-usage)
     -   [linperf Theory](#linperf-theory)
     -   [linperf Lab](#linperf-lab)
@@ -95,7 +93,7 @@ This lab is built on top of Linux (specifically, Fedora Linux, which is the open
 
 WAS traditional ships with a packaged IBM Java 8 on Linux, AIX, Windows, z/OS, and IBM i.
 
-WebSphere Liberty supports any [Java 8, 11, or 17 edition](https://openliberty.io/docs/latest/java-se.html).
+WebSphere Liberty supports any [Java LTS release](https://openliberty.io/docs/latest/java-se.html).
 
 This lab uses IBM Java 8 for both WAS traditional and WebSphere Liberty. The concepts and techniques apply generally to other Java runtimes although details of other Java runtimes (e.g. [HotSpot](https://publib.boulder.ibm.com/httpserv/cookbook/Java-Java_Virtual_Machines_JVMs-HotSpot_JVM.html)) vary significantly and are covered elsewhere.
 
@@ -113,110 +111,50 @@ Problem determination and performance tuning are best done with all layers of th
 
 The lab image is about 20GB. If you plan to run this in a classroom setting, perform the installation steps beforehand which includes downloading the image.
 
-This lab assumes the installation and use of `podman` or Docker Desktop to run the lab. Choose one or the other:
+This lab assumes the installation and use of `podman` to run the lab though it has been known to work on Docker as well:
 
 * [Installing `podman`](#installing-podman)
-* [Installing Docker Desktop](#installing-docker-desktop)
 
 ### Installing podman
 
-If you are using `podman` instead of Docker Desktop, perform the following steps to install `podman` and then perform the [podman post-installation steps](#podman-post-installation-steps). If you are using Docker Desktop, [skip down to Installing Docker Desktop](#installing-docker-desktop).
+If you are using `podman`, perform the following steps to install `podman` and then perform the [podman post-installation steps](#podman-post-installation-steps).
 
 `podman` installation instructions:
 
-* Windows: <https://podman.io/getting-started/installation#windows>
-* macOS: <https://podman.io/getting-started/installation#macos>
+* Windows: <https://podman.io/docs/installation#windows>
+* macOS: <https://podman.io/docs/installation#macos>
 * For a Linux host, simply [install](https://publib.boulder.ibm.com/httpserv/cookbook/Operating_Systems-Linux.html#Operating_Systems-Linux-Installing_Programs) `podman`
 
 #### podman post-installation steps
 
 1. On macOS and Windows:
-    1. Create the `podman` virtual machine with sufficient memory (at least 4GB and, ideally, at least 8GB), CPU, and disk. For example (memory is in MB):
+    1. Create the `podman` virtual machine with sufficient memory (preferrably at least 4GB and, ideally, at least 8GB), CPU, and disk. For example (memory is in MB):
        ```
        podman machine init --memory 10240 --cpus 4 --disk-size 100
        ```
-       If you already have a podman machine and you'd like to resize it to make it bigger, it's usually simplest to just delete it using `podman machine rm` and then re-create it using the above command.
     1. Start the `podman` virtual machine:
        ```
        podman machine start
        ```
-    1. Switch to a "root" podman:
+    1. Switch to a "root" podman connection:
        ```
        podman system connection default podman-machine-default-root
        ```
     1. Run the following command to allow producing core dumps within the container:
        ```
-       podman machine ssh "sh -c 'mkdir -p /etc/sysctl.d/; ln -sf /dev/null /etc/sysctl.d/50-coredump.conf && sysctl -w kernel.core_pattern=core'"
+       podman machine ssh "sudo sh -c 'mkdir -p /etc/sysctl.d/; ln -sf /dev/null /etc/sysctl.d/50-coredump.conf && sysctl -w kernel.core_pattern=core'"
        ```
 1. Download the image:
    ```
    podman pull quay.io/ibm/webspherelab
    ```
-   This command may not show any output for a long time while the download completes.
-
-The following section on Docker Desktop should be skipped since you are using `podman`. The next section for `podman` is [Start with podman](#start-with-podman).
-
-### Installing Docker Desktop
-
-If you are using Docker Desktop instead of `podman`, perform the following steps to install Docker Desktop and then perform the [Docker Desktop post-installation steps](#docker-desktop-post-installation-steps):
-
-* Windows ("Requires Microsoft Windows 10 Professional or Enterprise 64-bit.")
-    * Download: <https://hub.docker.com/editions/community/docker-ce-desktop-windows>
-    * For details, see <https://docs.docker.com/desktop/windows/install/>
-* macOS ("must be version 10.15 or newer")
-    * Download: <https://hub.docker.com/editions/community/docker-ce-desktop-mac>
-    * For details, see <https://docs.docker.com/desktop/mac/install/>
-* For a Linux host, simply install and start Docker (e.g. `sudo systemctl start docker`):
-    * For an example, see <https://docs.docker.com/engine/install/fedora/>
-
-#### Docker Desktop post-installation steps
-
-1.  Ensure that Docker is started. For example, start Docker Desktop and ensure it is running:\
-    \
-    macOS:\
-    <img src="./media/image153.png" width="267" height="449" />\
-    \
-    Windows:\
-    <img src="./media/image152.png" width="368" height="522" />
-
-3.  Ensure that Docker receives sufficient resources, particularly memory (at least 4GB and, ideally, at least 8GB), CPU, and disk:
-    1. macOS:
-
-        1.  Click the Docker Desktop icon and select **Dashboard**
-
-        1.  Click the **Settings** gear icon in the top right, then click **Resources** on the left.
-
-        1.  Configure sufficient memory (at least 4GB and, ideally, at least 8GB), CPU, and disk.
-
-        1.  Click **Apply & Restart**\
-            \
-            macOS:\
-            <img src="./media/image149.png" width="672" height="720" />
-
-    1. Windows uses the WSL2 backend which defaults to 50% of RAM or 8GB, whichever is less, and the same number of CPUs as the host. This may be overridden with a [`%UserProfile%\.wslconfig` file](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configuration-setting-for-wslconfig) with, for example:
-       ```
-       [wsl2]
-       memory=10GB
-       processors=4
-       ```
-
-4.  Open a terminal or command prompt and download the image:
-    ```
-    docker pull quay.io/ibm/webspherelab
-    ```
+   This command may not show any output for a long time while the download completes as it is many GB.
 
 ## Start the container
-
-Depending on whether you installed `podman` or Docker Desktop, start the container:
-
-* [Start with `podman`](#start-with-podman)
-* [Start with Docker Desktop](#start-with-docker-desktop)
 
 ### Start with podman
 
 The following section is the start of the lab. If you were only preparing for the lab by installing and downloading the lab before the lab begins, then you may stop at this point until the instructor provides further direction.
-
-If you are using `podman` for this lab instead of Docker Desktop, then perform the following steps. If you are using Docker Desktop, [skip down to Start with Docker Desktop](#start-with-docker-desktop).
 
 1.  Open a terminal or command prompt:\
     \
@@ -228,10 +166,10 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
 
 1.  Start the lab:
     ```
-    podman run --cap-add sys_chroot --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab
+    podman run --platform linux/amd64 --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 9443:9443 -it quay.io/ibm/webspherelab
     ```
 
-2.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
+2.  Wait about 5 minutes until you see the following in the output (if not seen, review any errors):
     
         =========
         = READY =
@@ -255,72 +193,15 @@ If you are using `podman` for this lab instead of Docker Desktop, then perform t
                 * You may need to [install](https://publib.boulder.ibm.com/httpserv/cookbook/Operating_Systems-Linux.html#Operating_Systems-Linux-Installing_Programs) `vncviewer` first.
             2.  Password: **websphere**
 
+    1.  Windows 3<sup>rd</sup> party VNC client:
+
+        i.  If you are able to install and use a 3<sup>rd</sup> party VNC client, then connect to **localhost** on port **5902** with password **websphere**.
+
     1.  Windows Remote Desktop client:
 
         i.  Windows requires a few steps to make Remote Desktop work with a Docker container. See [Appendix: Windows Remote Desktop Client](#windows-remote-desktop-client) for instructions.
-
-    1.  Windows 3<sup>rd</sup> party VNC client:
-
-        i.  If you are able to install and use a 3<sup>rd</sup> party VNC client (there are a few free options online), then connect to **localhost** on port **5902** with password **websphere**.
 
 4.  When using VNC, you may change the display resolution from within the container and the VNC client will automatically adapt. For example:\
-    \
-    <img src="./media/image13.png" width="1160" height="615" />
-
-The following section on Docker Desktop should be skipped since you are using `podman`. The next section for `podman` is [Apache JMeter](#apache-jmeter).
-
-### Start with Docker Desktop
-
-The following section is the start of the lab. If you were only preparing for the lab by installing and downloading the lab before the lab begins, then you may stop at this point until the instructor provides further direction.
-
-If you are using Docker Desktop for this lab instead of `podman`:
-
-1.  Open a terminal or command prompt:\
-    \
-    macOS:\
-    <img src="./media/image11.png" width="588" height="108" />\
-    \
-    Windows:\
-    <img src="./media/image12.png" width="463" height="393" />
-
-2.  Start the lab by starting the Docker container from the command line:
-    ```
-    docker run --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -it quay.io/ibm/webspherelab
-    ```
-
-3.  Wait about 2 minutes until you see the following in the output (if not seen, review any errors):
-    
-        =========
-        = READY =
-        =========
-
-4.  VNC or Remote Desktop into the container:
-
-    1.  macOS built-in VNC client:
-
-        1.  Open another tab in the terminal and run:
-
-            1.  **open vnc://localhost:5902**
-
-            2.  Password: **websphere**
-
-    1.  Linux VNC client:
-
-        1.  Open another tab in the terminal and run:
-
-            1.  **vncviewer localhost:5902**
-                * You may need to [install](https://publib.boulder.ibm.com/httpserv/cookbook/Operating_Systems-Linux.html#Operating_Systems-Linux-Installing_Programs) `vncviewer` first.
-            2.  Password: **websphere**
-
-    1.  Windows Remote Desktop client:
-
-        i.  Windows requires a few steps to make Remote Desktop work with a Docker container. See [Appendix: Windows Remote Desktop Client](#windows-remote-desktop-client) for instructions.
-
-    1.  Windows 3<sup>rd</sup> party VNC client:
-
-        i.  If you are able to install and use a 3<sup>rd</sup> party VNC client (there are a few free options online), then connect to **localhost** on port **5902** with password **websphere**.
-
-6.  When using VNC, you may change the display resolution from within the container and the VNC client will automatically adapt. For example:\
     \
     <img src="./media/image13.png" width="1160" height="615" />
 

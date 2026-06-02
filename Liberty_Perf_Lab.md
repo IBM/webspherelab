@@ -126,7 +126,7 @@ The following section is the start of the lab. If you were only preparing for th
 
 1.  Start the lab:
     ```
-    podman run --platform linux/amd64 --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 9443:9443 -it quay.io/ibm/webspherelab
+    podman run --platform linux/amd64 --rm -p 5901:5901 -p 5902:5902 -p 3390:3389 -p 9080:9080 -p 9443:9443 -p 9043:9043 -it quay.io/ibm/webspherelab
     ```
 
 2.  Wait about 5 minutes until you see the following in the output (if not seen, review any errors):

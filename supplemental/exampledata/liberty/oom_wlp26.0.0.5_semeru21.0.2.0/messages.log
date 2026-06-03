@@ -1,0 +1,301 @@
+********************************************************************************
+product = WebSphere Application Server 26.0.0.5 (wlp-1.0.113.cl260520260430-1602)
+wlp.install.dir = /opt/ibm/wlp/
+server.output.dir = /opt/ibm/wlp/output/defaultServer/
+java.home = /opt/ibm/jdk-21.0.2+13
+java.version = 21.0.2
+java.runtime = IBM Semeru Runtime Open Edition (21.0.2+13-LTS)
+os = Linux (6.6.87.2-microsoft-standard-WSL2; amd64) (en_US)
+process = 17487@87b89ba28025
+Classpath = /opt/ibm/wlp/bin/tools/ws-server.jar
+Java Library path = /opt/ibm/jdk-21.0.2+13/lib/default:/opt/ibm/jdk-21.0.2+13/lib:/usr/lib64:/usr/lib
+********************************************************************************
+[6/3/26, 16:34:59:091 UTC] 00000002 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[6/3/26, 16:34:59:096 UTC] 00000002 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/26.0.0.5/lafiles/en.html
+[6/3/26, 16:34:59:303 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/defaults/keystore.xml
+[6/3/26, 16:34:59:308 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/daytrader.xml
+[6/3/26, 16:34:59:311 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/daytrader7logging.xml
+[6/3/26, 16:34:59:348 UTC] 0000003c com.ibm.ws.logging.internal.TraceSpecification               I TRAS3001I: The following messages are hidden from the console.log and messages.log files: [CNTR0333W, CNTR0019E, CWWJP9991W]
+[6/3/26, 16:34:59:391 UTC] 00000002 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 0.459 seconds
+[6/3/26, 16:34:59:438 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[6/3/26, 16:35:00:024 UTC] 00000034 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[6/3/26, 16:35:00:095 UTC] 00000037 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[6/3/26, 16:35:00:161 UTC] 00000038 org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[6/3/26, 16:35:00:164 UTC] 00000035 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[6/3/26, 16:35:00:165 UTC] 00000035 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[6/3/26, 16:35:00:165 UTC] 00000035 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[6/3/26, 16:35:00:236 UTC] 00000044 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.004 seconds.
+[6/3/26, 16:35:00:241 UTC] 00000034 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[6/3/26, 16:35:00:241 UTC] 00000034 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[6/3/26, 16:35:00:249 UTC] 0000003c com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /opt/ibm/wlp/output/defaultServer/resources/security/key.p12 of type: PKCS12
+[6/3/26, 16:35:00:614 UTC] 00000034 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[6/3/26, 16:35:00:679 UTC] 00000034 com.ibm.ws.security.wim.VMMService                           I CWIMK0009I: The user registry federation service is ready.
+[6/3/26, 16:35:00:821 UTC] 00000036 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2809/NameService.
+[6/3/26, 16:35:00:913 UTC] 00000049 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application daytrader.
+[6/3/26, 16:35:00:913 UTC] 0000004b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application swat.
+[6/3/26, 16:35:00:914 UTC] 00000049 bm.ws.app.manager.ear.internal.EARDeployedAppInfoFactoryImpl I CWWKZ0133I: The daytrader application at the /opt/ibm/wlp/usr/servers/defaultServer/apps/daytrader-ee7.ear location is being expanded to the /opt/ibm/wlp/usr/servers/defaultServer/apps/expanded/daytrader.ear directory.
+[6/3/26, 16:35:00:914 UTC] 0000004b bm.ws.app.manager.ear.internal.EARDeployedAppInfoFactoryImpl I CWWKZ0133I: The swat application at the /opt/ibm/wlp/usr/servers/defaultServer/dropins/swat.ear location is being expanded to the /opt/ibm/wlp/usr/servers/defaultServer/apps/expanded/swat.ear directory.
+[6/3/26, 16:35:01:101 UTC] 0000004b com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[6/3/26, 16:35:01:105 UTC] 0000004b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: swat.
+[6/3/26, 16:35:01:106 UTC] 0000004b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module swat has been bound to default_host.
+[6/3/26, 16:35:01:107 UTC] 0000004b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://87b89ba28025:9080/swat/
+[6/3/26, 16:35:01:132 UTC] 00000043 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/swat
+[6/3/26, 16:35:01:134 UTC] 00000043 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/3/26, 16:35:01:180 UTC] 00000043 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[6/3/26, 16:35:01:189 UTC] 00000049 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[DefaultDataSource].
+[6/3/26, 16:35:01:194 UTC] 0000004a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/ibm/wlp/output/defaultServer/logs/state/plugin-cfg.xml.
+[6/3/26, 16:35:01:206 UTC] 00000043 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application swat started in 0.292 seconds.
+[6/3/26, 16:35:01:214 UTC] 00000049 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (defaultServer).
+[6/3/26, 16:35:01:297 UTC] 00000049 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (defaultServer).
+[6/3/26, 16:35:01:297 UTC] 0000006c com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[6/3/26, 16:35:01:335 UTC] 00000049 SystemOut                                                    O [EL Info]: server: 2026-06-03 16:35:01.318--Detected server platform: org.eclipse.persistence.platform.server.was.WebSphere_Liberty_Platform.
+[6/3/26, 16:35:02:157 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The daytrader-ee7-ejb.jar EJB module in the daytrader application is starting.
+[6/3/26, 16:35:02:191 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534600
+[6/3/26, 16:35:02:194 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534602
+[6/3/26, 16:35:02:204 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534600
+[6/3/26, 16:35:02:204 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534602
+[6/3/26, 16:35:02:214 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: ejb/daytrader/daytrader-ee7-ejb.jar/TradeSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: java:global/daytrader-ee7/daytrader-ee7-ejb/TradeSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBRemote
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: ejblocal:daytrader/daytrader-ee7-ejb.jar/TradeSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: java:global/daytrader-ee7/daytrader-ee7-ejb/TradeSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton interface of the MarketSummarySingleton enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: ejblocal:daytrader/daytrader-ee7-ejb.jar/MarketSummarySingleton#com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton interface of the MarketSummarySingleton enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton interface of the MarketSummarySingleton enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader application.  The binding location is: java:global/daytrader-ee7/daytrader-ee7-ejb/MarketSummarySingleton!com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton
+[6/3/26, 16:35:02:218 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTBroker3MDB message-driven bean in the daytrader-ee7-ejb.jar module of the daytrader application is bound to the eis/TradeBrokerMDB activation specification.
+[6/3/26, 16:35:02:219 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTStreamer3MDB message-driven bean in the daytrader-ee7-ejb.jar module of the daytrader application is bound to the eis/TradeStreamerMDB activation specification.
+[6/3/26, 16:35:02:221 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0219I: The server created 0 persistent automatic timer or timers and 1 non-persistent automatic timer or timers for the daytrader-ee7-ejb.jar module.
+[6/3/26, 16:35:02:222 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The daytrader-ee7-ejb.jar EJB module in the daytrader application has started successfully.
+[6/3/26, 16:35:02:224 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The daytrader-ee7-web.war EJB module in the daytrader application is starting.
+[6/3/26, 16:35:02:225 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace interface of the PingEJBLocal enterprise bean in the daytrader-ee7-web.war module of the daytrader application.  The binding location is: ejblocal:daytrader/daytrader-ee7-web.war/PingEJBLocal#com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace
+[6/3/26, 16:35:02:225 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace interface of the PingEJBLocal enterprise bean in the daytrader-ee7-web.war module of the daytrader application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace
+[6/3/26, 16:35:02:225 UTC] 00000049 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace interface of the PingEJBLocal enterprise bean in the daytrader-ee7-web.war module of the daytrader application.  The binding location is: java:global/daytrader-ee7/daytrader-ee7-web/PingEJBLocal!com.ibm.websphere.samples.daytrader.web.prims.PingEJBIFace
+[6/3/26, 16:35:02:225 UTC] 00000049 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The daytrader-ee7-web.war EJB module in the daytrader application has started successfully.
+[6/3/26, 16:35:02:226 UTC] 00000049 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: DayTrader Web.
+[6/3/26, 16:35:02:226 UTC] 00000049 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module DayTrader Web has been bound to default_host.
+[6/3/26, 16:35:02:226 UTC] 00000049 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://87b89ba28025:9080/daytrader/
+[6/3/26, 16:35:02:229 UTC] 0000004a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/daytrader
+[6/3/26, 16:35:02:229 UTC] 0000004a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/3/26, 16:35:02:243 UTC] 0000004b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/ibm/wlp/output/defaultServer/logs/state/plugin-cfg.xml.
+[6/3/26, 16:35:02:263 UTC] 0000004a com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /pingTextAsync
+[6/3/26, 16:35:02:264 UTC] 0000004a com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /pingTextSync
+[6/3/26, 16:35:02:264 UTC] 0000004a com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /pingBinary
+[6/3/26, 16:35:02:265 UTC] 0000004a com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /marketsummary
+[6/3/26, 16:35:02:265 UTC] 0000004a com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /pingWebSocketJson
+[6/3/26, 16:35:02:304 UTC] 0000004a org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading standard config META-INF/standard-faces-config.xml
+[6/3/26, 16:35:02:363 UTC] 0000004a org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading config /WEB-INF/faces-config.xml
+[6/3/26, 16:35:02:392 UTC] 0000004a org.apache.myfaces.spi.impl.DefaultInjectionProviderFactory  I Using InjectionProvider com.ibm.ws.jsf.spi.impl.WASCDIAnnotationDelegateInjectionProvider
+[6/3/26, 16:35:02:408 UTC] 0000004a org.apache.myfaces.util.ExternalSpecifications               I MyFaces CDI support enabled
+[6/3/26, 16:35:02:418 UTC] 0000004a org.apache.myfaces.util.ExternalSpecifications               I MyFaces Bean Validation support enabled
+[6/3/26, 16:35:02:458 UTC] 0000004a org.apache.myfaces.config.FacesConfigurator                  I Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+[6/3/26, 16:35:02:482 UTC] 0000004a org.apache.myfaces.webapp.AbstractFacesInitializer           I ServletContext initialized.
+[6/3/26, 16:35:02:483 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I Tomahawk jar not available. Autoscrolling, DetectJavascript, AddResourceClass and CheckExtensionsFilter are disabled now.
+[6/3/26, 16:35:02:483 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+[6/3/26, 16:35:02:483 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+[6/3/26, 16:35:02:483 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.SERIALIZE_SERVER_STATE' found, using default value 'false'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'DISABLE_FACELET_JSF_VIEWHANDLER' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found, using default value '1024'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL' found, using default value 'false'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.CONFIG_FILES' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+[6/3/26, 16:35:02:484 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'true'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.GAE_JSF_JAR_FILES' found.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.GAE_JSF_ANNOTATIONS_JAR_FILES' found.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_VIEW_NOT_FOUND' found, using default value 'false'.
+[6/3/26, 16:35:02:485 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EARLY_FLUSH_ENABLED' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CDI_MANAGED_CONVERTERS_ENABLED' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CDI_MANAGED_VALIDATORS_ENABLED' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_FACELETS_COMPATIBILITY' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_FORM_VIEW_STATE_AT_BEGIN' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_VIEWS_IN_SESSION' found, using default value '20'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found, using default value '4'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_FLASH_TOKENS_IN_SESSION' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_FLOW_CLIENT_WINDOW_IDS_IN_SESSION' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SECRET' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+[6/3/26, 16:35:02:486 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_BUFFER_SIZE' found, using default value '2048'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN' found, using default value 'secureRandom'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_LENGTH' found, using default value '16'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_CLASS' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_PROVIDER' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_ALGORITM' found, using default value 'SHA1PRNG'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CLIENT_VIEW_STATE_TIMEOUT' found, using default value '0'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERIALIZE_STATE_IN_SESSION' found, using default value 'false'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_SESSION' found, using default value 'true'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN' found, using default value 'secureRandom'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_LENGTH' found, using default value '8'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_CLASS' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_PROVIDER' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_ALGORITM' found, using default value 'SHA1PRNG'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.LIBRARIES' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.annotation.SCAN_PACKAGES' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+[6/3/26, 16:35:02:487 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEFAULT_WINDOW_MODE' found, using default value 'url'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.AUTOCOMPLETE_OFF_VIEW_STATE' found, using default value 'true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.TEMPORAL_RESOURCEHANDLER_CACHE_ENABLED' found, using default value 'false'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.spi.InjectionProvider' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.BUFFER_SIZE' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.DECORATORS' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.SKIP_COMMENTS' found.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+[6/3/26, 16:35:02:488 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_MAX_POOL_SIZE' found, using default value '5'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_MAX_DYNAMIC_PARTIAL_LIMIT' found, using default value '2'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_ENTRY_MODE' found, using default value 'soft'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_DEFERRED_NAVIGATION' found, using default value 'false'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+[6/3/26, 16:35:02:489 UTC] 0000004a org.apache.myfaces.util.ExternalSpecifications               I MyFaces Unified EL support enabled
+[6/3/26, 16:35:02:490 UTC] 0000004a org.apache.myfaces.view.facelets.ViewPoolProcessor           I org.apache.myfaces.CACHE_EL_EXPRESSIONS web config parameter is set to "noCache". To enable view pooling this param must be set to "alwaysRecompile". View Pooling disabled.
+[6/3/26, 16:35:02:498 UTC] 0000004a SystemOut                                                    O Settings from daytrader.properties: {runtimeMode=1, maxUsers=15000, orderProcessingMode=0, cacheSize=100000, displayOrderAlerts=true, maxQuotes=10000, percentSentToWebsocket=10, longRun=true, actionTrace=false, publishQuotePriceChange=true, marketSummaryInterval=20, trace=false, primIterations=1, cachingType=1, webInterface=0, useRemoteEJBInterface=false}
+[6/3/26, 16:35:02:519 UTC] 0000004a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application daytrader started in 1.605 seconds.
+[6/3/26, 16:35:02:522 UTC] 0000004a com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL TradeScenarioServlet in application daytrader, the following HTTP methods are uncovered, and accessible: HEAD OPTIONS TRACE 
+[6/3/26, 16:35:02:526 UTC] 00000040 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[6/3/26, 16:35:02:527 UTC] 00000040 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv6) port 9443.
+[6/3/26, 16:35:02:527 UTC] 00000040 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint542 has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 7276.
+[6/3/26, 16:35:02:527 UTC] 00000040 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint542-ssl has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 7286.
+[6/3/26, 16:35:02:624 UTC] 00000040 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeBrokerQueue on bus defaultBus has been successfully created.
+[6/3/26, 16:35:02:624 UTC] 00000040 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeBrokerMDB will now be able to receive the messages from destination TradeBrokerQueue.
+[6/3/26, 16:35:02:624 UTC] 00000040 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeBrokerMDB and message driven bean application daytrader#daytrader-ee7-ejb.jar#DTBroker3MDB is activated.
+[6/3/26, 16:35:02:629 UTC] 00000040 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeTopicSpace on bus defaultBus has been successfully created.
+[6/3/26, 16:35:02:629 UTC] 00000040 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeStreamerMDB will now be able to receive the messages from destination TradeTopicSpace.
+[6/3/26, 16:35:02:629 UTC] 00000040 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeStreamerMDB and message driven bean application daytrader#daytrader-ee7-ejb.jar#DTStreamer3MDB is activated.
+[6/3/26, 16:35:02:638 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appSecurity-2.0, beanValidation-1.1, cdi-1.2, concurrent-1.0, distributedMap-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, federatedRegistry-1.0, jca-1.7, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, jsonp-1.0, jsp-2.3, ldapRegistry-3.0, localConnector-1.0, mdb-3.2, servlet-3.1, ssl-1.0, transportSecurity-1.0, wasJmsClient-2.0, wasJmsServer-1.0, websocket-1.1].
+[6/3/26, 16:35:02:638 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 3.248 seconds.
+[6/3/26, 16:35:02:639 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 3.707 seconds.
+[6/3/26, 16:35:11:206 UTC] 00000043 daytrader                                                    I JPA Shared L2 Cache disabled.
+[6/3/26, 16:35:12:244 UTC] 00000043 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:244 UTC] 00000040 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:244 UTC] 00000049 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:244 UTC] 00000044 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:244 UTC] 00000086 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:246 UTC] 00000043 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:244 UTC] 0000004b com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:244 UTC] 000000aa com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:246 UTC] 00000040 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:244 UTC] 00000084 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:246 UTC] 00000086 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 000000aa com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:244 UTC] 0000004a com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:246 UTC] 00000040 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:246 UTC] 00000043 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:246 UTC] 00000084 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 00000044 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 000000aa com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:244 UTC] 00000089 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[6/3/26, 16:35:12:246 UTC] 0000004b com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 00000086 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:246 UTC] 000000aa com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 00000043 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 0000004a com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 00000040 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:246 UTC] 00000084 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:246 UTC] 00000044 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:246 UTC] 00000049 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000086 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000084 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000044 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 0000004b com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:247 UTC] 00000089 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000049 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:247 UTC] 0000004a com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:247 UTC] 0000004b com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000049 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000089 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[6/3/26, 16:35:12:247 UTC] 0000004a com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:247 UTC] 00000089 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.14.2.0 - (1828579)
+[6/3/26, 16:35:12:420 UTC] 00000089 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [TradeAppServlet]: Initialization successful.
+[6/3/26, 16:35:12:963 UTC] 00000084 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/tradehome.jsp]: Initialization successful.
+[6/3/26, 16:35:13:109 UTC] 00000098 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/quote.jsp]: Initialization successful.
+[6/3/26, 16:35:13:141 UTC] 0000008a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/portfolio.jsp]: Initialization successful.
+[6/3/26, 16:35:13:163 UTC] 00000098 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/displayQuote.jsp]: Initialization successful.
+[6/3/26, 16:35:13:223 UTC] 000000e3 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/account.jsp]: Initialization successful.
+[6/3/26, 16:35:13:359 UTC] 0000009d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/welcome.jsp]: Initialization successful.
+[6/3/26, 16:35:13:433 UTC] 0000008c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/register.jsp]: Initialization successful.
+[6/3/26, 16:35:13:515 UTC] 000000e4 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [/order.jsp]: Initialization successful.
+[6/3/26, 16:35:13:986 UTC] 000000a7 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader] [/daytrader] [Faces Servlet]: Initialization successful.
+[6/3/26, 16:35:36:492 UTC] 00000049 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [swat] [/swat] [AllocateObject]: Initialization successful.
+[6/3/26, 16:35:36:494 UTC] 00000049 SystemOut                                                    O swat.ear: Invoking com.ibm.AllocateObject by anonymous (10.88.0.1)... [retainData=true&size=1048576&waittime=10&iterations=600]
+[6/3/26, 16:35:48:100 UTC] 00000028 SystemErr                                                    R Exception in thread "Attach API wait loop" 
+[6/3/26, 16:35:49:275 UTC] 00000028 SystemErr                                                    R java.lang.OutOfMemoryError(?)
+[6/3/26, 16:35:49:345 UTC] 00000028 SystemErr                                                    R : 
+[6/3/26, 16:35:49:553 UTC] 00000028 SystemErr                                                    R Java heap space
+[6/3/26, 16:35:49:779 UTC] 00000049 SystemErr                                                    R java.lang.OutOfMemoryError(?)
+[6/3/26, 16:35:49:952 UTC] 00000049 SystemErr                                                    R : 

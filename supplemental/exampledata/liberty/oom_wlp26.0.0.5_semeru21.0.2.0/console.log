@@ -1,0 +1,129 @@
+Launching defaultServer (WebSphere Application Server 26.0.0.5/wlp-1.0.113.cl260520260430-1602) on Eclipse OpenJ9 VM, version 21.0.2+13-LTS (en_US)
+[6/3/26, 16:34:59:091 UTC] 00000002 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[6/3/26, 16:34:59:096 UTC] 00000002 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/26.0.0.5/lafiles/en.html
+[6/3/26, 16:34:59:303 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/defaults/keystore.xml
+[6/3/26, 16:34:59:308 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/daytrader.xml
+[6/3/26, 16:34:59:311 UTC] 00000038 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/daytrader7logging.xml
+[6/3/26, 16:35:00:095 UTC] 00000037 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[6/3/26, 16:35:00:821 UTC] 00000036 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2809/NameService.
+[6/3/26, 16:35:01:107 UTC] 0000004b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://87b89ba28025:9080/swat/
+[6/3/26, 16:35:01:206 UTC] 00000043 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application swat started in 0.292 seconds.
+[6/3/26, 16:35:01:335 UTC] 00000049 SystemOut                                                    O [EL Info]: server: 2026-06-03 16:35:01.318--Detected server platform: org.eclipse.persistence.platform.server.was.WebSphere_Liberty_Platform.
+[6/3/26, 16:35:02:191 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534600
+[6/3/26, 16:35:02:194 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534602
+[6/3/26, 16:35:02:204 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534600
+[6/3/26, 16:35:02:204 UTC] 00000049 yoko.verbose.init.poa                                        W Ignoring unsupported policy of type 0x41534602
+[6/3/26, 16:35:02:226 UTC] 00000049 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://87b89ba28025:9080/daytrader/
+[6/3/26, 16:35:02:498 UTC] 0000004a SystemOut                                                    O Settings from daytrader.properties: {runtimeMode=1, maxUsers=15000, orderProcessingMode=0, cacheSize=100000, displayOrderAlerts=true, maxQuotes=10000, percentSentToWebsocket=10, longRun=true, actionTrace=false, publishQuotePriceChange=true, marketSummaryInterval=20, trace=false, primIterations=1, cachingType=1, webInterface=0, useRemoteEJBInterface=false}
+[6/3/26, 16:35:02:519 UTC] 0000004a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application daytrader started in 1.605 seconds.
+[6/3/26, 16:35:02:638 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appSecurity-2.0, beanValidation-1.1, cdi-1.2, concurrent-1.0, distributedMap-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, federatedRegistry-1.0, jca-1.7, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, jsonp-1.0, jsp-2.3, ldapRegistry-3.0, localConnector-1.0, mdb-3.2, servlet-3.1, ssl-1.0, transportSecurity-1.0, wasJmsClient-2.0, wasJmsServer-1.0, websocket-1.1].
+[6/3/26, 16:35:02:639 UTC] 00000040 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 3.707 seconds.
+[6/3/26, 16:35:36:494 UTC] 00000049 SystemOut                                                    O swat.ear: Invoking com.ibm.AllocateObject by anonymous (10.88.0.1)... [retainData=true&size=1048576&waittime=10&iterations=600]
+JVMDUMP055I Processing dump event "systhrow", detail "java/lang/OutOfMemoryError", exception "Java heap space" at 2026/06/03 16:35:44 - please wait.
+JVMDUMP055I Processing dump event "systhrow", detail "java/lang/OutOfMemoryError", exception "Java heap space" at 2026/06/03 16:35:44 - please wait.
+JVMDUMP032I JVM requested System dump using '/opt/ibm/wlp/output/defaultServer/core.20260603.163544.17487.0001.dmp' in response to an event
+JVMDUMP010I System dump written to /opt/ibm/wlp/output/defaultServer/core.20260603.163544.17487.0001.dmp
+JVMDUMP032I JVM requested Heap dump using '/opt/ibm/wlp/output/defaultServer/heapdump.20260603.163544.17487.0002.phd' in response to an event
+JVMDUMP010I Heap dump written to /opt/ibm/wlp/output/defaultServer/heapdump.20260603.163544.17487.0002.phd
+JVMDUMP032I JVM requested Heap dump using '/opt/ibm/wlp/output/defaultServer/heapdump.20260603.163544.17487.0003.phd' in response to an event
+JVMDUMP010I Heap dump written to /opt/ibm/wlp/output/defaultServer/heapdump.20260603.163544.17487.0003.phd
+JVMDUMP032I JVM requested Java dump using '/opt/ibm/wlp/output/defaultServer/javacore.20260603.163544.17487.0004.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/ibm/wlp/output/defaultServer/javacore.20260603.163544.17487.0004.txt
+JVMDUMP032I JVM requested Snap dump using '/opt/ibm/wlp/output/defaultServer/Snap.20260603.163544.17487.0006.trc' in response to an event
+JVMDUMP010I Snap dump written to /opt/ibm/wlp/output/defaultServer/Snap.20260603.163544.17487.0006.trc
+JVMDUMP013I Processed dump event "systhrow", detail "java/lang/OutOfMemoryError".
+JVMDUMP032I JVM requested Java dump using '/opt/ibm/wlp/output/defaultServer/javacore.20260603.163544.17487.0005.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/ibm/wlp/output/defaultServer/javacore.20260603.163544.17487.0005.txt
+JVMDUMP055I Processing dump event "systhrow", detail "java/lang/OutOfMemoryError", exception "Java heap space" at 2026/06/03 16:35:46 - please wait.
+JVMDUMP032I JVM requested Snap dump using '/opt/ibm/wlp/output/defaultServer/Snap.20260603.163544.17487.0008.trc' in response to an event
+JVMDUMP010I Snap dump written to /opt/ibm/wlp/output/defaultServer/Snap.20260603.163544.17487.0008.trc
+JVMDUMP013I Processed dump event "systhrow", detail "java/lang/OutOfMemoryError".
+JVMDUMP032I JVM requested Heap dump using '/opt/ibm/wlp/output/defaultServer/heapdump.20260603.163546.17487.0007.phd' in response to an event
+JVMDUMP010I Heap dump written to /opt/ibm/wlp/output/defaultServer/heapdump.20260603.163546.17487.0007.phd
+JVMDUMP032I JVM requested Java dump using '/opt/ibm/wlp/output/defaultServer/javacore.20260603.163546.17487.0009.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/ibm/wlp/output/defaultServer/javacore.20260603.163546.17487.0009.txt
+JVMDUMP032I JVM requested Snap dump using '/opt/ibm/wlp/output/defaultServer/Snap.20260603.163546.17487.0010.trc' in response to an event
+JVMDUMP010I Snap dump written to /opt/ibm/wlp/output/defaultServer/Snap.20260603.163546.17487.0010.trc
+JVMDUMP013I Processed dump event "systhrow", detail "java/lang/OutOfMemoryError".
+JVMDUMP055I Processing dump event "systhrow", detail "java/lang/OutOfMemoryError", exception "Java heap space" at 2026/06/03 16:35:47 - please wait.
+JVMDUMP032I JVM requested Heap dump using '/opt/ibm/wlp/output/defaultServer/heapdump.20260603.163547.17487.0011.phd' in response to an event
+JVMDUMP010I Heap dump written to /opt/ibm/wlp/output/defaultServer/heapdump.20260603.163547.17487.0011.phd
+JVMDUMP055I Processing dump event "systhrow", detail "java/lang/OutOfMemoryError", exception "Java heap space" at 2026/06/03 16:35:47 - please wait.
+JVMDUMP032I JVM requested Snap dump using '/opt/ibm/wlp/output/defaultServer/Snap.20260603.163547.17487.0013.trc' in response to an event
+JVMDUMP010I Snap dump written to /opt/ibm/wlp/output/defaultServer/Snap.20260603.163547.17487.0013.trc
+JVMDUMP013I Processed dump event "systhrow", detail "java/lang/OutOfMemoryError".
+JVMDUMP032I JVM requested Java dump using '/opt/ibm/wlp/output/defaultServer/javacore.20260603.163547.17487.0012.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/ibm/wlp/output/defaultServer/javacore.20260603.163547.17487.0012.txt
+JVMDUMP013I Processed dump event "systhrow", detail "java/lang/OutOfMemoryError".
+[6/3/26, 16:35:48:100 UTC] 00000028 SystemErr                                                    R Exception in thread "Attach API wait loop" 
+[6/3/26, 16:35:49:275 UTC] 00000028 SystemErr                                                    R java.lang.OutOfMemoryError(?)
+[6/3/26, 16:35:49:345 UTC] 00000028 SystemErr                                                    R : 
+[6/3/26, 16:35:49:553 UTC] 00000028 SystemErr                                                    R Java heap space
+[6/3/26, 16:35:49:779 UTC] 00000049 SystemErr                                                    R java.lang.OutOfMemoryError(?)
+[6/3/26, 16:35:49:952 UTC] 00000049 SystemErr                                                    R : 
+Exception in thread "Executor Service Control Timer" java/lang/OutOfMemoryError: Java heap space
+	at java/lang/J9VMInternals.primitiveClone (java.base@21.0.2/NativeMethod:4294967295)
+	at java/lang/Object.clone (java.base@21.0.2/Object.java:58)
+	at java/lang/Thread$State.values (java.base@21.0.2/Thread.java:2701)
+	at java/lang/Thread.threadState (java.base@21.0.2/Thread.java:2791)
+	at java/lang/Thread.isTerminated (java.base@21.0.2/Thread.java:2799)
+	at java/lang/Thread.getUncaughtExceptionHandler (java.base@21.0.2/Thread.java:2908)
+	at java/lang/Thread.uncaughtException (java.base@21.0.2/Thread.java:3067)
+Exception in thread "Scheduled Executor-thread-1" java/lang/OutOfMemoryError: Java heap space
+Exception in thread "Attach API wait loop" 	at java/lang/J9VMInternals.primitiveClone (java.base@21.0.2/NativeMethod:4294967295)
+	at java/lang/Object.clone (java.base@21.0.2/Object.java:58)
+	at java/lang/Thread$State.values (java.base@21.0.2/Thread.java:2701)
+	at java/lang/Thread.threadState (java.base@21.0.2/Thread.java:2791)
+	at java/lang/Thread.isTerminated (java.base@21.0.2/Thread.java:2799)
+	at java/lang/Thread.getUncaughtExceptionHandler (java.base@21.0.2/Thread.java:2908)
+	at java/lang/Thread.uncaughtException (java.base@21.0.2/Thread.java:3067)
+java/lang/OutOfMemoryError: Java heap space
+	at com/ibm/oti/vm/VM.getClassNameImpl (java.base@21.0.2/NativeMethod:4294967295)
+	at java/lang/Class.getName (java.base@21.0.2/Class.java:2027)
+	at java/lang/Throwable.printStackTrace (java.base@21.0.2/Throwable.java:551)
+	at java/lang/Throwable.printStackTraceHelper (java.base@21.0.2/Throwable.java:338)
+	at java/lang/Throwable.printStackTrace (java.base@21.0.2/Throwable.java:307)
+	at java/lang/Throwable.printStackTrace (java.base@21.0.2/Throwable.java:250)
+Exception in thread "Inbound Read Selector.1" java/lang/OutOfMemoryError: Java heap space
+	at java/lang/Class.getConstructorImpl (java.base@21.0.2/NativeMethod:4294967295)
+	at java/lang/Class.getConstructor (java.base@21.0.2/Class.java:735)
+	at java/util/ResourceBundle$ResourceBundleProviderHelper.newResourceBundle (java.base@21.0.2/ResourceBundle.java:3592)
+	at java/util/ResourceBundle$1.newResourceBundle (java.base@21.0.2/ResourceBundle.java:417)
+	at sun/util/resources/Bundles.findBundleOf (java.base@21.0.2/Bundles.java:209)
+	at sun/util/resources/Bundles.findBundleOf (java.base@21.0.2/Bundles.java:160)
+	at sun/util/resources/Bundles.loadBundleOf (java.base@21.0.2/Bundles.java:145)
+	at sun/util/resources/Bundles.of (java.base@21.0.2/Bundles.java:106)
+	at sun/util/resources/LocaleData$1.run (java.base@21.0.2/LocaleData.java:185)
+	at sun/util/resources/LocaleData$1.run (java.base@21.0.2/LocaleData.java:182)
+	at java/security/AccessController.doPrivileged (java.base@21.0.2/AccessController.java:692)
+	at sun/util/resources/LocaleData.getBundle (java.base@21.0.2/LocaleData.java:182)
+	at sun/util/resources/LocaleData.getTimeZoneNames (java.base@21.0.2/LocaleData.java:113)
+	at sun/util/locale/provider/LocaleResources.getTimeZoneNames (java.base@21.0.2/LocaleResources.java:323)
+	at sun/util/locale/provider/TimeZoneNameProviderImpl.getDisplayNameArray (java.base@21.0.2/TimeZoneNameProviderImpl.java:127)
+	at sun/util/cldr/CLDRTimeZoneNameProviderImpl.getDisplayNameArray (java.base@21.0.2/CLDRTimeZoneNameProviderImpl.java:75)
+	at sun/util/locale/provider/TimeZoneNameProviderImpl.getDisplayName (java.base@21.0.2/TimeZoneNameProviderImpl.java:99)
+	at sun/util/locale/provider/TimeZoneNameUtility$TimeZoneNameGetter.getName (java.base@21.0.2/TimeZoneNameUtility.java:271)
+	at sun/util/locale/provider/TimeZoneNameUtility$TimeZoneNameGetter.getObject (java.base@21.0.2/TimeZoneNameUtility.java:229)
+	at sun/util/locale/provider/TimeZoneNameUtility$TimeZoneNameGetter.getObject (java.base@21.0.2/TimeZoneNameUtility.java:215)
+	at sun/util/locale/provider/LocaleServiceProviderPool.getLocalizedObjectImpl (java.base@21.0.2/LocaleServiceProviderPool.java:284)
+	at sun/util/locale/provider/LocaleServiceProviderPool.getLocalizedObject (java.base@21.0.2/LocaleServiceProviderPool.java:245)
+	at sun/util/locale/provider/TimeZoneNameUtility.retrieveDisplayNamesImpl (java.base@21.0.2/TimeZoneNameUtility.java:197)
+	at sun/util/locale/provider/TimeZoneNameUtility.retrieveDisplayNames (java.base@21.0.2/TimeZoneNameUtility.java:120)
+	at java/time/format/DateTimeFormatterBuilder$ZoneTextPrinterParser.getDisplayName (java.base@21.0.2/DateTimeFormatterBuilder.java:4467)
+	at java/time/format/DateTimeFormatterBuilder$ZoneTextPrinterParser.format (java.base@21.0.2/DateTimeFormatterBuilder.java:4518)
+	at java/time/format/DateTimeFormatterBuilder$CompositePrinterParser.format (java.base@21.0.2/DateTimeFormatterBuilder.java:2529)
+	at java/time/format/DateTimeFormatter.formatTo (java.base@21.0.2/DateTimeFormatter.java:1905)
+	at java/time/format/DateTimeFormatter.format (java.base@21.0.2/DateTimeFormatter.java:1879)
+	at com/ibm/ws/logging/collector/BurstDateFormat.format (BurstDateFormat.java:112)
+	at com/ibm/ws/logging/collector/DateFormatHelper.formatTime (DateFormatHelper.java:97)
+	at com/ibm/ws/logging/internal/impl/BaseTraceFormatter.messageLogFormat (BaseTraceFormatter.java:489)
+	at com/ibm/ws/logging/internal/impl/BaseTraceService.invokeMessageRouters (BaseTraceService.java:1095)
+	at com/ibm/ws/logging/internal/impl/BaseTraceService.echo (BaseTraceService.java:1026)
+	at com/ibm/ws/logging/internal/impl/BaseTraceService$TrOutputStream.flush (BaseTraceService.java:2290)
+	at java/io/PrintStream.implFlush (java.base@21.0.2/PrintStream.java:471)
+	at java/io/PrintStream.flush (java.base@21.0.2/PrintStream.java:463)
+	at com/ibm/ws/logging/internal/impl/BaseTraceService$TeePrintStream.print (BaseTraceService.java:2051)
+	at java/lang/ThreadGroup.uncaughtException (java.base@21.0.2/ThreadGroup.java:697)
+	at java/lang/ThreadGroup.uncaughtException (java.base@21.0.2/ThreadGroup.java:690)
+	at java/lang/ThreadGroup.uncaughtException (java.base@21.0.2/ThreadGroup.java:690)
+	at java/lang/Thread.uncaughtException (java.base@21.0.2/Thread.java:3069)

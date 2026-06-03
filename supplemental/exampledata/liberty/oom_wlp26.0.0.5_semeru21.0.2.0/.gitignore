@@ -1,0 +1,3 @@
+core*.dmp
+core*index
+core*Leak_Suspects.zip

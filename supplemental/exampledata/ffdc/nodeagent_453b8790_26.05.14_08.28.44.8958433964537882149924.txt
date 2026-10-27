@@ -1,0 +1,17 @@
+[5/14/26 8:28:44:895 PDT]     FFDC Exception:java.lang.NullPointerException SourceId:com.ibm.ws.xd.pmi.async.server.PmiPost.doPost ProbeId:1737 Reporter:java.lang.Class@51740eb4
+java.lang.NullPointerException
+	at com.ibm.ws.xd.pmi.access.AgentPmiAccess.applyStatsOverrides(AgentPmiAccess.java:379)
+	at com.ibm.ws.xd.pmi.access.AgentPmiAccess.applyStatsOverrides(AgentPmiAccess.java:359)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.doPost(Publisher.java:2417)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.doPost(Publisher.java:2592)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost$1.run(Publisher.java:2374)
+	at com.ibm.ws.security.auth.ContextManagerImpl.runAs(ContextManagerImpl.java:5568)
+	at com.ibm.ws.security.auth.ContextManagerImpl.runAsSystem(ContextManagerImpl.java:5694)
+	at com.ibm.ws.security.core.SecurityContext.runAsSystem(SecurityContext.java:255)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.doPriviledgedPost(Publisher.java:2380)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.alarm(Publisher.java:2352)
+	at com.ibm.ejs.util.am._Alarm.runImpl(_Alarm.java:151)
+	at com.ibm.ejs.util.am._Alarm.run(_Alarm.java:136)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+Reporter:class com.ibm.ws.xd.pmi.access.AgentPmiAccess

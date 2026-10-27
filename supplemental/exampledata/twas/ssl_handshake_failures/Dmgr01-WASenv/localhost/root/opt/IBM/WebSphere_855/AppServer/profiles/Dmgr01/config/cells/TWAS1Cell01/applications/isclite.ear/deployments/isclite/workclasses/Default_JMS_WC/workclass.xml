@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workClass:WorkClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:workClass="http:///workClass.ecore" xmi:id="Default_JMS_WC" matchAction="Default_TC" type="JMSWORKCLASS" name="Default_JMS_WC" description="">
+  <workClassModules xmi:id="WorkClassModule_1767631520990" moduleName="isclite.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:isclite.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631520992" moduleName="adminredirector.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:adminredirector.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631520998" moduleName="iehs.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:iehs.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631521001" moduleName="ISCAdminPortlet.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:ISCAdminPortlet.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631521005" moduleName="WIMPortlet.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:WIMPortlet.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631521007" moduleName="wasportlet.war" matchExpression="*:*" id="Default_JMS_WC:!:isclite:!:wasportlet.war"/>
+</workClass:WorkClass>

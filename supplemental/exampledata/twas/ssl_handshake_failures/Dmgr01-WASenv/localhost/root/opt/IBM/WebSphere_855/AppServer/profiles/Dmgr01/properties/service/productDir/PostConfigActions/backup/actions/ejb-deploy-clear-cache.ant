@@ -1,0 +1,25 @@
+<project name="EJBDeployAction" default="install" basedir=".">
+
+<target name="install" depends="checkIfInstallActionExists, runInstallAction" />
+
+<target name="checkIfInstallActionExists">
+	<available property="antExists" file="${WAS_HOME}/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/binary/EJBDeployWorkAroundPostInstall.ant" type="file"/>
+</target>
+
+<target name="runInstallAction" if="antExists">
+ <echo level="info" message="Running ${WAS_HOME}/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/binary/EJBDeployWorkAroundPostInstall.ant" />
+	<ant antfile="${WAS_HOME}/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/binary/EJBDeployWorkAroundPostInstall.ant" />
+</target>
+
+<target name="uninstall" depends="checkIfUninstallActionExists,runUninstallAction" />
+
+<target name="checkIfUninstallActionExists">
+	<available property="antExists" file="${WAS_HOME}/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/binary/EJBDeployWorkAroundPostUninstall.ant" type="file"/>
+</target>
+
+<target name="runUninstallAction" if="antExists">
+	<ant antfile="${WAS_HOME}/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/binary/EJBDeployWorkAroundPostUninstall.ant" />
+</target>
+
+
+</project>

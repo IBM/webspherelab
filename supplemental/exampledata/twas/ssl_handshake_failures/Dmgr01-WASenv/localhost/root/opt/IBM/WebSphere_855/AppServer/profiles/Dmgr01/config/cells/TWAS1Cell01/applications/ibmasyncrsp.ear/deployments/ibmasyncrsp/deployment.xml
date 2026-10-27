@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1767631606354">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1767631606354" deploymentId="0" startingWeight="1" binariesURL="${WAS_INSTALL_ROOT}/systemApps/${ARS_NAME}" useMetadataFromBinaries="false" enableDistribution="false" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity="href:TWAS1Cell01/ibmasyncrsp" zeroEarCopy="true" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="false" enableClientModule="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1767634794801" enable="true" target="ClusteredTarget_1767634794801"/>
+    <targetMappings xmi:id="DeploymentTargetMapping_1775751628327" enable="true" target="ServerTarget_1775751628327"/>
+    <classloader xmi:id="Classloader_1767631606354" mode="PARENT_FIRST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1767631606354" deploymentId="1" startingWeight="10000" uri="ibmasyncrsp.war" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767634794802" target="ClusteredTarget_1767634794801"/>
+      <targetMappings xmi:id="DeploymentTargetMapping_1775751628328" target="ServerTarget_1775751628327"/>
+      <classloader xmi:id="Classloader_1767631606355"/>
+    </modules>
+    <properties xmi:id="Property_1767631606354" name="metadata.complete" value="true"/>
+    <properties xmi:id="Property_1767634794801" name="Manifest-Implementation-Version" value="1 [2]"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ClusteredTarget" xmi:id="ClusteredTarget_1767634794801" name="test"/>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1775751628327" name="server1" nodeName="Node01"/>
+</appdeployment:Deployment>

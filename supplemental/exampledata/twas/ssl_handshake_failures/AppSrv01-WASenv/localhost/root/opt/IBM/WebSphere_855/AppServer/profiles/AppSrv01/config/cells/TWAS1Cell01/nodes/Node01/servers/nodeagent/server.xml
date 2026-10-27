@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process:Server xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:adminservice="http://www.ibm.com/websphere/appserver/schemas/5.0/adminservice.xmi" xmlns:channelservice="http://www.ibm.com/websphere/appserver/schemas/6.0/channelservice.xmi" xmlns:channelservice.channels="http://www.ibm.com/websphere/appserver/schemas/6.0/channelservice.channels.xmi" xmlns:coregroupbridgeservice="http://www.ibm.com/websphere/appserver/schemas/6.0/coregroupbridgeservice.xmi" xmlns:diagnosticproviderservice="http://www.ibm.com/websphere/appserver/schemas/5.0/diagnosticproviderservice.xmi" xmlns:loggingservice.ras="http://www.ibm.com/websphere/appserver/schemas/5.0/loggingservice.ras.xmi" xmlns:namingserver="http://www.ibm.com/websphere/appserver/schemas/5.0/namingserver.xmi" xmlns:nodeagent="http://www.ibm.com/websphere/appserver/schemas/5.0/nodeagent.xmi" xmlns:orb="http://www.ibm.com/websphere/appserver/schemas/5.0/orb.xmi" xmlns:pmiservice="http://www.ibm.com/websphere/appserver/schemas/5.0/pmiservice.xmi" xmlns:process="http://www.ibm.com/websphere/appserver/schemas/5.0/process.xmi" xmlns:processexec="http://www.ibm.com/websphere/appserver/schemas/5.0/processexec.xmi" xmlns:threadpoolmanager="http://www.ibm.com/websphere/appserver/schemas/6.0/threadpoolmanager.xmi" xmlns:tperfviewer="http://www.ibm.com/websphere/appserver/schemas/6.0/tperfviewer.xmi" xmlns:traceservice="http://www.ibm.com/websphere/appserver/schemas/5.0/traceservice.xmi" xmi:id="Server_1775751464094" name="nodeagent">
+  <stateManagement xmi:id="StateManageable_1775751464094" initialState="START"/>
+  <statisticsProvider xmi:id="StatisticsProvider_1775751464094" specification=""/>
+  <services xmi:type="pmiservice:PMIService" xmi:id="PMIService_1775751464094" enable="true" initialSpecLevel="" statisticSet="basic" synchronizedUpdate="false"/>
+  <services xmi:type="adminservice:AdminService" xmi:id="AdminService_1775751464094" enable="true" standalone="false" localAdminProtocol="IPCConnector_1775751464094" remoteAdminProtocol="SOAPConnector_1775751464094">
+    <connectors xmi:type="adminservice:SOAPConnector" xmi:id="SOAPConnector_1775751464094" enable="true">
+      <properties xmi:id="Property_1775751464094" name="requestTimeout" value="600"/>
+    </connectors>
+    <connectors xmi:type="adminservice:RMIConnector" xmi:id="RMIConnector_1775751464094" enable="true"/>
+    <connectors xmi:type="adminservice:JSR160RMIConnector" xmi:id="JSR160RMIConnector_1775751464094" enable="true"/>
+    <connectors xmi:type="adminservice:IPCConnector" xmi:id="IPCConnector_1775751464094" enable="true">
+      <properties xmi:id="Property_1775751464095" name="requestTimeout" value="600"/>
+    </connectors>
+    <configRepository xmi:id="RepositoryService_1775751464095"/>
+    <pluginConfigService xmi:id="PluginConfigService_1775751464095" enable="true"/>
+  </services>
+  <services xmi:type="traceservice:TraceService" xmi:id="TraceService_1775751464095" enable="true" startupTraceSpecification="com.ibm.*=all=disabled" traceOutputType="SPECIFIED_FILE" traceFormat="BASIC" memoryBufferSize="8">
+    <traceLog xmi:id="TraceLog_1775751464095" fileName="${LOG_ROOT}/${SERVER}/trace.log" rolloverSize="20" maxNumberOfBackupFiles="5"/>
+  </services>
+  <services xmi:type="threadpoolmanager:ThreadPoolManager" xmi:id="ThreadPoolManager_1775751464095" enable="true">
+    <threadPools xmi:id="ThreadPool_1775751464095" minimumSize="5" maximumSize="20" inactivityTimeout="3500" isGrowable="true" name="TCPChannel.DCS"/>
+    <threadPools xmi:id="ThreadPool_1775751464096" minimumSize="0" maximumSize="10" inactivityTimeout="30000" isGrowable="false" name="server.startup"/>
+  </services>
+  <services xmi:type="tperfviewer:TPVService" xmi:id="TPVService_1775751464095" enable="true"/>
+  <services xmi:type="coregroupbridgeservice:CoreGroupBridgeService" xmi:id="CoreGroupBridgeService_1775751464095" enable="true"/>
+  <services xmi:type="loggingservice.ras:RASLoggingService" xmi:id="RASLoggingService_1775751464095" enable="true" messageFilterLevel="NONE" enableCorrelationId="true">
+    <serviceLog xmi:id="ServiceLog_1775751464096" name="${LOG_ROOT}/activity.log" size="2" enabled="false"/>
+  </services>
+  <services xmi:type="orb:ObjectRequestBroker" xmi:id="ObjectRequestBroker_1775751464096" enable="true" requestTimeout="180" requestRetriesCount="1" requestRetriesDelay="0" connectionCacheMaximum="240" connectionCacheMinimum="100" commTraceEnabled="false" locateRequestTimeout="180" forceTunnel="never" noLocalCopies="true" useServerThreadPool="false">
+    <properties xmi:id="Property_1775751464096" name="com.ibm.ws.orb.transport.WSSSLServerSocketFactoryName" value="com.ibm.ws.security.orbssl.WSSSLServerSocketFactoryImpl"/>
+    <properties xmi:id="Property_1775751464097" name="com.ibm.ws.orb.transport.WSSSLClientSocketFactoryName" value="com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl"/>
+    <properties xmi:id="Property_1775751464098" name="com.ibm.CORBA.RasManager" value="com.ibm.websphere.ras.WsOrbRasManager"/>
+    <properties xmi:id="Property_1775751464099" name="com.ibm.CORBA.enableLocateRequest" value="true"/>
+    <properties xmi:id="Property_1775751464100" name="com.ibm.CORBA.ConnectionInterceptorName" value="com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor"/>
+    <properties xmi:id="Property_1775751464101" name="com.ibm.CORBA.iiop.LSDPlugin" value="com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon"/>
+    <properties xmi:id="Property_1775751464102" name="javax.rmi.CORBA.UtilClass" value="com.ibm.ws.orb.WSUtilDelegateImpl"/>
+    <properties xmi:id="Property_1775751464103" name="com.ibm.ws.orb.services.lsd.StoreActiveServerList" value="/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/etc"/>
+    <interceptors xmi:id="Interceptor_1775751464096" name="com.ibm.ejs.ras.RasContextSupport"/>
+    <interceptors xmi:id="Interceptor_1775751464097" name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+    <interceptors xmi:id="Interceptor_1775751464098" name="com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityComponentFactory"/>
+    <interceptors xmi:id="Interceptor_1775751464099" name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+    <interceptors xmi:id="Interceptor_1775751464100" name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+    <interceptors xmi:id="Interceptor_1775751464101" name="com.ibm.ws.wlm.client.WLMClientInitializer"/>
+    <interceptors xmi:id="Interceptor_1775751464102" name="com.ibm.ws.wlm.server.WLMServerInitializer"/>
+    <interceptors xmi:id="Interceptor_1775751464103" name="com.ibm.debug.DebugPortableInterceptor"/>
+    <interceptors xmi:id="Interceptor_1775751464104" name="com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityComponentFactory"/>
+    <interceptors xmi:id="Interceptor_1775751464105" name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+    <interceptors xmi:id="Interceptor_1775751464106" name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+    <plugins xmi:id="ORBPlugin_1775751464097" name="com.ibm.ws.orbimpl.transport.WSTransport"/>
+    <plugins xmi:id="ORBPlugin_1775751464098" name="com.ibm.ws.wlm.client.WLMClient"/>
+    <plugins xmi:id="ORBPlugin_1775751464099" name="com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon"/>
+    <plugins xmi:id="ORBPlugin_1775751464100" name="com.ibm.ws.pmi.server.modules.OrbPerfModule"/>
+    <plugins xmi:id="ORBPlugin_1775751464101" name="com.ibm.ISecurityUtilityImpl.SecurityPropertyManager"/>
+    <plugins xmi:id="ORBPlugin_1775751464102" name="com.ibm.ws.orbimpl.WSORBPropertyManager"/>
+    <threadPool xmi:id="ThreadPool_1775751464097" minimumSize="10" maximumSize="50" inactivityTimeout="3500" isGrowable="false"/>
+  </services>
+  <services xmi:type="channelservice:TransportChannelService" xmi:id="TransportChannelService_1775751464097" enable="true">
+    <transportChannels xmi:type="channelservice.channels:TCPInboundChannel" xmi:id="TCPInboundChannel_1775751464097" name="TCP_1" endPointName="DCS_UNICAST_ADDRESS" threadPool="ThreadPool_1775751464095"/>
+    <transportChannels xmi:type="channelservice.channels:DCSInboundChannel" xmi:id="DCSInboundChannel_1775751464097" name="DCS_1" discriminationWeight="1"/>
+    <transportChannels xmi:type="channelservice.channels:SSLInboundChannel" xmi:id="SSLInboundChannel_1775751464097" name="SSL_1" discriminationWeight="2"/>
+    <transportChannels xmi:type="channelservice.channels:DCSInboundChannel" xmi:id="DCSInboundChannel_1775751464098" name="DCS_2" discriminationWeight="1"/>
+    <chains xmi:id="Chain_1775751464097" name="DCS" enable="true" transportChannels="TCPInboundChannel_1775751464097 DCSInboundChannel_1775751464097"/>
+    <chains xmi:id="Chain_1775751464098" name="DCS-Secure" enable="true" transportChannels="TCPInboundChannel_1775751464097 SSLInboundChannel_1775751464097 DCSInboundChannel_1775751464098"/>
+  </services>
+  <services xmi:type="diagnosticproviderservice:DiagnosticProviderService" xmi:id="DiagnosticProviderService_1775751464098" enable="true" startupStateCollectionSpec=".*:.*=0"/>
+  <errorStreamRedirect xmi:id="StreamRedirect_1775751464098" fileName="$(LOG_ROOT)/$(SERVER)/SystemErr.log" rolloverType="SIZE" maxNumberOfBackupFiles="5" rolloverSize="1" baseHour="24" rolloverPeriod="24" formatWrites="true" messageFormatKind="BASIC" suppressWrites="false" suppressStackTrace="false"/>
+  <outputStreamRedirect xmi:id="StreamRedirect_1775751464099" fileName="$(LOG_ROOT)/$(SERVER)/SystemOut.log" rolloverType="SIZE" maxNumberOfBackupFiles="5" rolloverSize="1" baseHour="24" rolloverPeriod="24" formatWrites="true" messageFormatKind="BASIC" suppressWrites="false" suppressStackTrace="false"/>
+  <components xmi:type="namingserver:NameServer" xmi:id="NameServer_1775751464098">
+    <stateManagement xmi:id="StateManageable_1775751464098" initialState="START"/>
+  </components>
+  <components xmi:type="nodeagent:NodeAgent" xmi:id="NodeAgent_1775751464098" name="NodeAgent Server">
+    <stateManagement xmi:id="StateManageable_1775751464099" initialState="START"/>
+    <fileTransferService xmi:id="FileTransferService_1775751464098" enable="true"/>
+    <fileSynchronizationService xmi:id="ConfigSynchronizationService_1775751464098" enable="true" synchInterval="1" autoSynchEnabled="true" synchOnServerStartup="false"/>
+  </components>
+  <processDefinitions xmi:type="processexec:JavaProcessDef" xmi:id="JavaProcessDef_1775751464098" workingDirectory="${USER_INSTALL_ROOT}" startCommand="" stopCommand="" terminateCommand="" processType="Single">
+    <executableArguments></executableArguments>
+    <execution xmi:id="ProcessExecution_1775751464098" processPriority="20" runAsUser="" runAsGroup=""/>
+    <ioRedirect xmi:id="OutputRedirect_1775751464098" stdoutFilename="${LOG_ROOT}/${SERVER}/native_stdout.log" stderrFilename="${LOG_ROOT}/${SERVER}/native_stderr.log"/>
+    <jvmEntries xmi:id="JavaVirtualMachine_1775751464098" verboseModeClass="false" verboseModeGarbageCollection="true" verboseModeJNI="false" runHProf="false" hprofArguments="" debugMode="false" debugArgs="-Djava.compiler=NONE -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=7777" genericJvmArguments="-Djava.awt.headless=true -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000" executableJarFileName="" disableJIT="false">
+      <classpath></classpath>
+      <bootClasspath></bootClasspath>
+      <systemProperties xmi:id="Property_1775751464104" name="com.ibm.security.jgss.debug" value="off"/>
+      <systemProperties xmi:id="Property_1775751464105" name="com.ibm.security.krb5.Krb5Debug" value="off"/>
+    </jvmEntries>
+  </processDefinitions>
+</process:Server>

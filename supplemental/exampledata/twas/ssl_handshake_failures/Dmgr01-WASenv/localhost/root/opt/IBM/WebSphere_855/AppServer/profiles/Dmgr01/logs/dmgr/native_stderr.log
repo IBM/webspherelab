@@ -1,0 +1,487 @@
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 678686
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-678686
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.89.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 682156
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-682156
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.89.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260117.100455.682156.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260117.100455.682156.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 287477
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-287477
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.94.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 522213
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-522213
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.94.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260131.181949.522213.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260131.181949.522213.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 108672
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-108672
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.97.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260207.063517.108672.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260207.063517.108672.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 226813
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-226813
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.100.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260214.034923.226813.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260214.034923.226813.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 136617
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-136617
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.107.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 143281
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-143281
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.107.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 2185276
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-2185276
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.107.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260307.195927.2185276.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260307.195927.2185276.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 259489
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-259489
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 272796
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-272796
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 321170
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-321170
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260314.192344.321170.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260314.192344.321170.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 347265
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-347265
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 347973
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-347973
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260411.072757.347973.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260411.072757.347973.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 113135
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-113135
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 1247579
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-1247579
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260509.120518.1247579.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260509.120518.1247579.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 261016
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-261016
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 339022
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-339022
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260516.042537.339022.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260516.042537.339022.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 1186531
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-1186531
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.125.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 1187436
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-1187436
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.125.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260613.112554.1187436.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260613.112554.1187436.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 229360
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-229360
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.141.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260718.094238.229360.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260718.094238.229360.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 120559
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-120559
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.147.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 376789
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-376789
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260905.070027.376789.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20260905.070027.376789.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 213425
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-213425
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.168.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: 4.0.1
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Headless data collection has started
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Each data collection run will last for 5 minutes
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Agent will run for 1 collections
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Agent will keep last 5 hcd files
+[Tue 29 Sep 2026 05:28:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Headless collection output directory is /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+[Tue 29 Sep 2026 05:33:27 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: Creating hcd import file /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/healthcenter290926_052827_213425_1.hcd
+[Tue 29 Sep 2026 05:33:28 AM PDT] com.ibm.diagnostics.healthcenter.headless INFO: hcd import file /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/healthcenter290926_052827_213425_1.hcd created
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261010.053127.213425.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261010.053127.213425.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 316397
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-316397
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.172.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261017.170954.316397.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261017.170954.316397.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/local/bin/core-compress %p %e %t" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 134602
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-134602
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP039I Processing dump event "user", detail "" at 2026/10/19 12:58:00 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261019.125800.134602.0001.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261019.125800.134602.0001.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/10/19 12:58:00 (0.148 seconds).
+JVMDUMP039I Processing dump event "abort", detail "" at 2026/10/19 12:58:55 - please wait.
+JVMDUMP032I JVM requested System dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/core.20261019.125855.134602.0002.dmp' in response to an event
+JVMPORT030W /proc/sys/kernel/core_pattern setting "|/usr/local/bin/core-compress %p %e %t" specifies that the core dump is to be piped to an external program.  Attempting to rename either core or core.134903.  Review the manual for the external program to find where the core dump is written and ensure the program does not truncate it.
+
+JVMPORT049I The core file created by child process with pid = 134903 was not found. Review the documentation for the /proc/sys/kernel/core_pattern program "|/usr/local/bin/core-compress %p %e %t" to find where the core file is written and ensure that program does not truncate it.
+
+JVMDUMP012E Error in System dump: /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/core.20261019.125855.134602.0002.dmp
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261019.125855.134602.0003.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/javacore.20261019.125855.134602.0003.txt
+JVMDUMP032I JVM requested Snap dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/Snap.20261019.125855.134602.0004.trc' in response to an event
+JVMDUMP010I Snap dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/Snap.20261019.125855.134602.0004.trc
+JVMDUMP032I JVM requested JIT dump using '/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/jitdump.20261019.125855.134602.0005.dmp' in response to an event
+JVMDUMP051I JIT dump occurred in 'SIGABRT Thread' thread 0x000000000128A800
+JVMDUMP010I JIT dump written to /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/jitdump.20261019.125855.134602.0005.dmp
+JVMDUMP056I Processed dump event "abort", detail "" at 2026/10/19 12:59:06 (11.408 seconds).
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/local/bin/core-compress %p %e %t" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\TWAS1CellManager01\dmgr and process id 415452
+Full server name is TWAS1Cell01\TWAS1CellManager01\dmgr-415452
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************

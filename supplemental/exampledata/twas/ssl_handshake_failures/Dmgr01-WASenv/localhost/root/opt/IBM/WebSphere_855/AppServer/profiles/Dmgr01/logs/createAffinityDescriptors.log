@@ -1,0 +1,11 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[-washome, /opt/IBM/WebSphere_855/AppServer]"
+INFO: server type= application_server(cells/TWAS1Cell01/middlewaredescriptors/application_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627128)
+INFO: server type= jboss_server(cells/TWAS1Cell01/middlewaredescriptors/jboss_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627204)
+INFO: server type= weblogic_server(cells/TWAS1Cell01/middlewaredescriptors/weblogic_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627279)
+INFO: server type= apache_server(cells/TWAS1Cell01/middlewaredescriptors/apache_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627369)
+INFO: server type= tomcat_server(cells/TWAS1Cell01/middlewaredescriptors/tomcat_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627466)
+INFO: server type= 
+INFO: server type= customhttp_server(cells/TWAS1Cell01/middlewaredescriptors/customhttp_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627546)
+INFO: server type= wasce_server(cells/TWAS1Cell01/middlewaredescriptors/wasce_server|middlewaredescriptor.xml#MiddlewareDescriptor_1767631627633)
+INFO: changes have been saved.

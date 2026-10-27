@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     5/14/26 8:28:57:651 PDT     5/14/26 8:28:57:651 PDT javax.net.ssl.SSLHandshakeException com.ibm.son.mesh.CfwTCPImpl$3.destroy 994 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/server1_b305402a_26.05.14_08.28.57.6633512006689796365777.txt
+     1      1     5/16/26 4:25:38:554 PDT     5/16/26 4:25:38:554 PDT org.omg.CORBA.COMM_FAILURE com.ibm.rmi.iiop.Connection.getCallStream:2622 ORB FFDC
+------+------+---------------------------+---------------------------+---------------------------

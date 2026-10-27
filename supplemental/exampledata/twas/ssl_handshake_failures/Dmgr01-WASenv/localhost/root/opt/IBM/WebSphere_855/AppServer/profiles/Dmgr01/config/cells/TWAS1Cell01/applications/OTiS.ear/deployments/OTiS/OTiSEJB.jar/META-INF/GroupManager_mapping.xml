@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+    <package-mapping>
+        <package-type>com.ibm.otis.api</package-type>
+        <namespaceURI>http://api.otis.ibm.com</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>com.ibm.otis.ejbs</package-type>
+        <namespaceURI>http://ejbs.otis.ibm.com</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <root-type-qname xmlns:rtq="http://ejbs.otis.ibm.com">rtq:ArrayOf_1621821774_nillable_string</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>string</java-variable-name>
+            <xml-element-name>string</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.api.TaskManagerException</java-type>
+        <root-type-qname xmlns:rtq="http://api.otis.ibm.com">rtq:TaskManagerException</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>message</java-variable-name>
+            <xml-element-name>message</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.api.TaskManagerException</java-type>
+        <root-type-qname xmlns:rtq="http://api.otis.ibm.com">rtq:TaskManagerException</root-type-qname>
+        <qname-scope>element</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:string</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <anonymous-type-qname>http://www.w3.org/2001/XMLSchema:string[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <anonymous-type-qname>http://ejbs.otis.ibm.com:ArrayOf_1621821774_nillable_string&gt;string[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <exception-mapping>
+        <exception-type>com.ibm.otis.api.TaskManagerException</exception-type>
+        <wsdl-message xmlns:em="http://ejbs.otis.ibm.com">em:TaskManagerException</wsdl-message>
+        <constructor-parameter-order>
+            <element-name>message</element-name>
+        </constructor-parameter-order>
+    </exception-mapping>
+    <service-interface-mapping>
+        <service-interface>com.ibm.otis.ejbs.GroupManagerServiceService</service-interface>
+        <wsdl-service-name xmlns:sim="http://ejbs.otis.ibm.com">sim:GroupManagerServiceService</wsdl-service-name>
+        <port-mapping>
+            <port-name>GroupManager</port-name>
+            <java-port-name>GroupManager</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>com.ibm.otis.ejbs.GroupManagerService</service-endpoint-interface>
+        <wsdl-port-type xmlns:seimwpt="http://ejbs.otis.ibm.com">seimwpt:GroupManagerService</wsdl-port-type>
+        <wsdl-binding xmlns:seimwb="http://ejbs.otis.ibm.com">seimwb:GroupManagerSoapBinding</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getGroupNames</java-method-name>
+            <wsdl-operation>getGroupNames</wsdl-operation>
+            <wrapped-element/>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.otis.ibm.com">wrvm:getGroupNamesResponse</wsdl-message>
+                <wsdl-message-part-name>getGroupNamesReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>removeDevicesFromGroup</java-method-name>
+            <wsdl-operation>removeDevicesFromGroup</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:removeDevicesFromGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String[]</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:removeDevicesFromGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.otis.ibm.com">wrvm:removeDevicesFromGroupResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getDevicesInGroup</java-method-name>
+            <wsdl-operation>getDevicesInGroup</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:getDevicesInGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_3</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.otis.ibm.com">wrvm:getDevicesInGroupResponse</wsdl-message>
+                <wsdl-message-part-name>getDevicesInGroupReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>addDevicesToGroup</java-method-name>
+            <wsdl-operation>addDevicesToGroup</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:addDevicesToGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_0</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String[]</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:addDevicesToGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_0</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.otis.ibm.com">wrvm:addDevicesToGroupResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>deleteGroup</java-method-name>
+            <wsdl-operation>deleteGroup</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.otis.ibm.com">mppm:deleteGroupRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.otis.ibm.com">wrvm:deleteGroupResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>

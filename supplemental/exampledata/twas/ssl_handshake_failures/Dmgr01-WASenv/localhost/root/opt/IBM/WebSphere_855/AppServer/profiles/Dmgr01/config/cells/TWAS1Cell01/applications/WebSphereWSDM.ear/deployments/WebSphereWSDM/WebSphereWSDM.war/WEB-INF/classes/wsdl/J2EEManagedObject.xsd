@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/managed-object" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/managed-object" >
+
+	<!-- Properties defined by base J2EEManagedObject capability -->
+	
+	<xsd:element name="ObjectName" type="xsd:string"/>
+	<xsd:element name="StateManageable" type="xsd:boolean"/>
+	<xsd:element name="EventProvider" type="xsd:boolean"/>
+	<xsd:element name="StatisticsProvider" type="xsd:boolean"/>
+			
+</schema>

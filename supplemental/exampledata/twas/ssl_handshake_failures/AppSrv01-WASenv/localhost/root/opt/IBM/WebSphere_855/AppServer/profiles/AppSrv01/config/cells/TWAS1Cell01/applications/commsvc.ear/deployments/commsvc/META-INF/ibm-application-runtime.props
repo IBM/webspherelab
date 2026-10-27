@@ -1,0 +1,3 @@
+#Created by WebSphere.  Do not modify.
+#Thu Apr 09 09:20:28 PDT 2026
+com.ibm.ws.runtime.components.commsvc.rest.war=WebSphere\:specname\=WS_JaxWsWebService+WebSphere\:specname\=WS_WebServiceInit+WebSphere\:specname\=WS_WebContainer+WebSphere\:specname\=WS_SipContainer

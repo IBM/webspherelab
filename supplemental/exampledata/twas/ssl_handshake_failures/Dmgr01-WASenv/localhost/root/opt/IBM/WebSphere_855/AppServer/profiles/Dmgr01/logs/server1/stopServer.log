@@ -1,0 +1,16 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.94.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+Current trace specification = *=info
+************* End Display Current Environment *************
+[1/29/26 15:42:39:325 PST] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[1/29/26 15:42:39:401 PST] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[1/29/26 15:42:39:402 PST] 00000001 AdminTool     A   ADMU3522E: No server by this name in the configuration: server1

@@ -1,0 +1,7 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+ADMA5016I: Installation of filetransfer started.
+ADMA5005I: The application filetransfer is configured in the WebSphere Application Server repository.
+ADMA5005I: The application filetransfer is configured in the WebSphere Application Server repository.
+ADMA5011I: The cleanup of the temp directory for application filetransfer is complete.
+ADMA5013I: Application filetransfer installed successfully.
+

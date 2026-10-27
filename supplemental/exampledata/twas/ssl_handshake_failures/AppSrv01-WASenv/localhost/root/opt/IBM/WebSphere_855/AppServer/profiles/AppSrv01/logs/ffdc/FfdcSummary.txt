@@ -1,0 +1,5 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    10/23/26 7:58:33:707 PDT    10/23/26 7:58:33:707 PDT java.awt.AWTError com.ibm.ws.ssl.core.WSX509TrustManager.checkServerTrusted %c% /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/ffdc.6570662106789053552.txt
+------+------+---------------------------+---------------------------+---------------------------

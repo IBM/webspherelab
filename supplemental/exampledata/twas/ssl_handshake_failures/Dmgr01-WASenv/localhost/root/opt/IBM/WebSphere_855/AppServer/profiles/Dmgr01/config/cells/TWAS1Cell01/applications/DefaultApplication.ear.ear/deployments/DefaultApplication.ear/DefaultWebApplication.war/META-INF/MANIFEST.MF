@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: pxi3260sr16fp3-20141219_01 (SR16 FP3) (IBM Corporation)
+

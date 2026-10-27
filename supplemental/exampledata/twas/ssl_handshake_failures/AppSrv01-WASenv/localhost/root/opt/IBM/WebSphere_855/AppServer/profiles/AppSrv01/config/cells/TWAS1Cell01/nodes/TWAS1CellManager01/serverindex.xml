@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serverindex:ServerIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:serverindex="http://www.ibm.com/websphere/appserver/schemas/5.0/serverindex.xmi" xmi:id="ServerIndex_1" hostName="localhost" endPointRefs="NamedEndPoint_1 NamedEndPoint_2">
+  <serverEntries xmi:id="ServerEntry_1" serverDisplayName="dmgr" serverName="dmgr" serverType="DEPLOYMENT_MANAGER">
+    <deployedApplications>WebSphereWSDM.ear/deployments/WebSphereWSDM</deployedApplications>
+    <deployedApplications>isclite.ear/deployments/isclite</deployedApplications>
+    <deployedApplications>OTiS.ear/deployments/OTiS</deployedApplications>
+    <specialEndpoints xmi:id="NamedEndPoint_1" endPointName="CELL_DISCOVERY_ADDRESS">
+      <endPoint xmi:id="EndPoint_1" host="localhost" port="7277"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_2" endPointName="BOOTSTRAP_ADDRESS">
+      <endPoint xmi:id="EndPoint_2" host="localhost" port="9809"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_4" endPointName="SOAP_CONNECTOR_ADDRESS">
+      <endPoint xmi:id="EndPoint_4" host="localhost" port="8879"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_5" endPointName="ORB_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_5" host="localhost" port="9100"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_6" endPointName="SAS_SSL_SERVERAUTH_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_6" host="localhost" port="9401"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_7" endPointName="CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_7" host="localhost" port="9402"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_8" endPointName="CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_8" host="localhost" port="9403"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_9" endPointName="WC_adminhost">
+      <endPoint xmi:id="EndPoint_9" host="*" port="9060"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_10" endPointName="DCS_UNICAST_ADDRESS">
+      <endPoint xmi:id="EndPoint_10" host="*" port="9352"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_11" endPointName="WC_adminhost_secure">
+      <endPoint xmi:id="EndPoint_11" host="*" port="9043"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_12" endPointName="IPC_CONNECTOR_ADDRESS">
+      <endPoint xmi:id="EndPoint_12" host="${LOCALHOST_NAME}" port="9632"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_13" endPointName="OVERLAY_UDP_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_13" host="*" port="11005"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_14" endPointName="OVERLAY_TCP_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_14" host="*" port="11006"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_15" endPointName="XDAGENT_PORT">
+      <endPoint xmi:id="EndPoint_15" host="*" port="7060"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_DPMGR1" endPointName="DataPowerMgr_inbound_secure">
+      <endPoint xmi:id="EndPoint_DPMGR1" host="*" port="5555"/>
+    </specialEndpoints>
+    <specialEndpoints xmi:id="NamedEndPoint_1120677327537" endPointName="STATUS_LISTENER_ADDRESS">
+      <endPoint xmi:id="EndPoint_1120677327537" host="localhost" port="9420"/>
+    </specialEndpoints>
+  </serverEntries>
+</serverindex:ServerIndex>

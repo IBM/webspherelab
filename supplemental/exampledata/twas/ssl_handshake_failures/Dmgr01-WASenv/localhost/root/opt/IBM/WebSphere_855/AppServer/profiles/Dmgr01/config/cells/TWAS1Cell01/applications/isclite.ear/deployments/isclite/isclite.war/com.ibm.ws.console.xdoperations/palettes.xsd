@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IBM Confidential OCO Source Material -->
+<!-- 5724-J34 (C) COPYRIGHT International Business Machines Corp. 2004 -->
+<!-- The source code for this program is not published or otherwise divested -->
+<!-- of its trade secrets, irrespective of what has been deposited with the -->
+<!-- U.S. Copyright Office. -->
+
+
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation>
+		This schema defines the format for specifying color palettes.
+		</xsd:documentation>
+	</xsd:annotation>
+	
+	<xsd:element name="colorPaletteSets">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="colorPaletteSet" type="paletteSetType" minOccurs="1" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>
+						A color palette set contains a number of color palettes.
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="defaultSetId" type="xsd:IDREF" use="required">
+				<xsd:annotation>
+				 <xsd:documentation>
+				Identifier of the default palette set. Each palette definition file
+				can have more than one palette sets. If the input XML does not specify
+				the palette set ID, the default palette set will be used.
+				 </xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="paletteSetType">
+		<xsd:annotation>
+			<xsd:documentation>
+			A color palette set contains a number of color palettes.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="palette" type="paletteType" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID">
+			<xsd:annotation>
+			<xsd:documentation>
+			Identifier of the palette set.
+			 </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="defaultPaletteId" type="xsd:IDREF" use="required">
+			<xsd:annotation>
+			<xsd:documentation>
+			The identifier of the default palette for this palette set. If the input XML
+			does not specify a palette ID, the default palette will be used.
+			 </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="paletteType">
+		<xsd:attribute name="id" type="xsd:ID" use="required">
+			<xsd:annotation>
+			 <xsd:documentation>
+			Identifier for the palette
+			 </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="colorList" type="xsd:string" use="required">
+			<xsd:annotation>
+			 <xsd:documentation>
+			A space-delimited list of color specifications. A color can be specified by 
+			a hexadecimal natation for the combination of Red, Green, and Blue color values (RGB),
+			use by common color names supported by newer versions of both Netscape and Internet Explorer.
+			</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+</xsd:schema>

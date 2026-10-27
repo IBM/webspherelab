@@ -1,0 +1,185 @@
+[5/14/26 8:28:34:383 PDT]     FFDC Exception:java.lang.Exception SourceId:com.ibm.ws.ssl.channel.impls.SSLUtils ProbeId:1052
+java.lang.Exception: IOException receiving data during SSL Handshake.  One possible cause is that authenication may not be configured correctly
+	at com.ibm.ws.ssl.channel.impl.SSLUtils.handleHandshake(SSLUtils.java:1060)
+	at com.ibm.ws.ssl.channel.impl.SSLConnectionLink.readyOutbound(SSLConnectionLink.java:829)
+	at com.ibm.ws.ssl.channel.impl.SSLConnectionLink.connect(SSLConnectionLink.java:1134)
+	at com.ibm.wsspi.channel.base.OutboundProtocolLink.connect(OutboundProtocolLink.java:87)
+	at com.ibm.ws.management.connector.ipc.IPCCOutboundLink.connect(IPCCOutboundLink.java:81)
+	at com.ibm.ws.channel.framework.impl.OutboundVirtualConnectionImpl.connect(OutboundVirtualConnectionImpl.java:79)
+	at com.ibm.ws.management.connector.ipc.ChannelConnectionPool.makeOrdinaryTCPConnection(ChannelConnectionPool.java:209)
+	at com.ibm.ws.management.connector.ipc.ChannelConnectionPool.getConnection(ChannelConnectionPool.java:187)
+	at com.ibm.ws.management.connector.ipc.IPCConnectorClient.sendReceive(IPCConnectorClient.java:485)
+	at com.ibm.ws.management.connector.ipc.IPCConnectorClient.serverSecurityEnabled(IPCConnectorClient.java:688)
+	at com.ibm.ws.management.connector.ipc.IPCConnectorClient.<init>(IPCConnectorClient.java:250)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:1011)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1115)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1255)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+Caused by: java.io.IOException: Async IO operation failed (3), reason: RC: 107  Transport endpoint is not connected
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.<init>(AsyncLibrary.java:924)
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.get(AsyncLibrary.java:937)
+	at com.ibm.io.async.AsyncLibrary.getIOException(AsyncLibrary.java:951)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:705)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	... 1 more
+
+==> Performing default dump from com.ibm.ws.ssl.core.SSLDiagnosticModule :Thu May 14 08:28:34 PDT 2026
+SSLConfigManager configuration: 
+XDADefaultSSLSettings===SSLConfig.toString() {
+com.ibm.ssl.clientAuthenticationSupported = true
+com.ibm.ssl.verifyHostname = true
+com.ibm.ssl.contextProvider = IBMJSSE2
+com.ibm.ssl.trustStoreProvider = IBMJCE
+com.ibm.ssl.protocol = SSL_TLS
+com.ibm.ssl.keyStoreReadOnly = false
+com.ibm.ssl.alias = XDADefaultSSLSettings
+com.ibm.ssl.keyStoreCreateCMSStash = false
+com.ibm.ssl.securityLevel = HIGH
+com.ibm.ssl.trustStoreName = CellDefaultTrustStore
+com.ibm.ssl.configURLLoadedFrom = security.xml
+com.ibm.ssl.trustStorePassword = *****
+com.ibm.ssl.keyStoreUseForAcceleration = false
+com.ibm.ssl.trustManager = PKIX
+com.ibm.ssl.validationEnabled = false
+com.ibm.ssl.trustStoreInitializeAtStartup = false
+com.ibm.ssl.keyManager = IbmX509
+com.ibm.ssl.keyStoreFileBased = true
+chainData = null
+com.ibm.ssl.keyStoreType = PKCS12
+com.ibm.ssl.trustStoreFileBased = true
+com.ibm.ssl.trustStoreCreateCMSStash = false
+com.ibm.ssl.trustStoreScope = (cell):TWAS1Cell01
+com.ibm.ssl.trustStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/trust.p12
+com.ibm.ssl.keyStoreProvider = IBMJCE
+com.ibm.ssl.daysBeforeExpireWarning = 60
+com.ibm.ssl.clientAuthentication = true
+com.ibm.ssl.keyStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/key.p12
+com.ibm.ssl.skipHostnameVerificationForHosts = 
+com.ibm.ssl.trustStoreUseForAcceleration = false
+com.ibm.ssl.trustStoreReadOnly = false
+alias = XDADefaultSSLSettings
+com.ibm.ssl.keyStoreScope = (cell):TWAS1Cell01
+com.ibm.ssl.tokenEnabled = false
+com.ibm.ssl.keyStoreName = CellDefaultKeyStore
+com.ibm.ssl.keyStorePassword = *****
+com.ibm.ssl.keyStoreInitializeAtStartup = false
+com.ibm.ssl.trustStoreType = PKCS12
+}CellDefaultSSLSettings===SSLConfig.toString() {
+com.ibm.ssl.clientAuthenticationSupported = false
+com.ibm.ssl.verifyHostname = true
+com.ibm.ssl.contextProvider = IBMJSSE2
+com.ibm.ssl.trustStoreProvider = IBMJCE
+com.ibm.ssl.protocol = SSL_TLS
+com.ibm.ssl.keyStoreReadOnly = false
+com.ibm.ssl.alias = CellDefaultSSLSettings
+com.ibm.ssl.keyStoreCreateCMSStash = false
+com.ibm.ssl.securityLevel = HIGH
+com.ibm.ssl.trustStoreName = CellDefaultTrustStore
+com.ibm.ssl.configURLLoadedFrom = security.xml
+com.ibm.ssl.trustStorePassword = *****
+com.ibm.ssl.keyStoreUseForAcceleration = false
+com.ibm.ssl.trustManager = IbmPKIX|IBMJSSE2
+com.ibm.ssl.validationEnabled = false
+com.ibm.ssl.trustStoreInitializeAtStartup = false
+com.ibm.ssl.keyManager = IbmX509|IBMJSSE2
+com.ibm.ssl.keyStoreFileBased = true
+com.ibm.ssl.keyStoreType = PKCS12
+com.ibm.ssl.trustStoreFileBased = true
+com.ibm.ssl.trustStoreCreateCMSStash = false
+com.ibm.ssl.trustStoreScope = (cell):TWAS1Cell01
+com.ibm.ssl.trustStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/trust.p12
+com.ibm.ssl.keyStoreProvider = IBMJCE
+com.ibm.ssl.daysBeforeExpireWarning = 60
+com.ibm.ssl.clientAuthentication = false
+com.ibm.ssl.keyStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/key.p12
+com.ibm.ssl.skipHostnameVerificationForHosts = 
+com.ibm.ssl.trustStoreUseForAcceleration = false
+com.ibm.ssl.trustStoreReadOnly = false
+com.ibm.ssl.keyStoreScope = (cell):TWAS1Cell01
+com.ibm.ssl.tokenEnabled = false
+com.ibm.ssl.keyStoreName = CellDefaultKeyStore
+com.ibm.ssl.keyStorePassword = *****
+com.ibm.ssl.keyStoreInitializeAtStartup = false
+com.ibm.ssl.trustStoreType = PKCS12
+}NodeDefaultSSLSettings===SSLConfig.toString() {
+com.ibm.ssl.clientAuthenticationSupported = false
+com.ibm.ssl.verifyHostname = true
+com.ibm.ssl.contextProvider = IBMJSSE2
+com.ibm.ssl.trustStoreProvider = IBMJCE
+com.ibm.ssl.protocol = TLSv1.3,TLSv1.2
+com.ibm.ssl.keyStoreReadOnly = false
+com.ibm.ssl.alias = NodeDefaultSSLSettings
+com.ibm.ssl.keyStoreCreateCMSStash = false
+com.ibm.ssl.securityLevel = HIGH
+com.ibm.ssl.trustStoreName = CellDefaultTrustStore
+com.ibm.ssl.configURLLoadedFrom = security.xml
+hostname = localhost
+com.ibm.ssl.trustStorePassword = *****
+com.ibm.ssl.keyStoreUseForAcceleration = false
+com.ibm.ssl.trustManager = IbmPKIX|IBMJSSE2
+soReuseAddr = 1
+com.ibm.ssl.validationEnabled = false
+com.ibm.ssl.trustStoreInitializeAtStartup = false
+com.ibm.ssl.keyManager = IbmX509|IBMJSSE2
+com.ibm.ssl.keyStoreFileBased = true
+endPointName = IPC_CONNECTOR_ADDRESS
+com.ibm.ssl.keyStoreType = PKCS12
+com.ibm.ssl.trustStoreFileBased = true
+com.ibm.ssl.trustStoreCreateCMSStash = false
+com.ibm.ssl.trustStoreScope = (cell):TWAS1Cell01
+com.ibm.ssl.trustStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/trust.p12
+com.ibm.ssl.keyStoreProvider = IBMJCE
+com.ibm.ssl.daysBeforeExpireWarning = 60
+com.ibm.ssl.clientAuthentication = false
+com.ibm.ssl.keyStore = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Cell01/nodes/Node01/key.p12
+port = 9629
+com.ibm.ssl.skipHostnameVerificationForHosts = 
+com.ibm.ssl.trustStoreUseForAcceleration = false
+com.ibm.ssl.trustStoreReadOnly = false
+com.ibm.ssl.keyStoreScope = (cell):TWAS1Cell01:(node):Node01
+com.ibm.ssl.tokenEnabled = false
+com.ibm.ssl.keyStoreName = NodeDefaultKeyStore
+newConnectionBufferSize = 8192
+com.ibm.ssl.keyStorePassword = *****
+com.ibm.ssl.keyStoreInitializeAtStartup = false
+inactivityTimeout = 300
+com.ibm.ssl.trustStoreType = PKCS12
+}*** INBOUND ***
+
+Cell Alias: CellDefaultSSLSettings
+NodeGroup Alias(es): {}
+Node Alias: NodeDefaultSSLSettings
+Server Alias: null
+Cluster Alias: null
+EndPoint Alias(es): {}
+Effective Process Alias: NodeDefaultSSLSettings
+Effective Process Scope: node
+
+*** OUTBOUND ***
+
+Cell Alias: CellDefaultSSLSettings
+NodeGroup Alias(es): {}
+Node Alias: NodeDefaultSSLSettings
+Server Alias: null
+Cluster Alias: null
+EndPoint Alias(es): {}
+Effective Process Alias: NodeDefaultSSLSettings
+Effective Process Scope: node:java.lang.Exception: IOException receiving data during SSL Handshake.  One possible cause is that authenication may not be configured correctly
++Data for directive [defaultsslcomponentimpl] obtained.:
+==> Dump complete for com.ibm.ws.ssl.core.SSLDiagnosticModule :Thu May 14 08:28:34 PDT 2026

@@ -1,0 +1,8 @@
+Application server environment to create: Custom
+Location: /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Disk space required: 10 MB
+Profile name: AppSrv01
+Make this profile the default: False
+Node name: Node01
+Host name: TWAS1
+Federate to deployment manager: localhost:8879

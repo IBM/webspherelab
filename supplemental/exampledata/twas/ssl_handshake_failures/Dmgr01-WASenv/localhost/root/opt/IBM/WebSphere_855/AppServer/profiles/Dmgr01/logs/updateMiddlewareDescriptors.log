@@ -1,0 +1,54 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[-washome, /opt/IBM/WebSphere_855/AppServer]"
+INFO: server type= application_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= jboss_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= weblogic_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= apache_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= tomcat_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= liberty_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= apacheWebServerRuntime
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= phpRuntime
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= wasceRuntime
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+INFO: server type= customhttp_server
+Version default
+Name:  startTimeOutValue
+timeOutExist =1 
+
+saving workspace
+finished.

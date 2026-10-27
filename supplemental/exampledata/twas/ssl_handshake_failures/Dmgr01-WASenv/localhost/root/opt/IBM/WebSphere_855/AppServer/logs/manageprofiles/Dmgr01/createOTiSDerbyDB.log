@@ -1,0 +1,6 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+*sys-package-mgr*: processing new jar, '/opt/IBM/WebSphere_855/AppServer/derby/lib/derby.jar'
+*sys-package-mgr*: processing new jar, '/opt/IBM/WebSphere_855/AppServer/derby/lib/derbytools.jar'
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[-Dmgr01, /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01, /opt/IBM/WebSphere_855/AppServer/profileTemplates/cell/dmgr]"
+Database Name = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/OTiS
+Creating Derby Database

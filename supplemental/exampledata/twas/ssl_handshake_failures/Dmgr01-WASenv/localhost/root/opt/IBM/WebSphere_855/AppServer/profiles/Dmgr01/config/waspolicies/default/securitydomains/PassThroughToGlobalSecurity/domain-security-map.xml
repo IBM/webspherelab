@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<security:SecurityDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:security="http://www.ibm.com/websphere/appserver/schemas/5.0/security.xmi" xmi:id="SecurityDomain_1778771909804" name="PassThroughToGlobalSecurity">
+  <members xmi:id="SecurityDomainMember_1778771909842" resourceName="cells/TWAS1Cell01/buses/DefaultBus" resourceType="SIBus"/>
+</security:SecurityDomain>

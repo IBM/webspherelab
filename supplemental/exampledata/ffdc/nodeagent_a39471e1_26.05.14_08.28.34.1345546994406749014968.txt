@@ -1,0 +1,124 @@
+[5/14/26 8:28:34:134 PDT]     FFDC Exception:javax.net.ssl.SSLHandshakeException SourceId:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl.createSSLSocket ProbeId:222 Reporter:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl@8126207
+javax.net.ssl.SSLHandshakeException: Received fatal alert: protocol_version
+	at com.ibm.jsse2.f.a(f.java:10)
+	at com.ibm.jsse2.f.a(f.java:35)
+	at com.ibm.jsse2.bf.a(bf.java:86)
+	at com.ibm.jsse2.f$c.consume(f$c.java:9)
+	at com.ibm.jsse2.bf.a(bf.java:127)
+	at com.ibm.jsse2.a4.a(a4.java:35)
+	at com.ibm.jsse2.bo.b(bo.java:241)
+	at com.ibm.jsse2.bo.f(bo.java:491)
+	at com.ibm.jsse2.bo.a(bo.java:132)
+	at com.ibm.jsse2.bo.startHandshake(bo.java:539)
+	at com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl.performSSLHandshakeAndGetSession(WSSSLClientSocketFactoryImpl.java:461)
+	at com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl.createSSLSocket(WSSSLClientSocketFactoryImpl.java:208)
+	at com.ibm.ws.orbimpl.transport.WSSSLTransportConnection.createSocket(WSSSLTransportConnection.java:236)
+	at com.ibm.ws.orbimpl.transport.WSSSLTransportConnection.createSocket(WSSSLTransportConnection.java:315)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:375)
+	at com.ibm.ws.orbimpl.transport.WSTransport$1.run(WSTransport.java:503)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:118)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:500)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.ClientDelegate.locate(ClientDelegate.java:1740)
+	at com.ibm.rmi.corba.ClientDelegate._createRequest(ClientDelegate.java:1765)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1050)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1129)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1514)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1028)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1480)
+	at com.ibm.rmi.corba.ClientDelegate.request(ClientDelegate.java:1658)
+	at com.ibm.CORBA.iiop.ClientDelegate.request(ClientDelegate.java:1436)
+	at org.omg.CORBA.portable.ObjectImpl._request(ObjectImpl.java:458)
+	at com.ibm.WsnOptimizedNaming._NamingContextStub.resolve_complete_info(_NamingContextStub.java:490)
+	at com.ibm.ws.naming.jndicos.CNContextImpl$2.run(CNContextImpl.java:2964)
+	at com.ibm.ws.naming.jndicos.CNContextImpl$2.run(CNContextImpl.java:2960)
+	at com.ibm.ws.naming.util.CommonHelpers.retry(CommonHelpers.java:871)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.cosResolve(CNContextImpl.java:2958)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.doLookup(CNContextImpl.java:1824)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.doLookup(CNContextImpl.java:1783)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.lookupExt(CNContextImpl.java:1436)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.lookup(CNContextImpl.java:618)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:165)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:179)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:161)
+	at javax.naming.InitialContext.lookup(InitialContext.java:428)
+	at com.ibm.websphere.management.remote.WsProvider.newJMXConnector(WsProvider.java:147)
+	at javax.management.remote.JMXConnectorFactory.newJMXConnector(JMXConnectorFactory.java:382)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:280)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:288)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:182)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.<init>(JSR160RMIConnectorClient.java:172)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:826)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1115)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1255)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl@8126207
+com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl::CLASS_NAME:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl
+com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl::ENABLED_CIPHERS:null
+com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl::SUPPORTED_CIPHERS BEGIN:[Ljava.lang.String;@91a55ded
+ [
+ TLS_AES_256_GCM_SHA384
+ TLS_AES_128_GCM_SHA256
+ TLS_CHACHA20_POLY1305_SHA256
+ SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+ SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+ SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+ SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ SSL_DHE_RSA_WITH_AES_256_GCM_SHA384
+ SSL_DHE_DSS_WITH_AES_256_GCM_SHA384
+ SSL_DHE_RSA_WITH_AES_128_GCM_SHA256
+ SSL_DHE_DSS_WITH_AES_128_GCM_SHA256
+ SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+ SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+ SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+ SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+ SSL_DHE_RSA_WITH_AES_256_CBC_SHA256
+ SSL_DHE_DSS_WITH_AES_256_CBC_SHA256
+ SSL_DHE_RSA_WITH_AES_128_CBC_SHA256
+ SSL_DHE_DSS_WITH_AES_128_CBC_SHA256
+ SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+ SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA
+ SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+ SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA
+ SSL_DHE_RSA_WITH_AES_256_CBC_SHA
+ SSL_DHE_DSS_WITH_AES_256_CBC_SHA
+ SSL_DHE_RSA_WITH_AES_128_CBC_SHA
+ SSL_DHE_DSS_WITH_AES_128_CBC_SHA
+ SSL_RSA_WITH_AES_256_GCM_SHA384
+ SSL_RSA_WITH_AES_128_GCM_SHA256
+ SSL_RSA_WITH_AES_256_CBC_SHA256
+ SSL_RSA_WITH_AES_128_CBC_SHA256
+ SSL_RSA_WITH_AES_256_CBC_SHA
+ SSL_RSA_WITH_AES_128_CBC_SHA
+ TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+ TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+ TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+ ]
+ END:[Ljava.lang.String;@91a55ded
+
+com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl::sslHandshakeReadTimeout:10000
+com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl::sslHandshakeReadTimeoutInitialized:true
+END:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl@8126207
+
+CapturedDataElements end

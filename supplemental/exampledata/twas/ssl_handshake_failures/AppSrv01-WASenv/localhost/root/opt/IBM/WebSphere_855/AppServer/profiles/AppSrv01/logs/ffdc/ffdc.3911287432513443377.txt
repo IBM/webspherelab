@@ -1,0 +1,220 @@
+[10/23/26 7:50:59:254 PDT]     FFDC Exception:org.omg.CORBA.TRANSIENT SourceId:com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext ProbeId:1423 Reporter:java.lang.Class@fdcf5509
+org.omg.CORBA.TRANSIENT: java.net.ConnectException: Connection refused (Connection refused):host=127.0.0.1,port=2809  vmcid: IBM  minor code: E02  completed: No
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:465)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:437)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.Corbaloc.locateUsingINS(Corbaloc.java:302)
+	at com.ibm.rmi.corba.Corbaloc.resolve(Corbaloc.java:370)
+	at com.ibm.rmi.corba.ORB.objectURLToObject(ORB.java:4138)
+	at com.ibm.CORBA.iiop.ORB.objectURLToObject(ORB.java:3380)
+	at com.ibm.rmi.corba.ORB.string_to_object(ORB.java:4016)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.stringToObject(WsnInitCtxFactory.java:1667)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext(WsnInitCtxFactory.java:1360)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootContextFromServer(WsnInitCtxFactory.java:1110)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootJndiContext(WsnInitCtxFactory.java:952)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getInitialContextInternal(WsnInitCtxFactory.java:627)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContext(WsnInitCtx.java:128)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContextIfNull(WsnInitCtx.java:765)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:164)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:179)
+	at javax.naming.InitialContext.lookup(InitialContext.java:428)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:318)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:237)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.<init>(RMIConnectorClient.java:145)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:673)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.connector.ConnectorHelper.tryProtocol(ConnectorHelper.java:665)
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:610)
+	at com.ibm.ws.management.tools.WsServerStop.runTool(WsServerStop.java:373)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerStop.main(WsServerStop.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:506)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:248)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:230)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:405)
+	at java.net.Socket.connect(Socket.java:628)
+	at com.ibm.ws.orbimpl.transport.WSTCPTransportConnection.createSocket(WSTCPTransportConnection.java:326)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:373)
+	... 63 more
+
+CapturedDataElements begin
+arg0 BEGIN:com.ibm.ws.naming.util.WsnInitCtxFactory@690a9ae4
+com.ibm.ws.naming.util.WsnInitCtxFactory::_tc BEGIN:com.ibm.ejs.ras.TraceComponent@88446ede
+ com.ibm.ejs.ras.TraceElement::ivLevel:10
+ com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.naming.util.WsnInitCtxFactory
+ com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+ com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+ com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+ com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+ com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.naming.util.WsnMessages
+ com.ibm.ejs.ras.TraceComponent::ivLogger:null
+ com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+ com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+ END:com.ibm.ejs.ras.TraceComponent@88446ede
+
+com.ibm.ws.naming.util.WsnInitCtxFactory::CLASS_NAME:com.ibm.ws.naming.util.WsnInitCtxFactory
+com.ibm.ws.naming.util.WsnInitCtxFactory::_libertyNameService:false
+com.ibm.ws.naming.util.WsnInitCtxFactory::SERVER_ROOT_CACHE_LOOKUP_NAME:SERVER_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::NODE_ROOT_CACHE_LOOKUP_NAME:NODE_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::CELL_ROOT_CACHE_LOOKUP_NAME:CELL_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::CELL_PERSISTENT_ROOT_CACHE_LOOKUP_NAME:CELL_PERSISTENT_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::APPLICATIONS_ROOT_CACHE_LOOKUP_NAME:APPLICATIONS_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::TREE_ROOT_CACHE_LOOKUP_NAME:TREE_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::TREE_ROOT_PRIMARY_BINDING_NAME:TREE_ROOT_PRIMARY_BINDING
+com.ibm.ws.naming.util.WsnInitCtxFactory::LEGACY_ROOT_CACHE_LOOKUP_NAME:LEGACY_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::RIR_DEFAULT_ROOT_CACHE_LOOKUP_NAME:RIR_DEFAULT_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::IIOP_DEFAULT_ROOT_CACHE_LOOKUP_NAME:IIOP_DEFAULT_ROOT
+com.ibm.ws.naming.util.WsnInitCtxFactory::DEFAULT_PROVIDER_URL:corbaloc:iiop:localhost
+com.ibm.ws.naming.util.WsnInitCtxFactory::URL_SCHEME_CORBALOC:corbaloc
+com.ibm.ws.naming.util.WsnInitCtxFactory::URL_SCHEME_CORBANAME:corbaname
+com.ibm.ws.naming.util.WsnInitCtxFactory::URL_SCHEME_IIOP:iiop
+com.ibm.ws.naming.util.WsnInitCtxFactory::CONTEXT_KEY:TargetContext=
+com.ibm.ws.naming.util.WsnInitCtxFactory::_securityAuthentication BEGIN:com.ibm.ws.naming.util.SecurityAuthentication@a8723ad6
+ java.lang.Enum::name:NONE
+ java.lang.Enum::ordinal:2
+ com.ibm.ws.naming.util.SecurityAuthentication::SIMPLE BEGIN:com.ibm.ws.naming.util.SecurityAuthentication@db6afd09
+  java.lang.Enum::name:SIMPLE
+  java.lang.Enum::ordinal:0
+  com.ibm.ws.naming.util.SecurityAuthentication::SIMPLE:com.ibm.ws.naming.util.SecurityAuthentication@db6afd09
+  com.ibm.ws.naming.util.SecurityAuthentication::STRONG BEGIN:com.ibm.ws.naming.util.SecurityAuthentication@d46c380f
+   java.lang.Enum::name:STRONG
+   java.lang.Enum::ordinal:1
+   com.ibm.ws.naming.util.SecurityAuthentication::SIMPLE:com.ibm.ws.naming.util.SecurityAuthentication@db6afd09
+   com.ibm.ws.naming.util.SecurityAuthentication::STRONG:com.ibm.ws.naming.util.SecurityAuthentication@d46c380f
+   com.ibm.ws.naming.util.SecurityAuthentication::NONE:com.ibm.ws.naming.util.SecurityAuthentication@a8723ad6
+    com.ibm.ws.naming.util.SecurityAuthentication::_tc:com.ibm.ejs.ras.TraceComponent@54c449a7 depth limit reached
+   com.ibm.ws.naming.util.SecurityAuthentication::CLASS_NAME:com.ibm.ws.naming.util.SecurityAuthentication
+   com.ibm.ws.naming.util.SecurityAuthentication::_propertyValue:strong
+    com.ibm.ws.naming.util.SecurityAuthentication::$VALUES:[Lcom.ibm.ws.naming.util.SecurityAuthentication;@3ada56ca depth limit reached
+   END:com.ibm.ws.naming.util.SecurityAuthentication@d46c380f
+
+  com.ibm.ws.naming.util.SecurityAuthentication::NONE:com.ibm.ws.naming.util.SecurityAuthentication@a8723ad6
+  com.ibm.ws.naming.util.SecurityAuthentication::_tc:com.ibm.ejs.ras.TraceComponent@54c449a7
+  com.ibm.ws.naming.util.SecurityAuthentication::CLASS_NAME:com.ibm.ws.naming.util.SecurityAuthentication
+  com.ibm.ws.naming.util.SecurityAuthentication::_propertyValue:simple
+  com.ibm.ws.naming.util.SecurityAuthentication::$VALUES:[Lcom.ibm.ws.naming.util.SecurityAuthentication;@3ada56ca
+  END:com.ibm.ws.naming.util.SecurityAuthentication@db6afd09
+
+ com.ibm.ws.naming.util.SecurityAuthentication::STRONG:com.ibm.ws.naming.util.SecurityAuthentication@d46c380f
+ com.ibm.ws.naming.util.SecurityAuthentication::NONE:com.ibm.ws.naming.util.SecurityAuthentication@a8723ad6
+ com.ibm.ws.naming.util.SecurityAuthentication::_tc:com.ibm.ejs.ras.TraceComponent@54c449a7
+ com.ibm.ws.naming.util.SecurityAuthentication::CLASS_NAME:com.ibm.ws.naming.util.SecurityAuthentication
+ com.ibm.ws.naming.util.SecurityAuthentication::_propertyValue:none
+ com.ibm.ws.naming.util.SecurityAuthentication::$VALUES:[Lcom.ibm.ws.naming.util.SecurityAuthentication;@3ada56ca
+ END:com.ibm.ws.naming.util.SecurityAuthentication@a8723ad6
+
+com.ibm.ws.naming.util.WsnInitCtxFactory::_principal:null
+com.ibm.ws.naming.util.WsnInitCtxFactory::_credentials:null
+com.ibm.ws.naming.util.WsnInitCtxFactory::_jndiOnly:false
+com.ibm.ws.naming.util.WsnInitCtxFactory::_securityEnabled:false
+com.ibm.ws.naming.util.WsnInitCtxFactory::_nameParser BEGIN:com.ibm.ws.naming.util.WsnNameParser@bd62e9e1
+ com.ibm.ws.naming.util.WsnNameParser::serialVersionUID:1
+ com.ibm.ws.naming.util.WsnNameParser::_tc BEGIN:com.ibm.ejs.ras.TraceComponent@ad178246
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.naming.util.WsnNameParser
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.naming.util.WsnMessages
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@ad178246
+
+ com.ibm.ws.naming.util.WsnNameParser::CLASS_NAME:com.ibm.ws.naming.util.WsnNameParser
+ com.ibm.ws.naming.util.WsnNameParser::_debug:false
+ com.ibm.ws.naming.util.WsnNameParser::_insNameParser BEGIN:com.ibm.ws.naming.util.WsnNameParser@310081f3
+  com.ibm.ws.naming.util.WsnNameParser::serialVersionUID:1
+  com.ibm.ws.naming.util.WsnNameParser::_tc:com.ibm.ejs.ras.TraceComponent@ad178246
+  com.ibm.ws.naming.util.WsnNameParser::CLASS_NAME:com.ibm.ws.naming.util.WsnNameParser
+  com.ibm.ws.naming.util.WsnNameParser::_debug:false
+  com.ibm.ws.naming.util.WsnNameParser::_insNameParser:com.ibm.ws.naming.util.WsnNameParser@310081f3
+  com.ibm.ws.naming.util.WsnNameParser::_jndiNameParser:com.ibm.ws.naming.util.WsnNameParser@bd62e9e1
+  com.ibm.ws.naming.util.WsnNameParser::_env BEGIN:java.util.Hashtable@7f668fdd
+   {
+   key:com.ibm.websphere.naming.name.syntax
+   value:ins
+   }
+   END:java.util.Hashtable@7f668fdd
+
+  END:com.ibm.ws.naming.util.WsnNameParser@310081f3
+
+ com.ibm.ws.naming.util.WsnNameParser::_jndiNameParser:com.ibm.ws.naming.util.WsnNameParser@bd62e9e1
+ com.ibm.ws.naming.util.WsnNameParser::_env BEGIN:java.util.Hashtable@6ddcbfc5
+  {
+  key:com.ibm.websphere.naming.name.syntax
+  value:jndi
+  }
+  END:java.util.Hashtable@6ddcbfc5
+
+ END:com.ibm.ws.naming.util.WsnNameParser@bd62e9e1
+
+com.ibm.ws.naming.util.WsnInitCtxFactory::_rootParentCtxIDs:null
+com.ibm.ws.naming.util.WsnInitCtxFactory::_rootCtxID:null
+com.ibm.ws.naming.util.WsnInitCtxFactory::_rootFullPrimaryNameForCaching:null
+com.ibm.ws.naming.util.WsnInitCtxFactory::_rootCacheBindingNames BEGIN:[Ljava.lang.String;@d41e0744
+ [
+ ]
+ END:[Ljava.lang.String;@d41e0744
+
+com.ibm.ws.naming.util.WsnInitCtxFactory::$assertionsDisabled:true
+END:com.ibm.ws.naming.util.WsnInitCtxFactory@690a9ae4
+
+arg1:null
+CapturedDataElements end

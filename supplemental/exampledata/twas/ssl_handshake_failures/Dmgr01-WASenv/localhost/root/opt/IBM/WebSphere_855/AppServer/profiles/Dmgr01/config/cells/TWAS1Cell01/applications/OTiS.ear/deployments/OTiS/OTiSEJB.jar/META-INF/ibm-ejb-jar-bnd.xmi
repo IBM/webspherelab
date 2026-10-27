@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.ejs.models.base.bindings.ejbbnd="ejbbnd.xmi" xmlns:org.eclipse.jst.j2ee.ejb="ejb.xmi" xmi:id="EJBJarBinding_1155676768218">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1155676768218" jndiName="ejb/com/ibm/otis/ejbs/TaskManagerHome">
+    <enterpriseBean xsi:type="org.eclipse.jst.j2ee.ejb:Session" href="META-INF/ejb-jar.xml#TaskManager"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1158331325390" jndiName="ejb/com/ibm/otis/ejbs/TaskManagerHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EJBLocalRef_1158236513125"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1155676768219" jndiName="ejb/com/ibm/otis/ejbs/GroupManagerHome">
+    <enterpriseBean xsi:type="org.eclipse.jst.j2ee.ejb:Session" href="META-INF/ejb-jar.xml#GroupManager"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1158331336843" jndiName="ejb/com/ibm/otis/ejbs/GroupManagerHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EJBLocalRef_1158236513126"/>
+    </ejbRefBindings>
+  </ejbBindings>
+</com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding>

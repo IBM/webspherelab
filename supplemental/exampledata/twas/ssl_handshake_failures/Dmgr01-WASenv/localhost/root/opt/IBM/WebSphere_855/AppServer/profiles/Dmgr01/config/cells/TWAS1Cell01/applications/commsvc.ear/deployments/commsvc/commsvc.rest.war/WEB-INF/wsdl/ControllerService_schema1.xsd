@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema elementFormDefault="qualified" targetNamespace="http://impl.webservice.commsvc.ws.ibm.com/" version="1.0" xmlns:ns1="http://www.w3.org/2005/08/addressing" xmlns:tns="http://impl.webservice.commsvc.ws.ibm.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="http://www.w3.org/2005/08/addressing/ws-addr.xsd"/>
+
+  <xs:element name="CTIControl" type="tns:CTIControlException"/>
+
+  <xs:element name="CallStatus">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="addressOfRecord" type="xs:string"/>
+        <xs:element name="callStatus" type="tns:CallState"/>
+        <xs:element name="callerAddressOfRecord" type="xs:string"/>
+        <xs:element name="calleeAddressOfRecord" type="xs:string"/>
+        <xs:element name="callId" type="xs:string"/>
+        <xs:element name="callFailureReason" type="xs:string"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CommWsRequest">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="addressOfRecord" type="xs:string"/>
+        <xs:element name="peerAddressOfRecord" type="xs:string"/>
+        <xs:element name="notifyCallback" type="xs:string"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="closeSession" type="tns:closeSession"/>
+
+  <xs:element name="closeSessionResponse" type="tns:closeSessionResponse"/>
+
+  <xs:element name="endCall" type="tns:endCall"/>
+
+  <xs:element name="endCallResponse" type="tns:endCallResponse"/>
+
+  <xs:element name="makeCall" type="tns:makeCall"/>
+
+  <xs:element name="makeCallResponse" type="tns:makeCallResponse"/>
+
+  <xs:element name="openSession" type="tns:openSession"/>
+
+  <xs:element name="openSessionResponse" type="tns:openSessionResponse"/>
+
+  <xs:complexType name="endCall">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="endCallResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="CTIControlException">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="closeSession">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="closeSessionResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="makeCall">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tns:CommWsRequest"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="makeCallResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="openSession">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tns:CommWsRequest"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="openSessionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="ns1:EndpointReference"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="CallState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CALL_STATUS_IDLE"/>
+      <xs:enumeration value="CALL_STATUS_DELIVERED"/>
+      <xs:enumeration value="CALL_STATUS_ORIGINATED"/>
+      <xs:enumeration value="CALL_STATUS_ESTABLISHED"/>
+      <xs:enumeration value="CALL_STATUS_CLEARED"/>
+      <xs:enumeration value="CALL_STATUS_ON_HOLD"/>
+      <xs:enumeration value="CALL_STATUS_FAILED"/>
+      <xs:enumeration value="CALL_STATUS_INITIATED"/>
+      <xs:enumeration value="CALL_STATUS_SESSION_OPEN"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,795 @@
+[5/14/26 8:28:34:145 PDT]     FFDC Exception:org.omg.CORBA.COMM_FAILURE SourceId:com.ibm.ws.orbimpl.transport.WSSSLTransportConnection.createSocket ProbeId:270 Reporter:com.ibm.ws.orbimpl.transport.WSSSLTransportConnection@d205257e
+org.omg.CORBA.COMM_FAILURE: CAUGHT_EXCEPTION_WHILE_CONFIGURING_SSL_CLIENT_SOCKET: JSSL0080E: javax.net.ssl.SSLHandshakeException - The client and server could not negotiate the desired level of security.  Reason: Received fatal alert: protocol_version  vmcid: 0x49421000  minor code: 70  completed: No
+	at com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl.createSSLSocket(WSSSLClientSocketFactoryImpl.java:219)
+	at com.ibm.ws.orbimpl.transport.WSSSLTransportConnection.createSocket(WSSSLTransportConnection.java:236)
+	at com.ibm.ws.orbimpl.transport.WSSSLTransportConnection.createSocket(WSSSLTransportConnection.java:315)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:375)
+	at com.ibm.ws.orbimpl.transport.WSTransport$1.run(WSTransport.java:503)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:118)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:500)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.ClientDelegate.locate(ClientDelegate.java:1740)
+	at com.ibm.rmi.corba.ClientDelegate._createRequest(ClientDelegate.java:1765)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1050)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1129)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1514)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1028)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1480)
+	at com.ibm.rmi.corba.ClientDelegate.request(ClientDelegate.java:1658)
+	at com.ibm.CORBA.iiop.ClientDelegate.request(ClientDelegate.java:1436)
+	at org.omg.CORBA.portable.ObjectImpl._request(ObjectImpl.java:458)
+	at com.ibm.WsnOptimizedNaming._NamingContextStub.resolve_complete_info(_NamingContextStub.java:490)
+	at com.ibm.ws.naming.jndicos.CNContextImpl$2.run(CNContextImpl.java:2964)
+	at com.ibm.ws.naming.jndicos.CNContextImpl$2.run(CNContextImpl.java:2960)
+	at com.ibm.ws.naming.util.CommonHelpers.retry(CommonHelpers.java:871)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.cosResolve(CNContextImpl.java:2958)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.doLookup(CNContextImpl.java:1824)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.doLookup(CNContextImpl.java:1783)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.lookupExt(CNContextImpl.java:1436)
+	at com.ibm.ws.naming.jndicos.CNContextImpl.lookup(CNContextImpl.java:618)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:165)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:179)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:161)
+	at javax.naming.InitialContext.lookup(InitialContext.java:428)
+	at com.ibm.websphere.management.remote.WsProvider.newJMXConnector(WsProvider.java:147)
+	at javax.management.remote.JMXConnectorFactory.newJMXConnector(JMXConnectorFactory.java:382)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:280)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:288)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:182)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.<init>(JSR160RMIConnectorClient.java:172)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:826)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1115)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1255)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.ws.orbimpl.transport.WSSSLTransportConnection@d205257e
+com.ibm.CORBA.transport.TransportConnectionBase::CLASS:com.ibm.CORBA.transport.TransportConnection
+com.ibm.CORBA.transport.TransportConnectionBase::MAX_SOCKET_RETRIES:5
+com.ibm.CORBA.transport.TransportConnectionBase::socket:null
+com.ibm.CORBA.transport.TransportConnectionBase::key BEGIN:com.ibm.ws.orbimpl.transport.SSLConnectionKey@27a0ce0a
+ com.ibm.ws.orbimpl.transport.ConnectionKey::host:localhost
+ com.ibm.ws.orbimpl.transport.ConnectionKey::port:9403
+ com.ibm.ws.orbimpl.transport.SSLConnectionKey::qop:38
+ END:com.ibm.ws.orbimpl.transport.SSLConnectionKey@27a0ce0a
+
+com.ibm.CORBA.transport.TransportConnectionBase::conn BEGIN:com.ibm.rmi.iiop.Connection@15b7b022
+ com.ibm.rmi.iiop.Connection::CLASS:com.ibm.rmi.iiop.Connection
+ com.ibm.rmi.iiop.Connection::NO_RESPONSE_EXPECTED:false
+ com.ibm.rmi.iiop.Connection::RESPONSE_EXPECTED:true
+ com.ibm.rmi.iiop.Connection::END_FRAG:java.lang.Object@66450ee4
+ com.ibm.rmi.iiop.Connection::CANCEL_REQUEST:java.lang.Object@e13d41e7
+ com.ibm.rmi.iiop.Connection::globalTimeCounter BEGIN:java.util.concurrent.atomic.AtomicLong@7a3d73fe
+  java.lang.Number::serialVersionUID:-8742448824652078965
+  java.util.concurrent.atomic.AtomicLong::serialVersionUID:1927816293512124184
+   java.util.concurrent.atomic.AtomicLong::unsafe:sun.misc.Unsafe@dc3cbd27 depth limit reached
+  java.util.concurrent.atomic.AtomicLong::valueOffset:8
+  java.util.concurrent.atomic.AtomicLong::VM_SUPPORTS_LONG_CAS:true
+  java.util.concurrent.atomic.AtomicLong::value:0
+  END:java.util.concurrent.atomic.AtomicLong@7a3d73fe
+
+ com.ibm.rmi.iiop.Connection::localPort:-1
+ com.ibm.rmi.iiop.Connection::remotePort:-1
+ com.ibm.rmi.iiop.Connection::remoteHost:null
+ com.ibm.rmi.iiop.Connection::localHost:null
+ com.ibm.rmi.iiop.Connection::inWriteBlock:false
+ com.ibm.rmi.iiop.Connection::stuckInWriteBlock:false
+ com.ibm.rmi.iiop.Connection::writeTimeoutOccured:false
+ com.ibm.rmi.iiop.Connection::tokenAddedInRemovelList BEGIN:java.util.concurrent.atomic.AtomicBoolean@7bfc8677
+  java.util.concurrent.atomic.AtomicBoolean::serialVersionUID:4654671469794556979
+  java.util.concurrent.atomic.AtomicBoolean::unsafe:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.atomic.AtomicBoolean::valueOffset:8
+  java.util.concurrent.atomic.AtomicBoolean::value:0
+  END:java.util.concurrent.atomic.AtomicBoolean@7bfc8677
+
+ com.ibm.rmi.iiop.Connection::orb BEGIN:com.ibm.CORBA.iiop.ORB@76345108
+  org.omg.CORBA.ORB::CLASS:org.omg.CORBA.ORB
+  org.omg.CORBA.ORB::ORBClassKey:org.omg.CORBA.ORBClass
+  org.omg.CORBA.ORB::ORBSingletonClassKey:org.omg.CORBA.ORBSingletonClass
+  org.omg.CORBA.ORB::defaultORB:com.ibm.CORBA.iiop.ORB
+  org.omg.CORBA.ORB::defaultORBSingleton:com.ibm.rmi.corba.ORBSingleton
+   org.omg.CORBA.ORB::singleton:com.ibm.rmi.corba.ORBSingleton@3f1f7e14 depth limit reached
+   com.ibm.rmi.ORB::interop:com.ibm.rmi.util.Interop@e063617a depth limit reached
+  com.ibm.rmi.corba.ORB::CLASS:com.ibm.rmi.corba.ORB
+  com.ibm.rmi.corba.ORB::LSD_PLUGIN:com.ibm.CORBA.iiop.LSDPlugin
+  com.ibm.rmi.corba.ORB::PMI_PLUGIN:com.ibm.CORBA.iiop.PMIPlugin
+  com.ibm.rmi.corba.ORB::ASYNCH_PLUGIN:com.ibm.CORBA.iiop.AsynchronousServantPlugin
+  com.ibm.rmi.corba.ORB::WLM_PLUGIN:com.ibm.CORBA.iiop.WLMPlugin
+  com.ibm.rmi.corba.ORB::J2EE_CONTAINER_PLUGIN:com.ibm.CORBA.iiop.J2EEContainerPlugin
+  com.ibm.rmi.corba.ORB::THREADPOOL_PLUGIN:com.ibm.CORBA.iiop.ThreadPool
+  com.ibm.rmi.corba.ORB::TRANSPORT_PLUGIN:com.ibm.CORBA.transport.Transport
+  com.ibm.rmi.corba.ORB::READERPOOL_PLUGIN:com.ibm.CORBA.transport.ReaderPool
+  com.ibm.rmi.corba.ORB::IIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.IIOPChannelPlugin
+  com.ibm.rmi.corba.ORB::GIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.giop.GIOPChannelPlugin
+   com.ibm.rmi.corba.ORB::FIRST_PREREQ_PLUGINS:[Ljava.lang.String;@72860e57 depth limit reached
+   com.ibm.rmi.corba.ORB::SECOND_PREREQ_PLUGINS:[Ljava.lang.String;@802f940e depth limit reached
+   com.ibm.rmi.corba.ORB::_dynamicRequests:java.util.Vector@502104a9 depth limit reached
+   com.ibm.rmi.corba.ORB::_svResponseReceived:com.ibm.rmi.corba.SynchVariable@74d7e46f depth limit reached
+  com.ibm.rmi.corba.ORB::ORBInitialHost:TWAS1
+  com.ibm.rmi.corba.ORB::ORBInitialPort:2811
+  com.ibm.rmi.corba.ORB::ORBServerHost:TWAS1
+  com.ibm.rmi.corba.ORB::ORBServerPort:9900
+  com.ibm.rmi.corba.ORB::appletHost:null
+  com.ibm.rmi.corba.ORB::appletCodeBase:null
+  com.ibm.rmi.corba.ORB::charEncoding:83951617
+  com.ibm.rmi.corba.ORB::wcharEncoding:65792
+  com.ibm.rmi.corba.ORB::wcharDefault:0
+  com.ibm.rmi.corba.ORB::serverId:298002686
+  com.ibm.rmi.corba.ORB::orbId:null
+  com.ibm.rmi.corba.ORB::noProprietaryActivation:false
+   com.ibm.rmi.corba.ORB::arguments:[Ljava.lang.String;@199ac67 depth limit reached
+   com.ibm.rmi.corba.ORB::initProps:java.util.Properties@1c723931 depth limit reached
+  com.ibm.rmi.corba.ORB::initApplet:null
+  com.ibm.rmi.corba.ORB::bufferSize:2048
+  com.ibm.rmi.corba.ORB::fragmentSize:4096
+  com.ibm.rmi.corba.ORB::largeDataBufferSize:4096
+  com.ibm.rmi.corba.ORB::outputBufferListSize:100
+  com.ibm.rmi.corba.ORB::outputLargeDataBufferListSize:20
+  com.ibm.rmi.corba.ORB::useLocateRequest:true
+  com.ibm.rmi.corba.ORB::queueDepth:0
+  com.ibm.rmi.corba.ORB::proxyStubs:0
+  com.ibm.rmi.corba.ORB::alwaysUseOMG4796:false
+  com.ibm.rmi.corba.ORB::useOMG5689:true
+  com.ibm.rmi.corba.ORB::allowUserInterrupt:false
+  com.ibm.rmi.corba.ORB::enableWCharSend:false
+  com.ibm.rmi.corba.ORB::enableWCharReceive:false
+   com.ibm.rmi.corba.ORB::pluginRegistry:com.ibm.rmi.corba.PluginRegistry@b5245e01 depth limit reached
+   com.ibm.rmi.corba.ORB::subcontractRegistry:com.ibm.rmi.SubcontractRegistry@5b2e114b depth limit reached
+   com.ibm.rmi.corba.ORB::interceptorManager:com.ibm.rmi.pi.InterceptorManager@1f4e9d41 depth limit reached
+   com.ibm.rmi.corba.ORB::objectResolver:com.ibm.ejs.oa.EJSRootOAImpl@5910c228 depth limit reached
+  com.ibm.rmi.corba.ORB::defaultInitialServicesPort:2809
+  com.ibm.rmi.corba.ORB::debug:false
+  com.ibm.rmi.corba.ORB::isRunningInApplet:false
+  com.ibm.rmi.corba.ORB::shutdownObj:java.lang.Object@8b5cb6bb
+   com.ibm.rmi.corba.ORB::initialReferenceClient:com.ibm.rmi.corba.InitialReferenceClient@6e3564d4 depth limit reached
+   com.ibm.rmi.corba.ORB::typeCodeMap:java.util.concurrent.ConcurrentHashMap@8e6f8130 depth limit reached
+  com.ibm.rmi.corba.ORB::savedId:null
+  com.ibm.rmi.corba.ORB::savedCode:null
+   com.ibm.rmi.corba.ORB::valueFactoryCache:java.util.concurrent.ConcurrentHashMap@c91698d1 depth limit reached
+  com.ibm.rmi.corba.ORB::tpMaxSize:2147483647
+  com.ibm.rmi.corba.ORB::tpMinSize:1
+  com.ibm.rmi.corba.ORB::tpTimeOut:-1
+  com.ibm.rmi.corba.ORB::tpIsGrowable:false
+  com.ibm.rmi.corba.ORB::requestRetriesCount:1
+  com.ibm.rmi.corba.ORB::requestRetriesDelay:0
+  com.ibm.rmi.corba.ORB::requestTimeout:180
+  com.ibm.rmi.corba.ORB::locateRequestTimeout:180
+  com.ibm.rmi.corba.ORB::fragmentTimeout:300
+  com.ibm.rmi.corba.ORB::connectTimeout:10
+  com.ibm.rmi.corba.ORB::socketWriteTimeout:0
+  com.ibm.rmi.corba.ORB::serverSocketLingerTime:0
+  com.ibm.rmi.corba.ORB::clientSocketLingerTime:0
+  com.ibm.rmi.corba.ORB::socketTimer:null
+  com.ibm.rmi.corba.ORB::initialReadTimeOut:10
+  com.ibm.rmi.corba.ORB::maxRetryInitialReadTimeout:0
+  com.ibm.rmi.corba.ORB::clientCallback:false
+  com.ibm.rmi.corba.ORB::noLocalInterceptors:false
+  com.ibm.rmi.corba.ORB::cbSupported:true
+  com.ibm.rmi.corba.ORB::usingDefaultLocalHost:false
+  com.ibm.rmi.corba.ORB::usingDefaultListenerPort:false
+  com.ibm.rmi.corba.ORB::usingEndpointHost:false
+  com.ibm.rmi.corba.ORB::usingEndpointPort:false
+  com.ibm.rmi.corba.ORB::codebaseURLEnabled:false
+  com.ibm.rmi.corba.ORB::noLocalCopies:true
+  com.ibm.rmi.corba.ORB::serverKeepAlive:false
+  com.ibm.rmi.corba.ORB::useSchema:false
+  com.ibm.rmi.corba.ORB::useVarIntEncodoingforWStrings:true
+  com.ibm.rmi.corba.ORB::alwaysSendConnectionContexts:false
+  com.ibm.rmi.corba.ORB::suppressDefaultWriteObjectException:false
+   com.ibm.rmi.corba.ORB::sendConnectionContextsMap:java.util.HashMap@a236d71b depth limit reached
+  com.ibm.rmi.corba.ORB::connectionMultiplicity:20
+  com.ibm.rmi.corba.ORB::highWaterMark:240
+  com.ibm.rmi.corba.ORB::lowWaterMark:100
+  com.ibm.rmi.corba.ORB::autonomicMode:true
+  com.ibm.rmi.corba.ORB::DEFAULT_AUTONOMIC_MULTIPLICITY:20
+   com.ibm.rmi.corba.ORB::pmiServer:com.ibm.ws.pmi.server.modules.OrbPerfModule@966324c1 depth limit reached
+   com.ibm.rmi.corba.ORB::lsdPlugin:com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon@404c8089 depth limit reached
+   com.ibm.rmi.corba.ORB::fWLMPlugin:com.ibm.ws.wlm.client.WLMClient@64128883 depth limit reached
+  com.ibm.rmi.corba.ORB::j2EEPlugin:null
+   com.ibm.rmi.corba.ORB::asynchPlugin:com.ibm.ejs.container.AsynchronousServantPluginImpl@aa19fae3 depth limit reached
+  com.ibm.rmi.corba.ORB::checkedPMIPlugin:true
+  com.ibm.rmi.corba.ORB::checkedLSDPlugin:true
+  com.ibm.rmi.corba.ORB::checkedWLMPlugin:true
+  com.ibm.rmi.corba.ORB::checkedJ2EEPlugin:false
+  com.ibm.rmi.corba.ORB::checkedAsynchPlugin:true
+  com.ibm.rmi.corba.ORB::bufferPool:null
+  com.ibm.rmi.corba.ORB::largeDataBufferPool:null
+  com.ibm.rmi.corba.ORB::addressingDisposition:0
+  com.ibm.rmi.corba.ORB::servantOld:null
+  com.ibm.rmi.corba.ORB::servantNew:null
+  com.ibm.rmi.corba.ORB::disconnectedDelegate:null
+  com.ibm.rmi.corba.ORB::isSINOClient:true
+  com.ibm.rmi.corba.ORB::maxGIOPMinor:2
+  com.ibm.rmi.corba.ORB::extendedVersionId:17
+  com.ibm.rmi.corba.ORB::partnerVersionCtx:null
+   com.ibm.rmi.corba.ORB::transportPolicy:com.ibm.rmi.corba.TransportPolicy@18de0b0 depth limit reached
+   com.ibm.rmi.corba.ORB::workQueueUsePolicy:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@2d86cf5a depth limit reached
+  com.ibm.rmi.corba.ORB::traceBuffer:null
+   com.ibm.rmi.corba.ORB::nativeCodeset:com.ibm.rmi.CodeSetComponentInfo@850abc09 depth limit reached
+  com.ibm.rmi.corba.ORB::rootPOA:null
+  com.ibm.rmi.corba.ORB::ORBRasInitialized:true
+   com.ibm.rmi.corba.ORB::propList:com.ibm.rmi.util.SourcedProperties@fbbff76b depth limit reached
+   com.ibm.rmi.corba.ORB::propManagers:java.util.HashMap@a0bc216d depth limit reached
+   com.ibm.rmi.corba.ORB::orbPropMgr:com.ibm.rmi.corba.BuiltinPropertyManager@1cce8c70 depth limit reached
+   com.ibm.rmi.corba.ORB::fThreadPool:com.ibm.ws.giop.threadpool.WorkUnitHandler@49e065b0 depth limit reached
+  com.ibm.rmi.corba.ORB::fThreadPoolKey:true
+   com.ibm.rmi.corba.ORB::fReaderPool:com.ibm.rmi.transport.ReaderPoolImpl@f9c3c3c4 depth limit reached
+  com.ibm.rmi.corba.ORB::fReaderPoolKey:true
+  com.ibm.rmi.corba.ORB::fTransportKey:true
+  com.ibm.rmi.corba.ORB::INIT_CLASS:org.omg.PortableInterceptor.ORBInitializerClass.
+  com.ibm.rmi.corba.ORB::PLUG_CLASS:com.ibm.CORBA.ORBPluginClass.
+  com.ibm.rmi.corba.ORB::MAX_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_RETRY_COUNT:10
+  com.ibm.rmi.corba.ORB::MAX_RETRY_DELAY:60000
+  com.ibm.rmi.corba.ORB::MAX_REQUEST_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_LOCATE_REQUEST_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_FRAGMENT_TIMEOUT:600
+  com.ibm.rmi.corba.ORB::DEFAULT_FRAGMENT_TIMEOUT:300
+  com.ibm.rmi.corba.ORB::MAX_CONNECT_TIMEOUT:300
+  com.ibm.rmi.corba.ORB::DEFAULT_MULTIPLICITY:1
+  com.ibm.rmi.corba.ORB::DEFAULT_HIGH_WATER_MARK:240
+  com.ibm.rmi.corba.ORB::DEFAULT_LOW_WATER_MARK:100
+  com.ibm.rmi.corba.ORB::MIN_HIGH_WATER_MARK:0
+  com.ibm.rmi.corba.ORB::MIN_SOCKET_QUEUE_DEPTH:50
+  com.ibm.rmi.corba.ORB::debugPropName:com.ibm.CORBA.Debug
+  com.ibm.rmi.corba.ORB::outputPropName:com.ibm.CORBA.Debug.Output
+  com.ibm.rmi.corba.ORB::hpvPropName:com.ibm.CORBA.HidePropertyValues
+  com.ibm.rmi.corba.ORB::componentPropName:com.ibm.CORBA.Debug.Component
+  com.ibm.rmi.corba.ORB::trueValues:(?i)(true||yes|on|enable|enabled)
+  com.ibm.rmi.corba.ORB::falseValues:(?i)(false|no|off|disable|disabled)
+  com.ibm.rmi.corba.ORB::maxObjectURLIterations:2
+   com.ibm.rmi.corba.ORB::policyFactories:java.util.concurrent.ConcurrentHashMap@2bdc6240 depth limit reached
+   com.ibm.rmi.corba.ORB::insRegistry:com.ibm.rmi.corba.INSRegistry@fabcd8eb depth limit reached
+   com.ibm.rmi.corba.ORB::proxyInvoke:java.lang.ThreadLocal@2d8f2390 depth limit reached
+  com.ibm.rmi.corba.ORB::NOTREADY:0
+  com.ibm.rmi.corba.ORB::ACTIVE:1
+  com.ibm.rmi.corba.ORB::INITIALIZED:2
+  com.ibm.rmi.corba.ORB::SHUTDOWN:3
+  com.ibm.rmi.corba.ORB::INACTIVE:4
+  com.ibm.rmi.corba.ORB::DESTROYED:5
+  com.ibm.rmi.corba.ORB::orbState:2
+  com.ibm.rmi.corba.ORB::$assertionsDisabled:true
+  com.ibm.rmi.iiop.ORB::CLASS:com.ibm.rmi.iiop.ORB
+   com.ibm.rmi.iiop.ORB::giopTransport:com.ibm.rmi.iiop.GIOPImpl@e10fdb7 depth limit reached
+  com.ibm.rmi.iiop.ORB::transientServerId:656046393
+   com.ibm.rmi.iiop.ORB::threadGroup:java.lang.ThreadGroup@19f6fa5 depth limit reached
+  com.ibm.rmi.iiop.ORB::orbLoadTime:506934
+  com.ibm.rmi.iiop.ORB::lastTransientServerId:656046393
+  com.ibm.rmi.iiop.ORB::lock_obj:java.lang.Object@981291a4
+  com.ibm.rmi.iiop.ORB::instanceCounter:1
+  com.ibm.rmi.iiop.ORB::thisInstanceNumber:0
+   com.ibm.rmi.iiop.ORB::oldConnectRemoteArgs:[Ljava.lang.Class;@51b5f1db depth limit reached
+  com.ibm.rmi.iiop.ORB::hasOldConnectRemote:false
+   com.ibm.rmi.iiop.ORB::currentCreators:java.util.Hashtable@9c3ab477 depth limit reached
+   com.ibm.rmi.iiop.ORB::exitHook:com.ibm.rmi.iiop.ORB$2$1@cc78b397 depth limit reached
+  com.ibm.rmi.iiop.ORB::streamFormatCtx:null
+  com.ibm.rmi.iiop.ORB::commTraceEnabled:false
+  com.ibm.rmi.iiop.ORB::commTraceVarSet:true
+  com.ibm.CORBA.iiop.ORB::orb_properties:orb.properties
+  END:com.ibm.CORBA.iiop.ORB@76345108
+
+ com.ibm.rmi.iiop.Connection::connectionMultiplicity:20
+ com.ibm.rmi.iiop.Connection::timeStamp:0
+ com.ibm.rmi.iiop.Connection::useCount:0
+ com.ibm.rmi.iiop.Connection::threadLocal BEGIN:java.lang.ThreadLocal@85bd8ab5
+  java.lang.ThreadLocal::threadLocalHashCode:-1740198779
+   java.lang.ThreadLocal::nextHashCode:java.util.concurrent.atomic.AtomicInteger@7a3b80be depth limit reached
+  java.lang.ThreadLocal::HASH_INCREMENT:1640531527
+  END:java.lang.ThreadLocal@85bd8ab5
+
+ com.ibm.rmi.iiop.Connection::countMutex BEGIN:com.ibm.rmi.iiop.Connection$CountLock@e8a55bd1
+  END:com.ibm.rmi.iiop.Connection$CountLock@e8a55bd1
+
+ com.ibm.rmi.iiop.Connection::isServer:false
+ com.ibm.rmi.iiop.Connection::fragments BEGIN:java.util.Hashtable@690c1da
+  {
+  }
+  END:java.util.Hashtable@690c1da
+
+ com.ibm.rmi.iiop.Connection::out_calls BEGIN:java.util.concurrent.ConcurrentHashMap@8d63ef2
+  {
+  }
+  java.util.concurrent.ConcurrentHashMap::serialVersionUID:7249069246763182397
+  java.util.concurrent.ConcurrentHashMap::MAXIMUM_CAPACITY:1073741824
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CAPACITY:16
+  java.util.concurrent.ConcurrentHashMap::MAX_ARRAY_SIZE:2147483639
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CONCURRENCY_LEVEL:16
+  java.util.concurrent.ConcurrentHashMap::LOAD_FACTOR:0.75
+  java.util.concurrent.ConcurrentHashMap::TREEIFY_THRESHOLD:8
+  java.util.concurrent.ConcurrentHashMap::UNTREEIFY_THRESHOLD:6
+  java.util.concurrent.ConcurrentHashMap::MIN_TREEIFY_CAPACITY:64
+  java.util.concurrent.ConcurrentHashMap::MIN_TRANSFER_STRIDE:16
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_BITS:16
+  java.util.concurrent.ConcurrentHashMap::MAX_RESIZERS:65535
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_SHIFT:16
+  java.util.concurrent.ConcurrentHashMap::MOVED:-1
+  java.util.concurrent.ConcurrentHashMap::TREEBIN:-2
+  java.util.concurrent.ConcurrentHashMap::RESERVED:-3
+  java.util.concurrent.ConcurrentHashMap::HASH_BITS:2147483647
+  java.util.concurrent.ConcurrentHashMap::NCPU:8
+   java.util.concurrent.ConcurrentHashMap::serialPersistentFields:[Ljava.io.ObjectStreamField;@49a9749c depth limit reached
+  java.util.concurrent.ConcurrentHashMap::table:null
+  java.util.concurrent.ConcurrentHashMap::nextTable:null
+  java.util.concurrent.ConcurrentHashMap::baseCount:0
+  java.util.concurrent.ConcurrentHashMap::sizeCtl:0
+  java.util.concurrent.ConcurrentHashMap::transferIndex:0
+  java.util.concurrent.ConcurrentHashMap::cellsBusy:0
+  java.util.concurrent.ConcurrentHashMap::counterCells:null
+  java.util.concurrent.ConcurrentHashMap::keySet:null
+  java.util.concurrent.ConcurrentHashMap::values:null
+   java.util.concurrent.ConcurrentHashMap::entrySet:java.util.concurrent.ConcurrentHashMap$EntrySetView@6c3b7af5 depth limit reached
+  java.util.concurrent.ConcurrentHashMap::U:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.ConcurrentHashMap::SIZECTL:48
+  java.util.concurrent.ConcurrentHashMap::TRANSFERINDEX:52
+  java.util.concurrent.ConcurrentHashMap::BASECOUNT:16
+  java.util.concurrent.ConcurrentHashMap::CELLSBUSY:56
+  java.util.concurrent.ConcurrentHashMap::CELLVALUE:72
+  java.util.concurrent.ConcurrentHashMap::ABASE:8
+  java.util.concurrent.ConcurrentHashMap::ASHIFT:2
+  END:java.util.concurrent.ConcurrentHashMap@8d63ef2
+
+ com.ibm.rmi.iiop.Connection::requestCount:0
+ com.ibm.rmi.iiop.Connection::isReplyMessage:false
+ com.ibm.rmi.iiop.Connection::server:com.ibm.rmi.iiop.GIOPImpl@e10fdb7
+ com.ibm.rmi.iiop.Connection::GIOPMajor:1
+ com.ibm.rmi.iiop.Connection::GIOPMinor:0
+ com.ibm.rmi.iiop.Connection::firstMessage:true
+ com.ibm.rmi.iiop.Connection::newConnection:true
+ com.ibm.rmi.iiop.Connection::postInitialRequestContexts:false
+ com.ibm.rmi.iiop.Connection::postInitialReplyContexts:false
+ com.ibm.rmi.iiop.Connection::tcsChar:0
+ com.ibm.rmi.iiop.Connection::tcsWChar:0
+ com.ibm.rmi.iiop.Connection::codeBaseServerIORBytes:null
+ com.ibm.rmi.iiop.Connection::codeBaseServerIORByteArray:null
+ com.ibm.rmi.iiop.Connection::resetcodeBaseServerIORByteArray:null
+ com.ibm.rmi.iiop.Connection::resetcodeBaseServerIORByteArrayThreadId:-1
+ com.ibm.rmi.iiop.Connection::codeBaseServerIOR:null
+ com.ibm.rmi.iiop.Connection::codeBaseDelegate:null
+ com.ibm.rmi.iiop.Connection::codeBaseServerIORLock:java.lang.Object@65f2545a
+ com.ibm.rmi.iiop.Connection::codeBaseByteArrayLock BEGIN:com.ibm.rmi.iiop.Connection$codeBaseServerIORByteArrayLock@e4307b2c
+  END:com.ibm.rmi.iiop.Connection$codeBaseServerIORByteArrayLock@e4307b2c
+
+ com.ibm.rmi.iiop.Connection::connectionString:null
+ com.ibm.rmi.iiop.Connection::state BEGIN:com.ibm.rmi.iiop.Connection$State@95f9c757
+  com.ibm.rmi.iiop.Connection$State::OPENING:com.ibm.rmi.iiop.Connection$State@95f9c757
+   com.ibm.rmi.iiop.Connection$State::ESTABLISHED:com.ibm.rmi.iiop.Connection$State@5d5e7548 depth limit reached
+   com.ibm.rmi.iiop.Connection$State::CLOSE_SENT:com.ibm.rmi.iiop.Connection$State@ef31ec58 depth limit reached
+   com.ibm.rmi.iiop.Connection$State::CLOSE_RECVD:com.ibm.rmi.iiop.Connection$State@67b3713a depth limit reached
+   com.ibm.rmi.iiop.Connection$State::ABORT:com.ibm.rmi.iiop.Connection$State@75bbb865 depth limit reached
+   com.ibm.rmi.iiop.Connection$State::FAILING:com.ibm.rmi.iiop.Connection$State@f3a2bd8a depth limit reached
+   com.ibm.rmi.iiop.Connection$State::CLOSED:com.ibm.rmi.iiop.Connection$State@9b8e28e3 depth limit reached
+  com.ibm.rmi.iiop.Connection$State::type:State: OPENING (1)
+  END:com.ibm.rmi.iiop.Connection$State@95f9c757
+
+ com.ibm.rmi.iiop.Connection::requestContexts:null
+ com.ibm.rmi.iiop.Connection::replyContexts:null
+ com.ibm.rmi.iiop.Connection::connectionContexts:null
+ com.ibm.rmi.iiop.Connection::inputStream:null
+ com.ibm.rmi.iiop.Connection::outputStream:null
+ com.ibm.rmi.iiop.Connection::versionIdSent:false
+ com.ibm.rmi.iiop.Connection::buf BEGIN:[B@d4b7c833
+[        offset        : 0 1 2 3  4 5 6 7  8 9 A B  C D E F    0 2 4 6 8 A C E 
+ 0x00000000 (       0) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000010 (      16) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000020 (      32) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000030 (      48) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000040 (      64) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000050 (      80) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000060 (      96) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000070 (     112) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000080 (     128) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000090 (     144) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000a0 (     160) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000b0 (     176) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000c0 (     192) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000d0 (     208) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000e0 (     224) : 00000000 00000000 00000000 00000000 | ................
+ 0x000000f0 (     240) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000100 (     256) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000110 (     272) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000120 (     288) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000130 (     304) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000140 (     320) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000150 (     336) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000160 (     352) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000170 (     368) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000180 (     384) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000190 (     400) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001a0 (     416) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001b0 (     432) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001c0 (     448) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001d0 (     464) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001e0 (     480) : 00000000 00000000 00000000 00000000 | ................
+ 0x000001f0 (     496) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000200 (     512) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000210 (     528) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000220 (     544) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000230 (     560) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000240 (     576) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000250 (     592) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000260 (     608) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000270 (     624) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000280 (     640) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000290 (     656) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002a0 (     672) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002b0 (     688) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002c0 (     704) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002d0 (     720) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002e0 (     736) : 00000000 00000000 00000000 00000000 | ................
+ 0x000002f0 (     752) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000300 (     768) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000310 (     784) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000320 (     800) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000330 (     816) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000340 (     832) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000350 (     848) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000360 (     864) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000370 (     880) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000380 (     896) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000390 (     912) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003a0 (     928) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003b0 (     944) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003c0 (     960) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003d0 (     976) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003e0 (     992) : 00000000 00000000 00000000 00000000 | ................
+ 0x000003f0 (    1008) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000400 (    1024) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000410 (    1040) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000420 (    1056) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000430 (    1072) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000440 (    1088) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000450 (    1104) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000460 (    1120) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000470 (    1136) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000480 (    1152) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000490 (    1168) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004a0 (    1184) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004b0 (    1200) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004c0 (    1216) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004d0 (    1232) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004e0 (    1248) : 00000000 00000000 00000000 00000000 | ................
+ 0x000004f0 (    1264) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000500 (    1280) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000510 (    1296) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000520 (    1312) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000530 (    1328) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000540 (    1344) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000550 (    1360) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000560 (    1376) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000570 (    1392) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000580 (    1408) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000590 (    1424) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005a0 (    1440) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005b0 (    1456) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005c0 (    1472) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005d0 (    1488) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005e0 (    1504) : 00000000 00000000 00000000 00000000 | ................
+ 0x000005f0 (    1520) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000600 (    1536) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000610 (    1552) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000620 (    1568) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000630 (    1584) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000640 (    1600) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000650 (    1616) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000660 (    1632) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000670 (    1648) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000680 (    1664) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000690 (    1680) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006a0 (    1696) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006b0 (    1712) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006c0 (    1728) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006d0 (    1744) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006e0 (    1760) : 00000000 00000000 00000000 00000000 | ................
+ 0x000006f0 (    1776) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000700 (    1792) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000710 (    1808) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000720 (    1824) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000730 (    1840) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000740 (    1856) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000750 (    1872) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000760 (    1888) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000770 (    1904) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000780 (    1920) : 00000000 00000000 00000000 00000000 | ................
+ 0x00000790 (    1936) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007a0 (    1952) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007b0 (    1968) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007c0 (    1984) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007d0 (    2000) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007e0 (    2016) : 00000000 00000000 00000000 00000000 | ................
+ 0x000007f0 (    2032) : 00000000 00000000 00000000 00000000 | ................]
+  END:[B@d4b7c833
+
+ com.ibm.rmi.iiop.Connection::startMsgOffset:0
+ com.ibm.rmi.iiop.Connection::endDataOffset:0
+ com.ibm.rmi.iiop.Connection::bytesAlreadyRead:0
+ com.ibm.rmi.iiop.Connection::bufferSize:2048
+ com.ibm.rmi.iiop.Connection::halfBufferSize:1024
+ com.ibm.rmi.iiop.Connection::requestTimeout:180000
+ com.ibm.rmi.iiop.Connection::locateTimeout:180000
+ com.ibm.rmi.iiop.Connection::fragTimeout:300000
+ com.ibm.rmi.iiop.Connection::finiteFragTimeout:true
+ com.ibm.rmi.iiop.Connection::allowUserInterrupt:false
+ com.ibm.rmi.iiop.Connection::transportConnection:null
+ com.ibm.rmi.iiop.Connection::removeToken BEGIN:com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover@189e3fd7
+  com.ibm.rmi.util.list.LinkedList$Item::next:null
+  com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover::index:0
+  com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover::value:com.ibm.rmi.iiop.Connection@15b7b022
+   com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover::this$1:com.ibm.rmi.util.LimitedMultiMap$FixedList@5e3aad50 depth limit reached
+  END:com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover@189e3fd7
+
+ com.ibm.rmi.iiop.Connection::pmiServer:com.ibm.ws.pmi.server.modules.OrbPerfModule@966324c1
+ com.ibm.rmi.iiop.Connection::lsdPlugin:com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon@404c8089
+ com.ibm.rmi.iiop.Connection::addressingDisposition:0
+ com.ibm.rmi.iiop.Connection::partnerMajor:-1
+ com.ibm.rmi.iiop.Connection::partnerMinor:-1
+ com.ibm.rmi.iiop.Connection::partnerExtended:-1
+ com.ibm.rmi.iiop.Connection::streamFormatVersion:0
+ com.ibm.rmi.iiop.Connection::codesetLock:java.lang.Object@d8534311
+ com.ibm.rmi.iiop.Connection::addrDispLock:java.lang.Object@2716d893
+ com.ibm.rmi.iiop.Connection::replyContextsLock:java.lang.Object@776d233f
+ com.ibm.rmi.iiop.Connection::codeSetNegotiationCompleted:false
+ com.ibm.rmi.iiop.Connection::inputContext:null
+ com.ibm.rmi.iiop.Connection::outputContext:null
+ com.ibm.rmi.iiop.Connection::processingInput:false
+ com.ibm.rmi.iiop.Connection::useCFW:false
+ com.ibm.rmi.iiop.Connection::giopConnCtx:null
+ com.ibm.rmi.iiop.Connection::callLink:null
+ com.ibm.rmi.iiop.Connection::giopClientLink:null
+ com.ibm.rmi.iiop.Connection::fragHasCompleteMsgHdr:false
+ com.ibm.rmi.iiop.Connection::toReleaseCodeBaseServerIORBytes:false
+ com.ibm.rmi.iiop.Connection::filter:null
+ com.ibm.rmi.iiop.Connection::freeList BEGIN:java.util.concurrent.ConcurrentLinkedQueue@99d9780c
+  {
+  }
+  java.util.concurrent.ConcurrentLinkedQueue::serialVersionUID:196745693267521676
+   java.util.concurrent.ConcurrentLinkedQueue::head:java.util.concurrent.ConcurrentLinkedQueue$Node@9a728882 depth limit reached
+  java.util.concurrent.ConcurrentLinkedQueue::tail:java.util.concurrent.ConcurrentLinkedQueue$Node@9a728882
+  java.util.concurrent.ConcurrentLinkedQueue::UNSAFE:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.ConcurrentLinkedQueue::headOffset:8
+  java.util.concurrent.ConcurrentLinkedQueue::tailOffset:12
+  END:java.util.concurrent.ConcurrentLinkedQueue@99d9780c
+
+ com.ibm.rmi.iiop.Connection::taken BEGIN:java.util.concurrent.atomic.AtomicBoolean@37faf25e
+  java.util.concurrent.atomic.AtomicBoolean::serialVersionUID:4654671469794556979
+  java.util.concurrent.atomic.AtomicBoolean::unsafe:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.atomic.AtomicBoolean::valueOffset:8
+  java.util.concurrent.atomic.AtomicBoolean::value:0
+  END:java.util.concurrent.atomic.AtomicBoolean@37faf25e
+
+ com.ibm.rmi.iiop.Connection::usage BEGIN:java.util.concurrent.atomic.AtomicInteger@1b40fee5
+  java.lang.Number::serialVersionUID:-8742448824652078965
+  java.util.concurrent.atomic.AtomicInteger::serialVersionUID:6214790243416807050
+  java.util.concurrent.atomic.AtomicInteger::unsafe:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.atomic.AtomicInteger::valueOffset:8
+  java.util.concurrent.atomic.AtomicInteger::value:1
+  END:java.util.concurrent.atomic.AtomicInteger@1b40fee5
+
+ END:com.ibm.rmi.iiop.Connection@15b7b022
+
+com.ibm.CORBA.transport.TransportConnectionBase::inputStream:null
+com.ibm.CORBA.transport.TransportConnectionBase::outputStream:null
+com.ibm.CORBA.transport.TransportConnectionBase::readerPool:com.ibm.rmi.transport.ReaderPoolImpl@f9c3c3c4
+com.ibm.CORBA.transport.TransportConnectionBase::table BEGIN:com.ibm.rmi.transport.ConnectionTableImpl@d6542e05
+ com.ibm.rmi.transport.ConnectionTableImpl::CLASS:com.ibm.rmi.transport.ConnectionTableImpl
+ com.ibm.rmi.transport.ConnectionTableImpl::lowWaterMark:100
+ com.ibm.rmi.transport.ConnectionTableImpl::highWaterMark:240
+ com.ibm.rmi.transport.ConnectionTableImpl::multimap BEGIN:com.ibm.rmi.util.LimitedMultiMap@45e3c734
+  com.ibm.rmi.util.LimitedMultiMap::multiplicity:20
+   com.ibm.rmi.util.LimitedMultiMap::map:java.util.HashMap@b7caaf78 depth limit reached
+  com.ibm.rmi.util.LimitedMultiMap::size:3
+   com.ibm.rmi.util.LimitedMultiMap::removals:com.ibm.rmi.util.list.LinkedList@8dc755b8 depth limit reached
+  com.ibm.rmi.util.LimitedMultiMap::hook:null
+  END:com.ibm.rmi.util.LimitedMultiMap@45e3c734
+
+ com.ibm.rmi.transport.ConnectionTableImpl::autonomicMode:true
+ com.ibm.rmi.transport.ConnectionTableImpl::multiplicity:20
+ com.ibm.rmi.transport.ConnectionTableImpl::orb:com.ibm.CORBA.iiop.ORB@76345108
+ com.ibm.rmi.transport.ConnectionTableImpl::criteria BEGIN:[Lcom.ibm.rmi.transport.ConnectionTableImpl$Criteria;@8fe00bdc
+  [
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@7142173b depth limit reached
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@959ac019 depth limit reached
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@eebeff1e depth limit reached
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@cb6386d6 depth limit reached
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@60400729 depth limit reached
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria@c1b5a110 depth limit reached
+  ]
+  END:[Lcom.ibm.rmi.transport.ConnectionTableImpl$Criteria;@8fe00bdc
+
+ com.ibm.rmi.transport.ConnectionTableImpl::criteriaMap BEGIN:[I@469de99d
+[0 5 10 30 80 200]
+  END:[I@469de99d
+
+ com.ibm.rmi.transport.ConnectionTableImpl::NCLEAN:5
+ END:com.ibm.rmi.transport.ConnectionTableImpl@d6542e05
+
+com.ibm.CORBA.transport.TransportConnectionBase::readerHandle:null
+com.ibm.CORBA.transport.TransportConnectionBase::orbForTransports BEGIN:com.ibm.rmi.iiop.TransportManager@373eb255
+ com.ibm.rmi.iiop.TransportManager::CLASS:com.ibm.rmi.iiop.TransportManager
+ com.ibm.rmi.iiop.TransportManager::theTransport BEGIN:com.ibm.ws.orbimpl.transport.WSTransport@6d9ef173
+  com.ibm.CORBA.transport.TransportBase::CLASS:com.ibm.CORBA.Transport.TransportBase
+   com.ibm.CORBA.transport.TransportBase::transportData:java.net.Inet4Address@7f5549bb depth limit reached
+  com.ibm.ws.orbimpl.transport.WSTransport::SSL_TAGGED_COMPONENT_ID:20
+  com.ibm.ws.orbimpl.transport.WSTransport::fORB:com.ibm.CORBA.iiop.ORB@76345108
+  com.ibm.ws.orbimpl.transport.WSTransport::fConnectionTable:com.ibm.rmi.transport.ConnectionTableImpl@d6542e05
+  com.ibm.ws.orbimpl.transport.WSTransport::fORBForTransports:com.ibm.rmi.iiop.TransportManager@373eb255
+  com.ibm.ws.orbimpl.transport.WSTransport::globalCounter:0
+   com.ibm.ws.orbimpl.transport.WSTransport::serverProfile:com.ibm.rmi.Profile@b6fb15d4 depth limit reached
+   com.ibm.ws.orbimpl.transport.WSTransport::connectionInterceptor:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor@1289a461 depth limit reached
+   com.ibm.ws.orbimpl.transport.WSTransport::tableOfListeners:java.util.Hashtable@cc0938b8 depth limit reached
+   com.ibm.ws.orbimpl.transport.WSTransport::tableOfServerSockets:java.util.Hashtable@b4785972 depth limit reached
+  com.ibm.ws.orbimpl.transport.WSTransport::acceptTimeout:5000
+  com.ibm.ws.orbimpl.transport.WSTransport::wsTransport:com.ibm.ws.orbimpl.transport.WSTransport@6d9ef173
+  com.ibm.ws.orbimpl.transport.WSTransport::registeredListener:true
+  com.ibm.ws.orbimpl.transport.WSTransport::forceTunnel:never
+  com.ibm.ws.orbimpl.transport.WSTransport::forceTunnelVarSet:true
+   com.ibm.ws.orbimpl.transport.WSTransport::sslFactory:com.ibm.ws.security.orbssl.WSSSLServerSocketFactoryImpl@b7efda8c depth limit reached
+   com.ibm.ws.orbimpl.transport.WSTransport::sslClientFactory:com.ibm.ws.security.orbssl.WSSSLClientSocketFactoryImpl@8126207 depth limit reached
+  END:com.ibm.ws.orbimpl.transport.WSTransport@6d9ef173
+
+ com.ibm.rmi.iiop.TransportManager::theGIOPImpl:com.ibm.rmi.iiop.GIOPImpl@e10fdb7
+ com.ibm.rmi.iiop.TransportManager::theORB:com.ibm.CORBA.iiop.ORB@76345108
+ com.ibm.rmi.iiop.TransportManager::serverHasBeenInitialized BEGIN:java.util.concurrent.atomic.AtomicBoolean@2a9f9eb8
+  java.util.concurrent.atomic.AtomicBoolean::serialVersionUID:4654671469794556979
+  java.util.concurrent.atomic.AtomicBoolean::unsafe:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.atomic.AtomicBoolean::valueOffset:8
+  java.util.concurrent.atomic.AtomicBoolean::value:1
+  END:java.util.concurrent.atomic.AtomicBoolean@2a9f9eb8
+
+ com.ibm.rmi.iiop.TransportManager::serverInitStarted BEGIN:java.util.concurrent.atomic.AtomicBoolean@f07be944
+  java.util.concurrent.atomic.AtomicBoolean::serialVersionUID:4654671469794556979
+  java.util.concurrent.atomic.AtomicBoolean::unsafe:sun.misc.Unsafe@dc3cbd27
+  java.util.concurrent.atomic.AtomicBoolean::valueOffset:8
+  java.util.concurrent.atomic.AtomicBoolean::value:1
+  END:java.util.concurrent.atomic.AtomicBoolean@f07be944
+
+ END:com.ibm.rmi.iiop.TransportManager@373eb255
+
+com.ibm.CORBA.transport.TransportConnectionBase::remoteHostName:127.0.0.1
+com.ibm.CORBA.transport.TransportConnectionBase::remotePort:0
+com.ibm.CORBA.transport.TransportConnectionBase::remoteHost:null
+com.ibm.CORBA.transport.TransportConnectionBase::localHostName:null
+com.ibm.CORBA.transport.TransportConnectionBase::localPort:-1
+com.ibm.CORBA.transport.TransportConnectionBase::localHost:null
+com.ibm.CORBA.transport.TransportConnectionBase::localInetAddress:java.net.Inet4Address@7f5549bb
+com.ibm.CORBA.transport.TransportConnectionBase::connectTimeout:10000
+com.ibm.CORBA.transport.TransportConnectionBase::DEFAULT_LOCAL_HOST:127.0.0.1
+com.ibm.CORBA.transport.TransportConnectionBase::DEFAULT_LOCAL_HOST_NAME:localHost
+com.ibm.CORBA.transport.TransportConnectionBase::theParameterString:null
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::jniReadTimeout:0
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::readTimeOutInitialized:false
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::enableKeepAlive:false
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::keepAliveInitialized:true
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::connectionData BEGIN:com.ibm.ws.security.orbssl.ExtendedSSLConnectionData@6066559b
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::connection_key:localhost:9403:IIOPSSL:38
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::connection_type:1
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::localPort:0
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::remotePort:9403
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::localHost:TWAS1
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::remoteHost:localhost
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::connection_handle:null
+ com.ibm.ws.orb.transport.BaseConnectionDataImpl::altConnData:null
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::options:38
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::errorCode:0
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::keyRingName:null
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::keyRingPassword:null
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::sessionTimeoutSeconds:-1
+ com.ibm.ws.security.orbssl.SSLConnectionDataImpl::useSingleNIC:false
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::variable_data_name:NATIVE_VARIABLE_DATA
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::effective_policy_name:EFFECTIVE_POLICY_DATA
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::tc BEGIN:com.ibm.ejs.ras.TraceComponent@5b326354
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.security.orbssl.ExtendedSSLConnectionData
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ISecurityL13SupportImpl.sec
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@5b326354
+
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::SSLKeyStoreClientAlias:
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::SSLConfigAlias:
+ com.ibm.ws.security.orbssl.ExtendedSSLConnectionData::effectivePolicy BEGIN:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy@7bb024c6
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::tc:com.ibm.ejs.ras.TraceComponent@2f3508a0 depth limit reached
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::DAEMON_EXPORTED_NAME:DAEMON
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_orb:null
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_method:
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_proxy:com.ibm.WsnOptimizedNaming._NamingContextStub@20169535 depth limit reached
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_protocol:csiv2
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_stateful:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_stateful_context_id:0
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_client_session_key:null
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_connectionKey:localhost:9403:IIOPSSL:38
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_mechTypeIdentity:
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performTLClientAuth:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performTLClientAuthRequired:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performTLServerAuth:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performMsgDetectReplay:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performMsgDetectMisordering:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performMsgIntegrity:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performMsgConfidentiality:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performSSLTLS:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performSSLTLSrequired:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performSECIOP:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performSECIOPMechOID:
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetHostName:localhost
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetTCPPort:0
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetSSLPort:9403
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuth:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_claimClientAuthRequired:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthMech:LTPA
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthMechOID:oid:1.3.18.0.2.30.2
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthMechOIDList:java.util.ArrayList@c9c15381 depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthMechList:java.util.ArrayList@439fa6b1 depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetSecurityNameList:java.util.ArrayList@d60380cb depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthTargetList:java.util.ArrayList@721a0490 depth limit reached
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performSupportedAuthMechList:LTPA|BASICAUTH
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performClientAuthMechType:
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetSecurityName:defaultWIMFileBasedRealm
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_targetAuthMechOID:[B@1f62bc19
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performIDAssertion:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performIDANamingMechList:null
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performIdentityTokenType:0
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performServiceCfgList:defaultWIMFileBasedRealm
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performAuthorizationToken:true
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_performDelegationByClient:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_isInternalRequestPolicy:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_isAdmin:false
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_isNamingReadUnprotected:false
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::savedCSIv2Tag:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2TaggedComponentHolder@32e7710c depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::csiv2EffectivePolicyCache:java.util.Hashtable@12712025 depth limit reached
+  com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy::_disableCache:false
+  END:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.CSIv2EffectivePerformPolicy@7bb024c6
+
+ END:com.ibm.ws.security.orbssl.ExtendedSSLConnectionData@6066559b
+
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::connectionInterceptor:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor@1289a461
+com.ibm.ws.orbimpl.transport.WSTCPTransportConnection::connectionInformation BEGIN:com.ibm.ws.orbimpl.transport.ConnectionInformationImpl@42985992
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::connectionData:com.ibm.ws.security.orbssl.ExtendedSSLConnectionData@6066559b
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::theX509Certifate:null
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::connectionCreationTime:1778772514124
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::remoteHost:null
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::remotePort:-1
+ END:com.ibm.ws.orbimpl.transport.ConnectionInformationImpl@42985992
+
+com.ibm.ws.orbimpl.transport.WSSSLTransportConnection::connectionInformation BEGIN:com.ibm.ws.orbimpl.transport.ConnectionInformationImpl@e5cacbe7
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::connectionData:com.ibm.ws.security.orbssl.ExtendedSSLConnectionData@6066559b
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::theX509Certifate:null
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::connectionCreationTime:1778772514124
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::remoteHost:null
+ com.ibm.ws.orbimpl.transport.ConnectionInformationImpl::remotePort:-1
+ END:com.ibm.ws.orbimpl.transport.ConnectionInformationImpl@e5cacbe7
+
+END:com.ibm.ws.orbimpl.transport.WSSSLTransportConnection@d205257e
+
+CapturedDataElements end

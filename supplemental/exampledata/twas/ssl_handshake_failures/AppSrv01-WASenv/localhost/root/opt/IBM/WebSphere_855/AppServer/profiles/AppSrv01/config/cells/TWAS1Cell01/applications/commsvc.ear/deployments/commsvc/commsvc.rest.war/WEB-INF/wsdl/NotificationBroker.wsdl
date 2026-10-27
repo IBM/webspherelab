@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions targetNamespace="http://www.ibm.com/websphere/wsn/notification-broker" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.ibm.com/websphere/wsn/notification-broker" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdlsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsn-b="http://docs.oasis-open.org/wsn/b-2" xmlns:wsn-br="http://docs.oasis-open.org/wsn/br-2" xmlns:wsn-brw="http://docs.oasis-open.org/wsn/brw-2" xmlns:wsn-bw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rlw="http://docs.oasis-open.org/wsrf/rlw-2" xmlns:wsrf-rp="http://docs.oasis-open.org/wsrf/rp-2" xmlns:wsrf-rpw="http://docs.oasis-open.org/wsrf/rpw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <import location="http://docs.oasis-open.org/wsn/brw-2.wsdl" namespace="http://docs.oasis-open.org/wsn/brw-2">
+    </import>
+  <import location="http://docs.oasis-open.org/wsn/bw-2.wsdl" namespace="http://docs.oasis-open.org/wsn/bw-2">
+    </import>
+  <import location="http://docs.oasis-open.org/wsrf/rpw-2.wsdl" namespace="http://docs.oasis-open.org/wsrf/rpw-2">
+    </import>
+  <import location="http://docs.oasis-open.org/wsrf/rw-2.wsdl" namespace="http://docs.oasis-open.org/wsrf/rw-2">
+    </import>
+  <portType name="NotificationBroker" wsrf-rp:ResourceProperties="wsn-br:NotificationBrokerRP">
+    <operation name="GetResourceProperty">
+      <input message="wsrf-rpw:GetResourcePropertyRequest" name="GetResourcePropertyRequest" wsam:Action="http://docs.oasis-open.org/wsrf/rpw-2/GetResourceProperty/GetResourcePropertyRequest" wsaw:Action="http://docs.oasis-open.org/wsrf/rpw-2/GetResourceProperty/GetResourcePropertyRequest">
+    </input>
+      <output message="wsrf-rpw:GetResourcePropertyResponse" name="GetResourcePropertyResponse" wsam:Action="http://docs.oasis-open.org/wsrf/rpw-2/GetResourceProperty/GetResourcePropertyResponse" wsaw:Action="http://docs.oasis-open.org/wsrf/rpw-2/GetResourceProperty/GetResourcePropertyResponse">
+    </output>
+      <fault message="wsrf-rpw:InvalidResourcePropertyQNameFault" name="InvalidResourcePropertyQNameFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnavailableFault" name="ResourceUnavailableFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+    </operation>
+    <operation name="Notify">
+      <input message="wsn-bw:Notify" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationConsumer/Notify" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationConsumer/Notify">
+    </input>
+    </operation>
+    <operation name="Subscribe">
+      <input message="wsn-bw:SubscribeRequest" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/SubscribeRequest" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/SubscribeRequest">
+    </input>
+      <output message="wsn-bw:SubscribeResponse" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/SubscribeResponse" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/SubscribeResponse">
+    </output>
+      <fault message="wsn-bw:InvalidMessageContentExpressionFault" name="InvalidMessageContentExpressionFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:InvalidTopicExpressionFault" name="InvalidTopicExpressionFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:InvalidFilterFault" name="InvalidFilterFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:UnrecognizedPolicyRequestFault" name="UnrecognizedPolicyRequestFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsn-bw:TopicExpressionDialectUnknownFault" name="TopicExpressionDialectUnknownFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:TopicNotSupportedFault" name="TopicNotSupportedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:NotifyMessageNotSupportedFault" name="NotifyMessageNotSupportedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:UnsupportedPolicyRequestFault" name="UnsupportedPolicyRequestFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:UnacceptableInitialTerminationTimeFault" name="UnacceptableInitialTerminationTimeFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:SubscribeCreationFailedFault" name="SubscribeCreationFailedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:InvalidProducerPropertiesExpressionFault" name="InvalidProducerPropertiesExpressionFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+    </operation>
+    <operation name="GetCurrentMessage">
+      <input message="wsn-bw:GetCurrentMessageRequest" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/GetCurrentMessageRequest" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/GetCurrentMessageRequest">
+    </input>
+      <output message="wsn-bw:GetCurrentMessageResponse" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/GetCurrentMessageResponse" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/NotificationProducer/GetCurrentMessageResponse">
+    </output>
+      <fault message="wsn-bw:NoCurrentMessageOnTopicFault" name="NoCurrentMessageOnTopicFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:InvalidTopicExpressionFault" name="InvalidTopicExpressionFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:MultipleTopicsSpecifiedFault" name="MultipleTopicsSpecifiedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsn-bw:TopicExpressionDialectUnknownFault" name="TopicExpressionDialectUnknownFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:TopicNotSupportedFault" name="TopicNotSupportedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+    </operation>
+    <operation name="RegisterPublisher">
+      <input message="wsn-brw:RegisterPublisherRequest" wsam:Action="http://docs.oasis-open.org/wsn/brw-2/RegisterPublisher/RegisterPublisherRequest" wsaw:Action="http://docs.oasis-open.org/wsn/brw-2/RegisterPublisher/RegisterPublisherRequest">
+    </input>
+      <output message="wsn-brw:RegisterPublisherResponse" wsam:Action="http://docs.oasis-open.org/wsn/brw-2/RegisterPublisher/RegisterPublisherResponse" wsaw:Action="http://docs.oasis-open.org/wsn/brw-2/RegisterPublisher/RegisterPublisherResponse">
+    </output>
+      <fault message="wsn-brw:PublisherRegistrationFailedFault" name="PublisherRegistrationFailedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:InvalidTopicExpressionFault" name="InvalidTopicExpressionFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsn-bw:TopicNotSupportedFault" name="TopicNotSupportedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-bw:UnacceptableInitialTerminationTimeFault" name="UnacceptableInitialTerminationTimeFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsn-brw:PublisherRegistrationRejectedFault" name="PublisherRegistrationRejectedFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+    </operation>
+    <operation name="CreatePullPoint">
+      <input message="wsn-bw:CreatePullPointRequest" name="CreatePullPointRequest" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/CreatePullPoint/CreatePullPointRequest" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/CreatePullPoint/CreatePullPointRequest">
+    </input>
+      <output message="wsn-bw:CreatePullPointResponse" name="CreatePullPointResponse" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/CreatePullPoint/CreatePullPointResponse" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/CreatePullPoint/CreatePullPointResponse">
+    </output>
+      <fault message="wsn-bw:UnableToCreatePullPointFault" name="UnableToCreatePullPointFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+    </operation>
+    <operation name="GetMessages">
+      <input message="wsn-bw:GetMessagesRequest" name="GetMessagesRequest" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/GetMessagesRequest" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/GetMessagesRequest">
+    </input>
+      <output message="wsn-bw:GetMessagesResponse" name="GetMessagesResponse" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/GetMessagesResponse" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/GetMessagesResponse">
+    </output>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+      <fault message="wsn-bw:UnableToGetMessagesFault" name="UnableToGetMessagesFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+    </operation>
+    <operation name="DestroyPullPoint">
+      <input message="wsn-bw:DestroyPullPointRequest" name="DestroyPullPointRequest" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/DestroyPullPointRequest" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/DestroyPullPointRequest">
+    </input>
+      <output message="wsn-bw:DestroyPullPointResponse" name="DestroyPullPointResponse" wsam:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/DestroyPullPointResponse" wsaw:Action="http://docs.oasis-open.org/wsn/bw-2/PullPoint/DestroyPullPointResponse">
+    </output>
+      <fault message="wsn-bw:UnableToDestroyPullPointFault" name="UnableToDestroyPullPointFault" wsam:Action="http://docs.oasis-open.org/wsn/fault" wsaw:Action="http://docs.oasis-open.org/wsn/fault">
+    </fault>
+      <fault message="wsrf-rw:ResourceUnknownFault" name="ResourceUnknownFault" wsam:Action="http://docs.oasis-open.org/wsrf/fault" wsaw:Action="http://docs.oasis-open.org/wsrf/fault">
+    </fault>
+    </operation>
+  </portType>
+  <binding name="WSNServiceCEAWSNServicePtCEANBBinding" type="tns:NotificationBroker">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsaw:UsingAddressing required="true"/>
+    <operation name="GetResourceProperty">
+      <wsdlsoap:operation soapAction=""/>
+      <input name="GetResourcePropertyRequest">
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output name="GetResourcePropertyResponse">
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="InvalidResourcePropertyQNameFault">
+        <wsdlsoap:fault name="InvalidResourcePropertyQNameFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnavailableFault">
+        <wsdlsoap:fault name="ResourceUnavailableFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Notify">
+      <wsdlsoap:operation soapAction=""/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="Subscribe">
+      <wsdlsoap:operation soapAction=""/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="InvalidMessageContentExpressionFault">
+        <wsdlsoap:fault name="InvalidMessageContentExpressionFault" use="literal"/>
+      </fault>
+      <fault name="InvalidTopicExpressionFault">
+        <wsdlsoap:fault name="InvalidTopicExpressionFault" use="literal"/>
+      </fault>
+      <fault name="InvalidFilterFault">
+        <wsdlsoap:fault name="InvalidFilterFault" use="literal"/>
+      </fault>
+      <fault name="UnrecognizedPolicyRequestFault">
+        <wsdlsoap:fault name="UnrecognizedPolicyRequestFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+      <fault name="TopicExpressionDialectUnknownFault">
+        <wsdlsoap:fault name="TopicExpressionDialectUnknownFault" use="literal"/>
+      </fault>
+      <fault name="TopicNotSupportedFault">
+        <wsdlsoap:fault name="TopicNotSupportedFault" use="literal"/>
+      </fault>
+      <fault name="NotifyMessageNotSupportedFault">
+        <wsdlsoap:fault name="NotifyMessageNotSupportedFault" use="literal"/>
+      </fault>
+      <fault name="UnsupportedPolicyRequestFault">
+        <wsdlsoap:fault name="UnsupportedPolicyRequestFault" use="literal"/>
+      </fault>
+      <fault name="UnacceptableInitialTerminationTimeFault">
+        <wsdlsoap:fault name="UnacceptableInitialTerminationTimeFault" use="literal"/>
+      </fault>
+      <fault name="SubscribeCreationFailedFault">
+        <wsdlsoap:fault name="SubscribeCreationFailedFault" use="literal"/>
+      </fault>
+      <fault name="InvalidProducerPropertiesExpressionFault">
+        <wsdlsoap:fault name="InvalidProducerPropertiesExpressionFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetCurrentMessage">
+      <wsdlsoap:operation soapAction=""/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="NoCurrentMessageOnTopicFault">
+        <wsdlsoap:fault name="NoCurrentMessageOnTopicFault" use="literal"/>
+      </fault>
+      <fault name="InvalidTopicExpressionFault">
+        <wsdlsoap:fault name="InvalidTopicExpressionFault" use="literal"/>
+      </fault>
+      <fault name="MultipleTopicsSpecifiedFault">
+        <wsdlsoap:fault name="MultipleTopicsSpecifiedFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+      <fault name="TopicExpressionDialectUnknownFault">
+        <wsdlsoap:fault name="TopicExpressionDialectUnknownFault" use="literal"/>
+      </fault>
+      <fault name="TopicNotSupportedFault">
+        <wsdlsoap:fault name="TopicNotSupportedFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="RegisterPublisher">
+      <wsdlsoap:operation soapAction=""/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="PublisherRegistrationFailedFault">
+        <wsdlsoap:fault name="PublisherRegistrationFailedFault" use="literal"/>
+      </fault>
+      <fault name="InvalidTopicExpressionFault">
+        <wsdlsoap:fault name="InvalidTopicExpressionFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+      <fault name="TopicNotSupportedFault">
+        <wsdlsoap:fault name="TopicNotSupportedFault" use="literal"/>
+      </fault>
+      <fault name="UnacceptableInitialTerminationTimeFault">
+        <wsdlsoap:fault name="UnacceptableInitialTerminationTimeFault" use="literal"/>
+      </fault>
+      <fault name="PublisherRegistrationRejectedFault">
+        <wsdlsoap:fault name="PublisherRegistrationRejectedFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="CreatePullPoint">
+      <wsdlsoap:operation soapAction=""/>
+      <input name="CreatePullPointRequest">
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output name="CreatePullPointResponse">
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="UnableToCreatePullPointFault">
+        <wsdlsoap:fault name="UnableToCreatePullPointFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetMessages">
+      <wsdlsoap:operation soapAction=""/>
+      <input name="GetMessagesRequest">
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output name="GetMessagesResponse">
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+      <fault name="UnableToGetMessagesFault">
+        <wsdlsoap:fault name="UnableToGetMessagesFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="DestroyPullPoint">
+      <wsdlsoap:operation soapAction=""/>
+      <input name="DestroyPullPointRequest">
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output name="DestroyPullPointResponse">
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="UnableToDestroyPullPointFault">
+        <wsdlsoap:fault name="UnableToDestroyPullPointFault" use="literal"/>
+      </fault>
+      <fault name="ResourceUnknownFault">
+        <wsdlsoap:fault name="ResourceUnknownFault" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSNServiceCEAWSNServicePtCEANB">
+    <port binding="tns:WSNServiceCEAWSNServicePtCEANBBinding" name="NotificationBrokerPort">
+      <wsdlsoap:address location="http://IBM-D1A3F7E8E70:9080/WSNServiceCEAWSNServicePtCEANB/Service"/>
+    </port>
+  </service>
+</definitions>

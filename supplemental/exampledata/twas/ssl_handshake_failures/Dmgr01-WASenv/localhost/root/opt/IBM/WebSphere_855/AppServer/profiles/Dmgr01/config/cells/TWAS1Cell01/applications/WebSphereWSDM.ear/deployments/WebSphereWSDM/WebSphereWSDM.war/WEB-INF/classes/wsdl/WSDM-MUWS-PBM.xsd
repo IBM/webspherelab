@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://docs.oasis-open.org/wsdm/pbm.xsd"	
+    xmlns:pbm="http://docs.oasis-open.org/wsdm/pbm.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:element name="Match" type="xs:QName"/>
+
+  <xs:complexType name="MatchAllType">
+    <xs:choice>
+      <xs:element ref="pbm:Match"/>
+      <xs:element ref="pbm:MatchAny"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="MatchAnyType">
+    <xs:choice>
+      <xs:element ref="pbm:Match"/>
+      <xs:element ref="pbm:MatchAll"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:element name="MatchAll" type="pbm:MatchAllType"/>
+
+  <xs:element name="MatchAny" type="pbm:MatchAnyType"/>
+
+</xs:schema>
+
+
+

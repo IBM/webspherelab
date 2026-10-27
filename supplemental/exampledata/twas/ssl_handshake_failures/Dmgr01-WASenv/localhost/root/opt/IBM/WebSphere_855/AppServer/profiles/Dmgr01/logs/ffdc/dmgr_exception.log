@@ -1,0 +1,5 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      9    10/23/26 7:33:01:536 PDT    10/23/26 7:59:01:649 PDT java.io.IOException com.ibm.ws.management.discovery.DiscoveryService.sendQuery 189 /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/dmgr_8256d850_26.10.23_07.33.01.5457477571297825216273.txt
+------+------+---------------------------+---------------------------+---------------------------

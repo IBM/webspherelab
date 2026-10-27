@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-23T07:32:42</date>
+  <millis>1792765962941</millis>
+  <sequence>56</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>runPostinstaller</method>
+  <thread>1</thread>
+  <message>-WS_PI_ACTION_REGISTRY_EXTENSION was not specified. Using default value /opt/IBM/WebSphere_855/AppServer/properties/postinstall/registryExtension.xml
+-DELTA_ACTION_REGISTRY was not specified. Using default value /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/service/productDir/WebSphere/deltaActionRegistry.xml
+</message>
+</record>
+<record>
+  <date>2026-10-23T07:32:42</date>
+  <millis>1792765962941</millis>
+  <sequence>57</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>writeParamsToLog</method>
+  <thread>1</thread>
+  <message>Parameters are:  -PROFILE_MASTER_ACTION_REGISTRY  =  /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/masterActionRegistry.xml
+-MASTER_ACTION_REGISTRY  =  /opt/IBM/WebSphere_855/AppServer/properties/postinstall/masterRegistry.xml
+-WS_CMT_LOG_HOME  =  /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/service/productDir/WebSphere/logs
+-WS_PI_ACTION_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere_855/AppServer/properties/postinstall/registryExtension.xml
+-SUB_ACTION_REGISTRY  =  /opt/IBM/WebSphere_855/AppServer/properties/postinstall/masterRegistry.xml
+-PROFILE_SUB_ACTION_REGISTRY  =  /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/service/productDir/WebSphere/cacheActionRegistry.xml
+WAS_HOME  =  /opt/IBM/WebSphere_855/AppServer
+-WS_CMT_CONF_DIR  =  /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service
+-PROFILE_ACTION_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/registryExtension.xml
+-POSTINSTALL_LOG_FILE  =  /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/service/productDir/WebSphere/logs/postinstall.log
+-profilePath  =  /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+-WS_PI_REGISTRY_EXTENSION  =  /opt/IBM/WebSphere_855/AppServer/properties/postinstall/registryExtension.xml
+-DELTA_ACTION_REGISTRY  =  /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/service/productDir/WebSphere/deltaActionRegistry.xml
+</message>
+</record>
+<record>
+  <date>2026-10-23T07:32:42</date>
+  <millis>1792765962948</millis>
+  <sequence>58</sequence>
+  <logger>com.ibm.ws.postinstall</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.LaunchUnifiedPostInstaller</class>
+  <method>runPostinstaller</method>
+  <thread>1</thread>
+  <message>There are no outstanding profile config actions. Exiting RC=0.</message>
+</record>
+</log>

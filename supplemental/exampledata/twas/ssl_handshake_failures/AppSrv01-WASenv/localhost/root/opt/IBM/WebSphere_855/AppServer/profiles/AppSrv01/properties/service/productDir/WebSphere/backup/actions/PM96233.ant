@@ -1,0 +1,150 @@
+<!-- PM962333 10012013 skavitha initial checkin  --> 
+<project name="WEBSPHERE" default="install" basedir="."> 
+
+    <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/> 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!-- Description              --> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->   
+
+    <target name="checkExecutableExistence" > 
+        <!--available property="executableExists" file="${executable}" /--> 
+        <condition property="runThisConfigAction"> 
+            <and> 
+                <available property="executableExists" file="${executable}" /> 
+                <available property="scriptFileExists" file="${scriptpath}" /> 
+	    	</and> 
+        </condition> 
+    </target> 
+
+
+    <target name="issueWarning" unless="runThisConfigAction" description="Issue a warning if executable does not exist"> 		
+        
+        <wscmtlog priority="severe">    
+            Executable ${executable} or ${scriptpath} does not exist, therefore it was not executed.
+        </wscmtlog> 
+        
+    </target> 
+
+    
+    <target name="invokeExecutable" if="runThisConfigAction">
+        <echo level="info" message="Start: Run wsadmin -conntype NONE -f PM96223.py" />
+        
+        <exec executable="${executable}">
+            <arg value="-conntype" />
+            <arg value="NONE" />
+            <arg value="-f" />
+            <arg value="${scriptpath}" />
+            <!--arg value="${WAS_HOME}${separatorFile}properties${separatorFile}service${separatorFile}productDir${separatorFile}WebSphere${separatorFile}service${separatorFile}actions${separatorFile}PM96233.py" /-->
+            <!--arg value="$AdminApp list" /-->
+        </exec>
+        
+        <echo level="info" message="End: Run wsadmin" /> 
+    </target> 
+
+    
+    <target name="detectCurrentOSFamily" description="Detects the current OS family (UNIX or Windows)."> 
+        
+        <condition property="currentOSFamily" value="os/400"> 
+            <equals arg1="${os.name}" arg2="OS/400"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+        <condition property="currentOSFamily" value="windows"> 
+            <os family="windows"/> 
+        </condition> 
+        <condition property="currentOSFamily" value="unix">             
+            <os family="unix"/> 
+        </condition>
+        
+
+        
+        <wscmtlog> Detected current OS family to be: ${currentOSFamily}</wscmtlog> 
+    </target> 
+
+    
+    <target name="setCurrentOSFamily" description="Detects the current OS family (UNIX, OS400 or Windows)"> 
+        
+        <condition property="isCurrentOSOS400" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="os/400"/> 
+        </condition> 
+        <condition property="isCurrentOSZOS" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="z/os"/> 
+        </condition> 
+        <condition property="isCurrentOSWindows" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition> 
+        <condition property="isCurrentOSUNIX" value="true"> 
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+       
+    </target> 
+
+    
+    <target name="setOSFileSeparator" description="Sets the current file separator for this platform (file.separator is unreliable on ANT 1.5.4)."> 
+        
+        <condition property="separatorFile" value="/">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/> 
+        </condition> 
+        <condition property="fileSeparator" value="/">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+        <condition property="separatorFile" value="/">
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+        <condition property="separatorFile" value="\"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition> 
+        
+       
+    </target> 
+
+    
+    <target name="setExecutable" description="Sets the name of the executable file based on the os family."> 
+        
+        <condition property="executable" value="${profilePath}${separatorFile}bin${separatorFile}wsadmin">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition> 
+        <condition property="executable" value="${profilePath}${separatorFile}bin${separatorFile}wsadmin.sh"> 
+            <equals arg1="${currentOSFamily}" arg2="z/os"/> 
+        </condition> 
+        <condition property="executable" value="${profilePath}${separatorFile}bin${separatorFile}wsadmin.sh"> 
+            <equals arg1="${currentOSFamily}" arg2="unix"/> 
+        </condition> 
+        <condition property="executable" value="${profilePath}${separatorFile}bin${separatorFile}wsadmin.bat"> 
+            <equals arg1="${currentOSFamily}" arg2="windows"/> 
+        </condition> 
+        
+        
+        <wscmtlog> The full path of the executable is: ${executable}</wscmtlog> 
+    </target> 
+
+    <target name="setPM96233ScriptPath" description="Sets the path for PM96223.py."> 
+        
+        <property name ="scriptpath" value="${WAS_HOME}${separatorFile}properties${separatorFile}service${separatorFile}productDir${separatorFile}WebSphere${separatorFile}service${separatorFile}actions${separatorFile}PM96233.py" />
+        
+        <wscmtlog> The full path of the PM96223.py script is: ${scriptpath}</wscmtlog> 
+    </target> 
+    
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!-- Install Target                 --> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    <target name="install" depends="detectCurrentOSFamily,
+                                    setCurrentOSFamily,
+                                    setOSFileSeparator,
+                                    setExecutable,
+                                    setPM96233ScriptPath,
+                                    checkExecutableExistence,
+                                    issueWarning,
+                                    invokeExecutable">
+    </target> 
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!-- Uninstall Target               --> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    <target name="uninstall" description="No uninstall action"> 
+    </target> 
+
+</project>

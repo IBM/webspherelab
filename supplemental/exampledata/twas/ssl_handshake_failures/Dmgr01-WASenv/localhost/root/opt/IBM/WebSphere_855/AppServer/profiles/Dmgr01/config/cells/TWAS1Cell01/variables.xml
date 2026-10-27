@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables:VariableMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:variables="http://www.ibm.com/websphere/appserver/schemas/5.0/variables.xmi" xmi:id="VariableMap_1">
+  <entries xmi:id="VariableSubstitutionEntry_1767631523373" symbolicName="GRID_JOBLOG_ROOT" value="${USER_INSTALL_ROOT}" description="Grid endpoint job logs directory"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631523374" symbolicName="DERBY_JDBC_DRIVER_PATH" value="${WAS_INSTALL_ROOT}/derby/lib" description=""/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631523375" symbolicName="GRID_ENDPOINT_DATASOURCE" value="jdbc/pgc" description="Grid Endpoint Datasource JNDI name"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631523376" symbolicName="WAS_CELL_NAME" value="TWAS1Cell01"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626217" symbolicName="GERONIMO_HOME" value="/opt/IBM/WebSphere/AppServerCommunityEdition" description="WebSphere Community Edition Default Install Location for Unix"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626224" symbolicName="JBOSS_HOME" value="/usr/local/jboss" description="JBoss Distribution Default Install Location for Unix"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626230" symbolicName="CATALINA_HOME" value="/usr/local/apache-tomcat" description="TomCat Default Install Location for Unix"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626233" symbolicName="WEBLOGIC_ADMINHOST" value="localhost" description="HostName of the WebLogic Admin Server"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626237" symbolicName="WEBLOGIC_ADMINPORT" value="7001" description="Administrative port of the WebLogic Admin Server"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626240" symbolicName="WEBLOGIC_ADMINPROTOCOL" value="t3" description="Communication protocol for the WebLogic Admin Server"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626243" symbolicName="WEBLOGIC_ADMINURL" value="${WEBLOGIC_ADMINPROTOCOL}://${WEBLOGIC_ADMINHOST}:${WEBLOGIC_ADMINPORT}" description="Admin URL for the WebLogic Admin Server"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626247" symbolicName="WEBLOGIC_SERVERROOT" value="${WEBLOGIC_DOMAINDIR}" description="WebLogic Server Root"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626250" symbolicName="WEBLOGIC_HOME" value="${BEA_HOME}\\weblogic" description="Home directory of the WebLogic installation"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626254" symbolicName="WEBLOGIC_DOMAINNAME" value="myDomain" description="Name of the WebLogic Domain"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626258" symbolicName="WEBLOGIC_DOMAINDIR" value="${BEA_HOME}\\user_projects\\domains\\${WEBLOGIC_DOMAINNAME}" description="WebLogic domain directory"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767631626262" symbolicName="BEA_HOME" value="/opt/bea" description="Home directory of the BEA product installations"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767632724771" symbolicName="WLP_INSTALL_DIR" value="${WAS_INSTALL_ROOT}/wlp" description="Liberty Default Install Location"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767632724788" symbolicName="WLP_USER_DIR" value="${WLP_INSTALL_DIR}/usr" description="Liberty Default usr Directory Location"/>
+  <entries xmi:id="VariableSubstitutionEntry_1767632724799" symbolicName="WLP_OUTPUT_DIR" value="${WLP_USER_DIR}/servers" description="Liberty Default Output Directory Location"/>
+  <entries xmi:id="VariableSubstitutionEntry_1770228081625" symbolicName="DB2_JCC_DRIVER_PATH" value=""/>
+  <entries xmi:id="VariableSubstitutionEntry_1770228081748" symbolicName="UNIVERSAL_JDBC_DRIVER_PATH"/>
+  <entries xmi:id="VariableSubstitutionEntry_1770228081752" symbolicName="PUREQUERY_PATH" value=""/>
+  <entries xmi:id="VariableSubstitutionEntry_1770228081760" symbolicName="DB2_JCC_DRIVER_NATIVEPATH" value=""/>
+</variables:VariableMap>

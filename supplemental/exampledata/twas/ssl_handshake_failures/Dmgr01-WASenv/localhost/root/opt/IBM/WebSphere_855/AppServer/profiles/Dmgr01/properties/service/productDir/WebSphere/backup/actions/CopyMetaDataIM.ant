@@ -1,0 +1,95 @@
+<project name="CopyMetaDataIM" default="install" basedir=".">
+	
+    <taskdef name="wscmtlog"
+        classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+  <target name="uninstall">
+  </target>     
+
+  <!-- ========================================================== -->
+  <target name="install" description="Install Config Action" depends="init, detectCurrentOSFamily, setOSFileSeparator" unless="iSeries" if="isDmgr">
+
+    <copy todir="${profilePath}${fileSeparator}config${fileSeparator}.repository" overwrite="true">
+      <fileset dir="${WAS_HOME}${fileSeparator}profileTemplates${fileSeparator}cell${fileSeparator}dmgr${fileSeparator}documents${fileSeparator}config${fileSeparator}.repository">
+        <include name="metadata_xd.xml"/>
+      </fileset>
+    </copy>
+
+  </target>       
+
+    <target name="init">
+        <loadproperties srcFile="${profilePath}/properties/profileKey.metadata"/> 
+        <wscmtlog> serverType = ${com.ibm.ws.profile.type}</wscmtlog>
+        <condition property="isDmgr" value="true">
+             <equals arg1="${com.ibm.ws.profile.type}" arg2="DEPLOYMENT_MANAGER"/>
+        </condition>
+        <wscmtlog message="isDmgr=${isDmgr}"/>     
+    </target>
+
+    <!-- == Detect Operating System on WAS Installation =========== -->
+    <target name="detectCurrentOSFamily"
+            description="Detects the current OS family (UNIX or Windows)">
+
+        <condition property="currentOSFamily" value="windows">
+            <os family="windows"/>
+        </condition>
+
+        <condition property="currentOSFamily" value="os/400">
+            <os family="os/400"/>
+        </condition>
+
+        <condition property="iSeries" value="true">
+            <os family="os/400"/>
+        </condition>
+
+        <condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+
+        <condition property="currentOSFamily" value="unix">
+            <and>
+                <os family="unix"/>
+                <not>
+                    <equals arg1="${os.name}" arg2="OS/400"/>
+                </not>
+            </and>
+        </condition>
+
+        <condition property="isWindows" value="true">
+            <os family="windows"/>
+        </condition>
+
+        <condition property="isUnix" value="true">
+            <not>
+                <os family="windows"/>
+            </not>
+        </condition>
+
+        <!-- Output detected OS Family -->
+        <echo>Detected current OS family to be: ${currentOSFamily}</echo>
+
+    </target>
+
+    <!-- == Specify file separator, based on detected OS ========== -->
+    <target name="setOSFileSeparator"
+            description="Sets the current file separator for this platform (file.separator is unreliable on ANT 1.5.4)">
+
+        <condition property="fileSeparator" value="/">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+
+        <condition property="fileSeparator" value="/">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+
+        <condition property="fileSeparator" value="\">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+
+        <condition property="fileSeparator" value="/">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition>
+
+    </target>
+
+</project>

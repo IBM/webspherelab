@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.ejs.models.base.bindings.ejbbnd="ejbbnd.xmi" xmlns:org.eclipse.jst.j2ee.ejb="ejb.xmi" xmi:id="EJBJarBinding_1159198739571">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1159276851647" jndiName="ejb/com/ibm/otis/protocolengine/omadm/ejbs/OMADMManagerHome">
+    <enterpriseBean xsi:type="org.eclipse.jst.j2ee.ejb:Session" href="META-INF/ejb-jar.xml#OMADMManager"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1159278928313" jndiName="ejb/com/ibm/otis/protocolengine/omadm/ejbs/OMADMManagerHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EJBLocalRef_1159278928313"/>
+    </ejbRefBindings>
+  </ejbBindings>
+</com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding>

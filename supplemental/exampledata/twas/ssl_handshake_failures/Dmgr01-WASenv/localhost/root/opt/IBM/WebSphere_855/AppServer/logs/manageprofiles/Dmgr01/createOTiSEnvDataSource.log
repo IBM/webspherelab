@@ -1,0 +1,19 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01, TWAS1CellManager01, TWAS1Cell01]"
+WAS Location: /opt/IBM/WebSphere_855/AppServer
+Database Name = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/OTiS
+nodename=TWAS1CellManager01
+cellname=TWAS1Cell01
+This script Delets all previous datasource and jdbc provider  
+if name repeates for datasource and provider
+ Creatin data source for Cloudscape
+Finding Old jdbc provider . . . 
+Removing Old jdbc provider . . . 
+Creating new jdbc provider . . . 
+${WAS_INSTALL_ROOT}/derby/lib/derby.jar
+Finding Old Data Source . . . .
+Removing Old Data Source . . . 
+OTiSDataSource  Created for Creating the provider for org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource
+Creating new Data source . . . 
+OTiSDataSource
+Setting required property for data source . . .

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sibresources:SIBTopicSpace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sibresources="http://www.ibm.com/websphere/appserver/schemas/6.0/sibresources.xmi" xmi:id="SIBTopicSpace_1769617885881" identifier="Default.Topic.Space" uuid="8EB466B22218B83261609206" description="" sendAllowed="true" receiveAllowed="true"/>

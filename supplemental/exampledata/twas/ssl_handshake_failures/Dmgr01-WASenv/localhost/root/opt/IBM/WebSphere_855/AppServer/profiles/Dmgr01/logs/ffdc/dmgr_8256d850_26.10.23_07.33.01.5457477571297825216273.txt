@@ -1,0 +1,1686 @@
+[10/23/26 7:33:01:548 PDT]     FFDC Exception:java.io.IOException SourceId:com.ibm.ws.management.discovery.DiscoveryService.sendQuery ProbeId:189 Reporter:com.ibm.ws.management.discovery.DiscoveryService@2c9bfe8e
+java.io.IOException: ADMD0004E: The TCP socket: localhost:7272 cannot be opened.  Check if port is opened by remote process.
+	at com.ibm.ws.management.discovery.transport.TcpMessenger.<init>(TcpMessenger.java:69)
+	at com.ibm.ws.management.discovery.transport.MessengerFactory.createMessenger(MessengerFactory.java:29)
+	at com.ibm.ws.management.discovery.transport.TcpTransport.getMessenger(TcpTransport.java:132)
+	at com.ibm.ws.management.discovery.Endpoint.getMessenger(Endpoint.java:265)
+	at com.ibm.ws.management.discovery.DiscoveryService.sendQuery(DiscoveryService.java:166)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter$DiscoveryAlarm.runIt(DiscoveryAdapter.java:402)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter$DiscoveryAlarm.alarm(DiscoveryAdapter.java:391)
+	at com.ibm.ejs.util.am._Alarm.runImpl(_Alarm.java:151)
+	at com.ibm.ejs.util.am._Alarm.run(_Alarm.java:136)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+==> Performing default dump from com.ibm.ws.management.dm.JmxDM :Fri Oct 23 07:33:01 PDT 2026
+IntrospectDepth set from:3 to: 5
+Dump of callerThis BEGIN:com.ibm.ws.management.discovery.DiscoveryService@2c9bfe8e
+com.ibm.ws.management.discovery.DiscoveryService::bundleName:com.ibm.ws.management.resources.discovery
+com.ibm.ws.management.discovery.DiscoveryService::tc BEGIN:com.ibm.ejs.ras.TraceComponent@b01c1c04
+ com.ibm.ejs.ras.TraceElement::ivLevel:10
+ com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.DiscoveryService
+ com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+ com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+ com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+ com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+ com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+ com.ibm.ejs.ras.TraceComponent::ivLogger:null
+ com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+ com.ibm.ejs.ras.TraceComponent::anyTracingEnabled BEGIN:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+  END:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+
+ END:com.ibm.ejs.ras.TraceComponent@b01c1c04
+
+com.ibm.ws.management.discovery.DiscoveryService::nls BEGIN:com.ibm.ejs.ras.TraceNLS@49f684a5
+ com.ibm.ejs.ras.TraceNLS::tc BEGIN:com.ibm.ejs.ras.TraceComponent@4fea1a90
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ejs.ras.TraceNLS
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.ras.resources.RasMessages
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+  END:com.ibm.ejs.ras.TraceComponent@4fea1a90
+
+ com.ibm.ejs.ras.TraceNLS::nullKey:null Key
+ com.ibm.ejs.ras.TraceNLS::svNullBundleName:Resource Bundle name is null, key = {0}
+ com.ibm.ejs.ras.TraceNLS::svBundleNotLoaded:Unable to load ResourceBundle {0}
+ com.ibm.ejs.ras.TraceNLS::svNullKeyMessage:Null key passed while using ResourceBundle {0}
+ com.ibm.ejs.ras.TraceNLS::svMalformedMessage:No message text associated with key {0} in bundle {1}
+ com.ibm.ejs.ras.TraceNLS::sbConvertMessageIds:false
+ com.ibm.ejs.ras.TraceNLS::svMessageIdPropertyName:com.ibm.websphere.logging.messageId.version
+ com.ibm.ejs.ras.TraceNLS::finder:null
+ com.ibm.ejs.ras.TraceNLS::ivBundleName:com.ibm.ws.management.resources.discovery
+ END:com.ibm.ejs.ras.TraceNLS@49f684a5
+
+com.ibm.ws.management.discovery.DiscoveryService::qsn_monitor:java.lang.Object@ac4b65eb
+com.ibm.ws.management.discovery.DiscoveryService::querySerialNumber:3
+com.ibm.ws.management.discovery.DiscoveryService::unresolvableHosts BEGIN:java.util.HashSet@1edf4674
+ {
+ }
+ END:java.util.HashSet@1edf4674
+
+com.ibm.ws.management.discovery.DiscoveryService::endpoint BEGIN:com.ibm.ws.management.discovery.Endpoint@36212ff
+ com.ibm.ws.management.discovery.Endpoint::bundleName:com.ibm.ws.management.resources.discovery
+ com.ibm.ws.management.discovery.Endpoint::tc BEGIN:com.ibm.ejs.ras.TraceComponent@b33ee23d
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.Endpoint
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+  END:com.ibm.ejs.ras.TraceComponent@b33ee23d
+
+ com.ibm.ws.management.discovery.Endpoint::handlers BEGIN:java.util.Hashtable@e5eff6e3
+  {
+  key:DiscoveryService
+  value:com.ibm.ws.management.discovery.DiscoveryService@2c9bfe8e
+  }
+  END:java.util.Hashtable@e5eff6e3
+
+ com.ibm.ws.management.discovery.Endpoint::transports BEGIN:java.util.Hashtable@58e6818a
+  {
+  key:TCP
+  value BEGIN:com.ibm.ws.management.discovery.transport.TcpTransport@684372ad
+   com.ibm.ws.management.discovery.transport.TcpTransport::bundleName:com.ibm.ws.management.resources.discovery
+   com.ibm.ws.management.discovery.transport.TcpTransport::tc BEGIN:com.ibm.ejs.ras.TraceComponent@30e0c58c
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.transport.TcpTransport
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+    END:com.ibm.ejs.ras.TraceComponent@30e0c58c
+
+   com.ibm.ws.management.discovery.transport.TcpTransport::initialized:true
+   com.ibm.ws.management.discovery.transport.TcpTransport::port:7277
+   com.ibm.ws.management.discovery.transport.TcpTransport::localAddress BEGIN:com.ibm.ws.management.discovery.EndpointAddress@cabf348c
+    com.ibm.ws.management.discovery.EndpointAddress::bundleName:com.ibm.ws.management.resources.discovery
+     com.ibm.ws.management.discovery.EndpointAddress::tc:com.ibm.ejs.ras.TraceComponent@52950354 depth limit reached
+    com.ibm.ws.management.discovery.EndpointAddress::protocol:TCP
+    com.ibm.ws.management.discovery.EndpointAddress::protocolHost:localhost
+    com.ibm.ws.management.discovery.EndpointAddress::protocolPort:7277
+    com.ibm.ws.management.discovery.EndpointAddress::serviceName:null
+    com.ibm.ws.management.discovery.EndpointAddress::unified:true
+    com.ibm.ws.management.discovery.EndpointAddress::warningIssued:false
+    END:com.ibm.ws.management.discovery.EndpointAddress@cabf348c
+
+   com.ibm.ws.management.discovery.transport.TcpTransport::unicastServer BEGIN:com.ibm.ws.management.discovery.transport.UnicastServer@a6d1d330
+    com.ibm.ws.management.discovery.transport.UnicastServer::bundleName:com.ibm.ws.management.resources.discovery
+     com.ibm.ws.management.discovery.transport.UnicastServer::tc:com.ibm.ejs.ras.TraceComponent@13d9a754 depth limit reached
+     com.ibm.ws.management.discovery.transport.UnicastServer::threadPool:com.ibm.ws.util.ThreadPool@f61ef52c depth limit reached
+     com.ibm.ws.management.discovery.transport.UnicastServer::connectionPool:com.ibm.ws.management.discovery.transport.UnicastServer$1@6e155147 depth limit reached
+     com.ibm.ws.management.discovery.transport.UnicastServer::serverSocket:java.net.ServerSocket@4d05a851 depth limit reached
+    com.ibm.ws.management.discovery.transport.UnicastServer::alive:true
+     com.ibm.ws.management.discovery.transport.UnicastServer::acceptThread:java.lang.Thread@461bd1d4 depth limit reached
+    com.ibm.ws.management.discovery.transport.UnicastServer::endpoint:com.ibm.ws.management.discovery.Endpoint@36212ff
+    com.ibm.ws.management.discovery.transport.UnicastServer::port:7277
+    com.ibm.ws.management.discovery.transport.UnicastServer::useMultiHome:null
+    com.ibm.ws.management.discovery.transport.UnicastServer::retryLimit:4
+    com.ibm.ws.management.discovery.transport.UnicastServer::retryInterval:1000
+    END:com.ibm.ws.management.discovery.transport.UnicastServer@a6d1d330
+
+   END:com.ibm.ws.management.discovery.transport.TcpTransport@684372ad
+
+  }
+  END:java.util.Hashtable@58e6818a
+
+ com.ibm.ws.management.discovery.Endpoint::primaryTransport:com.ibm.ws.management.discovery.transport.TcpTransport@684372ad
+ com.ibm.ws.management.discovery.Endpoint::epadv BEGIN:com.ibm.ws.management.discovery.protocol.EndpointAdv@d25834e5
+  com.ibm.ws.management.discovery.protocol.EndpointAdv::tc BEGIN:com.ibm.ejs.ras.TraceComponent@101828a
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.protocol.EndpointAdv
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@101828a
+
+  com.ibm.ws.management.discovery.protocol.EndpointAdv::name:tcp
+  com.ibm.ws.management.discovery.protocol.EndpointAdv::transport BEGIN:com.ibm.ws.management.discovery.protocol.TcpAdv@e6f23f27
+   com.ibm.ws.management.discovery.protocol.TcpAdv::tc BEGIN:com.ibm.ejs.ras.TraceComponent@9f64067b
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.protocol.TcpAdv
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+    END:com.ibm.ejs.ras.TraceComponent@9f64067b
+
+   com.ibm.ws.management.discovery.protocol.TcpAdv::port:7277
+   com.ibm.ws.management.discovery.protocol.TcpAdv::protocol:tcp
+   com.ibm.ws.management.discovery.protocol.TcpAdv::publicAddress:localhost
+   com.ibm.ws.management.discovery.protocol.TcpAdv::localAddress:localhost
+   END:com.ibm.ws.management.discovery.protocol.TcpAdv@e6f23f27
+
+  com.ibm.ws.management.discovery.protocol.EndpointAdv::endpointAddress:tcp://localhost:7277
+  END:com.ibm.ws.management.discovery.protocol.EndpointAdv@d25834e5
+
+ com.ibm.ws.management.discovery.Endpoint::name:tcp
+ com.ibm.ws.management.discovery.Endpoint::address BEGIN:com.ibm.ws.management.discovery.EndpointAddress@347bac06
+  com.ibm.ws.management.discovery.EndpointAddress::bundleName:com.ibm.ws.management.resources.discovery
+  com.ibm.ws.management.discovery.EndpointAddress::tc:com.ibm.ejs.ras.TraceComponent@52950354
+  com.ibm.ws.management.discovery.EndpointAddress::protocol:tcp
+  com.ibm.ws.management.discovery.EndpointAddress::protocolHost:localhost
+  com.ibm.ws.management.discovery.EndpointAddress::protocolPort:7277
+  com.ibm.ws.management.discovery.EndpointAddress::serviceName:null
+  com.ibm.ws.management.discovery.EndpointAddress::unified:true
+  com.ibm.ws.management.discovery.EndpointAddress::warningIssued:false
+  END:com.ibm.ws.management.discovery.EndpointAddress@347bac06
+
+ com.ibm.ws.management.discovery.Endpoint::tpMgr BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+  com.ibm.wsspi.runtime.component.WsComponentImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@e623823a
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.wsspi.runtime.component.WsComponentImpl
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@e623823a
+
+  com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED_DEFAULT:true
+  com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_INIT_MONITORED_CUSTOM_PROPERTY_NAME:com.ibm.websphere.WsComponentImpl.synch_init_monitored
+  com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED_SWITCH:null
+  com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED:true
+  com.ibm.wsspi.runtime.component.WsComponentImpl::name:null
+  com.ibm.wsspi.runtime.component.WsComponentImpl::state:null
+  com.ibm.wsspi.runtime.component.WsComponentImpl::propertyChangeSupport BEGIN:java.beans.PropertyChangeSupport@138aee21
+   java.beans.PropertyChangeSupport::map BEGIN:java.beans.PropertyChangeSupport$PropertyChangeListenerMap@9d09c887
+    java.beans.ChangeListenerMap::map:null
+     java.beans.PropertyChangeSupport$PropertyChangeListenerMap::EMPTY:[Ljava.beans.PropertyChangeListener;@518a681d depth limit reached
+    END:java.beans.PropertyChangeSupport$PropertyChangeListenerMap@9d09c887
+
+   java.beans.PropertyChangeSupport::source:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+   java.beans.PropertyChangeSupport::serialPersistentFields BEGIN:[Ljava.io.ObjectStreamField;@896dc86d
+    [
+     java.io.ObjectStreamField@296787cd depth limit reached
+     java.io.ObjectStreamField@e14f207b depth limit reached
+     java.io.ObjectStreamField@2a420fb5 depth limit reached
+    ]
+    END:[Ljava.io.ObjectStreamField;@896dc86d
+
+   java.beans.PropertyChangeSupport::serialVersionUID:6401253773779951803
+   END:java.beans.PropertyChangeSupport@138aee21
+
+  com.ibm.wsspi.runtime.component.WsComponentImpl::inhibitMultiThreadedBehavior:false
+  com.ibm.wsspi.runtime.component.WsComponentImpl::inhibtMultiThreadedBehaviorGlobally:false
+  com.ibm.wsspi.runtime.component.WsComponentImpl::join:null
+  com.ibm.wsspi.runtime.component.WsComponentImpl::latchedAsynchronousException:null
+  com.ibm.wsspi.runtime.component.WsComponentImpl::initializers BEGIN:com.ibm.ws.util.ThreadPool@64f615ca
+   com.ibm.ws.util.ThreadPool::tc BEGIN:com.ibm.ejs.ras.TraceComponent@a39b50ca
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.util.ThreadPool
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+    END:com.ibm.ejs.ras.TraceComponent@a39b50ca
+
+   com.ibm.ws.util.ThreadPool::debugThisPool:false
+   com.ibm.ws.util.ThreadPool::THREAD_CONTEXT_ACCESSOR BEGIN:com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl@82f1792a
+     com.ibm.ws.util.ThreadContextAccessor::tc:com.ibm.ejs.ras.TraceComponent@36c31bd1 depth limit reached
+    com.ibm.ws.util.ThreadContextAccessor::PRINT_STACK_ON_SET_CTX_CLASSLOADER:false
+     com.ibm.ws.util.ThreadContextAccessor::PRIVILEGED_ACTION:com.ibm.ws.util.ThreadContextAccessor$1@db45deb8 depth limit reached
+     com.ibm.ws.util.ThreadContextAccessor::UNCHANGED:com.ibm.ws.util.ThreadContextAccessor$Unchanged@10a7f27d depth limit reached
+    com.ibm.ws.util.ThreadContextAccessor::threadContextAccessor:com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl@82f1792a
+     com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl::field:java.lang.reflect.Field@4ad2cf68 depth limit reached
+    END:com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl@82f1792a
+
+   com.ibm.ws.util.ThreadPool::DEFAULT_MAXIMUMPOOLSIZE:10
+   com.ibm.ws.util.ThreadPool::DEFAULT_MINIMUMPOOLSIZE:0
+   com.ibm.ws.util.ThreadPool::DEFAULT_KEEPALIVETIME:5000
+   com.ibm.ws.util.ThreadPool::WAIT_WHEN_QUEUE_IS_FULL:0
+   com.ibm.ws.util.ThreadPool::ERROR_WHEN_QUEUE_IS_FULL:1
+   com.ibm.ws.util.ThreadPool::EXPAND_WHEN_QUEUE_IS_FULL_ERROR_AT_LIMIT:2
+   com.ibm.ws.util.ThreadPool::EXPAND_WHEN_QUEUE_IS_FULL_WAIT_AT_LIMIT:3
+   com.ibm.ws.util.ThreadPool::maximumPoolSize_:3
+   com.ibm.ws.util.ThreadPool::minimumPoolSize_:1
+   com.ibm.ws.util.ThreadPool::poolSize_:3
+   com.ibm.ws.util.ThreadPool::activeThreads:0
+   com.ibm.ws.util.ThreadPool::keepAliveTime_:30000
+   com.ibm.ws.util.ThreadPool::requestBuffer BEGIN:com.ibm.ws.util.BoundedBuffer@b99de988
+     com.ibm.ws.util.BoundedBuffer::tc:com.ibm.ejs.ras.TraceComponent@cb6748e3 depth limit reached
+    com.ibm.ws.util.BoundedBuffer::waitingThreads:3
+    com.ibm.ws.util.BoundedBuffer::SPINS_TAKE_:7
+    com.ibm.ws.util.BoundedBuffer::SPINS_PUT_:1
+    com.ibm.ws.util.BoundedBuffer::YIELD_TAKE_:false
+    com.ibm.ws.util.BoundedBuffer::YIELD_PUT_:false
+    com.ibm.ws.util.BoundedBuffer::WAIT_SHORT_SLICE_:1000
+    com.ibm.ws.util.BoundedBuffer::WAIT_LONG_SLICE_:1000
+    com.ibm.ws.util.BoundedBuffer::SPLIT_THRESH_:50
+    com.ibm.ws.util.BoundedBuffer::SPLIT_FACTOR_:50
+    com.ibm.ws.util.BoundedBuffer::SPLIT_NUMLOCKS_:-1
+    com.ibm.ws.util.BoundedBuffer::MAX_COUNTER:1073741823
+    com.ibm.ws.util.BoundedBuffer::useNewLocking:false
+     com.ibm.ws.util.BoundedBuffer::putQueue_:com.ibm.ws.util.BoundedBuffer$PutQueueLock@2fb2e00c depth limit reached
+    com.ibm.ws.util.BoundedBuffer::putQueueLen_:0
+     com.ibm.ws.util.BoundedBuffer::getQueueLocks_:[Lcom.ibm.ws.util.BoundedBuffer$GetQueueLock;@5e2f21d2 depth limit reached
+    com.ibm.ws.util.BoundedBuffer::lastNotifiedIndex:0
+     com.ibm.ws.util.BoundedBuffer::buffer:[Ljava.lang.Object;@d8c8a8c7 depth limit reached
+    com.ibm.ws.util.BoundedBuffer::takeIndex:2
+    com.ibm.ws.util.BoundedBuffer::putIndex:2
+     com.ibm.ws.util.BoundedBuffer::numberOfUsedSlots:com.ibm.ws.util.BoundedBuffer$LiteAtomicInteger@a620f08a depth limit reached
+     com.ibm.ws.util.BoundedBuffer::lock:com.ibm.ws.util.BoundedBuffer$BoundedBufferLock@7405d0df depth limit reached
+     com.ibm.ws.util.BoundedBuffer::getQueueCounter_:java.util.concurrent.atomic.AtomicInteger@e7d45d2d depth limit reached
+    com.ibm.ws.util.BoundedBuffer::threadPool_:com.ibm.ws.util.ThreadPool@64f615ca
+    END:com.ibm.ws.util.BoundedBuffer@b99de988
+
+   com.ibm.ws.util.ThreadPool::shutdown_:false
+   com.ibm.ws.util.ThreadPool::threads_ BEGIN:java.util.HashMap@3177c71e
+    {
+     key:com.ibm.ws.util.ThreadPool$Worker@e3085da8 depth limit reached
+    value:com.ibm.ws.util.ThreadPool$Worker@e3085da8
+     key:com.ibm.ws.util.ThreadPool$Worker@5c1f371 depth limit reached
+    value:com.ibm.ws.util.ThreadPool$Worker@5c1f371
+     key:com.ibm.ws.util.ThreadPool$Worker@5ebb862e depth limit reached
+    value:com.ibm.ws.util.ThreadPool$Worker@5ebb862e
+    }
+    END:java.util.HashMap@3177c71e
+
+   com.ibm.ws.util.ThreadPool::threadid:3
+   com.ibm.ws.util.ThreadPool::growasneeded:false
+   com.ibm.ws.util.ThreadPool::contextClassLoader BEGIN:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+     java.lang.ClassLoader::defaultCodeSource:java.security.CodeSource@996ebdb6 depth limit reached
+     java.lang.ClassLoader::bootstrapClassLoader:com.ibm.oti.vm.BootstrapClassLoader@682536d5 depth limit reached
+    java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+    java.lang.ClassLoader::isDelegatingCL:false
+     java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@787b3c3f depth limit reached
+    java.lang.ClassLoader::initSystemClassLoader:false
+    java.lang.ClassLoader::isAssertOptionFound:false
+    java.lang.ClassLoader::vmRef:140510393149080
+     java.lang.ClassLoader::parent:org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@1c48a99e depth limit reached
+    java.lang.ClassLoader::checkAssertionOptions:false
+     java.lang.ClassLoader::assertionLock:java.lang.ClassLoader$AssertionLock@7b669c13 depth limit reached
+    java.lang.ClassLoader::defaultAssertionStatus:false
+    java.lang.ClassLoader::packageAssertionStatus:null
+    java.lang.ClassLoader::classAssertionStatus:null
+     java.lang.ClassLoader::packages:java.util.Hashtable@e579e522 depth limit reached
+     java.lang.ClassLoader::lazyInitLock:java.lang.ClassLoader$LazyInitLock@ea3fd8d7 depth limit reached
+    java.lang.ClassLoader::classSigners:null
+     java.lang.ClassLoader::packageSigners:java.util.Hashtable@25ae911f depth limit reached
+     java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@8b7a0e1a depth limit reached
+    java.lang.ClassLoader::defaultProtectionDomain:null
+     java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@fb91654b depth limit reached
+    java.lang.ClassLoader::classNameBasedLock:null
+    java.lang.ClassLoader::isParallelCapable:false
+     java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@cee820c0 depth limit reached
+    java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:null
+    java.lang.ClassLoader::allowArraySyntax:false
+    java.lang.ClassLoader::lazyClassLoaderInit:true
+    java.lang.ClassLoader::specialLoaderInited:true
+     java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@1ec6c886 depth limit reached
+    java.security.SecureClassLoader::initialized:true
+     java.security.SecureClassLoader::pdcache:java.util.HashMap@da20381a depth limit reached
+    java.security.SecureClassLoader::debug:null
+     java.net.URLClassLoader::ucp:sun.misc.URLClassPath@20d6124f depth limit reached
+     java.net.URLClassLoader::acc:java.security.AccessControlContext@a5cf4895 depth limit reached
+     java.net.URLClassLoader::sharedClassURLClasspathHelper:com.ibm.oti.shared.SharedClassURLClasspathHelperImpl@38e4191d depth limit reached
+     java.net.URLClassLoader::sharedClassMetaDataCache:java.net.URLClassLoader$SharedClassMetaDataCache@4c37edce depth limit reached
+     java.net.URLClassLoader::closeables:java.util.WeakHashMap@5c5c4584 depth limit reached
+     java.net.URLClassLoader::showClassLoadingFor:java.util.Vector@2d7b24a depth limit reached
+    java.net.URLClassLoader::showLoadingMessages:false
+    java.net.URLClassLoader::showClassLoadingProperty:ibm.cl.verbose
+     com.ibm.ws.bootstrap.ExtClassLoader::ivIsAlwaysProtectedMethod:java.lang.reflect.Method@c02eb4b8 depth limit reached
+     com.ibm.ws.bootstrap.ExtClassLoader::ivIsResourceAlwaysProtectedMethod:java.lang.reflect.Method@126736a0 depth limit reached
+     com.ibm.ws.bootstrap.ExtClassLoader::ivIsForbiddenMethod:java.lang.reflect.Method@6f62e864 depth limit reached
+     com.ibm.ws.bootstrap.ExtClassLoader::gateway:com.ibm.ws.bootstrap.ClassLoaderGateway@a1dea776 depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::instance:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+     com.ibm.ws.bootstrap.ExtClassLoader::containedPaths:java.util.ArrayList@ac2abaf8 depth limit reached
+     com.ibm.ws.bootstrap.ExtClassLoader::nativePaths:java.util.ArrayList@61afac4f depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::classpath:/opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/java/lib/dt.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/ibmorbtools.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/jconsole.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/lib/COBOLCallStubGenerator.zip:/opt/IBM/WebSphere_855/AppServer/lib/EJBCommandTarget.jar:/opt/IBM/WebSphere_855/AppServer/lib/IVTClient.jar:/opt/IBM/WebSphere_855/AppServer/lib/OTiSConvertTime.jar:/opt/IBM/WebSphere_855/AppServer/lib/activation-impl.jar:/opt/IBM/WebSphere_855/AppServer/lib/admin.config.jobcl.jar:/opt/IBM/WebSphere_855/AppServer/lib/admin.config.rules.jar:/opt/IBM/WebSphere_855/AppServer/lib/admin.config.sched.jar:/opt/IBM/WebSphere_855/AppServer/lib/aspectjrt.jar:/opt/IBM/WebSphere_855/AppServer/lib/batch.wccm.jar:/opt/IBM/WebSphere_855/AppServer/lib/batchpmi.jar:/opt/IBM/WebSphere_855/AppServer/lib/batchprops.jar:/opt/IBM/WebSphere_855/AppServer/lib/batchutilsfep.jar:/opt/IBM/WebSphere_855/AppServer/lib/batfepapi.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/bsf-engines.jar:/opt/IBM/WebSphere_855/AppServer/lib/com.ibm.rls.jdbc.jar:/opt/IBM/WebSphere_855/AppServer/lib/commandlineutils.jar:/opt/IBM/WebSphere_855/AppServer/lib/commons-discovery.jar:/opt/IBM/WebSphere_855/AppServer/lib/databeans.jar:/opt/IBM/WebSphere_855/AppServer/lib/db2jcc4.jar:/opt/IBM/WebSphere_855/AppServer/lib/ffdcSupport.jar:/opt/IBM/WebSphere_855/AppServer/lib/htmlshell.jar:/opt/IBM/WebSphere_855/AppServer/lib/iscdeploy.jar:/opt/IBM/WebSphere_855/AppServer/lib/j2ee.jar:/opt/IBM/WebSphere_855/AppServer/lib/jNative2ascii.jar:/opt/IBM/WebSphere_855/AppServer/lib/jacl.jar:/opt/IBM/WebSphere_855/AppServer/lib/jrom.jar:/opt/IBM/WebSphere_855/AppServer/lib/launchclient.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/mail-impl.jar:/opt/IBM/WebSphere_855/AppServer/lib/openwebbeans.jar:/opt/IBM/WebSphere_855/AppServer/lib/pc-appext.jar:/opt/IBM/WebSphere_855/AppServer/lib/pmirm4arm.jar:/opt/IBM/WebSphere_855/AppServer/lib/rrd-appext.jar:/opt/IBM/WebSphere_855/AppServer/lib/rsadbutils.jar:/opt/IBM/WebSphere_855/AppServer/lib/rsahelpers.jar:/opt/IBM/WebSphere_855/AppServer/lib/serviceadapter.jar:/opt/IBM/WebSphere_855/AppServer/lib/setup.jar:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/tcljava.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/lib/wses_dynaedge.jar:/opt/IBM/WebSphere_855/AppServer/lib/wsif-compatb.jar:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime/batch.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime/ejbdeploy.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime/ejbmapvalidate.jar:/opt/IBM/WebSphere_855/AppServer/derby/lib/derby.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/sib.api.jmsra.rar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.commonservices.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.connector.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.headers.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jmqi.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jmqi.local.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jmqi.remote.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jmqi.system.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.jms.admin.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mq.pcf.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.mqjms.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.commonservices.j2se.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.commonservices.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.jms.internal.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.jms.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.matchspace.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.provider.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.ref.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.wmq.common.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.wmq.factories.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.wmq.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/com.ibm.msg.client.wmq.v6.jar:/opt/IBM/WebSphere_855/AppServer/installedConnectors/wmq.jmsra.rar/dhbcore.jar:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+    com.ibm.ws.bootstrap.ExtClassLoader::nativepath:null
+    com.ibm.ws.bootstrap.ExtClassLoader::serverIDPush:null
+    com.ibm.ws.bootstrap.ExtClassLoader::serverIDPop:null
+    com.ibm.ws.bootstrap.ExtClassLoader::serverIDHelper:null
+    com.ibm.ws.bootstrap.ExtClassLoader::serverIDHelperIsSet:false
+    END:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+
+   com.ibm.ws.util.ThreadPool::clearJavaLangThreadLocals:false
+   com.ibm.ws.util.ThreadPool::threadpriority:5
+   com.ibm.ws.util.ThreadPool::ZERO_TP_LISTENERS BEGIN:[Lcom.ibm.ws.util.ThreadPoolListener;@8a77b3fd
+    [
+    ]
+    END:[Lcom.ibm.ws.util.ThreadPoolListener;@8a77b3fd
+
+   com.ibm.ws.util.ThreadPool::ZERO_EXTENDED_TP_LISTENERS BEGIN:[Lcom.ibm.ws.util.ExtendedThreadPoolListener;@c556eeec
+    [
+    ]
+    END:[Lcom.ibm.ws.util.ExtendedThreadPoolListener;@c556eeec
+
+   com.ibm.ws.util.ThreadPool::threadPoolListeners BEGIN:[Lcom.ibm.ws.util.ThreadPoolListener;@5e1762b8
+    [
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    ]
+    END:[Lcom.ibm.ws.util.ThreadPoolListener;@5e1762b8
+
+   com.ibm.ws.util.ThreadPool::extendedThreadPoolListeners:[Lcom.ibm.ws.util.ExtendedThreadPoolListener;@c556eeec
+   com.ibm.ws.util.ThreadPool::name:server.startup
+   com.ibm.ws.util.ThreadPool::monitorPlugin BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@6a48c0da
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter::policy:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter::threadPool:com.ibm.ws.util.ThreadPool@64f615ca
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter::listener:com.ibm.ws.runtime.component.ThreadMonitorImpl@4e76a337 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter::pmiAdapter:null
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@6a48c0da
+
+   com.ibm.ws.util.ThreadPool::requestBufferExpansionLimit_:30
+   com.ibm.ws.util.ThreadPool::requestBufferInitialCapacity_:3
+   com.ibm.ws.util.ThreadPool::lastThreadCheckDidntComplete:false
+   com.ibm.ws.util.ThreadPool::poolGrowthLogged:false
+   com.ibm.ws.util.ThreadPool::poolGrowthMultiple:2
+   com.ibm.ws.util.ThreadPool::isZOS:false
+   com.ibm.ws.util.ThreadPool::_isDecoratedZOS:false
+   com.ibm.ws.util.ThreadPool::xMemSetupThread:null
+   com.ibm.ws.util.ThreadPool::bufferLimitReached:false
+   com.ibm.ws.util.ThreadPool::bufferLimitReachedConditionToBeLogged:true
+   com.ibm.ws.util.ThreadPool::capacityNotificationThreshold:0
+   com.ibm.ws.util.ThreadPool::capacityNotificationPercentage:0
+   com.ibm.ws.util.ThreadPool::thresholdNotificationIssued:false
+   com.ibm.ws.util.ThreadPool::fullNotificationIssued:false
+   com.ibm.ws.util.ThreadPool::threadRenewalDelay:-1
+   com.ibm.ws.util.ThreadPool::DEFAULT_THREAD_RENEWAL_DELAY:1000
+   com.ibm.ws.util.ThreadPool::renewingThreads:false
+   com.ibm.ws.util.ThreadPool::lastAppStoppedTime BEGIN:java.util.concurrent.atomic.AtomicLong@df5768d1
+    java.lang.Number::serialVersionUID:-8742448824652078965
+    java.util.concurrent.atomic.AtomicLong::serialVersionUID:1927816293512124184
+     java.util.concurrent.atomic.AtomicLong::unsafe:sun.misc.Unsafe@e8f32058 depth limit reached
+    java.util.concurrent.atomic.AtomicLong::valueOffset:8
+    java.util.concurrent.atomic.AtomicLong::VM_SUPPORTS_LONG_CAS:true
+    java.util.concurrent.atomic.AtomicLong::value:0
+    END:java.util.concurrent.atomic.AtomicLong@df5768d1
+
+   com.ibm.ws.util.ThreadPool::lastTimeThreadKilledItself BEGIN:java.util.concurrent.atomic.AtomicLong@1024f564
+    java.lang.Number::serialVersionUID:-8742448824652078965
+    java.util.concurrent.atomic.AtomicLong::serialVersionUID:1927816293512124184
+    java.util.concurrent.atomic.AtomicLong::unsafe:sun.misc.Unsafe@e8f32058
+    java.util.concurrent.atomic.AtomicLong::valueOffset:8
+    java.util.concurrent.atomic.AtomicLong::VM_SUPPORTS_LONG_CAS:true
+    java.util.concurrent.atomic.AtomicLong::value:0
+    END:java.util.concurrent.atomic.AtomicLong@1024f564
+
+   com.ibm.ws.util.ThreadPool::daemonId:-1
+   com.ibm.ws.util.ThreadPool::ZERO_OBJECTS BEGIN:[Ljava.lang.Object;@64e15c95
+    [
+    ]
+    END:[Ljava.lang.Object;@64e15c95
+
+   END:com.ibm.ws.util.ThreadPool@64f615ca
+
+  com.ibm.wsspi.runtime.component.WsComponentImpl::threadContextHelper:null
+  com.ibm.ws.runtime.component.ComponentImpl::beanContext BEGIN:com.ibm.ws.runtime.component.ServerImpl@366ef435
+   com.ibm.wsspi.runtime.component.WsComponentImpl::tc:com.ibm.ejs.ras.TraceComponent@e623823a
+   com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED_DEFAULT:true
+   com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_INIT_MONITORED_CUSTOM_PROPERTY_NAME:com.ibm.websphere.WsComponentImpl.synch_init_monitored
+   com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED_SWITCH:null
+   com.ibm.wsspi.runtime.component.WsComponentImpl::SYNCH_APP_MONITORED:true
+   com.ibm.wsspi.runtime.component.WsComponentImpl::name:dmgr
+   com.ibm.wsspi.runtime.component.WsComponentImpl::state:STARTED
+   com.ibm.wsspi.runtime.component.WsComponentImpl::propertyChangeSupport BEGIN:java.beans.PropertyChangeSupport@6e26d309
+     java.beans.PropertyChangeSupport::map:java.beans.PropertyChangeSupport$PropertyChangeListenerMap@356ef285 depth limit reached
+    java.beans.PropertyChangeSupport::source:com.ibm.ws.runtime.component.ServerImpl@366ef435
+    java.beans.PropertyChangeSupport::serialPersistentFields:[Ljava.io.ObjectStreamField;@896dc86d
+    java.beans.PropertyChangeSupport::serialVersionUID:6401253773779951803
+    END:java.beans.PropertyChangeSupport@6e26d309
+
+   com.ibm.wsspi.runtime.component.WsComponentImpl::inhibitMultiThreadedBehavior:false
+   com.ibm.wsspi.runtime.component.WsComponentImpl::inhibtMultiThreadedBehaviorGlobally:false
+   com.ibm.wsspi.runtime.component.WsComponentImpl::join:null
+   com.ibm.wsspi.runtime.component.WsComponentImpl::latchedAsynchronousException:null
+   com.ibm.wsspi.runtime.component.WsComponentImpl::initializers:com.ibm.ws.util.ThreadPool@64f615ca
+   com.ibm.wsspi.runtime.component.WsComponentImpl::threadContextHelper:null
+   com.ibm.ws.runtime.component.ComponentImpl::beanContext:null
+   com.ibm.ws.runtime.component.ComponentImpl::vetoableChangeSupport BEGIN:java.beans.VetoableChangeSupport@14b2a137
+     java.beans.VetoableChangeSupport::map:java.beans.VetoableChangeSupport$VetoableChangeListenerMap@6beb4ffb depth limit reached
+    java.beans.VetoableChangeSupport::source:com.ibm.ws.runtime.component.ServerImpl@366ef435
+     java.beans.VetoableChangeSupport::serialPersistentFields:[Ljava.io.ObjectStreamField;@e3ba9be0 depth limit reached
+    java.beans.VetoableChangeSupport::serialVersionUID:-5090210921595982017
+    END:java.beans.VetoableChangeSupport@14b2a137
+
+   com.ibm.ws.runtime.component.ContainerImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@28700f85
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.runtime.component.ContainerImpl
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+    END:com.ibm.ejs.ras.TraceComponent@28700f85
+
+   com.ibm.ws.runtime.component.ContainerImpl::components BEGIN:java.util.Collections$SynchronizedRandomAccessList@943da422
+    {
+    com.ibm.ws.runtime.component.ThreadMonitorImpl@4e76a337
+     com.ibm.ws.runtime.component.EndPointMgrImpl@1e9fa1a7 depth limit reached
+     com.ibm.ws.security.core.SecurityInitializerImpl@fd66434a depth limit reached
+     com.ibm.ws.channelfw.secure.FirstChannelActions@f0e76d76 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.TransportChannelLoaderImpl@fd9bf5e3 depth limit reached
+     com.ibm.ws.runtime.component.WsByteBufferPoolManagerServiceImpl@fd188a58 depth limit reached
+     com.ibm.ws.runtime.component.TraceImpl@937e935d depth limit reached
+     com.ibm.ws.runtime.component.RASImpl@c862cb8f depth limit reached
+     com.ibm.ws.ffdc.impl.FfdcProvider@e718a772 depth limit reached
+     com.ibm.ws.management.component.AdminImpl@76c8440a depth limit reached
+     com.ibm.ws.commsvc.admin.NodePropertyListener@10ddde47 depth limit reached
+     com.ibm.ws.runtime.component.EnvironmentType@74b2ef94 depth limit reached
+     com.ibm.ws.security.core.SecurityConfigComponentImpl@48cf5399 depth limit reached
+     com.ibm.ws.ssl.core.SSLComponentImpl@acd9105a depth limit reached
+     com.ibm.ws.rasdiag.DiagnosticServiceImpl@3f9a28c0 depth limit reached
+     com.ibm.ws.pmi.component.PMIImpl@7b1c9042 depth limit reached
+     com.ibm.ws.giop.threadpool.GiopThreadpoolAdminContainerImpl@3c82e3c4 depth limit reached
+     com.ibm.ws.runtime.component.ChannelFrameworkServiceImpl@6899fad7 depth limit reached
+     com.ibm.ws.runtime.component.ORBImpl@9140c75d depth limit reached
+     com.ibm.son.ws.SonComponent@a2971821 depth limit reached
+     com.ibm.ws.xd.config.ha.coregroupbridge.monitor.CoreGroupBridgeMonitor@bae818bf depth limit reached
+     com.ibm.ws.hamanager.runtime.CoordinatorComponentImpl@cd3981d3 depth limit reached
+     com.ibm.ws.xd.bbson.corestack.runtime.component.CoreStackComponentImpl@88a05bfa depth limit reached
+     com.ibm.ws.xd.bbson.bbscopes.runtime.component.BulletinBoardScopesComponentImpl@aff72adb depth limit reached
+     com.ibm.ws.xd.hamitem.HAMItemManagerComponentImpl@d749fdd depth limit reached
+     com.ibm.ws.xd.comm.BBComponentImpl@e2ebf88d depth limit reached
+     com.ibm.ws.proxy.config.ProxyConfigServiceImpl@339ab70e depth limit reached
+     com.ibm.ws.xd.bbscopehelper.BBScopeComponentImpl@9abf37a3 depth limit reached
+     com.ibm.ws.xd.cruisecontrol.DocumentBuildContentComponentImpl@2c0dbe7e depth limit reached
+     com.ibm.ws.cluster.runtime.ProcessRuntimeImpl@24e190c4 depth limit reached
+     com.ibm.ws.cluster.runtime.ClusterRuntimeImpl@f92075ad depth limit reached
+     com.ibm.ws.cluster.channel.ChannelSelectionAdapterImpl@3636f12c depth limit reached
+     com.ibm.ws.cluster.service.ClusterMemberServiceImpl@9bfced1c depth limit reached
+     com.ibm.ws.management.dragdrop.DragDropDeploymentService@da881cd4 depth limit reached
+     com.ibm.ws.externalnode.ExternalNodeStatsServiceImpl@de3f70b7 depth limit reached
+     com.ibm.ws.management.system.smgr.JobManagerAdminImpl@3adcff81 depth limit reached
+     com.ibm.ws.naming.bootstrap.NameServerImpl@56982730 depth limit reached
+     com.ibm.ws.cgbridge.core.impl.CGBridgeService@3878ba4e depth limit reached
+     com.ibm.ws.runtime.component.NameSpaceInitializerImpl@c65992f5 depth limit reached
+     com.ibm.wsspi.xd.operations.ComponentProviderManagerFactory@5e4e562f depth limit reached
+     com.ibm.ws.xd.operations.impl.StatusProviderConfigHelper@d54810ed depth limit reached
+     com.ibm.ws.xd.operations.impl.XDOperationsViewConfigHelper@a86a165b depth limit reached
+     com.ibm.ws.xd.config.workclass.customproperty.WorkClassCustomPropertyHelper@38ed362a depth limit reached
+     com.ibm.ws.xd.nodedetect.NodeDetectComponentImpl@8fedab0 depth limit reached
+     com.ibm.ws.xd.nodedetect.NGUtil@9b9b22de depth limit reached
+     com.ibm.ws.xd.agent.websphere.runtime.component.XDAComponentImpl@6b43783d depth limit reached
+     com.ibm.ws.xd.config.server.commands.MaintenanceModeConfigHelper@2657a121 depth limit reached
+     com.ibm.ws.xd.nodedetect.xdoperations.NdiComponentStatusProviderImpl@b4eb372a depth limit reached
+     com.ibm.ws.xd.odc.xdoperations.HAPluginCfgGeneratorStatusProvider@755d358 depth limit reached
+     com.ibm.ws.xd.config.server.commands.HeapDetectConfigHelper@234c1e78 depth limit reached
+     com.ibm.ws.xd.pmi.async.client.AsyncPmiClientComponentImpl@fdd2fb1d depth limit reached
+     com.ibm.ws.handlerfw.impl.HandlerFrameworkServiceImpl@7f45fd5 depth limit reached
+     com.ibm.ws.runtime.component.MultibrokerDomainImpl@9ba3b00e depth limit reached
+     com.ibm.ws.runtime.service.CacheResourceMgrImpl@3477b7a7 depth limit reached
+     com.ibm.ws.webservices.admin.component.WebServicesAdminComponentImpl@af6fa222 depth limit reached
+     com.ibm.ws.management.component.CellManagerImpl@1668be09 depth limit reached
+     com.ibm.ws.runtime.component.CFSBinder@b426e4bf depth limit reached
+     com.ibm.ws.runtime.component.WSBBSBinder@46dfea97 depth limit reached
+     com.ibm.ws.cluster.channel.WLMChainEventListener@cfdb7d24 depth limit reached
+     com.ibm.ws.soa.sca.admin.runtime.impl.SCAPluginCfgInitializer@a3c18776 depth limit reached
+     com.ibm.ws.extensionhelper.impl.ExtensionHelperServiceImpl@e6301f77 depth limit reached
+     com.ibm.datapower.dmi.ws.DMI_WsComponentImpl@2488d289 depth limit reached
+     com.ibm.ws.sib.admin.impl.JsAdminComponentImpl@e5d13479 depth limit reached
+     com.ibm.ws.sib.utils.ComponentImpl@ee97a15f depth limit reached
+     com.ibm.ws.odc.ODCManagerService@e5d4901d depth limit reached
+     com.ibm.ws.trace.xd.TrService@2032a456 depth limit reached
+     com.ibm.ws.odc.xd.XDODCService@d1a0db98 depth limit reached
+     com.ibm.ws.odc.ODCService@3d95fad5 depth limit reached
+     com.ibm.ws.security.core.SecurityComponentImpl@9030617f depth limit reached
+     com.ibm.ws.storage.StorageServer@a878d130 depth limit reached
+     com.ibm.ws.management.authorizer.AdminAuthzComponentImpl@2054caa6 depth limit reached
+     com.ibm.ejs.jms.JMSRegistration@8cac7d93 depth limit reached
+     com.ibm.ws.xd.snmp.SnmpComponentImpl@3003bfbe depth limit reached
+     com.ibm.ws.lm.component.LMComponent@4e220d13 depth limit reached
+     com.ibm.ws.webservices.wssecurity.core.WSSecurityComponentImpl@9916c4af depth limit reached
+     com.ibm.ws.xd.arfm.WsmmMantleComponent@c5772a4 depth limit reached
+     com.ibm.ws.scheduler.SchedulerConfigServiceImpl@30be3ce7 depth limit reached
+     com.ibm.ws.runtime.component.ApplicationServerImpl@47a45d83 depth limit reached
+     com.ibm.ws.xd.admin.checkpoint.RepositoryCheckpointComponentImpl@6014aac7 depth limit reached
+     com.ibm.ws.messaging.component.JmsAdminService@8fc941bb depth limit reached
+     com.ibm.ws.serverinfo.impl.ServerInfoImpl@8d376b60 depth limit reached
+     com.ibm.ws.mongodb.component.ComponentImpl@d9084fee depth limit reached
+     com.ibm.ws.clustersensor.impl.ClusterSensorImpl@bb54e275 depth limit reached
+     com.ibm.ws.eba.bundle.download.component.BundleCacheManagerComponent@b6d0834e depth limit reached
+     com.ibm.ws.taskmanagement.mapper.TaskManagementServiceMapper@fa3169ec depth limit reached
+     com.ibm.ws.grid.GridConfigurator@cd87e11b depth limit reached
+     com.ibm.ws.taskmanagement.task.TaskManagementMBean@f55ed3a1 depth limit reached
+     com.ibm.wsmm.grm.startup.WsmmControllerComponentImpl@907cd6df depth limit reached
+     com.ibm.ws.xd.hmm.controller.HmmComponentImpl@3c9ac6b6 depth limit reached
+     com.ibm.ws.xd.admin.hadmgr.controller.HADMgrComponentImpl@42ab383e depth limit reached
+     com.ibm.ws.xd.dwlm.client.CellPropertyListener@19074d2e depth limit reached
+     com.ibm.ws.dwlm.controller.impl.DWLMNotificationListenerDMGR@7d44e7bf depth limit reached
+     com.ibm.ws.dwlm.ctlr.impl.DWLMComponentImpl@1ad3bad7 depth limit reached
+     com.ibm.ws.dwlm.ctlr.impl.DWLMOpsStatusProvider@454484c4 depth limit reached
+     com.ibm.ws.xd.config.dc.impl.DynamicClusterNotificationListener@17487048 depth limit reached
+     com.ibm.ws.xd.config.dc.impl.DynamicClusterConfigManagerImpl@bae4c1bd depth limit reached
+     com.ibm.ws.xd.runtime.dc.impl.DynamicClusterRuntimeManagerImpl@a3c6656 depth limit reached
+     com.ibm.ws.xd.config.dc.membershippolicy.MembershipPolicyStartup@8b43c9c4 depth limit reached
+     com.ibm.ws.xd.runtime.dc.impl.QuiesceManagerComponentImpl@d87770fd depth limit reached
+     com.ibm.ws.xd.appeditionmgr.impl.ApplicationEditionManagerComponentImpl@f9b917f1 depth limit reached
+     com.ibm.ws.wim.management.UserManagementProcess@cf4aac51 depth limit reached
+     com.ibm.ws.ve.cellagent.controller.CellAgentComponent@f2eea2d depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.util.VisServiceConfigHelper@d0691d82 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.CacheManager@803ffa2b depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetInstanceCache@236dfbce depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.NodeCache@e0b8b8be depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.NodeStatsHistoricCache@9eac1998 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TCModuleInstanceStatsCache@d68d2288 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerStatsCache@1ea33992 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TCModuleStatsCache@530d9311 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DebugStatsCache@355e042 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetStatsHistoricCache@cb12895c depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TierStatsCache@71e7ae1a depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerHealthCache@24bfc408 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.SIPServerStatsCache@55d9b86a depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.J2EEModuleCache@a0c099b depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetCache@aa75ca28 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServiceClassCache@bb99d0b7 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TransactionClassCache@9b95b1b1 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.PartitionStatsCache@5aa89b90 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ApplicationCache@5ae38f11 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.SIPServerStats2Cache@c15e475 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.BusinessGridStatsCache@9032d574 depth limit reached
+     com.ibm.ws.taskconfig.monitor.impl.TaskConfigMonitorImpl@62732375 depth limit reached
+     com.ibm.ws.xd.healthconfig.monitor.impl.HealthConfigMonitorImpl@38ab713d depth limit reached
+     com.ibm.ws.xd.config.intellmgmt.utils.IntellMgmtUtil@c941c35e depth limit reached
+     com.ibm.ws.xd.middlewareapp.core.MiddlewareAppClusterMemberListener@194b9f66 depth limit reached
+     com.ibm.ws.xd.config.workclass.util.MiddlewareAppMonitor@a32cde18 depth limit reached
+     com.ibm.ws.xd.console.distmanagement.topology.nodegroup.NodeGroupXDUtilFactory@4984b901 depth limit reached
+     com.ibm.ws.xd.nodegroupmonitor.impl.NodeGroupMonitorImpl@19f70485 depth limit reached
+     com.ibm.ws.xd.operationalpolicymonitor.impl.OperationalPolicyMonitorImpl@f77312b3 depth limit reached
+     com.ibm.ws.xd.server.monitor.impl.MaintenanceServerMonitorImpl@e4b57300 depth limit reached
+     com.ibm.apc.xd.controller.APCXDComponent@ed489cff depth limit reached
+     com.ibm.ws.xd.vmshimactivitypublisher.component.ActivityPublisherComponentImpl@95315234 depth limit reached
+     com.ibm.ws.xd.cimgr.controller.CIMgrComponentImpl@30af1a98 depth limit reached
+     com.ibm.ws.cimplus.controller.CIMPlusComponentImpl@60c5cea8 depth limit reached
+     com.ibm.ws.xd.workprofiler.component.WorkProfilerComponent@7572cfd3 depth limit reached
+     com.ibm.ws.management.liberty.controller.ComponentImpl@a072d28 depth limit reached
+     com.ibm.ws.xd.operationalpolicymonitor.impl.ApplicationEditionMonitorImpl@eb212ea5 depth limit reached
+     com.ibm.ws.xd.operationalpolicymonitor.impl.VirtualHostConfigRepositoryListener@42e2f24 depth limit reached
+     com.ibm.ws.xd.operations.listeners.CoreGroupConfigListener@94f13543 depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.FineGrainedPowerConsumptionStatsCache@aca1d74b depth limit reached
+     com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerPowerConsumptionStatsCache@59e198f7 depth limit reached
+     com.ibm.ws.xd.operations.tasklogger.TaskManagementLogger@5b669d29 depth limit reached
+     com.ibm.ws.xd.operations.providers.ActiveTaskStatusProvider@5c4abe6d depth limit reached
+     com.ibm.ws.xd.operations.providers.CoreGroupStatusProvider@ab0d57e3 depth limit reached
+     com.ibm.ws.xd.operations.providers.HealthPolicyBreachStatusProvider@4a51dec7 depth limit reached
+     com.ibm.ws.xd.operations.providers.NodeAgentStatusProvider@622c81b9 depth limit reached
+     com.ibm.ws.xd.operations.providers.NodeCPUOverloadStatusProvider@c95cfee9 depth limit reached
+     com.ibm.ws.xd.operations.providers.ODRServicePolicyRelStatusProvider@8b6b97d4 depth limit reached
+     com.ibm.ws.xd.operations.providers.ODRStateStatusProvider@6f4a9253 depth limit reached
+     com.ibm.ws.xd.operations.providers.ODRStatsStatusProvider@ad2fcd2b depth limit reached
+     com.ibm.ws.xd.operations.providers.ServicePolicyBreachStatusProvider@156ee3e4 depth limit reached
+     com.ibm.ws.xd.operations.providers.XDComponentStatusProvider@e5408d16 depth limit reached
+     com.ibm.ws.xd.operations.providers.XDOverallStatusProvider@670ae54c depth limit reached
+     com.ibm.ws.runtime.component.WLCImpl@20918653 depth limit reached
+    }
+    END:java.util.Collections$SynchronizedRandomAccessList@943da422
+
+   com.ibm.ws.runtime.component.ContainerImpl::applicationComponents BEGIN:java.util.Collections$EmptyList@3147de41
+    {
+    }
+    END:java.util.Collections$EmptyList@3147de41
+
+   com.ibm.ws.runtime.component.ContainerImpl::bcmListeners BEGIN:java.util.ArrayList@9e7d302d
+    {
+    }
+    END:java.util.ArrayList@9e7d302d
+
+   com.ibm.ws.runtime.component.ContainerImpl::children BEGIN:java.util.ArrayList@7ce4c476
+    {
+    com.ibm.ws.runtime.component.ThreadMonitorImpl@4e76a337
+    com.ibm.ws.runtime.component.EndPointMgrImpl@1e9fa1a7
+    com.ibm.ws.security.core.SecurityInitializerImpl@fd66434a
+    com.ibm.ws.channelfw.secure.FirstChannelActions@f0e76d76
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    com.ibm.ws.runtime.component.TransportChannelLoaderImpl@fd9bf5e3
+    com.ibm.ws.runtime.component.WsByteBufferPoolManagerServiceImpl@fd188a58
+    com.ibm.ws.runtime.component.TraceImpl@937e935d
+    com.ibm.ws.runtime.component.RASImpl@c862cb8f
+    com.ibm.ws.ffdc.impl.FfdcProvider@e718a772
+    com.ibm.ws.management.component.AdminImpl@76c8440a
+    com.ibm.ws.commsvc.admin.NodePropertyListener@10ddde47
+    com.ibm.ws.runtime.component.EnvironmentType@74b2ef94
+    com.ibm.ws.security.core.SecurityConfigComponentImpl@48cf5399
+    com.ibm.ws.ssl.core.SSLComponentImpl@acd9105a
+    com.ibm.ws.rasdiag.DiagnosticServiceImpl@3f9a28c0
+    com.ibm.ws.pmi.component.PMIImpl@7b1c9042
+    com.ibm.ws.giop.threadpool.GiopThreadpoolAdminContainerImpl@3c82e3c4
+    com.ibm.ws.runtime.component.ChannelFrameworkServiceImpl@6899fad7
+    com.ibm.ws.runtime.component.ORBImpl@9140c75d
+    com.ibm.son.ws.SonComponent@a2971821
+    com.ibm.ws.xd.config.ha.coregroupbridge.monitor.CoreGroupBridgeMonitor@bae818bf
+    com.ibm.ws.hamanager.runtime.CoordinatorComponentImpl@cd3981d3
+    com.ibm.ws.xd.bbson.corestack.runtime.component.CoreStackComponentImpl@88a05bfa
+    com.ibm.ws.xd.bbson.bbscopes.runtime.component.BulletinBoardScopesComponentImpl@aff72adb
+    com.ibm.ws.xd.hamitem.HAMItemManagerComponentImpl@d749fdd
+    com.ibm.ws.xd.comm.BBComponentImpl@e2ebf88d
+    com.ibm.ws.proxy.config.ProxyConfigServiceImpl@339ab70e
+    com.ibm.ws.xd.bbscopehelper.BBScopeComponentImpl@9abf37a3
+    com.ibm.ws.xd.cruisecontrol.DocumentBuildContentComponentImpl@2c0dbe7e
+    com.ibm.ws.cluster.runtime.ProcessRuntimeImpl@24e190c4
+    com.ibm.ws.cluster.runtime.ClusterRuntimeImpl@f92075ad
+    com.ibm.ws.cluster.channel.ChannelSelectionAdapterImpl@3636f12c
+    com.ibm.ws.cluster.service.ClusterMemberServiceImpl@9bfced1c
+    com.ibm.ws.management.dragdrop.DragDropDeploymentService@da881cd4
+    com.ibm.ws.externalnode.ExternalNodeStatsServiceImpl@de3f70b7
+    com.ibm.ws.management.system.smgr.JobManagerAdminImpl@3adcff81
+    com.ibm.ws.naming.bootstrap.NameServerImpl@56982730
+    com.ibm.ws.cgbridge.core.impl.CGBridgeService@3878ba4e
+    com.ibm.ws.runtime.component.NameSpaceInitializerImpl@c65992f5
+    com.ibm.wsspi.xd.operations.ComponentProviderManagerFactory@5e4e562f
+    com.ibm.ws.xd.operations.impl.StatusProviderConfigHelper@d54810ed
+    com.ibm.ws.xd.operations.impl.XDOperationsViewConfigHelper@a86a165b
+    com.ibm.ws.xd.config.workclass.customproperty.WorkClassCustomPropertyHelper@38ed362a
+    com.ibm.ws.xd.nodedetect.NodeDetectComponentImpl@8fedab0
+    com.ibm.ws.xd.nodedetect.NGUtil@9b9b22de
+    com.ibm.ws.xd.agent.websphere.runtime.component.XDAComponentImpl@6b43783d
+    com.ibm.ws.xd.config.server.commands.MaintenanceModeConfigHelper@2657a121
+    com.ibm.ws.xd.nodedetect.xdoperations.NdiComponentStatusProviderImpl@b4eb372a
+    com.ibm.ws.xd.odc.xdoperations.HAPluginCfgGeneratorStatusProvider@755d358
+    com.ibm.ws.xd.config.server.commands.HeapDetectConfigHelper@234c1e78
+    com.ibm.ws.xd.pmi.async.client.AsyncPmiClientComponentImpl@fdd2fb1d
+    com.ibm.ws.handlerfw.impl.HandlerFrameworkServiceImpl@7f45fd5
+    com.ibm.ws.runtime.component.MultibrokerDomainImpl@9ba3b00e
+    com.ibm.ws.runtime.service.CacheResourceMgrImpl@3477b7a7
+    com.ibm.ws.webservices.admin.component.WebServicesAdminComponentImpl@af6fa222
+    com.ibm.ws.management.component.CellManagerImpl@1668be09
+    com.ibm.ws.runtime.component.CFSBinder@b426e4bf
+    com.ibm.ws.runtime.component.WSBBSBinder@46dfea97
+    com.ibm.ws.cluster.channel.WLMChainEventListener@cfdb7d24
+    com.ibm.ws.soa.sca.admin.runtime.impl.SCAPluginCfgInitializer@a3c18776
+    com.ibm.ws.extensionhelper.impl.ExtensionHelperServiceImpl@e6301f77
+    com.ibm.datapower.dmi.ws.DMI_WsComponentImpl@2488d289
+    com.ibm.ws.sib.admin.impl.JsAdminComponentImpl@e5d13479
+    com.ibm.ws.sib.utils.ComponentImpl@ee97a15f
+    com.ibm.ws.odc.ODCManagerService@e5d4901d
+    com.ibm.ws.trace.xd.TrService@2032a456
+    com.ibm.ws.odc.xd.XDODCService@d1a0db98
+    com.ibm.ws.odc.ODCService@3d95fad5
+    com.ibm.ws.security.core.SecurityComponentImpl@9030617f
+    com.ibm.ws.storage.StorageServer@a878d130
+    com.ibm.ws.management.authorizer.AdminAuthzComponentImpl@2054caa6
+    com.ibm.ejs.jms.JMSRegistration@8cac7d93
+    com.ibm.ws.xd.snmp.SnmpComponentImpl@3003bfbe
+    com.ibm.ws.lm.component.LMComponent@4e220d13
+    com.ibm.ws.webservices.wssecurity.core.WSSecurityComponentImpl@9916c4af
+    com.ibm.ws.xd.arfm.WsmmMantleComponent@c5772a4
+    com.ibm.ws.scheduler.SchedulerConfigServiceImpl@30be3ce7
+    com.ibm.ws.runtime.component.ApplicationServerImpl@47a45d83
+    com.ibm.ws.xd.admin.checkpoint.RepositoryCheckpointComponentImpl@6014aac7
+    com.ibm.ws.messaging.component.JmsAdminService@8fc941bb
+    com.ibm.ws.serverinfo.impl.ServerInfoImpl@8d376b60
+    com.ibm.ws.mongodb.component.ComponentImpl@d9084fee
+    com.ibm.ws.clustersensor.impl.ClusterSensorImpl@bb54e275
+    com.ibm.ws.eba.bundle.download.component.BundleCacheManagerComponent@b6d0834e
+    com.ibm.ws.taskmanagement.mapper.TaskManagementServiceMapper@fa3169ec
+    com.ibm.ws.grid.GridConfigurator@cd87e11b
+    com.ibm.ws.taskmanagement.task.TaskManagementMBean@f55ed3a1
+    com.ibm.wsmm.grm.startup.WsmmControllerComponentImpl@907cd6df
+    com.ibm.ws.xd.hmm.controller.HmmComponentImpl@3c9ac6b6
+    com.ibm.ws.xd.admin.hadmgr.controller.HADMgrComponentImpl@42ab383e
+    com.ibm.ws.xd.dwlm.client.CellPropertyListener@19074d2e
+    com.ibm.ws.dwlm.controller.impl.DWLMNotificationListenerDMGR@7d44e7bf
+    com.ibm.ws.dwlm.ctlr.impl.DWLMComponentImpl@1ad3bad7
+    com.ibm.ws.dwlm.ctlr.impl.DWLMOpsStatusProvider@454484c4
+    com.ibm.ws.xd.config.dc.impl.DynamicClusterNotificationListener@17487048
+    com.ibm.ws.xd.config.dc.impl.DynamicClusterConfigManagerImpl@bae4c1bd
+    com.ibm.ws.xd.runtime.dc.impl.DynamicClusterRuntimeManagerImpl@a3c6656
+    com.ibm.ws.xd.config.dc.membershippolicy.MembershipPolicyStartup@8b43c9c4
+    com.ibm.ws.xd.runtime.dc.impl.QuiesceManagerComponentImpl@d87770fd
+    com.ibm.ws.xd.appeditionmgr.impl.ApplicationEditionManagerComponentImpl@f9b917f1
+    com.ibm.ws.wim.management.UserManagementProcess@cf4aac51
+    com.ibm.ws.ve.cellagent.controller.CellAgentComponent@f2eea2d
+    com.ibm.ws.xd.visualizationengine.cacheservice.util.VisServiceConfigHelper@d0691d82
+    com.ibm.ws.xd.visualizationengine.cacheservice.CacheManager@803ffa2b
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetInstanceCache@236dfbce
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.NodeCache@e0b8b8be
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.NodeStatsHistoricCache@9eac1998
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TCModuleInstanceStatsCache@d68d2288
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerStatsCache@1ea33992
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TCModuleStatsCache@530d9311
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DebugStatsCache@355e042
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetStatsHistoricCache@cb12895c
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TierStatsCache@71e7ae1a
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerHealthCache@24bfc408
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.SIPServerStatsCache@55d9b86a
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.J2EEModuleCache@a0c099b
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.DeploymentTargetCache@aa75ca28
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServiceClassCache@bb99d0b7
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.TransactionClassCache@9b95b1b1
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.PartitionStatsCache@5aa89b90
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ApplicationCache@5ae38f11
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.SIPServerStats2Cache@c15e475
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.BusinessGridStatsCache@9032d574
+    com.ibm.ws.taskconfig.monitor.impl.TaskConfigMonitorImpl@62732375
+    com.ibm.ws.xd.healthconfig.monitor.impl.HealthConfigMonitorImpl@38ab713d
+    com.ibm.ws.xd.config.intellmgmt.utils.IntellMgmtUtil@c941c35e
+    com.ibm.ws.xd.middlewareapp.core.MiddlewareAppClusterMemberListener@194b9f66
+    com.ibm.ws.xd.config.workclass.util.MiddlewareAppMonitor@a32cde18
+    com.ibm.ws.xd.console.distmanagement.topology.nodegroup.NodeGroupXDUtilFactory@4984b901
+    com.ibm.ws.xd.nodegroupmonitor.impl.NodeGroupMonitorImpl@19f70485
+    com.ibm.ws.xd.operationalpolicymonitor.impl.OperationalPolicyMonitorImpl@f77312b3
+    com.ibm.ws.xd.server.monitor.impl.MaintenanceServerMonitorImpl@e4b57300
+    com.ibm.apc.xd.controller.APCXDComponent@ed489cff
+    com.ibm.ws.xd.vmshimactivitypublisher.component.ActivityPublisherComponentImpl@95315234
+    com.ibm.ws.xd.cimgr.controller.CIMgrComponentImpl@30af1a98
+    com.ibm.ws.cimplus.controller.CIMPlusComponentImpl@60c5cea8
+    com.ibm.ws.xd.workprofiler.component.WorkProfilerComponent@7572cfd3
+    com.ibm.ws.management.liberty.controller.ComponentImpl@a072d28
+    com.ibm.ws.xd.operationalpolicymonitor.impl.ApplicationEditionMonitorImpl@eb212ea5
+    com.ibm.ws.xd.operationalpolicymonitor.impl.VirtualHostConfigRepositoryListener@42e2f24
+    com.ibm.ws.xd.operations.listeners.CoreGroupConfigListener@94f13543
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.FineGrainedPowerConsumptionStatsCache@aca1d74b
+    com.ibm.ws.xd.visualizationengine.cacheservice.cacheimpl.ServerPowerConsumptionStatsCache@59e198f7
+    com.ibm.ws.xd.operations.tasklogger.TaskManagementLogger@5b669d29
+    com.ibm.ws.xd.operations.providers.ActiveTaskStatusProvider@5c4abe6d
+    com.ibm.ws.xd.operations.providers.CoreGroupStatusProvider@ab0d57e3
+    com.ibm.ws.xd.operations.providers.HealthPolicyBreachStatusProvider@4a51dec7
+    com.ibm.ws.xd.operations.providers.NodeAgentStatusProvider@622c81b9
+    com.ibm.ws.xd.operations.providers.NodeCPUOverloadStatusProvider@c95cfee9
+    com.ibm.ws.xd.operations.providers.ODRServicePolicyRelStatusProvider@8b6b97d4
+    com.ibm.ws.xd.operations.providers.ODRStateStatusProvider@6f4a9253
+    com.ibm.ws.xd.operations.providers.ODRStatsStatusProvider@ad2fcd2b
+    com.ibm.ws.xd.operations.providers.ServicePolicyBreachStatusProvider@156ee3e4
+    com.ibm.ws.xd.operations.providers.XDComponentStatusProvider@e5408d16
+    com.ibm.ws.xd.operations.providers.XDOverallStatusProvider@670ae54c
+    com.ibm.ws.runtime.component.WLCImpl@20918653
+    }
+    END:java.util.ArrayList@7ce4c476
+
+   com.ibm.ws.runtime.component.ContainerImpl::bcsListeners BEGIN:java.util.ArrayList@27e73aff
+    {
+    }
+    END:java.util.ArrayList@27e73aff
+
+   com.ibm.ws.runtime.component.ContainerImpl::services BEGIN:java.util.HashMap@bc329728
+    {
+    }
+    END:java.util.HashMap@bc329728
+
+   com.ibm.ws.runtime.component.ContainerImpl::helper BEGIN:com.ibm.ws.runtime.component.ContainerHelper@8bd7b705
+     com.ibm.ws.runtime.component.ContainerHelper::tc:com.ibm.ejs.ras.TraceComponent@82c49bbe depth limit reached
+    com.ibm.ws.runtime.component.ContainerHelper::requestor:com.ibm.ws.runtime.component.ServerImpl@366ef435
+    com.ibm.ws.runtime.component.ContainerHelper::containerComponentName:Server
+     com.ibm.ws.runtime.component.ContainerHelper::componentStartupData:java.util.HashMap@17b22637 depth limit reached
+    com.ibm.ws.runtime.component.ContainerHelper::INITIALIZE:0
+    com.ibm.ws.runtime.component.ContainerHelper::START:1
+    com.ibm.ws.runtime.component.ContainerHelper::STOP:2
+    com.ibm.ws.runtime.component.ContainerHelper::DESTROY:3
+     com.ibm.ws.runtime.component.ContainerHelper::rootConfig:com.ibm.ws.runtime.config.ConfigObjectImpl@ffbc6bb1 depth limit reached
+     com.ibm.ws.runtime.component.ContainerHelper::locators:[Lcom.ibm.ws.runtime.config.ConfigLocatorAdapter;@3f6b265 depth limit reached
+    END:com.ibm.ws.runtime.component.ContainerHelper@8bd7b705
+
+   com.ibm.ws.runtime.component.ServerImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@80f17ee1
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.runtime.component.ServerImpl
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+    END:com.ibm.ejs.ras.TraceComponent@80f17ee1
+
+   com.ibm.ws.runtime.component.ServerImpl::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#Server_1
+   com.ibm.ws.runtime.component.ServerImpl::cellName:TWAS1Cell01
+   com.ibm.ws.runtime.component.ServerImpl::nodeName:TWAS1CellManager01
+   com.ibm.ws.runtime.component.ServerImpl::clusterName:null
+   com.ibm.ws.runtime.component.ServerImpl::repRootURI:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/config
+   com.ibm.ws.runtime.component.ServerImpl::shortName:null
+   com.ibm.ws.runtime.component.ServerImpl::shortCellName:null
+   com.ibm.ws.runtime.component.ServerImpl::shortNodeName:null
+   com.ibm.ws.runtime.component.ServerImpl::isZOS:false
+   com.ibm.ws.runtime.component.ServerImpl::isServantJVM:false
+   com.ibm.ws.runtime.component.ServerImpl::isOS400:false
+   com.ibm.ws.runtime.component.ServerImpl::RESTARTPROXY_WAITPORT:com.ibm.ws.runtime.restartproxy.waitport
+   com.ibm.ws.runtime.component.ServerImpl::RESTARTPROXY_WAITTIMEOUT:com.ibm.ws.runtime.restartproxy.waittimeout
+   com.ibm.ws.runtime.component.ServerImpl::RESTARTPROXY_RECONNECTWAITTIME:com.ibm.ws.runtime.restartproxy.reconnectwaittime
+   com.ibm.ws.runtime.component.ServerImpl::publicClassLoader BEGIN:com.ibm.ws.classloader.ProtectionClassLoader@be1ec23d
+    java.lang.ClassLoader::defaultCodeSource:java.security.CodeSource@996ebdb6
+    java.lang.ClassLoader::bootstrapClassLoader:com.ibm.oti.vm.BootstrapClassLoader@682536d5
+    java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+    java.lang.ClassLoader::isDelegatingCL:false
+    java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@787b3c3f
+    java.lang.ClassLoader::initSystemClassLoader:false
+    java.lang.ClassLoader::isAssertOptionFound:false
+    java.lang.ClassLoader::vmRef:0
+    java.lang.ClassLoader::parent:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+    java.lang.ClassLoader::checkAssertionOptions:false
+     java.lang.ClassLoader::assertionLock:java.lang.ClassLoader$AssertionLock@cf18412 depth limit reached
+    java.lang.ClassLoader::defaultAssertionStatus:false
+    java.lang.ClassLoader::packageAssertionStatus:null
+    java.lang.ClassLoader::classAssertionStatus:null
+     java.lang.ClassLoader::packages:java.util.Hashtable@39a5339a depth limit reached
+     java.lang.ClassLoader::lazyInitLock:java.lang.ClassLoader$LazyInitLock@90f6c73a depth limit reached
+    java.lang.ClassLoader::classSigners:null
+    java.lang.ClassLoader::packageSigners:null
+    java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@8b7a0e1a
+    java.lang.ClassLoader::defaultProtectionDomain:null
+    java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@fb91654b
+    java.lang.ClassLoader::classNameBasedLock:null
+    java.lang.ClassLoader::isParallelCapable:false
+    java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@cee820c0
+    java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:null
+    java.lang.ClassLoader::allowArraySyntax:false
+    java.lang.ClassLoader::lazyClassLoaderInit:true
+    java.lang.ClassLoader::specialLoaderInited:true
+    java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@1ec6c886
+     com.ibm.ws.classloader.ProtectionClassLoader::tc:com.ibm.ejs.ras.TraceComponent@5a8687a7 depth limit reached
+    com.ibm.ws.classloader.ProtectionClassLoader::parent:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+    com.ibm.ws.classloader.ProtectionClassLoader::grandParent:class org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader
+    com.ibm.ws.classloader.ProtectionClassLoader::protectClasses:false
+     com.ibm.ws.classloader.ProtectionClassLoader::accessRuntimePermission:com.ibm.websphere.security.WebSphereRuntimePermission@e2009df1 depth limit reached
+    END:com.ibm.ws.classloader.ProtectionClassLoader@be1ec23d
+
+   com.ibm.ws.runtime.component.ServerImpl::runtimeClassLoader:com.ibm.ws.bootstrap.ExtClassLoader@d945040d
+   com.ibm.ws.runtime.component.ServerImpl::getClassLoaderPerm BEGIN:java.lang.RuntimePermission@f2b4989
+    java.security.Permission::serialVersionUID:-5636570222231596674
+    java.security.Permission::name:getClassLoader
+    java.security.BasicPermission::serialVersionUID:6279438298436773498
+    java.security.BasicPermission::wildcard:false
+    java.security.BasicPermission::path:getClassLoader
+    java.security.BasicPermission::exitVM:false
+    java.lang.RuntimePermission::serialVersionUID:7399184964622342223
+    END:java.lang.RuntimePermission@f2b4989
+
+   com.ibm.ws.runtime.component.ServerImpl::collab BEGIN:com.ibm.ws.runtime.component.ServerCollaborator@941d09bc
+     com.ibm.websphere.management.RuntimeCollaborator::tc:com.ibm.ejs.ras.TraceComponent@560837a7 depth limit reached
+     com.ibm.websphere.management.RuntimeCollaborator::modelMBean:javax.management.modelmbean.RequiredModelMBean@2cf52cbc depth limit reached
+     com.ibm.websphere.management.RuntimeCollaborator::mbeanName:javax.management.ObjectName@c651742e depth limit reached
+     com.ibm.ws.management.collaborator.StatisticsProviderCollaborator::tc:com.ibm.ejs.ras.TraceComponent@b301c70b depth limit reached
+    com.ibm.ws.management.collaborator.StatisticsProviderCollaborator::pmiRegistry:class com.ibm.ws.pmi.j2ee.PMIJ2EEStatsHelper
+     com.ibm.ws.management.collaborator.StatisticsProviderCollaborator::getPmiJmxBridgeMethod:java.lang.reflect.Method@1b281878 depth limit reached
+    com.ibm.ws.management.collaborator.StatisticsProviderCollaborator::isStatisticsProvider:false
+    com.ibm.ws.management.collaborator.StatisticsProviderCollaborator::bridge:null
+     com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::tc:com.ibm.ejs.ras.TraceComponent@747cddd3 depth limit reached
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_STARTING:0
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_RUNNING:1
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_STOPPING:2
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_STOPPED:3
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_FAILED:4
+     com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_NAMES:[Ljava.lang.String;@cfbb7884 depth limit reached
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::ATTR_CHANGED_NOTIF_TYPE:j2ee.attribute.changed
+     com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::STATE_NOTIF_TYPES:[Ljava.lang.String;@5f0b2ee8 depth limit reached
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::isEventProvider:true
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::isStateManageable:false
+     com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::eventTypes:[Ljava.lang.String;@8cb11b1a depth limit reached
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::currentState:3
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::startTime:0
+    com.ibm.ws.management.collaborator.J2EEManagedObjectCollaborator::nextSeqNum:0
+     com.ibm.ws.runtime.component.ServerCollaborator::tc:com.ibm.ejs.ras.TraceComponent@b7e8a3c0 depth limit reached
+     com.ibm.ws.runtime.component.ServerCollaborator::RESOURCE_TYPES:[Ljava.lang.String;@e66f2890 depth limit reached
+    com.ibm.ws.runtime.component.ServerCollaborator::DUMP_SHUTDOWN:false
+    com.ibm.ws.runtime.component.ServerCollaborator::INSTALL_ROOT:/opt/IBM/WebSphere_855/AppServer
+    com.ibm.ws.runtime.component.ServerCollaborator::LS:
+
+    com.ibm.ws.runtime.component.ServerCollaborator::server:com.ibm.ws.runtime.component.ServerImpl@366ef435
+    com.ibm.ws.runtime.component.ServerCollaborator::ntfySeqNum:2
+    com.ibm.ws.runtime.component.ServerCollaborator::lastStatus:0
+    com.ibm.ws.runtime.component.ServerCollaborator::statusPort:null
+     com.ibm.ws.runtime.component.ServerCollaborator::shutdownHook:com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook@c4b776d7 depth limit reached
+    com.ibm.ws.runtime.component.ServerCollaborator::restarting:false
+    com.ibm.ws.runtime.component.ServerCollaborator::hostname:null
+    com.ibm.ws.runtime.component.ServerCollaborator::expectedShutdown:false
+    END:com.ibm.ws.runtime.component.ServerCollaborator@941d09bc
+
+   com.ibm.ws.runtime.component.ServerImpl::proxy:null
+   com.ibm.ws.runtime.component.ServerImpl::threadMonitorInterval:180
+   com.ibm.ws.runtime.component.ServerImpl::threadMonitorThreshold:600
+   com.ibm.ws.runtime.component.ServerImpl::threadMonitorAdjustmentThreshold:100
+   com.ibm.ws.runtime.component.ServerImpl::recoveryLock:com.ibm.ws.runtime.component.ServerImpl@366ef435
+   com.ibm.ws.runtime.component.ServerImpl::recoverySuccessful:true
+   com.ibm.ws.runtime.component.ServerImpl::suppressClasspathWarnings:false
+   com.ibm.ws.runtime.component.ServerImpl::cc:null
+   com.ibm.ws.runtime.component.ServerImpl::serverMode:0
+   com.ibm.ws.runtime.component.ServerImpl::recoveryCollaborators BEGIN:com.ibm.ws.util.Join@532b8cf9
+    com.ibm.ws.util.Join::count:1
+    com.ibm.ws.util.Join::interruptReason:null
+    END:com.ibm.ws.util.Join@532b8cf9
+
+   com.ibm.ws.runtime.component.ServerImpl::recoveryCollaboratorClasses BEGIN:java.util.Collections$SynchronizedRandomAccessList@608c3f15
+    {
+     com.ibm.ws.runtime.component.TxServiceImpl@ef34ae30 depth limit reached
+    }
+    END:java.util.Collections$SynchronizedRandomAccessList@608c3f15
+
+   END:com.ibm.ws.runtime.component.ServerImpl@366ef435
+
+  com.ibm.ws.runtime.component.ComponentImpl::vetoableChangeSupport BEGIN:java.beans.VetoableChangeSupport@337044eb
+   java.beans.VetoableChangeSupport::map BEGIN:java.beans.VetoableChangeSupport$VetoableChangeListenerMap@aaafb49
+    java.beans.ChangeListenerMap::map:null
+     java.beans.VetoableChangeSupport$VetoableChangeListenerMap::EMPTY:[Ljava.beans.VetoableChangeListener;@fe21b156 depth limit reached
+    END:java.beans.VetoableChangeSupport$VetoableChangeListenerMap@aaafb49
+
+   java.beans.VetoableChangeSupport::source:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+   java.beans.VetoableChangeSupport::serialPersistentFields:[Ljava.io.ObjectStreamField;@e3ba9be0
+   java.beans.VetoableChangeSupport::serialVersionUID:-5090210921595982017
+   END:java.beans.VetoableChangeSupport@337044eb
+
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@e71e9b5
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.runtime.component.ThreadPoolMgrImpl
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@e71e9b5
+
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::configuredThreadPools BEGIN:java.util.Collections$SynchronizedMap@5856b3fb
+   {
+   key:SIBJMSRAThreadPool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@fb62e8f6
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_1767631509487
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:SIBJMSRAThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:41
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:35
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:3500
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@fb62e8f6
+
+   key:WebContainer
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@6f51a681
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_WC
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:WebContainer
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:50
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:50
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:60000
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:1000
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@653e123a depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@2c6b129e depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@57d141c1 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@6f51a681
+
+   key:WMQJCAResourceAdapter
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@a85c5262
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_1767631509590
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:WMQJCAResourceAdapter
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:50
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:10
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@492faa5f depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@7eb85e05 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@f0e25ec6 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@a85c5262
+
+   key:ProcessDiscovery
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@23bf8ea4
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:ProcessDiscovery
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:ProcessDiscovery
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@f61ef52c
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@57d70c03 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@83133d29 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@23bf8ea4
+
+   key:ORB.thread.pool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@7f31e11e
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:ORB.thread.pool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:50
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:10
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:3500
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@9534000a depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@9c655b43 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@c80219a7 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@7f31e11e
+
+   key:TCPChannel.DCS
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@4b5d64bf
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_DCS
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:TCPChannel.DCS
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:20
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:20
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:1000
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@7d10dbd4 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@46c7c368 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@bc375b4f depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@4b5d64bf
+
+   key:Default
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@a02d9c17
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:Default
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:20
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:20
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@9b72b52b depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@3b24bcc2 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@13935978 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@a02d9c17
+
+   key:VisualizationEngine.LifeCycleTP
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@332b1fc9
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:VisualizationEngine.LifeCycleTP
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:VisualizationEngine.LifeCycleTP
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@1f716da5 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@adf07c7f depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@9ff6f0d3 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@332b1fc9
+
+   key:SIBFAPThreadPool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@dcee5400
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:cells/TWAS1Cell01/nodes/TWAS1CellManager01/servers/dmgr/server.xml#ThreadPool_1767631500773
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:SIBFAPThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:50
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:4
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:1000
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@b6945085 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@ff5e53aa depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@cf6a430a depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@dcee5400
+
+   key:HAManager.thread.pool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@73c3f838
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:HAManager.thread.pool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:HAManager.thread.pool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@bf8a616 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@f972377b depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@a714a7d5 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@73c3f838
+
+   key:SoapConnectorThreadPool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@1d1ae8ae
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:SoapConnectorThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:SoapConnectorThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@5739c74b depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@92e1f67b depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@641a82a0 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@1d1ae8ae
+
+   key:AriesThreadPool
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@e241cca4
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:AriesThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:AriesThreadPool
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@de6a925d depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@51ddb67 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@ecc7ab6 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@e241cca4
+
+   key:VisualizationEngine.CacheWorkItemsTP
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@372fabdd
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:VisualizationEngine.CacheWorkItemsTP
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:VisualizationEngine.CacheWorkItemsTP
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:5
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@66538cda depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$PmiThreadPoolAdapter@2ad64f04 depth limit reached
+     com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@394edef8 depth limit reached
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@372fabdd
+
+   key:server.startup
+   value BEGIN:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@410a4947
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolConfig:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::configId:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::name:server.startup
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::maximumSize:3
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::minimumSize:1
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::inactivityTimeOut:30000
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::growable:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::requestBufferSize:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::clearThreadLocals:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadPoolInstance:com.ibm.ws.util.ThreadPool@64f615ca
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::owningThreadPoolManager:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiAdapter:null
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::threadMonitorAdapter:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolMonitorAdapter@6a48c0da
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::pmiInhibited:true
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::disableHungThreadDetection:false
+    com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy::this$0:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+    END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl$ThreadPoolProxy@410a4947
+
+   }
+   END:java.util.Collections$SynchronizedMap@5856b3fb
+
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::unnamedPoolIndex:0
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::threadPoolListeners BEGIN:[Lcom.ibm.ws.util.ThreadPoolListener;@f897f524
+   [
+   BEGIN:com.ibm.ws.runtime.component.WSBBPoolListener@ddee8534
+     com.ibm.ws.runtime.component.WSBBPoolListener::tc:com.ibm.ejs.ras.TraceComponent@26916bbe depth limit reached
+     com.ibm.ws.runtime.component.WSBBPoolListener::mgr:com.ibm.ws.buffermgmt.impl.WsByteBufferPoolManagerImpl@418810dc depth limit reached
+    END:com.ibm.ws.runtime.component.WSBBPoolListener@ddee8534
+
+   BEGIN:com.ibm.ws.ffdc.impl.ConfigurationHelper@814f2e5f
+    com.ibm.ffdc.util.provider.FfdcProviderDependent::provider:com.ibm.ws.ffdc.impl.FfdcProvider@e718a772
+    com.ibm.ws.ffdc.impl.ConfigurationHelper::thisClass:com.ibm.ws.ffdc.impl.ConfigurationHelper
+    com.ibm.ws.ffdc.impl.ConfigurationHelper::LOGGER:com.ibm.ws.logging.WsLogger@ce267218
+    com.ibm.ws.ffdc.impl.ConfigurationHelper::FFDC_LOG:com.ibm.ffdc.log
+    com.ibm.ws.ffdc.impl.ConfigurationHelper::FFDC_LOG_ENV:com_ibm_ffdc_log
+    com.ibm.ws.ffdc.impl.ConfigurationHelper::isLegacyFFDCInitialized:true
+    END:com.ibm.ws.ffdc.impl.ConfigurationHelper@814f2e5f
+
+   BEGIN:com.ibm.ws.jsp.runtime.JspThreadPoolListener@39421fe6
+    com.ibm.ws.jsp.runtime.JspThreadPoolListener::logger:com.ibm.ws.logging.WsLogger@ee57f511
+    com.ibm.ws.jsp.runtime.JspThreadPoolListener::CLASS_NAME:com.ibm.ws.jsp.runtime.JspThreadPoolListener
+     com.ibm.ws.jsp.runtime.JspThreadPoolListener::threadLocals:java.util.Hashtable@b90db524 depth limit reached
+    END:com.ibm.ws.jsp.runtime.JspThreadPoolListener@39421fe6
+
+   ]
+   END:[Lcom.ibm.ws.util.ThreadPoolListener;@f897f524
+
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::pmiEnabled:true
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::started:true
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::CLEAR_THREAD_LOCALS_PROP_NAME:com.ibm.websphere.threadpool.clearThreadLocal
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::DISABLE_HUNG_THREAD_DETECTION_PROP_NAME:com.ibm.websphere.threadpool.disableHungThreadDetection
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::allMBeansRegistered:true
+  com.ibm.ws.runtime.component.ThreadPoolMgrImpl::unregisteredThreadPoolConfigIds BEGIN:java.util.HashMap@8c3ffefe
+   {
+   }
+   END:java.util.HashMap@8c3ffefe
+
+  END:com.ibm.ws.runtime.component.ThreadPoolMgrImpl@a9f7997d
+
+ END:com.ibm.ws.management.discovery.Endpoint@36212ff
+
+com.ibm.ws.management.discovery.DiscoveryService::advertisement BEGIN:com.ibm.ws.management.discovery.protocol.PeerAdv@b93ffc6e
+ com.ibm.ws.management.discovery.protocol.PeerAdv::tc BEGIN:com.ibm.ejs.ras.TraceComponent@d4f69c8a
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.protocol.PeerAdv
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+  END:com.ibm.ejs.ras.TraceComponent@d4f69c8a
+
+ com.ibm.ws.management.discovery.protocol.PeerAdv::name:dmgr
+ com.ibm.ws.management.discovery.protocol.PeerAdv::pid:415452
+ com.ibm.ws.management.discovery.protocol.PeerAdv::cell:TWAS1Cell01
+ com.ibm.ws.management.discovery.protocol.PeerAdv::node:TWAS1CellManager01
+ com.ibm.ws.management.discovery.protocol.PeerAdv::role:DeploymentManager
+ com.ibm.ws.management.discovery.protocol.PeerAdv::version:8.5.5.28
+ com.ibm.ws.management.discovery.protocol.PeerAdv::endpointAdv:com.ibm.ws.management.discovery.protocol.EndpointAdv@d25834e5
+ com.ibm.ws.management.discovery.protocol.PeerAdv::serviceAdv BEGIN:com.ibm.ws.management.discovery.protocol.ServiceAdv@e57418c1
+  com.ibm.ws.management.discovery.protocol.ServiceAdv::tc BEGIN:com.ibm.ejs.ras.TraceComponent@4999a150
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.protocol.ServiceAdv
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@4999a150
+
+  com.ibm.ws.management.discovery.protocol.ServiceAdv::name:AdminService
+  com.ibm.ws.management.discovery.protocol.ServiceAdv::accessMethods BEGIN:java.util.Vector@6dccda72
+   {
+   endpoint:name=BOOTSTRAP_ADDRESS;host=localhost;port=9809
+   connector:type=SOAP;host=localhost;port=8879;remoteAdminProtocol=true;preferred=true;isInternal=true
+   connector:type=RMI;host=localhost;port=9809;isInternal=true
+   connector:type=JSR160RMI;host=localhost;port=9809;isInternal=true
+   connector:type=IPC;host=localhost;port=9632;localAdminProtocol=true;isInternal=true
+   }
+   END:java.util.Vector@6dccda72
+
+  END:com.ibm.ws.management.discovery.protocol.ServiceAdv@e57418c1
+
+ END:com.ibm.ws.management.discovery.protocol.PeerAdv@b93ffc6e
+
+com.ibm.ws.management.discovery.DiscoveryService::serviceAddress BEGIN:com.ibm.ws.management.discovery.EndpointAddress@841f0f70
+ com.ibm.ws.management.discovery.EndpointAddress::bundleName:com.ibm.ws.management.resources.discovery
+ com.ibm.ws.management.discovery.EndpointAddress::tc:com.ibm.ejs.ras.TraceComponent@52950354
+ com.ibm.ws.management.discovery.EndpointAddress::protocol:tcp
+ com.ibm.ws.management.discovery.EndpointAddress::protocolHost:localhost
+ com.ibm.ws.management.discovery.EndpointAddress::protocolPort:7277
+ com.ibm.ws.management.discovery.EndpointAddress::serviceName:DiscoveryService
+ com.ibm.ws.management.discovery.EndpointAddress::unified:true
+ com.ibm.ws.management.discovery.EndpointAddress::warningIssued:false
+ END:com.ibm.ws.management.discovery.EndpointAddress@841f0f70
+
+com.ibm.ws.management.discovery.DiscoveryService::serverInfo BEGIN:com.ibm.ws.management.discovery.ServerInfo@f574168b
+ com.ibm.ws.management.discovery.ServerInfo::tc BEGIN:com.ibm.ejs.ras.TraceComponent@69a0fdb2
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.ServerInfo
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.discovery
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+  END:com.ibm.ejs.ras.TraceComponent@69a0fdb2
+
+ com.ibm.ws.management.discovery.ServerInfo::serialVersionUID:3198058148218818720
+ com.ibm.ws.management.discovery.ServerInfo::ownInfo:com.ibm.ws.management.discovery.ServerInfo@f574168b
+ com.ibm.ws.management.discovery.ServerInfo::pid:415452
+ com.ibm.ws.management.discovery.ServerInfo::cell:TWAS1Cell01
+ com.ibm.ws.management.discovery.ServerInfo::node:TWAS1CellManager01
+ com.ibm.ws.management.discovery.ServerInfo::name:dmgr
+ com.ibm.ws.management.discovery.ServerInfo::role:DeploymentManager
+ com.ibm.ws.management.discovery.ServerInfo::version:8.5.5.28
+ com.ibm.ws.management.discovery.ServerInfo::hostName:localhost
+ com.ibm.ws.management.discovery.ServerInfo::configuredSystemName:null
+ com.ibm.ws.management.discovery.ServerInfo::connectors BEGIN:java.util.Vector@3d8ab22a
+  {
+  BEGIN:java.util.Properties@6ccaa15d
+   {
+   key:port
+   value:8879
+   key:type
+   value:SOAP
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   key:preferred
+   value:true
+   key:remoteAdminProtocol
+   value:true
+   }
+   END:java.util.Properties@6ccaa15d
+
+  BEGIN:java.util.Properties@6d6d1037
+   {
+   key:port
+   value:9809
+   key:type
+   value:RMI
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@6d6d1037
+
+  BEGIN:java.util.Properties@7a10b5ae
+   {
+   key:port
+   value:9809
+   key:type
+   value:JSR160RMI
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@7a10b5ae
+
+  BEGIN:java.util.Properties@da924588
+   {
+   key:port
+   value:9632
+   key:localAdminProtocol
+   value:true
+   key:type
+   value:IPC
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@da924588
+
+  }
+  END:java.util.Vector@3d8ab22a
+
+ com.ibm.ws.management.discovery.ServerInfo::endPoints BEGIN:java.util.Vector@a1729bbe
+  {
+  BEGIN:java.util.Properties@d8f42e23
+   {
+   key:port
+   value:9809
+   key:name
+   value:BOOTSTRAP_ADDRESS
+   key:host
+   value:localhost
+   }
+   END:java.util.Properties@d8f42e23
+
+  }
+  END:java.util.Vector@a1729bbe
+
+ com.ibm.ws.management.discovery.ServerInfo::services:java.util.Vector@6dccda72
+ com.ibm.ws.management.discovery.ServerInfo::triedGetConfiguredSystemName:false
+ END:com.ibm.ws.management.discovery.ServerInfo@f574168b
+
+com.ibm.ws.management.discovery.DiscoveryService::adminType:DeploymentManager
+com.ibm.ws.management.discovery.DiscoveryService::cellName:TWAS1Cell01
+com.ibm.ws.management.discovery.DiscoveryService::nodeName:TWAS1CellManager01
+com.ibm.ws.management.discovery.DiscoveryService::discoveryListeners BEGIN:java.util.Vector@f531a41
+ {
+ BEGIN:com.ibm.ws.management.discovery.CMDiscoveryAdapter@f4411c1d
+  com.ibm.ws.management.discovery.DiscoveryAdapter::bundleName:com.ibm.ws.management.resources.discovery
+  com.ibm.ws.management.discovery.DiscoveryAdapter::tc BEGIN:com.ibm.ejs.ras.TraceComponent@61bd6e8f
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.DiscoveryAdapter
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@61bd6e8f
+
+  com.ibm.ws.management.discovery.DiscoveryAdapter::discoveryService:com.ibm.ws.management.discovery.DiscoveryService@2c9bfe8e
+  com.ibm.ws.management.discovery.DiscoveryAdapter::peerAdv:com.ibm.ws.management.discovery.protocol.PeerAdv@b93ffc6e
+  com.ibm.ws.management.discovery.DiscoveryAdapter::serverInfo:com.ibm.ws.management.discovery.ServerInfo@f574168b
+  com.ibm.ws.management.discovery.DiscoveryAdapter::endpoint:com.ibm.ws.management.discovery.Endpoint@36212ff
+  com.ibm.ws.management.discovery.DiscoveryAdapter::queryIds BEGIN:java.util.Collections$SynchronizedSet@fc2ce476
+   {
+   }
+   END:java.util.Collections$SynchronizedSet@fc2ce476
+
+  com.ibm.ws.management.discovery.DiscoveryAdapter::initialized:true
+  com.ibm.ws.management.discovery.CMDiscoveryAdapter::bundleName:com.ibm.ws.management.resources.discovery
+  com.ibm.ws.management.discovery.CMDiscoveryAdapter::tc BEGIN:com.ibm.ejs.ras.TraceComponent@9331cb3f
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.CMDiscoveryAdapter
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:com.ibm.ejs.ras.TraceEnabledToken@6388d892
+   END:com.ibm.ejs.ras.TraceComponent@9331cb3f
+
+  com.ibm.ws.management.discovery.CMDiscoveryAdapter::nodeAgentsRediscovered:false
+  END:com.ibm.ws.management.discovery.CMDiscoveryAdapter@f4411c1d
+
+ }
+ END:java.util.Vector@f531a41
+
+END:com.ibm.ws.management.discovery.DiscoveryService@2c9bfe8e
+
+IntrospectDepth reset to:3
++Data for directive [defaultjmx] obtained.:
+==> Dump complete for com.ibm.ws.management.dm.JmxDM :Fri Oct 23 07:33:01 PDT 2026

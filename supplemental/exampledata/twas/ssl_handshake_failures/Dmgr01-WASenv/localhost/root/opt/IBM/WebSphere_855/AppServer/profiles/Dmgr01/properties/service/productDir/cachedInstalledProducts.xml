@@ -1,0 +1,11 @@
+<AllOfferingsOptFeaturesIFixes>
+<offering buildLevel="cf282527.01" id="com.ibm.websphere.ND.v85">
+<optionalFeature>IBM 64-bit WebSphere SDK for Java</optionalFeature>
+<optionalFeature>WebSphere Application Server Full Profile</optionalFeature>
+<optionalFeature>EJBDeploy tool for pre-EJB 3.0 modules</optionalFeature>
+<optionalFeature>Embeddable EJB container</optionalFeature>
+<optionalFeature>Sample applications</optionalFeature>
+<optionalFeature>Stand-alone thin clients and resource adapters</optionalFeature>
+<iFix>8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762</iFix>
+</offering>
+</AllOfferingsOptFeaturesIFixes>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: pxi3260sr10-20111208_01 (SR10) (IBM Corporation)
+Specification-Title: webui
+Specification-Version: 6.0.0
+Specification-Vendor: IBM Corp.
+Implementation-Title: webui
+Implementation-Version: WAS855.IM [gm1319.01]
+Implementation-Vendor: IBM Corp.
+

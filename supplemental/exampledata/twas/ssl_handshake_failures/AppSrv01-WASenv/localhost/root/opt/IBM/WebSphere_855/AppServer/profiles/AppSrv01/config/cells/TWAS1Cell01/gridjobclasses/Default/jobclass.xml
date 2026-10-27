@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobclasses:JobClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:jobclasses="http://www.ibm.com/websphere/appserver/schemas/6.1/jobclasses.xmi" xmi:id="JobClass_1320695871546" name="Default" description="This is a default grid job class.">
+  <executionTimeAndThreadLimit xmi:id="ExecutionTimeAndThreadLimit_1320695871562" maxConcurrentJob="25"/>
+  <jobLogLimit xmi:id="JobLogLimit_1320695871562"/>
+  <outputQueueLimit xmi:id="OutputQueueLimit_1320695871578"/>
+</jobclasses:JobClass>

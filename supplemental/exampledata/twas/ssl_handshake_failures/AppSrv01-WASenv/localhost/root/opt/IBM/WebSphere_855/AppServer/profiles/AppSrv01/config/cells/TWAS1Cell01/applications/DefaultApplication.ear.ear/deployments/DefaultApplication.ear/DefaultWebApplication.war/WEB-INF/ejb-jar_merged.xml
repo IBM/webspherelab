@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><ejb-jar id="ejb-jar_ID" metadata-complete="false" version="3.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+    <enterprise-beans>
+        <session>
+            <ejb-name>IncrementSSB</ejb-name>
+            <ejb-class>com.ibm.defaultapplication.IncrementSSB</ejb-class>
+            <session-type>Stateless</session-type>
+            <concurrency-management-type>Container</concurrency-management-type>
+            <local-bean/>
+            <persistence-context-ref>
+                <persistence-context-ref-name>com.ibm.defaultapplication.IncrementSSB/em</persistence-context-ref-name>
+                <persistence-unit-name>DefaultApplicationJPA</persistence-unit-name>
+                <persistence-context-type>Transaction</persistence-context-type>
+                <injection-target>
+                    <injection-target-class>com.ibm.defaultapplication.IncrementSSB</injection-target-class>
+                    <injection-target-name>em</injection-target-name>
+                </injection-target>
+            </persistence-context-ref>
+        </session>
+    </enterprise-beans>
+    <assembly-descriptor/>
+</ejb-jar>

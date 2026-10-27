@@ -1,0 +1,133 @@
+<!-- This is a server-start-time action. We need to modify Dmgr profiles.
+     All of the operations are written to be idempotent. -->
+<project name="Update the profile to support assisted life-cycle Liberty servers" default="install">
+
+  <!-- Define our logger task from ws_ant -->
+  <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+  <target name="install" depends="init" if="isDmgr">
+    <antcall target="updateProfileForAssistedLiberty" />     
+  </target>
+
+  <target name="uninstall">
+    <!-- Nothing special to do. -->
+  </target>
+
+  <target name="detectCurrentOSFamily"
+          description="Detecs the current OS family (UNIX or Windows)">
+    <condition property="currentOSFamily" value="windows">
+      <os family="windows"/>
+    </condition>
+    <condition property="currentOSFamily" value="os400">
+      <equals arg1="${os.name}" arg2="OS/400"/>
+    </condition>
+    <condition property="currentOSFamily" value="unix">
+      <os family="unix"/>
+    </condition>
+    <wscmtlog>Detected current OS family to be: ${currentOSFamily}</wscmtlog>
+  </target>
+
+  <target name="resolveWSADMINExecutableForTheCurrentPlatform"
+          description="Sets WSADMIN_EXECUTABLE to the WAS Java interpretor for the current platform"
+          depends="detectCurrentOSFamily">
+    <condition property="WSADMIN_EXECUTABLE" value="${WAS_HOME}/bin/wsadmin.sh">
+      <equals arg1="${currentOSFamily}" arg2="unix"/>
+    </condition>
+    <condition property="WSADMIN_EXECUTABLE" value="${profilePath}/bin/wsadmin.bat">
+      <equals arg1="${currentOSFamily}" arg2="windows"/>
+    </condition>
+    <wscmtlog>wsadmin interpretor set to: ${WSADMIN_EXECUTABLE}</wscmtlog>
+  </target>
+
+  <!-- If we're on OS/400, we will not set the WSADMIN_EXECUTABLE property -->
+  <target name="gracefulExitOnOS400" unless="WSADMIN_EXECUTABLE">
+    <echo>This profile configuration action is not applicable on OS/400</echo>
+  </target>
+
+  <!-- Load our initial set of required properties -->
+  <target name="init" depends="resolveWSADMINExecutableForTheCurrentPlatform, gracefulExitOnOS400" if="WSADMIN_EXECUTABLE">
+    <loadproperties srcFile="${profilePath}/properties/profileKey.metadata"/> 
+    <wscmtlog>serverType = ${com.ibm.ws.profile.type}</wscmtlog>
+    <condition property="isDmgr" value="true">
+      <equals arg1="${com.ibm.ws.profile.type}" arg2="DEPLOYMENT_MANAGER"/>
+    </condition>
+    <wscmtlog message="isDmgr=${isDmgr}"/>
+  </target>
+
+  <!-- The complete profile update operation consists of:
+       1. Copying over the new template files
+       2. Setting up the new WAS variables
+       3. Setting the appropriate affinity
+       4. Updating the middleware descriptors -->
+  <target name="updateProfileForAssistedLiberty" if="isDmgr">
+    <antcall target="addLibertyServerTemplates" />
+    <antcall target="setupForeignServerVariables" />
+    <antcall target="createAffinityDescriptors" />
+    <antcall target="updateMiddlewareDescriptors" />
+  </target>
+
+  <!-- Add the LIBERTY_SERVER template files (only if they are missing).
+       This operation is idempotent as written because of how ant handles
+       mkdir and copy. See ant documentation for details. -->
+  <target name="addLibertyServerTemplates" description="Copy the LIBERTY_SERVER"
+          depends="init" if="isDmgr">
+    <wscmtlog message="Copy the LIBERTY_SERVER" />
+    <wscmtlog message="profile path=${profilePath}"/>
+    <mkdir dir= "${profilePath}/config/templates/servertypes/LIBERTY_SERVER" />
+    <copy toDir="${profilePath}/config/templates/servertypes/LIBERTY_SERVER">
+      <fileset dir="${WAS_HOME}/profileTemplates/management/documents/config/templates/servertypes/LIBERTY_SERVER/" />
+    </copy>
+  </target>
+
+  <target name="setupForeignServerVariables"
+          description="sets variables needed by the default foreign server templates"
+          depends="init" if="isDmgr">
+    <wscmtlog message="Running setupForeignServerVariables" />
+    <exec executable="${WSADMIN_EXECUTABLE}"
+        output="${profilePath}/logs/setupForeignServerVariables.log">
+        <arg value="-conntype"/>
+        <arg value="NONE"/>
+        <arg value="-lang"/>
+        <arg value="jython"/>
+        <arg value="-f"/>
+        <arg value="${WAS_HOME}/profileTemplates/management/actions/scripts/setupForeignServerVariables.py"/>
+        <arg value="-washome"/>
+        <arg value="${WAS_HOME}"/>
+    </exec>
+  </target>
+
+  <target name="createAffinityDescriptors"
+          description="create default server types session affinity descriptors"
+          depends="init" if="isDmgr">
+    <wscmtlog message="Running createAffinityDescriptors" />
+    <exec executable="${WSADMIN_EXECUTABLE}"
+        output="${profilePath}/logs/createAffinityDescriptors.log">
+        <arg value="-conntype"/>
+        <arg value="NONE"/>
+        <arg value="-lang"/>
+        <arg value="jython"/>
+        <arg value="-f"/>
+        <arg value="${WAS_HOME}/profileTemplates/management/actions/scripts/createAffinityDescriptors.py"/>
+        <arg value="-washome"/>
+        <arg value="${WAS_HOME}"/>
+    </exec>
+  </target>
+
+  <target name="updateMiddlewareDescriptors"
+          description="Update the Middleware descriptors with time out values"
+          depends="init" if="isDmgr">
+    <wscmtlog message="Running updateMiddlewareDescriptors" />
+    <exec executable="${WSADMIN_EXECUTABLE}"
+        output="${profilePath}/logs/updateMiddlewareDescriptors.log">
+        <arg value="-conntype"/>
+        <arg value="NONE"/>
+        <arg value="-lang"/>
+        <arg value="jython"/>
+        <arg value="-f"/>
+        <arg value="${WAS_HOME}/profileTemplates/management/actions/scripts/updateMiddlewareDescriptors.py"/>
+        <arg value="-washome"/>
+        <arg value="${WAS_HOME}"/>
+    </exec>
+  </target>
+
+</project>

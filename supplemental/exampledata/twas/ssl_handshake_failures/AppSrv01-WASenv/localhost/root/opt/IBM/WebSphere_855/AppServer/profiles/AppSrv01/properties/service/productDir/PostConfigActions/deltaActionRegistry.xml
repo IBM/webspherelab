@@ -1,0 +1,6 @@
+<actions>
+<action path="actions/ejb-deploy-clear-cache.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/clearOSGiCache.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/runiscdeploy.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/clearClassCache.ant" priority="50" isOptional="false" isFatal="false" />
+</actions>

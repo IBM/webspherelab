@@ -1,0 +1,47 @@
+<actions>
+<action path="actions/gm1218.01.endmarker.ant" priority="01" isOptional="false" isFatal="true" />
+<action path="actions/cf011242.02.endmarker.ant" priority="01" isOptional="false" isFatal="true" />
+<action path="actions/cf021312.01.endmarker.ant" priority="01" isOptional="false" isFatal="true" />
+<action path="actions/gm1319.01.endmarker.ant" priority="01" isOptional="false" isFatal="true" />
+<action path="actions/CopyMetaDataIM.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/MoveAries12to13.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf011341.03.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf021414.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/updateOdrServerXml_SS.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/PM96233.ant" priority="50" isOptional="false" isFatal="false"/>
+<action path="actions/PH43148.ant" priority="50" isOptional="false" isFatal="false"/>
+<action path="actions/updateProfileForAssistedLiberty.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/DeleteExtensionRegistry.ant" priority="50" isOptional="false" isFatal="false"/>
+<action path="actions/cf031430.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf041446.03.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf051507.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf061521.02.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf071533.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/updateIntellMgmtXml.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/765494.ant" priority="50" isOptional="false" isFatal="false"/>
+<action path="actions/cf081545.03.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf091608.05.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf101629.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf111649.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf121726.02.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf131801.05.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf141830.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf151904.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf161930.02.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf172005.05.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf182036.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf192103.03.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf202127.02.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf212205.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf222227.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/updateOAuth20Ear.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/updateSamlEar.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/DeleteIEHSTempDir.ant" priority="50" isOptional="false" isFatal="false"/>
+<action path="actions/modifyMaxHeapSizeJspBatchCompiler.ant" priority="50" isOptional="false" isFatal="false" />
+<action path="actions/cf232303.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf242326.03.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf252402.02.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf262426.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf272504.01.endmarker.ant" priority="50" isOptional="false" isFatal="true" />
+<action path="actions/cf282527.01.endmarker.ant" priority="01" isOptional="false" isFatal="true" />
+</actions>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:topology.node="http://www.ibm.com/websphere/appserver/schemas/5.0/topology.node.xmi">
+  <xmi:Documentation>
+    <contact>WebSphere Application Server v5.0 Default Configuration Files v1.3 7/18/02</contact>
+  </xmi:Documentation>
+  <topology.node:Node xmi:id="Node_1" name="TWAS1CellManager01" />
+</xmi:XMI>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.ejs.models.base.bindings.ejbbnd="ejbbnd.xmi" xmlns:org.eclipse.jst.j2ee.ejb="ejb.xmi" xmi:id="EJBJarBinding_1176972337375">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1176972337375" jndiName="ejb/com/ibm/otis/ejbs/TaskProcessingHome">
+    <enterpriseBean xsi:type="org.eclipse.jst.j2ee.ejb:Session" href="META-INF/ejb-jar.xml#TaskProcessing"/>
+  </ejbBindings>
+</com.ibm.ejs.models.base.bindings.ejbbnd:EJBJarBinding>

@@ -1,0 +1,28 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01, /opt/IBM/WebSphere_855/AppServer/profileTemplates/cell/dmgr/actions/scripts/sql/createOMADMTables_derby.sql]"
+Executing SQL File: /opt/IBM/WebSphere_855/AppServer/profileTemplates/cell/dmgr/actions/scripts/sql/createOMADMTables_derby.sql
+WAS Location: /opt/IBM/WebSphere_855/AppServer
+WAS Location: /opt/IBM/WebSphere_855/AppServer
+Database Name = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/OTiS
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+
+QUERY SUCCEEDED!!!
+
+Executed: /opt/IBM/WebSphere_855/AppServer/profileTemplates/cell/dmgr/actions/scripts/sql/createOMADMTables_derby.sql

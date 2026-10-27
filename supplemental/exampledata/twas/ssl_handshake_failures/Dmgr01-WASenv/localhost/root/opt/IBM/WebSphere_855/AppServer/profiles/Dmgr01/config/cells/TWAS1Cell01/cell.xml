@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:topology.cell="http://www.ibm.com/websphere/appserver/schemas/5.0/topology.cell.xmi" xmlns:ipc="http://www.ibm.com/websphere/appserver/schemas/5.0/ipc.xmi">
+  <xmi:Documentation>
+    <contact>WebSphere Application Server v5.0 Default Configuration Files v1.5.2.4 8/26/10</contact>
+  </xmi:Documentation>
+  <topology.cell:Cell xmi:id="Cell_1" name="TWAS1Cell01" cellDiscoveryProtocol="TCP" cellType="DISTRIBUTED">
+  <properties xmi:id="Property_1" name="enableAdminAuthorizationCache" value="true"/>
+  <monitoredDirectoryDeployment xmi:id="MonitoredDirectoryDeployment_1"/>
+  <sessionSecurity xmi:id="SessionSecurity_1">
+    <secureSessionCookie xmi:id="SecureSessionCookie_1" cookieDomain="*" cookieName="JSESSIONID" cookiePath="/"/>
+    <secureSessionCookie xmi:id="SecureSessionCookie_2" cookieDomain="*" cookieName="JSESSIONID" cookiePath="/ibm"/>
+	<secureSessionCookie xmi:id="SecureSessionCookie_3" cookieDomain="*" cookieName="SSLJSESSION" cookiePath="/"/>
+  </sessionSecurity>
+  </topology.cell:Cell>
+</xmi:XMI>

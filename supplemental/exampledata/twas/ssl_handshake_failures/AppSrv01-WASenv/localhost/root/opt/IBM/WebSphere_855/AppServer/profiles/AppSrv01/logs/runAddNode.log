@@ -1,0 +1,44 @@
+ADMU0116I: Tool information is being logged in file
+           /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/addNode.log
+ADMU0128I: Starting tool with the AppSrv01 profile
+CWPKI0308I: Adding signer alias "root_1" to local keystore
+           "ClientDefaultTrustStore" with the following SHA digest:
+           D2:23:AB:D6:E7:CD:0A:E5:82:D4:4E:B5:1C:B0:28:88:42:FF:EC:EE
+ADMU0001I: Begin federation of node Node01 with Deployment Manager at
+           localhost:8879.
+ADMU0009I: Successfully connected to Deployment Manager Server: localhost:8879
+ADMU0507I: No servers found in configuration under:
+           /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config/cells/TWAS1Node01Cell/nodes/Node01/servers
+ADMU2010I: Stopping all server processes for node Node01
+ADMU0024I: Deleting the old backup directory.
+ADMU0015I: Backing up the original cell repository.
+ADMU0012I: Creating Node Agent configuration for node: Node01
+ADMU0014I: Adding node Node01 configuration to cell: TWAS1Cell01
+ADMU0016I: Synchronizing configuration between node and cell.
+ADMU0018I: Launching Node Agent process for node: Node01
+ADMU0020I: Reading configuration for Node Agent process: nodeagent
+ADMU0022I: Node Agent launched. Waiting for initialization status.
+ADMU0030I: Node Agent initialization completed successfully. Process id is:
+           358469
+
+
+ADMU0300I: The node Node01 was successfully added to the TWAS1Cell01 cell.
+
+
+ADMU0306I: Note:
+ADMU0302I: Any cell-level documents from the standalone TWAS1Cell01
+           configuration have not been migrated to the new cell.
+ADMU0307I: You might want to:
+ADMU0303I: Update the configuration on the TWAS1Cell01 Deployment Manager with
+           values from the old cell-level documents.
+
+
+ADMU0306I: Note:
+ADMU0304I: Because -includeapps was not specified, applications installed on
+           the standalone node were not installed on the new cell.
+ADMU0307I: You might want to:
+ADMU0305I: Install applications onto the TWAS1Cell01 cell using wsadmin
+           $AdminApp or the Administrative Console.
+
+
+ADMU0003I: Node Node01 has been successfully federated.

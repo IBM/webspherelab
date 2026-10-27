@@ -1,0 +1,5 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[-isDmgr:true, -isCustomOrDefault:${isCustomOrDefault}, -profilePath:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01]"
+isDmgr --> true
+profilePath --> /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Saving the config changes

@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376492</millis>
+    <sequence>4</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.Launcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.Launcher</class>
+    <method>fillInCommandLineArguments</method>
+    <thread>0</thread>
+    <message>Incoming arguments are: -WS_CMT_ACTION_REGISTRY, /opt/IBM/WebSphere_855/AppServer/properties/postinstall/deltaActionRegistry.xml, -WS_CMT_EXTENSION, com.ibm.ws.postinstall.cmext.ConfigManagerExtension, -WS_PI_ACTION_REGISTRY_EXTENSION, /opt/IBM/WebSphere_855/AppServer/properties/postinstall/registryExtension.xml, -actionTarget, install, -WS_CMT_CONF_DIR, /opt/IBM/WebSphere_855/AppServer/properties/postinstall/, -permissionsProcessing, false</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376500</millis>
+    <sequence>5</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.PlatformConstants</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.PlatformConstants</class>
+    <method>getCurrentPlatform</method>
+    <thread>0</thread>
+    <message>Current platform was detected as Linux</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376501</millis>
+    <sequence>6</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of WS_CMT_EXTRINSICS could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376501</millis>
+    <sequence>7</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: WS_CMT_EXTRINSICS, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376502</millis>
+    <sequence>8</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of WS_CMT_EXTENSION_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376502</millis>
+    <sequence>9</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: WS_CMT_EXTENSION_LIB, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376559</millis>
+    <sequence>10</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of omitAction could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376559</millis>
+    <sequence>11</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: omitAction, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376560</millis>
+    <sequence>12</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of omitAction1 could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376560</millis>
+    <sequence>13</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: omitAction1, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376560</millis>
+    <sequence>14</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of PRE_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376560</millis>
+    <sequence>15</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: PRE_IJC_LIB, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376562</millis>
+    <sequence>16</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+    <method>getAllFilesInThisDirectory</method>
+    <thread>0</thread>
+    <message>/opt/IBM/WebSphere_855/AppServer/properties/postinstall/lib is not a directory, returning an empty list</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376562</millis>
+    <sequence>17</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+    <method>getAllFilesInThisDirectoryMatchingThisPatternIgnoreCase</method>
+    <thread>0</thread>
+    <message>List of files in /opt/IBM/WebSphere_855/AppServer/properties/postinstall/lib matching the pattern ^.*\.jar$ is: {  }</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376562</millis>
+    <sequence>18</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.ClassPathModifier</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.ClassPathModifier</class>
+    <method>addAllJARsInDirectoryToClassPath</method>
+    <thread>0</thread>
+    <message>ListJAR files in found in /opt/IBM/WebSphere_855/AppServer/properties/postinstall/lib is: {  }</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376563</millis>
+    <sequence>19</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of POST_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376563</millis>
+    <sequence>20</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: POST_IJC_LIB, returning null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376563</millis>
+    <sequence>21</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>executeActions</method>
+    <thread>0</thread>
+    <message>List of all actions found in the repository: [com.ibm.ws.install.configmanager.actionengine.ConfigAction-/opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant]</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376567</millis>
+    <sequence>22</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>preprocessing</method>
+    <thread>0</thread>
+    <message>WAS_HOME =  /opt/IBM/WebSphere_855/AppServer</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>23</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>preprocessing config action /opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>24</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>profileUpdate attribute =  false</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>25</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>alwaysExecute attribute =  false</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>26</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>altersFile attribute =  </message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>27</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>action target =  install</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376571</millis>
+    <sequence>28</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>permissionsProcessing =  false</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376572</millis>
+    <sequence>29</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>profilePath =  null</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376775</millis>
+    <sequence>30</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>configurationActionPreprocessor</method>
+    <thread>0</thread>
+    <message>management workspace =  /opt/IBM/WebSphere_855/AppServer/properties/workspace</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376776</millis>
+    <sequence>31</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ANTAction</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ANTAction</class>
+    <method>executeAction</method>
+    <thread>0</thread>
+    <message>Using an InProcess ANT call to execute this action: /opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376789</millis>
+    <sequence>32</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.InProcessAntRunner</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.InProcessAntRunner</class>
+    <method>logOutputMessage</method>
+    <thread>0</thread>
+    <message>Buildfile: /opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376804</millis>
+    <sequence>33</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>buildStarted</method>
+    <thread>0</thread>
+    <message>Build started.</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376872</millis>
+    <sequence>34</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: detectCurrentOSFamily</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376883</millis>
+    <sequence>35</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles</logger>
+    <level>INFO</level>
+    <class>/opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant:20: </class>
+    <method>detectCurrentOSFamily</method>
+    <thread>0</thread>
+    <message>Detected current OS family to be: unix</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376883</millis>
+    <sequence>36</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: detectCurrentOSFamily - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376883</millis>
+    <sequence>37</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: setOSFileSeparator</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376884</millis>
+    <sequence>38</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: setOSFileSeparator - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376884</millis>
+    <sequence>39</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: defineOSSpecificConfigFlag</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376885</millis>
+    <sequence>40</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: defineOSSpecificConfigFlag - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:56</date>
+    <millis>1767631376886</millis>
+    <sequence>41</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: copyFirstStepsFileSet</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377069</millis>
+    <sequence>42</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>messageLogged</method>
+    <thread>0</thread>
+    <message>Copying 12 files to /opt/IBM/WebSphere_855/AppServer/firststeps</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377072</millis>
+    <sequence>43</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles</logger>
+    <level>INFO</level>
+    <class>/opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant:82: </class>
+    <method>copyFirstStepsFileSet</method>
+    <thread>0</thread>
+    <message>Copying FirstSteps file set to: /opt/IBM/WebSphere_855/AppServer/firststeps</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377072</millis>
+    <sequence>44</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: copyFirstStepsFileSet - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377072</millis>
+    <sequence>45</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceTokensForFirstStepsScriptUnix</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377102</millis>
+    <sequence>46</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377105</millis>
+    <sequence>47</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377126</millis>
+    <sequence>48</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377127</millis>
+    <sequence>49</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377148</millis>
+    <sequence>50</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377150</millis>
+    <sequence>51</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377171</millis>
+    <sequence>52</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377172</millis>
+    <sequence>53</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377198</millis>
+    <sequence>54</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377199</millis>
+    <sequence>55</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377199</millis>
+    <sequence>56</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceTokensForFirstStepsScriptUnix - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377199</millis>
+    <sequence>57</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceTokensForFirstStepsScriptWindows</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377200</millis>
+    <sequence>58</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceTokensForFirstStepsScriptWindows - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377200</millis>
+    <sequence>59</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceTokensForFirstStepsHTML</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377222</millis>
+    <sequence>60</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377224</millis>
+    <sequence>61</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377246</millis>
+    <sequence>62</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377247</millis>
+    <sequence>63</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377267</millis>
+    <sequence>64</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377268</millis>
+    <sequence>65</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377285</millis>
+    <sequence>66</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377286</millis>
+    <sequence>67</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377314</millis>
+    <sequence>68</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377316</millis>
+    <sequence>69</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377339</millis>
+    <sequence>70</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377340</millis>
+    <sequence>71</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377354</millis>
+    <sequence>72</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377355</millis>
+    <sequence>73</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377369</millis>
+    <sequence>74</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377370</millis>
+    <sequence>75</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377383</millis>
+    <sequence>76</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377384</millis>
+    <sequence>77</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377395</millis>
+    <sequence>78</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377398</millis>
+    <sequence>79</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377408</millis>
+    <sequence>80</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377410</millis>
+    <sequence>81</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377421</millis>
+    <sequence>82</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377421</millis>
+    <sequence>83</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377430</millis>
+    <sequence>84</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377431</millis>
+    <sequence>85</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377446</millis>
+    <sequence>86</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377447</millis>
+    <sequence>87</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377455</millis>
+    <sequence>88</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377456</millis>
+    <sequence>89</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377464</millis>
+    <sequence>90</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377465</millis>
+    <sequence>91</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceAllInstancesOfGivenTokenWithGivenValueForTheGivenFile - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377465</millis>
+    <sequence>92</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: replaceTokensForFirstStepsHTML - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377465</millis>
+    <sequence>93</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: setUnixShellScriptPermissions</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377489</millis>
+    <sequence>94</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: setUnixShellScriptPermissions - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377489</millis>
+    <sequence>95</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetStarted</method>
+    <thread>0</thread>
+    <message>Target started for: install</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377489</millis>
+    <sequence>96</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>targetFinished</method>
+    <thread>0</thread>
+    <message>Target stopped for: install - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377490</millis>
+    <sequence>97</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ant.utils.ANTLogToCmtLogAdapter</class>
+    <method>buildFinished</method>
+    <thread>0</thread>
+    <message>Build stopped - SUCCESS</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377490</millis>
+    <sequence>98</sequence>
+    <logger>com.ibm.ws.install.configmanager.actionengine.ANTAction</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.actionengine.ANTAction</class>
+    <method>executeAction</method>
+    <thread>0</thread>
+    <message>Result of executing /opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant was: true</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377491</millis>
+    <sequence>99</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>executeAllActionsFound</method>
+    <thread>0</thread>
+    <message>Configuration action succeeded: com.ibm.ws.install.configmanager.actionengine.ConfigAction-/opt/IBM/WebSphere_855/AppServer/properties/postinstall/actions/ConfigNoProfileFirstStepsND.ant</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377491</millis>
+    <sequence>100</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>launch</method>
+    <thread>0</thread>
+    <message>No errors were encountered while executing the repository actions</message>
+</record>
+<record>
+    <date>2026-01-05T08:42:57</date>
+    <millis>1767631377492</millis>
+    <sequence>101</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>launch</method>
+    <thread>0</thread>
+    <message>Returning with return code: INSTCONFSUCCESS</message>
+</record>
+</log>

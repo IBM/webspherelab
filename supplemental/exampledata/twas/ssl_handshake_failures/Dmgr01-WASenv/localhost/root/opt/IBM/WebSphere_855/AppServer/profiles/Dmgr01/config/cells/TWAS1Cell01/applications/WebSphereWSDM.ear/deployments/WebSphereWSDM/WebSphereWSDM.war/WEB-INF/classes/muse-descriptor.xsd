@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+
+Copyright 2006 The Apache Software Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://ws.apache.org/muse/descriptor" 
+           xmlns:tns="http://ws.apache.org/muse/descriptor" >
+
+  <xs:element name="capability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:capability-uri"/>
+        <xs:element ref="tns:java-capability-class" minOccurs="0"/>
+        <xs:element ref="tns:persistence" minOccurs="0"/>
+        <xs:element ref="tns:init-param" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="capability-uri" type="xs:anyURI"/>
+
+  <xs:element name="context-path" type="xs:NCName"/>
+  
+  <xs:element name="custom-serializer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:java-serializable-type"/>
+        <xs:element ref="tns:java-serializer-class"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="init-param">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:param-name"/>
+        <xs:element ref="tns:param-value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="java-capability-class" type="xs:string"/>
+  <xs:element name="java-id-factory-class" type="xs:string"/> 
+  <xs:element name="java-persistence-class" type="xs:string"/> 
+  <xs:element name="java-resource-class" type="xs:string"/> 
+  <xs:element name="java-router-class" type="xs:string"/> 
+  <xs:element name="java-serializable-type" type="xs:string"/> 
+  <xs:element name="java-serializer-class" type="xs:string"/>
+  
+  <xs:element name="log-file" type="xs:anyURI"/>
+  
+  <xs:element name="log-level">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="OFF"/>
+        <xs:enumeration value="SEVERE"/>
+        <xs:enumeration value="WARNING"/>
+        <xs:enumeration value="INFO"/>
+        <xs:enumeration value="CONFIG"/>
+        <xs:enumeration value="FINE"/>
+        <xs:enumeration value="FINER"/>
+        <xs:enumeration value="FINEST"/>
+        <xs:enumeration value="ALL"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="logging">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:log-file"/>
+        <xs:element ref="tns:log-level"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="muse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:router"/>
+        <xs:element ref="tns:resource-type" maxOccurs="unbounded"/>
+        <xs:element ref="tns:custom-serializer" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="param-name" type="xs:string"/>
+  
+  <xs:element name="param-value" type="xs:string"/>
+
+  <xs:element name="persistence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:java-persistence-class"/>
+        <xs:element ref="tns:persistence-location" minOccurs="0"/>
+        <xs:element ref="tns:init-param" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="persistence-location" type="xs:anyURI"/>
+
+  <xs:element name="resource-type">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:context-path"/>
+        <xs:element ref="tns:wsdl"/>
+        <xs:element ref="tns:java-id-factory-class" minOccurs="0"/>
+        <xs:element ref="tns:java-resource-class"/>
+        <xs:element ref="tns:capability" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="router">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:java-router-class"/>
+        <xs:element ref="tns:logging"/>
+        <xs:element ref="tns:persistence" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="wsdl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:wsdl-file"/>
+        <xs:element ref="tns:wsdl-port-type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="wsdl-file" type="xs:anyURI"/>
+  
+  <xs:element name="wsdl-port-type" type="xs:QName"/>
+
+</xs:schema>

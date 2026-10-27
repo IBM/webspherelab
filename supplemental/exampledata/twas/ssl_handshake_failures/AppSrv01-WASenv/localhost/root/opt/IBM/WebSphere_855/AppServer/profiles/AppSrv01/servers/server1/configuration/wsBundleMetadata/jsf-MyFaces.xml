@@ -1,0 +1,9 @@
+<bundles>
+  <directory path="plugins">
+    <bundle>com.ibm.ws.jsf.myfaces.jar</bundle>
+    <bundle>javax.j2ee.jsf.jar</bundle>
+  </directory>
+  <directory path="plugins">
+    <exclude-bundle>com.ibm.ws.jsf.RI1_2.jar</exclude-bundle>
+  </directory>
+</bundles>

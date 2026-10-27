@@ -1,0 +1,4 @@
+#Created by WebSphere.  Do not modify.
+#Thu Apr 09 09:20:28 PDT 2026
+com.ibm.ws.runtime.components.ibmasyncrsp.war.ibmadd=WebSphere\:specname\=WS_JaxWsWebService+WebSphere\:specname\=WS_WebServiceInit
+com.ibm.ws.runtime.components.ibmasyncrsp.war=WebSphere\:specname\=WS_WebContainer

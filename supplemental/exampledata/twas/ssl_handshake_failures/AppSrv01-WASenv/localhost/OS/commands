@@ -1,0 +1,83 @@
+-----------------------------------------------------------
+PATH:
+/opt/IBM/WebSphere_855/AppServer/java/ibm_bin
+/opt/IBM/WebSphere_855/AppServer/java/bin/
+/opt/IBM/WebSphere_855/AppServer/java/jre/bin
+/opt/IBM/WebSphere_855/AppServer/java/ibm_bin
+/opt/IBM/WebSphere_855/AppServer/java/bin/
+/opt/IBM/WebSphere_855/AppServer/java/jre/bin
+/root/wlp_24.0.0.6/wlp/bin
+/usr/bin
+/opt/IBM/WebSphere_855/AppServer/java/jre/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/var/lib/snapd/snap/bin
+/root/bin
+-----------------------------------------------------------
+Search for commands
+vmtune               : *** Not Found ***
+arp                  : sbin      : /sbin/arp
+arp                  : ls -l     : -rwxr-xr-x. 1 root root 66200 Mar 18  2020 /sbin/arp
+bdf                  : *** Not Found ***
+bootinfo             : *** Not Found ***
+date                 : *** Not Found ***
+df                   : *** Not Found ***
+dmesg                : *** Not Found ***
+errpt                : *** Not Found ***
+free                 : *** Not Found ***
+getconf              : *** Not Found ***
+hostname             : *** Not Found ***
+id                   : *** Not Found ***
+ifconfig             : sbin      : /sbin/ifconfig
+ifconfig             : ls -l     : -rwxr-xr-x. 1 root root 82728 Mar 18  2020 /sbin/ifconfig
+ioscan               : *** Not Found ***
+iostat               : *** Not Found ***
+isainfo              : *** Not Found ***
+jar                  : *** Not Found ***
+java                 : *** Not Found ***
+jre                  : *** Not Found ***
+ksh                  : *** Not Found ***
+lanscan              : *** Not Found ***
+lsattr               : *** Not Found ***
+lscfg                : *** Not Found ***
+lsdev                : *** Not Found ***
+lsfs                 : *** Not Found ***
+lsgroup              : *** Not Found ***
+lslicense            : *** Not Found ***
+lsps                 : *** Not Found ***
+lspv                 : *** Not Found ***
+lssrc                : *** Not Found ***
+lsuser               : *** Not Found ***
+lsvg                 : *** Not Found ***
+model                : *** Not Found ***
+ndd                  : *** Not Found ***
+netstat              : *** Not Found ***
+nfsstat              : sbin      : /sbin/nfsstat
+nfsstat              : ls -l     : -rwxr-xr-x 1 root root 36360 Mar 19  2026 /sbin/nfsstat
+no                   : *** Not Found ***
+nslookup             : *** Not Found ***
+patchadd             : *** Not Found ***
+prtconf              : *** Not Found ***
+psrinfo              : *** Not Found ***
+runlevel             : sbin      : /sbin/runlevel
+runlevel             : ls -l     : lrwxrwxrwx 1 root root 16 Jul 27 01:20 /sbin/runlevel -> ../bin/systemctl
+runlevel             : ls -lL    : -rwxr-xr-x 1 root root 223696 Jul 27 01:21 /sbin/runlevel
+sh                   : *** Not Found ***
+showmount            : sbin      : /sbin/showmount
+showmount            : ls -l     : -rwxr-xr-x 1 root root 21560 Mar 19  2026 /sbin/showmount
+showrev              : *** Not Found ***
+swap                 : *** Not Found ***
+swapinfo             : *** Not Found ***
+swlist               : *** Not Found ***
+sysdef               : *** Not Found ***
+top                  : *** Not Found ***
+type                 : *** Not Found ***
+ulimit               : *** Not Found ***
+uname                : *** Not Found ***
+vmstat               : *** Not Found ***
+whence               : *** Not Found ***
+which                : *** Not Found ***
+who                  : *** Not Found ***
+-----------------------------------------------------------

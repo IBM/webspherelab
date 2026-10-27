@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sip-app PUBLIC "-//Java Community Process//DTD SIP Application 1.0//EN" "http://www.jcp.org/dtd/sip-app_1_0.dtd">
+<sip-app id="SipApp_ID">
+	<!-- WARNING: If app-name is ever added back in we need to do all of the following:
+			1) Make sure the display name matches the app name in application.xml and web.xml.
+			2) Invalidate when read needs to be disabled every time a CEA app session is created
+				to avoid app sessions being invalidate before CEA events are delivered.-->
+	<!-- app-name>com.ibm.ws.commsvc</app-name -->
+	<display-name>commsvc</display-name>
+	<listener>
+		<listener-class>com.ibm.ws.cti.csta.impl.CTIControlServlet</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.ibm.ws.commsvc.servlet.CEAActivationListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.ibm.ws.commsvc.webservice.impl.CTIControlSessionListenerImpl</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>CTIControlServlet</servlet-name>
+		<display-name>CTIControlServlet</display-name>
+		<description></description>
+		<servlet-class>com.ibm.ws.cti.csta.impl.CTIControlServlet</servlet-class>
+		<load-on-startup>-1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>CommSipServlet</servlet-name>
+		<display-name>CommSipServlet</display-name>
+		<description></description>
+		<servlet-class>com.ibm.ws.commsvc.servlet.CommSipServlet</servlet-class>
+		<load-on-startup>-1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommSipServlet</servlet-name>
+		<pattern>
+			<or>
+				<equal>
+					<var>request.uri.user</var>
+					<value>CommSipServlet</value>
+				</equal>
+				<equal>
+					<var>request.method</var>
+					<value>IBMUSERREGISTER</value>
+				</equal>
+				<equal>
+					<var>request.method</var>
+					<value>IBMUSERLOOKUP</value>
+				</equal>
+				<equal>
+					<var>request.method</var>
+					<value>IBMCEASETCOORDINATOR</value>
+				</equal>
+			</or>
+		</pattern>
+	</servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</sip-app>

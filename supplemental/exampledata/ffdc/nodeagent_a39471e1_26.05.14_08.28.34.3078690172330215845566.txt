@@ -1,0 +1,34 @@
+[5/14/26 8:28:34:308 PDT]     FFDC Exception:java.lang.reflect.InvocationTargetException SourceId:com.ibm.websphere.management.AdminClientFactory.createAdminClient ProbeId:275 Reporter:java.lang.Class@64c08766
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:841)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1115)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1255)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+Caused by: com.ibm.websphere.management.exception.ConnectorNotAvailableException: java.io.IOException: Connector not available: Error during resolve
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:293)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:182)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.<init>(JSR160RMIConnectorClient.java:172)
+	... 20 more
+Caused by: java.io.IOException: Connector not available: Error during resolve
+	at com.ibm.websphere.management.remote.WsProvider.newJMXConnector(WsProvider.java:155)
+	at javax.management.remote.JMXConnectorFactory.newJMXConnector(JMXConnectorFactory.java:382)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:280)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:288)
+	... 22 more
+

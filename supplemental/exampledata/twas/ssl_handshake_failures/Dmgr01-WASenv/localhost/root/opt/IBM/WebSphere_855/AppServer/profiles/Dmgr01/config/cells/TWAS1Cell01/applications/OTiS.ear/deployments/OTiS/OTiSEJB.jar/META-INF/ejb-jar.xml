@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     OTiSEJB/ejbModule/META-INF/ejb-jar.xml, otis_api, otis_dev, 20080626D2
+  Version:  1.12
+  Modified: 6/18/08 12:36:52
+  Build:    1 12
+  
+  Licensed Materials - Property of IBM
+  
+  IBM Confidential OCO Source Material
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  ©  COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<!--
+  Defect   Name       Date      Description
+  =======  =========  ========  ===============================================
+  
+  End Change History
+-->
+
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	OTiSEJB</display-name>
+	<enterprise-beans>
+		<session id="TaskManager">
+			<ejb-name>TaskManager</ejb-name>
+			<home>com.ibm.otis.ejbs.TaskManagerHome</home>
+			<remote>com.ibm.otis.ejbs.TaskManager</remote>
+			<local-home>com.ibm.otis.ejbs.TaskManagerLocalHome</local-home>
+			<local>com.ibm.otis.ejbs.TaskManagerLocal</local>
+			<service-endpoint>com.ibm.otis.ejbs.TaskManagerService</service-endpoint>
+			<ejb-class>com.ibm.otis.ejbs.TaskManagerBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Bean</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1158236513125">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/TaskManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<local-home>com.ibm.otis.ejbs.TaskManagerLocalHome</local-home>
+				<local>com.ibm.otis.ejbs.TaskManagerLocal</local>
+				<ejb-link>TaskManager</ejb-link>
+			</ejb-local-ref>
+		</session>
+		
+		<session id="GroupManager">
+			<ejb-name>GroupManager</ejb-name>
+			<home>com.ibm.otis.ejbs.GroupManagerHome</home>
+			<remote>com.ibm.otis.ejbs.GroupManager</remote>
+			<local-home>com.ibm.otis.ejbs.GroupManagerLocalHome</local-home>
+			<local>com.ibm.otis.ejbs.GroupManagerLocal</local>
+			<service-endpoint>com.ibm.otis.ejbs.GroupManagerService</service-endpoint>
+			<ejb-class>com.ibm.otis.ejbs.GroupManagerBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Bean</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1158236513126">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/GroupManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<local-home>com.ibm.otis.ejbs.GroupManagerLocalHome</local-home>
+				<local>com.ibm.otis.ejbs.GroupManagerLocal</local>
+				<ejb-link>GroupManager</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<security-role>
+    		<description>
+			OTiS API ReadOnly role</description>
+			<role-name>monitor</role-name>
+		</security-role>
+		<security-role>
+			<description>
+			OTiS GroupManager API ReadWrite role</description>
+			<role-name>configurator</role-name>
+		</security-role>
+		<security-role>
+			<description>
+			OTiS TaskManager API ReadWrite role</description>
+			<role-name>operator</role-name>
+		</security-role>
+		<method-permission>
+			<role-name>configurator</role-name>
+			<method>
+				<ejb-name>GroupManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+		</method-permission>
+		<method-permission>
+			<role-name>operator</role-name>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+		</method-permission>
+		<method-permission>
+			<role-name>monitor</role-name>
+			<method>
+				<ejb-name>GroupManager</ejb-name>
+				<method-name>create</method-name>
+				<method-params>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>GroupManager</ejb-name>
+				<method-name>getDevicesInGroup</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>GroupManager</ejb-name>
+				<method-name>getGroupNames</method-name>
+				<method-params>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>create</method-name>
+				<method-params>
+				</method-params>
+			</method>
+
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>countTaskMessages</method-name>
+
+				<method-params>
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>countTaskResults</method-name>
+
+				<method-params>
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>countTasks</method-name>
+
+				<method-params>
+
+					<method-param>java.lang.String</method-param>
+
+				</method-params>
+
+			</method>
+
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>countTasksByStatus</method-name>
+
+				<method-params>
+
+					<method-param>java.lang.String</method-param>
+
+					<method-param>java.lang.String[]</method-param>
+
+				</method-params>
+
+			</method>
+
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getAllTaskMessages</method-name>
+
+				<method-params>
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+
+				</method-params>
+
+			</method>
+
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getAllTaskResults</method-name>
+
+				<method-params>
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+
+				</method-params>
+
+			</method>
+
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getDeviceEvents</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>int[]</method-param>
+					<method-param>java.lang.String</method-param>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getDevicesByTaskStatus</method-name>
+				<method-params>
+					<method-param>long</method-param>
+					<method-param>java.lang.String[]</method-param>
+				</method-params>
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getDevicesWithNoTaskHistory</method-name>
+
+				<method-params>
+
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>
+			
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getMultipleTaskMessages</method-name>
+
+				<method-params>
+
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String[]</method-param>
+					
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>
+			
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getMultipleTaskResults</method-name>
+
+				<method-params>
+
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String[]</method-param>
+					
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTaskMessages</method-name>
+
+				<method-params>
+
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>boolean</method-param>
+
+				</method-params>
+
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTaskResults</method-name>
+
+				<method-params>
+
+					<method-param>long</method-param>
+
+					<method-param>java.lang.String</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>long</method-param>
+					
+					<method-param>boolean</method-param>
+
+				</method-params>
+
+			</method>
+			
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTasksByStatus</method-name>
+
+				<method-params>
+
+					<method-param>java.lang.String</method-param>
+					
+					<method-param>java.lang.String[]</method-param>
+					
+					<method-param>long</method-param>
+					
+				</method-params>
+
+			</method>
+	
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTaskStatus</method-name>
+
+				<method-params>
+					
+					<method-param>long</method-param>
+					
+					<method-param>java.lang.String</method-param>
+					
+				</method-params>
+
+			</method>	
+
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTaskSummary</method-name>
+
+				<method-params>
+					
+					<method-param>long</method-param>
+					
+				</method-params>
+
+			</method>
+	
+			<method>
+
+				<ejb-name>TaskManager</ejb-name>
+
+				<method-name>getTasksWithNoHistory</method-name>
+
+				<method-params>
+				
+					<method-param>java.lang.String</method-param>
+					
+					<method-param>long</method-param>
+
+				</method-params>
+
+			</method>		
+
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getMultipleTaskResults</method-name>
+				<method-params>
+					<method-param>long</method-param>
+					<method-param>java.lang.String[]</method-param>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getTask</method-name>
+				<method-params>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getTaskTargetDevices</method-name>
+				<method-params>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>queryTasks</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>queryTasksSorted</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>long</method-param>
+					<method-param>java.lang.String</method-param>
+					<method-param>boolean</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>getActiveDevicesForTask</method-name>
+				<method-params>
+					<method-param>long</method-param>
+					<method-param>long</method-param>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>deleteTaskStatusEntries</method-name>
+				<method-params>
+					<method-param>long</method-param>
+					<method-param>java.lang.String[]</method-param>
+				</method-params>
+			</method>
+            <method>
+				<ejb-name>TaskManager</ejb-name>
+				<method-name>retryTask</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>long</method-param>
+				</method-params>
+			</method>
+		</method-permission>
+	</assembly-descriptor>
+	<ejb-client-jar>OTiSClient.jar</ejb-client-jar>
+</ejb-jar>

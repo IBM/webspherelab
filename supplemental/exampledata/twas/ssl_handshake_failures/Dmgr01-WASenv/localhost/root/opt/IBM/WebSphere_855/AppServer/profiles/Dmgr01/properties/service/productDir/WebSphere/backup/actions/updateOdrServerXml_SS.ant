@@ -1,0 +1,156 @@
+<project name="Update ODR server.xml agentlib on WAS 8.5" default="install">  
+
+  <target name="install" depends="init" >
+	<antcall target="checkProfileType"></antcall>     
+  </target>
+  
+  <target name="uninstall" depends="init" >
+	<!--antcall target="listProfiles"></antcall-->
+  </target>
+
+
+  <taskdef name="wscmtlog"
+           classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+  <!-- Document startup -->
+  <target name="init">
+    <tstamp/>
+    <wscmtlog>Updating ODR server.xml agentlib</wscmtlog>
+    <wscmtlog>${TODAY} - ${TSTAMP}</wscmtlog>
+    <wscmtlog>WAS_HOME = ${WAS_HOME}</wscmtlog>
+    <property name="was.install.root" value="${WAS_HOME}" />
+    <wscmtlog>was.install.root = ${was.install.root}</wscmtlog>         
+ 
+  </target>
+  
+  <target name="detectCurrentOSFamily"
+                description="Detecs the current OS family (UNIX or Windows)">
+
+            <condition property="currentOSFamily" value="windows">
+                <os family="windows"/>
+            </condition>
+
+            <condition property="cmdescape" value="&quot;">
+                <os family="windows"/>
+            </condition>
+
+            <condition property="currentOSFamily" value="unix">
+                <os family="unix"/>
+            </condition>
+
+            <condition property="cmdescape" value="">
+                <os family="unix"/>
+            </condition>
+
+            <wscmtlog>Detected current OS family to be: ${currentOSFamily}</wscmtlog>
+        </target>
+
+        <target name="convertWASHomeToUNIXStylePath">
+            <path id="id.was.home">
+                <pathelement location="${WAS_HOME}"/>
+            </path>
+
+            <pathconvert targetos="unix"
+                property="WAS_HOME_UNIX_STYLE"
+                refid="id.was.home"/>
+        </target>
+
+        <target name="resolveWSADMINExecutableForTheCurrentPlatform"
+                description="Sets WSADMIN_EXECUTABLE to the WAS Java interpretor for the current platform">
+
+            <condition property="WSADMIN_EXECUTABLE" value="${profilePath}/bin/wsadmin.sh">
+                <equals arg1="${currentOSFamily}" arg2="unix"/>
+            </condition>
+
+            <condition property="WSADMIN_EXECUTABLE" value="${profilePath}/bin/wsadmin.bat">
+                <equals arg1="${currentOSFamily}" arg2="windows"/>
+            </condition>
+
+            <wscmtlog>wsadmin interpretor set to: ${WSADMIN_EXECUTABLE}</wscmtlog>
+        </target>
+
+    <target name="resolveOsgiCfgInitExecutableForTheCurrentPlatform"
+                description="Sets OSGICFGINIT_EXECUTABLE to the WAS Java interpretor for the current platform">
+
+            <condition property="OSGICFGINIT_EXECUTABLE" value="${profilePath}/bin/osgiCfgInit.sh">
+                <equals arg1="${currentOSFamily}" arg2="unix"/>
+            </condition>
+
+            <condition property="OSGICFGINIT_EXECUTABLE" value="${profilePath}/bin/osgiCfgInit.bat">
+                <equals arg1="${currentOSFamily}" arg2="windows"/>
+            </condition>
+
+            <wscmtlog>osgiCfgInit interpretor set to: ${OSGICFGINIT_EXECUTABLE}</wscmtlog>
+    </target>
+        
+    <target name="checkProfileType" depends="checkProfileType.check" if="isDmgr">
+        <wscmtlog message = "checkProfileAugment: profilePath = ${profilePath}" />
+        <antcall target="main">
+              <param name="PROFILE_PATH" value="${profilePath}"/>
+              <param name="is_dmgr" value="${isDmgr}"/>
+              <param name="is_custom_or_default" value="${isCustomOrDefault}"/>              
+        </antcall>
+    </target>
+
+    <target name="checkProfileType.check" description="Check to see if profile is a custom profile">
+        <wscmtlog message ="checkProfileType.check" />    
+        <loadfile property="profileVersionString" srcfile="${profilePath}/properties/version/profile.version"/>
+        <condition property="isCustomOrDefault">
+            <or>
+                <contains string="${profileVersionString}" substring="&lt;id&gt;managed"/>
+                <contains string="${profileVersionString}" substring="&lt;id&gt;default"/>
+            </or>
+        </condition>
+        <condition property="isDmgr">
+            <or>
+                <contains string="${profileVersionString}" substring="&lt;id&gt;management"/>
+                <contains string="${profileVersionString}" substring="&lt;id&gt;dmgr"/>              
+            </or>
+        </condition>              
+
+        <wscmtlog>Detected isCustomOrDefault is = ${isCustomOrDefault}</wscmtlog>
+        <wscmtlog>Detected isDmgr is = ${isDmgr}</wscmtlog>             
+    </target>
+   
+    <target name="set64BitJvmProperty" description="Determine JVM 1.6 or above is used">
+        <available file="${WAS_HOME}/properties/version/IBM_Java_SE_Runtime_Environment_64bit.1.6.0.cmptag" property="is64BitJvm"/>
+        <available file="${WAS_HOME}/properties/version/IBM_Java_SE_Runtime_Environment_64bit.1.7.0.cmptag" property="is64BitJvm"/>
+        <wscmtlog>is64BitJvm = ${is64BitJvm}</wscmtlog>
+    </target>
+
+    <target name="runOsgiCfgInit"  description="Run OsgiCfgInit for the profile being invoked." >
+        <wscmtlog message = "runOsgiCfgInit" />
+        <wscmtlog message = "${profilePath}/logs/runOsgiCfgInit.log" />
+        <exec executable="${OSGICFGINIT_EXECUTABLE}" dir="scripts" output="${profilePath}/logs/runOsgiCfgInit.log"/>
+    </target>
+
+    <target name="main" depends="set64BitJvmProperty,detectCurrentOSFamily,
+                                         convertWASHomeToUNIXStylePath,
+                                         resolveOsgiCfgInitExecutableForTheCurrentPlatform,
+                                         resolveWSADMINExecutableForTheCurrentPlatform">
+        <wscmtlog>**** In main **** </wscmtlog>
+        <wscmtlog>Detected isCustomOrDefault is = ${isCustomOrDefault}</wscmtlog>
+        <wscmtlog>Detected isDmgr is = ${isDmgr}</wscmtlog>  
+          <antcall target="runOsgiCfgInit"></antcall> 
+  	  <antcall target="updateCurOdrServerXml_SS"></antcall>           		
+        <wscmtlog> complete </wscmtlog>
+    </target>
+
+    <target name="updateCurOdrServerXml_SS"  description="Updates existing ODR server.xml to include HeapDetect for agentlib of JVMEntry." >
+        <wscmtlog message = "updateCurOdrServerXml_SS" />
+        <wscmtlog message = "${profilePath}/logs/updateCurOdrServerXml_SS.log" />
+        <exec executable="${WSADMIN_EXECUTABLE}" dir="scripts" output="${profilePath}/logs/updateCurOdrServerXml_SS.log">
+            <arg value="-conntype"/>
+            <arg value="NONE"/>
+            <arg value="-lang"/>
+            <arg value="jython"/>
+            <arg value="-f"/>
+            <arg value="updateCurOdrServerXml.py"/>   
+            <arg value="-is64BitJvm:${is64BitJvm}"/>              
+            <arg value="-isDmgr:${isDmgr}"/>
+            <arg value="-isCustomOrDefault:${isCustomOrDefault}"/>  
+        </exec>
+    </target>
+
+</project>
+

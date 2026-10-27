@@ -1,0 +1,68 @@
+//
+// WebSphere Client Java 2 Security Policy
+//
+// NOTE: Syntax errors in the policy files will cause the java process FAIL to start.
+//       Extreme care should be taken when editing these policy files. It is advised to use
+//       the policytool provided by the JDK for editing the policy files
+//       (WAS_HOME/java/jre/bin/policytool). 
+//
+
+grant codeBase "file:${java.home}/lib/ext/*" {
+  permission java.security.AllPermission;
+};
+
+// JDK classes
+grant codeBase "file:${java.home}/lib/ext/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${java.home}/../lib/tools.jar" {
+  permission java.security.AllPermission;
+};
+
+// WebSphere system classes
+grant codeBase "file:${was.install.root}/lib/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${was.install.root}/plugins/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${was.install.root}/classes/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${user.install.root}/installedConnectors/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${was.install.root}/installedChannels/-" {
+  permission java.security.AllPermission;
+};
+
+// J2EE 1.4 permissions for client container WAS applications in $WAS_HOME/installedApps
+grant codeBase "file:${user.install.root}/installedApps/-" {
+  //Application client permissions
+  permission java.awt.AWTPermission "accessClipboard";
+  permission java.awt.AWTPermission "accessEventQueue";
+  permission java.awt.AWTPermission "showWindowWithoutWarningBanner";
+  permission java.lang.RuntimePermission "exitVM";
+  permission java.lang.RuntimePermission "loadLibrary";
+  permission java.lang.RuntimePermission "queuePrintJob";
+  permission java.net.SocketPermission "*", "connect";
+  permission java.net.SocketPermission "localhost:1024-", "accept,listen";
+  permission java.io.FilePermission "*", "read,write";
+  permission java.util.PropertyPermission "*", "read";
+
+};
+
+// J2EE 1.4 permissions for client container - expanded ear file code base
+grant codeBase "file:${com.ibm.websphere.client.applicationclient.archivedir}/-" {
+  permission java.awt.AWTPermission "accessClipboard";
+  permission java.awt.AWTPermission "accessEventQueue";
+  permission java.awt.AWTPermission "showWindowWithoutWarningBanner";
+  permission java.lang.RuntimePermission "exitVM";
+  permission java.lang.RuntimePermission "loadLibrary";
+  permission java.lang.RuntimePermission "queuePrintJob";
+  permission java.net.SocketPermission "*", "connect";
+  permission java.net.SocketPermission "localhost:1024-", "accept,listen";
+  permission java.io.FilePermission "*", "read,write";
+  permission java.util.PropertyPermission "*", "read";
+};
+

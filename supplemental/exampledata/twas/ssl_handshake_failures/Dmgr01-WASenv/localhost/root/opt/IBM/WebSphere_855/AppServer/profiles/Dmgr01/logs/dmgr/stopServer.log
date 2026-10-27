@@ -1,0 +1,393 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.89.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+Current trace specification = *=info
+************* End Display Current Environment *************
+[1/5/26 9:36:33:064 PST] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[1/5/26 9:36:33:188 PST] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[1/5/26 9:36:33:189 PST] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[1/5/26 9:36:33:231 PST] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[1/5/26 9:36:34:812 PST] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@6b63c63a
+[1/5/26 9:36:34:963 PST] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[1/5/26 9:36:34:972 PST] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[1/5/26 9:36:34:974 PST] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[1/5/26 9:36:34:975 PST] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[1/5/26 9:36:34:977 PST] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[1/5/26 9:36:34:995 PST] 00000001 SecurityObjec I   CWSCF0002I: The client code is attempting to load the security configuration the server and this operation is not allowed.
+[1/5/26 9:36:44:957 PST] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[1/5/26 9:36:50:907 PST] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.107.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 262144
+Current trace specification = *=info
+************* End Display Current Environment *************
+[3/4/26 15:44:03:439 PST] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[3/4/26 15:44:03:559 PST] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[3/4/26 15:44:03:560 PST] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[3/4/26 15:44:03:591 PST] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[3/4/26 15:44:05:014 PST] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@f1b2924d
+[3/4/26 15:44:05:155 PST] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[3/4/26 15:44:05:162 PST] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[3/4/26 15:44:05:163 PST] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[3/4/26 15:44:05:164 PST] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[3/4/26 15:44:05:166 PST] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[3/4/26 15:44:05:316 PST] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[3/4/26 15:44:10:998 PST] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[3/11/26 12:01:13:062 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[3/11/26 12:01:13:139 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[3/11/26 12:01:13:140 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[3/11/26 12:01:13:165 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[3/11/26 12:01:14:468 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@afe7a54a
+[3/11/26 12:01:14:641 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[3/11/26 12:01:14:650 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[3/11/26 12:01:14:652 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[3/11/26 12:01:14:653 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[3/11/26 12:01:14:656 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[3/11/26 12:01:14:707 PDT] 00000001 SecurityObjec I   CWSCF0002I: The client code is attempting to load the security configuration the server and this operation is not allowed.
+[3/11/26 12:01:14:929 PDT] 00000001 SecurityConne A   JSAS0006I: Security connection interceptor initialized.
+[3/11/26 12:01:14:935 PDT] 00000001 ServiceInit   A   JSAS0001I: Security configuration initialized.
+[3/11/26 12:01:14:936 PDT] 00000001 ServiceInit   A   JSAS0003I: Authentication mechanism: BASICAUTH
+[3/11/26 12:01:14:958 PDT] 00000001 CSIClientRI   A   JSAS0007I: Client request interceptor registered.
+[3/11/26 12:01:15:213 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.8122586220614124381.txt com.ibm.ws.orbimpl.transport.WSTransport.getConnection 448
+[3/11/26 12:01:15:224 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.2262476348731128082.txt com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext 1423
+[3/11/26 12:01:15:236 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.792111308399952899.txt com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect 237
+[3/11/26 12:01:15:243 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.1665062782478033533.txt com.ibm.websphere.management.AdminClientFactory.createAdminClient 267
+[3/11/26 12:01:15:254 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.6530070925177098296.txt com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect 179
+[3/11/26 12:01:15:259 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.2965624784965861193.txt com.ibm.websphere.management.AdminClientFactory.createAdminClient 275
+[3/11/26 12:01:15:261 PDT] 00000001 WsServerStop  E   ADMU3002E: Exception attempting to process server dmgr
+[3/11/26 12:01:15:262 PDT] 00000001 WsServerStop  E   ADMU3007E: Exception com.ibm.websphere.management.exception.ConnectorException: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+[3/11/26 12:01:15:263 PDT] 00000001 WsServerStop  A   ADMU3007E: Exception com.ibm.websphere.management.exception.ConnectorException: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:628)
+	at com.ibm.ws.management.tools.WsServerStop.runTool(WsServerStop.java:373)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerStop.main(WsServerStop.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+Caused by: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:644)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.connector.ConnectorHelper.tryProtocol(ConnectorHelper.java:665)
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:597)
+	... 29 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:458)
+	... 35 more
+Caused by: com.ibm.websphere.management.exception.ConnectorNotAvailableException: [SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to make test connection to host localhost]
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.reconnect(SOAPConnectorClient.java:439)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.<init>(SOAPConnectorClient.java:238)
+	... 40 more
+Caused by: [SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to make test connection to host localhost]
+	at org.apache.soap.rpc.Call.WASinvoke(Call.java:476)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient$4.run(SOAPConnectorClient.java:389)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:118)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.reconnect(SOAPConnectorClient.java:382)
+	... 41 more
+
+[3/11/26 12:01:15:268 PDT] 00000001 AdminTool     A   ADMU0509I: The server "dmgr" cannot be reached. It appears to be stopped.
+[3/11/26 12:01:15:269 PDT] 00000001 AdminTool     A   ADMU0211I: Error details may be seen in the file: /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/dmgr/stopServer.log
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[3/11/26 14:50:48:632 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[3/11/26 14:50:48:758 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[3/11/26 14:50:48:759 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[3/11/26 14:50:48:794 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[3/11/26 14:50:50:171 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@680400a0
+[3/11/26 14:50:50:358 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[3/11/26 14:50:50:365 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[3/11/26 14:50:50:367 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[3/11/26 14:50:50:367 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[3/11/26 14:50:50:369 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[3/11/26 14:50:50:499 PDT] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[3/11/26 14:50:56:181 PDT] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.109.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[3/12/26 6:09:03:145 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[3/12/26 6:09:03:280 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[3/12/26 6:09:03:282 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[3/12/26 6:09:03:340 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[3/12/26 6:09:05:256 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@757124e4
+[3/12/26 6:09:05:375 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[3/12/26 6:09:05:384 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[3/12/26 6:09:05:386 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[3/12/26 6:09:05:391 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[3/12/26 6:09:05:394 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[3/12/26 6:09:05:542 PDT] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[3/12/26 6:09:11:325 PDT] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[4/9/26 8:50:20:771 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[4/9/26 8:50:20:836 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[4/9/26 8:50:20:837 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[4/9/26 8:50:20:863 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[4/9/26 8:50:22:101 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@71cc3cb8
+[4/9/26 8:50:22:247 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[4/9/26 8:50:22:262 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[4/9/26 8:50:22:265 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[4/9/26 8:50:22:267 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[4/9/26 8:50:22:271 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[4/9/26 8:50:22:607 PDT] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[4/9/26 8:50:41:120 PDT] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/6/26 13:18:16:173 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/6/26 13:18:16:273 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[5/6/26 13:18:16:274 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[5/6/26 13:18:16:304 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/6/26 13:18:17:553 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@efcdb7fe
+[5/6/26 13:18:17:672 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[5/6/26 13:18:17:678 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[5/6/26 13:18:17:680 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[5/6/26 13:18:17:681 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[5/6/26 13:18:17:683 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[5/6/26 13:18:17:805 PDT] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[5/6/26 13:18:23:595 PDT] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/14/26 8:21:06:242 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/14/26 8:21:06:337 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[5/14/26 8:21:06:338 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[5/14/26 8:21:06:369 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/14/26 8:21:07:691 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@1808430e
+[5/14/26 8:21:07:816 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[5/14/26 8:21:07:824 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[5/14/26 8:21:07:826 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[5/14/26 8:21:07:827 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[5/14/26 8:21:07:829 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[5/14/26 8:21:07:848 PDT] 00000001 SecurityObjec I   CWSCF0002I: The client code is attempting to load the security configuration the server and this operation is not allowed.
+[5/14/26 8:21:09:007 PDT] 00000001 AdminTool     A   ADMU3201I: Server stop request issued. Waiting for stop status.
+[5/14/26 8:21:14:812 PDT] 00000001 AdminTool     A   ADMU4000I: Server dmgr stop completed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.125.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[6/10/26 10:05:18:762 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[6/10/26 10:05:18:831 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[6/10/26 10:05:18:833 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[6/10/26 10:05:18:860 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[6/10/26 10:05:19:929 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@7b574117
+[6/10/26 10:05:20:070 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[6/10/26 10:05:20:075 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[6/10/26 10:05:20:077 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[6/10/26 10:05:20:078 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[6/10/26 10:05:20:079 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[6/10/26 10:05:20:178 PDT] 00000001 SecurityObjec I   CWSCF0002I: The client code is attempting to load the security configuration the server and this operation is not allowed.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[9/4/26 11:59:06:941 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[9/4/26 11:59:07:071 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the Dmgr01 profile
+[9/4/26 11:59:07:072 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: dmgr
+[9/4/26 11:59:07:128 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[9/4/26 11:59:08:653 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@302feb51
+[9/4/26 11:59:08:848 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[9/4/26 11:59:08:857 PDT] 00000001 SSLConfigMana W   CWPKI0317W: The runtime has at least one SSL configuration that supports only weak TLSv1 or TLSv1.1 handshake protocols. For increased security, modify the configuration to use only stronger protocols such as TLSv1.2 or later. Find instructions to update your configuration at https://www.ibm.com/support/pages/node/1077951. SSL configurations that use the weaker SSL protocols include: [DefaultSSLSettings].
+[9/4/26 11:59:08:859 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[9/4/26 11:59:08:860 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[9/4/26 11:59:08:861 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[9/4/26 11:59:08:916 PDT] 00000001 SecurityObjec I   CWSCF0002I: The client code is attempting to load the security configuration the server and this operation is not allowed.
+[9/4/26 11:59:09:313 PDT] 00000001 SecurityConne A   JSAS0006I: Security connection interceptor initialized.
+[9/4/26 11:59:09:321 PDT] 00000001 ServiceInit   A   JSAS0001I: Security configuration initialized.
+[9/4/26 11:59:09:322 PDT] 00000001 ServiceInit   A   JSAS0003I: Authentication mechanism: BASICAUTH
+[9/4/26 11:59:09:342 PDT] 00000001 CSIClientRI   A   JSAS0007I: Client request interceptor registered.
+[9/4/26 11:59:09:689 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.1498528534950216662.txt com.ibm.ws.orbimpl.transport.WSTransport.getConnection 448
+[9/4/26 11:59:09:699 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.129802501158589949.txt com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext 1423
+[9/4/26 11:59:09:719 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.8219046274860101119.txt com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect 237
+[9/4/26 11:59:09:726 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.547298012171400103.txt com.ibm.websphere.management.AdminClientFactory.createAdminClient 267
+[9/4/26 11:59:09:737 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.6407832185244397785.txt com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect 179
+[9/4/26 11:59:09:744 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/ffdc/ffdc.1908036462631039586.txt com.ibm.websphere.management.AdminClientFactory.createAdminClient 275
+[9/4/26 11:59:09:746 PDT] 00000001 WsServerStop  E   ADMU3002E: Exception attempting to process server dmgr
+[9/4/26 11:59:09:747 PDT] 00000001 WsServerStop  E   ADMU3007E: Exception com.ibm.websphere.management.exception.ConnectorException: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+[9/4/26 11:59:09:747 PDT] 00000001 WsServerStop  A   ADMU3007E: Exception com.ibm.websphere.management.exception.ConnectorException: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:628)
+	at com.ibm.ws.management.tools.WsServerStop.runTool(WsServerStop.java:373)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerStop.main(WsServerStop.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+Caused by: com.ibm.websphere.management.exception.ConnectorException: ADMC0016E: The system cannot create a SOAP connector to connect to host localhost at port 8879.
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:644)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.connector.ConnectorHelper.tryProtocol(ConnectorHelper.java:665)
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:597)
+	... 29 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:458)
+	... 35 more
+Caused by: com.ibm.websphere.management.exception.ConnectorNotAvailableException: [SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to make test connection to host localhost]
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.reconnect(SOAPConnectorClient.java:439)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.<init>(SOAPConnectorClient.java:238)
+	... 40 more
+Caused by: [SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to make test connection to host localhost]
+	at org.apache.soap.rpc.Call.WASinvoke(Call.java:476)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient$4.run(SOAPConnectorClient.java:389)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:118)
+	at com.ibm.ws.management.connector.soap.SOAPConnectorClient.reconnect(SOAPConnectorClient.java:382)
+	... 41 more
+
+[9/4/26 11:59:09:760 PDT] 00000001 AdminTool     A   ADMU0509I: The server "dmgr" cannot be reached. It appears to be stopped.
+[9/4/26 11:59:09:760 PDT] 00000001 AdminTool     A   ADMU0211I: Error details may be seen in the file: /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/dmgr/stopServer.log

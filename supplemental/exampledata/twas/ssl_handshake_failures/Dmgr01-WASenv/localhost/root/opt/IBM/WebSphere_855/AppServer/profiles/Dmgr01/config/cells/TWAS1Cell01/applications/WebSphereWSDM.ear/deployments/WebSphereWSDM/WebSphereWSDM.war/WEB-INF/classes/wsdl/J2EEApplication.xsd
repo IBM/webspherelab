@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/deployed/application" 
+        xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+	
+	<!-- Specialized EPR type for referencing application modules -->
+	
+	<xsd:element name="ModuleReference" type="wsa:EndpointReferenceType"/>
+	
+	<xsd:element name="ImplementationVersion" type="xsd:string"/>
+			
+</schema>

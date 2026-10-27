@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/jvm" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/jvm" 
+        xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+
+	<!-- Properties defined by base J2EEVirtualMachine capability -->
+	
+	<xsd:element name="JavaVendor" type="xsd:string"/>
+	<xsd:element name="JavaVersion" type="xsd:string"/>
+	<xsd:element name="Node" type="xsd:string"/>
+	<xsd:element name="FreeMemory" type="xsd:integer"/>
+	<xsd:element name="UsedMemory" type="xsd:integer"/>
+	<xsd:element name="HeapSize" type="xsd:integer"/>
+	<xsd:element name="UpTime" type="xsd:duration"/>
+	<xsd:element name="GCIntervalTime" type="xsd:duration"/>
+	<xsd:element name="GCTime" type="xsd:duration"/>
+	<xsd:element name="GCCount" type="xsd:integer"/>
+	<xsd:element name="WaitForLockTime" type="xsd:duration"/>
+	<xsd:element name="WaitForLockCount" type="xsd:integer"/>
+	<xsd:element name="StartedThreadCount" type="xsd:integer"/>
+	<xsd:element name="EndedThreadCount" type="xsd:integer"/>
+	<xsd:element name="AllocatedObjectCount" type="xsd:integer"/>
+	<xsd:element name="FreedObjectCount" type="xsd:integer"/>
+	<xsd:element name="MovedObjectCount" type="xsd:integer"/>
+</schema>

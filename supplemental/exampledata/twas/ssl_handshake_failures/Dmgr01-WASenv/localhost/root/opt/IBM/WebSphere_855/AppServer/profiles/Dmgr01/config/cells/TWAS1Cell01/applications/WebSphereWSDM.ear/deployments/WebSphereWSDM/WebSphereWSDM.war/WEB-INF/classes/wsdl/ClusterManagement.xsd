@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/custom/cluster-management"
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/custom/cluster-management"
+	xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2">
+	
+	<xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" schemaLocation="WS-BaseFaults-1_2.xsd" />
+      
+      <xsd:element name="ClusterName" type="xsd:string"/>
+      <xsd:element name="PreferLocal" type="xsd:boolean"/>
+      <xsd:element name="WLCId" type="xsd:string"/>
+      <xsd:element name="BackupName" type="xsd:string"/>
+      <xsd:element name="BackupHost" type="xsd:string"/>
+      <xsd:element name="BackupPort" type="xsd:string"/>
+      <xsd:element name="BackupBootstrapHost" type="xsd:string"/>
+      <xsd:element name="BackupBootstrapPort" type="xsd:string"/>
+      <xsd:element name="Start"/>
+      <xsd:element name="StartResponse"/>
+      <xsd:element name="StartFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Stop"/>
+      <xsd:element name="StopResponse"/>
+      <xsd:element name="StopFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="StopImmediate"/>
+      <xsd:element name="StopImmediateResponse"/>
+      <xsd:element name="StopImmediateFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RippleStart"/>
+      <xsd:element name="RippleStartResponse"/>
+      <xsd:element name="RippleStartFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ExportRouteTable"/>
+      <xsd:element name="ExportRouteTableResponse" type="xsd:string"/>
+      <xsd:element name="ExportRouteTableFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DumpClusterInfo"/>
+      <xsd:element name="DumpClusterInfoResponse" type="xsd:string"/>
+      <xsd:element name="DumpClusterInfoFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAvailable">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="MemberName" type="xsd:string"/>
+            <xsd:element name="NodeName" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAvailableResponse" type="xsd:boolean"/>
+      <xsd:element name="GetAvailableFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetAvailable">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="MemberName" type="xsd:string"/>
+            <xsd:element name="NodeName" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetAvailableResponse"/>
+      <xsd:element name="SetAvailableFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetUnavailable">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="MemberName" type="xsd:string"/>
+            <xsd:element name="NodeName" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetUnavailableResponse"/>
+      <xsd:element name="SetUnavailableFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+</schema>
+

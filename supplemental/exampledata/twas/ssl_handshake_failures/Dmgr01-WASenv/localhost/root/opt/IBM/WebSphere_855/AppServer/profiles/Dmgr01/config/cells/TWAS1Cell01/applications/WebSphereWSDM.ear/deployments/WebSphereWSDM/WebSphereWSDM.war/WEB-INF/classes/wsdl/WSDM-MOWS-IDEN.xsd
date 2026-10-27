@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="http://docs.oasis-open.org/mows-2/capabilities/Identification" 
+    xmlns:iden="http://docs.oasis-open.org/mows-2/capabilities/Identification" 
+
+    xmlns:muws1="http://docs.oasis-open.org/wsdm/muws1-2.xsd"
+	xmlns:muws2="http://docs.oasis-open.org/wsdm/muws2-2.xsd"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+
+	xmlns:wsa="http://www.w3.org/2005/08/addressing"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+    
+	<xsd:import namespace="http://docs.oasis-open.org/wsdm/muws1-2.xsd" schemaLocation="WSDM-MUWS-Part1-1_1.xsd" />	
+	<xsd:import namespace="http://docs.oasis-open.org/wsdm/muws2-2.xsd" schemaLocation="WSDM-MUWS-Part2-1_1.xsd" />	
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="WS-Addressing-2005_08.xsd" />
+
+	
+	<xsd:element name="EndpointReference" type="iden:EPRType"/>
+
+	<xsd:element name="EndpointDescriptions" type="xsd:string"/>
+
+	
+	<xsd:complexType name="EPRType">
+
+			<xsd:complexContent>
+
+				<xsd:extension base="wsa:EndpointReferenceType"/>
+
+			</xsd:complexContent>
+
+	</xsd:complexType>
+
+		       
+
+</schema>
+
+<!--   
+                                       SCHEMA COPY Material
+Copy and paste element references below into the schema of a resource properties document.
+These references insure that the correct minOccurs/maxOccurs attributes are specified in a resource property document schema.
+
+NOTE: You must import the MOWS schema namespace (mows).
+
+        **    Endpoint Identification Properties    **
+	<xs:element ref="mows:EndpointReference"/>
+	<xs:element ref="mows:EndpointDescriptions" minOccurs="0"/>
+
+       **    MOWS Metric Properties    **
+	<xs:element ref="mows:NumberOfRequests" minOccurs="0"/>
+	<xs:element ref="mows:NumberOfFailedRequests" minOccurs="0"/>
+	<xs:element ref="mows:NumberOfSuccessfulRequests"  minOccurs="0"/>
+	<xs:element ref="mows:ServiceTime" minOccurs="0"/>
+	<xs:element ref="mows:MaxResponseTime" minOccurs="0"/>
+	<xs:element ref="mows:LastResponseTime" minOccurs="0"/>
+	<xs:element ref="mows:MaxRequestSize" minOccurs="0"/>
+	<xs:element ref="mows:LastRequestSize" minOccurs="0"/>
+	<xs:element ref="mows:MaxResponseSize" minOccurs="0"/>
+	<xs:element ref="mows:LastResponseSize" minOccurs="0"/>
+
+       **    MOWS Operation Metric Property    **
+	<xs:element ref="mows:OperationMetrics" minOccurs="0" maxOccurs="unbounded"/>
+
+       **    MOWS Operation Operational Status Property    **
+	<xs:element ref="mows:OperationOperationalStatus" 
+                                         minOccurs="0" maxOccurs="unbounded"/>
+
+       **     Operational State Properties    **
+<xs:element ref="mows:CurrentOperationalState"/>
+	<xs:element ref="mows:LastOperationalStateTransition" minOccurs="0"/>
+
+-->
+

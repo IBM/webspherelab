@@ -1,0 +1,592 @@
+[5/14/26 8:28:11:438 PDT]     FFDC Exception:java.lang.NullPointerException SourceId:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl.login ProbeId:239 Reporter:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl@e86ec1fc
+java.lang.NullPointerException
+	at com.ibm.ws.security.auth.WSCredentialImpl.setUnauthenticatedFlag(WSCredentialImpl.java:367)
+	at com.ibm.ws.security.auth.WSCredentialImpl.<init>(WSCredentialImpl.java:335)
+	at com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl.login(WSAdminClientLoginModuleImpl.java:255)
+	at com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy.login(WSLoginModuleProxy.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:788)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:196)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:698)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:696)
+	at java.security.AccessController.doPrivileged(AccessController.java:755)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:696)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:597)
+	at com.ibm.websphere.management.AdminClientFactory.jaas_login(AdminClientFactory.java:1610)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:548)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.tools.AbstractNodeConfigUtility.getAdminClient(AbstractNodeConfigUtility.java:204)
+	at com.ibm.ws.management.tools.NodeSyncUtility.runTool(NodeSyncUtility.java:152)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.NodeSyncUtility.main(NodeSyncUtility.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl@e86ec1fc
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::subject BEGIN:javax.security.auth.Subject@8c8e21e8
+ javax.security.auth.Subject::serialVersionUID:-8308522755600156056
+ javax.security.auth.Subject::principals BEGIN:java.util.Collections$SynchronizedSet@f76cb5f6
+  {
+  }
+  END:java.util.Collections$SynchronizedSet@f76cb5f6
+
+ javax.security.auth.Subject::pubCredentials BEGIN:java.util.Collections$SynchronizedSet@c1d7f2da
+  {
+  }
+  END:java.util.Collections$SynchronizedSet@c1d7f2da
+
+ javax.security.auth.Subject::privCredentials BEGIN:java.util.Collections$SynchronizedSet@2d5f24e
+  {
+  }
+  END:java.util.Collections$SynchronizedSet@2d5f24e
+
+ javax.security.auth.Subject::readOnly:false
+ javax.security.auth.Subject::combiner_constructor BEGIN:java.lang.reflect.Constructor@cd683119
+  java.lang.reflect.AccessibleObject::ACCESS_PERMISSION BEGIN:java.lang.reflect.ReflectPermission@581d39c4
+   java.security.Permission::serialVersionUID:-5636570222231596674
+   java.security.Permission::name:suppressAccessChecks
+   java.security.BasicPermission::serialVersionUID:6279438298436773498
+   java.security.BasicPermission::wildcard:false
+   java.security.BasicPermission::path:suppressAccessChecks
+   java.security.BasicPermission::exitVM:false
+   java.lang.reflect.ReflectPermission::serialVersionUID:7412737110241507485
+   END:java.lang.reflect.ReflectPermission@581d39c4
+
+  java.lang.reflect.AccessibleObject::override:false
+  java.lang.reflect.AccessibleObject::reflectionFactory BEGIN:sun.reflect.ReflectionFactory@8fcc4da
+   sun.reflect.ReflectionFactory::initted:true
+    sun.reflect.ReflectionFactory::reflectionFactoryAccessPerm:java.lang.RuntimePermission@4137eb3f depth limit reached
+   sun.reflect.ReflectionFactory::soleInstance:sun.reflect.ReflectionFactory@8fcc4da
+    sun.reflect.ReflectionFactory::langReflectAccess:java.lang.reflect.ReflectAccess@6ef9c131 depth limit reached
+   sun.reflect.ReflectionFactory::noInflation:false
+   sun.reflect.ReflectionFactory::inflationThreshold:15
+   END:sun.reflect.ReflectionFactory@8fcc4da
+
+  java.lang.reflect.AccessibleObject::securityCheckCache:null
+  java.lang.reflect.Executable::hasRealParameterData:false
+  java.lang.reflect.Executable::parameters:null
+  java.lang.reflect.Executable::declaredAnnotations:null
+  java.lang.reflect.Constructor::clazz:class javax.security.auth.SubjectDomainCombiner
+  java.lang.reflect.Constructor::slot:0
+  java.lang.reflect.Constructor::parameterTypes BEGIN:[Ljava.lang.Class;@da7be71b
+   [
+   class javax.security.auth.Subject
+   ]
+   END:[Ljava.lang.Class;@da7be71b
+
+  java.lang.reflect.Constructor::exceptionTypes BEGIN:[Ljava.lang.Class;@201c170b
+   [
+   ]
+   END:[Ljava.lang.Class;@201c170b
+
+  java.lang.reflect.Constructor::modifiers:1
+  java.lang.reflect.Constructor::signature:null
+  java.lang.reflect.Constructor::genericInfo:null
+  java.lang.reflect.Constructor::annotations:null
+  java.lang.reflect.Constructor::parameterAnnotations:null
+  java.lang.reflect.Constructor::constructorAccessor:null
+  java.lang.reflect.Constructor::root BEGIN:java.lang.reflect.Constructor@8d08d555
+   java.lang.reflect.AccessibleObject::ACCESS_PERMISSION:java.lang.reflect.ReflectPermission@581d39c4
+   java.lang.reflect.AccessibleObject::override:false
+   java.lang.reflect.AccessibleObject::reflectionFactory:sun.reflect.ReflectionFactory@8fcc4da
+   java.lang.reflect.AccessibleObject::securityCheckCache:null
+   java.lang.reflect.Executable::hasRealParameterData:false
+   java.lang.reflect.Executable::parameters:null
+   java.lang.reflect.Executable::declaredAnnotations:null
+   java.lang.reflect.Constructor::clazz:class javax.security.auth.SubjectDomainCombiner
+   java.lang.reflect.Constructor::slot:0
+   java.lang.reflect.Constructor::parameterTypes:[Ljava.lang.Class;@da7be71b
+   java.lang.reflect.Constructor::exceptionTypes:[Ljava.lang.Class;@201c170b
+   java.lang.reflect.Constructor::modifiers:1
+   java.lang.reflect.Constructor::signature:null
+   java.lang.reflect.Constructor::genericInfo:null
+   java.lang.reflect.Constructor::annotations:null
+   java.lang.reflect.Constructor::parameterAnnotations:null
+   java.lang.reflect.Constructor::constructorAccessor:null
+   java.lang.reflect.Constructor::root:null
+   END:java.lang.reflect.Constructor@8d08d555
+
+  END:java.lang.reflect.Constructor@cd683119
+
+ javax.security.auth.Subject::sysClassLoader BEGIN:sun.misc.Launcher$AppClassLoader@1b8a5ae9
+  java.lang.ClassLoader::defaultCodeSource BEGIN:java.security.CodeSource@f37776f4
+   java.security.CodeSource::serialVersionUID:4977541819976013951
+   java.security.CodeSource::location:null
+   java.security.CodeSource::signers:null
+   java.security.CodeSource::certs:null
+   java.security.CodeSource::sp:null
+   java.security.CodeSource::factory:null
+   END:java.security.CodeSource@f37776f4
+
+  java.lang.ClassLoader::bootstrapClassLoader BEGIN:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+   java.lang.ClassLoader::defaultCodeSource:java.security.CodeSource@f37776f4
+   java.lang.ClassLoader::bootstrapClassLoader:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+   java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+   java.lang.ClassLoader::isDelegatingCL:false
+   java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@1b8a5ae9
+   java.lang.ClassLoader::initSystemClassLoader:false
+   java.lang.ClassLoader::isAssertOptionFound:false
+   java.lang.ClassLoader::vmRef:139666901297448
+   java.lang.ClassLoader::parent:null
+   java.lang.ClassLoader::checkAssertionOptions:false
+    java.lang.ClassLoader::assertionLock:java.lang.ClassLoader$AssertionLock@7983bbc0 depth limit reached
+   java.lang.ClassLoader::defaultAssertionStatus:false
+   java.lang.ClassLoader::packageAssertionStatus:null
+   java.lang.ClassLoader::classAssertionStatus:null
+    java.lang.ClassLoader::packages:java.util.Hashtable@c5994167 depth limit reached
+    java.lang.ClassLoader::lazyInitLock:java.lang.ClassLoader$LazyInitLock@23db3126 depth limit reached
+   java.lang.ClassLoader::classSigners:null
+   java.lang.ClassLoader::packageSigners:null
+    java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@e13b0a8e depth limit reached
+   java.lang.ClassLoader::defaultProtectionDomain:null
+    java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@32ccba14 depth limit reached
+   java.lang.ClassLoader::classNameBasedLock:null
+   java.lang.ClassLoader::isParallelCapable:false
+    java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@1d1f198e depth limit reached
+    java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:java.util.concurrent.ConcurrentHashMap@36135bcd depth limit reached
+   java.lang.ClassLoader::allowArraySyntax:false
+   java.lang.ClassLoader::lazyClassLoaderInit:true
+   java.lang.ClassLoader::specialLoaderInited:true
+    java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@bcdd9d38 depth limit reached
+   com.ibm.oti.vm.AbstractClassLoader::systemClassLoader:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+    com.ibm.oti.vm.AbstractClassLoader::parsedPath:[Ljava.lang.String;@d3ce65f7 depth limit reached
+    com.ibm.oti.vm.AbstractClassLoader::types:[I@38af0407 depth limit reached
+    com.ibm.oti.vm.AbstractClassLoader::cache:[Ljava.lang.Object;@2559facc depth limit reached
+    com.ibm.oti.vm.AbstractClassLoader::cacheLock:com.ibm.oti.vm.AbstractClassLoader$CacheLock@78e9b95a depth limit reached
+   com.ibm.oti.vm.AbstractClassLoader::permissions:null
+    com.ibm.oti.vm.AbstractClassLoader::resourceCacheRef:java.lang.ref.SoftReference@c2570a9e depth limit reached
+    com.ibm.oti.vm.AbstractClassLoader::urlJarStreamHandler:sun.net.www.protocol.jar.Handler@27aca86a depth limit reached
+    com.ibm.oti.vm.AbstractClassLoader::urlFileStreamHandler:sun.net.www.protocol.file.Handler@c32ee6b2 depth limit reached
+   com.ibm.oti.vm.BootstrapClassLoader::singleton:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+   com.ibm.oti.vm.BootstrapClassLoader::appendToClassPathForInstrumentationMethod:null
+   com.ibm.oti.vm.BootstrapClassLoader::initAppendMethod:true
+   END:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+
+  java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+  java.lang.ClassLoader::isDelegatingCL:false
+  java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@1b8a5ae9
+  java.lang.ClassLoader::initSystemClassLoader:false
+  java.lang.ClassLoader::isAssertOptionFound:false
+  java.lang.ClassLoader::vmRef:139666901298088
+  java.lang.ClassLoader::parent BEGIN:sun.misc.Launcher$ExtClassLoader@3c65fa1c
+   java.lang.ClassLoader::defaultCodeSource:java.security.CodeSource@f37776f4
+   java.lang.ClassLoader::bootstrapClassLoader:com.ibm.oti.vm.BootstrapClassLoader@ef723a06
+   java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+   java.lang.ClassLoader::isDelegatingCL:false
+   java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@1b8a5ae9
+   java.lang.ClassLoader::initSystemClassLoader:false
+   java.lang.ClassLoader::isAssertOptionFound:false
+   java.lang.ClassLoader::vmRef:139666901298408
+   java.lang.ClassLoader::parent:null
+   java.lang.ClassLoader::checkAssertionOptions:false
+    java.lang.ClassLoader::assertionLock:java.lang.ClassLoader$AssertionLock@714e74dc depth limit reached
+   java.lang.ClassLoader::defaultAssertionStatus:false
+   java.lang.ClassLoader::packageAssertionStatus:null
+   java.lang.ClassLoader::classAssertionStatus:null
+    java.lang.ClassLoader::packages:java.util.Hashtable@cfb8fac4 depth limit reached
+    java.lang.ClassLoader::lazyInitLock:java.lang.ClassLoader$LazyInitLock@f5514bba depth limit reached
+    java.lang.ClassLoader::classSigners:java.util.Hashtable@916c69 depth limit reached
+    java.lang.ClassLoader::packageSigners:java.util.Hashtable@b73ddc2e depth limit reached
+   java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@e13b0a8e
+   java.lang.ClassLoader::defaultProtectionDomain:null
+   java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@32ccba14
+    java.lang.ClassLoader::classNameBasedLock:java.util.Hashtable@6a9736bd depth limit reached
+   java.lang.ClassLoader::isParallelCapable:true
+   java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@1d1f198e
+    java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:java.util.concurrent.ConcurrentHashMap@206cda80 depth limit reached
+   java.lang.ClassLoader::allowArraySyntax:false
+   java.lang.ClassLoader::lazyClassLoaderInit:true
+   java.lang.ClassLoader::specialLoaderInited:true
+   java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@bcdd9d38
+   java.security.SecureClassLoader::initialized:true
+    java.security.SecureClassLoader::pdcache:java.util.HashMap@7f95aa7a depth limit reached
+   java.security.SecureClassLoader::debug:null
+    java.net.URLClassLoader::ucp:sun.misc.URLClassPath@ffe018b3 depth limit reached
+    java.net.URLClassLoader::acc:java.security.AccessControlContext@f58fa94 depth limit reached
+   java.net.URLClassLoader::sharedClassURLClasspathHelper:null
+   java.net.URLClassLoader::sharedClassMetaDataCache:null
+    java.net.URLClassLoader::closeables:java.util.WeakHashMap@dccd5ab6 depth limit reached
+    java.net.URLClassLoader::showClassLoadingFor:java.util.Vector@b0fe212b depth limit reached
+   java.net.URLClassLoader::showLoadingMessages:false
+   java.net.URLClassLoader::showClassLoadingProperty:ibm.cl.verbose
+   sun.misc.Launcher$ExtClassLoader::instance:sun.misc.Launcher$ExtClassLoader@3c65fa1c
+   END:sun.misc.Launcher$ExtClassLoader@3c65fa1c
+
+  java.lang.ClassLoader::checkAssertionOptions:false
+  java.lang.ClassLoader::assertionLock BEGIN:java.lang.ClassLoader$AssertionLock@e02c6c8
+   END:java.lang.ClassLoader$AssertionLock@e02c6c8
+
+  java.lang.ClassLoader::defaultAssertionStatus:false
+  java.lang.ClassLoader::packageAssertionStatus:null
+  java.lang.ClassLoader::classAssertionStatus:null
+  java.lang.ClassLoader::packages BEGIN:java.util.Hashtable@bcfc4a33
+   {
+   key:com.ibm.ws.classloader
+    value:java.lang.Package@f95c303f depth limit reached
+   key:org.eclipse.core.launcher
+    value:java.lang.Package@3c033f2 depth limit reached
+   key:com.ibm.ws.bootstrap
+    value:java.lang.Package@2b149233 depth limit reached
+   key:com.ibm.ws.security.util
+    value:java.lang.Package@1bed0c46 depth limit reached
+   key:com.ibm.wsspi.bootstrap
+    value:java.lang.Package@142b714f depth limit reached
+   key:com.ibm.ws.security.common.auth.module.proxy
+    value:java.lang.Package@3af72736 depth limit reached
+   }
+   END:java.util.Hashtable@bcfc4a33
+
+  java.lang.ClassLoader::lazyInitLock BEGIN:java.lang.ClassLoader$LazyInitLock@f9b795a
+   END:java.lang.ClassLoader$LazyInitLock@f9b795a
+
+  java.lang.ClassLoader::classSigners:null
+  java.lang.ClassLoader::packageSigners BEGIN:java.util.Hashtable@4c3ea301
+   {
+   key:com.ibm.ws.classloader
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   key:org.eclipse.core.launcher
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   key:com.ibm.ws.bootstrap
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   key:com.ibm.ws.security.util
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   key:com.ibm.wsspi.bootstrap
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   key:com.ibm.ws.security.common.auth.module.proxy
+   value:[Ljava.security.cert.Certificate;@e13b0a8e
+   }
+   END:java.util.Hashtable@4c3ea301
+
+  java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@e13b0a8e
+  java.lang.ClassLoader::defaultProtectionDomain:null
+  java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@32ccba14
+  java.lang.ClassLoader::classNameBasedLock BEGIN:java.util.Hashtable@ea333fba
+   {
+   key:com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy$1
+    value:java.lang.ClassLoader$ClassNameLockRef@f605f3be depth limit reached
+   key:javax.security.auth.login.LoginException
+    value:java.lang.ClassLoader$ClassNameLockRef@be29395 depth limit reached
+   key:java.lang.Double
+    value:java.lang.ClassLoader$ClassNameLockRef@c205531d depth limit reached
+   key:java.lang.Cloneable
+    value:java.lang.ClassLoader$ClassNameLockRef@5c9b6e4a depth limit reached
+   key:javax.security.auth.callback.UnsupportedCallbackException
+    value:java.lang.ClassLoader$ClassNameLockRef@82c35e71 depth limit reached
+   key:java.lang.Package
+    value:java.lang.ClassLoader$ClassNameLockRef@f8b327f8 depth limit reached
+   key:java.io.Serializable
+    value:java.lang.ClassLoader$ClassNameLockRef@f6ecb974 depth limit reached
+   key:java.lang.ClassLoader
+    value:java.lang.ClassLoader$ClassNameLockRef@f1594b35 depth limit reached
+   key:java.security.PrivilegedActionException
+    value:java.lang.ClassLoader$ClassNameLockRef@8988fe93 depth limit reached
+   key:java.security.Principal
+    value:java.lang.ClassLoader$ClassNameLockRef@304c34ae depth limit reached
+   key:java.util.IdentityHashMap
+    value:java.lang.ClassLoader$ClassNameLockRef@dd0387dd depth limit reached
+   key:java.lang.reflect.Field
+    value:java.lang.ClassLoader$ClassNameLockRef@dd6ef876 depth limit reached
+   key:java.util.HashMap
+    value:java.lang.ClassLoader$ClassNameLockRef@2fe43b7a depth limit reached
+   key:java.lang.Short
+    value:java.lang.ClassLoader$ClassNameLockRef@44d1e3c5 depth limit reached
+   key:java.lang.Byte
+    value:java.lang.ClassLoader$ClassNameLockRef@95db727d depth limit reached
+   key:java.lang.NoClassDefFoundError
+    value:java.lang.ClassLoader$ClassNameLockRef@226dd08a depth limit reached
+   key:java.util.Collections
+    value:java.lang.ClassLoader$ClassNameLockRef@791b78e1 depth limit reached
+   key:org.omg.CORBA.INTERNAL
+    value:java.lang.ClassLoader$ClassNameLockRef@62fa5387 depth limit reached
+   key:java.text.SimpleDateFormat
+    value:java.lang.ClassLoader$ClassNameLockRef@629c00dd depth limit reached
+   key:java.lang.IllegalStateException
+    value:java.lang.ClassLoader$ClassNameLockRef@1e64ae3a depth limit reached
+   key:java.lang.annotation.Annotation
+    value:java.lang.ClassLoader$ClassNameLockRef@ae4e151a depth limit reached
+   key:javax.security.auth.callback.CallbackHandler
+    value:java.lang.ClassLoader$ClassNameLockRef@fef0ebcc depth limit reached
+   key:java.rmi.dgc.VMID
+    value:java.lang.ClassLoader$ClassNameLockRef@c23b7a24 depth limit reached
+   key:javax.security.auth.RefreshFailedException
+    value:java.lang.ClassLoader$ClassNameLockRef@83e817 depth limit reached
+   key:java.text.FieldPosition
+    value:java.lang.ClassLoader$ClassNameLockRef@e7c8b8da depth limit reached
+   key:java.lang.ref.WeakReference
+    value:java.lang.ClassLoader$ClassNameLockRef@3fafab8f depth limit reached
+   key:javax.security.auth.Subject
+    value:java.lang.ClassLoader$ClassNameLockRef@3b1835b depth limit reached
+   key:java.io.PrintWriter
+    value:java.lang.ClassLoader$ClassNameLockRef@6d4ee4d6 depth limit reached
+   key:java.lang.Enum
+    value:java.lang.ClassLoader$ClassNameLockRef@4d2c1e4d depth limit reached
+   key:java.lang.Character
+    value:java.lang.ClassLoader$ClassNameLockRef@8c417fab depth limit reached
+   key:java.lang.Float
+    value:java.lang.ClassLoader$ClassNameLockRef@cef3cdd7 depth limit reached
+   key:javax.security.auth.callback.NameCallback
+    value:java.lang.ClassLoader$ClassNameLockRef@659530b4 depth limit reached
+   key:java.lang.RuntimeException
+    value:java.lang.ClassLoader$ClassNameLockRef@a37bddf2 depth limit reached
+   key:java.lang.reflect.Array
+    value:java.lang.ClassLoader$ClassNameLockRef@19dd448f depth limit reached
+   key:java.lang.NoSuchFieldError
+    value:java.lang.ClassLoader$ClassNameLockRef@2f706b38 depth limit reached
+   key:javax.security.auth.callback.Callback
+    value:java.lang.ClassLoader$ClassNameLockRef@27911a31 depth limit reached
+   key:java.lang.Comparable
+    value:java.lang.ClassLoader$ClassNameLockRef@606dc716 depth limit reached
+   key:javax.security.auth.spi.LoginModule
+    value:java.lang.ClassLoader$ClassNameLockRef@b67f4938 depth limit reached
+   key:java.lang.StringBuffer
+    value:java.lang.ClassLoader$ClassNameLockRef@301ec493 depth limit reached
+   key:java.util.Map
+    value:java.lang.ClassLoader$ClassNameLockRef@55f7eca3 depth limit reached
+   key:java.text.DateFormat
+    value:java.lang.ClassLoader$ClassNameLockRef@3542ccb7 depth limit reached
+   key:java.util.Map$Entry
+    value:java.lang.ClassLoader$ClassNameLockRef@e6f4a292 depth limit reached
+   key:java.lang.Long
+    value:java.lang.ClassLoader$ClassNameLockRef@311cb4b3 depth limit reached
+   key:javax.security.auth.callback.PasswordCallback
+    value:java.lang.ClassLoader$ClassNameLockRef@d0ad3889 depth limit reached
+   key:java.util.Date
+    value:java.lang.ClassLoader$ClassNameLockRef@81d8c60 depth limit reached
+   key:com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy
+    value:java.lang.ClassLoader$ClassNameLockRef@11b68a7c depth limit reached
+   key:java.util.Iterator
+    value:java.lang.ClassLoader$ClassNameLockRef@b9f81984 depth limit reached
+   key:java.io.PrintStream
+    value:java.lang.ClassLoader$ClassNameLockRef@a9ec18a8 depth limit reached
+   key:java.util.Set
+    value:java.lang.ClassLoader$ClassNameLockRef@33016874 depth limit reached
+   }
+   END:java.util.Hashtable@ea333fba
+
+  java.lang.ClassLoader::isParallelCapable:true
+  java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@1d1f198e
+  java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:null
+  java.lang.ClassLoader::allowArraySyntax:false
+  java.lang.ClassLoader::lazyClassLoaderInit:true
+  java.lang.ClassLoader::specialLoaderInited:true
+  java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@bcdd9d38
+  java.security.SecureClassLoader::initialized:true
+  java.security.SecureClassLoader::pdcache BEGIN:java.util.HashMap@4de3ec4
+   {
+    key:java.security.CodeSource@a8f11776 depth limit reached
+    value:java.security.ProtectionDomain@eecbf8a0 depth limit reached
+    key:java.security.CodeSource@17dadc4c depth limit reached
+    value:java.security.ProtectionDomain@d2ffdb07 depth limit reached
+    key:java.security.CodeSource@335b3160 depth limit reached
+    value:java.security.ProtectionDomain@c8e8cca depth limit reached
+   }
+   END:java.util.HashMap@4de3ec4
+
+  java.security.SecureClassLoader::debug:null
+  java.net.URLClassLoader::ucp BEGIN:sun.misc.URLClassPath@8963549f
+   sun.misc.URLClassPath::USER_AGENT_JAVA_VERSION:UA-Java-Version
+   sun.misc.URLClassPath::JAVA_VERSION:1.8.0_471
+   sun.misc.URLClassPath::DEBUG:false
+   sun.misc.URLClassPath::DEBUG_LOOKUP_CACHE:false
+   sun.misc.URLClassPath::DISABLE_JAR_CHECKING:false
+   sun.misc.URLClassPath::DISABLE_ACC_CHECKING:false
+   sun.misc.URLClassPath::DISABLE_CP_URL_CHECK:true
+   sun.misc.URLClassPath::DEBUG_CP_URL_CHECK:false
+   sun.misc.URLClassPath::DISABLE_JAR_INDEX:false
+    sun.misc.URLClassPath::path:java.util.ArrayList@ce894c68 depth limit reached
+    sun.misc.URLClassPath::urls:java.util.Stack@a50ad551 depth limit reached
+    sun.misc.URLClassPath::loaders:java.util.ArrayList@59545c8e depth limit reached
+    sun.misc.URLClassPath::lmap:java.util.HashMap@9fef51ae depth limit reached
+    sun.misc.URLClassPath::jarHandler:sun.net.www.protocol.jar.Handler@f8eab93f depth limit reached
+   sun.misc.URLClassPath::sharedClassURLClasspathHelper:null
+   sun.misc.URLClassPath::loaderURLs:null
+   sun.misc.URLClassPath::updatedSearchPathCount:-1
+   sun.misc.URLClassPath::closed:false
+    sun.misc.URLClassPath::acc:java.security.AccessControlContext@e5ab654b depth limit reached
+   END:sun.misc.URLClassPath@8963549f
+
+  java.net.URLClassLoader::acc:java.security.AccessControlContext@e5ab654b
+  java.net.URLClassLoader::sharedClassURLClasspathHelper:null
+  java.net.URLClassLoader::sharedClassMetaDataCache:null
+  java.net.URLClassLoader::closeables BEGIN:java.util.WeakHashMap@c7e27733
+   {
+   }
+   END:java.util.WeakHashMap@c7e27733
+
+  java.net.URLClassLoader::showClassLoadingFor:java.util.Vector@b0fe212b
+  java.net.URLClassLoader::showLoadingMessages:false
+  java.net.URLClassLoader::showClassLoadingProperty:ibm.cl.verbose
+  sun.misc.Launcher$AppClassLoader::$assertionsDisabled:true
+  END:sun.misc.Launcher$AppClassLoader@1b8a5ae9
+
+ javax.security.auth.Subject::getSub:null
+ javax.security.auth.Subject::doAsPA:null
+ javax.security.auth.Subject::doAsPEA:null
+ javax.security.auth.Subject::doAsPPA:null
+ javax.security.auth.Subject::doAsPPEA:null
+ javax.security.auth.Subject::overrideActive:false
+ javax.security.auth.Subject::PRINCIPAL_SET:1
+ javax.security.auth.Subject::PUB_CREDENTIAL_SET:2
+ javax.security.auth.Subject::PRIV_CREDENTIAL_SET:3
+ javax.security.auth.Subject::NULL_PD_ARRAY BEGIN:[Ljava.security.ProtectionDomain;@e3cbc626
+  [
+  ]
+  END:[Ljava.security.ProtectionDomain;@e3cbc626
+
+ END:javax.security.auth.Subject@8c8e21e8
+
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::callbackHandler BEGIN:javax.security.auth.login.LoginContext$SecureCallbackHandler@d3c0eeda
+ javax.security.auth.login.LoginContext$SecureCallbackHandler::acc BEGIN:java.security.AccessControlContext@da80899c
+  java.security.AccessControlContext::STATE_NOT_AUTHORIZED:0
+  java.security.AccessControlContext::STATE_AUTHORIZED:1
+  java.security.AccessControlContext::STATE_UNKNOWN:2
+  java.security.AccessControlContext::debugSetting:-1
+  java.security.AccessControlContext::debugPermClassArray:null
+  java.security.AccessControlContext::debugPermNameArray:null
+  java.security.AccessControlContext::debugPermActionsArray:null
+  java.security.AccessControlContext::debugCodeBaseArray:null
+  java.security.AccessControlContext::DEBUG_UNINITIALIZED_HASCODEBASE:0
+  java.security.AccessControlContext::DEBUG_NO_CODEBASE:1
+  java.security.AccessControlContext::DEBUG_HAS_CODEBASE:2
+  java.security.AccessControlContext::DEBUG_DISABLED:0
+  java.security.AccessControlContext::DEBUG_ACCESS_DENIED:1
+  java.security.AccessControlContext::DEBUG_ENABLED:2
+  java.security.AccessControlContext::domainCombiner:null
+  java.security.AccessControlContext::context BEGIN:[Ljava.security.ProtectionDomain;@a4d8fdac
+   [
+    org.eclipse.osgi.framework.adaptor.BundleProtectionDomain@6fe33264 depth limit reached
+   java.security.ProtectionDomain@d2ffdb07
+    org.eclipse.osgi.framework.adaptor.BundleProtectionDomain@1c843c5c depth limit reached
+    org.eclipse.osgi.framework.adaptor.BundleProtectionDomain@4a6d3d31 depth limit reached
+    org.eclipse.osgi.framework.adaptor.BundleProtectionDomain@ad7cd4d1 depth limit reached
+    java.security.ProtectionDomain@a76f3992 depth limit reached
+   java.security.ProtectionDomain@eecbf8a0
+   ]
+   END:[Ljava.security.ProtectionDomain;@a4d8fdac
+
+  java.security.AccessControlContext::authorizeState:1
+  java.security.AccessControlContext::containPrivilegedContext:true
+  java.security.AccessControlContext::callerPD:null
+  java.security.AccessControlContext::doPrivilegedAcc:null
+  java.security.AccessControlContext::isLimitedContext:false
+  java.security.AccessControlContext::limitedPerms:null
+  java.security.AccessControlContext::nextStackAcc:null
+  java.security.AccessControlContext::debugHasCodebase:0
+  java.security.AccessControlContext::DEBUG_ACCESS:1
+  java.security.AccessControlContext::DEBUG_ACCESS_STACK:2
+  java.security.AccessControlContext::DEBUG_ACCESS_DOMAIN:4
+  java.security.AccessControlContext::DEBUG_ACCESS_FAILURE:8
+  java.security.AccessControlContext::DEBUG_ACCESS_THREAD:16
+  java.security.AccessControlContext::DEBUG_ALL:255
+  END:java.security.AccessControlContext@da80899c
+
+ javax.security.auth.login.LoginContext$SecureCallbackHandler::ch BEGIN:com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl@24331922
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::realmNamePrompt:Realm/Cell Name
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::NEW_LINE:
+
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::stdinRetry:1
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::userName:null
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::password:null
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::realmName:<default>
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::userNamePrompt:Username: 
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::passwordPrompt:Password: 
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::passwordEcho:false
+  com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@5767afe3
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.security
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+   END:com.ibm.ejs.ras.TraceComponent@5767afe3
+
+  END:com.ibm.websphere.security.auth.callback.WSStdinCallbackHandlerImpl@24331922
+
+ END:javax.security.auth.login.LoginContext$SecureCallbackHandler@d3c0eeda
+
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::sharedState BEGIN:java.util.HashMap@63701ac
+ {
+ }
+ END:java.util.HashMap@63701ac
+
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::options BEGIN:java.util.Collections$UnmodifiableMap@d6450991
+ {
+ key:delegate
+ value:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl
+ }
+ END:java.util.Collections$UnmodifiableMap@d6450991
+
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::succeeded:false
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::commitSucceeded:false
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::principal:null
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::credential:null
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::debug:false
+com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@d66a3a0b
+ com.ibm.ejs.ras.TraceElement::ivLevel:10
+ com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl
+ com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+ com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+ com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+ com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+ com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+ com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+ com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.security
+ com.ibm.ejs.ras.TraceComponent::ivLogger:null
+ com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+ com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+ END:com.ibm.ejs.ras.TraceComponent@d66a3a0b
+
+END:com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl@e86ec1fc
+
+CapturedDataElements end

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<middlewaredescriptors:MiddlewareDescriptor xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:middlewaredescriptors="http://www.ibm.com/websphere/appserver/schemas/6.1/middlewaredescriptors.xmi" xmi:id="MiddlewareDescriptor_1767631624131" name="phpRuntime" discoveryInterval="4" discoveryIntervalUnits="2" discoverySupported="true">
+  <versionDescriptors xmi:id="MiddlewareVersionDescriptor_1767631624133" version="default">
+    <versionDescriptor xmi:id="DescriptivePropertyGroup_1767631624137" name="versionDescriptor">
+      <propertyGroups xmi:id="DescriptivePropertyGroup_1767631624139" name="install.locations">
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631624147" name="win.install.loc" value="C:\\PHP" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631624151" displayNameKey="win.install.loc" displayDescriptionKey="win.install.loc.desc" firstClass="true" hoverHelpKey="win.install.loc.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631624154" name="unix.install.loc" value="/usr/local" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631624158" displayNameKey="unix.install.loc" displayDescriptionKey="unix.install.loc.desc" firstClass="true" hoverHelpKey="unix.install.loc.help"/>
+        </properties>
+        <descriptor xmi:id="DisplayDescriptor_1767631624143" displayNameKey="phpRuntime.install.locations" displayDescriptionKey="phpRuntime.install.locations.desc" firstClass="true"/>
+      </propertyGroups>
+      <propertyGroups xmi:id="DescriptivePropertyGroup_1767631624162" name="timeOutGroup">
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631624170" name="startTimeOutValue" value="300000" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631624174" displayNameKey="startTimeOutValue" firstClass="true" hoverHelpKey="startTimeOutValue.desc"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631624178" name="stopTimeOutValue" value="300000" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631624183" displayNameKey="stopTimeOutValue" firstClass="true" hoverHelpKey="stopTimeOutValue.desc"/>
+        </properties>
+        <descriptor xmi:id="DisplayDescriptor_1767631624166" displayNameKey="timeOutGroup" displayDescriptionKey="timeOutGroup.desc" firstClass="true"/>
+      </propertyGroups>
+    </versionDescriptor>
+  </versionDescriptors>
+</middlewaredescriptors:MiddlewareDescriptor>

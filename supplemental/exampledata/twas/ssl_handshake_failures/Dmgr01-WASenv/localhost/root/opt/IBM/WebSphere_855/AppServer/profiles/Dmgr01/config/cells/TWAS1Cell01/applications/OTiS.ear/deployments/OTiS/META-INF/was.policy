@@ -1,0 +1,15 @@
+grant codeBase "file:${application}" {
+  permission java.security.AllPermission;
+};
+
+grant codeBase "file:${jars}" {
+};
+
+grant codeBase "file:${connectorComponent}" { 
+};
+
+grant codeBase "file:${webComponent}" {
+};
+
+grant codeBase "file:${ejbComponent}" {
+};

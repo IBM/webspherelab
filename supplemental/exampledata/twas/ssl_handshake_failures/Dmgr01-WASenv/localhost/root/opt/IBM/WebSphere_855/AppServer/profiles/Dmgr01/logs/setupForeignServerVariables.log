@@ -1,0 +1,29 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[-washome, /opt/IBM/WebSphere_855/AppServer]"
+Creating WASCE/Geronimo variables ... 
+Variable GERONIMO_HOME already exists, skipping creation.
+WASCE/Geronimo variable creation completed.
+Creating JBoss variables ... 
+Variable JBOSS_HOME already exists, skipping creation.
+JBoss variable creation completed.
+Creating TomCat variables ... 
+Variable CATALINA_HOME already exists, skipping creation.
+TomCat variable creation completed.
+Creating Liberty variables ... 
+Variable WLP_INSTALL_DIR created.
+Variable WLP_USER_DIR created.
+Variable WLP_OUTPUT_DIR created.
+Liberty variable creation completed.
+Creating WebLogic variables ... 
+Variable WEBLOGIC_ADMINHOST already exists, skipping creation.
+Variable WEBLOGIC_ADMINPORT already exists, skipping creation.
+Variable WEBLOGIC_ADMINPROTOCOL already exists, skipping creation.
+Variable WEBLOGIC_ADMINURL already exists, skipping creation.
+Variable WEBLOGIC_SERVERROOT already exists, skipping creation.
+Variable WEBLOGIC_HOME already exists, skipping creation.
+Variable WEBLOGIC_DOMAINNAME already exists, skipping creation.
+Variable WEBLOGIC_DOMAINDIR already exists, skipping creation.
+Variable BEA_HOME already exists, skipping creation.
+WebLogic variable creation completed.
+Saving variables
+variable creation successful.

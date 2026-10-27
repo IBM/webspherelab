@@ -1,0 +1,26 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[10/23/26 7:58:26:962 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[10/23/26 7:58:27:224 PDT] 00000001 AbstractShell A   WASX7326I: Loaded properties file "/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/wsadmin.properties"
+[10/23/26 7:58:27:530 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@c7addcfb
+[10/23/26 7:58:27:631 PDT] 00000001 SSLConfig     W   CWPKI0041W: One or more key stores are using the default password.
+[10/23/26 7:58:27:637 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.certpath.disabledAlgorithms set to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, include jdk.disabled.namedCurves, SHA1 usage SignedJAR & denyAfter 2019-01-01].  The WebSphere Application server is setting the java security property jdk.certpath.disabledAlgorithms to [MD2, MD5, SHA1 jdkCA & usage TLSServer, RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224]. 
+[10/23/26 7:58:27:637 PDT] 00000001 SSLConfigMana I   CWPKI0051I: The process has the java security property jdk.tls.disabledAlgorithms set to [SSLv3, TLSv1, TLSv1.1, TLSv1.2, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, ECDH, include jdk.disabled.namedCurves].  The WebSphere Application server is setting the java security property jdk.tls.disabledAlgorithms to [SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC]. 
+[10/23/26 7:58:27:639 PDT] 00000001 SSLConfigMana I   CWPKI0027I: Disabling default hostname verification for HTTPS URL connections.
+[10/23/26 7:58:27:795 PDT] 00000001 AdminConfigCl W   WASX7198W: The configuration service is not running. Configuration commands will not run.
+[10/23/26 7:58:27:816 PDT] 00000001 AdminConfigCl A   WASX7208I: Validation settings in effect now: Level=HIGHEST, Cross-validation=true, Output file=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/wsadmin.valout
+[10/23/26 7:58:28:107 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[10/23/26 7:58:28:808 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[10/23/26 7:58:32:121 PDT] 00000001 AbstractShell A   WASX7090I: Executing command: "from java.net import URL; URL('https://www.ibm.com').openStream().read()"
+[10/23/26 7:58:33:865 PDT] 00000001 Ffdc          I com.ibm.ffdc.util.provider.FfdcOnDirProvider logIncident FFDC1003I: FFDC Incident emitted on /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/ffdc.6570662106789053552.txt com.ibm.ws.ssl.core.WSX509TrustManager.checkServerTrusted %c%

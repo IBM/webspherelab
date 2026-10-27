@@ -1,0 +1,950 @@
+[5/14/26 8:28:34:539 PDT]     FFDC Exception:com.ibm.websphere.management.exception.ConnectorNotAvailableException SourceId:com.ibm.ws.management.RoutingTable.getAllAdminClients ProbeId:492 Reporter:com.ibm.ws.management.RoutingTable$Accessor@e27db9c3
+com.ibm.websphere.management.exception.ConnectorNotAvailableException
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1267)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+==> Performing default dump from com.ibm.ws.management.dm.JmxDM :Thu May 14 08:28:34 PDT 2026
+IntrospectDepth set from:3 to: 5
+Dump of callerThis BEGIN:com.ibm.ws.management.RoutingTable$Accessor@e27db9c3
+com.ibm.ws.management.RoutingTable$Accessor::name:null
+com.ibm.ws.management.RoutingTable$Accessor::pid:null
+com.ibm.ws.management.RoutingTable$Accessor::defaultType:SOAP
+com.ibm.ws.management.RoutingTable$Accessor::localType:IPC
+com.ibm.ws.management.RoutingTable$Accessor::remoteType:SOAP
+com.ibm.ws.management.RoutingTable$Accessor::serverHostName:localhost
+com.ibm.ws.management.RoutingTable$Accessor::configuredSystemName:null
+com.ibm.ws.management.RoutingTable$Accessor::serverInfo BEGIN:com.ibm.ws.management.discovery.ServerInfo@aff67de4
+ com.ibm.ws.management.discovery.ServerInfo::tc BEGIN:com.ibm.ejs.ras.TraceComponent@9402b7b2
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.ServerInfo
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.discovery
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@9402b7b2
+
+ com.ibm.ws.management.discovery.ServerInfo::serialVersionUID:3198058148218818720
+ com.ibm.ws.management.discovery.ServerInfo::ownInfo BEGIN:com.ibm.ws.management.discovery.ServerInfo@f4b230ed
+  com.ibm.ws.management.discovery.ServerInfo::tc:com.ibm.ejs.ras.TraceComponent@9402b7b2
+  com.ibm.ws.management.discovery.ServerInfo::serialVersionUID:3198058148218818720
+  com.ibm.ws.management.discovery.ServerInfo::ownInfo:com.ibm.ws.management.discovery.ServerInfo@f4b230ed
+  com.ibm.ws.management.discovery.ServerInfo::pid:339790
+  com.ibm.ws.management.discovery.ServerInfo::cell:TWAS1Cell01
+  com.ibm.ws.management.discovery.ServerInfo::node:Node01
+  com.ibm.ws.management.discovery.ServerInfo::name:nodeagent
+  com.ibm.ws.management.discovery.ServerInfo::role:NodeAgent
+  com.ibm.ws.management.discovery.ServerInfo::version:8.5.5.28
+  com.ibm.ws.management.discovery.ServerInfo::hostName:TWAS1
+  com.ibm.ws.management.discovery.ServerInfo::configuredSystemName:null
+  com.ibm.ws.management.discovery.ServerInfo::connectors BEGIN:java.util.Vector@5ba6f18a
+   {
+   BEGIN:java.util.Properties@efbe0add
+    {
+    key:port
+    value:8881
+    key:securityEnabled
+    value:true
+    key:type
+    value:SOAP
+    key:host
+    value:TWAS1
+    key:isInternal
+    value:true
+    key:preferred
+    value:true
+    key:remoteAdminProtocol
+    value:true
+    }
+    END:java.util.Properties@efbe0add
+
+   BEGIN:java.util.Properties@402a4aac
+    {
+    key:port
+    value:2811
+    key:securityEnabled
+    value:true
+    key:type
+    value:RMI
+    key:host
+    value:TWAS1
+    key:isInternal
+    value:true
+    }
+    END:java.util.Properties@402a4aac
+
+   BEGIN:java.util.Properties@d4ff677d
+    {
+    key:port
+    value:2811
+    key:securityEnabled
+    value:true
+    key:type
+    value:JSR160RMI
+    key:host
+    value:TWAS1
+    key:isInternal
+    value:true
+    }
+    END:java.util.Properties@d4ff677d
+
+   BEGIN:java.util.Properties@16b4a95
+    {
+    key:port
+    value:9629
+    key:securityEnabled
+    value:true
+    key:localAdminProtocol
+    value:true
+    key:type
+    value:IPC
+    key:host
+    value:localhost
+    key:isInternal
+    value:true
+    }
+    END:java.util.Properties@16b4a95
+
+   }
+   END:java.util.Vector@5ba6f18a
+
+  com.ibm.ws.management.discovery.ServerInfo::endPoints BEGIN:java.util.Vector@9893eca5
+   {
+   BEGIN:java.util.Properties@57a754a4
+    {
+    key:port
+    value:2811
+    key:name
+    value:BOOTSTRAP_ADDRESS
+    key:host
+    value:TWAS1
+    }
+    END:java.util.Properties@57a754a4
+
+   }
+   END:java.util.Vector@9893eca5
+
+  com.ibm.ws.management.discovery.ServerInfo::services BEGIN:java.util.Vector@1ca6250b
+   {
+   endpoint:name=BOOTSTRAP_ADDRESS;host=TWAS1;port=2811
+   connector:type=SOAP;host=TWAS1;port=8881;remoteAdminProtocol=true;preferred=true;securityEnabled=true;isInternal=true
+   connector:type=RMI;host=TWAS1;port=2811;securityEnabled=true;isInternal=true
+   connector:type=JSR160RMI;host=TWAS1;port=2811;securityEnabled=true;isInternal=true
+   connector:type=IPC;host=localhost;port=9629;localAdminProtocol=true;securityEnabled=true;isInternal=true
+   }
+   END:java.util.Vector@1ca6250b
+
+  com.ibm.ws.management.discovery.ServerInfo::triedGetConfiguredSystemName:false
+  END:com.ibm.ws.management.discovery.ServerInfo@f4b230ed
+
+ com.ibm.ws.management.discovery.ServerInfo::pid:339022
+ com.ibm.ws.management.discovery.ServerInfo::cell:TWAS1Cell01
+ com.ibm.ws.management.discovery.ServerInfo::node:TWAS1CellManager01
+ com.ibm.ws.management.discovery.ServerInfo::name:dmgr
+ com.ibm.ws.management.discovery.ServerInfo::role:DeploymentManager
+ com.ibm.ws.management.discovery.ServerInfo::version:8.5.5.28
+ com.ibm.ws.management.discovery.ServerInfo::hostName:null
+ com.ibm.ws.management.discovery.ServerInfo::configuredSystemName:null
+ com.ibm.ws.management.discovery.ServerInfo::connectors BEGIN:java.util.Vector@a32c9a96
+  {
+  BEGIN:java.util.Properties@81c2f11d
+   {
+   key:port
+   value:8879
+   key:securityEnabled
+   value:true
+   key:type
+   value:SOAP
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   key:preferred
+   value:true
+   key:remoteAdminProtocol
+   value:true
+   }
+   END:java.util.Properties@81c2f11d
+
+  BEGIN:java.util.Properties@12e08683
+   {
+   key:port
+   value:9809
+   key:securityEnabled
+   value:true
+   key:type
+   value:RMI
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@12e08683
+
+  BEGIN:java.util.Properties@577af113
+   {
+   key:port
+   value:9809
+   key:securityEnabled
+   value:true
+   key:type
+   value:JSR160RMI
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@577af113
+
+  BEGIN:java.util.Properties@cd73637
+   {
+   key:port
+   value:9632
+   key:securityEnabled
+   value:true
+   key:localAdminProtocol
+   value:true
+   key:type
+   value:IPC
+   key:host
+   value:localhost
+   key:isInternal
+   value:true
+   }
+   END:java.util.Properties@cd73637
+
+  }
+  END:java.util.Vector@a32c9a96
+
+ com.ibm.ws.management.discovery.ServerInfo::endPoints BEGIN:java.util.Vector@d6ca0ece
+  {
+  BEGIN:java.util.Properties@e6d222fd
+   {
+   key:port
+   value:9809
+   key:name
+   value:BOOTSTRAP_ADDRESS
+   key:host
+   value:localhost
+   }
+   END:java.util.Properties@e6d222fd
+
+  }
+  END:java.util.Vector@d6ca0ece
+
+ com.ibm.ws.management.discovery.ServerInfo::services BEGIN:java.util.Vector@b1d373df
+  {
+  endpoint:name=BOOTSTRAP_ADDRESS;host=localhost;port=9809
+  connector:type=SOAP;host=localhost;port=8879;remoteAdminProtocol=true;preferred=true;securityEnabled=true;isInternal=true
+  connector:type=RMI;host=localhost;port=9809;securityEnabled=true;isInternal=true
+  connector:type=JSR160RMI;host=localhost;port=9809;securityEnabled=true;isInternal=true
+  connector:type=IPC;host=localhost;port=9632;localAdminProtocol=true;securityEnabled=true;isInternal=true
+  }
+  END:java.util.Vector@b1d373df
+
+ com.ibm.ws.management.discovery.ServerInfo::triedGetConfiguredSystemName:false
+ END:com.ibm.ws.management.discovery.ServerInfo@aff67de4
+
+com.ibm.ws.management.RoutingTable$Accessor::connectorCfgs BEGIN:java.util.HashMap@866b922
+ {
+ key:JSR160RMI
+ value:java.util.Properties@577af113
+ key:SOAP
+ value:java.util.Properties@81c2f11d
+ key:IPC
+ value:java.util.Properties@cd73637
+ key:RMI
+ value:java.util.Properties@12e08683
+ }
+ END:java.util.HashMap@866b922
+
+com.ibm.ws.management.RoutingTable$Accessor::session:null
+com.ibm.ws.management.RoutingTable$Accessor::configService:null
+com.ibm.ws.management.RoutingTable$Accessor::this$0 BEGIN:com.ibm.ws.management.RoutingTable@88d2ccf7
+ com.ibm.ws.management.RoutingTable::bundleName:com.ibm.ws.management.resources.connector
+ com.ibm.ws.management.RoutingTable::tc BEGIN:com.ibm.ejs.ras.TraceComponent@fbb4027d
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.RoutingTable
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.connector
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@fbb4027d
+
+ com.ibm.ws.management.RoutingTable::_instance:com.ibm.ws.management.RoutingTable@88d2ccf7
+ com.ibm.ws.management.RoutingTable::endpointUUID:null
+ com.ibm.ws.management.RoutingTable::_rt BEGIN:java.util.Collections$SynchronizedMap@8d418822
+  {
+  }
+  END:java.util.Collections$SynchronizedMap@8d418822
+
+ com.ibm.ws.management.RoutingTable::_rtStateMachine BEGIN:java.util.Collections$SynchronizedMap@eaaa4d22
+  {
+  }
+  END:java.util.Collections$SynchronizedMap@eaaa4d22
+
+ com.ibm.ws.management.RoutingTable::_disabled_rt BEGIN:java.util.Collections$SynchronizedMap@a1d9b2b6
+  {
+  }
+  END:java.util.Collections$SynchronizedMap@a1d9b2b6
+
+ com.ibm.ws.management.RoutingTable::_disabled_rtStateMachine BEGIN:java.util.Collections$SynchronizedMap@7886f721
+  {
+  }
+  END:java.util.Collections$SynchronizedMap@7886f721
+
+ com.ibm.ws.management.RoutingTable::_routingListeners BEGIN:java.util.ArrayList@c053388b
+  {
+  BEGIN:com.ibm.ws.management.sync.NodeSync@33c80f8
+   com.ibm.websphere.management.RuntimeCollaborator::tc BEGIN:com.ibm.ejs.ras.TraceComponent@5c30d340
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.websphere.management.RuntimeCollaborator
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.adminservice
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@5c30d340
+
+   com.ibm.websphere.management.RuntimeCollaborator::modelMBean BEGIN:javax.management.modelmbean.RequiredModelMBean@ffc0f19d
+     javax.management.modelmbean.RequiredModelMBean::modelMBeanInfo:javax.management.modelmbean.ModelMBeanInfoSupport@a15422d0 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::generalBroadcaster:javax.management.NotificationBroadcasterSupport@6742c1cd depth limit reached
+    javax.management.modelmbean.RequiredModelMBean::attributeBroadcaster:null
+    javax.management.modelmbean.RequiredModelMBean::managedResource:com.ibm.ws.management.sync.NodeSync@33c80f8
+    javax.management.modelmbean.RequiredModelMBean::registered:true
+     javax.management.modelmbean.RequiredModelMBean::server:com.sun.jmx.mbeanserver.JmxMBeanServer@dfa85269 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::javaSecurityAccess:java.security.ProtectionDomain$JavaSecurityAccessImpl@70104003 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::acc:java.security.AccessControlContext@5c6edd7d depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::primitiveClasses:[Ljava.lang.Class;@e9471ef9 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::primitiveClassMap:java.util.HashMap@ce890573 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::rmmbMethodNames:java.util.HashSet@c5e17098 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::primitiveTypes:[Ljava.lang.String;@cd0daf98 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::primitiveWrappers:[Ljava.lang.String;@1fad3a89 depth limit reached
+    END:javax.management.modelmbean.RequiredModelMBean@ffc0f19d
+
+   com.ibm.websphere.management.RuntimeCollaborator::mbeanName BEGIN:javax.management.ObjectName@be53eff0
+    javax.management.ObjectName::oldSerialVersionUID:-5467795090068647408
+    javax.management.ObjectName::newSerialVersionUID:1081892073854801359
+     javax.management.ObjectName::oldSerialPersistentFields:[Ljava.io.ObjectStreamField;@9965a91d depth limit reached
+     javax.management.ObjectName::newSerialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503 depth limit reached
+    javax.management.ObjectName::serialVersionUID:1081892073854801359
+    javax.management.ObjectName::serialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503
+    javax.management.ObjectName::compat:false
+     javax.management.ObjectName::_Empty_property_array:[Ljavax.management.ObjectName$Property;@72d2885c depth limit reached
+    javax.management.ObjectName::_canonicalName:WebSphere:cell=TWAS1Cell01,diagnosticProvider=true,mbeanIdentifier=nodeSync,name=nodeSync,node=Node01,platform=common,process=nodeagent,spec=1.0,type=NodeSync,version=8.5.5.28
+     javax.management.ObjectName::_kp_array:[Ljavax.management.ObjectName$Property;@9c31fa4a depth limit reached
+     javax.management.ObjectName::_ca_array:[Ljavax.management.ObjectName$Property;@1addf16 depth limit reached
+    javax.management.ObjectName::_domain_length:9
+     javax.management.ObjectName::_propertyList:java.util.HashMap@4fe358a3 depth limit reached
+    javax.management.ObjectName::_domain_pattern:false
+    javax.management.ObjectName::_property_list_pattern:false
+    javax.management.ObjectName::_property_value_pattern:false
+     javax.management.ObjectName::WILDCARD:javax.management.ObjectName@a3b09e1d depth limit reached
+    END:javax.management.ObjectName@be53eff0
+
+   com.ibm.ws.management.sync.NodeSync::tc BEGIN:com.ibm.ejs.ras.TraceComponent@67177d37
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.sync.NodeSync
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.sync
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:WebSphere:name=nodeSync,process=nodeagent,platform=common,node=Node01,diagnosticProvider=true,version=8.5.5.28,type=NodeSync,mbeanIdentifier=nodeSync,cell=TWAS1Cell01,spec=1.0
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@67177d37
+
+   com.ibm.ws.management.sync.NodeSync::nodeSync:com.ibm.ws.management.sync.NodeSync@33c80f8
+   com.ibm.ws.management.sync.NodeSync::autoSyncEnabled:true
+   com.ibm.ws.management.sync.NodeSync::origAutoSyncEnabled:true
+   com.ibm.ws.management.sync.NodeSync::syncInterval:1
+   com.ibm.ws.management.sync.NodeSync::origSyncInterval:1
+   com.ibm.ws.management.sync.NodeSync::nodeSyncTask BEGIN:com.ibm.ws.management.sync.NodeSyncTask@f713ce92
+     com.ibm.ws.management.sync.NodeSyncTask::tc:com.ibm.ejs.ras.TraceComponent@3bfacbcf depth limit reached
+    com.ibm.ws.management.sync.NodeSyncTask::logger:null
+    com.ibm.ws.management.sync.NodeSyncTask::IDLE:0
+    com.ibm.ws.management.sync.NodeSyncTask::COMPARE_FOLDERS:1
+    com.ibm.ws.management.sync.NodeSyncTask::PROCESSING_UPDATE:2
+    com.ibm.ws.management.sync.NodeSyncTask::PROCESSING_UPDATE_WITH_ERROR:3
+    com.ibm.ws.management.sync.NodeSyncTask::VERIFY_SYNC_RESULT:4
+    com.ibm.ws.management.sync.NodeSyncTask::SYNC_ITERATION_LIMIT:6
+    com.ibm.ws.management.sync.NodeSyncTask::state:0
+    com.ibm.ws.management.sync.NodeSyncTask::nodeSync:com.ibm.ws.management.sync.NodeSync@33c80f8
+    com.ibm.ws.management.sync.NodeSyncTask::syncStatusOnly:false
+    com.ibm.ws.management.sync.NodeSyncTask::currentResult:null
+    com.ibm.ws.management.sync.NodeSyncTask::nodeGlobalEpoch:null
+     com.ibm.ws.management.sync.NodeSyncTask::repository:com.ibm.ws.management.repository.FileRepository@cd7de460 depth limit reached
+    com.ibm.ws.management.sync.NodeSyncTask::folderEpoch:null
+    com.ibm.ws.management.sync.NodeSyncTask::folderEpochInvalid:false
+    com.ibm.ws.management.sync.NodeSyncTask::alarmSet:false
+    com.ibm.ws.management.sync.NodeSyncTask::CLASSNAME:com.ibm.ws.management.sync.NodeSyncTask
+    com.ibm.ws.management.sync.NodeSyncTask::consecutiveFailures:0
+    com.ibm.ws.management.sync.NodeSyncTask::autoSyncDisabled:false
+    com.ibm.ws.management.sync.NodeSyncTask::FOLDER_EPOCH_FILE_NAME:nodeagentFolderLevel.epoch
+    com.ibm.ws.management.sync.NodeSyncTask::N0DE_EPOCH_FILE_NAME:nodeGlobal.epoch
+    END:com.ibm.ws.management.sync.NodeSyncTask@f713ce92
+
+   com.ibm.ws.management.sync.NodeSync::serverStartupSyncEnabled:false
+   com.ibm.ws.management.sync.NodeSync::origServerStartupSyncEnabled:false
+   com.ibm.ws.management.sync.NodeSync::exclusionList BEGIN:java.util.ArrayList@37010a88
+    {
+    cells/TWAS1Cell01/nodes/Node01/namestore.xml
+    */namestore-cell.xml
+    */namestore-node.xml
+    */node-metadata.properties
+    cells/TWAS1Cell01/repository/checkpoints/*
+    }
+    END:java.util.ArrayList@37010a88
+
+   com.ibm.ws.management.sync.NodeSync::serviceProps BEGIN:java.util.Properties@8bbf6fdb
+    {
+    }
+    END:java.util.Properties@8bbf6fdb
+
+   com.ibm.ws.management.sync.NodeSync::connProps BEGIN:java.util.Properties@cc05555f
+    {
+    }
+    END:java.util.Properties@cc05555f
+
+   com.ibm.ws.management.sync.NodeSync::adminClient:null
+   com.ibm.ws.management.sync.NodeSync::cellSyncObjName:null
+   com.ibm.ws.management.sync.NodeSync::cellRepositoryObjName:null
+   com.ibm.ws.management.sync.NodeSync::nodeName:Node01
+   com.ibm.ws.management.sync.NodeSync::cellName:TWAS1Cell01
+   com.ibm.ws.management.sync.NodeSync::inServer:true
+   com.ibm.ws.management.sync.NodeSync::syncHandler BEGIN:com.ibm.ws.management.sync.NodeSync$SyncHandler@568a74de
+    com.ibm.ws.management.sync.NodeSync$SyncHandler::this$0:com.ibm.ws.management.sync.NodeSync@33c80f8
+    END:com.ibm.ws.management.sync.NodeSync$SyncHandler@568a74de
+
+   com.ibm.ws.management.sync.NodeSync::netmgr:null
+   com.ibm.ws.management.sync.NodeSync::connected:false
+   com.ibm.ws.management.sync.NodeSync::localListeners BEGIN:java.util.ArrayList@5e9962de
+    {
+     com.ibm.ws.management.application.sync.AppBinaryProcessor@ec363ff6 depth limit reached
+     com.ibm.ws.management.bla.sync.BLABinaryProcessor@daaec661 depth limit reached
+     com.ibm.ws.management.sync.J2CRAProcessor@ff3f832 depth limit reached
+     com.ibm.websphere.plugincfg.initializers.PluginRepositoryListener$NS_Listener@91014cfb depth limit reached
+     com.ibm.ws.management.component.ConfigChangeHandler@90544c2d depth limit reached
+    }
+    END:java.util.ArrayList@5e9962de
+
+   com.ibm.ws.management.sync.NodeSync::notifSeq:0
+   com.ibm.ws.management.sync.NodeSync::AUTOSYNC_ENABLED:was.sync.autoSyncEnabled
+   com.ibm.ws.management.sync.NodeSync::SYNC_INTERVAL:was.sync.syncInterval
+   com.ibm.ws.management.sync.NodeSync::SERVER_STARTUP_SYNC_ENABLED:was.sync.serverStartupSyncEnabled
+   com.ibm.ws.management.sync.NodeSync::EXCLUSION_LIST:was.sync.exclusionList
+   com.ibm.ws.management.sync.NodeSync::PROCESS_TYPE:was.sync.processType
+   com.ibm.ws.management.sync.NodeSync::dpName:NodeSyncDP
+   com.ibm.ws.management.sync.NodeSync::dpInfo:null
+   com.ibm.ws.management.sync.NodeSync::hotRestartSync:false
+   com.ibm.ws.management.sync.NodeSync::nodeAgentStopping:false
+   com.ibm.ws.management.sync.NodeSync::activeSyncRequests:0
+   com.ibm.ws.management.sync.NodeSync::maxSyncRequests:20
+   END:com.ibm.ws.management.sync.NodeSync@33c80f8
+
+  BEGIN:com.ibm.ws.management.event.ProcessListener@be406478
+   com.ibm.ws.management.event.ProcessListener::tc BEGIN:com.ibm.ejs.ras.TraceComponent@96c69747
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.event.ProcessListener
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.event
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@96c69747
+
+   com.ibm.ws.management.event.ProcessListener::notifService BEGIN:com.ibm.ws.management.event.NotificationService@c504dbfc
+     com.ibm.ws.management.event.NotificationService::tc:com.ibm.ejs.ras.TraceComponent@ea62e3f3 depth limit reached
+    com.ibm.ws.management.event.NotificationService::CLASSNAME:com.ibm.ws.management.event.NotificationService
+    com.ibm.ws.management.event.NotificationService::DISPATCH_POOL_MIN:1
+    com.ibm.ws.management.event.NotificationService::DISPATCH_POOL_MAX:100
+    com.ibm.ws.management.event.NotificationService::CONTROL_JVM_LISTENER_BUFFER_MAX_SIZE:0
+     com.ibm.ws.management.event.NotificationService::listeners:java.util.ArrayList@8858aca2 depth limit reached
+     com.ibm.ws.management.event.NotificationService::dispatcher:com.ibm.ws.management.event.NotificationDispatcher@124e9c4b depth limit reached
+     com.ibm.ws.management.event.NotificationService::dispatchPool:com.ibm.ws.util.ThreadPool@1d3beae6 depth limit reached
+    com.ibm.ws.management.event.NotificationService::listenersUpdated:true
+     com.ibm.ws.management.event.NotificationService::remoteSenders:java.util.HashMap@c3f28f08 depth limit reached
+     com.ibm.ws.management.event.NotificationService::downstreamManager:com.ibm.ws.management.event.DownstreamServerManager@b940aaa0 depth limit reached
+    com.ibm.ws.management.event.NotificationService::upstreamServerSender:null
+    com.ibm.ws.management.event.NotificationService::upstreamServerSenderLock:java.lang.Object@3df2e138
+    com.ibm.ws.management.event.NotificationService::_isServantJVM:false
+    com.ibm.ws.management.event.NotificationService::_controlJVMListenerNotificationBuffer:null
+    com.ibm.ws.management.event.NotificationService::_controlJVMListenerNotificationBufferLock:java.lang.Object@52e60701
+    com.ibm.ws.management.event.NotificationService::servantProcessManager:null
+    com.ibm.ws.management.event.NotificationService::controlJVMid:null
+    END:com.ibm.ws.management.event.NotificationService@c504dbfc
+
+   END:com.ibm.ws.management.event.ProcessListener@be406478
+
+  BEGIN:com.ibm.ws.management.discovery.DiscoveryMBean@ac965760
+   com.ibm.websphere.management.RuntimeCollaborator::tc:com.ibm.ejs.ras.TraceComponent@5c30d340
+   com.ibm.websphere.management.RuntimeCollaborator::modelMBean BEGIN:javax.management.modelmbean.RequiredModelMBean@640ee45f
+     javax.management.modelmbean.RequiredModelMBean::modelMBeanInfo:javax.management.modelmbean.ModelMBeanInfoSupport@d46289db depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::generalBroadcaster:javax.management.NotificationBroadcasterSupport@6519202e depth limit reached
+    javax.management.modelmbean.RequiredModelMBean::attributeBroadcaster:null
+    javax.management.modelmbean.RequiredModelMBean::managedResource:com.ibm.ws.management.discovery.DiscoveryMBean@ac965760
+    javax.management.modelmbean.RequiredModelMBean::registered:true
+    javax.management.modelmbean.RequiredModelMBean::server:com.sun.jmx.mbeanserver.JmxMBeanServer@dfa85269
+    javax.management.modelmbean.RequiredModelMBean::javaSecurityAccess:java.security.ProtectionDomain$JavaSecurityAccessImpl@70104003
+     javax.management.modelmbean.RequiredModelMBean::acc:java.security.AccessControlContext@359f4763 depth limit reached
+    javax.management.modelmbean.RequiredModelMBean::primitiveClasses:[Ljava.lang.Class;@e9471ef9
+    javax.management.modelmbean.RequiredModelMBean::primitiveClassMap:java.util.HashMap@ce890573
+    javax.management.modelmbean.RequiredModelMBean::rmmbMethodNames:java.util.HashSet@c5e17098
+    javax.management.modelmbean.RequiredModelMBean::primitiveTypes:[Ljava.lang.String;@cd0daf98
+    javax.management.modelmbean.RequiredModelMBean::primitiveWrappers:[Ljava.lang.String;@1fad3a89
+    END:javax.management.modelmbean.RequiredModelMBean@640ee45f
+
+   com.ibm.websphere.management.RuntimeCollaborator::mbeanName BEGIN:javax.management.ObjectName@5a34a10c
+    javax.management.ObjectName::oldSerialVersionUID:-5467795090068647408
+    javax.management.ObjectName::newSerialVersionUID:1081892073854801359
+    javax.management.ObjectName::oldSerialPersistentFields:[Ljava.io.ObjectStreamField;@9965a91d
+    javax.management.ObjectName::newSerialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503
+    javax.management.ObjectName::serialVersionUID:1081892073854801359
+    javax.management.ObjectName::serialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503
+    javax.management.ObjectName::compat:false
+    javax.management.ObjectName::_Empty_property_array:[Ljavax.management.ObjectName$Property;@72d2885c
+    javax.management.ObjectName::_canonicalName:WebSphere:cell=TWAS1Cell01,mbeanIdentifier=Discovery,name=Discovery,node=Node01,platform=common,process=nodeagent,spec=1.0,type=Discovery,version=8.5.5.28
+     javax.management.ObjectName::_kp_array:[Ljavax.management.ObjectName$Property;@aaf97bd depth limit reached
+     javax.management.ObjectName::_ca_array:[Ljavax.management.ObjectName$Property;@d2fa49bd depth limit reached
+    javax.management.ObjectName::_domain_length:9
+     javax.management.ObjectName::_propertyList:java.util.HashMap@d588d482 depth limit reached
+    javax.management.ObjectName::_domain_pattern:false
+    javax.management.ObjectName::_property_list_pattern:false
+    javax.management.ObjectName::_property_value_pattern:false
+    javax.management.ObjectName::WILDCARD:javax.management.ObjectName@a3b09e1d
+    END:javax.management.ObjectName@5a34a10c
+
+   com.ibm.ws.management.discovery.DiscoveryMBean::tc BEGIN:com.ibm.ejs.ras.TraceComponent@485a5520
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.discovery.DiscoveryMBean
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.management.resources.discovery
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@485a5520
+
+   com.ibm.ws.management.discovery.DiscoveryMBean::ntfySeqNum:0
+   com.ibm.ws.management.discovery.DiscoveryMBean::childType:ManagedProcess
+   com.ibm.ws.management.discovery.DiscoveryMBean::parentType:DeploymentManager
+   com.ibm.ws.management.discovery.DiscoveryMBean::myType:NodeAgent
+   com.ibm.ws.management.discovery.DiscoveryMBean::parent:null
+   com.ibm.ws.management.discovery.DiscoveryMBean::children BEGIN:java.util.ArrayList@448d37c
+    {
+    }
+    END:java.util.ArrayList@448d37c
+
+   END:com.ibm.ws.management.discovery.DiscoveryMBean@ac965760
+
+  BEGIN:com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+   com.ibm.websphere.management.RuntimeCollaborator::tc:com.ibm.ejs.ras.TraceComponent@5c30d340
+   com.ibm.websphere.management.RuntimeCollaborator::modelMBean BEGIN:javax.management.modelmbean.RequiredModelMBean@8c72ab8a
+     javax.management.modelmbean.RequiredModelMBean::modelMBeanInfo:javax.management.modelmbean.ModelMBeanInfoSupport@6e016172 depth limit reached
+     javax.management.modelmbean.RequiredModelMBean::generalBroadcaster:javax.management.NotificationBroadcasterSupport@94d6d3e6 depth limit reached
+    javax.management.modelmbean.RequiredModelMBean::attributeBroadcaster:null
+    javax.management.modelmbean.RequiredModelMBean::managedResource:com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+    javax.management.modelmbean.RequiredModelMBean::registered:true
+    javax.management.modelmbean.RequiredModelMBean::server:com.sun.jmx.mbeanserver.JmxMBeanServer@dfa85269
+    javax.management.modelmbean.RequiredModelMBean::javaSecurityAccess:java.security.ProtectionDomain$JavaSecurityAccessImpl@70104003
+     javax.management.modelmbean.RequiredModelMBean::acc:java.security.AccessControlContext@79c62ed8 depth limit reached
+    javax.management.modelmbean.RequiredModelMBean::primitiveClasses:[Ljava.lang.Class;@e9471ef9
+    javax.management.modelmbean.RequiredModelMBean::primitiveClassMap:java.util.HashMap@ce890573
+    javax.management.modelmbean.RequiredModelMBean::rmmbMethodNames:java.util.HashSet@c5e17098
+    javax.management.modelmbean.RequiredModelMBean::primitiveTypes:[Ljava.lang.String;@cd0daf98
+    javax.management.modelmbean.RequiredModelMBean::primitiveWrappers:[Ljava.lang.String;@1fad3a89
+    END:javax.management.modelmbean.RequiredModelMBean@8c72ab8a
+
+   com.ibm.websphere.management.RuntimeCollaborator::mbeanName BEGIN:javax.management.ObjectName@af8965cb
+    javax.management.ObjectName::oldSerialVersionUID:-5467795090068647408
+    javax.management.ObjectName::newSerialVersionUID:1081892073854801359
+    javax.management.ObjectName::oldSerialPersistentFields:[Ljava.io.ObjectStreamField;@9965a91d
+    javax.management.ObjectName::newSerialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503
+    javax.management.ObjectName::serialVersionUID:1081892073854801359
+    javax.management.ObjectName::serialPersistentFields:[Ljava.io.ObjectStreamField;@2ebba503
+    javax.management.ObjectName::compat:false
+    javax.management.ObjectName::_Empty_property_array:[Ljavax.management.ObjectName$Property;@72d2885c
+    javax.management.ObjectName::_canonicalName:WebSphere:cell=TWAS1Cell01,mbeanIdentifier=StatusCache,name=StatusCache,node=Node01,platform=common,process=nodeagent,spec=1.0,type=StatusCache,version=8.5.5.28
+     javax.management.ObjectName::_kp_array:[Ljavax.management.ObjectName$Property;@a4f49c11 depth limit reached
+     javax.management.ObjectName::_ca_array:[Ljavax.management.ObjectName$Property;@4ac3f022 depth limit reached
+    javax.management.ObjectName::_domain_length:9
+     javax.management.ObjectName::_propertyList:java.util.HashMap@1cd0e71e depth limit reached
+    javax.management.ObjectName::_domain_pattern:false
+    javax.management.ObjectName::_property_list_pattern:false
+    javax.management.ObjectName::_property_value_pattern:false
+    javax.management.ObjectName::WILDCARD:javax.management.ObjectName@a3b09e1d
+    END:javax.management.ObjectName@af8965cb
+
+   com.ibm.ws.management.status.AbstractStatusCache::CLASS_NAME:com.ibm.ws.management.status.AbstractStatusCache
+   com.ibm.ws.management.status.AbstractStatusCache::tc BEGIN:com.ibm.ejs.ras.TraceComponent@79458df6
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.status.AbstractStatusCache
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@79458df6
+
+   com.ibm.ws.management.status.AbstractStatusCache::resourceBundleName:com.ibm.ws.management.resources.event
+   com.ibm.ws.management.status.AbstractStatusCache::nls BEGIN:com.ibm.ejs.ras.TraceNLS@ced8e383
+     com.ibm.ejs.ras.TraceNLS::tc:com.ibm.ejs.ras.TraceComponent@7a5a1feb depth limit reached
+    com.ibm.ejs.ras.TraceNLS::nullKey:null Key
+    com.ibm.ejs.ras.TraceNLS::svNullBundleName:Resource Bundle name is null, key = {0}
+    com.ibm.ejs.ras.TraceNLS::svBundleNotLoaded:Unable to load ResourceBundle {0}
+    com.ibm.ejs.ras.TraceNLS::svNullKeyMessage:Null key passed while using ResourceBundle {0}
+    com.ibm.ejs.ras.TraceNLS::svMalformedMessage:No message text associated with key {0} in bundle {1}
+    com.ibm.ejs.ras.TraceNLS::sbConvertMessageIds:false
+    com.ibm.ejs.ras.TraceNLS::svMessageIdPropertyName:com.ibm.websphere.logging.messageId.version
+    com.ibm.ejs.ras.TraceNLS::finder:null
+    com.ibm.ejs.ras.TraceNLS::ivBundleName:com.ibm.ws.management.resources.event
+    END:com.ibm.ejs.ras.TraceNLS@ced8e383
+
+   com.ibm.ws.management.status.AbstractStatusCache::REPORT_TYPE:websphere.status.report
+   com.ibm.ws.management.status.AbstractStatusCache::_process_type:NodeAgent
+   com.ibm.ws.management.status.AbstractStatusCache::_cellName:TWAS1Cell01
+   com.ibm.ws.management.status.AbstractStatusCache::_nodeName:Node01
+   com.ibm.ws.management.status.AbstractStatusCache::_serverName:nodeagent
+   com.ibm.ws.management.status.AbstractStatusCache::_serverindexURI:null
+   com.ibm.ws.management.status.AbstractStatusCache::_servers BEGIN:java.util.Collections$SynchronizedSet@7b04bf6d
+    {
+    nodeagent
+    server1
+    }
+    END:java.util.Collections$SynchronizedSet@7b04bf6d
+
+   com.ibm.ws.management.status.AbstractStatusCache::_nodes:null
+   com.ibm.ws.management.status.AbstractStatusCache::_clusters BEGIN:java.util.Collections$SynchronizedSet@e4132029
+    {
+    test
+    }
+    END:java.util.Collections$SynchronizedSet@e4132029
+
+   com.ibm.ws.management.status.AbstractStatusCache::_activeServants:null
+   com.ibm.ws.management.status.AbstractStatusCache::_cluster_xml:null
+   com.ibm.ws.management.status.AbstractStatusCache::_serverIndexes BEGIN:java.util.Collections$SynchronizedMap@51d2e13f
+    {
+    key:Node01
+     value:com.ibm.ws.runtime.config.ConfigObjectImpl@21770088 depth limit reached
+    }
+    END:java.util.Collections$SynchronizedMap@51d2e13f
+
+   com.ibm.ws.management.status.AbstractStatusCache::_app_state:null
+   com.ibm.ws.management.status.AbstractStatusCache::_port_state BEGIN:java.util.Collections$SynchronizedMap@f0f3a32
+    {
+    }
+    END:java.util.Collections$SynchronizedMap@f0f3a32
+
+   com.ibm.ws.management.status.AbstractStatusCache::_app_deployments:null
+   com.ibm.ws.management.status.AbstractStatusCache::_static_repository BEGIN:com.ibm.ws.runtime.service.RepositoryImpl@146e7531
+     com.ibm.ws.runtime.service.RepositoryImpl::tc:com.ibm.ejs.ras.TraceComponent@1b8b0ef3 depth limit reached
+    com.ibm.ws.runtime.service.RepositoryImpl::root:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config
+    com.ibm.ws.runtime.service.RepositoryImpl::cell:TWAS1Cell01
+    com.ibm.ws.runtime.service.RepositoryImpl::node:Node01
+    com.ibm.ws.runtime.service.RepositoryImpl::cluster:null
+    com.ibm.ws.runtime.service.RepositoryImpl::server:nodeagent
+     com.ibm.ws.runtime.service.RepositoryImpl::sharedRoot:com.ibm.ws.runtime.service.ConfigRootImpl@97cd290c depth limit reached
+    com.ibm.ws.runtime.service.RepositoryImpl::isRegisteredAsService:true
+    END:com.ibm.ws.runtime.service.RepositoryImpl@146e7531
+
+   com.ibm.ws.management.status.AbstractStatusCache::_static_configService:null
+   com.ibm.ws.management.status.AbstractStatusCache::_repository:com.ibm.ws.runtime.service.RepositoryImpl@146e7531
+   com.ibm.ws.management.status.AbstractStatusCache::_configService BEGIN:com.ibm.ws.runtime.config.ConfigServiceImpl@471950fa
+     com.ibm.ws.runtime.config.ConfigServiceImpl::tc:com.ibm.ejs.ras.TraceComponent@f97d670 depth limit reached
+    com.ibm.ws.runtime.config.ConfigServiceImpl::repository:com.ibm.ws.runtime.service.RepositoryImpl@146e7531
+     com.ibm.ws.runtime.config.ConfigServiceImpl::scopes:[Lcom.ibm.wsspi.runtime.config.ConfigScope;@56bad384 depth limit reached
+     com.ibm.ws.runtime.config.ConfigServiceImpl::files:java.util.HashMap@9e1d8fc0 depth limit reached
+    END:com.ibm.ws.runtime.config.ConfigServiceImpl@471950fa
+
+   com.ibm.ws.management.status.AbstractStatusCache::_repositoryURI:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config
+   com.ibm.ws.management.status.AbstractStatusCache::_notif_num:0
+   com.ibm.ws.management.status.AbstractStatusCache::_servant_up:false
+   com.ibm.ws.management.status.AbstractStatusCache::_repository_init:false
+   com.ibm.ws.management.status.AbstractStatusCache::LOCAL_APP_LISTENER:0
+   com.ibm.ws.management.status.AbstractStatusCache::CONTROL_ADMIN_LISTENER:1
+   com.ibm.ws.management.status.AbstractStatusCache::NODE_AGENT_LISTENER:2
+   com.ibm.ws.management.status.AbstractStatusCache::STATUS_CACHE_LISTENER:3
+   com.ibm.ws.management.status.AbstractStatusCache::SERVER_LISTENER:4
+   com.ibm.ws.management.status.AbstractStatusCache::CLUSTER_LISTENER:5
+   com.ibm.ws.management.status.AbstractStatusCache::MESSAGE_PORT_LISTENER:6
+   com.ibm.ws.management.status.AbstractStatusCache::isDmgr:false
+   com.ibm.ws.management.status.AbstractStatusCache::isStandalone:false
+   com.ibm.ws.management.status.AbstractStatusCache::ABSTRACT_STATUS_CACHE_REPOSITORY:com.ibm.ws.management.status.AbstractStatusCache.Repository
+   com.ibm.ws.management.status.AbstractStatusCache::ABSTRACT_STATUS_CACHE_CONFIGSERVICE:com.ibm.ws.management.status.AbstractStatusCache.ConfigService
+   com.ibm.ws.management.status.AbstractStatusCache::originalUUID:null
+   com.ibm.ws.management.status.AbstractStatusCache::_statusCacheExtensionClasses BEGIN:[Ljava.lang.String;@80ea517b
+    [
+    com.ibm.ws.management.bla.runtime.NodeAgentStatusCacheExtension
+    com.ibm.ws.webservices.admin.status.NodeAgentStatusCacheExtension
+    ]
+    END:[Ljava.lang.String;@80ea517b
+
+   com.ibm.ws.management.status.AbstractStatusCache::_statusCacheExtensions BEGIN:[Lcom.ibm.ws.management.status.StatusCacheExtension;@6fdb2ee0
+    [
+     com.ibm.ws.management.bla.runtime.NodeAgentStatusCacheExtension@be8fe3a6 depth limit reached
+     com.ibm.ws.webservices.admin.status.NodeAgentStatusCacheExtension@cbb248f5 depth limit reached
+    ]
+    END:[Lcom.ibm.ws.management.status.StatusCacheExtension;@6fdb2ee0
+
+   com.ibm.ws.management.status.AbstractStatusCache::sendReportWithRefreshDispatcher BEGIN:com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher@cc794a30
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::refreshThread:null
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::refresh:true
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::hasWork:false
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::this$0:com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+    END:com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher@cc794a30
+
+   com.ibm.ws.management.status.AbstractStatusCache::sendReportNoRefreshDispatcher BEGIN:com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher@62d3792
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::refreshThread:null
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::refresh:false
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::hasWork:false
+    com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher::this$0:com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+    END:com.ibm.ws.management.status.AbstractStatusCache$StatusCacheRefreshThreadDispatcher@62d3792
+
+   com.ibm.ws.management.status.NodeAgentStatusCache::tc BEGIN:com.ibm.ejs.ras.TraceComponent@3ae4f16
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.status.NodeAgentStatusCache
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@3ae4f16
+
+   com.ibm.ws.management.status.NodeAgentStatusCache::CLASS_NAME:com.ibm.ws.management.status.NodeAgentStatusCache
+   com.ibm.ws.management.status.NodeAgentStatusCache::DMZ_PRODUCT_SHORT_NAME:NDDMZ
+   com.ibm.ws.management.status.NodeAgentStatusCache::BLA_CACHE_EXTENSION:com.ibm.ws.management.bla.runtime.NodeAgentStatusCacheExtension
+   com.ibm.ws.management.status.NodeAgentStatusCache::WEB_CACHE_EXTENSION:com.ibm.ws.webservices.admin.status.NodeAgentStatusCacheExtension
+   com.ibm.ws.management.status.NodeAgentStatusCache::server_state BEGIN:java.util.Collections$SynchronizedMap@c05b042c
+    {
+    key:nodeagent
+    value:j2ee.state.stopped
+    key:server1
+    value:j2ee.state.stopped
+    }
+    END:java.util.Collections$SynchronizedMap@c05b042c
+
+   com.ibm.ws.management.status.NodeAgentStatusCache::server_reports BEGIN:java.util.Collections$SynchronizedMap@949c387c
+    {
+    }
+    END:java.util.Collections$SynchronizedMap@949c387c
+
+   com.ibm.ws.management.status.NodeAgentStatusCache::server_reports_last_receipt_times BEGIN:java.util.Collections$SynchronizedMap@a632930e
+    {
+    }
+    END:java.util.Collections$SynchronizedMap@a632930e
+
+   com.ibm.ws.management.status.NodeAgentStatusCache::parent_ac:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::parentNodeName:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::parentProcessName:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::parentStatusCache:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::currentReport:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::securityService:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::sctt:null
+   com.ibm.ws.management.status.NodeAgentStatusCache::sctt2:null
+   END:com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+
+  BEGIN:com.ibm.ws.management.metadata.NodeAgentCollector@7c9c8250
+   com.ibm.ws.management.metadata.NodeAgentCollector::_tc BEGIN:com.ibm.ejs.ras.TraceComponent@c0cafe2b
+    com.ibm.ejs.ras.TraceElement::ivLevel:10
+    com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.management.metadata.NodeAgentCollector
+    com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+    com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+    com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+    com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+    com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+    com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ejs.resources.seriousMessages
+    com.ibm.ejs.ras.TraceComponent::ivLogger:null
+    com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+    com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+    END:com.ibm.ejs.ras.TraceComponent@c0cafe2b
+
+   com.ibm.ws.management.metadata.NodeAgentCollector::_metadataSentToDmgr:false
+   END:com.ibm.ws.management.metadata.NodeAgentCollector@7c9c8250
+
+  }
+  END:java.util.ArrayList@c053388b
+
+ com.ibm.ws.management.RoutingTable::listenerArray BEGIN:[Lcom.ibm.ws.management.RoutingListener;@5463e24e
+  [
+  com.ibm.ws.management.sync.NodeSync@33c80f8
+  com.ibm.ws.management.event.ProcessListener@be406478
+  com.ibm.ws.management.discovery.DiscoveryMBean@ac965760
+  com.ibm.ws.management.status.NodeAgentStatusCache@33f4a113
+  com.ibm.ws.management.metadata.NodeAgentCollector@7c9c8250
+  ]
+  END:[Lcom.ibm.ws.management.RoutingListener;@5463e24e
+
+ com.ibm.ws.management.RoutingTable::parent:null
+ com.ibm.ws.management.RoutingTable::parentStateMachine BEGIN:com.ibm.ws.management.RoutingTable$StateMachine@5c01afe2
+  com.ibm.ws.management.RoutingTable$StateMachine::INIT_STATE:0
+  com.ibm.ws.management.RoutingTable$StateMachine::MONITOR_STATE:1
+  com.ibm.ws.management.RoutingTable$StateMachine::RECOVERY_STATE:2
+  com.ibm.ws.management.RoutingTable$StateMachine::DISCOVERY_EVENT:0
+  com.ibm.ws.management.RoutingTable$StateMachine::REACHABLE_EVENT:1
+  com.ibm.ws.management.RoutingTable$StateMachine::NOT_REACHABLE_EVENT:2
+  com.ibm.ws.management.RoutingTable$StateMachine::RESET_EVENT:3
+  com.ibm.ws.management.RoutingTable$StateMachine::nodeState:0
+  com.ibm.ws.management.RoutingTable$StateMachine::nodeAccessor:null
+  com.ibm.ws.management.RoutingTable$StateMachine::this$0:com.ibm.ws.management.RoutingTable@88d2ccf7
+  END:com.ibm.ws.management.RoutingTable$StateMachine@5c01afe2
+
+ com.ibm.ws.management.RoutingTable::parentStateMachineCallback BEGIN:com.ibm.ws.management.RoutingTable$ParentStateMachineCallback@93be9796
+  com.ibm.ws.management.RoutingTable$ParentStateMachineCallback::p:null
+  com.ibm.ws.management.RoutingTable$ParentStateMachineCallback::this$0:com.ibm.ws.management.RoutingTable@88d2ccf7
+  END:com.ibm.ws.management.RoutingTable$ParentStateMachineCallback@93be9796
+
+ com.ibm.ws.management.RoutingTable::childStateMachineCallback BEGIN:com.ibm.ws.management.RoutingTable$ChildStateMachineCallback@6d5f484c
+  com.ibm.ws.management.RoutingTable$ChildStateMachineCallback::p:null
+  com.ibm.ws.management.RoutingTable$ChildStateMachineCallback::this$0:com.ibm.ws.management.RoutingTable@88d2ccf7
+  END:com.ibm.ws.management.RoutingTable$ChildStateMachineCallback@6d5f484c
+
+ com.ibm.ws.management.RoutingTable::numMonitorThreads:0
+ com.ibm.ws.management.RoutingTable::nodeAgentListenerAdded:false
+ com.ibm.ws.management.RoutingTable::ownInfo:com.ibm.ws.management.discovery.ServerInfo@f4b230ed
+ com.ibm.ws.management.RoutingTable::agentPingThreads BEGIN:java.util.HashMap@34168a52
+  {
+  }
+  END:java.util.HashMap@34168a52
+
+ com.ibm.ws.management.RoutingTable::myXCFGroupMembers BEGIN:java.util.HashMap@fa314191
+  {
+  }
+  END:java.util.HashMap@fa314191
+
+ com.ibm.ws.management.RoutingTable::xcfMonitor_Enabled:false
+ com.ibm.ws.management.RoutingTable::myXCFHostCellNode:null
+ com.ibm.ws.management.RoutingTable::isCellRegistered:false
+ com.ibm.ws.management.RoutingTable::eventNames BEGIN:[Ljava.lang.String;@8a2adcf9
+  [
+  DISCOVERY_EVENT
+  REACHABLE_EVENT
+  NOT_REACHABLE_EVENT
+  RESET_EVENT
+  ]
+  END:[Ljava.lang.String;@8a2adcf9
+
+ com.ibm.ws.management.RoutingTable::stateNames BEGIN:[Ljava.lang.String;@8c83822b
+  [
+  INIT_STATE
+  MONITOR_STATE
+  RECOVERY_STATE
+  ]
+  END:[Ljava.lang.String;@8c83822b
+
+ END:com.ibm.ws.management.RoutingTable@88d2ccf7
+
+END:com.ibm.ws.management.RoutingTable$Accessor@e27db9c3
+
+IntrospectDepth reset to:3
++Data for directive [defaultjmx] obtained.:
+==> Dump complete for com.ibm.ws.management.dm.JmxDM :Thu May 14 08:28:34 PDT 2026

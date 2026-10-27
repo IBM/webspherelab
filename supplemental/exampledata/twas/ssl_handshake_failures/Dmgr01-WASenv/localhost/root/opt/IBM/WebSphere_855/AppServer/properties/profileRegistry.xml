@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><profiles>
+    <profile isAReservationTicket="false" isDefault="true" name="Dmgr01" path="/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01" template="/opt/IBM/WebSphere_855/AppServer/profileTemplates/cell/dmgr"/>
+    <profile isAReservationTicket="false" isDefault="false" name="AppSrv01" path="/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01" template="/opt/IBM/WebSphere_855/AppServer/profileTemplates/managed"/>
+</profiles>

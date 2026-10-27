@@ -1,0 +1,296 @@
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 359825
+Full server name is TWAS1Cell01\Node01\server1-359825
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 360202
+Full server name is TWAS1Cell01\Node01\server1-360202
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:27:36 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092736.360202.0001.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092736.360202.0001.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:27:36 (0.150 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:28:06 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092806.360202.0002.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092806.360202.0002.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:28:06 (0.091 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:28:37 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092837.360202.0003.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092837.360202.0003.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:28:37 (0.133 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:29:07 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092907.360202.0004.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092907.360202.0004.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:29:07 (0.141 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:29:37 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092937.360202.0005.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.092937.360202.0005.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:29:37 (0.130 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:30:07 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093007.360202.0006.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093007.360202.0006.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:30:08 (0.102 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:30:38 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093038.360202.0007.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093038.360202.0007.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:30:38 (0.083 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:31:08 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093108.360202.0008.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093108.360202.0008.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:31:08 (0.122 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:31:38 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093138.360202.0009.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093138.360202.0009.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:31:38 (0.141 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:34:01 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093401.360202.0010.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093401.360202.0010.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:34:01 (0.131 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:34:41 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093441.360202.0011.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093441.360202.0011.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:34:43 (1.625 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:35:16 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093516.360202.0012.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093516.360202.0012.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:35:17 (1.019 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:35:54 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093554.360202.0013.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093554.360202.0013.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:35:56 (2.046 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:36:31 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093631.360202.0014.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093631.360202.0014.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:36:33 (2.081 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:37:09 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093709.360202.0015.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093709.360202.0015.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:37:11 (1.282 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:37:43 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093743.360202.0016.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093743.360202.0016.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:37:43 (0.403 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:38:20 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093820.360202.0017.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093820.360202.0017.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:38:22 (2.243 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/09 09:38:51 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093851.360202.0018.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260409.093851.360202.0018.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/09 09:38:52 (0.119 seconds).
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260411.072757.360202.0019.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260411.072757.360202.0019.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 113917
+Full server name is TWAS1Cell01\Node01\server1-113917
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:54:50 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065450.113917.0001.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065450.113917.0001.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:54:50 (0.171 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:55:20 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065520.113917.0002.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065520.113917.0002.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:55:21 (0.158 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:55:51 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065551.113917.0003.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065551.113917.0003.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:55:51 (0.132 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:56:21 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065621.113917.0004.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065621.113917.0004.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:56:21 (0.136 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:56:51 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065651.113917.0005.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065651.113917.0005.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:56:51 (0.154 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:57:22 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065722.113917.0006.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065722.113917.0006.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:57:22 (0.118 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:57:52 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065752.113917.0007.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065752.113917.0007.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:57:52 (0.149 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:58:22 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065822.113917.0008.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065822.113917.0008.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:58:22 (0.113 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 06:58:52 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065852.113917.0009.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.065852.113917.0009.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 06:58:52 (0.145 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:01:57 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070157.113917.0010.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070157.113917.0010.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:01:57 (0.174 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:02:30 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070230.113917.0011.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070230.113917.0011.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:02:30 (0.473 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:03:01 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070301.113917.0012.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070301.113917.0012.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:03:01 (0.299 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:03:31 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070331.113917.0013.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070331.113917.0013.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:03:32 (0.231 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:04:03 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070403.113917.0014.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070403.113917.0014.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:04:04 (0.577 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:04:34 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070434.113917.0015.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070434.113917.0015.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:04:34 (0.320 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:05:06 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070506.113917.0016.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070506.113917.0016.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:05:06 (0.401 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:05:38 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070538.113917.0017.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070538.113917.0017.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:05:38 (0.697 seconds).
+JVMDUMP039I Processing dump event "user", detail "" at 2026/04/28 07:06:10 - please wait.
+JVMDUMP032I JVM requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070610.113917.0018.txt' in response to an event
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260428.070610.113917.0018.txt
+JVMDUMP056I Processed dump event "user", detail "" at 2026/04/28 07:06:10 (0.323 seconds).
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 1248366
+Full server name is TWAS1Cell01\Node01\server1-1248366
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260509.120518.1248366.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260509.120518.1248366.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 261837
+Full server name is TWAS1Cell01\Node01\server1-261837
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 340125
+Full server name is TWAS1Cell01\Node01\server1-340125
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260516.042537.340125.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260516.042537.340125.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 377581
+Full server name is TWAS1Cell01\Node01\server1-377581
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMDUMP034I User requested Java dump using '/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260905.070027.377581.0001.txt' through com.ibm.jvm.Dump.JavaDump
+JVMDUMP010I Java dump written to /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/javacore.20260905.070027.377581.0001.txt
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/local/bin/core-compress %p %e %t" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 416891
+Full server name is TWAS1Cell01\Node01\server1-416891
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+JVMJ9VM135W /proc/sys/kernel/core_pattern setting "|/usr/local/bin/core-compress %p %e %t" specifies that core dumps are to be piped to an external program. The JVM may be unable to locate core dumps and rename them.
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 417406
+Full server name is TWAS1Cell01\Node01\server1-417406
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************

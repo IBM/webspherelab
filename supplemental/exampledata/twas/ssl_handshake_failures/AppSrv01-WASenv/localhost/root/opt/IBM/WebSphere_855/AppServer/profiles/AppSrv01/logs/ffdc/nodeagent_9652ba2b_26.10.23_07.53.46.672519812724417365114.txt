@@ -1,0 +1,12 @@
+[10/23/26 7:53:46:673 PDT]     FFDC Exception:java.lang.NullPointerException SourceId:com.ibm.ws.xd.pmi.async.server.PmiPost.doPost ProbeId:1737 Reporter:java.lang.Class@7b7d569d
+java.lang.NullPointerException
+	at com.ibm.ws.xd.pmi.access.AgentPmiAccess.applyStatsOverrides(AgentPmiAccess.java:379)
+	at com.ibm.ws.xd.pmi.access.AgentPmiAccess.applyStatsOverrides(AgentPmiAccess.java:359)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.doPost(Publisher.java:2417)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.doPost(Publisher.java:2592)
+	at com.ibm.ws.xd.pmi.async.server.PmiPost.alarm(Publisher.java:2354)
+	at com.ibm.ejs.util.am._Alarm.runImpl(_Alarm.java:151)
+	at com.ibm.ejs.util.am._Alarm.run(_Alarm.java:136)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+Reporter:class com.ibm.ws.xd.pmi.access.AgentPmiAccess

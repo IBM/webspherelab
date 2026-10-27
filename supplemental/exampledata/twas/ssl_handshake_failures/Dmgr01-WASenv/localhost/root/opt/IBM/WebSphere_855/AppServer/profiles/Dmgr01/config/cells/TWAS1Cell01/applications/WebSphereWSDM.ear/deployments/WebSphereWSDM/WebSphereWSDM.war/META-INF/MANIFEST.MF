@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: pxi3260sr11ifx-20120808_01 (SR11) (IBM Corporation)
+Specification-Title: admin.wsdm
+Specification-Version: 1.1
+Specification-Vendor: IBM Corp.
+Implementation-Title: admin.wsdm
+Implementation-Version: WAS855.SERV1 [gm1318.04]
+Implementation-Vendor: IBM Corp.
+UseWSFEP61ScanPolicy: true
+Class-Path: /blddir/WAS855.SERV1/SERV1/ws/code/admin.wsdm/src/WebSpher
+ eWSDM.ear/WebSphereWSDM/WEB-INF/lib
+

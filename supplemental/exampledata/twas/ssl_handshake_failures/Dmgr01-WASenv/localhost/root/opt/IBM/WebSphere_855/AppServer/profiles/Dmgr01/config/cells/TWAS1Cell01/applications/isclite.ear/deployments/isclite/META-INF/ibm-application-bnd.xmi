@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.bindings.applicationbnd="applicationbnd.xmi" xmi:id="Application_ID_Bnd" appName="isclite">
+  <authorizationTable xmi:id="AuthorizationTable_1">
+    <authorizations xmi:id="RoleAssignment_1">
+      <specialSubjects xmi:type="com.ibm.ejs.models.base.bindings.applicationbnd:Server" xmi:id="Server_1767631522188" name="Server"/>
+      <role href="META-INF/application.xml#SecurityRole_1"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_2">
+      <role href="META-INF/application.xml#SecurityRole_2"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_3">
+      <role href="META-INF/application.xml#SecurityRole_3"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_4">
+      <role href="META-INF/application.xml#SecurityRole_4"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1767631522188">
+      <role href="META-INF/application.xml#SecurityRole_1767631522188"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_1767631522188"/>
+</com.ibm.ejs.models.base.bindings.applicationbnd:ApplicationBinding>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="http://docs.oasis-open.org/mows-2/capabilities/OperationalStatus" 
+    xmlns:oprss="http://docs.oasis-open.org/mows-2/capabilities/OperationalStatus" 
+
+	xmlns:muws2="http://docs.oasis-open.org/wsdm/muws2-2.xsd"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+
+	xmlns:wsa="http://www.w3.org/2005/08/addressing"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xsd:element name="OperationalStatus" type="xsd:string" />
+</schema>

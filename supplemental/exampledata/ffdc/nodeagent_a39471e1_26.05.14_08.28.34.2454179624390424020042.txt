@@ -1,0 +1,54 @@
+[5/14/26 8:28:34:245 PDT]     FFDC Exception:java.io.IOException SourceId:com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect ProbeId:179 Reporter:com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient@5a1d7298
+java.io.IOException: Connector not available: Error during resolve
+	at com.ibm.websphere.management.remote.WsProvider.newJMXConnector(WsProvider.java:155)
+	at javax.management.remote.JMXConnectorFactory.newJMXConnector(JMXConnectorFactory.java:382)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:280)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:288)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect(JSR160RMIConnectorClient.java:182)
+	at com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.<init>(JSR160RMIConnectorClient.java:172)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:826)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1115)
+	at com.ibm.ws.management.RoutingTable$Accessor.getConnector(RoutingTable.java:1255)
+	at com.ibm.ws.management.RoutingTable$Accessor.resetSession(RoutingTable.java:1277)
+	at com.ibm.ws.management.RoutingTable.addParent(RoutingTable.java:680)
+	at com.ibm.ws.management.discovery.NADiscoveryAdapter.updateRoutingTable(NADiscoveryAdapter.java:65)
+	at com.ibm.ws.management.discovery.DiscoveryAdapter.event(DiscoveryAdapter.java:273)
+	at com.ibm.ws.management.discovery.DiscoveryService.pushResponse(DiscoveryService.java:392)
+	at com.ibm.ws.management.discovery.DiscoveryService.demux(DiscoveryService.java:533)
+	at com.ibm.ws.management.discovery.Endpoint.demux(Endpoint.java:196)
+	at com.ibm.ws.management.discovery.transport.TcpConnection.run(TcpConnection.java:193)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+
+==> Performing default dump from com.ibm.ws.management.dm.ConnectorDM :Thu May 14 08:28:34 PDT 2026
+IntrospectDepth set from:3 to: 5
+Dump of callerThis BEGIN:com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient@5a1d7298
+com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient:Begin
+Properties_proxyProps:BEGIN
+port:9809
+securityEnabled:true
+type:JSR160RMI
+host:localhost
+isInternal:true
+Properties_proxyProps:END
+JNDI_PATH:/jndi/JMXConnector
+targetCertificate:null
+savedSubject:null
+jndiPath:/jndi/JMXConnector
+type:JSR160RMI
+mbsc:null
+online:false
+AdminServiceON:null
+com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient:End
+END:com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient@5a1d7298
+
+IntrospectDepth reset to:3
++Data for directive [defaultconnector] obtained.:
+==> Dump complete for com.ibm.ws.management.dm.ConnectorDM :Thu May 14 08:28:34 PDT 2026

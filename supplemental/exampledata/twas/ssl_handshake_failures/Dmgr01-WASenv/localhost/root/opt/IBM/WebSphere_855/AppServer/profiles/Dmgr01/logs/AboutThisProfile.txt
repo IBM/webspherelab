@@ -1,0 +1,15 @@
+Application server environment to create: Cell Deployment manager
+Location: /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01
+Disk space required: 30 MB
+Profile name: Dmgr01
+Make this profile the default: True
+Cell name: TWAS1Cell01
+Node name: TWAS1CellManager01
+Host name: localhost
+Enable administrative security (recommended): True
+Administrative console port: 9060
+Administrative console secure port: 9043
+Bootstrap port: 9809
+SOAP connector port: 8879
+Run deployment manager as a service: False
+Create a Web server definition: False

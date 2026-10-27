@@ -1,0 +1,7 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+ADMA5016I: Installation of ManagementEJB started.
+ADMA5005I: The application ManagementEJB is configured in the WebSphere Application Server repository.
+ADMA5005I: The application ManagementEJB is configured in the WebSphere Application Server repository.
+ADMA5011I: The cleanup of the temp directory for application ManagementEJB is complete.
+ADMA5013I: Application ManagementEJB installed successfully.
+

@@ -1,0 +1,23 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+Creating WASCE/Geronimo variables ... 
+Variable GERONIMO_HOME created.
+WASCE/Geronimo variable creation completed.
+Creating JBoss variables ... 
+Variable JBOSS_HOME created.
+JBoss variable creation completed.
+Creating TomCat variables ... 
+Variable CATALINA_HOME created.
+TomCat variable creation completed.
+Creating WebLogic variables ... 
+Variable WEBLOGIC_ADMINHOST created.
+Variable WEBLOGIC_ADMINPORT created.
+Variable WEBLOGIC_ADMINPROTOCOL created.
+Variable WEBLOGIC_ADMINURL created.
+Variable WEBLOGIC_SERVERROOT created.
+Variable WEBLOGIC_HOME created.
+Variable WEBLOGIC_DOMAINNAME created.
+Variable WEBLOGIC_DOMAINDIR created.
+Variable BEA_HOME created.
+WebLogic variable creation completed.
+Saving variables
+variable creation successful.

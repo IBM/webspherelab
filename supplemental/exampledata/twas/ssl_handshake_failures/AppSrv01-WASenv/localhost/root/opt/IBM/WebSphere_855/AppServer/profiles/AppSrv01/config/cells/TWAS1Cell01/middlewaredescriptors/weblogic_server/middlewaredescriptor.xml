@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<middlewaredescriptors:MiddlewareDescriptor xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:middlewaredescriptors="http://www.ibm.com/websphere/appserver/schemas/6.1/middlewaredescriptors.xmi" xmi:id="MiddlewareDescriptor_1767631627279" name="weblogic_server" discoveryInterval="4" discoveryIntervalUnits="2">
+  <versionDescriptors xmi:id="MiddlewareVersionDescriptor_1767631627282" version="default">
+    <versionDescriptor xmi:id="DescriptivePropertyGroup_1767631627285" name="versionDescriptor">
+      <propertyGroups xmi:id="DescriptivePropertyGroup_1767631627289" name="sessionAffinityDescriptor">
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627295" name="learnCloneIds" value="true" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627300" displayNameKey="learnCloneIds" firstClass="true" hoverHelpKey="learnCloneIds.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627303" name="cookieNames" value="WSJSESSIONID,JSESSIONID,SSLJSESSIONID" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627307" displayNameKey="cookieNames" firstClass="true" hoverHelpKey="cookieNames.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627311" name="urlRewriteNames" value="jsessionid" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627315" displayNameKey="urlRewriteNames" firstClass="true" hoverHelpKey="urlRewriteNames.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627319" name="cloneIdSeparator" value="!" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627320" displayNameKey="cloneIdSeparator" firstClass="true" hoverHelpKey="cloneIdSeparator.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627324" name="altCloneIdSeparator" value="" required="false" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627328" displayNameKey="altCloneIdSeparator" firstClass="true" hoverHelpKey="altCloneIdSeparator.help"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627332" name="affinityMode" value="passive" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627336" displayNameKey="affinityMode" firstClass="true" hoverHelpKey="affinityMode.help"/>
+        </properties>
+        <descriptor xmi:id="DisplayDescriptor_1767631627293" displayNameKey="sessionAffinityDescriptor" firstClass="true" hoverHelpKey="sessionAffinityDescriptor.help"/>
+      </propertyGroups>
+      <propertyGroups xmi:id="DescriptivePropertyGroup_1767631627340" name="timeOutGroup">
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627348" name="startTimeOutValue" value="300000" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627353" displayNameKey="startTimeOutValue" firstClass="true" hoverHelpKey="startTimeOutValue.desc"/>
+        </properties>
+        <properties xmi:id="DiscoverableDescriptiveProperty_1767631627357" name="stopTimeOutValue" value="300000" required="true" type="String" range="" inclusive="false">
+          <descriptor xmi:id="DisplayDescriptor_1767631627361" displayNameKey="stopTimeOutValue" firstClass="true" hoverHelpKey="stopTimeOutValue.desc"/>
+        </properties>
+        <descriptor xmi:id="DisplayDescriptor_1767631627344" displayNameKey="timeOutGroup" displayDescriptionKey="timeOutGroup.desc" firstClass="true"/>
+      </propertyGroups>
+    </versionDescriptor>
+  </versionDescriptors>
+</middlewaredescriptors:MiddlewareDescriptor>

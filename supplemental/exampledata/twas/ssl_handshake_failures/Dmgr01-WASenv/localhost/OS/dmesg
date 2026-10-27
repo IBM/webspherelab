@@ -1,0 +1,763 @@
+---------------------------------------------------------
+dmesg - did not find the command in PATH
+---------------------------------------------------------
+Execute: /bin/dmesg
+[    0.000000] Linux version 4.18.0-553.174.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-29) (GCC)) #1 SMP Wed Oct 14 02:16:12 EDT 2026
+[    0.000000] Command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-553.174.1.el8_10.x86_64 root=/dev/mapper/rhel-root ro crashkernel=auto resume=/dev/mapper/rhel-swap rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap rhgb quiet net.ifnames=0 biosdevname=0
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] signal: max sigframe size: 1776
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdafff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bffdb000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000043fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: QEMU Ubuntu 24.04 PC (i440FX + PIIX, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 4096133694249029 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] tsc: Detected 2199.984 MHz processor
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] last_pfn = 0x440000 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: write-back
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 00C0000000 mask FFC0000000 uncachable
+[    0.000000]   1 disabled
+[    0.000000]   2 disabled
+[    0.000000]   3 disabled
+[    0.000000]   4 disabled
+[    0.000000]   5 disabled
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000000] last_pfn = 0xbffdb max_arch_pfn = 0x400000000
+[    0.000000] found SMP MP-table at [mem 0x000f53c0-0x000f53cf]
+[    0.000000] Using GB pages for direct mapping
+[    0.000000] BRK [0x6e201000, 0x6e201fff] PGTABLE
+[    0.000000] BRK [0x6e202000, 0x6e202fff] PGTABLE
+[    0.000000] BRK [0x6e203000, 0x6e203fff] PGTABLE
+[    0.000000] BRK [0x6e204000, 0x6e204fff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x338fc000-0x35c75fff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F5380 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x00000000BFFE1AE6 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x00000000BFFE1962 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BFFDFC40 001D22 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 0x00000000BFFDFC00 000040
+[    0.000000] ACPI: APIC 0x00000000BFFE19D6 0000B0 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 0x00000000BFFE1A86 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: WAET 0x00000000BFFE1ABE 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: Reserving FACP table memory at [mem 0xbffe1962-0xbffe19d5]
+[    0.000000] ACPI: Reserving DSDT table memory at [mem 0xbffdfc40-0xbffe1961]
+[    0.000000] ACPI: Reserving FACS table memory at [mem 0xbffdfc00-0xbffdfc3f]
+[    0.000000] ACPI: Reserving APIC table memory at [mem 0xbffe19d6-0xbffe1a85]
+[    0.000000] ACPI: Reserving HPET table memory at [mem 0xbffe1a86-0xbffe1abd]
+[    0.000000] ACPI: Reserving WAET table memory at [mem 0xbffe1abe-0xbffe1ae5]
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000043fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x43ffd3000-0x43fffdfff]
+[    0.000000] Using crashkernel=auto, the size chosen is a best effort estimation.
+[    0.000000] Reserving 256MB of memory at 2800MB for crashkernel (System RAM: 16383MB)
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000043fffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bffdafff]
+[    0.000000]   node   0: [mem 0x0000000100000000-0x000000043fffffff]
+[    0.000000] Zeroed struct page in unavailable ranges: 135 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000043fffffff]
+[    0.000000] On node 0 totalpages: 4194169
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 158 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 12224 pages used for memmap
+[    0.000000]   DMA32 zone: 782299 pages, LIFO batch:63
+[    0.000000]   Normal zone: 53248 pages used for memmap
+[    0.000000]   Normal zone: 3407872 pages, LIFO batch:63
+[    0.000000] ACPI: PM-Timer IO Port: 0x608
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ5 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] ACPI: IRQ10 used by override.
+[    0.000000] ACPI: IRQ11 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] TSC deadline timer available
+[    0.000000] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbffdb000-0xbfffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    0.000000] [mem 0xc0000000-0xfeffbfff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.000000] percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+[    0.000000] pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.000000] kvm-guest: PV spinlocks disabled, no host support
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 4128475
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-553.174.1.el8_10.x86_64 root=/dev/mapper/rhel-root ro crashkernel=auto resume=/dev/mapper/rhel-swap rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap rhgb quiet net.ifnames=0 biosdevname=0
+[    0.000000] Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://catalog.redhat.com.
+[    0.000000] software IO TLB: area num 8.
+[    0.000000] Memory: 2858320K/16776676K available (14339K kernel code, 5959K rwdata, 8584K rodata, 2820K init, 13784K bss, 683188K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] Kernel/User page tables isolation: enabled
+[    0.000000] ftrace: allocating 41139 entries in 161 pages
+[    0.000000] ftrace: allocated 161 pages with 3 groups
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] NR_IRQS: 524544, nr_irqs: 488, preallocated irqs: 16
+[    0.000000] random: crng done (trusting CPU's manufacturer)
+[    0.001000] Console: colour VGA+ 80x25
+[    0.001000] printk: console [tty0] enabled
+[    0.001000] ACPI: Core revision 20220331
+[    0.001000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.001000] hpet clockevent registered
+[    0.001004] APIC: Switch to symmetric I/O mode setup
+[    0.001336] x2apic enabled
+[    0.001712] Switched APIC routing to physical x2apic.
+[    0.003184] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.003220] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb623c7bdc, max_idle_ns: 440795310953 ns
+[    0.003224] Calibrating delay loop (skipped) preset value.. 4399.96 BogoMIPS (lpj=2199984)
+[    0.003227] pid_max: default: 32768 minimum: 301
+[    0.003287] LSM: Security Framework initializing
+[    0.003307] Yama: becoming mindful.
+[    0.003313] SELinux:  Initializing.
+[    0.003371] LSM support for eBPF active
+[    0.006535] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, vmalloc)
+[    0.007920] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, vmalloc)
+[    0.008001] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, vmalloc)
+[    0.008045] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, vmalloc)
+[    0.008576] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.008649] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.008651] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.008660] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.008663] Spectre V2 : Mitigation: Retpolines
+[    0.008664] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.008665] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.008666] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.008668] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.008670] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.008672] MDS: Mitigation: Clear CPU buffers
+[    0.008673] TAA: Mitigation: Clear CPU buffers
+[    0.008673] MMIO Stale Data: Unknown: No mitigations
+[    0.008674] SRBDS: Unknown: Dependent on hypervisor status
+[    0.023540] Freeing SMP alternatives memory: 36K
+[    0.023938] smpboot: CPU0: Intel Core Processor (Broadwell, IBRS) (family: 0x6, model: 0x3d, stepping: 0x2)
+[    0.024000] Performance Events: unsupported p6 CPU model 61 no PMU driver, software events only.
+[    0.024000] rcu: Hierarchical SRCU implementation.
+[    0.024403] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.024957] smp: Bringing up secondary CPUs ...
+[    0.025388] x86: Booting SMP configuration:
+[    0.025389] .... node  #0, CPUs:      #1
+[    0.001000] smpboot: CPU 1 Converting physical 0 to logical die 1
+[    0.026473]  #2
+[    0.001000] smpboot: CPU 2 Converting physical 0 to logical die 2
+[    0.028460]  #3
+[    0.001000] smpboot: CPU 3 Converting physical 0 to logical die 3
+[    0.030448]  #4
+[    0.001000] smpboot: CPU 4 Converting physical 0 to logical die 4
+[    0.032452]  #5
+[    0.001000] smpboot: CPU 5 Converting physical 0 to logical die 5
+[    0.034434]  #6
+[    0.001000] smpboot: CPU 6 Converting physical 0 to logical die 6
+[    0.036429]  #7
+[    0.001000] smpboot: CPU 7 Converting physical 0 to logical die 7
+[    0.038057] smp: Brought up 1 node, 8 CPUs
+[    0.038057] smpboot: Max logical packages: 8
+[    0.038057] smpboot: Total of 8 processors activated (35199.74 BogoMIPS)
+[    0.075055] node 0 deferred pages initialised in 36ms
+[    0.076284] devtmpfs: initialized
+[    0.076284] x86/mm: Memory block size: 128MB
+[    0.079122] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.079140] futex hash table entries: 2048 (order: 5, 131072 bytes, vmalloc)
+[    0.079292] pinctrl core: initialized pinctrl subsystem
+[    0.079714] NET: Registered protocol family 16
+[    0.080127] DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+[    0.080140] DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.080151] DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.080169] audit: initializing netlink subsys (disabled)
+[    0.080180] audit: type=2000 audit(1792282212.895:1): state=initialized audit_enabled=0 res=1
+[    0.080183] cpuidle: using governor menu
+[    0.080481] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.081144] PCI: Using configuration type 1 for base access
+[    0.084016] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.084020] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.084180] cryptd: max_cpu_qlen set to 1000
+[    0.085115] ACPI: Added _OSI(Module Device)
+[    0.085115] ACPI: Added _OSI(Processor Device)
+[    0.085115] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.085115] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.086674] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.088434] ACPI: Interpreter enabled
+[    0.088458] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.088461] ACPI: Using IOAPIC for interrupt routing
+[    0.089184] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.089482] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.096520] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.096533] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.096538] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.096555] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.097771] acpiphp: Slot [3] registered
+[    0.097899] acpiphp: Slot [4] registered
+[    0.097984] acpiphp: Slot [5] registered
+[    0.098033] acpiphp: Slot [6] registered
+[    0.098116] acpiphp: Slot [7] registered
+[    0.098196] acpiphp: Slot [8] registered
+[    0.098301] acpiphp: Slot [9] registered
+[    0.098414] acpiphp: Slot [10] registered
+[    0.098496] acpiphp: Slot [11] registered
+[    0.098576] acpiphp: Slot [12] registered
+[    0.098655] acpiphp: Slot [13] registered
+[    0.098734] acpiphp: Slot [14] registered
+[    0.098817] acpiphp: Slot [15] registered
+[    0.098918] acpiphp: Slot [16] registered
+[    0.099019] acpiphp: Slot [17] registered
+[    0.099102] acpiphp: Slot [18] registered
+[    0.099182] acpiphp: Slot [19] registered
+[    0.099282] acpiphp: Slot [20] registered
+[    0.099364] acpiphp: Slot [21] registered
+[    0.099444] acpiphp: Slot [22] registered
+[    0.099544] acpiphp: Slot [23] registered
+[    0.099646] acpiphp: Slot [24] registered
+[    0.099749] acpiphp: Slot [25] registered
+[    0.099830] acpiphp: Slot [26] registered
+[    0.099933] acpiphp: Slot [27] registered
+[    0.100028] acpiphp: Slot [28] registered
+[    0.100109] acpiphp: Slot [29] registered
+[    0.100215] acpiphp: Slot [30] registered
+[    0.100317] acpiphp: Slot [31] registered
+[    0.100382] PCI host bridge to bus 0000:00
+[    0.100387] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.100392] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.100396] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.100399] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    0.100403] pci_bus 0000:00: root bus resource [mem 0x440000000-0x4bfffffff window]
+[    0.100407] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.100647] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.103000] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.106099] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+[    0.115009] pci 0000:00:01.1: reg 0x20: [io  0xc120-0xc12f]
+[    0.119159] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.119166] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.119169] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.119172] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.120061] pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+[    0.126934] pci 0000:00:01.2: reg 0x20: [io  0xc0c0-0xc0df]
+[    0.132428] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+[    0.135445] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    0.135504] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    0.136808] pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+[    0.140073] pci 0000:00:02.0: reg 0x10: [mem 0xfc000000-0xfdffffff pref]
+[    0.143067] pci 0000:00:02.0: reg 0x14: [mem 0xfeb94000-0xfeb94fff]
+[    0.156042] pci 0000:00:02.0: reg 0x30: [mem 0xfeb80000-0xfeb8ffff pref]
+[    0.158920] pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000
+[    0.160671] pci 0000:00:03.0: reg 0x10: [io  0xc0e0-0xc0ff]
+[    0.161854] pci 0000:00:03.0: reg 0x14: [mem 0xfeb95000-0xfeb95fff]
+[    0.170708] pci 0000:00:03.0: reg 0x20: [mem 0xfe000000-0xfe003fff 64bit pref]
+[    0.172715] pci 0000:00:03.0: reg 0x30: [mem 0xfea80000-0xfeafffff pref]
+[    0.176137] pci 0000:00:04.0: [8086:2668] type 00 class 0x040300
+[    0.177006] pci 0000:00:04.0: reg 0x10: [mem 0xfeb90000-0xfeb93fff]
+[    0.183840] pci 0000:00:05.0: [1af4:1001] type 00 class 0x010000
+[    0.186006] pci 0000:00:05.0: reg 0x10: [io  0xc000-0xc07f]
+[    0.189006] pci 0000:00:05.0: reg 0x14: [mem 0xfeb96000-0xfeb96fff]
+[    0.197006] pci 0000:00:05.0: reg 0x20: [mem 0xfe004000-0xfe007fff 64bit pref]
+[    0.203325] pci 0000:00:06.0: [1af4:1002] type 00 class 0x00ff00
+[    0.204406] pci 0000:00:06.0: reg 0x10: [io  0xc080-0xc0bf]
+[    0.207566] pci 0000:00:06.0: reg 0x20: [mem 0xfe008000-0xfe00bfff 64bit pref]
+[    0.211823] pci 0000:00:07.0: [1af4:1000] type 00 class 0x020000
+[    0.215546] pci 0000:00:07.0: reg 0x10: [io  0xc100-0xc11f]
+[    0.216607] pci 0000:00:07.0: reg 0x14: [mem 0xfeb97000-0xfeb97fff]
+[    0.219670] pci 0000:00:07.0: reg 0x20: [mem 0xfe00c000-0xfe00ffff 64bit pref]
+[    0.220575] pci 0000:00:07.0: reg 0x30: [mem 0xfeb00000-0xfeb7ffff pref]
+[    0.224089] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    0.226032] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    0.226307] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    0.226537] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    0.226672] ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+[    0.228244] iommu: Default domain type: Passthrough 
+[    0.228506] SCSI subsystem initialized
+[    0.228585] ACPI: bus type USB registered
+[    0.228645] usbcore: registered new interface driver usbfs
+[    0.229011] usbcore: registered new interface driver hub
+[    0.229025] usbcore: registered new device driver usb
+[    0.229082] pps_core: LinuxPPS API ver. 1 registered
+[    0.229083] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.229086] PTP clock support registered
+[    0.229249] EDAC MC: Ver: 3.0.0
+[    0.230227] PCI: Using ACPI for IRQ routing
+[    0.230227] PCI: pci_cache_line_size set to 64 bytes
+[    0.230671] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    0.230681] e820: reserve RAM buffer [mem 0xbffdb000-0xbfffffff]
+[    0.231386] NetLabel: Initializing
+[    0.231390] NetLabel:  domain hash size = 128
+[    0.231391] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.231426] NetLabel:  unlabeled traffic allowed by default
+[    0.232044] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.232047] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.232051] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.232052] vgaarb: loaded
+[    0.232245] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.232258] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    0.236182] clocksource: Switched to clocksource kvm-clock
+[    0.256943] VFS: Disk quotas dquot_6.6.0
+[    0.256986] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.257223] pnp: PnP ACPI init
+[    0.257348] pnp 00:00: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.257376] pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.257423] pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+[    0.257432] pnp 00:03: [dma 2]
+[    0.257460] pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+[    0.257479] pnp 00:04: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.257797] pnp: PnP ACPI: found 5 devices
+[    0.266426] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.266488] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.266491] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.266493] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.266495] pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+[    0.266496] pci_bus 0000:00: resource 8 [mem 0x440000000-0x4bfffffff window]
+[    0.266579] NET: Registered protocol family 2
+[    0.268012] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, vmalloc)
+[    0.270975] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, vmalloc)
+[    0.271051] TCP established hash table entries: 131072 (order: 8, 1048576 bytes, vmalloc)
+[    0.272510] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, vmalloc)
+[    0.273707] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.274482] MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, vmalloc)
+[    0.274560] UDP hash table entries: 8192 (order: 6, 262144 bytes, vmalloc)
+[    0.274991] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, vmalloc)
+[    0.275499] NET: Registered protocol family 1
+[    0.275512] NET: Registered protocol family 44
+[    0.275529] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.275578] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.275637] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.297124] ACPI: \_SB_.LNKD: Enabled at IRQ 11
+[    0.318424] pci 0000:00:01.2: quirk_usb_early_handoff+0x0/0x627 took 41715 usecs
+[    0.318623] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.318781] PCI: CLS 0 bytes, default 64
+[    0.318938] Unpacking initramfs...
+[    0.982219] Freeing initrd memory: 36328K
+[    0.982259] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.982263] software IO TLB: mapped [mem 0x00000000ab000000-0x00000000af000000] (64MB)
+[    0.982286] ACPI: bus type thunderbolt registered
+[    0.982452] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb623c7bdc, max_idle_ns: 440795310953 ns
+[    0.993461] Initialise system trusted keyrings
+[    0.993491] Key type blacklist registered
+[    0.993597] workingset: timestamp_bits=36 max_order=22 bucket_order=0
+[    0.996883] zbud: loaded
+[    0.997550] pstore: using deflate compression
+[    0.998354] Platform Keyring initialized
+[    1.043464] NET: Registered protocol family 38
+[    1.043469] Key type asymmetric registered
+[    1.043475] Asymmetric key parser 'x509' registered
+[    1.043478] Running certificate verification selftests
+[    1.053273] Loaded X.509 cert 'Certificate verification self-testing key: f58703bb33ce1b73ee02eccdee5b8817518fe3db'
+[    1.054157] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[    1.054325] io scheduler mq-deadline registered
+[    1.054330] io scheduler kyber registered
+[    1.054409] io scheduler bfq registered
+[    1.054940] atomic64_test: passed for x86-64 platform with CX8 and with SSE
+[    1.055228] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    1.055408] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    1.055464] ACPI: Power Button [PWRF]
+[    1.079596] ACPI: \_SB_.LNKC: Enabled at IRQ 10
+[    1.104222] ACPI: \_SB_.LNKA: Enabled at IRQ 10
+[    1.128550] ACPI: \_SB_.LNKB: Enabled at IRQ 11
+[    1.153819] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.183875] 00:00: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    1.185131] Non-volatile memory driver v1.3
+[    1.186600] rdac: device handler registered
+[    1.186681] hp_sw: device handler registered
+[    1.186683] emc: device handler registered
+[    1.186755] alua: device handler registered
+[    1.186905] libphy: Fixed MDIO Bus: probed
+[    1.208294] uhci_hcd 0000:00:01.2: UHCI Host Controller
+[    1.208494] uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+[    1.208551] uhci_hcd 0000:00:01.2: detected 2 ports
+[    1.208805] uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c0c0
+[    1.209047] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    1.209051] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.209053] usb usb1: Product: UHCI Host Controller
+[    1.209055] usb usb1: Manufacturer: Linux 4.18.0-553.174.1.el8_10.x86_64 uhci_hcd
+[    1.209056] usb usb1: SerialNumber: 0000:00:01.2
+[    1.209264] hub 1-0:1.0: USB hub found
+[    1.209272] hub 1-0:1.0: 2 ports detected
+[    1.209585] usbcore: registered new interface driver usbserial_generic
+[    1.209598] usbserial: USB Serial support registered for generic
+[    1.209662] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    1.212499] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.212524] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.212746] mousedev: PS/2 mouse device common for all mice
+[    1.213295] rtc_cmos 00:04: RTC can wake from S4
+[    1.215421] rtc_cmos 00:04: registered as rtc0
+[    1.215458] rtc_cmos 00:04: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[    1.215505] intel_pstate: CPU model not supported
+[    1.216763] hid: raw HID events driver (C) Jiri Kosina
+[    1.217060] usbcore: registered new interface driver usbhid
+[    1.217064] usbhid: USB HID core driver
+[    1.217148] drop_monitor: Initializing network drop monitor service
+[    1.217286] Initializing XFRM netlink socket
+[    1.217698] NET: Registered protocol family 10
+[    1.218875] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[    1.221089] Segment Routing with IPv6
+[    1.221124] NET: Registered protocol family 17
+[    1.222233] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+[    1.222511] mpls_gso: MPLS GSO support
+[    1.223833] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[    1.225108] AVX2 version of gcm_enc/dec engaged.
+[    1.225116] AES CTR mode by8 optimization enabled
+[    1.277428] sched_clock: Marking stable (1277403908, 0)->(2118060846, -840656938)
+[    1.277792] registered taskstats version 1
+[    1.278533] Loading compiled-in X.509 certificates
+[    1.279484] Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: 72a8270fbfacc35ac35cb0c41f6c849363ea4b35'
+[    1.280338] Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+[    1.281199] Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+[    1.281357] zswap: loaded using pool lzo/zbud
+[    1.281775] page_owner is disabled
+[    1.293071] Key type big_key registered
+[    1.300918] Key type encrypted registered
+[    1.300952] ima: No TPM chip found, activating TPM-bypass!
+[    1.300965] ima: Allocated hash algorithm: sha256
+[    1.301016] ima: No architecture policies found
+[    1.301038] evm: Initialising EVM extended attributes:
+[    1.301040] evm: security.selinux
+[    1.301042] evm: security.ima
+[    1.301043] evm: security.capability
+[    1.301045] evm: HMAC attrs: 0x1
+[    1.302259] rtc_cmos 00:04: setting system clock to 2026-10-18 00:10:15 UTC (1792282215)
+[    1.307660] Freeing unused decrypted memory: 2028K
+[    1.310728] Freeing unused kernel image (initmem) memory: 2820K
+[    1.317028] Write protecting the kernel read-only data: 26624k
+[    1.320447] Freeing unused kernel image (text/rodata gap) memory: 2016K
+[    1.322933] Freeing unused kernel image (rodata/data gap) memory: 1656K
+[    1.347877] systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    1.348062] systemd[1]: Detected virtualization kvm.
+[    1.348070] systemd[1]: Detected architecture x86-64.
+[    1.348074] systemd[1]: Running in initial RAM disk.
+[    1.369259] systemd[1]: Set hostname to <localhost>.
+[    1.502274] systemd[1]: Listening on udev Control Socket.
+[    1.502586] systemd[1]: Listening on Journal Socket (/dev/log).
+[    1.502611] systemd[1]: Reached target Timers.
+[    1.502625] systemd[1]: Reached target Slices.
+[    1.504536] systemd[1]: Created slice system-systemd\x2dhibernate\x2dresume.slice.
+[    1.561205] fuse: init (API version 7.34)
+[    1.565652] i2c /dev entries driver
+[    2.287796] device-mapper: uevent: version 1.0.3
+[    2.288060] device-mapper: ioctl: 4.46.0-ioctl (2022-02-22) initialised: dm-devel@redhat.com
+[    2.630546] virtio_blk virtio1: [vda] 524288000 512-byte logical blocks (268 GB/250 GiB)
+[    2.630604] vda: detected capacity change from 0 to 268435456000
+[    2.644309] libata version 3.00 loaded.
+[    2.648027] ata_piix 0000:00:01.1: version 2.13
+[    2.663552]  vda: vda1 vda2
+[    2.671790] scsi host0: ata_piix
+[    2.671801] ACPI: bus type drm_connector registered
+[    2.675847] scsi host1: ata_piix
+[    2.675973] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc120 irq 14
+[    2.675977] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc128 irq 15
+[    2.877345] cirrus 0000:00:02.0: vgaarb: deactivate vga console
+[    3.180826] Console: switching to colour dummy device 80x25
+[    3.181517] [drm] Initialized cirrus 2.0.0 2019 for 0000:00:02.0 on minor 0
+[    3.182690] fbcon: cirrusdrmfb (fb0) is primary device
+[    3.187568] cirrus 0000:00:02.0: [drm] drm_plane_enable_fb_damage_clips() not called
+[    3.191641] Console: switching to colour frame buffer device 128x48
+[    3.193991] cirrus 0000:00:02.0: [drm] fb0: cirrusdrmfb frame buffer device
+[    3.732855] PM: Image not found (code -22)
+[    4.003083] SGI XFS with ACLs, security attributes, quota, no debug enabled
+[    4.008926] XFS (dm-0): Mounting V5 Filesystem
+[    4.103032] XFS (dm-0): Ending clean mount
+[    4.650682] printk: systemd: 17 output lines suppressed due to ratelimiting
+[    4.931049] SELinux:  Disabled at runtime.
+[    4.962147] audit: type=1404 audit(1792282219.159:2): enforcing=0 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=0 old-enabled=1 lsm=selinux res=1
+[    4.988219] systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    4.988283] systemd[1]: Detected virtualization kvm.
+[    4.988307] systemd[1]: Detected architecture x86-64.
+[    4.993533] systemd[1]: Set hostname to <localhost>.
+[    5.979855] systemd[1]: initrd-switch-root.service: Succeeded.
+[    5.980708] systemd[1]: Stopped Switch Root.
+[    5.981414] systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+[    5.981547] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    5.981705] systemd[1]: Stopped Journal Service.
+[    5.983945] systemd[1]: Starting Journal Service...
+[    6.037456] Adding 16773116k swap on /dev/mapper/rhel-swap.  Priority:-2 extents:1 across:16773116k FS
+[    7.009532] input: PC Speaker as /devices/platform/pcspkr/input/input5
+[    7.051345] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+[    7.084313] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+[    7.389701] XFS (vda1): Mounting V5 Filesystem
+[    7.395944] snd_hda_codec_generic hdaudioC0D0: autoconfig for Generic: line_outs=1 (0x3/0x0/0x0/0x0/0x0) type:line
+[    7.395949] snd_hda_codec_generic hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    7.395952] snd_hda_codec_generic hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    7.395954] snd_hda_codec_generic hdaudioC0D0:    mono: mono_out=0x0
+[    7.395955] snd_hda_codec_generic hdaudioC0D0:    inputs:
+[    7.395956] snd_hda_codec_generic hdaudioC0D0:      Line=0x5
+[    7.403341] loop: module loaded
+[    7.404928] loop0: detected capacity change from 0 to 70090752
+[    7.409287] loop1: detected capacity change from 0 to 150089728
+[    7.416438] loop2: detected capacity change from 0 to 53399552
+[    7.426088] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    7.458213] XFS (vda1): Ending clean mount
+[    7.669315] RPC: Registered named UNIX socket transport module.
+[    7.669318] RPC: Registered udp transport module.
+[    7.669319] RPC: Registered tcp transport module.
+[    7.669329] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    8.282916] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    8.289168] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[    8.448103] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    8.454814] Bridge firewalling registered
+[    9.035560] Adding Red Hat flag eBPF/rawtrace.
+[   10.964248] Adding Red Hat flag eBPF/event.
+[   26.174300] tmpfs: Unknown parameter 'noswap'
+[   27.681987] cni0: port 1(veth5562cd9c) entered blocking state
+[   27.681994] cni0: port 1(veth5562cd9c) entered disabled state
+[   27.682126] device veth5562cd9c entered promiscuous mode
+[   27.719701] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   27.721648] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   27.721690] cni0: port 1(veth5562cd9c) entered blocking state
+[   27.721693] cni0: port 1(veth5562cd9c) entered forwarding state
+[   27.722322] cni0: port 2(veth866b9bc9) entered blocking state
+[   27.722328] cni0: port 2(veth866b9bc9) entered disabled state
+[   27.722428] device veth866b9bc9 entered promiscuous mode
+[   27.747084] cni0: port 2(veth866b9bc9) entered blocking state
+[   27.747090] cni0: port 2(veth866b9bc9) entered forwarding state
+[   27.811605] cni0: port 3(veth5b6489d7) entered blocking state
+[   27.811611] cni0: port 3(veth5b6489d7) entered disabled state
+[   27.811686] device veth5b6489d7 entered promiscuous mode
+[   27.811720] cni0: port 3(veth5b6489d7) entered blocking state
+[   27.811722] cni0: port 3(veth5b6489d7) entered forwarding state
+[   27.873126] cni0: port 4(vethf71ab1e3) entered blocking state
+[   27.873134] cni0: port 4(vethf71ab1e3) entered disabled state
+[   27.877747] device vethf71ab1e3 entered promiscuous mode
+[   27.877807] cni0: port 4(vethf71ab1e3) entered blocking state
+[   27.877811] cni0: port 4(vethf71ab1e3) entered forwarding state
+[   27.964534] cni0: port 5(veth1db2595f) entered blocking state
+[   27.964539] cni0: port 5(veth1db2595f) entered disabled state
+[   27.964611] device veth1db2595f entered promiscuous mode
+[   27.964647] cni0: port 5(veth1db2595f) entered blocking state
+[   27.964662] cni0: port 5(veth1db2595f) entered forwarding state
+[   29.267462] IPv4: martian source 10.42.0.1 from 10.42.0.4, on dev eth0
+[   29.267468] ll header: 00000000: ff ff ff ff ff ff 0e e9 1d 74 a8 b8 08 06        .........t....
+[   29.748962] IPv4: martian source 10.42.0.1 from 10.42.0.3, on dev eth0
+[   29.748972] ll header: 00000000: ff ff ff ff ff ff 8e a8 00 7d 53 72 08 06        .........}Sr..
+[   29.852235] IPv4: martian source 10.42.0.1 from 10.42.0.5, on dev eth0
+[   29.852241] ll header: 00000000: ff ff ff ff ff ff d2 a6 3f a8 66 b7 08 06        ........?.f...
+[   74.463567] evm: overlay not supported
+[  629.741669] IPv4: martian source 10.42.0.3 from 10.42.0.4, on dev eth0
+[  629.741738] ll header: 00000000: ff ff ff ff ff ff 0e e9 1d 74 a8 b8 08 06        .........t....
+[94848.620169] IPv4: martian source 127.0.0.1 from 10.42.0.0, on dev eth1
+[94848.620334] ll header: 00000000: ff ff ff ff ff ff 00 00 09 2e 42 4e 08 06        ..........BN..
+[280190.158461] hrtimer: interrupt took 2997174 ns
+[394935.249660] cni-podman0: port 1(vethaca338b7) entered blocking state
+[394935.249715] cni-podman0: port 1(vethaca338b7) entered disabled state
+[394935.249855] device vethaca338b7 entered promiscuous mode
+[394935.318661] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[394935.318816] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[394935.318887] cni-podman0: port 1(vethaca338b7) entered blocking state
+[394935.318898] cni-podman0: port 1(vethaca338b7) entered forwarding state
+[394935.721917] cni-podman0: port 1(vethaca338b7) entered disabled state
+[394935.722673] device vethaca338b7 left promiscuous mode
+[394935.722695] cni-podman0: port 1(vethaca338b7) entered disabled state
+[394937.768573] cni-podman0: port 1(veth22f05fde) entered blocking state
+[394937.768590] cni-podman0: port 1(veth22f05fde) entered disabled state
+[394937.768827] device veth22f05fde entered promiscuous mode
+[394937.822877] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[394937.823103] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[394937.823198] cni-podman0: port 1(veth22f05fde) entered blocking state
+[394937.823204] cni-podman0: port 1(veth22f05fde) entered forwarding state
+[394938.480293] IPv4: martian source 10.88.0.1 from 10.88.0.3, on dev eth0
+[394938.480303] ll header: 00000000: ff ff ff ff ff ff 66 74 2a 27 ec e2 08 06        ......ft*'....
+[394992.088946] cni-podman0: port 1(veth22f05fde) entered disabled state
+[394992.090064] device veth22f05fde left promiscuous mode
+[394992.090090] cni-podman0: port 1(veth22f05fde) entered disabled state
+[395043.585430] cni-podman0: port 1(veth205964f4) entered blocking state
+[395043.585440] cni-podman0: port 1(veth205964f4) entered disabled state
+[395043.585732] device veth205964f4 entered promiscuous mode
+[395043.595496] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395043.596236] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395043.596332] cni-podman0: port 1(veth205964f4) entered blocking state
+[395043.596344] cni-podman0: port 1(veth205964f4) entered forwarding state
+[395043.980285] cni-podman0: port 1(veth205964f4) entered disabled state
+[395043.981157] device veth205964f4 left promiscuous mode
+[395043.981181] cni-podman0: port 1(veth205964f4) entered disabled state
+[395046.377537] cni-podman0: port 1(vethc570015f) entered blocking state
+[395046.377550] cni-podman0: port 1(vethc570015f) entered disabled state
+[395046.377766] device vethc570015f entered promiscuous mode
+[395046.393818] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395046.393877] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395046.394107] cni-podman0: port 1(vethc570015f) entered blocking state
+[395046.394117] cni-podman0: port 1(vethc570015f) entered forwarding state
+[395046.779191] cni-podman0: port 1(vethc570015f) entered disabled state
+[395046.780170] device vethc570015f left promiscuous mode
+[395046.780204] cni-podman0: port 1(vethc570015f) entered disabled state
+[395078.541988] cni-podman0: port 1(veth16b329a6) entered blocking state
+[395078.541999] cni-podman0: port 1(veth16b329a6) entered disabled state
+[395078.543080] device veth16b329a6 entered promiscuous mode
+[395078.556956] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395078.557158] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395078.557214] cni-podman0: port 1(veth16b329a6) entered blocking state
+[395078.557218] cni-podman0: port 1(veth16b329a6) entered forwarding state
+[395078.901116] cni-podman0: port 1(veth16b329a6) entered disabled state
+[395078.902042] device veth16b329a6 left promiscuous mode
+[395078.902095] cni-podman0: port 1(veth16b329a6) entered disabled state
+[395081.347652] cni-podman0: port 1(veth1bf58ea5) entered blocking state
+[395081.347661] cni-podman0: port 1(veth1bf58ea5) entered disabled state
+[395081.347797] device veth1bf58ea5 entered promiscuous mode
+[395081.358961] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395081.359104] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395081.359169] cni-podman0: port 1(veth1bf58ea5) entered blocking state
+[395081.359173] cni-podman0: port 1(veth1bf58ea5) entered forwarding state
+[395083.396323] cni-podman0: port 1(veth1bf58ea5) entered disabled state
+[395083.397517] device veth1bf58ea5 left promiscuous mode
+[395083.397546] cni-podman0: port 1(veth1bf58ea5) entered disabled state
+[395473.527072] cni-podman0: port 1(vethdcc0c189) entered blocking state
+[395473.527122] cni-podman0: port 1(vethdcc0c189) entered disabled state
+[395473.527253] device vethdcc0c189 entered promiscuous mode
+[395473.536962] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395473.537109] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395473.537166] cni-podman0: port 1(vethdcc0c189) entered blocking state
+[395473.537170] cni-podman0: port 1(vethdcc0c189) entered forwarding state
+[395494.483123] cni-podman0: port 1(vethdcc0c189) entered disabled state
+[395494.486516] device vethdcc0c189 left promiscuous mode
+[395494.486629] cni-podman0: port 1(vethdcc0c189) entered disabled state
+[395495.449892] cni-podman0: port 1(vethd8e40df2) entered blocking state
+[395495.449901] cni-podman0: port 1(vethd8e40df2) entered disabled state
+[395495.450061] device vethd8e40df2 entered promiscuous mode
+[395495.450249] cni-podman0: port 1(vethd8e40df2) entered blocking state
+[395495.450256] cni-podman0: port 1(vethd8e40df2) entered forwarding state
+[395495.451922] cni-podman0: port 1(vethd8e40df2) entered disabled state
+[395495.476571] cni-podman0: port 1(vethd8e40df2) entered blocking state
+[395495.476581] cni-podman0: port 1(vethd8e40df2) entered forwarding state
+[395496.375627] cni-podman0: port 1(vethd8e40df2) entered disabled state
+[395496.376299] device vethd8e40df2 left promiscuous mode
+[395496.376321] cni-podman0: port 1(vethd8e40df2) entered disabled state
+[395717.620323] cni-podman0: port 1(vethb031a12f) entered blocking state
+[395717.620354] cni-podman0: port 1(vethb031a12f) entered disabled state
+[395717.620466] device vethb031a12f entered promiscuous mode
+[395717.636495] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395717.636599] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395717.636661] cni-podman0: port 1(vethb031a12f) entered blocking state
+[395717.636665] cni-podman0: port 1(vethb031a12f) entered forwarding state
+[395717.967254] cni-podman0: port 1(vethb031a12f) entered disabled state
+[395717.968133] device vethb031a12f left promiscuous mode
+[395717.968173] cni-podman0: port 1(vethb031a12f) entered disabled state
+[395720.045662] cni-podman0: port 1(veth2aa6dcda) entered blocking state
+[395720.045677] cni-podman0: port 1(veth2aa6dcda) entered disabled state
+[395720.045887] device veth2aa6dcda entered promiscuous mode
+[395720.073139] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395720.073304] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395720.073378] cni-podman0: port 1(veth2aa6dcda) entered blocking state
+[395720.073384] cni-podman0: port 1(veth2aa6dcda) entered forwarding state
+[395720.787781] IPv4: martian source 10.88.0.1 from 10.88.0.11, on dev eth0
+[395720.787797] ll header: 00000000: ff ff ff ff ff ff 1e 00 cc 82 16 19 08 06        ..............
+[395775.744590] cni-podman0: port 1(veth2aa6dcda) entered disabled state
+[395775.747521] device veth2aa6dcda left promiscuous mode
+[395775.747545] cni-podman0: port 1(veth2aa6dcda) entered disabled state
+[395828.562306] cni-podman0: port 1(veth0d332c0a) entered blocking state
+[395828.562352] cni-podman0: port 1(veth0d332c0a) entered disabled state
+[395828.562646] device veth0d332c0a entered promiscuous mode
+[395828.582983] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395828.583212] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395828.583316] cni-podman0: port 1(veth0d332c0a) entered blocking state
+[395828.583322] cni-podman0: port 1(veth0d332c0a) entered forwarding state
+[395829.010336] cni-podman0: port 1(veth0d332c0a) entered disabled state
+[395829.012331] device veth0d332c0a left promiscuous mode
+[395829.012370] cni-podman0: port 1(veth0d332c0a) entered disabled state
+[395831.529297] cni-podman0: port 1(veth0f66abf6) entered blocking state
+[395831.529307] cni-podman0: port 1(veth0f66abf6) entered disabled state
+[395831.529490] device veth0f66abf6 entered promiscuous mode
+[395831.539450] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395831.539597] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395831.539673] cni-podman0: port 1(veth0f66abf6) entered blocking state
+[395831.539678] cni-podman0: port 1(veth0f66abf6) entered forwarding state
+[395831.934965] cni-podman0: port 1(veth0f66abf6) entered disabled state
+[395831.936156] device veth0f66abf6 left promiscuous mode
+[395831.936195] cni-podman0: port 1(veth0f66abf6) entered disabled state
+[395862.820605] cni-podman0: port 1(veth45bb0f1f) entered blocking state
+[395862.820665] cni-podman0: port 1(veth45bb0f1f) entered disabled state
+[395862.820836] device veth45bb0f1f entered promiscuous mode
+[395862.836853] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395862.837083] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395862.837175] cni-podman0: port 1(veth45bb0f1f) entered blocking state
+[395862.837181] cni-podman0: port 1(veth45bb0f1f) entered forwarding state
+[395863.200860] cni-podman0: port 1(veth45bb0f1f) entered disabled state
+[395863.202344] device veth45bb0f1f left promiscuous mode
+[395863.202370] cni-podman0: port 1(veth45bb0f1f) entered disabled state
+[395865.716941] cni-podman0: port 1(veth6407f176) entered blocking state
+[395865.716949] cni-podman0: port 1(veth6407f176) entered disabled state
+[395865.717102] device veth6407f176 entered promiscuous mode
+[395865.743170] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395865.743713] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395865.743807] cni-podman0: port 1(veth6407f176) entered blocking state
+[395865.743812] cni-podman0: port 1(veth6407f176) entered forwarding state
+[395867.877672] cni-podman0: port 1(veth6407f176) entered disabled state
+[395867.878451] device veth6407f176 left promiscuous mode
+[395867.878479] cni-podman0: port 1(veth6407f176) entered disabled state
+[395910.065740] cni-podman0: port 1(veth393d2ba5) entered blocking state
+[395910.065758] cni-podman0: port 1(veth393d2ba5) entered disabled state
+[395910.065914] device veth393d2ba5 entered promiscuous mode
+[395910.097291] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395910.099038] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395910.099181] cni-podman0: port 1(veth393d2ba5) entered blocking state
+[395910.099205] cni-podman0: port 1(veth393d2ba5) entered forwarding state
+[395927.219076] cni-podman0: port 1(veth393d2ba5) entered disabled state
+[395927.220371] device veth393d2ba5 left promiscuous mode
+[395927.220408] cni-podman0: port 1(veth393d2ba5) entered disabled state
+[395972.139954] cni-podman0: port 1(veth587118e6) entered blocking state
+[395972.139978] cni-podman0: port 1(veth587118e6) entered disabled state
+[395972.140102] device veth587118e6 entered promiscuous mode
+[395972.151895] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395972.152546] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395972.152612] cni-podman0: port 1(veth587118e6) entered blocking state
+[395972.152643] cni-podman0: port 1(veth587118e6) entered forwarding state
+[395973.023058] cni-podman0: port 1(veth587118e6) entered disabled state
+[395973.023938] device veth587118e6 left promiscuous mode
+[395973.023964] cni-podman0: port 1(veth587118e6) entered disabled state
+[395988.871978] cni-podman0: port 1(veth5a66264e) entered blocking state
+[395988.872010] cni-podman0: port 1(veth5a66264e) entered disabled state
+[395988.872138] device veth5a66264e entered promiscuous mode
+[395988.898983] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[395988.899167] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[395988.899852] cni-podman0: port 1(veth5a66264e) entered blocking state
+[395988.899860] cni-podman0: port 1(veth5a66264e) entered forwarding state
+[395989.481907] IPv4: martian source 10.88.0.1 from 10.88.0.18, on dev eth0
+[395989.481918] ll header: 00000000: ff ff ff ff ff ff f6 4e cf c1 da e2 08 06        .......N......
+[396042.493254] cni-podman0: port 1(veth5a66264e) entered disabled state
+[396042.494419] device veth5a66264e left promiscuous mode
+[396042.494449] cni-podman0: port 1(veth5a66264e) entered disabled state
+---------------------------------------------------------

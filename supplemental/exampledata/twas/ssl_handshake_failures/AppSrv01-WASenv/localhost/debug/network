@@ -1,0 +1,56 @@
+Execute: "/opt/IBM/WebSphere_855/AppServer/java/bin/jar" "-xvf" "/opt/IBM/WebSphere_855/AppServer/plugins/com.ibm.ws.runtime.jar""com/ibm/websphere/rastools/collector/linux.network.sh"
+inflated: com/ibm/websphere/rastools/collector/linux.network.sh
+Execute: "sh" "./com/ibm/websphere/rastools/collector/linux.network.sh"
+StdErr: + '[' -d OS ']'
++ mkdir OS
++ echo ----------------------------------------------------------------------------
++ echo Execute: hostname
++ hostname
++ echo ----------------------------------------------------------------------------
++ echo Execute: lanscan
++ lanscan
+./com/ibm/websphere/rastools/collector/linux.network.sh: line 16: lanscan: command not found
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -i
++ netstat -i
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -in
++ netstat -in
++ echo ----------------------------------------------------------------------------
++ echo Execute: netstat -rv
++ netstat -rv
++ echo ----------------------------------------------------------------------------
++ echo Execute: ifconfig -a
++ ifconfig -a
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /proc/sys/net/ipv4/tcp_keepalive_time
++ cat /proc/sys/net/ipv4/tcp_keepalive_time
++ echo ----------------------------------------------------------------------------
++ echo Execute: showmount -e
++ showmount -e
+clnt_create: RPC: Unable to send
++ echo ----------------------------------------------------------------------------
++ echo Execute: sysctl -a
++ grep net
++ sysctl -a
++ grep net
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /etc/resolv.conf
++ cat /etc/resolv.conf
++ echo ----------------------------------------------------------------------------
+++ hostname
++ echo Execute: nslookup -querytype=ANY localhost
+++ hostname
++ nslookup -querytype=ANY localhost
++ echo ----------------------------------------------------------------------------
++ echo Execute: arp -a
++ arp -a
++ echo ----------------------------------------------------------------------------
++ echo Execute: nfsstat
++ nfsstat
+Error: No Client Stats (/proc/net/rpc/nfs: No such file or directory). 
++ echo ----------------------------------------------------------------------------
++ echo Execute: cat /etc/hosts
++ cat /etc/hosts
++ echo ----------------------------------------------------------------------------
+Execute: "rm" "com/ibm/websphere/rastools/collector/linux.network.sh"

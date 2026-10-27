@@ -1,0 +1,14 @@
+  <project name="DeleteExtensionRegistry" default="install" basedir=".">
+  <target name="install">
+    <delete includeemptydirs="true" failonerror="false">
+      <fileset  dir="${profilePath}/temp" includes="**/_extensionregistry/loader.xml">
+      </fileset>
+    </delete> 
+  </target>
+  <target name="uninstall">
+    <delete includeemptydirs="true" failonerror="false">
+      <fileset  dir="${profilePath}/temp" includes="**/_extensionregistry/loader.xml">
+      </fileset>
+    </delete> 
+  </target>
+  </project>

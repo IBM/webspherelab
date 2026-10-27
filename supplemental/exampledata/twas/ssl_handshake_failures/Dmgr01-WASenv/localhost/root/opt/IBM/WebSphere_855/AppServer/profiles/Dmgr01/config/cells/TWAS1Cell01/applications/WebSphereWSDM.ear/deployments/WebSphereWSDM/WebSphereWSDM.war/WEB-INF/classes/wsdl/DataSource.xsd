@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/custom/data-source"
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/custom/data-source"
+	xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2">
+	
+	<xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" schemaLocation="WS-BaseFaults-1_2.xsd" />
+      
+      <xsd:element name="JDBCDriver" type="xsd:string"/>
+      <xsd:element name="ConnectionFactoryType" type="xsd:string"/>
+      <xsd:element name="DataSourceName" type="xsd:string"/>
+      <xsd:element name="DataStoreHelperClass" type="xsd:string"/>
+      <xsd:element name="LoginTimeout" type="xsd:int"/>
+      <xsd:element name="StatementCacheSize" type="xsd:int"/>
+      <xsd:element name="JTAEnabled" type="xsd:boolean"/>
+      <xsd:element name="TestConnection" type="xsd:boolean"/>
+      <xsd:element name="TestConnectionInterval" type="xsd:int"/>
+      <xsd:element name="Name" type="xsd:string"/>
+      <xsd:element name="JNDIName" type="xsd:string"/>
+      <xsd:element name="StuckTimerTime" type="xsd:int"/>
+      <xsd:element name="StuckTime" type="xsd:int"/>
+      <xsd:element name="StuckThreshold" type="xsd:int"/>
+      <xsd:element name="SurgeThreshold" type="xsd:int"/>
+      <xsd:element name="SurgeCreationInterval" type="xsd:int"/>
+      <xsd:element name="ConnectionTimeout" type="xsd:int"/>
+      <xsd:element name="MaxConnections" type="xsd:int"/>
+      <xsd:element name="MinConnections" type="xsd:int"/>
+      <xsd:element name="PurgePolicy" type="xsd:string"/>
+      <xsd:element name="ReapTime" type="xsd:int"/>
+      <xsd:element name="UnusedTimeout" type="xsd:int"/>
+      <xsd:element name="AgedTimeout" type="xsd:int"/>
+      <xsd:element name="FreePoolDistributionTableSize" type="xsd:int"/>
+      <xsd:element name="FreePoolPartitions" type="xsd:int"/>
+      <xsd:element name="SharedPoolPartitions" type="xsd:int"/>
+      <xsd:element name="PoolContents" type="xsd:string"/>
+      
+      <xsd:element name="ShowPoolContents"/>
+      <xsd:element name="ShowPoolContentsResponse" type="xsd:string"/>
+      <xsd:element name="ShowPoolContentsFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PurgePoolContents"/>
+      <xsd:element name="PurgePoolContentsResponse"/>
+      <xsd:element name="PurgePoolContentsFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	  </xsd:element>
+      <xsd:element name="Pause"/>
+      <xsd:element name="PauseResponse"/>
+      <xsd:element name="PauseFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	  </xsd:element>
+      <xsd:element name="Resume"/>
+      <xsd:element name="ResumeResponse"/>
+      <xsd:element name="ResumeFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	  </xsd:element>
+      <xsd:element name="GetStatus"/>
+      <xsd:element name="GetStatusResponse" type="xsd:string"/>
+      <xsd:element name="GetStatusFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	  </xsd:element>
+</schema>
+
+

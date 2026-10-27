@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="http://docs.oasis-open.org/mows2/capabilities/ManageabilityReferences" 
+    xmlns:mangr="http://docs.oasis-open.org/mows2/capabilities/ManageabilityReferences" 
+    xmlns:muws1="http://docs.oasis-open.org/wsdm/muws1-2.xsd"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    
+	<xsd:import namespace="http://docs.oasis-open.org/wsdm/muws1-2.xsd" schemaLocation="WSDM-MUWS-Part1-1_1.xsd" />	
+	
+	<xsd:element name="GetManageabilityReferences"/>
+    <xsd:element name="GetManageabilityReferencesResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" ref="muws1:ManageabilityEndpointReference"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+            
+</schema>
+
+<!--   
+                                       SCHEMA COPY Material
+Copy and paste element references below into the schema of a resource properties document.
+These references insure that the correct minOccurs/maxOccurs attributes are specified in a resource property document schema.
+
+NOTE: You must import the MOWS schema namespace (mows).
+
+        **    Endpoint Identification Properties    **
+	<xs:element ref="mows:EndpointReference"/>
+	<xs:element ref="mows:EndpointDescriptions" minOccurs="0"/>
+
+       **    MOWS Metric Properties    **
+	<xs:element ref="mows:NumberOfRequests" minOccurs="0"/>
+	<xs:element ref="mows:NumberOfFailedRequests" minOccurs="0"/>
+	<xs:element ref="mows:NumberOfSuccessfulRequests"  minOccurs="0"/>
+	<xs:element ref="mows:ServiceTime" minOccurs="0"/>
+	<xs:element ref="mows:MaxResponseTime" minOccurs="0"/>
+	<xs:element ref="mows:LastResponseTime" minOccurs="0"/>
+	<xs:element ref="mows:MaxRequestSize" minOccurs="0"/>
+	<xs:element ref="mows:LastRequestSize" minOccurs="0"/>
+	<xs:element ref="mows:MaxResponseSize" minOccurs="0"/>
+	<xs:element ref="mows:LastResponseSize" minOccurs="0"/>
+
+       **    MOWS Operation Metric Property    **
+	<xs:element ref="mows:OperationMetrics" minOccurs="0" maxOccurs="unbounded"/>
+
+       **    MOWS Operation Operational Status Property    **
+	<xs:element ref="mows:OperationOperationalStatus" 
+                                         minOccurs="0" maxOccurs="unbounded"/>
+
+       **     Operational State Properties    **
+<xs:element ref="mows:CurrentOperationalState"/>
+	<xs:element ref="mows:LastOperationalStateTransition" minOccurs="0"/>
+
+-->
+

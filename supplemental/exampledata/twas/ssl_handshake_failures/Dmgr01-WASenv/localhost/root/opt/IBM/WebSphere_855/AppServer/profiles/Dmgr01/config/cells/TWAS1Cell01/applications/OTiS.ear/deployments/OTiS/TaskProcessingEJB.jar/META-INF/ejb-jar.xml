@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     TaskProcessingEJB/ejbModule/META-INF/ejb-jar.xml, otis_api, otis_dev
+  Version:  1.1
+  Modified: 4/20/07 08:52:39
+  Build:    1 1
+  
+  Licensed Materials - Property of IBM
+  
+  IBM Confidential OCO Source Material
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  ©  COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<!--
+  Defect   Name       Date      Description
+  =======  =========  ========  ===============================================
+  
+  End Change History
+-->
+
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	TaskProcessingEJB</display-name>
+	<enterprise-beans>
+		<session id="TaskProcessing">
+			<ejb-name>TaskProcessing</ejb-name>
+			<home>com.ibm.otis.ejbs.TaskProcessingHome</home>
+			<remote>com.ibm.otis.ejbs.TaskProcessing</remote>
+			<local-home>com.ibm.otis.ejbs.TaskProcessingLocalHome</local-home>
+			<local>com.ibm.otis.ejbs.TaskProcessingLocal</local>
+			<ejb-class>com.ibm.otis.ejbs.TaskProcessingBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Bean</transaction-type>
+		</session>
+	</enterprise-beans>
+		<assembly-descriptor id="AssemblyDescriptor_1176896013171">
+		<security-role id="SecurityRole_1">
+			<description>
+			</description>
+			<role-name>administrator</role-name>
+		</security-role>
+			<method-permission>
+
+			<role-name>administrator</role-name>
+
+			<method>
+
+				<ejb-name>TaskProcessing</ejb-name>
+
+				<method-name>*</method-name>
+
+			</method>
+		</method-permission>
+	</assembly-descriptor>
+	<ejb-client-jar>TaskProcessingEJBClient.jar</ejb-client-jar>
+</ejb-jar>

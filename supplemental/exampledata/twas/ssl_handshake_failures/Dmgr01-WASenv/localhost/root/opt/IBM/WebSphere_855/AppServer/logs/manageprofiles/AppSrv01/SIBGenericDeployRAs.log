@@ -1,0 +1,79 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[Node01, true, true]"
+Adding RA definitions to server template DeveloperServer
+Creating SIB JMS RA thread pool for server: DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+Creating SIBJMSRAThreadPool thread pool
+Created SIB JMS RA thread pool successfully.
+Checking for existing 'SIB JMS Resource Adapter' at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+Searching for RA SIB JMS Resource Adapter at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924) ...
+RA SIB JMS Resource Adapter not found at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+... not found, copying 'SIB JMS Resource Adapter' to scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)....
+copied 'SIB JMS Resource Adapter' to scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924) successfully.
+Creating WebSphere MQ RA thread pools for server: DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+Creating WMQJCAResourceAdapter thread pool
+Created WebSphere MQ RA thread pools successfully.
+Checking for existing 'WebSphere MQ Resource Adapter' at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+Searching for RA WebSphere MQ Resource Adapter at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924) ...
+RA WebSphere MQ Resource Adapter not found at scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)
+... not found, copying 'WebSphere MQ Resource Adapter' to scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924)....
+copied 'WebSphere MQ Resource Adapter' to scope DeveloperServer(templates/servertypes/APPLICATION_SERVER/servers/DeveloperServer|server.xml#Server_1126128294924) successfully.
+Adding RA definitions to server template default
+Creating SIB JMS RA thread pool for server: default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+Creating SIBJMSRAThreadPool thread pool
+Created SIB JMS RA thread pool successfully.
+Checking for existing 'SIB JMS Resource Adapter' at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+Searching for RA SIB JMS Resource Adapter at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1) ...
+RA SIB JMS Resource Adapter not found at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+... not found, copying 'SIB JMS Resource Adapter' to scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)....
+copied 'SIB JMS Resource Adapter' to scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1) successfully.
+Creating WebSphere MQ RA thread pools for server: default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+Creating WMQJCAResourceAdapter thread pool
+Created WebSphere MQ RA thread pools successfully.
+Checking for existing 'WebSphere MQ Resource Adapter' at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+Searching for RA WebSphere MQ Resource Adapter at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1) ...
+RA WebSphere MQ Resource Adapter not found at scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)
+... not found, copying 'WebSphere MQ Resource Adapter' to scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1)....
+copied 'WebSphere MQ Resource Adapter' to scope default(templates/servertypes/APPLICATION_SERVER/servers/default|server.xml#Server_1) successfully.
+Adding RA definitions to server template defaultZOS
+Creating SIB JMS RA thread pool for server: defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+Creating SIBJMSRAThreadPool thread pool
+Created SIB JMS RA thread pool successfully.
+Checking for existing 'SIB JMS Resource Adapter' at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+Searching for RA SIB JMS Resource Adapter at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1) ...
+RA SIB JMS Resource Adapter not found at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+... not found, copying 'SIB JMS Resource Adapter' to scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)....
+copied 'SIB JMS Resource Adapter' to scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1) successfully.
+Creating WebSphere MQ RA thread pools for server: defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+Creating WMQJCAResourceAdapter thread pool
+Created WebSphere MQ RA thread pools successfully.
+Checking for existing 'WebSphere MQ Resource Adapter' at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+Searching for RA WebSphere MQ Resource Adapter at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1) ...
+RA WebSphere MQ Resource Adapter not found at scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)
+... not found, copying 'WebSphere MQ Resource Adapter' to scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1)....
+copied 'WebSphere MQ Resource Adapter' to scope defaultZOS(templates/servertypes/APPLICATION_SERVER/servers/defaultZOS|server.xml#Server_1) successfully.
+Adding RA definitions to node Node01
+Checking for existing 'SIB JMS Resource Adapter' at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)
+Searching for RA SIB JMS Resource Adapter at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1) ...
+RA SIB JMS Resource Adapter not found at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)
+... not found, copying 'SIB JMS Resource Adapter' to scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)....
+copied 'SIB JMS Resource Adapter' to scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1) successfully.
+Checking for existing 'WebSphere MQ Resource Adapter' at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)
+Searching for RA WebSphere MQ Resource Adapter at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1) ...
+RA WebSphere MQ Resource Adapter not found at scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)
+... not found, copying 'WebSphere MQ Resource Adapter' to scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1)....
+copied 'WebSphere MQ Resource Adapter' to scope Node01(cells/TWAS1Node01Cell/nodes/Node01|node.xml#Node_1) successfully.
+Adding RA definitions to all AppServers on node Node01
+Did not find any servers on node Node01
+Adding RA definitions to Cell scope...
+Adding RA definitions to Cell TWAS1Node01Cell
+Checking for existing 'SIB JMS Resource Adapter' at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)
+Searching for RA SIB JMS Resource Adapter at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1) ...
+RA SIB JMS Resource Adapter not found at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)
+... not found, copying 'SIB JMS Resource Adapter' to scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)....
+copied 'SIB JMS Resource Adapter' to scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1) successfully.
+Checking for existing 'WebSphere MQ Resource Adapter' at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)
+Searching for RA WebSphere MQ Resource Adapter at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1) ...
+RA WebSphere MQ Resource Adapter not found at scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)
+... not found, copying 'WebSphere MQ Resource Adapter' to scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1)....
+copied 'WebSphere MQ Resource Adapter' to scope TWAS1Node01Cell(cells/TWAS1Node01Cell|cell.xml#Cell_1) successfully.
+Saving updated configuration....

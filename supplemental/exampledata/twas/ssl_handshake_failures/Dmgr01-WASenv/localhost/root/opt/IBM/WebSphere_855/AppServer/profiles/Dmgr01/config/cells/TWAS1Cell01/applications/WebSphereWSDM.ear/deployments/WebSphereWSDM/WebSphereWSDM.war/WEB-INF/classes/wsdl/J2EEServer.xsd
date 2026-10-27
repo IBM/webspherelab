@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:wsa="http://www.w3.org/2005/08/addressing"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/server" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/server" >
+	
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+	            
+	<!-- Resource property types for the J2EEServer capability -->
+	
+	<xsd:element name="ServerVendor" type="xsd:string"/>
+	<xsd:element name="ServerVersion" type="xsd:string"/>
+			
+	<!-- Specialized EPR type for referencing DeployedObjects -->
+			
+	<xsd:element name="DeployedObjectReference" type="wsa:EndpointReferenceType"/>
+	
+	<!-- Specialized EPR type for referencing VMs -->
+	
+	<xsd:element name="VirtualMachineReference" type="wsa:EndpointReferenceType"/>
+
+</schema>

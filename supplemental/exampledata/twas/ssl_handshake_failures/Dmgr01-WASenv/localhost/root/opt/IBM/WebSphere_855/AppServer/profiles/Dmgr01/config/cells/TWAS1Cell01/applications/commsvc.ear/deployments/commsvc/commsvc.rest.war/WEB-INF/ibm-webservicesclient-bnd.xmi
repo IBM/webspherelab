@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wscbnd:ClientBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wscbnd="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscbnd.xmi" xmi:id="ClientBinding_1229664713070">
+  <serviceRefs xmi:id="ServiceRef_1229664713070" serviceRefLink="service/ControllerService">
+    <portQnameBindings xmi:id="PortQnameBinding_1229664713070" portQnameNamespaceLink="http://impl.webservice.commsvc.ws.ibm.com/" portQnameLocalNameLink="ControllerPort" overriddenEndpointURI="http://localhost:9080/commsvc.rest/ControllerService"/>
+  </serviceRefs>
+</com.ibm.etools.webservice.wscbnd:ClientBinding>

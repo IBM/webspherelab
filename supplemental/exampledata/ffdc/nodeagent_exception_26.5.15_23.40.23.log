@@ -1,0 +1,5 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     5/14/26 8:28:26:907 PDT     5/14/26 8:28:26:907 PDT com.ibm.wsspi.runtime.variable.UndefinedVariableException null 484 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/nodeagent_1176f95c_26.05.14_08.28.26.9164335860975743398831.txt
+     1      1     5/14/26 8:28:28:494 PDT     5/14/26 8:28:28:494 PDT javax.net.ssl.SSLHandshakeException com.ibm.son.mesh.CfwTCPImpl$3.destroy 994 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/nodeagent_878f2d37_26.05.14_08.28.28.4979037165253795463128.txt

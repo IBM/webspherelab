@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/state-manageable" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/state-manageable" 
+        xmlns:wsa="http://www.w3.org/2005/08/addressing"
+	    xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" >
+
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+
+	<xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" 
+	            schemaLocation="WS-BaseFaults-1_2.xsd" />
+			
+	<xsd:element name="Start"/>
+	<xsd:element name="StartResponse"/>
+			
+	<xsd:element name="StartRecursive"/>
+	<xsd:element name="StartRecursiveResponse"/>
+	
+	<xsd:element name="Stop"/>
+	<xsd:element name="StopResponse"/>
+	
+	<xsd:element name="StartFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="StartRecursiveFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="StopFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="StartTime" type="xsd:dateTime"/>
+			
+</schema>

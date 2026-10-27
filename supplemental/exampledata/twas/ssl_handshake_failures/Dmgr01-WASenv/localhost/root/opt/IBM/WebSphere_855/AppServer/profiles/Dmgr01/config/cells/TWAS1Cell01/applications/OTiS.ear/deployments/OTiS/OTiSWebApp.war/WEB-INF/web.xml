@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     OTiSWebApp/WebContent/WEB-INF/web.xml, otis_engine, otis_dev
+  Version:  1.22
+  Modified: 3/23/07 13:47:41
+  Build:    1 22
+  
+  Licensed Materials - Property of IBM
+  
+  IBM Confidential OCO Source Material
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  ©  COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<!--
+  Defect   Name       Date      Description
+  =======  =========  ========  ===============================================
+  
+  End Change History
+-->
+
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	OTiSWebApp</display-name>
+    <servlet>
+        <description>
+        </description>
+        <display-name>
+        TaskManager</display-name>
+        <servlet-name>TaskManager</servlet-name>
+        <servlet-class>
+        com.ibm.otis.server.TaskManagerServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		ServerStatusServlet</display-name>
+		<servlet-name>ServerStatusServlet</servlet-name>
+		<servlet-class>
+		com.ibm.otis.server.ServerStatusServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		OMADMServlet</display-name>
+		<servlet-name>OMADMServlet</servlet-name>
+		<servlet-class>
+		com.ibm.otis.protocolengine.omadm.OMADMServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServerStatusServlet</servlet-name>
+		<url-pattern>/ServerStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OMADMServlet</servlet-name>
+		<url-pattern>/OMADMServlet</url-pattern>
+	</servlet-mapping>
+<!--
+	<servlet-mapping>
+		<servlet-name>OMADMServlet</servlet-name>
+		<url-pattern>/OMADM</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OMADMServlet</servlet-name>
+		<url-pattern>/OMADMServletAuthReq</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OMADMServlet</servlet-name>
+		<url-pattern>/OMADMAuthReq</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TaskManager</servlet-name>
+		<url-pattern>/TaskManager</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TaskManager</servlet-name>
+		<url-pattern>/TaskManagerServlet</url-pattern>
+	</servlet-mapping>
+-->
+	<ejb-local-ref id="EJBLocalRef_1159450251093">
+		<description>
+		</description>
+		<ejb-ref-name>ejb/TaskManagerLocal</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>com.ibm.otis.ejbs.TaskManagerLocalHome</local-home>
+		<local>com.ibm.otis.ejbs.TaskManagerLocal</local>
+		<ejb-link>OTiSEJB.jar#TaskManager</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1159450251109">
+		<description>
+		</description>
+		<ejb-ref-name>ejb/GroupManagerLocal</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>com.ibm.otis.ejbs.GroupManagerLocalHome</local-home>
+		<local>com.ibm.otis.ejbs.GroupManagerLocal</local>
+		<ejb-link>OTiSEJB.jar#GroupManager</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1162850754312">
+		<description>
+		OMADM Manager local reference</description>
+		<ejb-ref-name>ejb/OMADMManagerLocal</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocalHome</local-home>
+		<local>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocal</local>
+		<ejb-link>OMADMEJB.jar#OMADMManager</ejb-link>
+	</ejb-local-ref>
+	<ejb-ref id="EjbRef_1161110687546">
+		<description>
+		</description>
+		<ejb-ref-name>ejb/TaskManager</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<home>com.ibm.otis.ejbs.TaskManagerHome</home>
+		<remote>com.ibm.otis.ejbs.TaskManager</remote>
+		<ejb-link>OTiSEJB.jar#TaskManager</ejb-link>
+	</ejb-ref>
+	<ejb-ref id="EjbRef_1161110687562">
+		<description>
+		</description>
+		<ejb-ref-name>ejb/GroupManager</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<home>com.ibm.otis.ejbs.GroupManagerHome</home>
+		<remote>com.ibm.otis.ejbs.GroupManager</remote>
+		<ejb-link>OTiSEJB.jar#GroupManager</ejb-link>
+	</ejb-ref>
+	<ejb-ref id="EjbRef_1162850754302">
+		<description>
+		OMADM Manager remote reference</description>
+		<ejb-ref-name>ejb/OMADMManager</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<home>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerHome</home>
+		<remote>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManager</remote>
+		<ejb-link>OMADMEJB.jar#OMADMManager</ejb-link>
+	</ejb-ref>
+<!--
+    <security-constraint id="SecurityConstraint_1">
+    	<display-name>OTiS APIs</display-name>
+        <web-resource-collection id="WebResourceCollection_1">
+            <web-resource-name>OTiS APIs</web-resource-name>
+            <url-pattern>/TaskManager</url-pattern>
+            <url-pattern>/TaskManagerServlet</url-pattern>
+            <http-method>POST</http-method>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint id="AuthConstraint_1">
+            <description>OTiS API access:+:</description>
+            <role-name>OTiS API ReadOnly</role-name>
+            <role-name>OTiS API ReadWrite</role-name>
+        </auth-constraint>
+        <user-data-constraint id="UserDataConstraint_1">
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+-->
+
+    <security-constraint id="SecurityConstraint_2">
+    	<display-name>OTiS Client</display-name>
+        <web-resource-collection id="WebResourceCollection_2">
+            <web-resource-name>OTiS Servlets</web-resource-name>
+<!--
+            <url-pattern>/OMADMServletAuthReq</url-pattern>
+            <url-pattern>/OMADMAuthReq</url-pattern>
+            <url-pattern>/OMADM</url-pattern>
+-->
+            <url-pattern>/OMADMServlet</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint id="AuthConstraint_2">
+            <description>OTiS servlets:+:</description>
+            <role-name>administrator</role-name>
+        </auth-constraint>
+        <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    <security-constraint id="SecurityConstraint_3">
+    	<display-name>Server Status</display-name>
+        <web-resource-collection id="WebResourceCollection_3">
+            <web-resource-name>OTiS Server Status</web-resource-name>
+            <url-pattern>/ServerStatus</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    <security-role id="SecurityRole_1">
+        <description>Clients connecting to OTiS</description>
+        <role-name>OTiS Client</role-name>
+    </security-role>
+    <security-role id="SecurityRole_2">
+        <description>User of OTiS API</description>
+        <role-name>OTiS API ReadOnly</role-name>
+    </security-role>
+    <security-role id="SecurityRole_3">
+        <description>User of OTiS API</description>
+        <role-name>OTiS API ReadWrite</role-name>
+    </security-role>
+    <security-role id="SecurityRole_4">
+        <description>administrator</description>
+        <role-name>administrator</role-name>
+    </security-role>
+</web-app>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workClass:WorkClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:workClass="http:///workClass.ecore" xmi:id="Default_HTTP_WC" matchAction="permit:DefaultApplication.ear" name="Default_HTTP_WC" description="">
+  <workClassModules xmi:id="WorkClassModule_1775751802874" moduleName="DefaultWebApplication.war" matchExpression="*" id="Default_HTTP_WC:!:DefaultApplication.ear:!:DefaultWebApplication.war"/>
+</workClass:WorkClass>

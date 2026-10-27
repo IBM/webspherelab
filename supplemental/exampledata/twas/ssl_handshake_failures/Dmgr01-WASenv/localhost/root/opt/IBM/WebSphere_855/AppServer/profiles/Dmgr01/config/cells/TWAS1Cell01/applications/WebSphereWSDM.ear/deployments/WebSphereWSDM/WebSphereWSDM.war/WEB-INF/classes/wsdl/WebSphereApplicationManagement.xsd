@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/custom/application-management" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/custom/application-management" 
+	    xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2"
+	    xmlns:wsa="http://www.w3.org/2005/08/addressing">
+
+	<xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" 
+	            schemaLocation="WS-BaseFaults-1_2.xsd" />
+	            
+	<xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+	            
+	<!-- Operations defined by the ApplicationManagement capability -->
+	
+	<xsd:element name="InstallApplication">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ApplicationName" type="xsd:string"/>
+				<xsd:element name="ArchiveLocation" type="xsd:string"/>
+				<xsd:element name="Properties" type="xsd:anyType"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="InstallApplicationResponse"/>
+	
+	<xsd:element name="UninstallApplication">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ApplicationName" type="xsd:string"/>
+				<xsd:element name="Properties" type="xsd:anyType"/>				
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="UninstallApplicationResponse"/>
+	
+	<xsd:element name="UpdateApplication">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ApplicationName" type="xsd:string"/>
+				<xsd:element name="ArchiveLocation" type="xsd:string"/>
+				<xsd:element name="Properties" type="xsd:anyType"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="UpdateApplicationResponse"/>
+	
+	<xsd:element name="ListApplications">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ApplicationName" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+			
+	<xsd:element name="ListApplicationsResponse">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsa:EndpointReferenceType"/>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!--  Custom faults defined by ApplicationManagement capability -->
+	
+	<xsd:element name="InstallFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="UninstallFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="UpdateFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="ListApplicationsFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+</schema>

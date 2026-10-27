@@ -1,0 +1,26 @@
+Earfile:WebSphereWSDM.ear
+Path:/opt/IBM/WebSphere_855/AppServer/systemApps/WebSphereWSDM.ear
+Earfile:jms-pool-test_war.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/jms-pool-test_war.ear/jms-pool-test_war.ear
+Earfile:ejb-client-app.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/Script19c107d121f/workspace/cells/TWAS1Cell01/applications/ejb-client-app.ear/ejb-client-app.ear
+Earfile:connection-pool-test.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/Script19c2a4b08dc/workspace/cells/TWAS1Cell01/applications/connection-pool-test.ear/connection-pool-test.ear
+Earfile:connection-pool-test.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/Script19c2a71f381/workspace/cells/TWAS1Cell01/applications/connection-pool-test.ear/connection-pool-test.ear
+Earfile:connection-pool-test.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/Script19c2a9a7b2d/workspace/cells/TWAS1Cell01/applications/connection-pool-test.ear/connection-pool-test.ear
+Earfile:InteropV9EAR.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/InteropV9EAR.ear/InteropV9EAR.ear
+Earfile:JPA 2.0 Migration Test Application.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/JPA 2.0 Migration Test Application.ear/JPA 2.0 Migration Test Application.ear
+Earfile:JPA 2.0 Migration Test Application.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/JPA 2.0 Migration Test Application.ear/JPA 2.0 Migration Test Application.ear
+Earfile:JPA 2.1 Migration Test Application.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/JPA 2.1 Migration Test Application.ear/JPA 2.1 Migration Test Application.ear
+Earfile:JPA 2.1 Migration Test Application.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/JPA 2.1 Migration Test Application.ear/JPA 2.1 Migration Test Application.ear
+Earfile:JPA 2.1 Migration Test Application.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/JPA 2.1 Migration Test Application.ear/JPA 2.1 Migration Test Application.ear
+Earfile:DefaultApplication.ear.ear
+Path:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/0/workspace/cells/TWAS1Cell01/applications/DefaultApplication.ear.ear/DefaultApplication.ear.ear

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appcfg="http://www.ibm.com/websphere/appserver/schemas/5.0/appcfg.xmi" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1767631516883">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1767631516883" deploymentId="0" startingWeight="1" binariesURL="$(WAS_INSTALL_ROOT)/systemApps/WebSphereWSDM.ear" useMetadataFromBinaries="false" enableDistribution="false" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity="href:TWAS1Cell01/WebSphereWSDM" zeroEarCopy="true" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="false" enableClientModule="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1767631516883" enable="false" target="ServerTarget_1767631516883" config="ApplicationConfig_1767631516883"/>
+    <configs xmi:type="appcfg:ApplicationConfig" xmi:id="ApplicationConfig_1767631516883">
+      <sessionManagement xmi:id="SessionManager_1767631516883" enable="true" enableUrlRewriting="false" enableCookies="true" enableSSLTracking="false" enableProtocolSwitchRewriting="false" sessionPersistenceMode="NONE" enableSecurityIntegration="false" allowSerializedSessionAccess="false" maxWaitTime="5" accessSessionOnTimeout="true">
+        <defaultCookieSettings xmi:id="Cookie_1767631516883" domain="" maximumAge="-1" secure="false"/>
+        <sessionDatabasePersistence xmi:id="SessionDatabasePersistence_1767631516883" datasourceJNDIName="jdbc/Sessions" userId="db2admin" password="{xor}************" db2RowSize="ROW_SIZE_4KB" tableSpaceName=""/>
+        <tuningParams xmi:id="TuningParams_1767631516883" usingMultiRowSchema="false" maxInMemorySessionCount="1000" allowOverflow="true" scheduleInvalidation="false" writeFrequency="TIME_BASED_WRITE" writeInterval="120" writeContents="ONLY_UPDATED_ATTRIBUTES" invalidationTimeout="30">
+          <invalidationSchedule xmi:id="InvalidationSchedule_1767631516883" firstHour="14" secondHour="2"/>
+        </tuningParams>
+      </sessionManagement>
+    </configs>
+    <classloader xmi:id="Classloader_1767631516883" mode="PARENT_FIRST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1767631516883" deploymentId="1" startingWeight="10000" uri="WebSphereWSDM.war" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767631516884" target="ServerTarget_1767631516883"/>
+      <classloader xmi:id="Classloader_1767631516884"/>
+    </modules>
+    <properties xmi:id="Property_1767631516884" name="metadata.complete" value="true"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1767631516883" name="dmgr" nodeName="TWAS1CellManager01"/>
+</appdeployment:Deployment>

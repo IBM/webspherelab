@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!-- DEPRECATED - HTTP server plugin config file for the cell TWAS1Cell01 generated on 2026.04.09 at 09:17:48 AM PDT-->
+<Config ASDisableNagle="false" AcceptAllContent="true" AppServerPortPreference="HostHeader" ChunkedResponse="false" FIPSEnable="false" FailoverToNext="false" HTTPMaxHeaders="300" HostVerificationStartupCheck="true" IISDisableFlushFlag="false" IISDisableNagle="false" IISPluginPriority="High" IMSecureConnectorVerification="fail" IMSecureEndpointVerification="fail" IgnoreDNSFailures="false" KillWebServerStartUpOnParseErr="false" MarkBusyDown="false" OS400ConvertQueryStringToJobCCSID="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="true" SecureHostVerification="true-markdown" StrictSecurity="false" TrustedProxyEnable="false" VHostMatchingCompat="false">
+   <Log LogLevel="Error" Name="/opt/IBM/WebSphere/Plugins/logs/http_plugin.log"/>
+   <Property Name="ESIEnable" Value="true"/>
+   <Property Name="ESIMaxCacheSize" Value="1024"/>
+   <Property Name="ESIInvalidationMonitor" Value="false"/>
+   <Property Name="ESIEnableToPassCookies" Value="false"/>
+   <Property Name="ESICacheidFull" Value="false"/>
+   <Property Name="PostSizeLimit" Value="-1"/>
+   <Property Name="PostBufferSize" Value="0"/>
+   <Property Name="PluginInstallRoot" Value="/opt/IBM/WebSphere/Plugins/"/>
+   <Property Name="Keyfile" Value="/opt/IBM/WebSphere/Plugins/etc/plugin-key.kdb"/>
+   <Property Name="Stashfile" Value="/opt/IBM/WebSphere/Plugins/etc/plugin-key.sth"/>
+   <VirtualHostGroup Name="default_host">
+      <VirtualHost Name="*:9080"/>
+      <VirtualHost Name="*:80"/>
+      <VirtualHost Name="*:9443"/>
+      <VirtualHost Name="*:5060"/>
+      <VirtualHost Name="*:5061"/>
+      <VirtualHost Name="*:443"/>
+      <VirtualHost Name="*:9081"/>
+      <VirtualHost Name="*:9444"/>
+   </VirtualHostGroup>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="dmgr_TWAS1CellManager01_Cluster" PostBufferSize="0" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60" ServerIOTimeoutRetry="-1">
+      <Server ConnectTimeout="0" ExtendedHandshake="false" MaxConnections="-1" Name="TWAS1CellManager01_dmgr" ServerIOTimeout="900" WaitForContinue="false"/>
+      <PrimaryServers>
+         <Server Name="TWAS1CellManager01_dmgr"/>
+      </PrimaryServers>
+   </ServerCluster>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="server1_TWAS1Node01_Cluster" PostBufferSize="0" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60" ServerIOTimeoutRetry="-1">
+      <Server ConnectTimeout="5" ExtendedHandshake="false" MaxConnections="-1" Name="TWAS1Node01_server1" ServerIOTimeout="900" WaitForContinue="false">
+         <Transport ConnectionTTL="28" Hostname="localhost" Port="9080" Protocol="http"/>
+         <Transport ConnectionTTL="28" Hostname="localhost" HostnameAlias="localhost" Port="9443" Protocol="https">
+            <Property Name="keyring" Value="/opt/IBM/WebSphere/Plugins/etc/plugin-key.kdb"/>
+            <Property Name="stashfile" Value="/opt/IBM/WebSphere/Plugins/etc/plugin-key.sth"/>
+         </Transport>
+      </Server>
+      <PrimaryServers>
+         <Server Name="TWAS1Node01_server1"/>
+      </PrimaryServers>
+   </ServerCluster>
+   <UriGroup Name="default_host_dmgr_TWAS1CellManager01_Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/otis/*"/>
+   </UriGroup>
+   <Route ServerCluster="dmgr_TWAS1CellManager01_Cluster" UriGroup="default_host_dmgr_TWAS1CellManager01_Cluster_URIs" VirtualHostGroup="default_host"/>
+   <UriGroup Name="default_host_server1_TWAS1Node01_Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/commsvc.rest/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/*.jsp"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/*.jsv"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/*.jsw"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/j_security_check"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/IBM_WS_SYS_RESPONSESERVLET/ibm_security_logout"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/jmstest/*"/>
+   </UriGroup>
+   <Route ServerCluster="server1_TWAS1Node01_Cluster" UriGroup="default_host_server1_TWAS1Node01_Cluster_URIs" VirtualHostGroup="default_host"/>
+   <RequestMetrics armEnabled="false" loggingEnabled="false" rmEnabled="false" traceLevel="HOPS">
+      <filters enable="false" type="URI">
+         <filterValues enable="false" value="/snoop"/>
+         <filterValues enable="false" value="/hitcount"/>
+      </filters>
+      <filters enable="false" type="SOURCE_IP">
+         <filterValues enable="false" value="255.255.255.255"/>
+         <filterValues enable="false" value="254.254.254.254"/>
+      </filters>
+      <filters enable="false" type="JMS">
+         <filterValues enable="false" value="destination=aaa"/>
+      </filters>
+      <filters enable="false" type="WEB_SERVICES">
+         <filterValues enable="false" value="wsdlPort=aaa:op=bbb:nameSpace=ccc"/>
+      </filters>
+   </RequestMetrics>
+</Config>

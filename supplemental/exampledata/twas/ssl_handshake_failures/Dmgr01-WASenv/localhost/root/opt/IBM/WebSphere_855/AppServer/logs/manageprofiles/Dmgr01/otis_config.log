@@ -1,0 +1,18 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+ADMA5016I: Installation of OTiS started.
+ADMA5058I: Application and module versions are validated with versions of deployment targets.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+ADMA5081I: The bootstrap address for client module is configured in the WebSphere Application Server repository.
+ADMA5053I: The library references for the installed optional package are created.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+ADMA5110I: The application OTiS is installed as a hidden application and will not be exposed via administrative interfaces such as GUI client, wsadmin or MBean Java API.  In order to perform management operations on this application, the application name must be known.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+SECJ0400I: Successfully updated the application OTiS with the appContextIDForSecurity information.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+ADMA5005I: The application OTiS is configured in the WebSphere Application Server repository.
+ADMA5113I: Activation plan created successfully.
+ADMA5011I: The cleanup of the temp directory for application OTiS is complete.
+ADMA5013I: Application OTiS installed successfully.
+
+

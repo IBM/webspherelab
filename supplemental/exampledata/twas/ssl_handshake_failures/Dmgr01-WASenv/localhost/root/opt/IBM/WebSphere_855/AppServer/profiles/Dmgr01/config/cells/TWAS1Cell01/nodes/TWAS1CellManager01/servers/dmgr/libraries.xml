@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraries:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:libraries="http://www.ibm.com/websphere/appserver/schemas/5.0/libraries.xmi" xmi:id="Library_1767631512906" name="JWLLib">
+  <classPath>${WAS_INSTALL_ROOT}/optionalLibraries/IBM/JWL/2.0/odc-jsf.jar</classPath>
+  <classPath>${WAS_INSTALL_ROOT}/optionalLibraries/IBM/JWL/2.0/jsf-ibm.jar</classPath>
+</libraries:Library>

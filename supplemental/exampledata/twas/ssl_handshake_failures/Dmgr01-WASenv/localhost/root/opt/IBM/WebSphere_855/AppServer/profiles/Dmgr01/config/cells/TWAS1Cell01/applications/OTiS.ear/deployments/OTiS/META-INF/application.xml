@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     OTiS/META-INF/application.xml, otis_engine, otis_dev
+  Version:  1.13
+  Modified: 4/23/07 06:38:47
+  Build:    1 13
+  
+  Licensed Materials - Property of IBM
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  (C) COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<application xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Application_ID" version="1.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+    <display-name>TaskManagerApp</display-name>
+    <module id="WebModule_1152797547718">
+    	<web>
+    		<web-uri>OTiSWebApp.war</web-uri>
+    		<context-root>otis</context-root>
+    	</web>
+    </module>
+    <module id="EjbModule_1099439932099">
+    	<ejb>OTiSEJB.jar</ejb>
+    </module>
+
+    <module id="EjbModule_1159198624405">
+
+    	<ejb>OMADMEJB.jar</ejb>
+
+    </module>
+    <!-- Web Service HTTP Router WAR -->
+<!--
+    <module id="WebModule_2152797547719">
+        <web>
+            <web-uri>OTiS_HTTPRouter.war</web-uri>
+            <context-root>otisws</context-root>
+        </web>
+    </module>
+    <module id="WebModule_1161728368706">
+    	<web>
+    		<web-uri>OMADM_HTTPRouter.war</web-uri>
+    		<context-root>omadmws</context-root>
+    	</web>
+    </module>
+-->
+    <module id="EjbModule_1176972074812">
+    	<ejb>TaskProcessingEJB.jar</ejb>
+    </module>
+    <security-role id="SecurityRole_1165613336343">
+        <description>Clients connecting to OTiS</description>
+        <role-name>OTiS Client</role-name>
+    </security-role>
+    <security-role id="SecurityRole_1165613336344">
+        <description>User of OTiS API</description>
+        <role-name>OTiS API ReadOnly</role-name>
+    </security-role>
+    <security-role id="SecurityRole_1165613336345">
+        <description>User of OTiS API</description>
+        <role-name>OTiS API ReadWrite</role-name>
+    </security-role>
+    <security-role id="SecurityRole_1165613336346">
+    	<description>User of Task Processing EJB</description>
+    	<role-name>OTiS Tasks Consumer</role-name>
+    </security-role>
+    <!-- *** -->
+     
+</application>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/custom/application-server" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/custom/application-server" 
+	    xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" >
+
+	<xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" 
+	            schemaLocation="WS-BaseFaults-1_2.xsd" />
+			
+	<xsd:element name="Restart"/>
+	<xsd:element name="RestartResponse"/>
+	
+	<xsd:element name="StopImmediate"/>
+	<xsd:element name="StopImmediateResponse"/>
+	
+	<xsd:element name="RestartFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="StopImmediateFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+		
+	<xsd:element name="GetProductVersion">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ProductID" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="GetProductVersionResponse" type="xsd:string"/>
+	
+	<xsd:element name="GetProductVersionFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Resource properties for the ApplicationServer capability -->
+	
+	<xsd:element name="Name" type="xsd:string"/>
+	<xsd:element name="ShortName" type="xsd:string"/>
+	<xsd:element name="CellName" type="xsd:string"/>
+	<xsd:element name="NodeName" type="xsd:string"/>
+	<xsd:element name="PlatformName" type="xsd:string"/>
+	<xsd:element name="PlatformVersion" type="xsd:string"/>
+	<xsd:element name="ProcessId" type="xsd:string"/>
+	<xsd:element name="ProcessType" type="xsd:string"/>
+	<xsd:element name="VersionsForAllPTFs" type="xsd:string"/>
+	<xsd:element name="VersionsForAllExtensions" type="xsd:string"/>
+	<xsd:element name="VersionsForAllEFixes" type="xsd:string"/>
+	<xsd:element name="ThreadMonitorAdjustmentThreshold" type="xsd:integer"/>
+	<xsd:element name="ThreadMonitorInterval" type="xsd:integer"/>
+	<xsd:element name="ThreadMonitorThreshold" type="xsd:integer"/>
+	
+</schema>

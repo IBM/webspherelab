@@ -1,0 +1,23 @@
+<project name="MoveAries12to13" default="install" basedir=".">
+  <target name="install">
+
+    <!-- Tidy up first in case we've previously rolled back from 8.5.5 to 8.5.0.2 -->
+      <replace dir="${profilePath}/config/cells" 
+             token="com.ibm.ws.osgi.applications_1.3.0.0,com.ibm.ws.osgi.applications_1.2.0.0" 
+             value="com.ibm.ws.osgi.applications_1.2.0.0"
+             encoding="ASCII">
+      <include name="*/nodes/*/node-metadata.properties"/>
+    </replace>
+
+    <!-- Now ensure that we'll work if we roll back to 8.5.0.2 -->
+    <replace dir="${profilePath}/config/cells" 
+             token="com.ibm.ws.osgi.applications_1.2.0.0" 
+             value="com.ibm.ws.osgi.applications_1.3.0.0,com.ibm.ws.osgi.applications_1.2.0.0"
+             encoding="ASCII">
+      <include name="*/nodes/*/node-metadata.properties"/>
+    </replace>
+  </target>
+
+  <!-- It is not possible to uninstall a start-server config action: the action is deleted before start-server happens :-( -->
+  <target name="uninstall"/>
+</project>

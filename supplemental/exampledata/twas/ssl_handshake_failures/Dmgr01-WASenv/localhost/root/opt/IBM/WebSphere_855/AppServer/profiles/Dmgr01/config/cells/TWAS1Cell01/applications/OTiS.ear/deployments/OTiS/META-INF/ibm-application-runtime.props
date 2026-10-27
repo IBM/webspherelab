@@ -1,0 +1,6 @@
+#Created by WebSphere.  Do not modify.
+#Mon Jan 05 08:45:27 PST 2026
+com.ibm.ws.runtime.components.TaskProcessingEJB.jar=WebSphere\:specname\=WS_EJBContainer
+com.ibm.ws.runtime.components.OTiSEJB.jar=WebSphere\:specname\=WS_EJBContainer
+com.ibm.ws.runtime.components.OMADMEJB.jar=WebSphere\:specname\=WS_EJBContainer
+com.ibm.ws.runtime.components.OTiSWebApp.war=WebSphere\:specname\=WS_WebContainer

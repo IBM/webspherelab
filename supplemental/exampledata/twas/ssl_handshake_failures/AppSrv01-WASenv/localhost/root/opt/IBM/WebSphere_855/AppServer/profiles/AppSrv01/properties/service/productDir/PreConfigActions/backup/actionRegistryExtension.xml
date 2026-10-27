@@ -1,0 +1,3 @@
+<actions>
+<action path="actions/detectNewProducts.ant" profileUpdate="true" alwaysExecute="true" />
+</actions>

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<services>
+    <webservice name="{http://impl.webservice.commsvc.ws.ibm.com/}ControllerService" type="JAX-WS">
+        <endpoint name="ControllerPort">
+            <operation name="openSession"/>
+            <operation name="makeCall"/>
+            <operation name="endCall"/>
+            <operation name="closeSession"/>
+        </endpoint>
+    </webservice>
+    <webservice name="{http://webservice.commsvc.ws.ibm.com/CeaNotificationConsumer/}CeaNotificationConsumer" type="JAX-WS">
+        <endpoint name="CeaNotificationConsumerSOAP">
+            <operation name="Notify"/>
+        </endpoint>
+    </webservice>
+    <webserviceClient name="{http://www.ibm.com/websphere/wsn/notification-broker}WSNServiceCEAWSNServicePtCEANB" type="JAX-WS">
+        <endpoint name="NotificationBrokerPort">
+            <operation name="GetResourceProperty"/>
+            <operation name="Notify"/>
+            <operation name="Subscribe"/>
+            <operation name="GetCurrentMessage"/>
+            <operation name="RegisterPublisher"/>
+            <operation name="CreatePullPoint"/>
+            <operation name="GetMessages"/>
+            <operation name="DestroyPullPoint"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://www.ibm.com/websphere/wsn/subscription-manager}WSNService1WSNServicePt1SM" type="JAX-WS">
+        <endpoint name="SubscriptionManagerPort">
+            <operation name="getResourceProperty"/>
+            <operation name="renew"/>
+            <operation name="unsubscribe"/>
+            <operation name="pauseSubscription"/>
+            <operation name="resumeSubscription"/>
+            <operation name="destroy"/>
+            <operation name="setTerminationTime"/>
+        </endpoint>
+        <endpoint name="SubscriptionManagerPort">
+            <operation name="getResourceProperty"/>
+            <operation name="renew"/>
+            <operation name="unsubscribe"/>
+            <operation name="pauseSubscription"/>
+            <operation name="resumeSubscription"/>
+            <operation name="destroy"/>
+            <operation name="setTerminationTime"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://impl.webservice.commsvc.ws.ibm.com/}ControllerService" type="JAX-WS">
+        <endpoint name="ControllerPort">
+            <operation name="openSession"/>
+            <operation name="makeCall"/>
+            <operation name="endCall"/>
+            <operation name="closeSession"/>
+        </endpoint>
+        <endpoint name="ControllerPort">
+            <operation name="openSession"/>
+            <operation name="makeCall"/>
+            <operation name="endCall"/>
+            <operation name="closeSession"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://webservice.commsvc.ws.ibm.com/CeaNotificationConsumer/}CeaNotificationConsumer" type="JAX-WS">
+        <endpoint name="CeaNotificationConsumerSOAP">
+            <operation name="Notify"/>
+        </endpoint>
+    </webserviceClient>
+</services>

@@ -1,0 +1,62 @@
+<project name="WEBSPHERE" default="install" basedir=".">
+
+<!--
+This config action runs at every server startup. It calls zUpdateSymlinks.sh
+to sync up the install root with the config root if there are more or less offerings, ifixes or optional features found. 
+-->
+
+<taskdef name="CreateInstallInfoXMLFile"
+	classname="com.ibm.ws.postinstall.utilities.CreateInstallInfoXMLFile"
+	classpath="${WAS_HOME}/properties/service/postinstaller/lib/postinstaller_mp.jar;${WAS_HOME}/properties/service/postinstaller/lib/com.ibm.ws.runtime.postinstaller.jar"
+/>
+<taskdef name="CompareInstallInfo"    
+	classname="com.ibm.ws.postinstall.utilities.CompareInstallInfo"
+	classpath="${WAS_HOME}/properties/service/postinstaller/lib/postinstaller_mp.jar;${WAS_HOME}/properties/service/postinstaller/lib/com.ibm.ws.runtime.postinstaller.jar"
+/>
+
+<target name="install"  description="Check for new installed products" depends="checkInstalledProducts" />
+
+<target name="uninstall" description="Check for new installed products" depends="checkInstalledProducts" />
+
+
+  <target name="checkInstalledProducts">
+ <CreateInstallInfoXMLFile
+ 	WAS_HOME="${WAS_HOME}"
+ 	outputFile="${profilePath}/properties/service/productDir/newInstalledProducts.xml"
+ />
+ 
+ <CompareInstallInfo
+ 	cachedFileName="${profilePath}/properties/service/productDir/cachedInstalledProducts.xml"
+ 	newFileName="${profilePath}/properties/service/productDir/newInstalledProducts.xml"
+ 	returnValue="areSame"
+ 	/>
+ 	
+	<condition property="nothingNew.property">
+		<equals arg1="true" arg2="${areSame}" />
+	</condition>
+
+ 	<!-- if they are the same, delete the new -->
+ <antcall target="deleteNewFile" />	
+ <antcall target="updateInstalledProductsXML" />
+ 	
+</target>
+
+<target name="updateInstalledProductsXML" unless="nothingNew.property"> 
+
+<!-- The runPostActions.flag will be created, causing osgiCfgInit and ejbdeploy-clear-cache to run. -->
+
+  <delete file="${profilePath}/properties/service/productDir/cachedInstalledProducts.xml" failonerror="false"/> 	
+  <move file="${profilePath}/properties/service/productDir/newInstalledProducts.xml" tofile="${profilePath}/properties/service/productDir/cachedInstalledProducts.xml"/>
+  
+</target>
+
+
+<target name="deleteNewFile" if="nothingNew.property">
+	<echo level="info" message="No new offerings, features or iFixes" />
+	<delete file="${profilePath}/properties/service/productDir/newInstalledProducts.xml" />
+	<!-- also delete the flag that forces the PostConfigActions to run, since no service was applied -->
+	<delete file="${profilePath}/properties/service/productDir/runPostActions.flag" />
+
+</target>
+
+</project>

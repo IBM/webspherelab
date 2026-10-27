@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.bindings.webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1152797548046" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_ID"/>
+  <ejbRefBindings xmi:id="EjbRefBinding_1159450251093" jndiName="ejb/com/ibm/otis/ejbs/TaskManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EJBLocalRef_1159450251093"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1159450251109" jndiName="ejb/com/ibm/otis/ejbs/GroupManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EJBLocalRef_1159450251109"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1161352729109" jndiName="ejb/com/ibm/otis/ejbs/TaskManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1161110687546"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1161352729110" jndiName="ejb/com/ibm/otis/ejbs/GroupManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1161110687562"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1162850754302" jndiName="ejb/com/ibm/otis/protocolengine/omadm/ejbs/OMADMManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1162850754302"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1162850754312" jndiName="ejb/com/ibm/otis/protocolengine/omadm/ejbs/OMADMManagerHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EJBLocalRef_1162850754312"/>
+  </ejbRefBindings>
+</com.ibm.ejs.models.base.bindings.webappbnd:WebAppBinding>

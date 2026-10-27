@@ -1,0 +1,168 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[4/9/26 9:21:50:695 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[4/9/26 9:21:50:802 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[4/9/26 9:21:50:805 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[4/9/26 9:21:50:820 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[4/9/26 9:21:51:049 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[4/9/26 9:21:54:391 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[4/9/26 9:21:55:031 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[4/9/26 9:22:12:817 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 359825
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[4/27/26 4:57:29:969 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[4/27/26 4:57:30:069 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[4/27/26 4:57:30:072 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[4/27/26 4:57:30:086 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[4/27/26 4:57:30:285 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[4/27/26 4:57:33:953 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[4/27/26 4:57:34:629 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[4/27/26 4:57:42:868 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 113917
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/6/26 13:20:18:957 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/6/26 13:20:19:065 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/6/26 13:20:19:068 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[5/6/26 13:20:19:084 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/6/26 13:20:19:301 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/6/26 13:20:22:632 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/6/26 13:20:23:242 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/6/26 13:20:30:740 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 1248366
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/13/26 7:38:57:139 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/13/26 7:38:57:235 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/13/26 7:38:57:238 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[5/13/26 7:38:57:259 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/13/26 7:38:57:454 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/13/26 7:39:00:497 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/13/26 7:39:01:139 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/13/26 7:39:09:058 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 261837
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/14/26 8:28:48:202 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/14/26 8:28:48:339 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/14/26 8:28:48:342 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[5/14/26 8:28:48:357 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/14/26 8:28:48:575 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/14/26 8:28:51:873 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/14/26 8:28:52:488 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/14/26 8:29:01:385 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 340125
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[9/4/26 12:01:12:876 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[9/4/26 12:01:12:981 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[9/4/26 12:01:12:984 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[9/4/26 12:01:12:998 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[9/4/26 12:01:13:217 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[9/4/26 12:01:16:321 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[9/4/26 12:01:16:935 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[9/4/26 12:01:24:746 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 377581
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[10/23/26 7:52:54:796 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[10/23/26 7:52:54:887 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[10/23/26 7:52:54:890 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[10/23/26 7:52:54:903 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[10/23/26 7:52:55:096 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[10/23/26 7:52:58:177 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[10/23/26 7:52:58:792 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[10/23/26 7:53:03:758 PDT] 00000001 AdminTool     A   ADMU3011E: Server launched but failed initialization. Server logs, startServer.log, and other log files under /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/server1 should contain failure information.
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[10/23/26 7:53:45:311 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[10/23/26 7:53:45:403 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[10/23/26 7:53:45:406 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: server1
+[10/23/26 7:53:45:418 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[10/23/26 7:53:45:620 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[10/23/26 7:53:48:571 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[10/23/26 7:53:49:175 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[10/23/26 7:53:57:262 PDT] 00000001 AdminTool     A   ADMU3000I: Server server1 open for e-business; process id is 417406

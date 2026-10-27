@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     OMADMEJB/ejbModule/META-INF/ejb-jar.xml, otis_omadm, otis_dev
+  Version:  1.5
+  Modified: 3/23/07 13:39:02
+  Build:    1 5
+  
+  Licensed Materials - Property of IBM
+  
+  IBM Confidential OCO Source Material
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  ©  COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<!--
+  Defect   Name       Date      Description
+  =======  =========  ========  ===============================================
+  
+  End Change History
+-->
+
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	OMADMEJB</display-name>
+	<enterprise-beans>
+		<session id="OMADMManager">
+			<ejb-name>OMADMManager</ejb-name>
+			<home>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerHome</home>
+			<remote>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManager</remote>
+			<local-home>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocalHome</local-home>
+			<local>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocal</local>
+			<service-endpoint>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerService</service-endpoint>
+			<ejb-class>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Bean</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1159278928313">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/OMADMManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<local-home>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocalHome</local-home>
+				<local>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerLocal</local>
+				<ejb-link>OMADMManager</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<security-role>
+			<description>
+			OTiS API ReadOnly role</description>
+			<role-name>monitor</role-name>
+		</security-role>
+		<security-role>
+			<description>
+			OTiS API ReadWrite role for OMADMManager</description>
+			<role-name>administrator</role-name>
+		</security-role>
+		<method-permission>
+			<role-name>administrator</role-name>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+		</method-permission>
+		<method-permission>
+			<role-name>monitor</role-name>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>create</method-name>
+				<method-params>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getDevice</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getKeyValueData</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getKeyValueKeys</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getKeyValues</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getMgmtTreeData</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getMgmtTreeNodes</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>java.lang.String</method-param>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>getMgmtTreeURIs</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+					<method-param>java.lang.String</method-param>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>OMADMManager</ejb-name>
+				<method-name>listDevices</method-name>
+				<method-params>
+				</method-params>
+			</method>
+		</method-permission>
+	</assembly-descriptor>
+	<ejb-client-jar>OMADMClient.jar</ejb-client-jar>
+</ejb-jar>

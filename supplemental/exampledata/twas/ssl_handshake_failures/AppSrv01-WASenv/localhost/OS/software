@@ -1,0 +1,2 @@
+Execute: "rpm" "-qai"
+StdErr: rpm.bak: -qai: unknown option

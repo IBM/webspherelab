@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:tns="http://webservice.commsvc.ws.ibm.com/CeaNotificationConsumer/" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://webservice.commsvc.ws.ibm.com/CeaNotificationConsumer/" 
+	xmlns:bw2="http://docs.oasis-open.org/wsn/bw-2"> 
+    <wsdl:import location="http://docs.oasis-open.org/wsn/bw-2.wsdl" 
+    	namespace="http://docs.oasis-open.org/wsn/bw-2"/>
+    <wsdl:types/>
+  <wsdl:binding name="CeaNotificationConsumerSOAP" type="bw2:NotificationConsumer">
+  	<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  	<wsdl:operation name="Notify">
+  		<soap:operation soapAction=""/>
+  		<wsdl:input>
+  			<soap:body use="literal"/>
+  		</wsdl:input>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CeaNotificationConsumer">
+    <wsdl:port binding="tns:CeaNotificationConsumerSOAP" name="CeaNotificationConsumerSOAP">
+      <soap:address location="http://localhost:9080/commsvc.rest/CeaNotificationConsumerSOAP"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,713 @@
+----------------------------------------------------------------------------
+Execute: date
+Fri Oct 23 08:12:30 PDT 2026
+----------------------------------------------------------------------------
+Execute: hostname
+localhost
+----------------------------------------------------------------------------
+Execute: uname -a
+Linux localhost 4.18.0-553.174.1.el8_10.x86_64 #1 SMP Wed Oct 14 02:16:12 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+----------------------------------------------------------------------------
+Execute: lsb_release -a
+----------------------------------------------------------------------------
+Execute: cat /proc/meminfo
+MemTotal:       16138372 kB
+MemFree:         2202620 kB
+MemAvailable:   11728988 kB
+Buffers:            5708 kB
+Cached:          9507408 kB
+SwapCached:           88 kB
+Active:          3722640 kB
+Inactive:        8780968 kB
+Active(anon):       3556 kB
+Inactive(anon):  3033616 kB
+Active(file):    3719084 kB
+Inactive(file):  5747352 kB
+Unevictable:          32 kB
+Mlocked:              16 kB
+SwapTotal:      16773116 kB
+SwapFree:       16772080 kB
+Dirty:              9192 kB
+Writeback:             0 kB
+AnonPages:       2919380 kB
+Mapped:           950004 kB
+Shmem:             46680 kB
+KReclaimable:     397712 kB
+Slab:             597740 kB
+SReclaimable:     397712 kB
+SUnreclaim:       200028 kB
+KernelStack:       23108 kB
+PageTables:        57500 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    24842300 kB
+Committed_AS:    7527604 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      244844 kB
+VmallocChunk:          0 kB
+Percpu:             8224 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   1986560 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      536428 kB
+DirectMap2M:    16240640 kB
+DirectMap1G:     2097152 kB
+----------------------------------------------------------------------------
+Execute: free
+              total        used        free      shared  buff/cache   available
+Mem:       16138372     4024664     2202880       46680     9910828    11729248
+Swap:      16773116        1036    16772080
+----------------------------------------------------------------------------
+Execute: df -k
+Filesystem            1K-blocks     Used Available Use% Mounted on
+devtmpfs                8046760        0   8046760   0% /dev
+tmpfs                   8069184       84   8069100   1% /dev/shm
+tmpfs                   8069184    35168   8034016   1% /run
+tmpfs                   8069184        0   8069184   0% /sys/fs/cgroup
+/dev/mapper/rhel-root 244198912 84923908 159275004  35% /
+/dev/loop1               146688   146688         0 100% /var/lib/snapd/snap/yazi/293
+/dev/loop0                68480    68480         0 100% /var/lib/snapd/snap/core24/1225
+/dev/loop2                52224    52224         0 100% /var/lib/snapd/snap/snapd/25577
+/dev/vda1               1038336   246288    792048  24% /boot
+tmpfs                   1613836       28   1613808   1% /run/user/1000
+tmpfs                   1613836       12   1613824   1% /run/user/42
+tmpfs                  16138372       12  16138360   1% /var/lib/kubelet/pods/9336c282-4683-43e6-bcab-bccbdd17cb43/volumes/kubernetes.io~projected/kube-api-access-rsncx
+tmpfs                  16138372       12  16138360   1% /var/lib/kubelet/pods/8a42cc78-45bb-42ac-a4b0-0d57bb9030c7/volumes/kubernetes.io~projected/kube-api-access-5vkd9
+tmpfs                    174080       12    174068   1% /var/lib/kubelet/pods/cbf0d4d2-01d2-4163-8009-bf64a5d0c6b0/volumes/kubernetes.io~projected/kube-api-access-f7s6f
+tmpfs                  16138372       12  16138360   1% /var/lib/kubelet/pods/d9a78525-3f09-4e7f-a71a-0ff6aa25933e/volumes/kubernetes.io~projected/kube-api-access-zflfv
+shm                       65536        0     65536   0% /run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/a5b532d248f99f494560f87e4852880facc140a0446964f5496037906d635682/shm
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/a5b532d248f99f494560f87e4852880facc140a0446964f5496037906d635682/rootfs
+shm                       65536        0     65536   0% /run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/8334dcccc3018bc84a6aef3d5b17e76ad308ff98441d298201bedcf3c6810ffa/shm
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8334dcccc3018bc84a6aef3d5b17e76ad308ff98441d298201bedcf3c6810ffa/rootfs
+shm                       65536        0     65536   0% /run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/f7151eb573e0ee2711828fd1af44a541586b16035ff3f049c6fbf4d1b287ed9c/shm
+shm                       65536        0     65536   0% /run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/7db92c890aa798bb8f6f9aafffcb80644aef39e98e0653923637010f56041c74/shm
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/f7151eb573e0ee2711828fd1af44a541586b16035ff3f049c6fbf4d1b287ed9c/rootfs
+shm                       65536        0     65536   0% /run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/8abf7e6b7d05f96614a98ebd786d63a6e3a75c4918c26be0b0a0830aa9173954/shm
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/7db92c890aa798bb8f6f9aafffcb80644aef39e98e0653923637010f56041c74/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8abf7e6b7d05f96614a98ebd786d63a6e3a75c4918c26be0b0a0830aa9173954/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/56b6a8373995afa8a84f3b3f7f2246c79ed993aea8508b333a31cd2e42c1c52f/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/171451a1f893c65863afe71f3de1011bdb64ccd8af978d2c71f9674a917a0108/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8cab026eb32479c47f5bbae217b607a315783704db3bb40dff97be34705c7153/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/cef8db1a0bf53abecc3f64283f8b7011284eb4ba4de021ca1d4d2fffa970fcd3/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/020695ede76e0710d97c63dfdc51640f22cce9918dd33b3ad21c6523b63e5e68/rootfs
+overlay               244198912 84923908 159275004  35% /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/979fd0f3a1232dbba49c35742a5285a6f3df2df9a537532fed5445d526eaf911/rootfs
+tmpfs                   1613836        4   1613832   1% /run/user/0
+----------------------------------------------------------------------------
+Execute: ulimit -a
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 62865
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1048576
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 62865
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+----------------------------------------------------------------------------
+Execute: vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 1  1   1036 2202920   5708 9905120    0    0     1     8   11    7  1  1 98  0  0
+----------------------------------------------------------------------------
+Execute: iostat
+Linux 4.18.0-553.174.1.el8_10.x86_64 (localhost) 	10/23/2026 	_x86_64_	(8 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           1.08    0.01    1.07    0.01    0.01   97.82
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+vda               1.21         8.02        64.29    3898379   31251862
+dm-0              1.30         7.99        64.29    3884132   31255048
+dm-1              0.00         0.00         0.00       2268        844
+loop0             0.00         0.00         0.00       1167          0
+loop1             0.00         0.00         0.00       1135          0
+loop2             0.00         0.00         0.00        350          0
+
+----------------------------------------------------------------------------
+Execute: cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 1
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 2
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 3
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 4
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 5
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 6
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel Core Processor (Broadwell, IBRS)
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 2199.984
+cache size	: 16384 KB
+physical id	: 7
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa srbds mmio_unknown bhi
+bogomips	: 4399.96
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+----------------------------------------------------------------------------
+Execute: ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 Oct17 ?        00:38:57 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+root           2       0  0 Oct17 ?        00:00:00 [kthreadd]
+root           3       2  0 Oct17 ?        00:00:00 [rcu_gp]
+root           4       2  0 Oct17 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 Oct17 ?        00:00:00 [slub_flushwq]
+root           7       2  0 Oct17 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 Oct17 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 Oct17 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0 Oct17 ?        00:00:00 [rcu_tasks_trace]
+root          13       2  0 Oct17 ?        00:00:02 [ksoftirqd/0]
+root          14       2  0 Oct17 ?        00:03:53 [rcu_sched]
+root          15       2  0 Oct17 ?        00:00:00 [migration/0]
+root          16       2  0 Oct17 ?        00:00:00 [watchdog/0]
+root          17       2  0 Oct17 ?        00:00:00 [cpuhp/0]
+root          18       2  0 Oct17 ?        00:00:00 [cpuhp/1]
+root          19       2  0 Oct17 ?        00:00:00 [watchdog/1]
+root          20       2  0 Oct17 ?        00:00:00 [migration/1]
+root          21       2  0 Oct17 ?        00:00:04 [ksoftirqd/1]
+root          23       2  0 Oct17 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          24       2  0 Oct17 ?        00:00:00 [cpuhp/2]
+root          25       2  0 Oct17 ?        00:00:00 [watchdog/2]
+root          26       2  0 Oct17 ?        00:00:00 [migration/2]
+root          27       2  0 Oct17 ?        00:00:03 [ksoftirqd/2]
+root          29       2  0 Oct17 ?        00:00:00 [kworker/2:0H-events_highpri]
+root          30       2  0 Oct17 ?        00:00:00 [cpuhp/3]
+root          31       2  0 Oct17 ?        00:00:00 [watchdog/3]
+root          32       2  0 Oct17 ?        00:00:00 [migration/3]
+root          33       2  0 Oct17 ?        00:00:03 [ksoftirqd/3]
+root          35       2  0 Oct17 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          36       2  0 Oct17 ?        00:00:00 [cpuhp/4]
+root          37       2  0 Oct17 ?        00:00:00 [watchdog/4]
+root          38       2  0 Oct17 ?        00:00:00 [migration/4]
+root          39       2  0 Oct17 ?        00:00:02 [ksoftirqd/4]
+root          41       2  0 Oct17 ?        00:00:00 [kworker/4:0H-events_highpri]
+root          42       2  0 Oct17 ?        00:00:00 [cpuhp/5]
+root          43       2  0 Oct17 ?        00:00:00 [watchdog/5]
+root          44       2  0 Oct17 ?        00:00:00 [migration/5]
+root          45       2  0 Oct17 ?        00:00:02 [ksoftirqd/5]
+root          47       2  0 Oct17 ?        00:00:00 [kworker/5:0H-events_highpri]
+root          48       2  0 Oct17 ?        00:00:00 [cpuhp/6]
+root          49       2  0 Oct17 ?        00:00:00 [watchdog/6]
+root          50       2  0 Oct17 ?        00:00:00 [migration/6]
+root          51       2  0 Oct17 ?        00:00:02 [ksoftirqd/6]
+root          53       2  0 Oct17 ?        00:00:00 [kworker/6:0H-events_highpri]
+root          54       2  0 Oct17 ?        00:00:00 [cpuhp/7]
+root          55       2  0 Oct17 ?        00:00:00 [watchdog/7]
+root          56       2  0 Oct17 ?        00:00:00 [migration/7]
+root          57       2  0 Oct17 ?        00:00:02 [ksoftirqd/7]
+root          59       2  0 Oct17 ?        00:00:00 [kworker/7:0H-events_highpri]
+root          68       2  0 Oct17 ?        00:00:00 [kdevtmpfs]
+root          69       2  0 Oct17 ?        00:00:00 [netns]
+root          70       2  0 Oct17 ?        00:00:00 [kauditd]
+root          71       2  0 Oct17 ?        00:00:01 [khungtaskd]
+root          72       2  0 Oct17 ?        00:00:00 [oom_reaper]
+root          73       2  0 Oct17 ?        00:00:00 [writeback]
+root          74       2  0 Oct17 ?        00:00:00 [kcompactd0]
+root          75       2  0 Oct17 ?        00:00:00 [ksmd]
+root          76       2  0 Oct17 ?        00:00:50 [khugepaged]
+root          77       2  0 Oct17 ?        00:00:00 [crypto]
+root          78       2  0 Oct17 ?        00:00:00 [kintegrityd]
+root          79       2  0 Oct17 ?        00:00:00 [kblockd]
+root          80       2  0 Oct17 ?        00:00:00 [blkcg_punt_bio]
+root          82       2  0 Oct17 ?        00:00:00 [tpm_dev_wq]
+root          83       2  0 Oct17 ?        00:00:00 [md]
+root          84       2  0 Oct17 ?        00:00:00 [md_bitmap]
+root          85       2  0 Oct17 ?        00:00:00 [edac-poller]
+root          86       2  0 Oct17 ?        00:00:00 [watchdogd]
+root          87       2  0 Oct17 ?        00:00:00 [kworker/4:1H-kblockd]
+root         104       2  0 Oct17 ?        00:00:00 [kswapd0]
+root         170       2  0 Oct17 ?        00:00:00 [kthrotld]
+root         171       2  0 Oct17 ?        00:00:00 [acpi_thermal_pm]
+root         172       2  0 Oct17 ?        00:00:00 [kmpath_rdacd]
+root         173       2  0 Oct17 ?        00:00:00 [kaluad]
+root         174       2  0 Oct17 ?        00:00:00 [kworker/1:1H-xfs-log/dm-0]
+root         175       2  0 Oct17 ?        00:00:00 [ipv6_addrconf]
+root         177       2  0 Oct17 ?        00:00:00 [kstrp]
+root         217       2  0 Oct17 ?        00:00:00 [zswap-shrink]
+root         237       2  0 Oct17 ?        00:00:00 [kworker/5:1H-kblockd]
+root         265       2  0 Oct17 ?        00:00:00 [kworker/7:1H-kblockd]
+root         267       2  0 Oct17 ?        00:00:00 [kworker/6:1H-kblockd]
+root         269       2  0 Oct17 ?        00:00:01 [kworker/2:1H-xfs-log/dm-0]
+root         271       2  0 Oct17 ?        00:00:00 [kworker/0:1H-kblockd]
+root         273       2  0 Oct17 ?        00:00:00 [kworker/3:1H-kblockd]
+root         469       2  0 Oct17 ?        00:00:00 [ata_sff]
+root         473       2  0 Oct17 ?        00:00:00 [scsi_eh_0]
+root         474       2  0 Oct17 ?        00:00:00 [scsi_tmf_0]
+root         476       2  0 Oct17 ?        00:00:00 [scsi_eh_1]
+root         477       2  0 Oct17 ?        00:00:00 [scsi_tmf_1]
+root         553       2  0 Oct17 ?        00:00:00 [kdmflush/253:0]
+root         562       2  0 Oct17 ?        00:00:00 [kdmflush/253:1]
+root         589       2  0 Oct17 ?        00:00:00 [xfsalloc]
+root         590       2  0 Oct17 ?        00:00:00 [xfs_mru_cache]
+root         592       2  0 Oct17 ?        00:00:00 [xfs-buf/dm-0]
+root         593       2  0 Oct17 ?        00:00:00 [xfs-conv/dm-0]
+root         594       2  0 Oct17 ?        00:00:00 [xfs-cil/dm-0]
+root         595       2  0 Oct17 ?        00:00:00 [xfs-reclaim/dm-]
+root         596       2  0 Oct17 ?        00:00:00 [xfs-blockgc/dm-]
+root         597       2  0 Oct17 ?        00:00:00 [xfs-log/dm-0]
+root         598       2  0 Oct17 ?        00:00:58 [xfsaild/dm-0]
+root         710       1  0 Oct17 ?        00:00:16 /usr/lib/systemd/systemd-journald
+root         756       1  0 Oct17 ?        00:00:01 /usr/lib/systemd/systemd-udevd
+root         966       2  0 Oct17 ?        00:00:00 [xfs-buf/vda1]
+root         967       2  0 Oct17 ?        00:00:00 [xfs-conv/vda1]
+root         968       2  0 Oct17 ?        00:00:00 [xfs-cil/vda1]
+root         969       2  0 Oct17 ?        00:00:00 [xfs-reclaim/vda]
+root         970       2  0 Oct17 ?        00:00:00 [xfs-blockgc/vda]
+root         973       2  0 Oct17 ?        00:00:00 [xfs-log/vda1]
+root         974       2  0 Oct17 ?        00:00:00 [xfsaild/vda1]
+root         987       2  0 Oct17 ?        00:00:00 [loop0]
+root         991       2  0 Oct17 ?        00:00:00 [loop1]
+root         994       2  0 Oct17 ?        00:00:00 [loop2]
+root        1022       1  0 Oct17 ?        00:00:00 /opt/CrowdStrike/falcond
+root        1023    1022  1 Oct17 ?        02:19:51 falcon-sensor-bpf
+rpc         1026       1  0 Oct17 ?        00:00:00 /usr/bin/rpcbind -w -f
+root        1029       1  0 Oct17 ?        00:00:03 /sbin/auditd
+root        1031    1029  0 Oct17 ?        00:00:01 /usr/sbin/sedispatch
+root        1042       2  0 Oct17 ?        00:00:00 [rpciod]
+root        1043       2  0 Oct17 ?        00:00:00 [xprtiod]
+dbus        1079       1  0 Oct17 ?        00:21:54 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+libstor+    1083       1  0 Oct17 ?        00:00:01 /usr/bin/lsmd -d
+polkitd     1084       1  0 Oct17 ?        00:00:09 /usr/lib/polkit-1/polkitd --no-debug
+root        1087       1  0 Oct17 ?        00:00:00 /usr/sbin/smartd -n -q never
+root        1090       1  0 Oct17 ?        00:00:01 /usr/libexec/udisks2/udisksd
+root        1091       1  0 Oct17 ?        00:00:02 /usr/lib/systemd/systemd-machined
+rtkit       1095       1  0 Oct17 ?        00:00:05 /usr/libexec/rtkit-daemon
+root        1096       1  0 Oct17 ?        00:00:27 /usr/sbin/irqbalance --foreground
+root        1097       1  0 Oct17 ?        00:00:00 /usr/sbin/mcelog --ignorenodev --daemon --foreground
+root        1098       1  0 Oct17 ?        00:00:02 /usr/libexec/accounts-daemon
+chrony      1100       1  0 Oct17 ?        00:00:01 /usr/sbin/chronyd
+avahi       1101       1  0 Oct17 ?        00:00:02 avahi-daemon: running [TWAS1.local]
+root        1103       1  0 Oct17 ?        00:00:02 /usr/lib/systemd/systemd-logind
+root        1110       1  0 Oct17 ?        00:04:30 /usr/sbin/NetworkManager --no-daemon
+root        1124       1  0 Oct17 ?        00:00:18 /bin/bash /usr/sbin/ksmtuned
+avahi       1137    1101  0 Oct17 ?        00:00:00 avahi-daemon: chroot helper
+root        1139       1  0 Oct17 ?        00:00:00 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-curve25519-sha256-,gss-nistp256-sha256-,gss-group14-sha256-,gss-group16-sha512-,gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oCASignatureAlgorithms=ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,rsa-sha2-256,rsa-sha2-512,ssh-rsa
+root        1140       1  0 Oct17 ?        00:00:00 /bin/bash /var/lib/fyreservices/dot/dotd
+root        1148       1  0 Oct17 ?        00:00:00 /usr/bin/rhsmcertd
+root        1157       1  0 Oct17 ?        00:00:00 /usr/sbin/gssproxy -D
+root        1215       1  0 Oct17 ?        00:00:00 /usr/sbin/ModemManager
+root        1216       1  0 Oct17 ?        00:17:30 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
+root        1309       1  0 Oct17 ?        00:00:45 /usr/sbin/rsyslogd -n
+root        1315       1  0 Oct17 ?        00:00:00 /usr/sbin/crond -n
+root        1319       1  0 Oct17 ?        00:00:00 /usr/sbin/gdm
+root        1322       1  0 Oct17 ?        00:00:00 /usr/sbin/atd -f
+root        1374       1  8 Oct17 ?        11:23:13 /usr/local/bin/k3s server
+root        1391       1  0 Oct17 ?        00:00:00 /usr/sbin/vncsession vncuser1 :1
+root        1409    1319  0 Oct17 ?        00:00:00 gdm-session-worker [pam/gdm-launch-environment]
+vncuser1    1453       1  0 Oct17 ?        00:00:03 /usr/lib/systemd/systemd --user
+gdm         1460       1  0 Oct17 ?        00:00:03 /usr/lib/systemd/systemd --user
+vncuser1    1462    1453  0 Oct17 ?        00:00:00 (sd-pam)
+gdm         1464    1460  0 Oct17 ?        00:00:00 (sd-pam)
+vncuser1    1489    1453  0 Oct17 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+gdm         1490    1460  0 Oct17 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+vncuser1    1491    1391  0 Oct17 ?        00:00:00 xinit /etc/X11/xinit/Xsession gnome-session -- /usr/bin/Xvnc :1 -auth /home/vncuser1/.Xauthority -desktop localhost:1 (vncuser1) -fp catalogue:/etc/X11/fontpath.d -pn -rfbauth /home/vncuser1/.vnc/passwd -rfbport 5901
+gdm         1494    1409  0 Oct17 tty1     00:00:00 /usr/libexec/gdm-wayland-session --register-session dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm         1501    1460  0 Oct17 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+vncuser1    1588    1491  0 Oct17 ?        00:00:02 /usr/bin/Xvnc :1 -auth /home/vncuser1/.Xauthority -desktop localhost:1 (vncuser1) -fp catalogue:/etc/X11/fontpath.d -pn -rfbauth /home/vncuser1/.vnc/passwd -rfbport 5901
+gdm         1624    1494  0 Oct17 tty1     00:00:00 dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm         1629    1624  0 Oct17 tty1     00:00:00 dbus-daemon --nofork --print-address 4 --session
+gdm         1634    1624  0 Oct17 tty1     00:00:00 /usr/libexec/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+gdm         1794    1634  0 Oct17 tty1     00:05:09 /usr/bin/gnome-shell
+dnsmasq     1870       1  0 Oct17 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+root        1871    1870  0 Oct17 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+vncuser1    1900    1491  0 Oct17 ?        00:00:00 /usr/libexec/gnome-session-binary
+vncuser1    1926    1453  0 Oct17 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+vncuser1    1980    1453  0 Oct17 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+vncuser1    1987    1980  0 Oct17 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+vncuser1    1990    1453  0 Oct17 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+gdm         2022    1794  0 Oct17 tty1     00:00:00 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -auth /run/user/42/.mutter-Xwaylandauth.FNHRX3 -listen 4 -listen 5 -displayfd 6
+gdm         2052       1  0 Oct17 tty1     00:00:00 /usr/libexec/at-spi-bus-launcher
+gdm         2058    2052  0 Oct17 tty1     00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm         2065       1  0 Oct17 tty1     00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+vncuser1    2067       1  0 Oct17 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --components=secrets
+vncuser1    2084    1900  0 Oct17 ?        00:05:15 /usr/bin/gnome-shell
+vncuser1    2122    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfsd
+vncuser1    2127    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+gdm         2153    1794  0 Oct17 tty1     00:00:00 ibus-daemon --xim --panel disable
+gdm         2156    2153  0 Oct17 tty1     00:00:00 /usr/libexec/ibus-dconf
+gdm         2160       1  0 Oct17 tty1     00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+gdm         2162       1  0 Oct17 tty1     00:00:00 /usr/libexec/xdg-permission-store
+gdm         2165       1  0 Oct17 tty1     00:00:00 /usr/libexec/ibus-portal
+vncuser1    2174    2084  0 Oct17 ?        00:00:00 ibus-daemon --xim --panel disable
+vncuser1    2178    2174  0 Oct17 ?        00:00:00 /usr/libexec/ibus-dconf
+vncuser1    2181    2174  0 Oct17 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+vncuser1    2186       1  0 Oct17 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+vncuser1    2189    1453  0 Oct17 ?        00:00:00 /usr/libexec/xdg-permission-store
+vncuser1    2190    1453  0 Oct17 ?        00:00:00 /usr/libexec/ibus-portal
+vncuser1    2244    1453  0 Oct17 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+vncuser1    2249    1453  0 Oct17 ?        00:00:00 /usr/libexec/evolution-source-registry
+root        2250       1  0 Oct17 ?        00:00:00 /usr/libexec/upowerd
+vncuser1    2263    1453  0 Oct17 ?        00:00:00 /usr/libexec/goa-daemon
+root        2267       1  0 Oct17 ?        00:00:21 /usr/libexec/packagekitd
+vncuser1    2279    1453  0 Oct17 ?        00:00:31 /usr/libexec/goa-identity-service
+gdm         2282    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-a11y-settings
+gdm         2285    1634  0 Oct17 tty1     00:00:03 /usr/libexec/gsd-color
+gdm         2288    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-datetime
+gdm         2291    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-housekeeping
+gdm         2295    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-keyboard
+gdm         2301    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-media-keys
+gdm         2308    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-power
+gdm         2309    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-print-notifications
+gdm         2311    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-rfkill
+gdm         2316    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-screensaver-proxy
+gdm         2317    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-sharing
+gdm         2325    1634  0 Oct17 tty1     00:00:30 /usr/libexec/gsd-smartcard
+gdm         2330    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-sound
+gdm         2332    1634  0 Oct17 tty1     00:00:00 /usr/libexec/gsd-wacom
+vncuser1    2344    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+colord      2350       1  0 Oct17 ?        00:00:00 /usr/libexec/colord
+vncuser1    2371    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+root        2378       1  0 Oct17 ?        00:00:01 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -u -s
+vncuser1    2379    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+vncuser1    2398    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+root        2413       1  0 Oct17 ?        00:01:03 /usr/libexec/sssd/sssd_kcm --uid 0 --gid 0 --logger=files
+vncuser1    2422    1453  0 Oct17 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+gdm         2426    2153  0 Oct17 tty1     00:00:00 /usr/libexec/ibus-engine-simple
+root        2492    1374  0 Oct17 ?        01:07:19 containerd 
+vncuser1    2518    1900  0 Oct17 ?        00:00:01 /usr/libexec/gsd-power
+vncuser1    2519    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-print-notifications
+vncuser1    2522    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-rfkill
+vncuser1    2527    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+vncuser1    2533    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-sharing
+vncuser1    2535    1900  0 Oct17 ?        00:00:30 /usr/libexec/gsd-smartcard
+vncuser1    2541    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-sound
+vncuser1    2543    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-xsettings
+vncuser1    2546    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-subman
+vncuser1    2548    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-wacom
+vncuser1    2553    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+vncuser1    2554    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-clipboard
+vncuser1    2555    1900  0 Oct17 ?        00:00:04 /usr/libexec/gsd-color
+vncuser1    2557    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-datetime
+vncuser1    2558    1900  0 Oct17 ?        00:00:31 /usr/libexec/gsd-housekeeping
+vncuser1    2560    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-keyboard
+vncuser1    2561    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-media-keys
+vncuser1    2564    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-mouse
+vncuser1    2570    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-account
+vncuser1    2577       1  0 Oct17 ?        00:00:00 /usr/libexec/gsd-printer
+root        2605       1  0 Oct17 ?        00:01:58 /usr/libexec/platform-python /usr/libexec/rhsm-service
+vncuser1    2622    1453  0 Oct17 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+vncuser1    2663    1900  0 Oct17 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+vncuser1    2669    2174  0 Oct17 ?        00:00:00 /usr/libexec/ibus-engine-simple
+vncuser1    2674    1900  0 Oct17 ?        00:00:00 /usr/libexec/tracker-miner-fs
+vncuser1    2686    1900  0 Oct17 ?        00:00:14 /usr/bin/gnome-software --gapplication-service
+vncuser1    2709    1900  0 Oct17 ?        00:00:00 /usr/libexec/tracker-miner-apps
+vncuser1    2715    2622  0 Oct17 ?        00:00:00 /usr/libexec/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx2622x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/2622/2
+vncuser1    2716    1453  0 Oct17 ?        00:00:00 /usr/libexec/tracker-store
+vncuser1    2776    1453  0 Oct17 ?        00:00:00 /usr/libexec/dconf-service
+vncuser1    2787    1453  0 Oct17 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+vncuser1    2848    2787  0 Oct17 ?        00:00:00 /usr/libexec/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx2787x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/2787/2
+root        3191       1  0 Oct17 ?        00:00:13 /usr/libexec/fwupd/fwupd
+root        5009       1  0 Oct17 ?        00:07:33 /var/lib/rancher/k3s/data/86a616cdaf0fb57fa13670ac5a16f1699f4b2be4772e842d97904c69698ffdc2/bin/containerd-shim-runc-v2 -namespace k8s.io -id a5b532d248f99f494560f87e4852880facc140a0446964f5496037906d635682 -address /run/k3s/containerd/containerd.sock
+65532       5060    5009  0 Oct17 ?        00:00:00 /pause
+root        5074       1  0 Oct17 ?        00:07:31 /var/lib/rancher/k3s/data/86a616cdaf0fb57fa13670ac5a16f1699f4b2be4772e842d97904c69698ffdc2/bin/containerd-shim-runc-v2 -namespace k8s.io -id 8334dcccc3018bc84a6aef3d5b17e76ad308ff98441d298201bedcf3c6810ffa -address /run/k3s/containerd/containerd.sock
+root        5099       1  0 Oct17 ?        00:07:10 /var/lib/rancher/k3s/data/86a616cdaf0fb57fa13670ac5a16f1699f4b2be4772e842d97904c69698ffdc2/bin/containerd-shim-runc-v2 -namespace k8s.io -id f7151eb573e0ee2711828fd1af44a541586b16035ff3f049c6fbf4d1b287ed9c -address /run/k3s/containerd/containerd.sock
+65535       5122    5074  0 Oct17 ?        00:00:00 /pause
+root        5136       1  0 Oct17 ?        00:12:42 /var/lib/rancher/k3s/data/86a616cdaf0fb57fa13670ac5a16f1699f4b2be4772e842d97904c69698ffdc2/bin/containerd-shim-runc-v2 -namespace k8s.io -id 7db92c890aa798bb8f6f9aafffcb80644aef39e98e0653923637010f56041c74 -address /run/k3s/containerd/containerd.sock
+root        5170       1  0 Oct17 ?        00:07:23 /var/lib/rancher/k3s/data/86a616cdaf0fb57fa13670ac5a16f1699f4b2be4772e842d97904c69698ffdc2/bin/containerd-shim-runc-v2 -namespace k8s.io -id 8abf7e6b7d05f96614a98ebd786d63a6e3a75c4918c26be0b0a0830aa9173954 -address /run/k3s/containerd/containerd.sock
+65535       5204    5136  0 Oct17 ?        00:00:00 /pause
+65535       5213    5099  0 Oct17 ?        00:00:00 /pause
+65535       5233    5170  0 Oct17 ?        00:00:00 /pause
+65532       5264    5009  0 Oct17 ?        00:05:33 traefik traefik --global.checknewversion --global.sendanonymoususage --entryPoints.metrics.address=:9100/tcp --entryPoints.traefik.address=:8080/tcp --entryPoints.web.address=:8000/tcp --entryPoints.websecure.address=:8443/tcp --api.dashboard=true --ping=true --metrics.prometheus=true --metrics.prometheus.entrypoint=metrics --providers.kubernetescrd --providers.kubernetescrd.allowEmptyServices=true --providers.kubernetesingress --providers.kubernetesingress.allowEmptyServices=true --providers.kubernetesingress.ingressendpoint.publishedservice=kube-system/traefik --entryPoints.websecure.http.tls=true --log.level=INFO
+65532       5311    5074  0 Oct17 ?        00:21:43 /coredns -conf /etc/coredns/Corefile
+root        5334    5136  0 Oct17 ?        00:00:00 /bin/sh /usr/bin/entry
+vncuser1    5401    5170  0 Oct17 ?        01:04:08 /metrics-server --cert-dir=/tmp --secure-port=10250 --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --kubelet-use-node-status-port --metric-resolution=15s --tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
+root        5441    5099  0 Oct17 ?        00:01:14 local-path-provisioner start --config /etc/config/config.json
+root        5476    5136  0 Oct17 ?        00:00:00 /bin/sh /usr/bin/entry
+root      391829       2  0 Oct22 ?        00:00:01 [kworker/u16:2-events_unbound]
+root      406607       2  0 04:22 ?        00:00:00 [kworker/u16:3+flush-253:0]
+root      412326       2  0 06:30 ?        00:00:00 [kworker/1:2-events]
+root      412368       2  0 06:30 ?        00:00:00 [kworker/0:0-cgroup_destroy]
+root      414077       2  0 07:10 ?        00:00:00 [kworker/4:1-events]
+root      414306       2  0 07:15 ?        00:00:00 [kworker/u16:1-events_unbound]
+root      414798       2  0 07:25 ?        00:00:00 [kworker/6:0-events]
+root      414966       2  0 07:30 ?        00:00:00 [kworker/5:3-cgroup_destroy]
+root      415070       2  0 07:32 ?        00:00:00 [kworker/7:3-events]
+root      415192       2  0 07:32 ?        00:00:00 [kworker/0:1-events]
+root      415199       2  0 07:32 ?        00:00:00 [kworker/1:1-events]
+root      415200    1139  0 07:32 ?        00:00:00 sshd: root [priv]
+root      415205       1  0 07:32 ?        00:00:00 /usr/lib/systemd/systemd --user
+root      415207       2  0 07:32 ?        00:00:00 [kworker/4:3-events]
+root      415209  415205  0 07:32 ?        00:00:00 (sd-pam)
+root      415222  415200  0 07:32 ?        00:00:00 sshd: root@pts/0
+root      415223  415222  0 07:32 pts/0    00:00:00 -bash
+root      415253       1  0 07:32 ?        00:00:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 4 --print-address 6 --session
+root      415256       1  0 07:32 ?        00:00:00 /bin/bash /usr/libexec/dbus-1/dbus-kill-process-with-session 415253
+root      415260  415256  0 07:32 ?        00:00:00 gio monitor -f /run/systemd/sessions/87 /tmp/dbus-session-monitor.9j6ZnJ
+root      415272       1  0 07:32 ?        00:00:00 /usr/libexec/gvfsd
+root      415283       1  0 07:32 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/0/gvfs -f -o big_writes
+root      415452       1  2 07:32 pts/0    00:01:01 /opt/IBM/WebSphere_855/AppServer/java/bin/java -Dosgi.install.area=/opt/IBM/WebSphere_855/AppServer -Dwas.status.socket=46277 -Dosgi.configuration.area=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/servers/dmgr/configuration -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev85_1.8_64_bundled_%g,nonFatal -Xscmaxaot16M -Xscmx120M -Dcom.ibm.xtq.processor.overrideSecureProcessing=true -Xcheck:dump -Djava.security.properties=/opt/IBM/WebSphere_855/AppServer/properties/java.security -Xbootclasspath/p:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ibmorb.jar -classpath /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -verbose:gc -Xms50m -Xmx256m -Xcompressedrefs -Dws.ext.dirs=/opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere_855/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere_855/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01 -Djava.ext.dirs=/opt/IBM/WebSphere_855/AppServer/tivoli/tam:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ext -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dpython.cachedir=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/temp/cachedir -Dwas.install.root=/opt/IBM/WebSphere_855/AppServer -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Djava.awt.headless=true -Xverbosegclog:/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/logs/dmgr/verbosegc.%seq.log,20,50000 -Djava.library.path=/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib: -Djava.endorsed.dirs=/opt/IBM/WebSphere_855/AppServer/endorsed_apis:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/endorsed -Djava.security.auth.login.config=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/config TWAS1Cell01 TWAS1CellManager01 dmgr
+root      415973       2  0 07:38 ?        00:00:00 [kworker/6:2]
+root      415974       2  0 07:38 ?        00:00:00 [kworker/7:1-events]
+root      416063       2  0 07:40 ?        00:00:00 [kworker/3:3-events]
+root      417089       1  3 07:53 pts/0    00:00:37 /opt/IBM/WebSphere_855/AppServer/java/bin/java -Xmaxt0.5 -Dwas.status.socket=42907 -Dosgi.install.area=/opt/IBM/WebSphere_855/AppServer -Dosgi.configuration.area=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/servers/nodeagent/configuration -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev85_1.8_64_bundled_%g,nonFatal -Dcom.ibm.xtq.processor.overrideSecureProcessing=true -Xcheck:dump -Djava.security.properties=/opt/IBM/WebSphere_855/AppServer/properties/java.security -Xbootclasspath/p:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ibmorb.jar -Dorg.osgi.framework.bootdelegation=* -classpath /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar -Dorg.osgi.framework.bootdelegation=* -Dibm.websphere.internalClassAccessMode=allow -verbose:gc -Xms50m -Xmx256m -Xcompressedrefs -Xscmaxaot16M -Xnoaot -Xscmx120M -Dws.ext.dirs=/opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere_855/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere_855/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01 -Djava.ext.dirs=/opt/IBM/WebSphere_855/AppServer/tivoli/tam:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ext -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dpython.cachedir=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/temp/cachedir -Dwas.install.root=/opt/IBM/WebSphere_855/AppServer -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Djava.awt.headless=true -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 -Djava.library.path=/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib: -Djava.endorsed.dirs=/opt/IBM/WebSphere_855/AppServer/endorsed_apis:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/endorsed -Djava.security.auth.login.config=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config TWAS1Cell01 Node01 nodeagent
+root      417406       1  3 07:53 pts/0    00:00:36 /opt/IBM/WebSphere_855/AppServer/java/bin/java -Dosgi.install.area=/opt/IBM/WebSphere_855/AppServer -Dwas.status.socket=39923 -Dosgi.configuration.area=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/servers/server1/configuration -Djava.awt.headless=true -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev85_1.8_64_bundled_%g,nonFatal -Dcom.ibm.xtq.processor.overrideSecureProcessing=true -Xcheck:dump -Djava.security.properties=/opt/IBM/WebSphere_855/AppServer/properties/java.security -Xbootclasspath/p:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ibmorb.jar -classpath /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -verbose:gc -Xms50m -Xmx256m -Xcompressedrefs -Xscmaxaot16M -Xscmx120M -Dws.ext.dirs=/opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere_855/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere_855/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01 -Djava.ext.dirs=/opt/IBM/WebSphere_855/AppServer/tivoli/tam:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/ext -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dpython.cachedir=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/temp/cachedir -Dwas.install.root=/opt/IBM/WebSphere_855/AppServer -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Xverbosegclog:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/server1/verbosegc.%seq.log,20,50000 -Djava.library.path=/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib: -Djava.endorsed.dirs=/opt/IBM/WebSphere_855/AppServer/endorsed_apis:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/endorsed -Djava.security.auth.login.config=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/config TWAS1Cell01 Node01 server1
+root      417766       2  0 07:55 ?        00:00:00 [kworker/3:0]
+root      417889       2  0 07:57 ?        00:00:00 [kworker/2:0-kdmflush/253:0]
+root      418155       2  0 08:00 ?        00:00:00 [kworker/5:0-events]
+root      418156       2  0 08:00 ?        00:00:00 [kworker/2:3-mm_percpu_wq]
+root      418577    1140  0 08:03 ?        00:00:00 sleep 15m
+root      420616       2  0 08:09 ?        00:00:00 [kworker/2:1-mm_percpu_wq]
+root      421556       2  0 08:10 ?        00:00:00 [kworker/5:1-cgroup_pidlist_destroy]
+root      421557       2  0 08:10 ?        00:00:00 [kworker/5:2-events]
+root      421611       2  0 08:10 ?        00:00:00 [kworker/7:0-events]
+root      422635  415223  0 08:12 pts/0    00:00:00 /bin/sh /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/bin/collector.sh -JarOutName /tmp/ssl_sample/Dmgr01-WASenv.jar
+root      422643  422635  0 08:12 pts/0    00:00:00 /bin/sh /opt/IBM/WebSphere_855/AppServer/bin/collector.sh -JarOutName /tmp/ssl_sample/Dmgr01-WASenv.jar
+root      422661  422643 99 08:12 pts/0    00:00:24 /opt/IBM/WebSphere_855/AppServer/java/bin/java -Xmx4096m -Dwas.install.root=/opt/IBM/WebSphere_855/AppServer -Duser.install.root=/opt/IBM/WebSphere_855/AppServer -Dws.ext.dirs=/opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Djava.endorsed.dirs=/opt/IBM/WebSphere_855/AppServer/endorsed_apis:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/endorsed -Xmx1024m -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Djava.util.logging.configureByServer=true -classpath /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar com.ibm.ws.bootstrap.WSLauncher com.ibm.websphere.rastools.collector.Collector -InstallRoot /opt/IBM/WebSphere_855/AppServer -JavaHome /opt/IBM/WebSphere_855/AppServer/java -ConfigRoot /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/config -WasNode TWAS1CellManager01 -CellName TWAS1Cell01 -ProfileRoot /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01 -JarOutName /tmp/ssl_sample/Dmgr01-WASenv.jar
+root      422775    1124  0 08:12 ?        00:00:00 sleep 60
+root      423139  422661  0 08:12 pts/0    00:00:00 sh ./com/ibm/websphere/rastools/collector/linux.system.sh /opt/IBM/WebSphere_855/AppServer
+root      423153  423139  0 08:12 pts/0    00:00:00 ps -ef
+----------------------------------------------------------------------------
+Execute: cat /proc/pci
+----------------------------------------------------------------------------
+Execute: type java
+java is /opt/IBM/WebSphere_855/AppServer/java/bin/java
+----------------------------------------------------------------------------
+Execute: ls -l /opt/IBM/WebSphere_855/AppServer/java
+total 12032
+drwxr-xr-x  2 root root     4096 Jan  5  2026 bin
+-rwxr-xr-x  1 root root      668 Oct 30  2025 copyright
+drwxr-xr-x 13 root root      125 Jan  5  2026 docs
+drwxr-xr-x  3 root root      163 Jan  5  2026 include
+drwxr-xr-x  7 root root       99 Jan  5  2026 jre
+drwxr-xr-x  3 root root      135 Jan  5  2026 lib
+-rwxr-xr-x  1 root root   205340 Oct 30  2025 notices.txt
+-rwxr-xr-x  1 root root      798 Oct 30  2025 readme.txt
+-rwxr-xr-x  1 root root       84 Oct 30  2025 release
+-rwxr-xr-x  1 root root 12091542 Oct 30  2025 src.zip
+----------------------------------------------------------------------------
+Execute: ls -lL /opt/IBM/WebSphere_855/AppServer/java
+total 12032
+drwxr-xr-x  2 root root     4096 Jan  5  2026 bin
+-rwxr-xr-x  1 root root      668 Oct 30  2025 copyright
+drwxr-xr-x 13 root root      125 Jan  5  2026 docs
+drwxr-xr-x  3 root root      163 Jan  5  2026 include
+drwxr-xr-x  7 root root       99 Jan  5  2026 jre
+drwxr-xr-x  3 root root      135 Jan  5  2026 lib
+-rwxr-xr-x  1 root root   205340 Oct 30  2025 notices.txt
+-rwxr-xr-x  1 root root      798 Oct 30  2025 readme.txt
+-rwxr-xr-x  1 root root       84 Oct 30  2025 release
+-rwxr-xr-x  1 root root 12091542 Oct 30  2025 src.zip
+----------------------------------------------------------------------------
+Execute: java -version
+java version "1.8.0_471"
+Java(TM) SE Runtime Environment (build 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55))
+IBM J9 VM (build 2.9, JRE 1.8.0 Linux amd64-64-Bit Compressed References 20250916_102651 (JIT enabled, AOT enabled)
+OpenJ9   - 404c8144a62
+OMR      - 41bf6208d
+IBM      - 8e661b7)
+JCL - 20251006_01 based on Oracle jdk8u471-b09
+----------------------------------------------------------------------------

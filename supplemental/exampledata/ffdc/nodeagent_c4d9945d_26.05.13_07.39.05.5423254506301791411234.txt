@@ -1,0 +1,549 @@
+[5/13/26 7:39:05:544 PDT]     FFDC Exception:org.omg.CORBA.TRANSIENT SourceId:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl.reactivateServers ProbeId:906 Reporter:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+org.omg.CORBA.TRANSIENT: initial and forwarded IOR inaccessible  vmcid: IBM  minor code: E07  completed: No
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1139)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1514)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1028)
+	at com.ibm.CORBA.iiop.ClientDelegate.createRequest(ClientDelegate.java:1480)
+	at com.ibm.rmi.corba.ClientDelegate.request(ClientDelegate.java:1658)
+	at com.ibm.CORBA.iiop.ClientDelegate.request(ClientDelegate.java:1436)
+	at org.omg.CORBA.portable.ObjectImpl._request(ObjectImpl.java:458)
+	at com.ibm.ws.orb.services.lsd._ORB_ServerStub.ping(_ORB_ServerStub.java:34)
+	at com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl.reactivateServers(LocationServiceImpl.java:885)
+	at com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl.getNextTarget(LocationServiceImpl.java:430)
+	at com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon.getDirectIOR(LocationServiceDaemon.java:203)
+	at com.ibm.rmi.iiop.Connection.doLocateRequestWork(Connection.java:3407)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:3155)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ws.giop.threadpool.WorkQueueElement.dispatch(WorkQueueElement.java:174)
+	at com.ibm.ws.giop.threadpool.PooledThread.handleRequest(PooledThread.java:85)
+	at com.ibm.ws.giop.threadpool.PooledThread.run(PooledThread.java:102)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:506)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:248)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:230)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:405)
+	at java.net.Socket.connect(Socket.java:628)
+	at com.ibm.ws.orbimpl.transport.WSTCPTransportConnection.createSocket(WSTCPTransportConnection.java:403)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:375)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:437)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.ClientDelegate.locate(ClientDelegate.java:1740)
+	at com.ibm.rmi.corba.ClientDelegate._createRequest(ClientDelegate.java:1765)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1050)
+	at com.ibm.rmi.corba.ClientDelegate.createRequest(ClientDelegate.java:1135)
+	... 17 more
+
+CapturedDataElements begin
+arg0 BEGIN:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+org.omg.CORBA.portable.ObjectImpl::__delegate BEGIN:com.ibm.CORBA.iiop.ClientDelegate@40520e27
+ com.ibm.rmi.corba.ClientDelegate::CLASS:com.ibm.rmi.corba.ClientDelegate
+ com.ibm.rmi.corba.ClientDelegate::orb BEGIN:com.ibm.CORBA.iiop.ORB@5913fbbd
+  org.omg.CORBA.ORB::CLASS:org.omg.CORBA.ORB
+  org.omg.CORBA.ORB::ORBClassKey:org.omg.CORBA.ORBClass
+  org.omg.CORBA.ORB::ORBSingletonClassKey:org.omg.CORBA.ORBSingletonClass
+  org.omg.CORBA.ORB::defaultORB:com.ibm.CORBA.iiop.ORB
+  org.omg.CORBA.ORB::defaultORBSingleton:com.ibm.rmi.corba.ORBSingleton
+  org.omg.CORBA.ORB::singleton:null
+   com.ibm.rmi.ORB::interop:com.ibm.rmi.util.Interop@27afc6da depth limit reached
+  com.ibm.rmi.corba.ORB::CLASS:com.ibm.rmi.corba.ORB
+  com.ibm.rmi.corba.ORB::LSD_PLUGIN:com.ibm.CORBA.iiop.LSDPlugin
+  com.ibm.rmi.corba.ORB::PMI_PLUGIN:com.ibm.CORBA.iiop.PMIPlugin
+  com.ibm.rmi.corba.ORB::ASYNCH_PLUGIN:com.ibm.CORBA.iiop.AsynchronousServantPlugin
+  com.ibm.rmi.corba.ORB::WLM_PLUGIN:com.ibm.CORBA.iiop.WLMPlugin
+  com.ibm.rmi.corba.ORB::J2EE_CONTAINER_PLUGIN:com.ibm.CORBA.iiop.J2EEContainerPlugin
+  com.ibm.rmi.corba.ORB::THREADPOOL_PLUGIN:com.ibm.CORBA.iiop.ThreadPool
+  com.ibm.rmi.corba.ORB::TRANSPORT_PLUGIN:com.ibm.CORBA.transport.Transport
+  com.ibm.rmi.corba.ORB::READERPOOL_PLUGIN:com.ibm.CORBA.transport.ReaderPool
+  com.ibm.rmi.corba.ORB::IIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.IIOPChannelPlugin
+  com.ibm.rmi.corba.ORB::GIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.giop.GIOPChannelPlugin
+   com.ibm.rmi.corba.ORB::FIRST_PREREQ_PLUGINS:[Ljava.lang.String;@1522c656 depth limit reached
+   com.ibm.rmi.corba.ORB::SECOND_PREREQ_PLUGINS:[Ljava.lang.String;@e4bf5de9 depth limit reached
+   com.ibm.rmi.corba.ORB::_dynamicRequests:java.util.Vector@9831dc12 depth limit reached
+   com.ibm.rmi.corba.ORB::_svResponseReceived:com.ibm.rmi.corba.SynchVariable@58b76b1f depth limit reached
+  com.ibm.rmi.corba.ORB::ORBInitialHost:TWAS1
+  com.ibm.rmi.corba.ORB::ORBInitialPort:2811
+  com.ibm.rmi.corba.ORB::ORBServerHost:TWAS1
+  com.ibm.rmi.corba.ORB::ORBServerPort:9900
+  com.ibm.rmi.corba.ORB::appletHost:null
+  com.ibm.rmi.corba.ORB::appletCodeBase:null
+  com.ibm.rmi.corba.ORB::charEncoding:83951617
+  com.ibm.rmi.corba.ORB::wcharEncoding:65792
+  com.ibm.rmi.corba.ORB::wcharDefault:0
+  com.ibm.rmi.corba.ORB::serverId:298002686
+  com.ibm.rmi.corba.ORB::orbId:null
+  com.ibm.rmi.corba.ORB::noProprietaryActivation:false
+   com.ibm.rmi.corba.ORB::arguments:[Ljava.lang.String;@f3b7e4a5 depth limit reached
+   com.ibm.rmi.corba.ORB::initProps:java.util.Properties@736849f1 depth limit reached
+  com.ibm.rmi.corba.ORB::initApplet:null
+  com.ibm.rmi.corba.ORB::bufferSize:2048
+  com.ibm.rmi.corba.ORB::fragmentSize:4096
+  com.ibm.rmi.corba.ORB::largeDataBufferSize:4096
+  com.ibm.rmi.corba.ORB::outputBufferListSize:100
+  com.ibm.rmi.corba.ORB::outputLargeDataBufferListSize:20
+  com.ibm.rmi.corba.ORB::useLocateRequest:true
+  com.ibm.rmi.corba.ORB::queueDepth:0
+  com.ibm.rmi.corba.ORB::proxyStubs:0
+  com.ibm.rmi.corba.ORB::alwaysUseOMG4796:false
+  com.ibm.rmi.corba.ORB::useOMG5689:true
+  com.ibm.rmi.corba.ORB::allowUserInterrupt:false
+  com.ibm.rmi.corba.ORB::enableWCharSend:false
+  com.ibm.rmi.corba.ORB::enableWCharReceive:false
+   com.ibm.rmi.corba.ORB::pluginRegistry:com.ibm.rmi.corba.PluginRegistry@bde2240b depth limit reached
+   com.ibm.rmi.corba.ORB::subcontractRegistry:com.ibm.rmi.SubcontractRegistry@58aa89e2 depth limit reached
+   com.ibm.rmi.corba.ORB::interceptorManager:com.ibm.rmi.pi.InterceptorManager@dc785f87 depth limit reached
+   com.ibm.rmi.corba.ORB::objectResolver:com.ibm.ejs.oa.EJSRootOAImpl@b1d37256 depth limit reached
+  com.ibm.rmi.corba.ORB::defaultInitialServicesPort:2809
+  com.ibm.rmi.corba.ORB::debug:false
+  com.ibm.rmi.corba.ORB::isRunningInApplet:false
+  com.ibm.rmi.corba.ORB::shutdownObj:java.lang.Object@308959e4
+   com.ibm.rmi.corba.ORB::initialReferenceClient:com.ibm.rmi.corba.InitialReferenceClient@4e8cf8ee depth limit reached
+   com.ibm.rmi.corba.ORB::typeCodeMap:java.util.concurrent.ConcurrentHashMap@5e05ad2d depth limit reached
+  com.ibm.rmi.corba.ORB::savedId:null
+  com.ibm.rmi.corba.ORB::savedCode:null
+   com.ibm.rmi.corba.ORB::valueFactoryCache:java.util.concurrent.ConcurrentHashMap@436d4969 depth limit reached
+  com.ibm.rmi.corba.ORB::tpMaxSize:2147483647
+  com.ibm.rmi.corba.ORB::tpMinSize:1
+  com.ibm.rmi.corba.ORB::tpTimeOut:-1
+  com.ibm.rmi.corba.ORB::tpIsGrowable:false
+  com.ibm.rmi.corba.ORB::requestRetriesCount:1
+  com.ibm.rmi.corba.ORB::requestRetriesDelay:0
+  com.ibm.rmi.corba.ORB::requestTimeout:180
+  com.ibm.rmi.corba.ORB::locateRequestTimeout:180
+  com.ibm.rmi.corba.ORB::fragmentTimeout:300
+  com.ibm.rmi.corba.ORB::connectTimeout:10
+  com.ibm.rmi.corba.ORB::socketWriteTimeout:0
+  com.ibm.rmi.corba.ORB::serverSocketLingerTime:0
+  com.ibm.rmi.corba.ORB::clientSocketLingerTime:0
+  com.ibm.rmi.corba.ORB::socketTimer:null
+  com.ibm.rmi.corba.ORB::initialReadTimeOut:10
+  com.ibm.rmi.corba.ORB::maxRetryInitialReadTimeout:0
+  com.ibm.rmi.corba.ORB::clientCallback:false
+  com.ibm.rmi.corba.ORB::noLocalInterceptors:false
+  com.ibm.rmi.corba.ORB::cbSupported:true
+  com.ibm.rmi.corba.ORB::usingDefaultLocalHost:false
+  com.ibm.rmi.corba.ORB::usingDefaultListenerPort:false
+  com.ibm.rmi.corba.ORB::usingEndpointHost:false
+  com.ibm.rmi.corba.ORB::usingEndpointPort:false
+  com.ibm.rmi.corba.ORB::codebaseURLEnabled:false
+  com.ibm.rmi.corba.ORB::noLocalCopies:true
+  com.ibm.rmi.corba.ORB::serverKeepAlive:false
+  com.ibm.rmi.corba.ORB::useSchema:false
+  com.ibm.rmi.corba.ORB::useVarIntEncodoingforWStrings:true
+  com.ibm.rmi.corba.ORB::alwaysSendConnectionContexts:false
+  com.ibm.rmi.corba.ORB::suppressDefaultWriteObjectException:false
+   com.ibm.rmi.corba.ORB::sendConnectionContextsMap:java.util.HashMap@4828821e depth limit reached
+  com.ibm.rmi.corba.ORB::connectionMultiplicity:20
+  com.ibm.rmi.corba.ORB::highWaterMark:240
+  com.ibm.rmi.corba.ORB::lowWaterMark:100
+  com.ibm.rmi.corba.ORB::autonomicMode:true
+  com.ibm.rmi.corba.ORB::DEFAULT_AUTONOMIC_MULTIPLICITY:20
+   com.ibm.rmi.corba.ORB::pmiServer:com.ibm.ws.pmi.server.modules.OrbPerfModule@b9272f11 depth limit reached
+   com.ibm.rmi.corba.ORB::lsdPlugin:com.ibm.ws.orbimpl.services.lsd.LocationServiceDaemon@fd8a3334 depth limit reached
+   com.ibm.rmi.corba.ORB::fWLMPlugin:com.ibm.ws.wlm.client.WLMClient@e6f26b9d depth limit reached
+  com.ibm.rmi.corba.ORB::j2EEPlugin:null
+   com.ibm.rmi.corba.ORB::asynchPlugin:com.ibm.ejs.container.AsynchronousServantPluginImpl@e92f69f8 depth limit reached
+  com.ibm.rmi.corba.ORB::checkedPMIPlugin:true
+  com.ibm.rmi.corba.ORB::checkedLSDPlugin:true
+  com.ibm.rmi.corba.ORB::checkedWLMPlugin:true
+  com.ibm.rmi.corba.ORB::checkedJ2EEPlugin:false
+  com.ibm.rmi.corba.ORB::checkedAsynchPlugin:true
+  com.ibm.rmi.corba.ORB::bufferPool:null
+  com.ibm.rmi.corba.ORB::largeDataBufferPool:null
+  com.ibm.rmi.corba.ORB::addressingDisposition:0
+  com.ibm.rmi.corba.ORB::servantOld:null
+  com.ibm.rmi.corba.ORB::servantNew:null
+  com.ibm.rmi.corba.ORB::disconnectedDelegate:null
+  com.ibm.rmi.corba.ORB::isSINOClient:true
+  com.ibm.rmi.corba.ORB::maxGIOPMinor:2
+  com.ibm.rmi.corba.ORB::extendedVersionId:17
+  com.ibm.rmi.corba.ORB::partnerVersionCtx:null
+   com.ibm.rmi.corba.ORB::transportPolicy:com.ibm.rmi.corba.TransportPolicy@bfa9c228 depth limit reached
+   com.ibm.rmi.corba.ORB::workQueueUsePolicy:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@dfd238f depth limit reached
+  com.ibm.rmi.corba.ORB::traceBuffer:null
+   com.ibm.rmi.corba.ORB::nativeCodeset:com.ibm.rmi.CodeSetComponentInfo@3a0460b5 depth limit reached
+  com.ibm.rmi.corba.ORB::rootPOA:null
+  com.ibm.rmi.corba.ORB::ORBRasInitialized:true
+   com.ibm.rmi.corba.ORB::propList:com.ibm.rmi.util.SourcedProperties@e1a079ea depth limit reached
+   com.ibm.rmi.corba.ORB::propManagers:java.util.HashMap@4af0abc depth limit reached
+   com.ibm.rmi.corba.ORB::orbPropMgr:com.ibm.rmi.corba.BuiltinPropertyManager@103a237e depth limit reached
+   com.ibm.rmi.corba.ORB::fThreadPool:com.ibm.ws.giop.threadpool.WorkUnitHandler@a3a65a14 depth limit reached
+  com.ibm.rmi.corba.ORB::fThreadPoolKey:true
+   com.ibm.rmi.corba.ORB::fReaderPool:com.ibm.rmi.transport.ReaderPoolImpl@9b1649ef depth limit reached
+  com.ibm.rmi.corba.ORB::fReaderPoolKey:true
+  com.ibm.rmi.corba.ORB::fTransportKey:true
+  com.ibm.rmi.corba.ORB::INIT_CLASS:org.omg.PortableInterceptor.ORBInitializerClass.
+  com.ibm.rmi.corba.ORB::PLUG_CLASS:com.ibm.CORBA.ORBPluginClass.
+  com.ibm.rmi.corba.ORB::MAX_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_RETRY_COUNT:10
+  com.ibm.rmi.corba.ORB::MAX_RETRY_DELAY:60000
+  com.ibm.rmi.corba.ORB::MAX_REQUEST_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_LOCATE_REQUEST_TIMEOUT:2147483
+  com.ibm.rmi.corba.ORB::MAX_FRAGMENT_TIMEOUT:600
+  com.ibm.rmi.corba.ORB::DEFAULT_FRAGMENT_TIMEOUT:300
+  com.ibm.rmi.corba.ORB::MAX_CONNECT_TIMEOUT:300
+  com.ibm.rmi.corba.ORB::DEFAULT_MULTIPLICITY:1
+  com.ibm.rmi.corba.ORB::DEFAULT_HIGH_WATER_MARK:240
+  com.ibm.rmi.corba.ORB::DEFAULT_LOW_WATER_MARK:100
+  com.ibm.rmi.corba.ORB::MIN_HIGH_WATER_MARK:0
+  com.ibm.rmi.corba.ORB::MIN_SOCKET_QUEUE_DEPTH:50
+  com.ibm.rmi.corba.ORB::debugPropName:com.ibm.CORBA.Debug
+  com.ibm.rmi.corba.ORB::outputPropName:com.ibm.CORBA.Debug.Output
+  com.ibm.rmi.corba.ORB::hpvPropName:com.ibm.CORBA.HidePropertyValues
+  com.ibm.rmi.corba.ORB::componentPropName:com.ibm.CORBA.Debug.Component
+  com.ibm.rmi.corba.ORB::trueValues:(?i)(true||yes|on|enable|enabled)
+  com.ibm.rmi.corba.ORB::falseValues:(?i)(false|no|off|disable|disabled)
+  com.ibm.rmi.corba.ORB::maxObjectURLIterations:2
+   com.ibm.rmi.corba.ORB::policyFactories:java.util.concurrent.ConcurrentHashMap@ee8bf024 depth limit reached
+   com.ibm.rmi.corba.ORB::insRegistry:com.ibm.rmi.corba.INSRegistry@df473d19 depth limit reached
+   com.ibm.rmi.corba.ORB::proxyInvoke:java.lang.ThreadLocal@794c9666 depth limit reached
+  com.ibm.rmi.corba.ORB::NOTREADY:0
+  com.ibm.rmi.corba.ORB::ACTIVE:1
+  com.ibm.rmi.corba.ORB::INITIALIZED:2
+  com.ibm.rmi.corba.ORB::SHUTDOWN:3
+  com.ibm.rmi.corba.ORB::INACTIVE:4
+  com.ibm.rmi.corba.ORB::DESTROYED:5
+  com.ibm.rmi.corba.ORB::orbState:2
+  com.ibm.rmi.corba.ORB::$assertionsDisabled:true
+  com.ibm.rmi.iiop.ORB::CLASS:com.ibm.rmi.iiop.ORB
+   com.ibm.rmi.iiop.ORB::giopTransport:com.ibm.rmi.iiop.GIOPImpl@8223d650 depth limit reached
+  com.ibm.rmi.iiop.ORB::transientServerId:566657833
+   com.ibm.rmi.iiop.ORB::threadGroup:java.lang.ThreadGroup@2385a810 depth limit reached
+  com.ibm.rmi.iiop.ORB::orbLoadTime:118374
+  com.ibm.rmi.iiop.ORB::lastTransientServerId:566657833
+  com.ibm.rmi.iiop.ORB::lock_obj:java.lang.Object@d6f19a0c
+  com.ibm.rmi.iiop.ORB::instanceCounter:1
+  com.ibm.rmi.iiop.ORB::thisInstanceNumber:0
+   com.ibm.rmi.iiop.ORB::oldConnectRemoteArgs:[Ljava.lang.Class;@e17d5dd9 depth limit reached
+  com.ibm.rmi.iiop.ORB::hasOldConnectRemote:false
+   com.ibm.rmi.iiop.ORB::currentCreators:java.util.Hashtable@967d20b7 depth limit reached
+   com.ibm.rmi.iiop.ORB::exitHook:com.ibm.rmi.iiop.ORB$2$1@84170f62 depth limit reached
+  com.ibm.rmi.iiop.ORB::streamFormatCtx:null
+  com.ibm.rmi.iiop.ORB::commTraceEnabled:false
+  com.ibm.rmi.iiop.ORB::commTraceVarSet:true
+  com.ibm.CORBA.iiop.ORB::orb_properties:orb.properties
+  END:com.ibm.CORBA.iiop.ORB@5913fbbd
+
+ com.ibm.rmi.corba.ClientDelegate::ior BEGIN:com.ibm.rmi.IOR@f0afc743
+  com.ibm.rmi.IOR::CLASS:com.ibm.rmi.IOR
+   com.ibm.rmi.IOR::charConversion:[I@7bc35e17 depth limit reached
+   com.ibm.rmi.IOR::NULL:com.ibm.rmi.IOR@ddadc17f depth limit reached
+  com.ibm.rmi.IOR::typeId:IDL:Location_Service:1.0
+  com.ibm.rmi.IOR::profileTags:null
+  com.ibm.rmi.IOR::profileData:null
+   com.ibm.rmi.IOR::iop:com.ibm.rmi.Profile@f082f409 depth limit reached
+  com.ibm.rmi.IOR::usedProfileIndex:0
+  com.ibm.rmi.IOR::numProfiles:1
+  com.ibm.rmi.IOR::servant:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+  com.ibm.rmi.IOR::poaImpl:null
+  com.ibm.rmi.IOR::factory:com.ibm.CORBA.iiop.ORB@5913fbbd
+  com.ibm.rmi.IOR::isBootstrap:false
+  com.ibm.rmi.IOR::isHeadless:false
+  com.ibm.rmi.IOR::codebase:null
+  END:com.ibm.rmi.IOR@f0afc743
+
+ com.ibm.rmi.corba.ClientDelegate::locatedIOR:com.ibm.rmi.IOR@f0afc743
+ com.ibm.rmi.corba.ClientDelegate::suidRetry:0
+ com.ibm.rmi.corba.ClientDelegate::WLMClient:null
+ com.ibm.rmi.corba.ClientDelegate::piCurrent:null
+ com.ibm.rmi.corba.ClientDelegate::needLocateRequest:true
+ com.ibm.rmi.corba.ClientDelegate::isDirect:false
+ com.ibm.rmi.corba.ClientDelegate::isACache BEGIN:java.util.Vector@6b5c5a73
+  {
+  }
+  END:java.util.Vector@6b5c5a73
+
+ com.ibm.rmi.corba.ClientDelegate::isATrues BEGIN:[I@cce326e0
+[0 0 0 0 0 0 0 0 0 0]
+  END:[I@cce326e0
+
+ com.ibm.rmi.corba.ClientDelegate::numTrues:0
+ com.ibm.rmi.corba.ClientDelegate::isAFalses BEGIN:[I@fe6d51c
+[0 0 0 0 0 0 0 0 0 0]
+  END:[I@fe6d51c
+
+ com.ibm.rmi.corba.ClientDelegate::numFalses:0
+ com.ibm.rmi.corba.ClientDelegate::syncObjectTrue:java.lang.Object@140c936b
+ com.ibm.rmi.corba.ClientDelegate::syncObjectFalse:java.lang.Object@7ef207ba
+ com.ibm.rmi.corba.ClientDelegate::pmiServer:com.ibm.ws.pmi.server.modules.OrbPerfModule@b9272f11
+ com.ibm.rmi.corba.ClientDelegate::threadCache BEGIN:java.util.Hashtable@bc5e4562
+  {
+  }
+  END:java.util.Hashtable@bc5e4562
+
+ com.ibm.rmi.corba.ClientDelegate::requestRetriesCount:1
+ com.ibm.rmi.corba.ClientDelegate::requestRetriesDelay:0
+ com.ibm.rmi.corba.ClientDelegate::traceThis:com.ibm.CORBA.iiop.ClientDelegate@40520e27
+ com.ibm.rmi.corba.ClientDelegate::REQUEST:0
+ com.ibm.rmi.corba.ClientDelegate::HANDLE_EXCEPTION:1
+ com.ibm.rmi.corba.ClientDelegate::END:2
+ com.ibm.rmi.corba.ClientDelegate::initial_Cause:null
+ com.ibm.CORBA.iiop.ClientDelegate::CLASS:com.ibm.CORBA.iiop.ClientDelegate
+ com.ibm.CORBA.iiop.ClientDelegate::localServant BEGIN:com.ibm.rmi.corba.ServantObjectImpl@952f88cf
+  org.omg.CORBA.portable.ServantObject::servant:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+  com.ibm.CORBA.iiop.ServantObject::orb:com.ibm.CORBA.iiop.ORB@5913fbbd
+  com.ibm.CORBA.iiop.ServantObject::tie:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+  com.ibm.CORBA.iiop.ServantObject::localRequest:null
+  com.ibm.CORBA.iiop.ServantObject::byProxy:false
+  com.ibm.CORBA.iiop.ServantObject::typeMismatch:false
+  com.ibm.CORBA.iiop.ServantObject::previousProxy:null
+  com.ibm.CORBA.iiop.ServantObject::localServantObject:null
+  com.ibm.rmi.corba.ServantObjectImpl::cookie:null
+  com.ibm.rmi.corba.ServantObjectImpl::preinvoked:false
+  com.ibm.rmi.corba.ServantObjectImpl::requestCount:0
+  END:com.ibm.rmi.corba.ServantObjectImpl@952f88cf
+
+ com.ibm.CORBA.iiop.ClientDelegate::serverDelegate BEGIN:com.ibm.ws.orb.WSServerDelegate@ed4543fb
+  com.ibm.CORBA.iiop.ServerDelegate::CLASS:com.ibm.CORBA.iiop.ServerDelegate
+  com.ibm.CORBA.iiop.ServerDelegate::orb:com.ibm.CORBA.iiop.ORB@5913fbbd
+  com.ibm.CORBA.iiop.ServerDelegate::id:16
+   com.ibm.CORBA.iiop.ServerDelegate::objectManager:com.ibm.rmi.corba.TransientObjectManager@465b48af depth limit reached
+  com.ibm.CORBA.iiop.ServerDelegate::pmiServer:com.ibm.ws.pmi.server.modules.OrbPerfModule@b9272f11
+  com.ibm.CORBA.iiop.ServerDelegate::asynchPlugin:com.ibm.ejs.container.AsynchronousServantPluginImpl@e92f69f8
+   com.ibm.CORBA.iiop.ServerDelegate::cskArgs:[Ljava.lang.Class;@50654aa5 depth limit reached
+  com.ibm.CORBA.iiop.ServerDelegate::hasNewConstructSystemKey:true
+   com.ibm.CORBA.iiop.ServerDelegate::clientSubcontractMappingFactory:com.ibm.CORBA.iiop.ServerDelegate$ClientSubcontractMappingFactory@f09ed9f2 depth limit reached
+  END:com.ibm.ws.orb.WSServerDelegate@ed4543fb
+
+ com.ibm.CORBA.iiop.ClientDelegate::disconnected:false
+ com.ibm.CORBA.iiop.ClientDelegate::registry:com.ibm.rmi.SubcontractRegistry@58aa89e2
+ com.ibm.CORBA.iiop.ClientDelegate::clientDelegate0 BEGIN:com.ibm.CORBA.iiop.ClientDelegate$ClientDelegate0@8be22265
+  com.ibm.CORBA.iiop.ClientDelegate$ClientDelegate0::this$0:com.ibm.CORBA.iiop.ClientDelegate@40520e27
+  END:com.ibm.CORBA.iiop.ClientDelegate$ClientDelegate0@8be22265
+
+ com.ibm.CORBA.iiop.ClientDelegate::headlessIOR:null
+ com.ibm.CORBA.iiop.ClientDelegate::clientCallback:false
+ com.ibm.CORBA.iiop.ClientDelegate::INIT_CAPACITY:4
+ com.ibm.CORBA.iiop.ClientDelegate::CONCURRENCY_LEVEL:4
+ com.ibm.CORBA.iiop.ClientDelegate::proxyCache BEGIN:com.ibm.jtc.orb.map.CacheFactories$ConcurrentSoft$FutureCacheImpl@5445b242
+   com.ibm.jtc.orb.map.CacheFactories$ConcurrentSoft$FutureCacheImpl::map:com.ibm.amino.map.ConcurrentWeakHashMap@1f71e37d depth limit reached
+   com.ibm.jtc.orb.map.CacheFactories$ConcurrentSoft$FutureCacheImpl::keyWrapper:com.ibm.jtc.orb.map.MapFactories$WeakWrapper@7cc83887 depth limit reached
+   com.ibm.jtc.orb.map.CacheFactories$ConcurrentSoft$FutureCacheImpl::queue:java.lang.ref.ReferenceQueue@d9a32558 depth limit reached
+  END:com.ibm.jtc.orb.map.CacheFactories$ConcurrentSoft$FutureCacheImpl@5445b242
+
+ com.ibm.CORBA.iiop.ClientDelegate::reflectPerms BEGIN:java.security.Permissions@a7217aca
+  java.security.PermissionCollection::serialVersionUID:-6727011328946861783
+  java.security.PermissionCollection::readOnly:true
+   java.security.Permissions::permsMap:java.util.HashMap@a50243a5 depth limit reached
+  java.security.Permissions::hasUnresolved:false
+  java.security.Permissions::allPermission:null
+  java.security.Permissions::serialVersionUID:4858622370623524688
+   java.security.Permissions::serialPersistentFields:[Ljava.io.ObjectStreamField;@475b7897 depth limit reached
+  END:java.security.Permissions@a7217aca
+
+ com.ibm.CORBA.iiop.ClientDelegate::domainPerms BEGIN:java.security.Permissions@366f7ff
+  java.security.PermissionCollection::serialVersionUID:-6727011328946861783
+  java.security.PermissionCollection::readOnly:true
+   java.security.Permissions::permsMap:java.util.HashMap@a517e3e1 depth limit reached
+  java.security.Permissions::hasUnresolved:false
+  java.security.Permissions::allPermission:null
+  java.security.Permissions::serialVersionUID:4858622370623524688
+  java.security.Permissions::serialPersistentFields:[Ljava.io.ObjectStreamField;@475b7897
+  END:java.security.Permissions@366f7ff
+
+ com.ibm.CORBA.iiop.ClientDelegate::reflectProtectionDomain BEGIN:java.security.ProtectionDomain@2607f4b5
+  java.security.ProtectionDomain::codesource:null
+  java.security.ProtectionDomain::classloader:null
+   java.security.ProtectionDomain::principals:[Ljava.security.Principal;@6abee9ab depth limit reached
+  java.security.ProtectionDomain::permissions:java.security.Permissions@a7217aca
+  java.security.ProtectionDomain::hasAllPerm:false
+  java.security.ProtectionDomain::staticPermissions:true
+   java.security.ProtectionDomain::key:java.security.ProtectionDomain$Key@4c100ca depth limit reached
+  java.security.ProtectionDomain::debug:null
+  END:java.security.ProtectionDomain@2607f4b5
+
+ com.ibm.CORBA.iiop.ClientDelegate::servantProtectionDomain BEGIN:java.security.ProtectionDomain@502b4b7b
+  java.security.ProtectionDomain::codesource:null
+  java.security.ProtectionDomain::classloader:null
+   java.security.ProtectionDomain::principals:[Ljava.security.Principal;@edf98788 depth limit reached
+  java.security.ProtectionDomain::permissions:java.security.Permissions@366f7ff
+  java.security.ProtectionDomain::hasAllPerm:false
+  java.security.ProtectionDomain::staticPermissions:true
+   java.security.ProtectionDomain::key:java.security.ProtectionDomain$Key@fe900215 depth limit reached
+  java.security.ProtectionDomain::debug:null
+  END:java.security.ProtectionDomain@502b4b7b
+
+ com.ibm.CORBA.iiop.ClientDelegate::domainCtxt BEGIN:java.security.AccessControlContext@2dcdf0d9
+  java.security.AccessControlContext::STATE_NOT_AUTHORIZED:0
+  java.security.AccessControlContext::STATE_AUTHORIZED:1
+  java.security.AccessControlContext::STATE_UNKNOWN:2
+  java.security.AccessControlContext::debugSetting:-1
+  java.security.AccessControlContext::debugPermClassArray:null
+  java.security.AccessControlContext::debugPermNameArray:null
+  java.security.AccessControlContext::debugPermActionsArray:null
+  java.security.AccessControlContext::debugCodeBaseArray:null
+  java.security.AccessControlContext::DEBUG_UNINITIALIZED_HASCODEBASE:0
+  java.security.AccessControlContext::DEBUG_NO_CODEBASE:1
+  java.security.AccessControlContext::DEBUG_HAS_CODEBASE:2
+  java.security.AccessControlContext::DEBUG_DISABLED:0
+  java.security.AccessControlContext::DEBUG_ACCESS_DENIED:1
+  java.security.AccessControlContext::DEBUG_ENABLED:2
+  java.security.AccessControlContext::domainCombiner:null
+   java.security.AccessControlContext::context:[Ljava.security.ProtectionDomain;@9226ddaf depth limit reached
+  java.security.AccessControlContext::authorizeState:2
+  java.security.AccessControlContext::containPrivilegedContext:false
+  java.security.AccessControlContext::callerPD:null
+  java.security.AccessControlContext::doPrivilegedAcc:null
+  java.security.AccessControlContext::isLimitedContext:false
+  java.security.AccessControlContext::limitedPerms:null
+  java.security.AccessControlContext::nextStackAcc:null
+  java.security.AccessControlContext::debugHasCodebase:0
+  java.security.AccessControlContext::DEBUG_ACCESS:1
+  java.security.AccessControlContext::DEBUG_ACCESS_STACK:2
+  java.security.AccessControlContext::DEBUG_ACCESS_DOMAIN:4
+  java.security.AccessControlContext::DEBUG_ACCESS_FAILURE:8
+  java.security.AccessControlContext::DEBUG_ACCESS_THREAD:16
+  java.security.AccessControlContext::DEBUG_ALL:255
+  END:java.security.AccessControlContext@2dcdf0d9
+
+ com.ibm.CORBA.iiop.ClientDelegate::reflectionCtxt BEGIN:java.security.AccessControlContext@97ccd13b
+  java.security.AccessControlContext::STATE_NOT_AUTHORIZED:0
+  java.security.AccessControlContext::STATE_AUTHORIZED:1
+  java.security.AccessControlContext::STATE_UNKNOWN:2
+  java.security.AccessControlContext::debugSetting:-1
+  java.security.AccessControlContext::debugPermClassArray:null
+  java.security.AccessControlContext::debugPermNameArray:null
+  java.security.AccessControlContext::debugPermActionsArray:null
+  java.security.AccessControlContext::debugCodeBaseArray:null
+  java.security.AccessControlContext::DEBUG_UNINITIALIZED_HASCODEBASE:0
+  java.security.AccessControlContext::DEBUG_NO_CODEBASE:1
+  java.security.AccessControlContext::DEBUG_HAS_CODEBASE:2
+  java.security.AccessControlContext::DEBUG_DISABLED:0
+  java.security.AccessControlContext::DEBUG_ACCESS_DENIED:1
+  java.security.AccessControlContext::DEBUG_ENABLED:2
+  java.security.AccessControlContext::domainCombiner:null
+   java.security.AccessControlContext::context:[Ljava.security.ProtectionDomain;@fb08d3c8 depth limit reached
+  java.security.AccessControlContext::authorizeState:2
+  java.security.AccessControlContext::containPrivilegedContext:false
+  java.security.AccessControlContext::callerPD:null
+  java.security.AccessControlContext::doPrivilegedAcc:null
+  java.security.AccessControlContext::isLimitedContext:false
+  java.security.AccessControlContext::limitedPerms:null
+  java.security.AccessControlContext::nextStackAcc:null
+  java.security.AccessControlContext::debugHasCodebase:0
+  java.security.AccessControlContext::DEBUG_ACCESS:1
+  java.security.AccessControlContext::DEBUG_ACCESS_STACK:2
+  java.security.AccessControlContext::DEBUG_ACCESS_DOMAIN:4
+  java.security.AccessControlContext::DEBUG_ACCESS_FAILURE:8
+  java.security.AccessControlContext::DEBUG_ACCESS_THREAD:16
+  java.security.AccessControlContext::DEBUG_ALL:255
+  END:java.security.AccessControlContext@97ccd13b
+
+ END:com.ibm.CORBA.iiop.ClientDelegate@40520e27
+
+com.ibm.ws.orb.services.lsd._LocationServiceImplBase::_methods BEGIN:java.util.Hashtable@196d26fe
+ {
+ key:register_server
+ value:0
+ key:unregister_object_adapters
+ value:3
+ key:unregister_server
+ value:1
+ key:register_object_adapters
+ value:2
+ }
+ END:java.util.Hashtable@196d26fe
+
+com.ibm.ws.orb.services.lsd._LocationServiceImplBase::__ids BEGIN:[Ljava.lang.String;@c557debd
+ [
+ IDL:Location_Service:1.0
+ ]
+ END:[Ljava.lang.String;@c557debd
+
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::serialVersionUID:-4662278121185409699
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::orb:com.ibm.CORBA.iiop.ORB@5913fbbd
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::lsdPrototype BEGIN:com.ibm.ws.orbimpl.services.lsd.IORPrototype@68698a09
+ com.ibm.ws.orbimpl.services.lsd.IORPrototype::orb:com.ibm.CORBA.iiop.ORB@5913fbbd
+ com.ibm.ws.orbimpl.services.lsd.IORPrototype::ior BEGIN:com.ibm.rmi.IOR@60b545d5
+  com.ibm.rmi.IOR::CLASS:com.ibm.rmi.IOR
+  com.ibm.rmi.IOR::charConversion:[I@7bc35e17
+  com.ibm.rmi.IOR::NULL:com.ibm.rmi.IOR@ddadc17f
+  com.ibm.rmi.IOR::typeId:
+  com.ibm.rmi.IOR::profileTags:null
+  com.ibm.rmi.IOR::profileData:null
+   com.ibm.rmi.IOR::iop:com.ibm.rmi.Profile@c2c8ee62 depth limit reached
+  com.ibm.rmi.IOR::usedProfileIndex:0
+  com.ibm.rmi.IOR::numProfiles:1
+  com.ibm.rmi.IOR::servant:null
+  com.ibm.rmi.IOR::poaImpl:null
+  com.ibm.rmi.IOR::factory:com.ibm.CORBA.iiop.ORB@5913fbbd
+  com.ibm.rmi.IOR::isBootstrap:false
+  com.ibm.rmi.IOR::isHeadless:false
+  com.ibm.rmi.IOR::codebase:null
+  END:com.ibm.rmi.IOR@60b545d5
+
+ com.ibm.ws.orbimpl.services.lsd.IORPrototype::objectKey:null
+ com.ibm.ws.orbimpl.services.lsd.IORPrototype::typeId:null
+ END:com.ibm.ws.orbimpl.services.lsd.IORPrototype@68698a09
+
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::servers BEGIN:java.util.Hashtable@c06db44b
+ {
+ }
+ END:java.util.Hashtable@c06db44b
+
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::adapters BEGIN:java.util.Hashtable@b63f8542
+ {
+ }
+ END:java.util.Hashtable@b63f8542
+
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::serverPath:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/etc
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::serverFileName:IBMLSDActiveServerList.asl
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::serversReactivated:true
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::ctxMgrClz:null
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::ctxMgr:null
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::ctxMgrIsCellSecurityEnabled:null
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::securityMinorCodeInvalidSecurityCredentials:0
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::SecurityServiceStarted:null
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::SecurityServiceCheckEnabled:null
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::SecurityServiceCheckInterval:5000
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::SecurityServiceCheckRetry:10
+com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl::threadLocalAvoidLogs BEGIN:com.ibm.ws.util.WSThreadLocal@180618b6
+ java.lang.ThreadLocal::threadLocalHashCode:2097650022
+ java.lang.ThreadLocal::nextHashCode BEGIN:java.util.concurrent.atomic.AtomicInteger@a47d88e8
+  java.lang.Number::serialVersionUID:-8742448824652078965
+  java.util.concurrent.atomic.AtomicInteger::serialVersionUID:6214790243416807050
+   java.util.concurrent.atomic.AtomicInteger::unsafe:sun.misc.Unsafe@8efe3c7c depth limit reached
+  java.util.concurrent.atomic.AtomicInteger::valueOffset:8
+  java.util.concurrent.atomic.AtomicInteger::value:1745293834
+  END:java.util.concurrent.atomic.AtomicInteger@a47d88e8
+
+ java.lang.ThreadLocal::HASH_INCREMENT:1640531527
+ com.ibm.ws.util.WSThreadLocal::tc BEGIN:com.ibm.ejs.ras.TraceComponent@3830ea34
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.util.WSThreadLocal
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.runtime.runtime
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@3830ea34
+
+ com.ibm.ws.util.WSThreadLocal::count:12
+ com.ibm.ws.util.WSThreadLocal::index:5
+ com.ibm.ws.util.WSThreadLocal::SUSPECTED_MISUSAGE_THRESHOLD:200
+ END:com.ibm.ws.util.WSThreadLocal@180618b6
+
+END:com.ibm.ws.orbimpl.services.lsd.LocationServiceImpl@7c3ca26e
+
+arg1 BEGIN:[Ljava.lang.Object;@c034500b
+[
+Failed to contact host/port=TWAS1/43349
+]
+END:[Ljava.lang.Object;@c034500b
+
+CapturedDataElements end

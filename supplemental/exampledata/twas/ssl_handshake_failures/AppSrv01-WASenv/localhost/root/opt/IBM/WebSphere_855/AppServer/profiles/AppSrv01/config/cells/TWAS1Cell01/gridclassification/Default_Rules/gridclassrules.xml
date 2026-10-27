@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gridclassrules:GridClassRules xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gridclassrules="http:///gridclassrules.ecore" xmi:id="GridClassRules_1320695868562" name="Default_Rules" description="This is a default classification rule set." matchAction="Default_TC">
+  <matchRules xmi:id="GridMatchRule_1320695868578" matchAction="Default_TC" matchExpression="jobname LIKE '%'" priority="2"/>
+</gridclassrules:GridClassRules>

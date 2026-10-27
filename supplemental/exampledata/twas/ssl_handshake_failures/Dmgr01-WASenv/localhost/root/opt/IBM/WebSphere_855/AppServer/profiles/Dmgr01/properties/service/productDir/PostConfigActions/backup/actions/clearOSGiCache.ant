@@ -1,0 +1,69 @@
+<project name="clearOSGiCache" default="install" basedir=".">
+    
+    <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+
+    <target name="detectOsFamily" description="Detects the current os family">
+    		<condition property="osFamily" value="zos">            
+            <os family="z/os"/>
+        </condition>	
+        <condition property="osFamily" value="os/400">
+            <equals arg1="${os.name}" arg2="OS/400"/>
+        </condition>
+        <condition property="osFamily" value="windows">
+            <os family="windows"/>
+        </condition>
+        <condition property="osFamily" value="unix">
+            <os family="unix"/>
+        </condition>
+        <wscmtlog>Detected os family to be ${osFamily}</wscmtlog>
+    </target>
+    
+    <target name="setExecutable" description="Sets the name of the executable file based on the os family">
+        <condition property="executable" value="${WAS_HOME}/bin/osgiCfgInit">
+            <equals arg1="${osFamily}" arg2="os/400"/>
+        </condition>
+        <condition property="executable" value="${WAS_HOME}/bin/osgiCfgInit.bat">
+            <equals arg1="${osFamily}" arg2="windows"/>
+        </condition>
+        <condition property="executable" value="${WAS_HOME}/bin/osgiCfgInit.sh">
+            <equals arg1="${osFamily}" arg2="unix"/>
+        </condition>
+        <condition property="executable" value="${WAS_HOME}/bin/osgiCfgInit.sh">
+            <equals arg1="${osFamily}" arg2="zos"/>
+        </condition>
+        <wscmtlog>Executable is ${executable}</wscmtlog>
+    </target>
+    
+    <target name="checkExecutableExistence" description="Determine whether the executable file exists">
+        <available property="executableExists" file="${executable}" type="file"/>
+        <wscmtlog>executableExists value is ${executableExists}</wscmtlog>
+    </target>
+
+    <target name="issueWarning" unless="executableExists" description="Issue a warning if executable does not exist">
+        <wscmtlog priority="severe">Executable ${executable} does not exist, therefore it was not executed.</wscmtlog>
+    </target>
+
+    <target name="invokeExecutable" description="Invoke the executable">
+        <wscmtlog>Invoking ${executable}.</wscmtlog>
+        <exec executable="${executable}" dir="${WAS_HOME}/bin"/>
+    </target>
+
+    <target name="install"
+        description="Clear the OSGi cache"
+        depends="detectOsFamily,
+            setExecutable,
+            checkExecutableExistence,
+            issueWarning,
+            invokeExecutable">
+    </target>
+  
+  <!--Uninstall is the same as install -->
+        <target name="uninstall"
+        description="Clear the OSGi cache"
+        depends="detectOsFamily,
+            setExecutable,
+            checkExecutableExistence,
+            issueWarning,
+            invokeExecutable">
+    </target>
+</project>

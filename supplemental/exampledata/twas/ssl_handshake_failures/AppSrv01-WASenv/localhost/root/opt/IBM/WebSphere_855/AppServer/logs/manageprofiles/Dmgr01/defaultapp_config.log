@@ -1,0 +1,61 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7303I: The following options are passed to the scripting environment and are available as arguments that are stored in the argv variable: "[TWAS1Node01, server1]"
+
+configureDefaultApplication.jacl: Configure Default Application resources
+
+
+---------------------------------------------------------------
+              Create JDBC provider                             
+---------------------------------------------------------------
+ Scope:                                                        
+    node                TWAS1Node01                              
+    server              server1                            
+ JDBC provider:                                                
+    template            Derby JDBC Provider                          
+    name                Derby JDBC Provider                          
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+              Create data source                               
+---------------------------------------------------------------
+ Scope:                                                        
+    node                TWAS1Node01                              
+    server              server1                            
+ JDBC provider:                                                
+    name                Derby JDBC Provider                          
+ Datasource:                                                   
+    template            Derby JDBC Driver DataSource                          
+    name                Default Datasource                                
+    JNDI                DefaultDatasource                                
+    description         Datasource for the WebSphere Default Application                                
+    database name       ${APP_INSTALL_ROOT}/${CELL}/DefaultApplication.ear/DefaultDB                                
+    auth alias          N_O_N_E                             
+    connection attrs    upgrade=true                             
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+              Create connection factory                        
+---------------------------------------------------------------
+ Scope:                                                        
+    node                TWAS1Node01                              
+    server              server1                            
+ JDBC provider:                                                
+    name                Derby JDBC Provider                          
+ Datasource:                                                   
+    name                Default Datasource                                
+ Connection factory:                                           
+    name                Default_CF                                
+    auth mechanism      BASIC_PASSWORD                            
+    auth alias          N_O_N_E                             
+    interface           javax.resource.cci.ConnectionFactory                                   
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+              Save                                             
+---------------------------------------------------------------
+
+
+configureDefaultApplication.jacl: The script completed successfully.

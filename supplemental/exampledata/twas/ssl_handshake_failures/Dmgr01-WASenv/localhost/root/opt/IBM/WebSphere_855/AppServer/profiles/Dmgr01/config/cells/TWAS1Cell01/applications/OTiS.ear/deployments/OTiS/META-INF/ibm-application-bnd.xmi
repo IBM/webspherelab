@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Begin Standard Header
+  
+  File:     OTiS/META-INF/ibm-application-bnd.xmi, otis_engine, otis_dev
+  Version:  1.4
+  Modified: 6/11/07 08:05:44
+  Build:    1 4
+  
+  Licensed Materials - Property of IBM
+  
+  IBM Confidential OCO Source Material
+  
+  5724-J08, 5724-I63, 5724-H88, 5724-H89, 5655-N02, 5733-W07
+  
+  (C) COPYRIGHT International Business Machines Corp. 1997,2007
+  
+  The source code for this program is not published or otherwise divested
+  of its trade secrets, irrespective of what has been deposited with the
+  U.S. Copyright Office.
+  
+  End Standard Header
+-->
+
+<com.ibm.ejs.models.base.bindings.applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.bindings.applicationbnd="applicationbnd.xmi" xmi:id="ApplicationBinding_1165613336343">
+  <authorizationTable xmi:id="AuthorizationTable_1165613336343">
+    <authorizations xmi:id="RoleAssignment_1165613336343">
+      <specialSubjects xmi:type="com.ibm.ejs.models.base.bindings.applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1165613336343" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1165613336343"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1165613336344">
+      <specialSubjects xmi:type="com.ibm.ejs.models.base.bindings.applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1165613336343" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1165613336344"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1165613336345">
+      <specialSubjects xmi:type="com.ibm.ejs.models.base.bindings.applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1165613336343" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1165613336345"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1165613336346">
+      <specialSubjects xmi:type="com.ibm.ejs.models.base.bindings.applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1165613336343" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1165613336346"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_ID"/>
+</com.ibm.ejs.models.base.bindings.applicationbnd:ApplicationBinding>

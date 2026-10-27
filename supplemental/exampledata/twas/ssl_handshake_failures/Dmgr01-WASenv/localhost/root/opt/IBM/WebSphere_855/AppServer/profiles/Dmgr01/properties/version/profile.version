@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<profile>
+  <id>dmgr</id>
+  <version>8.5.5.0</version>
+  <build-info
+    date="5/14/13"
+    level="gm1319.01"/>
+</profile>

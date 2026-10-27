@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<profile>
+  <id>managed</id>
+  <version>8.5.5.28</version>
+  <build-info
+    date="7/10/25"
+    level="cf282527.01"/>
+</profile>

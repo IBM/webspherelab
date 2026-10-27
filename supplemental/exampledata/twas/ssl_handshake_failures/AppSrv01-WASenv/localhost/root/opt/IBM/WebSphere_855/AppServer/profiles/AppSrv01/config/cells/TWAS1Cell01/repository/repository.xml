@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositorycheckpoint:ExtendedRepositoryService xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repositorycheckpoint="http://www.ibm.com/websphere/appserver/schemas/6.0/repositorycheckpoint.xmi" xmi:id="ExtendedRepositoryService_1" checkpointRoot="${USER_INSTALL_ROOT}/checkpoints" autoCheckpointsDepth="5"/>

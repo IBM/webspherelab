@@ -1,0 +1,190 @@
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 359825
+Full server name is TWAS1Cell01\Node01\server1-359825
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 360202
+Full server name is TWAS1Cell01\Node01\server1-360202
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[4/11/26 7:27:57:464 PDT] 00000027 SystemErr     R java.lang.Exception: Thread[Thread-6,5,main]: shutdown hook stack trace
+[4/11/26 7:27:57:473 PDT] 00000027 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:904)
+[4/11/26 7:27:57:474 PDT] 00000027 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:887)
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 113917
+Full server name is TWAS1Cell01\Node01\server1-113917
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[4/27/26 12:27:19:109 PDT] 00000116 SystemErr     R [Fatal Error] :4:17: Element type "a:displayname" must be followed by either attribute specifications, ">" or "/>".
+[5/5/26 1:17:39:849 PDT] 0000013e SystemErr     R [Fatal Error] :4:17: Element type "a:displayname" must be followed by either attribute specifications, ">" or "/>".
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 1248366
+Full server name is TWAS1Cell01\Node01\server1-1248366
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[5/9/26 12:05:18:455 PDT] 00000022 SystemErr     R java.lang.Exception: Thread[Thread-5,5,main]: shutdown hook stack trace
+[5/9/26 12:05:18:460 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:904)
+[5/9/26 12:05:18:460 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:887)
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 261837
+Full server name is TWAS1Cell01\Node01\server1-261837
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 340125
+Full server name is TWAS1Cell01\Node01\server1-340125
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[5/16/26 4:25:37:286 PDT] 00000022 SystemErr     R java.lang.Exception: Thread[Thread-5,5,main]: shutdown hook stack trace
+[5/16/26 4:25:37:288 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:904)
+[5/16/26 4:25:37:288 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:887)
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 377581
+Full server name is TWAS1Cell01\Node01\server1-377581
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[9/5/26 7:00:27:176 PDT] 00000022 SystemErr     R java.lang.Exception: Thread[Thread-5,5,main]: shutdown hook stack trace
+[9/5/26 7:00:27:181 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:904)
+[9/5/26 7:00:27:181 PDT] 00000022 SystemErr     R 	at com.ibm.ws.runtime.component.ServerCollaborator$ShutdownHook.run(ServerCollaborator.java:887)
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 416891
+Full server name is TWAS1Cell01\Node01\server1-416891
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[10/23/26 7:53:03:724 PDT] 00000001 SystemErr     R com.ibm.websphere.management.exception.AdminException: java.lang.NullPointerException
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.management.MBeanFactoryImpl.deactivateMBean(MBeanFactoryImpl.java:1172)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.batch.endpointsensor.BatchSensorComponent.destroy(BatchSensorComponent.java:100)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.component.ContainerHelper.destroyComponent(ContainerHelper.java:341)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.component.ContainerHelper.destroyComponents(ContainerHelper.java:325)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.component.ContainerImpl.destroyComponents(ContainerImpl.java:607)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.component.ContainerImpl.destroy(ContainerImpl.java:598)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.component.ServerImpl.destroy(ServerImpl.java:494)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.WsServerImpl.bootServerContainer(WsServerImpl.java:343)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.WsServerImpl.start(WsServerImpl.java:247)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.WsServerImpl.main(WsServerImpl.java:720)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.ws.runtime.WsServer.main(WsServer.java:59)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at java.lang.reflect.Method.invoke(Method.java:508)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+[10/23/26 7:53:03:725 PDT] 00000001 SystemErr     R 	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at java.lang.reflect.Method.invoke(Method.java:508)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at java.lang.reflect.Method.invoke(Method.java:508)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at org.eclipse.core.launcher.Main.run(Main.java:981)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+[10/23/26 7:53:03:726 PDT] 00000001 SystemErr     R 	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+[10/23/26 7:53:03:727 PDT] 00000001 SystemErr     R Caused by: java.lang.NullPointerException
+[10/23/26 7:53:03:727 PDT] 00000001 SystemErr     R 	at com.ibm.ws.management.MBeanFactoryImpl.deactivateMBean(MBeanFactoryImpl.java:1142)
+[10/23/26 7:53:03:727 PDT] 00000001 SystemErr     R 	... 36 more
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 417406
+Full server name is TWAS1Cell01\Node01\server1-417406
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************

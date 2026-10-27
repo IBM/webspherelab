@@ -1,0 +1,3 @@
+#Created by WebSphere.  Do not modify.
+#Thu Apr 09 09:23:24 PDT 2026
+com.ibm.ws.runtime.components.DefaultWebApplication.war=WebSphere\:specname\=WS_WebContainer+WebSphere\:specname\=WS_EJBContainer

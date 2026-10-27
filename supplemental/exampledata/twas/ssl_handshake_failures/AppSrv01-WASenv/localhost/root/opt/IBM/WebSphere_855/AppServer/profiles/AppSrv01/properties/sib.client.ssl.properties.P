@@ -1,0 +1,28 @@
+################################################################################
+#
+#      (C) COPYRIGHT International Business Machines Corp. 2004, 2007
+#        All Rights Reserved * Licensed Materials - Property of IBM
+#
+#                        SIB Client SSL Properties file
+#
+# This file contains properties that are used by Service Integration to
+# determine client transport security settings.
+#
+################################################################################
+
+##
+## Determines which SSL properties to use.
+##
+## Valid values are: 
+##    alias (default) ? use the alias referenced by the com.ibm.ssl.alias
+##                      property.
+##    file            - use the properties specified in this file and ignore
+##                      any properties referenced by the com.ibm.ssl.alias
+##                      property.
+##    
+com.ibm.ws.sib.configurationSource=alias
+
+##
+## SSL configuration alias referenced in ssl.client.props
+##
+com.ibm.ssl.alias=DefaultSSLSettings

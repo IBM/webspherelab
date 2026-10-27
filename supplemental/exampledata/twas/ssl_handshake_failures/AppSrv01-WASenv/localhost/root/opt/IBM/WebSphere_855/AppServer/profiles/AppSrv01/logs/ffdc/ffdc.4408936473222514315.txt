@@ -1,0 +1,103 @@
+[10/23/26 7:50:59:274 PDT]     FFDC Exception:javax.naming.ServiceUnavailableException SourceId:com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect ProbeId:237 Reporter:com.ibm.ws.management.connector.rmi.RMIConnectorClient@2cd953d7
+javax.naming.ServiceUnavailableException: A communication failure occurred while attempting to obtain an initial context with the provider URL: "corbaloc:iiop:TWAS1:2809/WsnAdminNameService".  Make sure that any bootstrap address information in the URL is correct and that the target name server is running.  A bootstrap address with no port specification defaults to port 2809.  Possible causes other than an incorrect bootstrap address or unavailable name server include the network environment and workstation network configuration. [Root exception is org.omg.CORBA.TRANSIENT: java.net.ConnectException: Connection refused (Connection refused):host=127.0.0.1,port=2809  vmcid: IBM  minor code: E02  completed: No]
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.mapInitialReferenceFailure(WsnInitCtxFactory.java:2394)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext(WsnInitCtxFactory.java:1424)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootContextFromServer(WsnInitCtxFactory.java:1110)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootJndiContext(WsnInitCtxFactory.java:952)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getInitialContextInternal(WsnInitCtxFactory.java:627)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContext(WsnInitCtx.java:128)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContextIfNull(WsnInitCtx.java:765)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:164)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:179)
+	at javax.naming.InitialContext.lookup(InitialContext.java:428)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:321)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:237)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.<init>(RMIConnectorClient.java:145)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:673)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.connector.ConnectorHelper.tryProtocol(ConnectorHelper.java:665)
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:610)
+	at com.ibm.ws.management.tools.WsServerStop.runTool(WsServerStop.java:373)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerStop.main(WsServerStop.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+Caused by: org.omg.CORBA.TRANSIENT: java.net.ConnectException: Connection refused (Connection refused):host=127.0.0.1,port=2809  vmcid: IBM  minor code: E02  completed: No
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:465)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:437)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.Corbaloc.locateUsingINS(Corbaloc.java:302)
+	at com.ibm.rmi.corba.Corbaloc.resolve(Corbaloc.java:370)
+	at com.ibm.rmi.corba.ORB.objectURLToObject(ORB.java:4138)
+	at com.ibm.CORBA.iiop.ORB.objectURLToObject(ORB.java:3380)
+	at com.ibm.rmi.corba.ORB.string_to_object(ORB.java:4016)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.stringToObject(WsnInitCtxFactory.java:1667)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext(WsnInitCtxFactory.java:1360)
+	... 51 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:506)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:248)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:230)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:405)
+	at java.net.Socket.connect(Socket.java:628)
+	at com.ibm.ws.orbimpl.transport.WSTCPTransportConnection.createSocket(WSTCPTransportConnection.java:326)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:373)
+	... 63 more
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.ws.ffdc.impl.DMAdapter@7ef31be7
+Reporter BEGIN:com.ibm.ws.management.connector.rmi.RMIConnectorClient@2cd953d7
+ com.ibm.ws.management.connector.rmi.RMIConnectorClient:Begin
+ Properties_proxyProps:BEGIN
+ java.naming.provider.url:iiop://TWAS1:2809
+ port:2809
+ securityEnabled:false
+ type:RMI
+ host:TWAS1
+ com.ibm.websphere.naming.jndicache.cacheobject:none
+ Properties_proxyProps:END
+ connector:null
+ rmiListener:null
+ targetCertificate:null
+ online:false
+ autoAcceptSigner:false
+ com.ibm.ws.management.connector.rmi.RMIConnectorClient:End
+ END:com.ibm.ws.management.connector.rmi.RMIConnectorClient@2cd953d7
+
+END:com.ibm.ws.ffdc.impl.DMAdapter@7ef31be7
+
+CapturedDataElements end

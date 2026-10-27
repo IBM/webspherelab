@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/ejb" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/ejb" >
+
+	<!-- Properties defined by base J2EEEnterpriseJavaBean capability -->
+	
+	<xsd:element name="CreateCount" type="xsd:integer"/>
+	<xsd:element name="LiveCount" type="xsd:integer"/>
+	<xsd:element name="LoadCount" type="xsd:integer"/>
+	<xsd:element name="PooledCount" type="xsd:integer"/>
+	<xsd:element name="ReadyCount" type="xsd:integer"/>
+	<xsd:element name="StoreCount" type="xsd:integer"/>
+	<xsd:element name="WaitTime" type="xsd:duration"/>
+			
+</schema>

@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     5/6/26 13:19:59:650 PDT     5/6/26 13:19:59:650 PDT com.ibm.wsspi.runtime.variable.UndefinedVariableException null 484 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/nodeagent_6c483990_26.05.06_13.19.59.6563504203444925901578.txt
+     1  16973     5/6/26 13:20:17:016 PDT     5/9/26 12:03:34:742 PDT java.lang.NullPointerException com.ibm.ws.xd.pmi.async.server.PmiPost.doPost 1737 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/nodeagent_2fe399b9_26.05.06_13.20.17.0174990474832404637828.txt
+------+------+---------------------------+---------------------------+---------------------------

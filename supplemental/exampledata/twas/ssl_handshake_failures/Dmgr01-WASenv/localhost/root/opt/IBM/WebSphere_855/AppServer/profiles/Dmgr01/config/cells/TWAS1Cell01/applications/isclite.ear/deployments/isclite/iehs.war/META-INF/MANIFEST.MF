@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+
+Version: 3.6.2.v20120412-1409

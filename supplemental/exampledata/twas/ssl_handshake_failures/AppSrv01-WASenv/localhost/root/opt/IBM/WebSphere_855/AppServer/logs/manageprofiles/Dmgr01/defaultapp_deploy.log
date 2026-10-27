@@ -1,0 +1,26 @@
+WASX7357I: By request, this scripting client is not connected to any server process. Certain configuration and application operations will be available in local mode.
+WASX7327I: Contents of was.policy file:
+ // WebSphere Application Server Security Policy for the Default Application
+
+// Required for Snoop Servlet's call to get User Name from getUserPrincipal()
+grant codeBase "file:DefaultWebApplication.war" {
+  permission java.security.SecurityPermission "printIdentity";
+};
+
+
+ADMA5016I: Installation of DefaultApplication started.
+ADMA5058I: Application and module versions are validated with versions of deployment targets.
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+ADMA5081I: The bootstrap address for client module is configured in the WebSphere Application Server repository.
+ADMA5053I: The library references for the installed optional package are created.
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+ADMA5001I: The application binaries are saved in /opt/IBM/WebSphere_855/AppServer/profiles/Dmgr01/wstemp/Script19b8f0bcb2d/workspace/cells/TWAS1Cell01/applications/DefaultApplication.ear/DefaultApplication.ear
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+SECJ0400I: Successfully updated the application DefaultApplication with the appContextIDForSecurity information.
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+ADMA5005I: The application DefaultApplication is configured in the WebSphere Application Server repository.
+ADMA5113I: Activation plan created successfully.
+ADMA5011I: The cleanup of the temp directory for application DefaultApplication is complete.
+ADMA5013I: Application DefaultApplication installed successfully.
+

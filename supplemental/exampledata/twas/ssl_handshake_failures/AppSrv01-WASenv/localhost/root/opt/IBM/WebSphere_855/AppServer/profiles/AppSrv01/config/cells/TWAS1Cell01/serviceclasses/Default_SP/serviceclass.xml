@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicepolicy:ServiceClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:servicepolicy="http://www.ibm.com/websphere/appserver/schemas/6.0/servicepolicy.xmi" xmi:id="ServiceClass_1767631621102" name="Default_SP" description="">
+  <ServiceClassGoal xmi:type="servicepolicy:DiscretionaryGoal" xmi:id="DiscretionaryGoal_1767631621105"/>
+  <TransactionClasses xmi:id="TransactionClass_1767631621108" name="Default_TC" description=""/>
+</servicepolicy:ServiceClass>

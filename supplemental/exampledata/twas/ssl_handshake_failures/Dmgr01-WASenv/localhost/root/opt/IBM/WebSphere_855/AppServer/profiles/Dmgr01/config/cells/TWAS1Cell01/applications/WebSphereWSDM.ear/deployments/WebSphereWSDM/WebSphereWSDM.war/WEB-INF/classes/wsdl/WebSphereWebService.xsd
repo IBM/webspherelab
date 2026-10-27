@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/custom/web-service" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/custom/web-service" >
+		
+	<!-- Resource properties for the WebService capability -->
+	
+	<xsd:element name="ReplyPayloadSize" type="xsd:integer"/>
+	<xsd:element name="RequestPayloadSize" type="xsd:integer"/>
+	<xsd:element name="PayloadSize" type="xsd:integer"/>
+	<xsd:element name="ResponseTime" type="xsd:duration"/>
+	<xsd:element name="RequestResponseTime" type="xsd:duration"/>
+	<xsd:element name="ReplyResponseTime" type="xsd:duration"/>
+	<xsd:element name="DispatchResponseTime" type="xsd:duration"/>
+	<xsd:element name="ProcessedRequestCount" type="xsd:integer"/>
+	<xsd:element name="DispatchedRequestCount" type="xsd:integer"/>
+	<xsd:element name="ReceivedRequestCount" type="xsd:integer"/>
+	<xsd:element name="LoadedWebServiceCount" type="xsd:integer"/>
+	
+</schema>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+    <package-mapping>
+        <package-type>com.ibm.otis.protocolengine.omadm.ejbs</package-type>
+        <namespaceURI>http://ejbs.omadm.protocolengine.otis.ibm.com</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>com.ibm.otis.protocolengine.omadm</package-type>
+        <namespaceURI>http://omadm.protocolengine.otis.ibm.com</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.OMADMCredentials</java-type>
+        <root-type-qname xmlns:rtq="http://omadm.protocolengine.otis.ibm.com">rtq:OMADMCredentials</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>clientID</java-variable-name>
+            <xml-element-name>clientID</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>clientPwd</java-variable-name>
+            <xml-element-name>clientPwd</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>deviceID</java-variable-name>
+            <xml-element-name>deviceID</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>serverID</java-variable-name>
+            <xml-element-name>serverID</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>serverPwd</java-variable-name>
+            <xml-element-name>serverPwd</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:string</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <anonymous-type-qname>http://www.w3.org/2001/XMLSchema:string[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData</java-type>
+        <root-type-qname xmlns:rtq="http://omadm.protocolengine.otis.ibm.com">rtq:MgmtTreeNodeData</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>URI</java-variable-name>
+            <xml-element-name>URI</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>metaType</java-variable-name>
+            <xml-element-name>metaType</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>metaFormat</java-variable-name>
+            <xml-element-name>metaFormat</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>data</java-variable-name>
+            <xml-element-name>data</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.OMADMManagerException</java-type>
+        <root-type-qname xmlns:rtq="http://omadm.protocolengine.otis.ibm.com">rtq:OMADMManagerException</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>message</java-variable-name>
+            <xml-element-name>message</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.OMADMManagerException</java-type>
+        <root-type-qname xmlns:rtq="http://omadm.protocolengine.otis.ibm.com">rtq:OMADMManagerException</root-type-qname>
+        <qname-scope>element</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>byte[]</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:base64Binary</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData[]</java-type>
+        <anonymous-type-qname>http://omadm.protocolengine.otis.ibm.com:MgmtTreeNodeData[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.util.HashMap</java-type>
+        <root-type-qname xmlns:rtq="http://xml.apache.org/xml-soap">rtq:Map</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <root-type-qname xmlns:rtq="http://ejbs.omadm.protocolengine.otis.ibm.com">rtq:ArrayOf_1792488436_nillable_string</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>string</java-variable-name>
+            <xml-element-name>string</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData[]</java-type>
+        <root-type-qname xmlns:rtq="http://ejbs.omadm.protocolengine.otis.ibm.com">rtq:ArrayOf_1792488436_nillable_MgmtTreeNodeData</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>mgmtTreeNodeData</java-variable-name>
+            <xml-element-name>MgmtTreeNodeData</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>int</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:int</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.util.Map$Entry[]</java-type>
+        <anonymous-type-qname>http://xml.apache.org/xml-soap:Map&gt;item[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData[]</java-type>
+        <anonymous-type-qname>http://ejbs.omadm.protocolengine.otis.ibm.com:ArrayOf_1792488436_nillable_MgmtTreeNodeData&gt;MgmtTreeNodeData[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String[]</java-type>
+        <anonymous-type-qname>http://ejbs.omadm.protocolengine.otis.ibm.com:ArrayOf_1792488436_nillable_string&gt;string[0,unbounded]</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <exception-mapping>
+        <exception-type>com.ibm.otis.protocolengine.omadm.OMADMManagerException</exception-type>
+        <wsdl-message xmlns:em="http://ejbs.omadm.protocolengine.otis.ibm.com">em:OMADMManagerException</wsdl-message>
+        <constructor-parameter-order>
+            <element-name>message</element-name>
+        </constructor-parameter-order>
+    </exception-mapping>
+    <service-interface-mapping>
+        <service-interface>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerServiceService</service-interface>
+        <wsdl-service-name xmlns:sim="http://ejbs.omadm.protocolengine.otis.ibm.com">sim:OMADMManagerServiceService</wsdl-service-name>
+        <port-mapping>
+            <port-name>OMADMManager</port-name>
+            <java-port-name>OMADMManager</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>com.ibm.otis.protocolengine.omadm.ejbs.OMADMManagerService</service-endpoint-interface>
+        <wsdl-port-type xmlns:seimwpt="http://ejbs.omadm.protocolengine.otis.ibm.com">seimwpt:OMADMManagerService</wsdl-port-type>
+        <wsdl-binding xmlns:seimwb="http://ejbs.omadm.protocolengine.otis.ibm.com">seimwb:OMADMManagerSoapBinding</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getKeyValueKeys</java-method-name>
+            <wsdl-operation>getKeyValueKeys</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getKeyValueKeysRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_10</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getKeyValueKeysResponse</wsdl-message>
+                <wsdl-message-part-name>getKeyValueKeysReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>listDevices</java-method-name>
+            <wsdl-operation>listDevices</wsdl-operation>
+            <wrapped-element/>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:listDevicesResponse</wsdl-message>
+                <wsdl-message-part-name>listDevicesReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getMgmtTreeURIs</java-method-name>
+            <wsdl-operation>getMgmtTreeURIs</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeURIsRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_7</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeURIsRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_7</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>int</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeURIsRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_2_7</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getMgmtTreeURIsResponse</wsdl-message>
+                <wsdl-message-part-name>getMgmtTreeURIsReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>addDevice</java-method-name>
+            <wsdl-operation>addDevice</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:addDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:addDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:addDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_2_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>3</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:addDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_3_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>4</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:addDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_4_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:addDeviceResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>updateDevice</java-method-name>
+            <wsdl-operation>updateDevice</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:updateDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:updateDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:updateDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_2_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>3</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:updateDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_3_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>4</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:updateDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_4_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:updateDeviceResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getKeyValueData</java-method-name>
+            <wsdl-operation>getKeyValueData</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getKeyValueDataRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_9</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getKeyValueDataRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_9</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getKeyValueDataResponse</wsdl-message>
+                <wsdl-message-part-name>getKeyValueDataReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getMgmtTreeData</java-method-name>
+            <wsdl-operation>getMgmtTreeData</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeDataRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_6</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeDataRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_6</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getMgmtTreeDataResponse</wsdl-message>
+                <wsdl-message-part-name>getMgmtTreeDataReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getKeyValues</java-method-name>
+            <wsdl-operation>getKeyValues</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getKeyValuesRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_0</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.util.HashMap</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getKeyValuesResponse</wsdl-message>
+                <wsdl-message-part-name>getKeyValuesReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getMgmtTreeNodes</java-method-name>
+            <wsdl-operation>getMgmtTreeNodes</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeNodesRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_8</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeNodesRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_1_8</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>int</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getMgmtTreeNodesRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_2_8</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>com.ibm.otis.protocolengine.omadm.MgmtTreeNodeData[]</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getMgmtTreeNodesResponse</wsdl-message>
+                <wsdl-message-part-name>getMgmtTreeNodesReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getDevice</java-method-name>
+            <wsdl-operation>getDevice</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:getDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_3</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>com.ibm.otis.protocolengine.omadm.OMADMCredentials</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:getDeviceResponse</wsdl-message>
+                <wsdl-message-part-name>getDeviceReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>deleteDevice</java-method-name>
+            <wsdl-operation>deleteDevice</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://ejbs.omadm.protocolengine.otis.ibm.com">mppm:deleteDeviceRequest</wsdl-message>
+                    <wsdl-message-part-name>arg_0_4</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>void</method-return-value>
+                <wsdl-message xmlns:wrvm="http://ejbs.omadm.protocolengine.otis.ibm.com">wrvm:deleteDeviceResponse</wsdl-message>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>

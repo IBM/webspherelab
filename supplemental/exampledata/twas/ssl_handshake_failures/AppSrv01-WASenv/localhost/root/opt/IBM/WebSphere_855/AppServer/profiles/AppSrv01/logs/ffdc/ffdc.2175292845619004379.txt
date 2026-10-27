@@ -1,0 +1,2639 @@
+[10/23/26 7:50:59:088 PDT]     FFDC Exception:org.omg.CORBA.TRANSIENT SourceId:com.ibm.ws.orbimpl.transport.WSTransport.getConnection ProbeId:448 Reporter:com.ibm.ws.orbimpl.transport.WSTransport@66864d02
+org.omg.CORBA.TRANSIENT: java.net.ConnectException: Connection refused (Connection refused):host=127.0.0.1,port=2809  vmcid: IBM  minor code: E02  completed: No
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:465)
+	at com.ibm.ws.orbimpl.transport.WSTransport.getConnection(WSTransport.java:437)
+	at com.ibm.CORBA.transport.TransportBase.getConnection(TransportBase.java:182)
+	at com.ibm.rmi.iiop.TransportManager.get(TransportManager.java:98)
+	at com.ibm.rmi.iiop.GIOPImpl.getConnection(GIOPImpl.java:134)
+	at com.ibm.rmi.iiop.GIOPImpl.locate(GIOPImpl.java:230)
+	at com.ibm.rmi.corba.Corbaloc.locateUsingINS(Corbaloc.java:302)
+	at com.ibm.rmi.corba.Corbaloc.resolve(Corbaloc.java:370)
+	at com.ibm.rmi.corba.ORB.objectURLToObject(ORB.java:4138)
+	at com.ibm.CORBA.iiop.ORB.objectURLToObject(ORB.java:3380)
+	at com.ibm.rmi.corba.ORB.string_to_object(ORB.java:4016)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.stringToObject(WsnInitCtxFactory.java:1667)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext(WsnInitCtxFactory.java:1360)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootContextFromServer(WsnInitCtxFactory.java:1110)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getRootJndiContext(WsnInitCtxFactory.java:952)
+	at com.ibm.ws.naming.util.WsnInitCtxFactory.getInitialContextInternal(WsnInitCtxFactory.java:627)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContext(WsnInitCtx.java:128)
+	at com.ibm.ws.naming.util.WsnInitCtx.getContextIfNull(WsnInitCtx.java:765)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:164)
+	at com.ibm.ws.naming.util.WsnInitCtx.lookup(WsnInitCtx.java:179)
+	at javax.naming.InitialContext.lookup(InitialContext.java:428)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:318)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect(RMIConnectorClient.java:237)
+	at com.ibm.ws.management.connector.rmi.RMIConnectorClient.<init>(RMIConnectorClient.java:145)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:673)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.connector.ConnectorHelper.tryProtocol(ConnectorHelper.java:665)
+	at com.ibm.ws.management.connector.ConnectorHelper.createConnector(ConnectorHelper.java:610)
+	at com.ibm.ws.management.tools.WsServerStop.runTool(WsServerStop.java:373)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerStop.main(WsServerStop.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:506)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:248)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:230)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:405)
+	at java.net.Socket.connect(Socket.java:628)
+	at com.ibm.ws.orbimpl.transport.WSTCPTransportConnection.createSocket(WSTCPTransportConnection.java:326)
+	at com.ibm.CORBA.transport.TransportConnectionBase.connect(TransportConnectionBase.java:373)
+	... 63 more
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.ws.orbimpl.transport.WSTransport@66864d02
+com.ibm.CORBA.transport.TransportBase::CLASS:com.ibm.CORBA.Transport.TransportBase
+com.ibm.CORBA.transport.TransportBase::transportData:null
+com.ibm.ws.orbimpl.transport.WSTransport::SSL_TAGGED_COMPONENT_ID:20
+com.ibm.ws.orbimpl.transport.WSTransport::fORB BEGIN:com.ibm.CORBA.iiop.ORB@f25fb6fd
+ org.omg.CORBA.ORB::CLASS:org.omg.CORBA.ORB
+ org.omg.CORBA.ORB::ORBClassKey:org.omg.CORBA.ORBClass
+ org.omg.CORBA.ORB::ORBSingletonClassKey:org.omg.CORBA.ORBSingletonClass
+ org.omg.CORBA.ORB::defaultORB:com.ibm.CORBA.iiop.ORB
+ org.omg.CORBA.ORB::defaultORBSingleton:com.ibm.rmi.corba.ORBSingleton
+ org.omg.CORBA.ORB::singleton:null
+ com.ibm.rmi.ORB::interop BEGIN:com.ibm.rmi.util.Interop@d0403f7d
+  com.ibm.rmi.util.PartnerVersionUtil::NOT_SET:-1
+  com.ibm.rmi.util.PartnerVersionUtil::NONE:0
+  com.ibm.rmi.util.PartnerVersionUtil::ORB11:11
+  com.ibm.rmi.util.PartnerVersionUtil::ORB12:12
+  com.ibm.rmi.util.PartnerVersionUtil::ORB13:13
+  com.ibm.rmi.util.PartnerVersionUtil::ORB13S:4865
+  com.ibm.rmi.util.PartnerVersionUtil::ORB131:4880
+  com.ibm.rmi.util.PartnerVersionUtil::ORB14:5120
+  com.ibm.rmi.util.PartnerVersionUtil::ORB141:5136
+  com.ibm.rmi.util.PartnerVersionUtil::ORB142:5152
+  com.ibm.rmi.util.PartnerVersionUtil::ORB50:5376
+  com.ibm.rmi.util.PartnerVersionUtil::ORB60:5632
+  com.ibm.rmi.util.PartnerVersionUtil::ORB626:5670
+  com.ibm.rmi.util.PartnerVersionUtil::ORB70:5888
+  com.ibm.rmi.util.PartnerVersionUtil::ORB727:5927
+  com.ibm.rmi.util.PartnerVersionUtil::ORB80:6144
+  com.ibm.rmi.util.PartnerVersionUtil::ORBDEV:6399
+  com.ibm.rmi.util.PartnerVersionUtil::ORB_MAJOR:6144
+  com.ibm.rmi.util.PartnerVersionUtil::ORB_MINOR:0
+  com.ibm.rmi.util.PartnerVersionUtil::CONTEXTS_CACHED:1
+  com.ibm.rmi.util.PartnerVersionUtil::COMPLETE_HEADER_IN_FIRST_FRAGMENT:2
+  com.ibm.rmi.util.PartnerVersionUtil::ALLOW_SAME_CONNECTION_FOR_CALLBACK:4
+  com.ibm.rmi.util.PartnerVersionUtil::IS_SCHEMA_ENABLED:8
+  com.ibm.rmi.util.PartnerVersionUtil::ENCODE_STRING_IN_VARINT:16
+  com.ibm.rmi.util.PartnerVersionUtil::USE_HARMONY_CLASS_LIBRARY:4096
+  com.ibm.rmi.util.Interop::CLASS:com.ibm.rmi.util.Interop
+  com.ibm.rmi.util.Interop::NO_IBM_ORB BEGIN:com.ibm.rmi.util.Interop@652d5cf0
+   com.ibm.rmi.util.PartnerVersionUtil::NOT_SET:-1
+   com.ibm.rmi.util.PartnerVersionUtil::NONE:0
+   com.ibm.rmi.util.PartnerVersionUtil::ORB11:11
+   com.ibm.rmi.util.PartnerVersionUtil::ORB12:12
+   com.ibm.rmi.util.PartnerVersionUtil::ORB13:13
+   com.ibm.rmi.util.PartnerVersionUtil::ORB13S:4865
+   com.ibm.rmi.util.PartnerVersionUtil::ORB131:4880
+   com.ibm.rmi.util.PartnerVersionUtil::ORB14:5120
+   com.ibm.rmi.util.PartnerVersionUtil::ORB141:5136
+   com.ibm.rmi.util.PartnerVersionUtil::ORB142:5152
+   com.ibm.rmi.util.PartnerVersionUtil::ORB50:5376
+   com.ibm.rmi.util.PartnerVersionUtil::ORB60:5632
+   com.ibm.rmi.util.PartnerVersionUtil::ORB626:5670
+   com.ibm.rmi.util.PartnerVersionUtil::ORB70:5888
+   com.ibm.rmi.util.PartnerVersionUtil::ORB727:5927
+   com.ibm.rmi.util.PartnerVersionUtil::ORB80:6144
+   com.ibm.rmi.util.PartnerVersionUtil::ORBDEV:6399
+   com.ibm.rmi.util.PartnerVersionUtil::ORB_MAJOR:6144
+   com.ibm.rmi.util.PartnerVersionUtil::ORB_MINOR:0
+   com.ibm.rmi.util.PartnerVersionUtil::CONTEXTS_CACHED:1
+   com.ibm.rmi.util.PartnerVersionUtil::COMPLETE_HEADER_IN_FIRST_FRAGMENT:2
+   com.ibm.rmi.util.PartnerVersionUtil::ALLOW_SAME_CONNECTION_FOR_CALLBACK:4
+   com.ibm.rmi.util.PartnerVersionUtil::IS_SCHEMA_ENABLED:8
+   com.ibm.rmi.util.PartnerVersionUtil::ENCODE_STRING_IN_VARINT:16
+   com.ibm.rmi.util.PartnerVersionUtil::USE_HARMONY_CLASS_LIBRARY:4096
+   com.ibm.rmi.util.Interop::CLASS:com.ibm.rmi.util.Interop
+   com.ibm.rmi.util.Interop::NO_IBM_ORB:com.ibm.rmi.util.Interop@652d5cf0
+    com.ibm.rmi.util.Interop::SPECIAL_IBM_ORB:com.ibm.rmi.util.Interop@660ed751 depth limit reached
+   com.ibm.rmi.util.Interop::PARTNER_IGNORES_ISSUE:1
+   com.ibm.rmi.util.Interop::PARTNER_ENABLES_ISSUE:2
+   com.ibm.rmi.util.Interop::PARTNER_ADHERES_TO_SPEC:4
+   com.ibm.rmi.util.Interop::UNSET:-128
+   com.ibm.rmi.util.Interop::NEVER:0
+   com.ibm.rmi.util.Interop::OFF:2
+   com.ibm.rmi.util.Interop::RARELY:4
+   com.ibm.rmi.util.Interop::ON:6
+   com.ibm.rmi.util.Interop::ALWAYS:7
+    com.ibm.rmi.util.Interop::partnerVersion:com.ibm.CORBA.iiop.PartnerVersion$1@cf2e164e depth limit reached
+    com.ibm.rmi.util.Interop::omg4591:com.ibm.rmi.util.Interop$StandardIssue@98d67371 depth limit reached
+    com.ibm.rmi.util.Interop::useAlternativeRepIDEncoding:com.ibm.rmi.util.Interop$StandardIssue@a36cde78 depth limit reached
+    com.ibm.rmi.util.Interop::standardIssues:java.util.ArrayList@cadf6992 depth limit reached
+   com.ibm.rmi.util.Interop::orb:null
+   END:com.ibm.rmi.util.Interop@652d5cf0
+
+  com.ibm.rmi.util.Interop::SPECIAL_IBM_ORB:com.ibm.rmi.util.Interop@660ed751
+  com.ibm.rmi.util.Interop::PARTNER_IGNORES_ISSUE:1
+  com.ibm.rmi.util.Interop::PARTNER_ENABLES_ISSUE:2
+  com.ibm.rmi.util.Interop::PARTNER_ADHERES_TO_SPEC:4
+  com.ibm.rmi.util.Interop::UNSET:-128
+  com.ibm.rmi.util.Interop::NEVER:0
+  com.ibm.rmi.util.Interop::OFF:2
+  com.ibm.rmi.util.Interop::RARELY:4
+  com.ibm.rmi.util.Interop::ON:6
+  com.ibm.rmi.util.Interop::ALWAYS:7
+  com.ibm.rmi.util.Interop::partnerVersion:null
+  com.ibm.rmi.util.Interop::omg4591 BEGIN:com.ibm.rmi.util.Interop$StandardIssue@b59a9eba
+    com.ibm.rmi.util.Interop$StandardIssue::versionBoundaries:[I@8c4d523d depth limit reached
+   com.ibm.rmi.util.Interop$StandardIssue::setting:2
+   com.ibm.rmi.util.Interop$StandardIssue::name:com.ibm.CORBA.UseOMG4591
+   com.ibm.rmi.util.Interop$StandardIssue::this$0:com.ibm.rmi.util.Interop@d0403f7d
+   END:com.ibm.rmi.util.Interop$StandardIssue@b59a9eba
+
+  com.ibm.rmi.util.Interop::useAlternativeRepIDEncoding BEGIN:com.ibm.rmi.util.Interop$StandardIssue@8c1d7ff6
+    com.ibm.rmi.util.Interop$StandardIssue::versionBoundaries:[I@148469d7 depth limit reached
+   com.ibm.rmi.util.Interop$StandardIssue::setting:2
+   com.ibm.rmi.util.Interop$StandardIssue::name:com.ibm.CORBA.UseAlternativeRepIDEncoding
+   com.ibm.rmi.util.Interop$StandardIssue::this$0:com.ibm.rmi.util.Interop@d0403f7d
+   END:com.ibm.rmi.util.Interop$StandardIssue@8c1d7ff6
+
+  com.ibm.rmi.util.Interop::standardIssues BEGIN:java.util.ArrayList@2454b3a
+   {
+   com.ibm.rmi.util.Interop$StandardIssue@b59a9eba
+   com.ibm.rmi.util.Interop$StandardIssue@8c1d7ff6
+   }
+   END:java.util.ArrayList@2454b3a
+
+  com.ibm.rmi.util.Interop::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  END:com.ibm.rmi.util.Interop@d0403f7d
+
+ com.ibm.rmi.corba.ORB::CLASS:com.ibm.rmi.corba.ORB
+ com.ibm.rmi.corba.ORB::LSD_PLUGIN:com.ibm.CORBA.iiop.LSDPlugin
+ com.ibm.rmi.corba.ORB::PMI_PLUGIN:com.ibm.CORBA.iiop.PMIPlugin
+ com.ibm.rmi.corba.ORB::ASYNCH_PLUGIN:com.ibm.CORBA.iiop.AsynchronousServantPlugin
+ com.ibm.rmi.corba.ORB::WLM_PLUGIN:com.ibm.CORBA.iiop.WLMPlugin
+ com.ibm.rmi.corba.ORB::J2EE_CONTAINER_PLUGIN:com.ibm.CORBA.iiop.J2EEContainerPlugin
+ com.ibm.rmi.corba.ORB::THREADPOOL_PLUGIN:com.ibm.CORBA.iiop.ThreadPool
+ com.ibm.rmi.corba.ORB::TRANSPORT_PLUGIN:com.ibm.CORBA.transport.Transport
+ com.ibm.rmi.corba.ORB::READERPOOL_PLUGIN:com.ibm.CORBA.transport.ReaderPool
+ com.ibm.rmi.corba.ORB::IIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.IIOPChannelPlugin
+ com.ibm.rmi.corba.ORB::GIOPCHANNEL_PLUGIN:com.ibm.CORBA.channel.giop.GIOPChannelPlugin
+ com.ibm.rmi.corba.ORB::FIRST_PREREQ_PLUGINS BEGIN:[Ljava.lang.String;@8d03c583
+  [
+  com.ibm.CORBA.iiop.PMIPlugin
+  com.ibm.CORBA.iiop.PropertyManager
+  com.ibm.CORBA.iiop.AsynchronousServantPlugin
+  ]
+  END:[Ljava.lang.String;@8d03c583
+
+ com.ibm.rmi.corba.ORB::SECOND_PREREQ_PLUGINS BEGIN:[Ljava.lang.String;@3318236d
+  [
+  com.ibm.CORBA.iiop.SubcontractInit
+  ]
+  END:[Ljava.lang.String;@3318236d
+
+ com.ibm.rmi.corba.ORB::_dynamicRequests BEGIN:java.util.Vector@b48e9ec7
+  {
+  }
+  END:java.util.Vector@b48e9ec7
+
+ com.ibm.rmi.corba.ORB::_svResponseReceived BEGIN:com.ibm.rmi.corba.SynchVariable@d9fe7b0e
+  com.ibm.rmi.corba.SynchVariable::_flag:false
+  END:com.ibm.rmi.corba.SynchVariable@d9fe7b0e
+
+ com.ibm.rmi.corba.ORB::ORBInitialHost:127.0.0.1
+ com.ibm.rmi.corba.ORB::ORBInitialPort:2809
+ com.ibm.rmi.corba.ORB::ORBServerHost:127.0.0.1
+ com.ibm.rmi.corba.ORB::ORBServerPort:0
+ com.ibm.rmi.corba.ORB::appletHost:null
+ com.ibm.rmi.corba.ORB::appletCodeBase:null
+ com.ibm.rmi.corba.ORB::charEncoding:83951617
+ com.ibm.rmi.corba.ORB::wcharEncoding:65792
+ com.ibm.rmi.corba.ORB::wcharDefault:0
+ com.ibm.rmi.corba.ORB::serverId:-1
+ com.ibm.rmi.corba.ORB::orbId:null
+ com.ibm.rmi.corba.ORB::noProprietaryActivation:false
+ com.ibm.rmi.corba.ORB::arguments BEGIN:[Ljava.lang.String;@e9019340
+  [
+  ]
+  END:[Ljava.lang.String;@e9019340
+
+ com.ibm.rmi.corba.ORB::initProps BEGIN:java.util.Properties@22017d30
+  {
+  key:com.ibm.websphere.naming.hostname.normalizer
+  value:com.ibm.ws.naming.util.DefaultHostnameNormalizer
+  key:java.naming.factory.initial
+  value:com.ibm.websphere.naming.WsnInitialContextFactory
+  key:com.ibm.websphere.naming.name.syntax
+  value:jndi
+  key:com.ibm.websphere.naming.namespace.connection
+  value:lazy
+  key:com.ibm.ws.naming.ldap.ldapinitctxfactory
+  value:com.sun.jndi.ldap.LdapCtxFactory
+  key:com.ibm.websphere.naming.jndicache.cacheobject
+  value:populated
+  key:com.ibm.websphere.naming.namespaceroot
+  value:defaultroot
+  key:com.ibm.ws.naming.wsn.factory.initial
+  value:com.ibm.ws.naming.util.WsnInitCtxFactory
+  key:com.ibm.websphere.naming.jndicache.maxcachelife
+  value:0
+  key:com.ibm.websphere.naming.jndicache.maxentrylife
+  value:0
+  key:com.ibm.ws.naming.wsn.localonly
+  value:false
+  key:com.ibm.websphere.naming.jndicache.cachename
+  value:providerURL
+  key:java.naming.provider.url
+  value:corbaloc:iiop:TWAS1:2809/WsnAdminNameService
+  key:java.naming.factory.url.pkgs
+  value:com.ibm.ws.naming
+  }
+  END:java.util.Properties@22017d30
+
+ com.ibm.rmi.corba.ORB::initApplet:null
+ com.ibm.rmi.corba.ORB::bufferSize:2048
+ com.ibm.rmi.corba.ORB::fragmentSize:4096
+ com.ibm.rmi.corba.ORB::largeDataBufferSize:4096
+ com.ibm.rmi.corba.ORB::outputBufferListSize:100
+ com.ibm.rmi.corba.ORB::outputLargeDataBufferListSize:20
+ com.ibm.rmi.corba.ORB::useLocateRequest:true
+ com.ibm.rmi.corba.ORB::queueDepth:0
+ com.ibm.rmi.corba.ORB::proxyStubs:0
+ com.ibm.rmi.corba.ORB::alwaysUseOMG4796:false
+ com.ibm.rmi.corba.ORB::useOMG5689:true
+ com.ibm.rmi.corba.ORB::allowUserInterrupt:false
+ com.ibm.rmi.corba.ORB::enableWCharSend:false
+ com.ibm.rmi.corba.ORB::enableWCharReceive:false
+ com.ibm.rmi.corba.ORB::pluginRegistry BEGIN:com.ibm.rmi.corba.PluginRegistry@3bbcaeb
+  com.ibm.rmi.corba.PluginRegistry::CLASS:com.ibm.rmi.corba.PluginRegistry
+  com.ibm.rmi.corba.PluginRegistry::NULL_PLUGIN_ARRAY BEGIN:[Lcom.ibm.CORBA.iiop.Plugin;@de2f037b
+   [
+   ]
+   END:[Lcom.ibm.CORBA.iiop.Plugin;@de2f037b
+
+  com.ibm.rmi.corba.PluginRegistry::pluginNameToDefaultClass BEGIN:java.util.HashMap@749714e1
+   {
+   key:com.ibm.CORBA.transport.Transport
+   value:class com.ibm.rmi.transport.TCPTransport
+   key:com.ibm.CORBA.channel.IIOPChannelPlugin
+   value:class com.ibm.rmi.channel.IIOPChannelPluginImpl
+   key:com.ibm.CORBA.channel.giop.GIOPChannelPlugin
+   value:class com.ibm.rmi.channel.giop.GIOPChannelPluginImpl
+   key:com.ibm.CORBA.transport.ReaderPool
+   value:class com.ibm.rmi.transport.ReaderPoolImpl
+   key:com.ibm.CORBA.iiop.ThreadPool
+   value:class com.ibm.rmi.iiop.ThreadPoolImpl
+   }
+   END:java.util.HashMap@749714e1
+
+  com.ibm.rmi.corba.PluginRegistry::unloadedRegistry BEGIN:com.ibm.rmi.corba.PluginRegistry$Registry@3a141578
+    com.ibm.rmi.corba.PluginRegistry$Registry::instanceToPluginNames:java.util.HashMap@bee46570 depth limit reached
+    com.ibm.rmi.corba.PluginRegistry$Registry::pluginNameToInstanceList:java.util.HashMap@b0a8abb7 depth limit reached
+   com.ibm.rmi.corba.PluginRegistry$Registry::$assertionsDisabled:true
+   END:com.ibm.rmi.corba.PluginRegistry$Registry@3a141578
+
+  com.ibm.rmi.corba.PluginRegistry::loadedRegistry BEGIN:com.ibm.rmi.corba.PluginRegistry$Registry@83c06327
+    com.ibm.rmi.corba.PluginRegistry$Registry::instanceToPluginNames:java.util.HashMap@9fd50492 depth limit reached
+    com.ibm.rmi.corba.PluginRegistry$Registry::pluginNameToInstanceList:java.util.HashMap@b97b439c depth limit reached
+   com.ibm.rmi.corba.PluginRegistry$Registry::$assertionsDisabled:true
+   END:com.ibm.rmi.corba.PluginRegistry$Registry@83c06327
+
+  com.ibm.rmi.corba.PluginRegistry::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  END:com.ibm.rmi.corba.PluginRegistry@3bbcaeb
+
+ com.ibm.rmi.corba.ORB::subcontractRegistry BEGIN:com.ibm.rmi.SubcontractRegistry@4f927cd
+  com.ibm.rmi.SubcontractRegistry::CLASS:com.ibm.rmi.SubcontractRegistry
+  com.ibm.rmi.SubcontractRegistry::default_serverClassNames BEGIN:[Ljava.lang.String;@bebc3f5
+   [
+   com.ibm.CORBA.iiop.ServerDelegate
+   com.ibm.CORBA.iiop.ExtendedServerDelegate
+   com.ibm.CORBA.poa.POAServerDelegate
+   com.ibm.CORBA.poa.POAServerDelegate
+   ]
+   END:[Ljava.lang.String;@bebc3f5
+
+  com.ibm.rmi.SubcontractRegistry::default_scIds BEGIN:[I@c6f241af
+[16 18 21 22]
+   END:[I@c6f241af
+
+  com.ibm.rmi.SubcontractRegistry::serverRegistry BEGIN:[Lcom.ibm.CORBA.iiop.ServerSubcontract;@a6eeda7d
+   [
+    com.ibm.ws.orb.WSServerDelegate@f1add2d6 depth limit reached
+    com.ibm.ws.orb.WSExtendedServerDelegate@db4e6cd5 depth limit reached
+    com.ibm.CORBA.poa.POAServerDelegate@312fb468 depth limit reached
+    com.ibm.CORBA.poa.POAServerDelegate@1a06d71e depth limit reached
+   ]
+   END:[Lcom.ibm.CORBA.iiop.ServerSubcontract;@a6eeda7d
+
+  com.ibm.rmi.SubcontractRegistry::scIds BEGIN:[I@dc37f51f
+[16 18 21 22]
+   END:[I@dc37f51f
+
+  com.ibm.rmi.SubcontractRegistry::bootstrapServer:null
+  com.ibm.rmi.SubcontractRegistry::insRegistry:null
+  com.ibm.rmi.SubcontractRegistry::subcontractCache BEGIN:java.util.Collections$SynchronizedMap@e239bfc0
+   {
+   }
+   END:java.util.Collections$SynchronizedMap@e239bfc0
+
+  com.ibm.rmi.SubcontractRegistry::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.rmi.SubcontractRegistry::closed:true
+  END:com.ibm.rmi.SubcontractRegistry@4f927cd
+
+ com.ibm.rmi.corba.ORB::interceptorManager BEGIN:com.ibm.rmi.pi.InterceptorManager@db5f34aa
+  com.ibm.rmi.pi.InterceptorManager::CLASS:com.ibm.rmi.pi.InterceptorManager
+  com.ibm.rmi.pi.InterceptorManager::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.rmi.pi.InterceptorManager::pmiServer:null
+  com.ibm.rmi.pi.InterceptorManager::STATE_NOTHING:0
+  com.ibm.rmi.pi.InterceptorManager::STATE_PRE_INIT:1
+  com.ibm.rmi.pi.InterceptorManager::STATE_POST_INIT:2
+  com.ibm.rmi.pi.InterceptorManager::STATE_SEND_REQUEST:3
+  com.ibm.rmi.pi.InterceptorManager::STATE_SEND_POLL:4
+  com.ibm.rmi.pi.InterceptorManager::STATE_RECEIVE_REPLY:5
+  com.ibm.rmi.pi.InterceptorManager::STATE_RECEIVE_EXCEPTION:6
+  com.ibm.rmi.pi.InterceptorManager::STATE_RECEIVE_OTHER:7
+  com.ibm.rmi.pi.InterceptorManager::STATE_RECEIVE_CONTEXT:8
+  com.ibm.rmi.pi.InterceptorManager::STATE_RECEIVE_REQUEST:9
+  com.ibm.rmi.pi.InterceptorManager::STATE_SEND_REPLY:10
+  com.ibm.rmi.pi.InterceptorManager::STATE_SEND_EXCEPTION:11
+  com.ibm.rmi.pi.InterceptorManager::STATE_SEND_OTHER:12
+  com.ibm.rmi.pi.InterceptorManager::STATE_ESTABLISH_COMPONENTS:13
+  com.ibm.rmi.pi.InterceptorManager::STATE_COMPONENTS_ESTABLISHED:14
+  com.ibm.rmi.pi.InterceptorManager::STATE_COMPONENTS_ESTABLISHED_COMPLETE:15
+  com.ibm.rmi.pi.InterceptorManager::orbInitInfo BEGIN:com.ibm.rmi.pi.ORBInitInfoImpl@60ef78f2
+   org.omg.CORBA.LocalObject::reason:This is a locally constrained object.
+   com.ibm.rmi.corba.LocalObjectImpl::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+   com.ibm.rmi.pi.ORBInitInfoImpl::CLASS:com.ibm.rmi.pi.ORBInitInfoImpl
+   com.ibm.rmi.pi.ORBInitInfoImpl::state:2
+   com.ibm.rmi.pi.ORBInitInfoImpl::manager:com.ibm.rmi.pi.InterceptorManager@db5f34aa
+   com.ibm.rmi.pi.ORBInitInfoImpl::serialVersionUID:0
+   END:com.ibm.rmi.pi.ORBInitInfoImpl@60ef78f2
+
+  com.ibm.rmi.pi.InterceptorManager::clientList:null
+  com.ibm.rmi.pi.InterceptorManager::serverList:null
+  com.ibm.rmi.pi.InterceptorManager::iorList:null
+  com.ibm.rmi.pi.InterceptorManager::clientInterceptors BEGIN:[Lorg.omg.PortableInterceptor.ClientRequestInterceptor;@6a3b2a6c
+   [
+    com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI@58e64cc depth limit reached
+    com.ibm.ws.activity.remote.cos.ActivityServiceClientInterceptor@cee247c7 depth limit reached
+    com.ibm.ws.wlm.client.WLMClientRequestInterceptor@bb7669ea depth limit reached
+    com.ibm.ws.Transaction.client.NonRecoverableClientInterceptor@437bd62b depth limit reached
+   ]
+   END:[Lorg.omg.PortableInterceptor.ClientRequestInterceptor;@6a3b2a6c
+
+  com.ibm.rmi.pi.InterceptorManager::clientLocalItors:null
+  com.ibm.rmi.pi.InterceptorManager::serverInterceptors:null
+  com.ibm.rmi.pi.InterceptorManager::serverLocalItors:null
+  com.ibm.rmi.pi.InterceptorManager::iorInterceptors:null
+  com.ibm.rmi.pi.InterceptorManager::piCurrent BEGIN:com.ibm.rmi.pi.CurrentImpl@438bd44f
+   org.omg.CORBA.LocalObject::reason:This is a locally constrained object.
+   com.ibm.rmi.corba.LocalObjectImpl::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+    com.ibm.rmi.pi.CurrentImpl::slotStack:java.lang.ThreadLocal@37b4584c depth limit reached
+   com.ibm.rmi.pi.CurrentImpl::initComplete:true
+   com.ibm.rmi.pi.CurrentImpl::slotCount:3
+   END:com.ibm.rmi.pi.CurrentImpl@438bd44f
+
+  com.ibm.rmi.pi.InterceptorManager::maxSlotId:3
+  END:com.ibm.rmi.pi.InterceptorManager@db5f34aa
+
+ com.ibm.rmi.corba.ORB::objectResolver:null
+ com.ibm.rmi.corba.ORB::defaultInitialServicesPort:2809
+ com.ibm.rmi.corba.ORB::debug:false
+ com.ibm.rmi.corba.ORB::isRunningInApplet:false
+ com.ibm.rmi.corba.ORB::shutdownObj:java.lang.Object@5b8434d0
+ com.ibm.rmi.corba.ORB::initialReferenceClient BEGIN:com.ibm.rmi.corba.InitialReferenceClient@48d3239
+  com.ibm.rmi.corba.InitialNamingClient::CLASS:com.ibm.rmi.corba.InitialNamingClient
+  com.ibm.rmi.corba.InitialNamingClient::servicesURL:null
+  com.ibm.rmi.corba.InitialNamingClient::listOfInitialServices:null
+  com.ibm.rmi.corba.InitialNamingClient::resolvedInitialReferences:null
+  com.ibm.rmi.corba.InitialNamingClient::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.rmi.corba.InitialNamingClient::initialKey BEGIN:com.ibm.CORBA.iiop.ObjectKey@6ac47556
+   com.ibm.CORBA.iiop.ObjectKey::CLASS:ObjectKey
+    com.ibm.CORBA.iiop.ObjectKey::objectKeyBuffer:java.nio.HeapByteBuffer@8eb35e10 depth limit reached
+   com.ibm.CORBA.iiop.ObjectKey::userKey:null
+    com.ibm.CORBA.iiop.ObjectKey::lockObject:com.ibm.CORBA.iiop.ObjectKey$NamedLockObject@8dcfa187 depth limit reached
+   com.ibm.CORBA.iiop.ObjectKey::INVALID_SERVER_ID:-1
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_VERSION:74
+   com.ibm.CORBA.iiop.ObjectKey::KMBI_VERSION:75
+   com.ibm.CORBA.iiop.ObjectKey::LMBI_VERSION:76
+   com.ibm.CORBA.iiop.ObjectKey::XMBI_MAGIC:5063241
+   com.ibm.CORBA.iiop.ObjectKey::MBI_MAGIC_SUFFIX:MBI
+   com.ibm.CORBA.iiop.ObjectKey::IBM_OBJECTKEY_SIZE:14
+   com.ibm.CORBA.iiop.ObjectKey::IBM_MAGIC_OFFSET:0
+   com.ibm.CORBA.iiop.ObjectKey::IBM_SCID_OFFSET:4
+   com.ibm.CORBA.iiop.ObjectKey::IBM_SERVERID_OFFSET:8
+   com.ibm.CORBA.iiop.ObjectKey::IBM_USERKEYOFFSET_OFFSET:12
+   com.ibm.CORBA.iiop.ObjectKey::IBM_USERKEYLEN_SIZE:2
+   com.ibm.CORBA.iiop.ObjectKey::IBM_POANAMELEN_SIZE:2
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_SERVERUUID_SIZE:16
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_SERVERUUID_OFFSET:12
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_USERKEYOFFSET_OFFSET:28
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_OBJECTKEY_SIZE:36
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_USERKEYLEN_OFFSET:32
+   com.ibm.CORBA.iiop.ObjectKey::JMBI_USERKEY_OFFSET:36
+   com.ibm.CORBA.iiop.ObjectKey::stringOfKey:null
+   com.ibm.CORBA.iiop.ObjectKey::hash:0
+   com.ibm.CORBA.iiop.ObjectKey::SINOObjectKey:com.ibm.CORBA.iiop.ObjectKey@6ac47556
+    com.ibm.CORBA.iiop.ObjectKey::SINOObjectKeyReversed:com.ibm.CORBA.iiop.ObjectKey@ef88f4f7 depth limit reached
+   END:com.ibm.CORBA.iiop.ObjectKey@6ac47556
+
+  com.ibm.rmi.corba.InitialReferenceClient::CLASS:com.ibm.rmi.corba.InitialReferenceClient
+  com.ibm.rmi.corba.InitialReferenceClient::defaultInitRef:null
+  com.ibm.rmi.corba.InitialReferenceClient::initRefs BEGIN:java.util.Hashtable@93b58a78
+   {
+   }
+   END:java.util.Hashtable@93b58a78
+
+  com.ibm.rmi.corba.InitialReferenceClient::localRefs BEGIN:java.util.Hashtable@2fd89ff8
+   {
+   key:PICurrent
+   value:com.ibm.rmi.pi.CurrentImpl@438bd44f
+   key:WLMClientRequestInterceptor
+   value:com.ibm.ws.wlm.client.WLMClientRequestInterceptor@bb7669ea
+   key:CodecFactory
+    value:com.ibm.rmi.pi.CodecFactoryImpl@13e5680a depth limit reached
+   key:DynAnyFactory
+    value:com.ibm.rmi.corba.DynamicAny.DynAnyFactoryImpl@97c9a5b5 depth limit reached
+   }
+   END:java.util.Hashtable@2fd89ff8
+
+  com.ibm.rmi.corba.InitialReferenceClient::initRefParm:-ORBInitRef
+  com.ibm.rmi.corba.InitialReferenceClient::defaultInitRefParm:-ORBDefaultInitRef
+  com.ibm.rmi.corba.InitialReferenceClient::initRefProperty:com.ibm.CORBA.ORBInitRef.
+  com.ibm.rmi.corba.InitialReferenceClient::defaultInitRefProperty:com.ibm.CORBA.ORBDefaultInitRef
+  com.ibm.rmi.corba.InitialReferenceClient::reservedNames BEGIN:[Ljava.lang.String;@9ce1c954
+   [
+   InterfaceRepository
+   SecurityCurrent
+   TransactionCurrent
+   ORBPolicyManager
+   PolicyCurrent
+   ComponentHomeFinder
+   TypeCodeFactory
+   PSS
+   ]
+   END:[Ljava.lang.String;@9ce1c954
+
+  END:com.ibm.rmi.corba.InitialReferenceClient@48d3239
+
+ com.ibm.rmi.corba.ORB::typeCodeMap BEGIN:java.util.concurrent.ConcurrentHashMap@b60fbaae
+  {
+  }
+  java.util.concurrent.ConcurrentHashMap::serialVersionUID:7249069246763182397
+  java.util.concurrent.ConcurrentHashMap::MAXIMUM_CAPACITY:1073741824
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CAPACITY:16
+  java.util.concurrent.ConcurrentHashMap::MAX_ARRAY_SIZE:2147483639
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CONCURRENCY_LEVEL:16
+  java.util.concurrent.ConcurrentHashMap::LOAD_FACTOR:0.75
+  java.util.concurrent.ConcurrentHashMap::TREEIFY_THRESHOLD:8
+  java.util.concurrent.ConcurrentHashMap::UNTREEIFY_THRESHOLD:6
+  java.util.concurrent.ConcurrentHashMap::MIN_TREEIFY_CAPACITY:64
+  java.util.concurrent.ConcurrentHashMap::MIN_TRANSFER_STRIDE:16
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_BITS:16
+  java.util.concurrent.ConcurrentHashMap::MAX_RESIZERS:65535
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_SHIFT:16
+  java.util.concurrent.ConcurrentHashMap::MOVED:-1
+  java.util.concurrent.ConcurrentHashMap::TREEBIN:-2
+  java.util.concurrent.ConcurrentHashMap::RESERVED:-3
+  java.util.concurrent.ConcurrentHashMap::HASH_BITS:2147483647
+  java.util.concurrent.ConcurrentHashMap::NCPU:8
+  java.util.concurrent.ConcurrentHashMap::serialPersistentFields BEGIN:[Ljava.io.ObjectStreamField;@cb23116
+   [
+    java.io.ObjectStreamField@27dff6f6 depth limit reached
+    java.io.ObjectStreamField@e7271ad1 depth limit reached
+    java.io.ObjectStreamField@916cfe97 depth limit reached
+   ]
+   END:[Ljava.io.ObjectStreamField;@cb23116
+
+  java.util.concurrent.ConcurrentHashMap::table:null
+  java.util.concurrent.ConcurrentHashMap::nextTable:null
+  java.util.concurrent.ConcurrentHashMap::baseCount:0
+  java.util.concurrent.ConcurrentHashMap::sizeCtl:0
+  java.util.concurrent.ConcurrentHashMap::transferIndex:0
+  java.util.concurrent.ConcurrentHashMap::cellsBusy:0
+  java.util.concurrent.ConcurrentHashMap::counterCells:null
+  java.util.concurrent.ConcurrentHashMap::keySet:null
+  java.util.concurrent.ConcurrentHashMap::values:null
+  java.util.concurrent.ConcurrentHashMap::entrySet BEGIN:java.util.concurrent.ConcurrentHashMap$EntrySetView@f95bbe73
+   java.util.concurrent.ConcurrentHashMap$CollectionView::serialVersionUID:7249069246763182397
+   java.util.concurrent.ConcurrentHashMap$CollectionView::map:java.util.concurrent.ConcurrentHashMap@b60fbaae
+   java.util.concurrent.ConcurrentHashMap$CollectionView::oomeMsg:Required array size too large
+   java.util.concurrent.ConcurrentHashMap$EntrySetView::serialVersionUID:2249069246763182397
+   END:java.util.concurrent.ConcurrentHashMap$EntrySetView@f95bbe73
+
+  java.util.concurrent.ConcurrentHashMap::U BEGIN:sun.misc.Unsafe@e702b1c1
+   sun.misc.Unsafe::theUnsafe:sun.misc.Unsafe@e702b1c1
+   sun.misc.Unsafe::INVALID_FIELD_OFFSET:-1
+   sun.misc.Unsafe::ARRAY_BOOLEAN_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_BYTE_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_SHORT_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_CHAR_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_INT_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_LONG_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_FLOAT_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_DOUBLE_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_OBJECT_BASE_OFFSET:8
+   sun.misc.Unsafe::ARRAY_BOOLEAN_INDEX_SCALE:1
+   sun.misc.Unsafe::ARRAY_BYTE_INDEX_SCALE:1
+   sun.misc.Unsafe::ARRAY_SHORT_INDEX_SCALE:2
+   sun.misc.Unsafe::ARRAY_CHAR_INDEX_SCALE:2
+   sun.misc.Unsafe::ARRAY_INT_INDEX_SCALE:4
+   sun.misc.Unsafe::ARRAY_LONG_INDEX_SCALE:8
+   sun.misc.Unsafe::ARRAY_FLOAT_INDEX_SCALE:4
+   sun.misc.Unsafe::ARRAY_DOUBLE_INDEX_SCALE:8
+   sun.misc.Unsafe::ARRAY_OBJECT_INDEX_SCALE:4
+   sun.misc.Unsafe::ADDRESS_SIZE:8
+   END:sun.misc.Unsafe@e702b1c1
+
+  java.util.concurrent.ConcurrentHashMap::SIZECTL:48
+  java.util.concurrent.ConcurrentHashMap::TRANSFERINDEX:52
+  java.util.concurrent.ConcurrentHashMap::BASECOUNT:16
+  java.util.concurrent.ConcurrentHashMap::CELLSBUSY:56
+  java.util.concurrent.ConcurrentHashMap::CELLVALUE:72
+  java.util.concurrent.ConcurrentHashMap::ABASE:8
+  java.util.concurrent.ConcurrentHashMap::ASHIFT:2
+  END:java.util.concurrent.ConcurrentHashMap@b60fbaae
+
+ com.ibm.rmi.corba.ORB::savedId:null
+ com.ibm.rmi.corba.ORB::savedCode:null
+ com.ibm.rmi.corba.ORB::valueFactoryCache BEGIN:java.util.concurrent.ConcurrentHashMap@41c66aa1
+  {
+  }
+  java.util.concurrent.ConcurrentHashMap::serialVersionUID:7249069246763182397
+  java.util.concurrent.ConcurrentHashMap::MAXIMUM_CAPACITY:1073741824
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CAPACITY:16
+  java.util.concurrent.ConcurrentHashMap::MAX_ARRAY_SIZE:2147483639
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CONCURRENCY_LEVEL:16
+  java.util.concurrent.ConcurrentHashMap::LOAD_FACTOR:0.75
+  java.util.concurrent.ConcurrentHashMap::TREEIFY_THRESHOLD:8
+  java.util.concurrent.ConcurrentHashMap::UNTREEIFY_THRESHOLD:6
+  java.util.concurrent.ConcurrentHashMap::MIN_TREEIFY_CAPACITY:64
+  java.util.concurrent.ConcurrentHashMap::MIN_TRANSFER_STRIDE:16
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_BITS:16
+  java.util.concurrent.ConcurrentHashMap::MAX_RESIZERS:65535
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_SHIFT:16
+  java.util.concurrent.ConcurrentHashMap::MOVED:-1
+  java.util.concurrent.ConcurrentHashMap::TREEBIN:-2
+  java.util.concurrent.ConcurrentHashMap::RESERVED:-3
+  java.util.concurrent.ConcurrentHashMap::HASH_BITS:2147483647
+  java.util.concurrent.ConcurrentHashMap::NCPU:8
+  java.util.concurrent.ConcurrentHashMap::serialPersistentFields:[Ljava.io.ObjectStreamField;@cb23116
+  java.util.concurrent.ConcurrentHashMap::table:null
+  java.util.concurrent.ConcurrentHashMap::nextTable:null
+  java.util.concurrent.ConcurrentHashMap::baseCount:0
+  java.util.concurrent.ConcurrentHashMap::sizeCtl:0
+  java.util.concurrent.ConcurrentHashMap::transferIndex:0
+  java.util.concurrent.ConcurrentHashMap::cellsBusy:0
+  java.util.concurrent.ConcurrentHashMap::counterCells:null
+  java.util.concurrent.ConcurrentHashMap::keySet:null
+  java.util.concurrent.ConcurrentHashMap::values:null
+  java.util.concurrent.ConcurrentHashMap::entrySet BEGIN:java.util.concurrent.ConcurrentHashMap$EntrySetView@699a34cf
+   java.util.concurrent.ConcurrentHashMap$CollectionView::serialVersionUID:7249069246763182397
+   java.util.concurrent.ConcurrentHashMap$CollectionView::map:java.util.concurrent.ConcurrentHashMap@41c66aa1
+   java.util.concurrent.ConcurrentHashMap$CollectionView::oomeMsg:Required array size too large
+   java.util.concurrent.ConcurrentHashMap$EntrySetView::serialVersionUID:2249069246763182397
+   END:java.util.concurrent.ConcurrentHashMap$EntrySetView@699a34cf
+
+  java.util.concurrent.ConcurrentHashMap::U:sun.misc.Unsafe@e702b1c1
+  java.util.concurrent.ConcurrentHashMap::SIZECTL:48
+  java.util.concurrent.ConcurrentHashMap::TRANSFERINDEX:52
+  java.util.concurrent.ConcurrentHashMap::BASECOUNT:16
+  java.util.concurrent.ConcurrentHashMap::CELLSBUSY:56
+  java.util.concurrent.ConcurrentHashMap::CELLVALUE:72
+  java.util.concurrent.ConcurrentHashMap::ABASE:8
+  java.util.concurrent.ConcurrentHashMap::ASHIFT:2
+  END:java.util.concurrent.ConcurrentHashMap@41c66aa1
+
+ com.ibm.rmi.corba.ORB::tpMaxSize:2147483647
+ com.ibm.rmi.corba.ORB::tpMinSize:1
+ com.ibm.rmi.corba.ORB::tpTimeOut:-1
+ com.ibm.rmi.corba.ORB::tpIsGrowable:false
+ com.ibm.rmi.corba.ORB::requestRetriesCount:1
+ com.ibm.rmi.corba.ORB::requestRetriesDelay:0
+ com.ibm.rmi.corba.ORB::requestTimeout:0
+ com.ibm.rmi.corba.ORB::locateRequestTimeout:0
+ com.ibm.rmi.corba.ORB::fragmentTimeout:300
+ com.ibm.rmi.corba.ORB::connectTimeout:10
+ com.ibm.rmi.corba.ORB::socketWriteTimeout:0
+ com.ibm.rmi.corba.ORB::serverSocketLingerTime:0
+ com.ibm.rmi.corba.ORB::clientSocketLingerTime:0
+ com.ibm.rmi.corba.ORB::socketTimer:null
+ com.ibm.rmi.corba.ORB::initialReadTimeOut:10
+ com.ibm.rmi.corba.ORB::maxRetryInitialReadTimeout:0
+ com.ibm.rmi.corba.ORB::clientCallback:false
+ com.ibm.rmi.corba.ORB::noLocalInterceptors:false
+ com.ibm.rmi.corba.ORB::cbSupported:true
+ com.ibm.rmi.corba.ORB::usingDefaultLocalHost:true
+ com.ibm.rmi.corba.ORB::usingDefaultListenerPort:true
+ com.ibm.rmi.corba.ORB::usingEndpointHost:false
+ com.ibm.rmi.corba.ORB::usingEndpointPort:false
+ com.ibm.rmi.corba.ORB::codebaseURLEnabled:false
+ com.ibm.rmi.corba.ORB::noLocalCopies:false
+ com.ibm.rmi.corba.ORB::serverKeepAlive:false
+ com.ibm.rmi.corba.ORB::useSchema:false
+ com.ibm.rmi.corba.ORB::useVarIntEncodoingforWStrings:true
+ com.ibm.rmi.corba.ORB::alwaysSendConnectionContexts:false
+ com.ibm.rmi.corba.ORB::suppressDefaultWriteObjectException:false
+ com.ibm.rmi.corba.ORB::sendConnectionContextsMap BEGIN:java.util.HashMap@b6856604
+  {
+  key:true
+  value:always
+  key:false
+  value:once
+  }
+  END:java.util.HashMap@b6856604
+
+ com.ibm.rmi.corba.ORB::connectionMultiplicity:20
+ com.ibm.rmi.corba.ORB::highWaterMark:240
+ com.ibm.rmi.corba.ORB::lowWaterMark:100
+ com.ibm.rmi.corba.ORB::autonomicMode:true
+ com.ibm.rmi.corba.ORB::DEFAULT_AUTONOMIC_MULTIPLICITY:20
+ com.ibm.rmi.corba.ORB::pmiServer:null
+ com.ibm.rmi.corba.ORB::lsdPlugin:null
+ com.ibm.rmi.corba.ORB::fWLMPlugin BEGIN:com.ibm.ws.wlm.client.WLMClient@cf8a2cce
+  com.ibm.ws.wlm.client.WLMClient::tc BEGIN:com.ibm.ejs.ras.TraceComponent@ba6ebb33
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ws.wlm.client.WLMClient
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ws.wlm.resources.WLMNLSMessages
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+   END:com.ibm.ejs.ras.TraceComponent@ba6ebb33
+
+  com.ibm.ws.wlm.client.WLMClient::impl BEGIN:com.ibm.ws.cluster.router.selection.WLMClientForCommonRouterImpl@59a83237
+    com.ibm.ws.cluster.router.selection.WLMClientForCommonRouterImpl::tc:com.ibm.ejs.ras.TraceComponent@668451c2 depth limit reached
+   com.ibm.ws.cluster.router.selection.WLMClientForCommonRouterImpl::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+   com.ibm.ws.cluster.router.selection.WLMClientForCommonRouterImpl::selectionMgr:null
+   END:com.ibm.ws.cluster.router.selection.WLMClientForCommonRouterImpl@59a83237
+
+  com.ibm.ws.wlm.client.WLMClient::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  END:com.ibm.ws.wlm.client.WLMClient@cf8a2cce
+
+ com.ibm.rmi.corba.ORB::j2EEPlugin:null
+ com.ibm.rmi.corba.ORB::asynchPlugin:null
+ com.ibm.rmi.corba.ORB::checkedPMIPlugin:true
+ com.ibm.rmi.corba.ORB::checkedLSDPlugin:true
+ com.ibm.rmi.corba.ORB::checkedWLMPlugin:true
+ com.ibm.rmi.corba.ORB::checkedJ2EEPlugin:false
+ com.ibm.rmi.corba.ORB::checkedAsynchPlugin:false
+ com.ibm.rmi.corba.ORB::bufferPool:null
+ com.ibm.rmi.corba.ORB::largeDataBufferPool:null
+ com.ibm.rmi.corba.ORB::addressingDisposition:0
+ com.ibm.rmi.corba.ORB::servantOld:null
+ com.ibm.rmi.corba.ORB::servantNew:null
+ com.ibm.rmi.corba.ORB::disconnectedDelegate:null
+ com.ibm.rmi.corba.ORB::isSINOClient:true
+ com.ibm.rmi.corba.ORB::maxGIOPMinor:2
+ com.ibm.rmi.corba.ORB::extendedVersionId:-1
+ com.ibm.rmi.corba.ORB::partnerVersionCtx:null
+ com.ibm.rmi.corba.ORB::transportPolicy BEGIN:com.ibm.rmi.corba.TransportPolicy@46a18073
+  com.ibm.rmi.corba.TransportPolicy::CLASS:com.ibm.rmi.corba.TransportPolicy
+  com.ibm.rmi.corba.TransportPolicy::CFW BEGIN:com.ibm.rmi.corba.TransportPolicy$Mode@232f27b6
+   com.ibm.rmi.corba.TransportPolicy$Mode::name:ChannelFramework
+   END:com.ibm.rmi.corba.TransportPolicy$Mode@232f27b6
+
+  com.ibm.rmi.corba.TransportPolicy::PLUGGABLE BEGIN:com.ibm.rmi.corba.TransportPolicy$Mode@1ad62c70
+   com.ibm.rmi.corba.TransportPolicy$Mode::name:Pluggable
+   END:com.ibm.rmi.corba.TransportPolicy$Mode@1ad62c70
+
+  com.ibm.rmi.corba.TransportPolicy::DEFAULT:com.ibm.rmi.corba.TransportPolicy$Mode@1ad62c70
+  com.ibm.rmi.corba.TransportPolicy::mode:com.ibm.rmi.corba.TransportPolicy$Mode@1ad62c70
+  END:com.ibm.rmi.corba.TransportPolicy@46a18073
+
+ com.ibm.rmi.corba.ORB::workQueueUsePolicy BEGIN:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@4b0c792b
+  com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::CLASS:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy
+  com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::NEVER BEGIN:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@46760fa8
+   com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::CLASS:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy
+   com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::NEVER:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@46760fa8
+    com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::SOMETIMES:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@f69d8aab depth limit reached
+   com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::ALWAYS:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@4b0c792b
+   com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::name:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy.NEVER
+   END:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@46760fa8
+
+  com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::SOMETIMES:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@f69d8aab
+  com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::ALWAYS:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@4b0c792b
+  com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy::name:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy.ALWAYS
+  END:com.ibm.CORBA.channel.orb.ORBWorkQueueUsePolicy@4b0c792b
+
+ com.ibm.rmi.corba.ORB::traceBuffer:null
+ com.ibm.rmi.corba.ORB::nativeCodeset:null
+ com.ibm.rmi.corba.ORB::rootPOA:null
+ com.ibm.rmi.corba.ORB::ORBRasInitialized:true
+ com.ibm.rmi.corba.ORB::propList BEGIN:com.ibm.rmi.util.SourcedProperties@87cf674
+  {
+  key:com.ibm.CORBA.ConnectTimeout
+  value:10
+  key:com.ibm.CORBA.ORBCharEncoding
+  value:UTF8
+  key:com.ibm.CORBA.TransportMode
+  value:Pluggable
+  key:com.ibm.CORBA.enableLocateRequest
+  value:true
+  }
+  com.ibm.rmi.util.SourcedProperties::SPI_SETTER:SPI setter method
+  com.ibm.rmi.util.SourcedProperties::DEFAULT_ERROR:Default (following error)
+  com.ibm.rmi.util.SourcedProperties::DEFAULT:Default (no value specified)
+  com.ibm.rmi.util.SourcedProperties::INTERNAL:Set internally
+  com.ibm.rmi.util.SourcedProperties::SYSTEM:System properties
+  com.ibm.rmi.util.SourcedProperties::APPLET_PARAM:Applet parameter
+  com.ibm.rmi.util.SourcedProperties::INIT:ORB.init
+  com.ibm.rmi.util.SourcedProperties::ARGS:Command line args
+  com.ibm.rmi.util.SourcedProperties::UNKNOWN:[unknown]
+  com.ibm.rmi.util.SourcedProperties::src BEGIN:java.util.Properties@b2f868d0
+   {
+   key:com.ibm.CORBA.ConnectTimeout
+   value:File: /opt/IBM/WebSphere_855/AppServer/java/jre/lib/orb.properties
+   key:com.ibm.CORBA.ORBCharEncoding
+   value:File: /opt/IBM/WebSphere_855/AppServer/java/jre/lib/orb.properties
+   key:com.ibm.CORBA.TransportMode
+   value:File: /opt/IBM/WebSphere_855/AppServer/java/jre/lib/orb.properties
+   key:com.ibm.CORBA.enableLocateRequest
+   value:File: /opt/IBM/WebSphere_855/AppServer/java/jre/lib/orb.properties
+   }
+   END:java.util.Properties@b2f868d0
+
+  com.ibm.rmi.util.SourcedProperties::unusedProps BEGIN:java.util.TreeSet@9976168d
+   {
+   }
+   END:java.util.TreeSet@9976168d
+
+  com.ibm.rmi.util.SourcedProperties::currentSource:[unknown]
+  com.ibm.rmi.util.SourcedProperties::latestSource:null
+  END:com.ibm.rmi.util.SourcedProperties@87cf674
+
+ com.ibm.rmi.corba.ORB::propManagers BEGIN:java.util.HashMap@2a728f53
+  {
+  key:application:com.ibm.CSI.claimMessageReplayDetectionSupported
+  value BEGIN:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+   com.ibm.CORBA.iiop.DefaultPropertyManager::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+    com.ibm.CORBA.iiop.DefaultPropertyManager::props:com.ibm.rmi.util.SourcedProperties@86c05822 depth limit reached
+    com.ibm.ISecurityUtilityImpl.SecurityPropertyManager::tc:com.ibm.ejs.ras.TraceComponent@861061d9 depth limit reached
+    com.ibm.ISecurityUtilityImpl.SecurityPropertyManager::propertyNames:[Ljava.lang.String;@de0404b5 depth limit reached
+   END:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+
+  key:com.ibm.CORBA.SSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiInboundMappingEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.CommTraceSplit
+  value BEGIN:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+   com.ibm.CORBA.iiop.DefaultPropertyManager::orb:null
+   com.ibm.CORBA.iiop.DefaultPropertyManager::props:com.ibm.rmi.util.SourcedProperties@87cf674
+   com.ibm.rmi.corba.BuiltinPropertyManager::CLASS:com.ibm.rmi.corba.BuiltinPropertyManager
+    com.ibm.rmi.corba.BuiltinPropertyManager::JavaIDLPropertyNames:[Ljava.lang.String;@a2436d6 depth limit reached
+    com.ibm.rmi.corba.BuiltinPropertyManager::JavaIDLURLPropertyNames:[Ljava.lang.String;@189d5888 depth limit reached
+    com.ibm.rmi.corba.BuiltinPropertyManager::OVERRIDABLE_PROPERTIES:java.util.HashSet@a41d7d6c depth limit reached
+    com.ibm.rmi.corba.BuiltinPropertyManager::hiddenProperties:java.util.ArrayList@36ea6194 depth limit reached
+    com.ibm.rmi.corba.BuiltinPropertyManager::intParser:com.ibm.rmi.corba.BuiltinPropertyManager$IntParser@1f9f99af depth limit reached
+   com.ibm.rmi.corba.BuiltinPropertyManager::$assertionsDisabled:true
+   END:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+
+  key:com.ibm.CORBA.sendCodeSetContext
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.SSLKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.krb.support_ltpa
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.useMultiHome
+  value BEGIN:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+   com.ibm.CORBA.iiop.DefaultPropertyManager::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+    com.ibm.CORBA.iiop.DefaultPropertyManager::props:com.ibm.rmi.util.SourcedProperties@812faa80 depth limit reached
+    com.ibm.ws.orbimpl.WSORBPropertyManager::propertyNames:[Ljava.lang.String;@4453a74c depth limit reached
+   END:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+
+  key:com.ibm.CORBA.SSLTypeIServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.daysBeforeExpireWarning
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.enabledCipherSuites
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SINOClient
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.performMessageSupportedAuthMechList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLTypeIClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.useDefaultSubjectForThreads
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimIdentityAssertionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.trustStorePassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ServerUUID
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.sessionGCenabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.services.lsd.EnableSecurityServiceCheck
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.websphere.security.krb.config
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityTraceFilter
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.KerberosServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.ClientCertSSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStoreType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LTPAServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performIdentityAssertionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.IBMSecurityTagCompatibility
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.debugJAASCredWithStack
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.webChallengeIfCustomSubjectNotFound
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.tokenLibraryFile
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.alternateIdentityAssertionPerformTrustedPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.enabledCipherSuites
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.client.SocketLingerTime
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.delegateBasicAuth
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageOutOfSequenceDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.webPropagationTransport
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageReplayDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLServerKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.performServerAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.sessionGCinterval
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.performMessageReplayDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityExceptionsOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimIdentityAssertionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.FragmentTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.performIdentityAssertionName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.NotifyBrokenConnectionEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.ssoInteropModeEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStoreProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.standardPerformQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ThreadPool.MinimumSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.supportedTargetRealms
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.performMessageOutOfSequenceDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LocalOSServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLClientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityServerPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.BufferSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.SendingContextRunTimeSupported
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.ssl.sslType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.authenticationRetryEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.TunnelAgentURL
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.sun.CORBA.ORBServerPort
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.claimTLClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityTraceFilter
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.webInboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:${WAS_TEMP_DIR}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.debugJAASCredWithStack
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.WSSSLClientSocketFactoryName
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ssl.protocol
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LocalHost
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.performTransportAssocSSLTLSSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBId
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.WSSecurityContextCustomClass
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.LTPAClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SocketWriteTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.trustStoreType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performIdentityAssertionType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LocalOSClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.MaxBufferPoolSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.orb.services.lsd.FirewallAuthorizationPlugInTimeout
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CSI.performClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLCredentialsTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.RequestTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.security.createTokenSubjectForAsynchLogin
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DynamicStubs
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.LTPAClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.KerberosClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.iiop.channel.BootstrapPortEnabled
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CORBA.sessionGCinterval
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.enableSignerExchangePrompt
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.principalName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.tokenSlot
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.authenticationRetryEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.sessionGCenabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.processType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStore
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.sessionGCdiscardunused
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLTypeIIServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.realmName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.trustStoreType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.numJNIReaders
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.processIsServer
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityCacheTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LocalOSClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.serverSecurityEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.customKeyManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.propagationExcludeList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.authorizationTable
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiInboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiOutboundLoginEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiOutboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiInboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityTraceLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLV3SessionTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageReplayDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DCEClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.loginSource
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiInboundMappingConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.principalName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.standardPerformQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLServerKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIIClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.krb.spn_password
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.alwaysResolveHostIP
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ssl.csi.outbound.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimIdentityAssertionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.clientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.suppressExceptionStack
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLTypeIIServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LTPAClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiOutboundLoginEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBInitialPort
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.SSLClientKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.csi.inbound.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityServerHost
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.initialReadTimeoutRetriesCount
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.ThreadPool.InactivityTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.SOAP.loginUserid
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.protocol
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LocalOSClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.services.lsd.StoreActiveServerList
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.SSLTypeIIClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.loginTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performIdentityAssertionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageReplayDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.keyFileName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.orbCommunicationsTraceLevel
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.claimMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.security.useFIPS
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.services.lsd.ConfigurationFileURL
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.SSLTypeIIClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIIServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performIdentityAssertionName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.NoLocalInterceptors
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.KerberosServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performIdentityAssertionType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.isRealmHostSubjectLookupEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.WSSecurityContextActiveOID
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiInboundMappingConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.activeUserRegistry
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.WSSSLServerSocketFactoryName
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.KerberosServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiInboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.enableClientCallbacks
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.claimMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.CommTrace
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.FragmentSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.claimMessageReplayDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.requestCredsExpiration
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.tokenPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.GIOPAddressingDisposition
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.sslType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageOutOfSequenceDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.sun.CORBA.ORBServerHost
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.InitialReferencesURL
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.orb.services.lsd.SecurityServiceCheckInterval
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.performServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.csi.outbound.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.trustStorePassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.performServerAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.TransportMode
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.AlwaysUseOMG4796
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.websphere.security.authorizationTable
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStoreClientAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DeepCopyVector
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.iiop.channel.ChainManager
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.performTLClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.BootstrapHost
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.standardClaimQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:${USER_INSTALL_ROOT}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStoreClientAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityServerHost
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.activeUserRegistry
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.isUseRegistryServerId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.requestRetriesCount
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.ws.security.skipAsynchSubjectCache
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.MaxGIOPMinor
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.authenticationRetryCount
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ConfigURL
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.trustManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.LTPAServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityTraceOutput
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimMessageOutOfSequenceDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBListenEndpoints
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.performClientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.services.lsd.LSDListenerPort
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ssl.validationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.processIsServer
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ServerName
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ws.orb.services.redirector.RequestTimeout
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.services.lsd.StoreActiveServerList
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.claimMessageReplayDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.createTokenSubjectForAsynchLogin
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.krb.keytab
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiOutboundMappingEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:security.enablePluggableAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBServerId
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.delegateBasicAuth
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimTLClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityErrorsOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageOutOfSequenceDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimTransportAssocSSLTLSSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.verificationLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.WSSecurityContextCustomOID
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ThreadPool.MaximumSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.trustManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIIServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.services.lsd.StartServers
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CSI.performIdentityAssertionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.IBMSecurityTagCompatibility
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.config
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.iiop.channel.disableClientDefaultInboundChain
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ws.security.ssoInteropModeEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ORBCharEncoding
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.loginUserid
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LocalOSServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.alternateIdentityAssertionPerformTrustedId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.standardClaimQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.iiop.channel.ServerManaged
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.claimMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.useDefaultSubjectForThreads
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.includeRunAsChangesInCallerList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageOutOfSequenceDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.validateBasicAuth
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.EnableSSLSecurity
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.SSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityErrorsOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performIdentityAssertionMechanism
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.CommTrace.ExcludeServiceContexts
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLClientKeyRingPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.isRealmSubjectLookupEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ConnectTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.authenticationTarget
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.trustedPrincipalList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.SSLHandshakeTimeout
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.SOAP.loginPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.CellNodeServer
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageIntegritySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LocalOSServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.ConfigURL
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LTPAServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLServerKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.loginTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.iiop.noLocalCopies
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.requestRetriesDelay
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.KerberosServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LTPAClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLCredentialsTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.performMessageReplayDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLClientKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLClientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.CodebaseURLEnabled
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.SSLClientKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiOutboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.realmName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ConnectionMultiplicity
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.orb.services.lsd.FirewallAuthorizationPlugIn
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.ws.security.isUseRegistryServerId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageSupportedAuthMechList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.Debug.Output
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.ssl.trustStoreProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.authenticateSpecialMethods
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.validateBasicAuth
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.AllowUserInterrupt
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.claimTransportAssocSSLTLSSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.standardPerformQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.tokenPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLTypeIServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.dynamicSelectionInfo
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimTLClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.performMessageConfidentiality
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLKeyRingFile
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.serverSecurityEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.suppressExceptionStack
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.daysBeforeExpireWarning
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.verificationLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.NotifyBrokenConnectionEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.DCEServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStoreServerAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.LocalOSServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.LocalOSClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.WSSecurityContextCustomOID
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.KerberosClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LocalOSClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStorePassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimMessageSupportedAuthMechList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageSupportedAuthMechList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.SOAP.loginUserid
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performTransportAssocSSLTLSSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.DCEClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.propagationExcludeList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIIServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.KerberosServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiOutboundMappingEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.authenticationTarget
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LocalOSServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLTypeIClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.keyFileName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LTPAServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LocateRequestTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.performTLClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityTraceLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityTraceOutput
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.realm
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.BVTestPrincipalName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.iiop.channel.disableOnewayLocateRequiredMessage
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CSI.claimMessageOutOfSequenceDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performTransportAssocSSLTLSRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SendConnectionContexts
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.UseOMG5689
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.isRealmSubjectLookupEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.spn
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.MaxLargeDataBufferPoolSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.SSLKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.customTrustManagers
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.RasManager
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.BVTestPrincipalName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.tokenType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.websphere.security.krb.realm
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.keytab
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ORBWCharDefault
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.UseOMG4591
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.delegateCredentials
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStoreProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimTransportAssocSSLTLSRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityServerPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.KerberosClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LTPAServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.standardPerformQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStoreServerAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.ClientCertSSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.securityLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LTPAClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.SSLTypeIIClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ThreadPool.IsGrowable
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ws.security.webChallengeIfCustomSubjectNotFound
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.trustStoreProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.transport.ConnectionInterceptorName
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.securityCacheTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.security.useFIPS
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.requestCredsExpiration
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DisconnectBootStrapServer
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.loginSource
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimMessageReplayDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.securityDebug
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performTLClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.clientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.keyStoreType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.enableSignerExchangePrompt
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.services.lsd.ConfigurationFile
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.ws.orb.services.lsd.SecurityServiceCheckRetry
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CORBA.claimClientAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.EnableServerKeepAlive
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.websphere.security.krb.spn
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.jacc.dynamicModuleUpdates
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.CommTrace.ExcludeServiceContexts
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ForceTunnel
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.ws.security.internalServerId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.performMessageIntegrity
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLServerKeyRing
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.validationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.JNIReadTimeout
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CSI.performClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performIdentityAssertionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStorePassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.SSLKeyRingFile
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.dynamicSelectionInfo
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.suppressDefaultWriteObjectException
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.loginPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.MaxOpenConnections
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.SSLTypeIServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.authMechAuthAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.performMessageConfidentiality
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performStateful
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.performClientAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiOutboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLPort
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:${WAS_ETC_DIR}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageOutOfSequenceDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performTLClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.keytabFileName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiInboundMappingEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBInitialServices
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.securityLevel
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ListenerPort
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.performMessageIntegrity
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.loginUserid
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.webPropagationTransport
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.skipAsynchSubjectCache
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.initialReadTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.claimTLClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimMessageConfidentialityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.webInboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.useInheritableThreadLocalOnClient
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.BootstrapPort
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.securityTraceOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageConfidentialitySupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.standardClaimQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.sessionGCdiscardunused
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimClientAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.orb.services.redirector.MaxOpenSocketsPerEndpoint
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CSI.performServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performMessageIntegrityRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.server.SocketLingerTime
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:${WAS_PROPS_DIR}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimServerAuthenticationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityActivityOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityExceptionsOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.MinOpenConnections
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.SSLV3SessionTimeout
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.contextProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.authMechAuthAlias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIIClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.tokenLibraryFile
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.alternateIdentityAssertionPerformTrustedId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.isRealmHostSubjectLookupEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.WSSecurityContextActiveClass
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.Debug.Component
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.csi.inbound.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.tokenSlot
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:${WAS_INSTALL_ROOT}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimMessageReplayDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.WSSecurityContextActiveOID
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.trustedPrincipalList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ServerId
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.ws.security.processType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.keytabFileName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.keyStore
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.SSLTypeIIClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.rmiInboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.authenticateSpecialMethods
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.KerberosServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.KerberosClientAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.trustStore
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.alternateIdentityAssertionPerformTrustedPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LargeDataBufferSize
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.ssl.useInheritableThreadLocalOnClient
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.WSSecurityContextCustomClass
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:security.enablePluggableAuthentication
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.assertLDAPShortName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.securityDebug
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.services.lsd.StartServerTimeOut
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:com.ibm.CORBA.nameServerHost
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.CSI.performStateful
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.authenticationRetryCount
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.rmiOutboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimMessageOutOfSequenceDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.supportedTargetRealms
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.iiop.channel.EnableInboundTunneling
+  value:com.ibm.ws.orbimpl.WSORBPropertyManager@550d98b8
+  key:application:com.ibm.ssl.protocol
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.trustStore
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.claimServerAuthenticationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.claimStateful
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.LTPAServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.SOAP.loginPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.spn_password
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.internalServerId
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.loginPassword
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.CellNodeServer
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimTransportAssocSSLTLSRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ShortExceptionDetails
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.claimIdentityAssertionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.websphere.security.krb.support_ltpa
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.AcceptTimeout
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CORBA.securityTraceOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.UseAlternativeRepIDEncoding
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.CSI.claimMessageOutOfSequenceDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LocalOSServerAssociationRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.WSSecurityContextActiveClass
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.claimStateful
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.KerberosClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.LocalOSClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.claimMessageOutOfSequenceDetectionSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.protocol
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.customTrustManagers
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.KerberosClientAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.contextProvider
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CSI.performTransportAssocSSLTLSRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.delegateCredentials
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.enableLocateRequest
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:${APP_INSTALL_ROOT}
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.performMessageOutOfSequenceDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.LTPAClientAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.SSLTypeIIServerAssociationSupported
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.ServerSocketQueueDepth
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CSI.performIdentityAssertionMechanism
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.UseSchemaIDR
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:org.omg.CORBA.ORBNoProprietaryActivation
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.securityActivityOutputMode
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DisableOMG3681
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.claimMessageReplayDetectionRequired
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.Debug
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:application:com.ibm.ssl.customKeyManager
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ssl.tokenType
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.webInboundLoginConfig
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.webInboundPropagationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ssl.alias
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CORBA.standardClaimQOPModels
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.CORBA.DCEServerAssociationEnabled
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.CSI.performMessageReplayDetection
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.jacc.dynamicModuleUpdates
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:com.ibm.ws.security.assertLDAPShortName
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:application:com.ibm.ws.security.includeRunAsChangesInCallerList
+  value:com.ibm.ISecurityUtilityImpl.SecurityPropertyManager@6573b78f
+  key:org.omg.CORBA.ORBInitialHost
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  key:com.ibm.CORBA.HidePropertyValues
+  value:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+  }
+  END:java.util.HashMap@2a728f53
+
+ com.ibm.rmi.corba.ORB::orbPropMgr:com.ibm.rmi.corba.BuiltinPropertyManager@17ac685d
+ com.ibm.rmi.corba.ORB::fThreadPool BEGIN:com.ibm.rmi.iiop.ThreadPoolImpl@5b95d7e0
+  com.ibm.rmi.iiop.ThreadPoolImpl::CLASS:com.ibm.rmi.iiop.ThreadPoolImpl
+  com.ibm.rmi.iiop.ThreadPoolImpl::minPoolSize:1
+  com.ibm.rmi.iiop.ThreadPoolImpl::maxPoolSize:2147483647
+  com.ibm.rmi.iiop.ThreadPoolImpl::inactivityTimeout:-1
+  com.ibm.rmi.iiop.ThreadPoolImpl::isGrowable:false
+  com.ibm.rmi.iiop.ThreadPoolImpl::workerPool BEGIN:com.ibm.rmi.iiop.WorkerPool@4d6bc89b
+   com.ibm.rmi.iiop.WorkerPool::CLASS:WorkerPool
+    com.ibm.rmi.iiop.WorkerPool::pool:java.util.LinkedList@4e80095f depth limit reached
+   com.ibm.rmi.iiop.WorkerPool::minSize:1
+   com.ibm.rmi.iiop.WorkerPool::maxSize:2147483647
+   com.ibm.rmi.iiop.WorkerPool::isGrowable:false
+   com.ibm.rmi.iiop.WorkerPool::inactivityTimeout:0
+   com.ibm.rmi.iiop.WorkerPool::shutdownPending:false
+    com.ibm.rmi.iiop.WorkerPool::workQueue:com.ibm.rmi.iiop.WorkQueue@841282f5 depth limit reached
+   com.ibm.rmi.iiop.WorkerPool::threadCounter:1
+   com.ibm.rmi.iiop.WorkerPool::initialized:true
+   END:com.ibm.rmi.iiop.WorkerPool@4d6bc89b
+
+  com.ibm.rmi.iiop.ThreadPoolImpl::workQueue:com.ibm.rmi.iiop.WorkQueue@841282f5
+  END:com.ibm.rmi.iiop.ThreadPoolImpl@5b95d7e0
+
+ com.ibm.rmi.corba.ORB::fThreadPoolKey:true
+ com.ibm.rmi.corba.ORB::fReaderPool BEGIN:com.ibm.rmi.transport.ReaderPoolImpl@44b0ad4e
+  com.ibm.rmi.transport.ReaderPoolBase::fOrb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.rmi.transport.ReaderPoolImpl::CLASS:com.ibm.rmi.transport.ReaderPoolImpl
+  END:com.ibm.rmi.transport.ReaderPoolImpl@44b0ad4e
+
+ com.ibm.rmi.corba.ORB::fReaderPoolKey:true
+ com.ibm.rmi.corba.ORB::fTransportKey:true
+ com.ibm.rmi.corba.ORB::INIT_CLASS:org.omg.PortableInterceptor.ORBInitializerClass.
+ com.ibm.rmi.corba.ORB::PLUG_CLASS:com.ibm.CORBA.ORBPluginClass.
+ com.ibm.rmi.corba.ORB::MAX_TIMEOUT:2147483
+ com.ibm.rmi.corba.ORB::MAX_RETRY_COUNT:10
+ com.ibm.rmi.corba.ORB::MAX_RETRY_DELAY:60000
+ com.ibm.rmi.corba.ORB::MAX_REQUEST_TIMEOUT:2147483
+ com.ibm.rmi.corba.ORB::MAX_LOCATE_REQUEST_TIMEOUT:2147483
+ com.ibm.rmi.corba.ORB::MAX_FRAGMENT_TIMEOUT:600
+ com.ibm.rmi.corba.ORB::DEFAULT_FRAGMENT_TIMEOUT:300
+ com.ibm.rmi.corba.ORB::MAX_CONNECT_TIMEOUT:300
+ com.ibm.rmi.corba.ORB::DEFAULT_MULTIPLICITY:1
+ com.ibm.rmi.corba.ORB::DEFAULT_HIGH_WATER_MARK:240
+ com.ibm.rmi.corba.ORB::DEFAULT_LOW_WATER_MARK:100
+ com.ibm.rmi.corba.ORB::MIN_HIGH_WATER_MARK:0
+ com.ibm.rmi.corba.ORB::MIN_SOCKET_QUEUE_DEPTH:50
+ com.ibm.rmi.corba.ORB::debugPropName:com.ibm.CORBA.Debug
+ com.ibm.rmi.corba.ORB::outputPropName:com.ibm.CORBA.Debug.Output
+ com.ibm.rmi.corba.ORB::hpvPropName:com.ibm.CORBA.HidePropertyValues
+ com.ibm.rmi.corba.ORB::componentPropName:com.ibm.CORBA.Debug.Component
+ com.ibm.rmi.corba.ORB::trueValues:(?i)(true||yes|on|enable|enabled)
+ com.ibm.rmi.corba.ORB::falseValues:(?i)(false|no|off|disable|disabled)
+ com.ibm.rmi.corba.ORB::maxObjectURLIterations:2
+ com.ibm.rmi.corba.ORB::policyFactories BEGIN:java.util.concurrent.ConcurrentHashMap@8daa5b27
+  {
+  }
+  java.util.concurrent.ConcurrentHashMap::serialVersionUID:7249069246763182397
+  java.util.concurrent.ConcurrentHashMap::MAXIMUM_CAPACITY:1073741824
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CAPACITY:16
+  java.util.concurrent.ConcurrentHashMap::MAX_ARRAY_SIZE:2147483639
+  java.util.concurrent.ConcurrentHashMap::DEFAULT_CONCURRENCY_LEVEL:16
+  java.util.concurrent.ConcurrentHashMap::LOAD_FACTOR:0.75
+  java.util.concurrent.ConcurrentHashMap::TREEIFY_THRESHOLD:8
+  java.util.concurrent.ConcurrentHashMap::UNTREEIFY_THRESHOLD:6
+  java.util.concurrent.ConcurrentHashMap::MIN_TREEIFY_CAPACITY:64
+  java.util.concurrent.ConcurrentHashMap::MIN_TRANSFER_STRIDE:16
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_BITS:16
+  java.util.concurrent.ConcurrentHashMap::MAX_RESIZERS:65535
+  java.util.concurrent.ConcurrentHashMap::RESIZE_STAMP_SHIFT:16
+  java.util.concurrent.ConcurrentHashMap::MOVED:-1
+  java.util.concurrent.ConcurrentHashMap::TREEBIN:-2
+  java.util.concurrent.ConcurrentHashMap::RESERVED:-3
+  java.util.concurrent.ConcurrentHashMap::HASH_BITS:2147483647
+  java.util.concurrent.ConcurrentHashMap::NCPU:8
+  java.util.concurrent.ConcurrentHashMap::serialPersistentFields:[Ljava.io.ObjectStreamField;@cb23116
+  java.util.concurrent.ConcurrentHashMap::table:null
+  java.util.concurrent.ConcurrentHashMap::nextTable:null
+  java.util.concurrent.ConcurrentHashMap::baseCount:0
+  java.util.concurrent.ConcurrentHashMap::sizeCtl:0
+  java.util.concurrent.ConcurrentHashMap::transferIndex:0
+  java.util.concurrent.ConcurrentHashMap::cellsBusy:0
+  java.util.concurrent.ConcurrentHashMap::counterCells:null
+  java.util.concurrent.ConcurrentHashMap::keySet:null
+  java.util.concurrent.ConcurrentHashMap::values:null
+  java.util.concurrent.ConcurrentHashMap::entrySet BEGIN:java.util.concurrent.ConcurrentHashMap$EntrySetView@7843cb26
+   java.util.concurrent.ConcurrentHashMap$CollectionView::serialVersionUID:7249069246763182397
+   java.util.concurrent.ConcurrentHashMap$CollectionView::map:java.util.concurrent.ConcurrentHashMap@8daa5b27
+   java.util.concurrent.ConcurrentHashMap$CollectionView::oomeMsg:Required array size too large
+   java.util.concurrent.ConcurrentHashMap$EntrySetView::serialVersionUID:2249069246763182397
+   END:java.util.concurrent.ConcurrentHashMap$EntrySetView@7843cb26
+
+  java.util.concurrent.ConcurrentHashMap::U:sun.misc.Unsafe@e702b1c1
+  java.util.concurrent.ConcurrentHashMap::SIZECTL:48
+  java.util.concurrent.ConcurrentHashMap::TRANSFERINDEX:52
+  java.util.concurrent.ConcurrentHashMap::BASECOUNT:16
+  java.util.concurrent.ConcurrentHashMap::CELLSBUSY:56
+  java.util.concurrent.ConcurrentHashMap::CELLVALUE:72
+  java.util.concurrent.ConcurrentHashMap::ABASE:8
+  java.util.concurrent.ConcurrentHashMap::ASHIFT:2
+  END:java.util.concurrent.ConcurrentHashMap@8daa5b27
+
+ com.ibm.rmi.corba.ORB::insRegistry:null
+ com.ibm.rmi.corba.ORB::proxyInvoke BEGIN:java.lang.ThreadLocal@a7ad8719
+  java.lang.ThreadLocal::threadLocalHashCode:-739633145
+  java.lang.ThreadLocal::nextHashCode BEGIN:java.util.concurrent.atomic.AtomicInteger@c93dc791
+   java.lang.Number::serialVersionUID:-8742448824652078965
+   java.util.concurrent.atomic.AtomicInteger::serialVersionUID:6214790243416807050
+   java.util.concurrent.atomic.AtomicInteger::unsafe:sun.misc.Unsafe@e702b1c1
+   java.util.concurrent.atomic.AtomicInteger::valueOffset:8
+   java.util.concurrent.atomic.AtomicInteger::value:126344468
+   END:java.util.concurrent.atomic.AtomicInteger@c93dc791
+
+  java.lang.ThreadLocal::HASH_INCREMENT:1640531527
+  END:java.lang.ThreadLocal@a7ad8719
+
+ com.ibm.rmi.corba.ORB::NOTREADY:0
+ com.ibm.rmi.corba.ORB::ACTIVE:1
+ com.ibm.rmi.corba.ORB::INITIALIZED:2
+ com.ibm.rmi.corba.ORB::SHUTDOWN:3
+ com.ibm.rmi.corba.ORB::INACTIVE:4
+ com.ibm.rmi.corba.ORB::DESTROYED:5
+ com.ibm.rmi.corba.ORB::orbState:2
+ com.ibm.rmi.corba.ORB::$assertionsDisabled:true
+ com.ibm.rmi.iiop.ORB::CLASS:com.ibm.rmi.iiop.ORB
+ com.ibm.rmi.iiop.ORB::giopTransport BEGIN:com.ibm.rmi.iiop.GIOPImpl@d2e94a62
+  com.ibm.rmi.iiop.GIOPImpl::CLASS:com.ibm.rmi.iiop.GIOPImpl
+  com.ibm.rmi.iiop.GIOPImpl::requestId:4
+  com.ibm.rmi.iiop.GIOPImpl::transport BEGIN:com.ibm.rmi.iiop.TransportManager@c256f5dd
+   com.ibm.rmi.iiop.TransportManager::CLASS:com.ibm.rmi.iiop.TransportManager
+   com.ibm.rmi.iiop.TransportManager::theTransport:com.ibm.ws.orbimpl.transport.WSTransport@66864d02
+   com.ibm.rmi.iiop.TransportManager::theGIOPImpl:com.ibm.rmi.iiop.GIOPImpl@d2e94a62
+   com.ibm.rmi.iiop.TransportManager::theORB:com.ibm.CORBA.iiop.ORB@f25fb6fd
+    com.ibm.rmi.iiop.TransportManager::serverHasBeenInitialized:java.util.concurrent.atomic.AtomicBoolean@6a0c1ca0 depth limit reached
+    com.ibm.rmi.iiop.TransportManager::serverInitStarted:java.util.concurrent.atomic.AtomicBoolean@1b09e596 depth limit reached
+   END:com.ibm.rmi.iiop.TransportManager@c256f5dd
+
+  com.ibm.rmi.iiop.GIOPImpl::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.rmi.iiop.GIOPImpl::channelPlugin:null
+  com.ibm.rmi.iiop.GIOPImpl::handler:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  END:com.ibm.rmi.iiop.GIOPImpl@d2e94a62
+
+ com.ibm.rmi.iiop.ORB::transientServerId:1765696188
+ com.ibm.rmi.iiop.ORB::threadGroup BEGIN:java.lang.ThreadGroup@7ef1e837
+  java.lang.ThreadGroup::name:main
+  java.lang.ThreadGroup::maxPriority:10
+  java.lang.ThreadGroup::parent BEGIN:java.lang.ThreadGroup@6c4f5291
+   java.lang.ThreadGroup::name:system
+   java.lang.ThreadGroup::maxPriority:10
+   java.lang.ThreadGroup::parent:null
+   java.lang.ThreadGroup::numThreads:20
+    java.lang.ThreadGroup::childrenThreads:[Ljava.lang.Thread;@f4b1af3b depth limit reached
+   java.lang.ThreadGroup::numGroups:1
+    java.lang.ThreadGroup::childrenGroups:[Ljava.lang.ThreadGroup;@cd324a87 depth limit reached
+    java.lang.ThreadGroup::childrenGroupsLock:java.lang.ThreadGroup$ChildrenGroupsLock@c40765cb depth limit reached
+    java.lang.ThreadGroup::childrenThreadsLock:java.lang.ThreadGroup$ChildrenThreadsLock@4e7213f5 depth limit reached
+   java.lang.ThreadGroup::isDaemon:false
+   java.lang.ThreadGroup::isDestroyed:false
+   java.lang.ThreadGroup::addedNotStartedThreads:0
+   END:java.lang.ThreadGroup@6c4f5291
+
+  java.lang.ThreadGroup::numThreads:19
+  java.lang.ThreadGroup::childrenThreads BEGIN:[Ljava.lang.Thread;@17a9fdbf
+   [
+    java.lang.Thread@a3af4d85 depth limit reached
+    openj9.internal.tools.attach.target.AttachHandler$1@b638df69 depth limit reached
+    openj9.internal.tools.attach.target.WaitLoop@aded625c depth limit reached
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@354c7ef6 depth limit reached
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@a7375e04 depth limit reached
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@9bbe54e1 depth limit reached
+    java.io.ClassCache$Reaper@84f09b81 depth limit reached
+    org.eclipse.core.internal.jobs.Worker@175b5054 depth limit reached
+    java.util.TimerThread@1a8d24cc depth limit reached
+    java.util.TimerThread@886baa75 depth limit reached
+    java.lang.Thread@b4463379 depth limit reached
+    java.lang.Thread@456e96db depth limit reached
+    java.lang.Thread@e831dbbc depth limit reached
+    java.lang.Thread@3c17bf32 depth limit reached
+    java.lang.Thread@6ecfcc9d depth limit reached
+    java.lang.Thread@735d8925 depth limit reached
+    java.lang.Thread@579faf15 depth limit reached
+    java.lang.Thread@87dec076 depth limit reached
+    java.util.TimerThread@61951ded depth limit reached
+   null
+   ]
+   END:[Ljava.lang.Thread;@17a9fdbf
+
+  java.lang.ThreadGroup::numGroups:0
+  java.lang.ThreadGroup::childrenGroups BEGIN:[Ljava.lang.ThreadGroup;@1ee52b31
+   [
+   null
+   null
+   null
+   ]
+   END:[Ljava.lang.ThreadGroup;@1ee52b31
+
+  java.lang.ThreadGroup::childrenGroupsLock BEGIN:java.lang.ThreadGroup$ChildrenGroupsLock@d3b8925e
+   END:java.lang.ThreadGroup$ChildrenGroupsLock@d3b8925e
+
+  java.lang.ThreadGroup::childrenThreadsLock BEGIN:java.lang.ThreadGroup$ChildrenThreadsLock@7bee4e2f
+   END:java.lang.ThreadGroup$ChildrenThreadsLock@7bee4e2f
+
+  java.lang.ThreadGroup::isDaemon:false
+  java.lang.ThreadGroup::isDestroyed:false
+  java.lang.ThreadGroup::addedNotStartedThreads:8
+  END:java.lang.ThreadGroup@7ef1e837
+
+ com.ibm.rmi.iiop.ORB::orbLoadTime:58587
+ com.ibm.rmi.iiop.ORB::lastTransientServerId:1765696188
+ com.ibm.rmi.iiop.ORB::lock_obj:java.lang.Object@7efbc076
+ com.ibm.rmi.iiop.ORB::instanceCounter:1
+ com.ibm.rmi.iiop.ORB::thisInstanceNumber:0
+ com.ibm.rmi.iiop.ORB::oldConnectRemoteArgs BEGIN:[Ljava.lang.Class;@da8417f5
+  [
+  interface java.rmi.Remote
+  boolean
+  ]
+  END:[Ljava.lang.Class;@da8417f5
+
+ com.ibm.rmi.iiop.ORB::hasOldConnectRemote:false
+ com.ibm.rmi.iiop.ORB::currentCreators BEGIN:java.util.Hashtable@e6b642c5
+  {
+  key:TransactionCurrent
+  value BEGIN:com.ibm.ws.Transaction.JTS.TxCurrentCreator@d91446f9
+   com.ibm.CORBA.iiop.CurrentCreator::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+    com.ibm.ws.Transaction.JTS.TxCurrentCreator::tc:com.ibm.ejs.ras.TraceComponent@eb307603 depth limit reached
+   END:com.ibm.ws.Transaction.JTS.TxCurrentCreator@d91446f9
+
+  }
+  END:java.util.Hashtable@e6b642c5
+
+ com.ibm.rmi.iiop.ORB::exitHook BEGIN:com.ibm.rmi.iiop.ORB$2$1@31c6dc6a
+  java.lang.Thread::MAX_PRIORITY:10
+  java.lang.Thread::MIN_PRIORITY:1
+  java.lang.Thread::NORM_PRIORITY:5
+  java.lang.Thread::createCount:16
+  java.lang.Thread::tidLock BEGIN:java.lang.Thread$TidLock@ad379f8b
+   END:java.lang.Thread$TidLock@ad379f8b
+
+  java.lang.Thread::tidCount:49
+  java.lang.Thread::NANOS_MAX:999999
+  java.lang.Thread::INITIAL_LOCAL_STORAGE_CAPACITY:5
+  java.lang.Thread::NO_REF:0
+  java.lang.Thread::threadRef:0
+  java.lang.Thread::stackSize:0
+  java.lang.Thread::started:false
+  java.lang.Thread::name:Thread-15
+  java.lang.Thread::priority:5
+  java.lang.Thread::isDaemon:false
+  java.lang.Thread::group:java.lang.ThreadGroup@7ef1e837
+  java.lang.Thread::runnable:null
+  java.lang.Thread::stopCalled:false
+  java.lang.Thread::contextClassLoader BEGIN:com.ibm.ws.bootstrap.ExtClassLoader@1147fd66
+    java.lang.ClassLoader::defaultCodeSource:java.security.CodeSource@bbc4f1e8 depth limit reached
+    java.lang.ClassLoader::bootstrapClassLoader:com.ibm.oti.vm.BootstrapClassLoader@309bb083 depth limit reached
+   java.lang.ClassLoader::DELEGATING_CL:sun.reflect.DelegatingClassLoader
+   java.lang.ClassLoader::isDelegatingCL:false
+    java.lang.ClassLoader::applicationClassLoader:sun.misc.Launcher$AppClassLoader@b5dfa613 depth limit reached
+   java.lang.ClassLoader::initSystemClassLoader:false
+   java.lang.ClassLoader::isAssertOptionFound:false
+   java.lang.ClassLoader::vmRef:139629731312680
+    java.lang.ClassLoader::parent:org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@62c85347 depth limit reached
+   java.lang.ClassLoader::checkAssertionOptions:false
+    java.lang.ClassLoader::assertionLock:java.lang.ClassLoader$AssertionLock@436b7202 depth limit reached
+   java.lang.ClassLoader::defaultAssertionStatus:false
+   java.lang.ClassLoader::packageAssertionStatus:null
+   java.lang.ClassLoader::classAssertionStatus:null
+    java.lang.ClassLoader::packages:java.util.Hashtable@30a054d2 depth limit reached
+    java.lang.ClassLoader::lazyInitLock:java.lang.ClassLoader$LazyInitLock@e5d96181 depth limit reached
+   java.lang.ClassLoader::classSigners:null
+    java.lang.ClassLoader::packageSigners:java.util.Hashtable@6b5b5309 depth limit reached
+    java.lang.ClassLoader::emptyCertificates:[Ljava.security.cert.Certificate;@2d97bfe4 depth limit reached
+   java.lang.ClassLoader::defaultProtectionDomain:null
+    java.lang.ClassLoader::parallelCapableCollection:java.util.Collections$SynchronizedMap@147f1f96 depth limit reached
+   java.lang.ClassLoader::classNameBasedLock:null
+   java.lang.ClassLoader::isParallelCapable:false
+    java.lang.ClassLoader::EMPTY_PACKAGE_ARRAY:[Ljava.lang.Package;@2720f28c depth limit reached
+   java.lang.ClassLoader::methodTypeFromMethodDescriptorStringCache:null
+   java.lang.ClassLoader::allowArraySyntax:false
+   java.lang.ClassLoader::lazyClassLoaderInit:true
+   java.lang.ClassLoader::specialLoaderInited:true
+    java.lang.ClassLoader::internalAnonClassLoader:java.lang.InternalAnonymousClassLoader@b0590541 depth limit reached
+   java.security.SecureClassLoader::initialized:true
+    java.security.SecureClassLoader::pdcache:java.util.HashMap@1adad8f4 depth limit reached
+   java.security.SecureClassLoader::debug:null
+    java.net.URLClassLoader::ucp:sun.misc.URLClassPath@28e3af28 depth limit reached
+    java.net.URLClassLoader::acc:java.security.AccessControlContext@fc0d4fb4 depth limit reached
+   java.net.URLClassLoader::sharedClassURLClasspathHelper:null
+   java.net.URLClassLoader::sharedClassMetaDataCache:null
+    java.net.URLClassLoader::closeables:java.util.WeakHashMap@10dc42a4 depth limit reached
+    java.net.URLClassLoader::showClassLoadingFor:java.util.Vector@cf45a1b6 depth limit reached
+   java.net.URLClassLoader::showLoadingMessages:false
+   java.net.URLClassLoader::showClassLoadingProperty:ibm.cl.verbose
+    com.ibm.ws.bootstrap.ExtClassLoader::ivIsAlwaysProtectedMethod:java.lang.reflect.Method@ecceae32 depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::ivIsResourceAlwaysProtectedMethod:java.lang.reflect.Method@85d9a31f depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::ivIsForbiddenMethod:java.lang.reflect.Method@5741bf43 depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::gateway:com.ibm.ws.bootstrap.ClassLoaderGateway@7f2f88fc depth limit reached
+   com.ibm.ws.bootstrap.ExtClassLoader::instance:com.ibm.ws.bootstrap.ExtClassLoader@1147fd66
+    com.ibm.ws.bootstrap.ExtClassLoader::containedPaths:java.util.ArrayList@2502bfd1 depth limit reached
+    com.ibm.ws.bootstrap.ExtClassLoader::nativePaths:java.util.ArrayList@8c9a9ec2 depth limit reached
+   com.ibm.ws.bootstrap.ExtClassLoader::classpath:null
+   com.ibm.ws.bootstrap.ExtClassLoader::nativepath:null
+   com.ibm.ws.bootstrap.ExtClassLoader::serverIDPush:null
+   com.ibm.ws.bootstrap.ExtClassLoader::serverIDPop:null
+   com.ibm.ws.bootstrap.ExtClassLoader::serverIDHelper:null
+   com.ibm.ws.bootstrap.ExtClassLoader::serverIDHelperIsSet:false
+   END:com.ibm.ws.bootstrap.ExtClassLoader@1147fd66
+
+  java.lang.Thread::threadLocals:null
+  java.lang.Thread::inheritedAccessControlContext BEGIN:java.security.AccessControlContext@b5c2e7fe
+   java.security.AccessControlContext::STATE_NOT_AUTHORIZED:0
+   java.security.AccessControlContext::STATE_AUTHORIZED:1
+   java.security.AccessControlContext::STATE_UNKNOWN:2
+   java.security.AccessControlContext::debugSetting:-1
+   java.security.AccessControlContext::debugPermClassArray:null
+   java.security.AccessControlContext::debugPermNameArray:null
+   java.security.AccessControlContext::debugPermActionsArray:null
+   java.security.AccessControlContext::debugCodeBaseArray:null
+   java.security.AccessControlContext::DEBUG_UNINITIALIZED_HASCODEBASE:0
+   java.security.AccessControlContext::DEBUG_NO_CODEBASE:1
+   java.security.AccessControlContext::DEBUG_HAS_CODEBASE:2
+   java.security.AccessControlContext::DEBUG_DISABLED:0
+   java.security.AccessControlContext::DEBUG_ACCESS_DENIED:1
+   java.security.AccessControlContext::DEBUG_ENABLED:2
+   java.security.AccessControlContext::domainCombiner:null
+   java.security.AccessControlContext::context:null
+   java.security.AccessControlContext::authorizeState:1
+   java.security.AccessControlContext::containPrivilegedContext:true
+   java.security.AccessControlContext::callerPD:null
+   java.security.AccessControlContext::doPrivilegedAcc:null
+   java.security.AccessControlContext::isLimitedContext:false
+   java.security.AccessControlContext::limitedPerms:null
+   java.security.AccessControlContext::nextStackAcc:null
+   java.security.AccessControlContext::debugHasCodebase:0
+   java.security.AccessControlContext::DEBUG_ACCESS:1
+   java.security.AccessControlContext::DEBUG_ACCESS_STACK:2
+   java.security.AccessControlContext::DEBUG_ACCESS_DOMAIN:4
+   java.security.AccessControlContext::DEBUG_ACCESS_FAILURE:8
+   java.security.AccessControlContext::DEBUG_ACCESS_THREAD:16
+   java.security.AccessControlContext::DEBUG_ALL:255
+   END:java.security.AccessControlContext@b5c2e7fe
+
+  java.lang.Thread::lock BEGIN:java.lang.Thread$ThreadLock@1c13951a
+   END:java.lang.Thread$ThreadLock@1c13951a
+
+  java.lang.Thread::inheritableThreadLocals BEGIN:java.lang.ThreadLocal$ThreadLocalMap@ac54e338
+   java.lang.ThreadLocal$ThreadLocalMap::INITIAL_CAPACITY:16
+    java.lang.ThreadLocal$ThreadLocalMap::table:[Ljava.lang.ThreadLocal$ThreadLocalMap$Entry;@e7a90a47 depth limit reached
+   java.lang.ThreadLocal$ThreadLocalMap::size:0
+   java.lang.ThreadLocal$ThreadLocalMap::threshold:10
+   END:java.lang.ThreadLocal$ThreadLocalMap@ac54e338
+
+  java.lang.Thread::blockOn:null
+  java.lang.Thread::threadLocalsIndex:0
+  java.lang.Thread::inheritableThreadLocalsIndex:0
+  java.lang.Thread::exceptionHandler:null
+  java.lang.Thread::tid:47
+  java.lang.Thread::parkBlocker:null
+  java.lang.Thread::systemThreadGroup:java.lang.ThreadGroup@6c4f5291
+  java.lang.Thread::mainGroup:java.lang.ThreadGroup@7ef1e837
+  java.lang.Thread::defaultExceptionHandler:null
+  java.lang.Thread::threadLocalRandomSeed:0
+  java.lang.Thread::threadLocalRandomProbe:0
+  java.lang.Thread::threadLocalRandomSecondarySeed:0
+  java.lang.Thread::EMPTY_STACK_TRACE BEGIN:[Ljava.lang.StackTraceElement;@1b88b79
+   [
+   ]
+   END:[Ljava.lang.StackTraceElement;@1b88b79
+
+  com.ibm.rmi.iiop.ORB$2$1::this$1 BEGIN:com.ibm.rmi.iiop.ORB$2@6633b39c
+   com.ibm.rmi.iiop.ORB$2::this$0:com.ibm.CORBA.iiop.ORB@f25fb6fd
+   END:com.ibm.rmi.iiop.ORB$2@6633b39c
+
+  END:com.ibm.rmi.iiop.ORB$2$1@31c6dc6a
+
+ com.ibm.rmi.iiop.ORB::streamFormatCtx:null
+ com.ibm.rmi.iiop.ORB::commTraceEnabled:false
+ com.ibm.rmi.iiop.ORB::commTraceVarSet:false
+ com.ibm.CORBA.iiop.ORB::orb_properties:orb.properties
+ END:com.ibm.CORBA.iiop.ORB@f25fb6fd
+
+com.ibm.ws.orbimpl.transport.WSTransport::fConnectionTable BEGIN:com.ibm.rmi.transport.ConnectionTableImpl@b8ff4bd9
+ com.ibm.rmi.transport.ConnectionTableImpl::CLASS:com.ibm.rmi.transport.ConnectionTableImpl
+ com.ibm.rmi.transport.ConnectionTableImpl::lowWaterMark:100
+ com.ibm.rmi.transport.ConnectionTableImpl::highWaterMark:240
+ com.ibm.rmi.transport.ConnectionTableImpl::multimap BEGIN:com.ibm.rmi.util.LimitedMultiMap@33412270
+  com.ibm.rmi.util.LimitedMultiMap::multiplicity:20
+  com.ibm.rmi.util.LimitedMultiMap::map BEGIN:java.util.HashMap@583df260
+   {
+    key:com.ibm.ws.orbimpl.transport.ConnectionKey@f4bd1ba5 depth limit reached
+    value:com.ibm.rmi.util.LimitedMultiMap$FixedList@1cd2b374 depth limit reached
+   }
+   END:java.util.HashMap@583df260
+
+  com.ibm.rmi.util.LimitedMultiMap::size:1
+  com.ibm.rmi.util.LimitedMultiMap::removals BEGIN:com.ibm.rmi.util.list.LinkedList@140048a9
+    com.ibm.rmi.util.list.LinkedList::head:com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover@477c7431 depth limit reached
+   com.ibm.rmi.util.list.LinkedList::tail:com.ibm.rmi.util.LimitedMultiMap$FixedList$Remover@477c7431
+   END:com.ibm.rmi.util.list.LinkedList@140048a9
+
+  com.ibm.rmi.util.LimitedMultiMap::hook:null
+  END:com.ibm.rmi.util.LimitedMultiMap@33412270
+
+ com.ibm.rmi.transport.ConnectionTableImpl::autonomicMode:true
+ com.ibm.rmi.transport.ConnectionTableImpl::multiplicity:20
+ com.ibm.rmi.transport.ConnectionTableImpl::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+ com.ibm.rmi.transport.ConnectionTableImpl::criteria BEGIN:[Lcom.ibm.rmi.transport.ConnectionTableImpl$Criteria;@a2cfb9f0
+  [
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@382c9b22
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:0
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:5
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:1
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@382c9b22
+
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@24cfdc13
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:5
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:10
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:2
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@24cfdc13
+
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@62045a27
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:10
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:30
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:5
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@62045a27
+
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@8fda6874
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:30
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:80
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:10
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@8fda6874
+
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@c7ed740
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:80
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:200
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:20
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@c7ed740
+
+  BEGIN:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@d49a9bc8
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minUsage:200
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::maxUsage:400
+   com.ibm.rmi.transport.ConnectionTableImpl$Criteria::minConnections:20
+   END:com.ibm.rmi.transport.ConnectionTableImpl$Criteria@d49a9bc8
+
+  ]
+  END:[Lcom.ibm.rmi.transport.ConnectionTableImpl$Criteria;@a2cfb9f0
+
+ com.ibm.rmi.transport.ConnectionTableImpl::criteriaMap BEGIN:[I@33429918
+[0 5 10 30 80 200]
+  END:[I@33429918
+
+ com.ibm.rmi.transport.ConnectionTableImpl::NCLEAN:5
+ END:com.ibm.rmi.transport.ConnectionTableImpl@b8ff4bd9
+
+com.ibm.ws.orbimpl.transport.WSTransport::fORBForTransports:com.ibm.rmi.iiop.TransportManager@c256f5dd
+com.ibm.ws.orbimpl.transport.WSTransport::globalCounter:0
+com.ibm.ws.orbimpl.transport.WSTransport::serverProfile:null
+com.ibm.ws.orbimpl.transport.WSTransport::connectionInterceptor BEGIN:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor@28c589e4
+ com.ibm.ws.orb.transport.ConnectionInterceptor::SCCSID: @(#) 1.12 SERV1/ws/code/orbext/src/com/ibm/ws/orb/transport/ConnectionInterceptor.java, WAS.orbext, WAS855.SERV1, cf282523.04 4/26/06 14:18:35 [6/13/25 10:12:11]
+ com.ibm.ws.orb.transport.ConnectionInterceptor::IIOP_OUTBOUND_CHAIN_ROOT:IIOP_OUT_
+ com.ibm.ws.orb.transport.ConnectionInterceptor::IIOP_SECURE_OUTBOUND_CHAIN_ROOT:IIOP_SECURE_OUT_
+ com.ibm.ws.orb.transport.ConnectionInterceptor::theOrb:null
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::vault BEGIN:com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl@70c9ab67
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_vaultRegistry BEGIN:java.util.Vector@9251d8c8
+   {
+   com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl@70c9ab67
+   }
+   END:java.util.Vector@9251d8c8
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_authenticationTarget:4
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_authenticationTargetString:basicauth
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::tc BEGIN:com.ibm.ejs.ras.TraceComponent@8e5d82c2
+   com.ibm.ejs.ras.TraceElement::ivLevel:10
+   com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl
+   com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+   com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+   com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+   com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+   com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+   com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+   com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ISecurityL13SupportImpl.sec
+   com.ibm.ejs.ras.TraceComponent::ivLogger:null
+   com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+   com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+   END:com.ibm.ejs.ras.TraceComponent@8e5d82c2
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::effectivePolicyTable BEGIN:java.util.Hashtable@704b5b42
+   {
+   }
+   END:java.util.Hashtable@704b5b42
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_current BEGIN:com.ibm.ISecurityLocalObjectBaseL13Impl.CurrentImpl@51089ee9
+    com.ibm.ISecurityLocalObjectBaseL13Impl.CurrentImpl::cMgr:com.ibm.ws.security.auth.ContextManagerImpl@c78959cd depth limit reached
+   END:com.ibm.ISecurityLocalObjectBaseL13Impl.CurrentImpl@51089ee9
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_mechanismFactory BEGIN:com.ibm.ISecurityUtilityImpl.MechanismFactory@982eef18
+    com.ibm.ISecurityUtilityImpl.MechanismFactory::csiv2:com.ibm.ws.security.config.CSIv2ConfigImpl@3bd17aa4 depth limit reached
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::vault:null
+    com.ibm.ISecurityUtilityImpl.MechanismFactory::tc:com.ibm.ejs.ras.TraceComponent@3b087f55 depth limit reached
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverSSL:1.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverSSLtoLTPA:1.1.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverSSLtoLocalOS:1.1.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverSSLtoDCE:1.1.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverSSLtoCustom:1.1.4
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::MutualSSL:1.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::LTPAoverSSL:1.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::LocalOSoverSSL:1.4
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSL:1.5
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSLtoLTPA:1.5.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSLtoLocalOS:1.5.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSLtoDCE:1.5.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSLtoCustom:1.5.4
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverSSLtoKRB5:1.5.5
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::Kerberos5overSSL:1.6
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::CustomoverSSL:1.7
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::RSAPropOverSSL:1.8
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverIPSec:2.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::MutualIPSec:2.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::DCEKerberos:3.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::ClientCerttoDCEKerberos:3.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::Kerberos5:4.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::ClientCerttoKerberos5:4.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::ClientCerttoCustom:4.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::LTPAoverTCP:5.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::LocalOSoverTCP:5.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverTCPtoLTPA:5.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverTCPtoLocalOS:5.4
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverTCPtoDCE:5.5
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::BasicAuthOverTCP:5.6
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCPtoLTPA:5.7.1
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCPtoLocalOS:5.7.2
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCPtoDCE:5.7.3
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCP:5.7.4
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCPtoCustom:5.7.5
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::GSSUPOverTCPtoKRB5:5.7.6
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::Kerberos5overTCP:5.8
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::CustomoverTCP:5.9
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::RSAPropOverTCP:5.10
+   com.ibm.ISecurityUtilityImpl.MechanismFactory::UnauthenticatedOverSSL:6.1
+   END:com.ibm.ISecurityUtilityImpl.MechanismFactory@982eef18
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_vault:com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl@70c9ab67
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::securityConnectionInterceptor:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor@28c589e4
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::sessionManager BEGIN:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager@3800b642
+    com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::serverConnTable:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.ConnectionTable@160b32f6 depth limit reached
+    com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::clientConnTable:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.ConnectionTable@df1afb9f depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::context_generator:1
+    com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::csiUtil:com.ibm.ISecurityUtilityImpl.CSIUtil@9add2930 depth limit reached
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::sessionCleanupInterval:300000
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::sessionDiscardUnusedMillis:900000
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::sessionCacheMaxSize:-1
+   com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::sessionCacheIdleTime:-1
+    com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager::tc:com.ibm.ejs.ras.TraceComponent@a899ae61 depth limit reached
+   END:com.ibm.ISecurityLocalObjectCSIv2UtilityImpl.SessionManager@3800b642
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::gssFactoryTable BEGIN:java.util.Hashtable@782d762
+   {
+   }
+   END:java.util.Hashtable@782d762
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::authTarget:null
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::codec:null
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::securityServer:null
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::_defaultSubject:null
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::MAX_AUTH_REALM_CACHE_ENTRIES:100
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::basicAuthTable BEGIN:java.util.Hashtable@55ee360d
+   {
+   }
+   END:java.util.Hashtable@55ee360d
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::basicAuthSubjectTable BEGIN:java.util.Hashtable@c62fdeec
+   {
+   }
+   END:java.util.Hashtable@c62fdeec
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::basicAuthRealmHostSubjectTable BEGIN:java.util.Hashtable@a5c2c946
+   {
+   }
+   END:java.util.Hashtable@a5c2c946
+
+  com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl::basicAuthRealmSubjectTable BEGIN:java.util.Hashtable@83b05520
+   {
+   }
+   END:java.util.Hashtable@83b05520
+
+  END:com.ibm.ISecurityLocalObjectBaseL13Impl.VaultImpl@70c9ab67
+
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::orb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::cfw:null
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::csiServerSSLConnData:null
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::csiClientCertServerSSLConnData:null
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::serverTCPConnData:null
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::defaultConnInt BEGIN:com.ibm.ws.orb.transport.DefaultConnectionInterceptor@3c3088b2
+  com.ibm.ws.orb.transport.ConnectionInterceptor::SCCSID: @(#) 1.12 SERV1/ws/code/orbext/src/com/ibm/ws/orb/transport/ConnectionInterceptor.java, WAS.orbext, WAS855.SERV1, cf282523.04 4/26/06 14:18:35 [6/13/25 10:12:11]
+  com.ibm.ws.orb.transport.ConnectionInterceptor::IIOP_OUTBOUND_CHAIN_ROOT:IIOP_OUT_
+  com.ibm.ws.orb.transport.ConnectionInterceptor::IIOP_SECURE_OUTBOUND_CHAIN_ROOT:IIOP_SECURE_OUT_
+  com.ibm.ws.orb.transport.ConnectionInterceptor::theOrb:com.ibm.CORBA.iiop.ORB@f25fb6fd
+  END:com.ibm.ws.orb.transport.DefaultConnectionInterceptor@3c3088b2
+
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::classNames BEGIN:java.util.Hashtable@67f780a9
+  {
+  }
+  END:java.util.Hashtable@67f780a9
+
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::prefer_iiop_to_local:false
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::isThinClient:false
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::unprotectedRegistryMethods BEGIN:java.util.HashSet@1512a795
+  {
+  }
+  END:java.util.HashSet@1512a795
+
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::tc BEGIN:com.ibm.ejs.ras.TraceComponent@2266f515
+  com.ibm.ejs.ras.TraceElement::ivLevel:10
+  com.ibm.ejs.ras.TraceElement::ivName:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor
+  com.ibm.ejs.ras.TraceElement::ivDebugEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEventEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivEntryEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivDetailEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivConfigEnabled:false
+  com.ibm.ejs.ras.TraceElement::ivInfoEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivServiceEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivWarningEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivErrorEnabled:true
+  com.ibm.ejs.ras.TraceElement::ivFatalEnabled:true
+  com.ibm.ejs.ras.TraceComponent::defaultMessageFile:com.ibm.ejs.resources.seriousMessages
+  com.ibm.ejs.ras.TraceComponent::EXTENSION_NAME_DPID:DiagnosticProvider
+  com.ibm.ejs.ras.TraceComponent::ivDumpEnabled:false
+  com.ibm.ejs.ras.TraceComponent::ivResourceBundleName:com.ibm.ISecurityL13SupportImpl.sec
+  com.ibm.ejs.ras.TraceComponent::ivLogger:null
+  com.ibm.ejs.ras.TraceComponent::ivDiagnosticProviderID:null
+  com.ibm.ejs.ras.TraceComponent::anyTracingEnabled:null
+  END:com.ibm.ejs.ras.TraceComponent@2266f515
+
+ com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor::disableLocalCommWhenSSLrequired:false
+ END:com.ibm.ISecurityLocalObjectBaseL13Impl.SecurityConnectionInterceptor@28c589e4
+
+com.ibm.ws.orbimpl.transport.WSTransport::tableOfListeners BEGIN:java.util.Hashtable@2347743f
+ {
+ }
+ END:java.util.Hashtable@2347743f
+
+com.ibm.ws.orbimpl.transport.WSTransport::tableOfServerSockets BEGIN:java.util.Hashtable@627aa5a8
+ {
+ }
+ END:java.util.Hashtable@627aa5a8
+
+com.ibm.ws.orbimpl.transport.WSTransport::acceptTimeout:5000
+com.ibm.ws.orbimpl.transport.WSTransport::wsTransport:com.ibm.ws.orbimpl.transport.WSTransport@66864d02
+com.ibm.ws.orbimpl.transport.WSTransport::registeredListener:false
+com.ibm.ws.orbimpl.transport.WSTransport::forceTunnel:never
+com.ibm.ws.orbimpl.transport.WSTransport::forceTunnelVarSet:true
+com.ibm.ws.orbimpl.transport.WSTransport::sslFactory:null
+com.ibm.ws.orbimpl.transport.WSTransport::sslClientFactory:null
+END:com.ibm.ws.orbimpl.transport.WSTransport@66864d02
+
+CapturedDataElements end

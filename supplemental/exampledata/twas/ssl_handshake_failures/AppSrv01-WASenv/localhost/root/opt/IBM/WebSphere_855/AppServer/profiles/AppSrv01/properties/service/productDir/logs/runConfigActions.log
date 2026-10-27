@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-04-09T09:21:00</date>
+  <millis>1775751660390</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:00</date>
+  <millis>1775751660391</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:01</date>
+  <millis>1775751661187</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-09T09:21:01</date>
+  <millis>1775751661187</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:01</date>
+  <millis>1775751661187</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:36</date>
+  <millis>1775751696111</millis>
+  <sequence>623</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-09T09:21:36</date>
+  <millis>1775751696111</millis>
+  <sequence>624</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:36</date>
+  <millis>1775751696112</millis>
+  <sequence>625</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PostConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:48</date>
+  <millis>1775751708971</millis>
+  <sequence>795</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PostConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-09T09:21:48</date>
+  <millis>1775751708971</millis>
+  <sequence>796</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PostConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-04-09T09:21:48</date>
+  <millis>1775751708974</millis>
+  <sequence>797</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018096</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018099</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018845</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018845</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018845</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018858</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018858</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-04-27T04:56:58</date>
+  <millis>1777291018865</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-04-27T04:57:27</date>
+  <millis>1777291047493</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-04-27T04:57:27</date>
+  <millis>1777291047495</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048260</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048260</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048260</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048271</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048271</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-04-27T04:57:28</date>
+  <millis>1777291048277</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-06T13:19:46</date>
+  <millis>1778098786456</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-06T13:19:46</date>
+  <millis>1778098786457</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787224</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787224</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787225</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787234</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787234</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-06T13:19:47</date>
+  <millis>1778098787238</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-06T13:20:16</date>
+  <millis>1778098816351</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-06T13:20:16</date>
+  <millis>1778098816353</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817128</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817128</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817128</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817138</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817138</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-06T13:20:17</date>
+  <millis>1778098817144</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106042</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106049</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106769</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106769</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106769</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106780</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106781</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:26</date>
+  <millis>1778683106787</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-13T07:38:54</date>
+  <millis>1778683134689</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:54</date>
+  <millis>1778683134690</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135420</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135420</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135421</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135429</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135429</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-13T07:38:55</date>
+  <millis>1778683135434</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494168</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494169</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494898</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494898</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494898</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494919</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494919</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:14</date>
+  <millis>1778772494925</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-14T08:28:45</date>
+  <millis>1778772525607</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:45</date>
+  <millis>1778772525608</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526346</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526347</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526347</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526356</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526357</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-05-14T08:28:46</date>
+  <millis>1778772526361</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-09-04T12:00:40</date>
+  <millis>1788548440643</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-09-04T12:00:40</date>
+  <millis>1788548440651</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441414</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441414</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441414</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441424</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441425</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-09-04T12:00:41</date>
+  <millis>1788548441429</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-09-04T12:01:10</date>
+  <millis>1788548470327</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-09-04T12:01:10</date>
+  <millis>1788548470329</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471104</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471105</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471105</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471114</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471114</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-09-04T12:01:11</date>
+  <millis>1788548471119</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-23T07:52:52</date>
+  <millis>1792767172429</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-10-23T07:52:52</date>
+  <millis>1792767172432</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173171</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173171</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173171</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173182</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173182</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:52:53</date>
+  <millis>1792767173189</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-23T07:53:16</date>
+  <millis>1792767196317</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:16</date>
+  <millis>1792767196319</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197001</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197001</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197001</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197010</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197010</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:17</date>
+  <millis>1792767197016</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223036</millis>
+  <sequence>0</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Display product code levels - from versionInfo 
+id com.ibm.websphere.ND.v85
+buildLevel cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+iFix Name: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+***************************
+Display config code levels from cachedInstalledProducts.xml 
+Offering ID: com.ibm.websphere.ND.v85
+Build level: cf282527.01
+Feature Name: IBM 64-bit WebSphere SDK for Java
+Feature Name: WebSphere Application Server Full Profile
+Feature Name: EJBDeploy tool for pre-EJB 3.0 modules
+Feature Name: Embeddable EJB container
+Feature Name: Sample applications
+Feature Name: Stand-alone thin clients and resource adapters
+id="com.ibm.websphere.ND.v85":8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762
+</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223038</millis>
+  <sequence>1</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/PreConfigActions/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223733</millis>
+  <sequence>53</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All PreConfigActions config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223733</millis>
+  <sequence>54</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/PreConfigActions/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223733</millis>
+  <sequence>55</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>Running product responseFile: /opt/IBM/WebSphere_855/AppServer/properties/service/productDir/WebSphere/service/responseFile.txt</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223741</millis>
+  <sequence>59</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>All WebSphere config actions were successful. </message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223741</millis>
+  <sequence>60</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>runConfigActionsforOneProduct</method>
+  <thread>1</thread>
+  <message>See the most recent log in /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties/service/productDir/WebSphere/logs</message>
+</record>
+<record>
+  <date>2026-10-23T07:53:43</date>
+  <millis>1792767223746</millis>
+  <sequence>61</sequence>
+  <logger>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</logger>
+  <level>INFO</level>
+  <class>com.ibm.ws.postinstall.runConfigActions.RunConfigActions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Postinstaller successful. Server will continue startup. </message>
+</record>
+</log>

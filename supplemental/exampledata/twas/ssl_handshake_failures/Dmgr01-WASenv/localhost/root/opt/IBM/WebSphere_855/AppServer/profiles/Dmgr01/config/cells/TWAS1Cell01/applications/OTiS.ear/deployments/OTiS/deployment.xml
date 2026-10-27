@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1767631527242">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1767631527242" deploymentId="0" startingWeight="1" binariesURL="$(WAS_INSTALL_ROOT)/systemApps/OTiS.ear" useMetadataFromBinaries="false" enableDistribution="false" warClassLoaderPolicy="SINGLE" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity="href:TWAS1Cell01/OTiS" zeroEarCopy="true" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="false" enableClientModule="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1767631527242" enable="true" target="ServerTarget_1767631527242"/>
+    <classloader xmi:id="Classloader_1767631527242" mode="PARENT_FIRST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1767631527242" deploymentId="1" startingWeight="10000" uri="OTiSWebApp.war" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767631527243" target="ServerTarget_1767631527242"/>
+      <classloader xmi:id="Classloader_1767631527243"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_1767631527242" deploymentId="1" startingWeight="5000" uri="OTiSEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767631527244" target="ServerTarget_1767631527242"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_1767631527243" deploymentId="1" startingWeight="5000" uri="OMADMEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767631527245" target="ServerTarget_1767631527242"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_1767631527244" deploymentId="1" startingWeight="5000" uri="TaskProcessingEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_1767631527246" target="ServerTarget_1767631527242"/>
+    </modules>
+    <properties xmi:id="Property_1767631527242" name="metadata.complete" value="true"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1767631527242" name="dmgr" nodeName="TWAS1CellManager01"/>
+</appdeployment:Deployment>

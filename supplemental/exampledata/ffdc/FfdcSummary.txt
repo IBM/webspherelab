@@ -1,0 +1,7 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     5/14/26 8:28:11:425 PDT     5/14/26 8:28:11:425 PDT java.lang.NullPointerException com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl.login 239 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/ffdc.2469167312118901816.txt
+     1      1     5/14/26 8:28:11:527 PDT     5/14/26 8:28:11:527 PDT com.ibm.websphere.security.auth.WSLoginFailedException com.ibm.websphere.management.AdminClientFactory.createAdminClient 469
+     2      1     5/14/26 8:28:11:530 PDT     5/14/26 8:28:11:530 PDT java.lang.NullPointerException com.ibm.websphere.security.auth.WSLoginFailedException 250 /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/logs/ffdc/ffdc.4522669257183467904.txt
+------+------+---------------------------+---------------------------+---------------------------

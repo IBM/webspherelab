@@ -1,0 +1,59 @@
+//
+// WebSphere Server Security Policy
+//
+// NOTE: Syntax errors in the policy files will cause the application server FAIL to start.
+//       Extreme care should be taken when editing these policy files. It is advised to use
+//       the policytool provided by the JDK for editing the policy files
+//       (WAS_HOME/java/jre/bin/policytool). 
+//
+// Note: Application client permissions are specified in client.policy
+// Warning: Deviating from this policy may result in unexpected
+// AccessControlExceptions if a more "fine grain" policy is
+// specified.
+//
+// Application policy is specified in app.policy (per node) and was.policy
+// (per enterprise applicaiton)
+//
+
+// Allow to use sun tools
+grant codeBase "file:${java.home}/../lib/tools.jar" {
+  permission java.security.AllPermission;
+};
+
+// WebSphere system classes
+grant codeBase "file:${was.install.root}/plugins/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${was.install.root}/lib/-" {
+  permission java.security.AllPermission;
+};
+grant codeBase "file:${was.install.root}/classes/-" {
+  permission java.security.AllPermission;
+};
+
+// Allow the WebSphere deploy tool all permissions
+grant codeBase "file:${was.install.root}/deploytool/-" {
+  permission java.security.AllPermission;
+};
+
+// Allow Channel Framework classes all permission
+grant codeBase "file:${was.install.root}/installedChannels/-" {
+  permission java.security.AllPermission;
+};
+
+// WebSphere optional runtime classes
+grant codeBase "file:${was.install.root}/optionalLibraries/-" {
+  permission java.security.AllPermission;
+};
+
+grant codeBase "file:${was.install.root}/derby/lib/-" {
+  permission java.net.SocketPermission "*", "resolve,connect";
+  permission java.util.PropertyPermission "*", "read";
+  permission java.lang.RuntimePermission "createClassLoader";
+};
+
+// Allow TAM
+grant codeBase "file:${was.install.root}/tivoli/tam/-" {
+  permission java.security.AllPermission;
+};
+

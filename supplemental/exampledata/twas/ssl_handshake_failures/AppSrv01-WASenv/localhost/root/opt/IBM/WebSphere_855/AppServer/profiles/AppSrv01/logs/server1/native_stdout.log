@@ -1,0 +1,194 @@
+[4/9/26 9:21:59:634 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[4/9/26 9:22:00:048 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[4/9/26 9:22:00:080 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@d50cb1f9
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 359825
+Full server name is TWAS1Cell01\Node01\server1-359825
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[4/9/26 9:24:26:746 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[4/9/26 9:24:26:920 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[4/9/26 9:24:26:932 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@bdbbad2c
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 360202
+Full server name is TWAS1Cell01\Node01\server1-360202
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.115.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[4/27/26 4:57:36:177 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[4/27/26 4:57:36:366 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[4/27/26 4:57:36:379 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@92fa6f3a
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 113917
+Full server name is TWAS1Cell01\Node01\server1-113917
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[5/6/26 13:20:24:748 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[5/6/26 13:20:24:935 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[5/6/26 13:20:24:945 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@704a2c61
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 1248366
+Full server name is TWAS1Cell01\Node01\server1-1248366
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[5/13/26 7:39:02:634 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[5/13/26 7:39:02:820 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[5/13/26 7:39:02:832 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@a7bb936e
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 261837
+Full server name is TWAS1Cell01\Node01\server1-261837
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[5/14/26 8:28:53:989 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[5/14/26 8:28:54:159 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[5/14/26 8:28:54:169 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@12a82fe5
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 340125
+Full server name is TWAS1Cell01\Node01\server1-340125
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[9/4/26 12:01:18:430 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[9/4/26 12:01:18:601 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[9/4/26 12:01:18:610 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@7df371ca
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 377581
+Full server name is TWAS1Cell01\Node01\server1-377581
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT
+[10/23/26 7:53:00:767 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[10/23/26 7:53:00:953 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[10/23/26 7:53:00:968 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@2bdb6dc0
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 416891
+Full server name is TWAS1Cell01\Node01\server1-416891
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+[10/23/26 7:53:51:071 PDT] 00000001 ManagerAdmin  I   TRAS0018I: The trace state has changed. The new trace state is *=info.
+[10/23/26 7:53:51:231 PDT] 00000001 ManagerAdmin  A   TRAS0007I: Logging to the service log is disabled
+[10/23/26 7:53:51:241 PDT] 00000001 ProviderTrack I com.ibm.ffdc.osgi.ProviderTracker AddingService FFDC1007I: FFDC Provider Installed: com.ibm.ffdc.util.provider.FfdcOnDirProvider@5853dc37
+************ Start Display Current Environment ************
+WebSphere Platform 8.5.5.28 [ND 8.5.5.28 cf282527.01] running with process name TWAS1Cell01\Node01\server1 and process id 417406
+Full server name is TWAS1Cell01\Node01\server1-417406
+Detailed IFix information: 8.5.5.11-WS-WASBundledSDK8-LinuxX64-IFPH68762(contents unknown)
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib:
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+************* End Display Current Environment *************
+ProcessCPU JNI_OnLoad ENTER BuildTime:15:50:40 BuildDate:May  3 2024
+ProcessCPU JNI_OnLoad EXIT
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode ENTER
+ProcessCPU Java_com_ibm_ws_xd_pmi_processcpu_ProcessCPU_enableDebugMode EXIT

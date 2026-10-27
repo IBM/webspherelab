@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sibresources:SIBus xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sibresources="http://www.ibm.com/websphere/appserver/schemas/6.0/sibresources.xmi" xmi:id="SIBus_1769617885873" name="DefaultBus" uuid="363D3C100F38E1C8" secure="true" usePermittedChains="SSL_ENABLED" discardMsgsAfterQueueDeletion="false"/>

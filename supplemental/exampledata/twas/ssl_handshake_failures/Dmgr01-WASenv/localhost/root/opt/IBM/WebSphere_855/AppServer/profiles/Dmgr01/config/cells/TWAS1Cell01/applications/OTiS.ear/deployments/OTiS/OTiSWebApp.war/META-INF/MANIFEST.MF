@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: 1.4.2 (IBM Corporation)
+Class-Path: OTiSClient.jar OTiSCommon.jar OTiSEJB.jar OMADMClient.jar 
+ OMADMEJB.jar OTiSPrereq.jar
+Ant-Version: Apache Ant 1.6.2
+

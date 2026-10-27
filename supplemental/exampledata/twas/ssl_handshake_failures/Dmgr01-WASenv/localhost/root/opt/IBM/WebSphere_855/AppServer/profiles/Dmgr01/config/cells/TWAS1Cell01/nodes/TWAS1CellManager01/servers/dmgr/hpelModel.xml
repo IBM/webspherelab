@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loggingservice.ras:HighPerformanceExtensibleLogging xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:loggingservice.ras="http://www.ibm.com/websphere/appserver/schemas/5.0/loggingservice.ras.xmi" xmi:id="HighPerformanceExtensibleLogging_1" enable="false">
+    <hpelLog xmi:id="HPELLog_1" dataDirectory="${LOG_ROOT}/${SERVER}"/>
+    <hpelTrace xmi:id="HPELTrace_1" dataDirectory="${LOG_ROOT}/${SERVER}"/>
+    <hpelTextLog xmi:id="HPELTextLog_1" dataDirectory="${LOG_ROOT}/${SERVER}"/>
+</loggingservice.ras:HighPerformanceExtensibleLogging>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions name="ControllerService" 
+	targetNamespace="http://impl.webservice.commsvc.ws.ibm.com/" 
+	xmlns="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:tns="http://impl.webservice.commsvc.ws.ibm.com/" 
+	xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://impl.webservice.commsvc.ws.ibm.com/" schemaLocation="ControllerService_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="openSession">
+    <part element="tns:openSession" name="parameters"/>
+  </message>
+  <message name="openSessionResponse">
+    <part element="tns:openSessionResponse" name="parameters"/>
+  </message>
+  <message name="CTIControlException">
+    <part element="tns:CTIControl" name="fault"/>
+  </message>
+  <message name="makeCall">
+    <part element="tns:makeCall" name="parameters"/>
+  </message>
+  <message name="makeCallResponse">
+    <part element="tns:makeCallResponse" name="parameters"/>
+  </message>
+  <message name="endCall">
+    <part element="tns:endCall" name="parameters"/>
+  </message>
+  <message name="endCallResponse">
+    <part element="tns:endCallResponse" name="parameters"/>
+  </message>
+  <message name="closeSession">
+    <part element="tns:closeSession" name="parameters"/>
+  </message>
+  <message name="closeSessionResponse">
+    <part element="tns:closeSessionResponse" name="parameters"/>
+  </message>
+  <portType name="Controller">
+    <operation name="openSession">
+      <input message="tns:openSession"/>
+      <output message="tns:openSessionResponse"/>
+      <fault message="tns:CTIControlException" name="CTIControlException"/>
+    </operation>
+    <operation name="makeCall">
+      <input message="tns:makeCall"/>
+      <output message="tns:makeCallResponse"/>
+      <fault message="tns:CTIControlException" name="CTIControlException"/>
+    </operation>
+    <operation name="endCall">
+      <input message="tns:endCall"/>
+      <output message="tns:endCallResponse"/>
+      <fault message="tns:CTIControlException" name="CTIControlException"/>
+    </operation>
+    <operation name="closeSession">
+      <input message="tns:closeSession"/>
+      <output message="tns:closeSessionResponse"/>
+      <fault message="tns:CTIControlException" name="CTIControlException"/>
+    </operation>
+  </portType>
+  <binding name="ControllerPortBinding" type="tns:Controller">
+    <wsaw:UsingAddressing/>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="openSession">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="CTIControlException">
+        <soap:fault name="CTIControlException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="makeCall">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="CTIControlException">
+        <soap:fault name="CTIControlException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="endCall">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="CTIControlException">
+        <soap:fault name="CTIControlException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="closeSession">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="CTIControlException">
+        <soap:fault name="CTIControlException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ControllerService">
+    <port binding="tns:ControllerPortBinding" name="ControllerPort">
+      <soap:address location="http://localhost:9080/commsvc.rest/ControllerService"/>
+    </port>
+  </service>
+</definitions>

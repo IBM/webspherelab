@@ -1,0 +1,168 @@
+[5/14/26 8:28:11:531 PDT]     FFDC Exception:java.lang.NullPointerException SourceId:com.ibm.websphere.security.auth.WSLoginFailedException ProbeId:250 Reporter:com.ibm.websphere.security.auth.WSLoginFailedException@9ef9895e
+java.lang.NullPointerException
+	at com.ibm.ws.security.auth.WSCredentialImpl.setUnauthenticatedFlag(WSCredentialImpl.java:367)
+	at com.ibm.ws.security.auth.WSCredentialImpl.<init>(WSCredentialImpl.java:335)
+	at com.ibm.ws.security.common.auth.module.WSAdminClientLoginModuleImpl.login(WSAdminClientLoginModuleImpl.java:255)
+	at com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy.login(WSLoginModuleProxy.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:788)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:196)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:698)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:696)
+	at java.security.AccessController.doPrivileged(AccessController.java:755)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:696)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:597)
+	at com.ibm.websphere.management.AdminClientFactory.jaas_login(AdminClientFactory.java:1610)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClientPrivileged(AdminClientFactory.java:548)
+	at com.ibm.websphere.management.AdminClientFactory.access$000(AdminClientFactory.java:128)
+	at com.ibm.websphere.management.AdminClientFactory$1.run(AdminClientFactory.java:211)
+	at com.ibm.ws.security.util.AccessController.doPrivileged(AccessController.java:63)
+	at com.ibm.websphere.management.AdminClientFactory.createAdminClient(AdminClientFactory.java:207)
+	at com.ibm.ws.management.tools.AbstractNodeConfigUtility.getAdminClient(AbstractNodeConfigUtility.java:204)
+	at com.ibm.ws.management.tools.NodeSyncUtility.runTool(NodeSyncUtility.java:152)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.NodeSyncUtility.main(NodeSyncUtility.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.wsspi.bootstrap.WSLauncher.launchMain(WSLauncher.java:234)
+	at com.ibm.wsspi.bootstrap.WSLauncher.main(WSLauncher.java:96)
+	at com.ibm.wsspi.bootstrap.WSLauncher.run(WSLauncher.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:340)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:282)
+	at org.eclipse.core.launcher.Main.run(Main.java:981)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.launchEclipse(WSPreLauncher.java:425)
+	at com.ibm.wsspi.bootstrap.WSPreLauncher.main(WSPreLauncher.java:178)
+
+CapturedDataElements begin
+arg BEGIN:com.ibm.websphere.security.auth.WSLoginFailedException@9ef9895e
+java.lang.Throwable::serialVersionUID:-3042686055658047285
+java.lang.Throwable::detailMessage:LoginFailed.
+java.lang.Throwable::walkback BEGIN:[J@6bf78900
+[139666936034472 139666910566650 139664927239021 139666904234878 139664931615134 139666935849893 139666935851190 139666935886164 139666935886217 139666903600219 139666935849413 139666935848822 139666928789797 139666928779375 139666928791461 139666928808832 139666905645287 139666928777435 139666911308699 139666911203219 139666911338509 139666911202533 139664927239021 139666904234878 139664931615134 139666909141406 139666909140529 139666909140434 139664927239021 139666904234878 139666904236278 139666903227874 139665425605395 139665425641772 139666910516749 139666910516445 139666906886705 139666906884971 139664927239021 139666904234878 139666904236278 139666903227874 139666905701539 139666905700919 139666905706732 139666905627426 139666905626057]
+ END:[J@6bf78900
+
+java.lang.Throwable::cause:com.ibm.websphere.security.auth.WSLoginFailedException@9ef9895e
+java.lang.Throwable::stackTrace:null
+java.lang.Throwable::ZeroElementArray BEGIN:[Ljava.lang.Throwable;@38bffb4b
+ [
+ ]
+ END:[Ljava.lang.Throwable;@38bffb4b
+
+java.lang.Throwable::ZeroStackTraceElementArray BEGIN:[Ljava.lang.StackTraceElement;@f22ed77f
+ [
+ ]
+ END:[Ljava.lang.StackTraceElement;@f22ed77f
+
+java.lang.Throwable::suppressedExceptions BEGIN:java.util.Collections$EmptyList@56e803c9
+ {
+ }
+ END:java.util.Collections$EmptyList@56e803c9
+
+java.lang.Throwable::disableWritableStackTrace:false
+java.lang.Exception::serialVersionUID:-3387516993124229948
+java.security.GeneralSecurityException::serialVersionUID:894798122053539237
+javax.security.auth.login.LoginException::serialVersionUID:-4679091624035232488
+com.ibm.websphere.security.auth.WSLoginFailedException::serialVersionUID:-3528567271868651550
+com.ibm.websphere.security.auth.WSLoginFailedException::exceptions BEGIN:java.util.ArrayList@29d84563
+ {
+ BEGIN:java.lang.NullPointerException@f085388d
+  java.lang.Throwable::serialVersionUID:-3042686055658047285
+  java.lang.Throwable::detailMessage:null
+  java.lang.Throwable::walkback BEGIN:[J@cabc79b0
+[139666936049540 139666936048953 139666936034393 139666910566650 139664927239021 139666904234878 139664931615134 139666935849893 139666935851190 139666935886164 139666935886217 139666903600219 139666935849413 139666935848822 139666928789797 139666928779375 139666928791461 139666928808832 139666905645287 139666928777435 139666911308699 139666911203219 139666911338509 139666911202533 139664927239021 139666904234878 139664931615134 139666909141406 139666909140529 139666909140434 139664927239021 139666904234878 139666904236278 139666903227874 139665425605395 139665425641772 139666910516749 139666910516445 139666906886705 139666906884971 139664927239021 139666904234878 139666904236278 139666903227874 139666905701539 139666905700919 139666905706732 139666905627426 139666905626057]
+   END:[J@cabc79b0
+
+  java.lang.Throwable::cause:java.lang.NullPointerException@f085388d
+  java.lang.Throwable::stackTrace BEGIN:[Ljava.lang.StackTraceElement;@14c349af
+   [
+    java.lang.StackTraceElement@591f87ff depth limit reached
+    java.lang.StackTraceElement@d93b859b depth limit reached
+    java.lang.StackTraceElement@5c04545b depth limit reached
+    java.lang.StackTraceElement@e306a014 depth limit reached
+    java.lang.StackTraceElement@36f6a512 depth limit reached
+    java.lang.StackTraceElement@1dee083a depth limit reached
+    java.lang.StackTraceElement@ca99d297 depth limit reached
+    java.lang.StackTraceElement@9745a6d depth limit reached
+    java.lang.StackTraceElement@646e28fc depth limit reached
+    java.lang.StackTraceElement@c5f1076b depth limit reached
+    java.lang.StackTraceElement@ea9700c depth limit reached
+    java.lang.StackTraceElement@48916b46 depth limit reached
+    java.lang.StackTraceElement@33f6ca34 depth limit reached
+    java.lang.StackTraceElement@87ed092a depth limit reached
+    java.lang.StackTraceElement@c8423a9f depth limit reached
+    java.lang.StackTraceElement@42c74394 depth limit reached
+    java.lang.StackTraceElement@56d9ebbc depth limit reached
+    java.lang.StackTraceElement@505de949 depth limit reached
+    java.lang.StackTraceElement@e98ca7d4 depth limit reached
+    java.lang.StackTraceElement@a3e68888 depth limit reached
+    java.lang.StackTraceElement@e7637d3 depth limit reached
+    java.lang.StackTraceElement@98bde33b depth limit reached
+    java.lang.StackTraceElement@65a4f058 depth limit reached
+    java.lang.StackTraceElement@c9bb0d08 depth limit reached
+    java.lang.StackTraceElement@ec99b73d depth limit reached
+    java.lang.StackTraceElement@5daea40e depth limit reached
+    java.lang.StackTraceElement@582ac16f depth limit reached
+    java.lang.StackTraceElement@3ece0037 depth limit reached
+    java.lang.StackTraceElement@cd7506dc depth limit reached
+    java.lang.StackTraceElement@8a1c0a9c depth limit reached
+    java.lang.StackTraceElement@46f45f73 depth limit reached
+    java.lang.StackTraceElement@aa2b0bfe depth limit reached
+    java.lang.StackTraceElement@d290b14 depth limit reached
+    java.lang.StackTraceElement@6fd01378 depth limit reached
+    java.lang.StackTraceElement@dba9383a depth limit reached
+    java.lang.StackTraceElement@ee2c28eb depth limit reached
+    java.lang.StackTraceElement@e0710044 depth limit reached
+    java.lang.StackTraceElement@2468f4c7 depth limit reached
+    java.lang.StackTraceElement@3754cb04 depth limit reached
+    java.lang.StackTraceElement@bc4e5e32 depth limit reached
+    java.lang.StackTraceElement@d5cda27c depth limit reached
+    java.lang.StackTraceElement@8b709aee depth limit reached
+    java.lang.StackTraceElement@7ec421fb depth limit reached
+    java.lang.StackTraceElement@9edea920 depth limit reached
+    java.lang.StackTraceElement@72a8e87d depth limit reached
+    java.lang.StackTraceElement@51e7031a depth limit reached
+    java.lang.StackTraceElement@4786152b depth limit reached
+    java.lang.StackTraceElement@d6f27c3 depth limit reached
+    java.lang.StackTraceElement@fedaa9bd depth limit reached
+    java.lang.StackTraceElement@f605b8 depth limit reached
+    java.lang.StackTraceElement@ff15ce8c depth limit reached
+   ]
+   END:[Ljava.lang.StackTraceElement;@14c349af
+
+  java.lang.Throwable::ZeroElementArray:[Ljava.lang.Throwable;@38bffb4b
+  java.lang.Throwable::ZeroStackTraceElementArray:[Ljava.lang.StackTraceElement;@f22ed77f
+  java.lang.Throwable::suppressedExceptions:java.util.Collections$EmptyList@56e803c9
+  java.lang.Throwable::disableWritableStackTrace:false
+  java.lang.Exception::serialVersionUID:-3387516993124229948
+  java.lang.RuntimeException::serialVersionUID:-7034897190745766939
+  java.lang.NullPointerException::serialVersionUID:5162710183389028792
+  END:java.lang.NullPointerException@f085388d
+
+ }
+ END:java.util.ArrayList@29d84563
+
+com.ibm.websphere.security.auth.WSLoginFailedException::NEW_LINE:
+
+com.ibm.websphere.security.auth.WSLoginFailedException::SUPPRESS_STACK:false
+END:com.ibm.websphere.security.auth.WSLoginFailedException@9ef9895e
+
+CapturedDataElements end

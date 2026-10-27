@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:wsa="http://www.w3.org/2005/08/addressing"
+        targetNamespace="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/domain"
+       	xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" 
+        xmlns:tns="http://www.ibm.com/xmlns/prod/websphere/management/j2ee/domain" >
+	    
+	    <xsd:import namespace="http://docs.oasis-open.org/wsrf/bf-2" 
+	            schemaLocation="WS-BaseFaults-1_2.xsd" />
+	            
+	    <xsd:import namespace="http://www.w3.org/2005/08/addressing" 
+	            schemaLocation="WS-Addressing-2005_08.xsd" />
+	<!--  Operations for the J2EEDomain capability -->
+	
+	<xsd:element name="GetAttribute">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Target" type="xsd:string"/>
+				<xsd:element name="Attribute" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="GetAttributeResponse" type="xsd:string"/>
+		
+	<xsd:element name="GetAttributeFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="QueryNames">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="QueryString" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="QueryNamesResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="response" type="xsd:string" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="QueryNamesFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="GetResources">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ResourceType" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="GetResourcesResponse" type="wsa:EndpointReferenceType"/>
+	
+	<xsd:element name="GetResourcesFailedFault">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="wsrf-bf:BaseFaultType" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+</schema>

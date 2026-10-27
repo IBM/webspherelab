@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workClass:WorkClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:workClass="http:///workClass.ecore" xmi:id="Default_IIOP_WC" matchAction="Default_TC" type="IIOPWORKCLASS" name="Default_IIOP_WC" description="">
+  <workClassModules xmi:id="WorkClassModule_1767631527359" moduleName="OTiSEJB.jar" matchExpression="*:*" id="Default_IIOP_WC:!:OTiS:!:OTiSEJB.jar"/>
+  <workClassModules xmi:id="WorkClassModule_1767631527361" moduleName="OMADMEJB.jar" matchExpression="*:*" id="Default_IIOP_WC:!:OTiS:!:OMADMEJB.jar"/>
+  <workClassModules xmi:id="WorkClassModule_1767631527365" moduleName="TaskProcessingEJB.jar" matchExpression="*:*" id="Default_IIOP_WC:!:OTiS:!:TaskProcessingEJB.jar"/>
+</workClass:WorkClass>

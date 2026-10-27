@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workClass:WorkClass xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:workClass="http:///workClass.ecore" xmi:id="Default_JMS_WC" matchAction="Default_TC" type="JMSWORKCLASS" name="Default_JMS_WC" description="">
+  <workClassModules xmi:id="WorkClassModule_1767631527338" moduleName="OTiSWebApp.war" matchExpression="*:*" id="Default_JMS_WC:!:OTiS:!:OTiSWebApp.war"/>
+  <workClassModules xmi:id="WorkClassModule_1767631527341" moduleName="OTiSEJB.jar" matchExpression="*:*" id="Default_JMS_WC:!:OTiS:!:OTiSEJB.jar"/>
+  <workClassModules xmi:id="WorkClassModule_1767631527344" moduleName="OMADMEJB.jar" matchExpression="*:*" id="Default_JMS_WC:!:OTiS:!:OMADMEJB.jar"/>
+  <workClassModules xmi:id="WorkClassModule_1767631527347" moduleName="TaskProcessingEJB.jar" matchExpression="*:*" id="Default_JMS_WC:!:OTiS:!:TaskProcessingEJB.jar"/>
+</workClass:WorkClass>

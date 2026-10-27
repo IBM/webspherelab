@@ -1,0 +1,311 @@
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[4/27/26 4:57:00:573 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[4/27/26 4:57:00:668 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[4/27/26 4:57:00:671 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[4/27/26 4:57:00:688 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[4/27/26 4:57:00:891 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[4/27/26 4:57:04:161 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[4/27/26 4:57:04:811 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[4/27/26 4:57:15:076 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 113593
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.120.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/6/26 13:19:48:981 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/6/26 13:19:49:081 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/6/26 13:19:49:084 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[5/6/26 13:19:49:096 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/6/26 13:19:49:319 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/6/26 13:19:52:559 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/6/26 13:19:52:752 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.processCommandLineArguments(LaunchCommand.java:888)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1247)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/6/26 13:19:52:768 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1268)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/6/26 13:19:53:191 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/6/26 13:20:04:009 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 1248050
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/13/26 7:38:28:455 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/13/26 7:38:28:550 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/13/26 7:38:28:552 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[5/13/26 7:38:28:565 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/13/26 7:38:28:746 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/13/26 7:38:31:805 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/13/26 7:38:31:978 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.processCommandLineArguments(LaunchCommand.java:888)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1247)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/13/26 7:38:31:992 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1268)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/13/26 7:38:32:429 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/13/26 7:38:42:438 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 261505
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.123.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[5/14/26 8:28:16:636 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[5/14/26 8:28:16:736 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[5/14/26 8:28:16:739 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[5/14/26 8:28:16:753 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[5/14/26 8:28:16:953 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[5/14/26 8:28:20:089 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[5/14/26 8:28:20:268 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.processCommandLineArguments(LaunchCommand.java:888)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1247)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/14/26 8:28:20:282 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1268)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[5/14/26 8:28:20:715 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[5/14/26 8:28:33:107 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 339790
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.157.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[9/4/26 12:00:43:202 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[9/4/26 12:00:43:313 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[9/4/26 12:00:43:316 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[9/4/26 12:00:43:330 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[9/4/26 12:00:43:520 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[9/4/26 12:00:46:754 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[9/4/26 12:00:46:945 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.processCommandLineArguments(LaunchCommand.java:888)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1247)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[9/4/26 12:00:46:960 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1268)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[9/4/26 12:00:47:416 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[9/4/26 12:00:57:915 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 377251
+************ Start Display Current Environment ************
+Host Operating System is Linux, version 4.18.0-553.174.1.el8_10.x86_64
+Java version = 1.8.0_471, Java Runtime Version = 8.0.8.55 - pxa6480sr8fp55-20251007_01(SR8 FP55), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere_855/AppServer
+user.install.root = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere_855/AppServer/java/jre
+ws.ext.dirs = /opt/IBM/WebSphere_855/AppServer/java/lib:/opt/IBM/WebSphere_855/AppServer/classes:/opt/IBM/WebSphere_855/AppServer/lib:/opt/IBM/WebSphere_855/AppServer/installedChannels:/opt/IBM/WebSphere_855/AppServer/lib/ext:/opt/IBM/WebSphere_855/AppServer/web/help:/opt/IBM/WebSphere_855/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere_855/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere_855/AppServer/properties:/opt/IBM/WebSphere_855/AppServer/lib/startup.jar:/opt/IBM/WebSphere_855/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere_855/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere_855/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere_855/AppServer/java/lib/tools.jar
+Java Library path = /opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64/compressedrefs:/opt/IBM/WebSphere_855/AppServer/java/jre/lib/amd64:/opt/IBM/WebSphere_855/AppServer/lib/native/linux/x86_64/:/opt/IBM/WebSphere_855/AppServer/bin:/opt/IBM/WebSphere_855/AppServer/nulldllsdir:/usr/lib64:/usr/lib
+Orb Version = IBM Java ORB build orbdev-userlvl-20250818.0527
+Max file descriptor count = 1048576
+Current trace specification = *=info
+************* End Display Current Environment *************
+[10/23/26 7:53:18:773 PDT] 00000001 ManagerAdmin  I   TRAS0017I: The startup trace state is *=info.
+[10/23/26 7:53:18:875 PDT] 00000001 AdminTool     A   ADMU0128I: Starting tool with the AppSrv01 profile
+[10/23/26 7:53:18:878 PDT] 00000001 AdminTool     A   ADMU3100I: Reading configuration for server: nodeagent
+[10/23/26 7:53:18:892 PDT] 00000001 ImplFactory   W   WSVR0072W: Ignoring undeclared override of interface, com.ibm.websphere.cluster.topography.DescriptionManager, with implementation, com.ibm.ws.cluster.propagation.bulletinboard.BBDescriptionManager
+[10/23/26 7:53:19:109 PDT] 00000001 ModelMgr      I   WSVR0801I: Initializing all server configuration models
+[10/23/26 7:53:22:239 PDT] 00000001 WorkSpaceMana A   WKSP0500I: Workspace configuration consistency check is disabled.
+[10/23/26 7:53:22:412 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.processCommandLineArguments(LaunchCommand.java:888)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1247)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[10/23/26 7:53:22:428 PDT] 00000001 LaunchCommand A   ADML0004E: An exception occurred when attempting to expand variable -Xverbosegclog:${SERVER_LOG_ROOT}/verbosegc.%seq.log,20,50000 com.ibm.wsspi.runtime.variable.UndefinedVariableException: Undefined variable SERVER_LOG_ROOT
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:433)
+	at com.ibm.ws.runtime.component.VariableMapImpl.expand(VariableMapImpl.java:327)
+	at com.ibm.ws.management.launcher.LaunchCommand.expand(LaunchCommand.java:2312)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromJavaProcessDef(LaunchCommand.java:1268)
+	at com.ibm.ws.management.launcher.LaunchCommand.setParamsFromProcessDef(LaunchCommand.java:656)
+	at com.ibm.ws.management.launcher.LaunchCommand.init(LaunchCommand.java:400)
+	at com.ibm.ws.management.launcher.LaunchCommand.<init>(LaunchCommand.java:279)
+	at com.ibm.ws.management.tools.WsServerLauncher.initializeRepositoryAndLauncher(WsServerLauncher.java:433)
+	at com.ibm.ws.management.tools.WsServerLauncher.runTool(WsServerLauncher.java:281)
+	at com.ibm.ws.management.tools.AdminTool.executeUtility(AdminTool.java:281)
+	at com.ibm.ws.management.tools.WsServerLauncher.main(WsServerLauncher.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at com.ibm.ws.bootstrap.WSLauncher.main(WSLauncher.java:280)
+.
+[10/23/26 7:53:22:862 PDT] 00000001 AdminTool     A   ADMU3200I: Server launched. Waiting for initialization status.
+[10/23/26 7:53:33:594 PDT] 00000001 AdminTool     A   ADMU3000I: Server nodeagent open for e-business; process id is 417089

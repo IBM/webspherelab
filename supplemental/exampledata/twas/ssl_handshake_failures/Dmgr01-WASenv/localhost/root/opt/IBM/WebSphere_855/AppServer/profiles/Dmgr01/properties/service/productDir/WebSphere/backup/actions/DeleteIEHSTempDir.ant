@@ -1,0 +1,14 @@
+  <project name="DeleteIEHSTempDir" default="install" basedir=".">
+  <target name="install">
+    <delete includeemptydirs="true" failonerror="false">
+      <fileset  dir="${profilePath}/temp" includes="**/isclite/iehs.war/**">
+      </fileset>
+    </delete> 
+  </target>
+  <target name="uninstall">
+    <delete includeemptydirs="true" failonerror="false">
+      <fileset  dir="${profilePath}/temp" includes="**/isclite/iehs.war/**">
+      </fileset>
+    </delete> 
+  </target>
+  </project>

@@ -1,0 +1,210 @@
+<!-- PI67363: KC issues -->
+<project name="updateSamlEar" default="install" basedir=".">
+    <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+    
+    <target name="setEarName" description="set the ear name to use for this script">
+    	<property name="earName" value="WebSphereSamlSP.ear"/>
+	<property name="wsadminAppName" value="WebSphereSamlSP"/>
+    	<property name="scriptName" value="updateSamlEar.ant"/>
+
+        <echo>earName=${earName}</echo>
+        <echo>wsadminAppName=${wsadminAppName}</echo>
+        <echo>scriptName=${scriptName}</echo>
+    </target>
+
+    <!-- -->
+    <!-- Find OS type to know filepath format to use appropriate file separator -->
+    <!-- -->
+    <target name="detectCurrentOSFamily" description="Detects the current OS family (UNIX or Windows).">
+        <condition property="currentOSFamily" value="os/400">
+            <equals arg1="${os.name}" arg2="OS/400"/>
+        </condition>
+        <condition property="currentOSFamily" value="z/os">
+            <os family="z/os"/>
+        </condition>
+        <condition property="currentOSFamily" value="windows">
+            <os family="windows"/>
+        </condition>
+        <condition property="currentOSFamily" value="unix">
+            <os family="unix"/>
+        </condition>
+    
+        <echo>currentOSFamily=${currentOSFamily}</echo>
+        <wscmtlog>${scriptName}: Detected current OS family to be: ${currentOSFamily}</wscmtlog>
+    </target>
+	
+    <target name="setCurrentOSFamily" description="Sets the current OS family (UNIX, OS400 or Windows)">
+        
+        <condition property="isCurrentOSOS400" value="true">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition>
+        <condition property="isCurrentOSZOS" value="true">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+        <condition property="isCurrentOSWindows" value="true">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+        <condition property="isCurrentOSUNIX" value="true">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+    </target>
+	
+    <!-- -->
+    <!-- Pointing to correct wsadmin executable file script based on the OS type -->
+    <!-- -->
+    <target name="setExecutable" description="Sets the name of the executable file based on the OS family.">
+        
+        <condition property="executable" value="${profilePath}/bin/wsadmin">
+            <equals arg1="${currentOSFamily}" arg2="os/400"/>
+        </condition>
+        <condition property="executable" value="${profilePath}/bin/wsadmin.sh">
+            <equals arg1="${currentOSFamily}" arg2="z/os"/>
+        </condition>
+        <condition property="executable" value="${profilePath}/bin/wsadmin.sh">
+            <equals arg1="${currentOSFamily}" arg2="unix"/>
+        </condition>
+        <condition property="executable" value="${profilePath}\bin\wsadmin.bat">
+            <equals arg1="${currentOSFamily}" arg2="windows"/>
+        </condition>
+		
+        <echo>executable=${executable}</echo>
+        <wscmtlog>${scriptName}: The full path of the wsadmin executable is: ${executable}</wscmtlog>
+    </target>
+	
+	
+    <!-- -->
+    <!-- ensures wsadmin executable is present and issue warning if it's not found -->
+    <!-- -->
+    <target name="checkExecutableExistence" >
+        <condition property="runThisConfigAction">
+            <and>
+                <available property="executableExists" file="${executable}" />
+            </and>
+        </condition>
+        <echo>runThisConfigAction=${runThisConfigAction}</echo>
+    </target>
+	
+    <!-- -->
+    <!-- Issues warning when wsadmin executable file is missing -->
+    <!-- -->
+    <target name="issueWarning" unless="runThisConfigAction" description="Issue a warning if executable does not exist">
+        <wscmtlog priority="severe">
+            ${scriptName}: Executable ${executable} does not exist, therefore it was not executed.
+        </wscmtlog>
+    </target>
+	
+    <!-- -->
+    <!-- Profile must have the installedApps directory before we look for the ear -->
+    <!-- -->
+    <target name="checkInstalledAppsDir" description="Check to see if the profile/installedApps directory exists in the config">
+		
+        <dirset dir="${profilePath}" includes="installedApps" excludes="installedApps/*" id="installedApps" />
+        <pathconvert property="instAppDir" setonempty="false" refid="installedApps" pathsep=" "/>
+        <echo>instAppDir=${instAppDir}</echo>
+			
+        <available file="${instAppDir}" type="dir" property="inst.app.dir.exists"/>
+        <echo>inst.app.dir.exists=${inst.app.dir.exists}</echo>
+
+        <wscmtlog>${scriptName}: ${profilePath}/installedApps exists = ${inst.app.dir.exists}</wscmtlog>
+        <wscmtlog>${scriptName}: ${instAppDir}</wscmtlog>
+    </target>
+   
+    <!-- -->
+    <!-- Verify that the ear directory exists because without the ear there are no war files that can be updated in the config -->
+    <!-- -->
+    <target name="checkIfEarExistsInInstalledApps" if="inst.app.dir.exists" description="Checks to see if the ${profilePath}/installedApps/cellName/{earName} directory exists in the profile">
+		
+        <dirset dir="${profilePath}/installedApps/" includes="*/${earName}" excludes="*/${earName}/*" id="earDirId" />
+        <pathconvert property="earDir" setonempty="false" refid="earDirId" pathsep=" "/>
+        <echo>earDir=${earDir}</echo>
+
+        <available file="${earDir}" type="dir" property="earDir.exists"/>
+        <echo>earDir.exists=${earDir.exists}</echo>
+
+        <wscmtlog>${scriptName}: Applications directory ${profilePath}/installedApps/{cellName}/{earName} exists = ${earDir.exists}</wscmtlog>
+        <wscmtlog>${scriptName}: ${earDir}</wscmtlog>
+    </target>
+
+    <!-- -->
+    <!-- Verify that ear directory exists in the applications directory -->
+    <!-- -->
+    <target name="checkEarExistsInConfig" if="earDir.exists" description="Checks to see if the ${profilePath}/config/cells/applications/{$earName} directory exists in the config">
+		
+        <dirset dir="${profilePath}/config/cells/" includes="*/applications/${earName}" excludes="*/applications/${earName}/*" id="appDirId" />
+        <pathconvert property="appDir" setonempty="false" refid="appDirId" pathsep=" "/>
+        <echo>appDir=${appDir}</echo>
+			
+        <available file="${appDir}" type="dir" property="appDir.ear.dir.exists"/>
+        <echo>appDir.ear.dir.exists=${appDir.ear.dir.exists}</echo>
+
+        <wscmtlog>${scriptName}: Applications directory ${profilePath}/config/cells/{cellName}/applications/{earName} exists = ${appDir.ear.dir.exists}</wscmtlog>
+        <wscmtlog>${scriptName}: ${appDir}</wscmtlog>
+    </target>
+
+    <!-- -->
+    <!-- wsadmin executable requires file separator to be '/' regardless of thes OS, so WAS_HOME needs to be converted -->
+    <!-- -->
+    <target name="convertWASHomeToUNIXStylePath" if="appDir.ear.dir.exists">
+        <path id="id.was.home">
+            <pathelement location="${WAS_HOME}"/>
+        </path>
+        <pathconvert targetos="unix"
+            property="WAS_HOME_UNIX_STYLE"
+            refid="id.was.home"/>
+
+        <path id="id.profilePath">
+            <pathelement location="${profilePath}"/>
+        </path>
+        <pathconvert targetos="unix"
+            property="PROFILE_PATH_UNIX_STYLE"
+            refid="id.profilePath"/>
+
+        <echo>WAS_HOME_UNIX_STYLE=${WAS_HOME_UNIX_STYLE}</echo>
+        <echo>PROFILE_PATH_UNIX_STYLE=${PROFILE_PATH_UNIX_STYLE}</echo>
+    </target>
+	
+    <!-- -->
+    <!-- wsadmin commands to update the ear only run if it is installed for that profile -->
+    <!-- -->
+    <target name="runAdminAppUpdate" if="appDir.ear.dir.exists" description="Runs AdminApp.update to update the ear">
+        <wscmtlog>${scriptName}: Run AdminApp.update in wsadmin to update the war module files in profile's config</wscmtlog>
+        
+        <exec executable="${executable}">
+            <arg line="-lang jython" />
+            <arg line="-conntype NONE" />
+            <arg line="-c" />
+            <arg value="AdminApp.update('${wsadminAppName}', 'app', '[-operation update -contents ${WAS_HOME_UNIX_STYLE}/installableApps/${earName} -installed.ear.destination ${PROFILE_PATH_UNIX_STYLE}/installedApps/${cellName}]')" />
+            <arg line="-c" />
+            <arg value="AdminConfig.save()" />
+        </exec>
+    </target>
+	
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!-- Install Target                 -->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <target name="install" depends="setEarName, detectCurrentOSFamily,
+        setCurrentOSFamily,
+        setExecutable,
+        checkExecutableExistence,
+        issueWarning,
+        checkInstalledAppsDir, 
+        checkIfEarExistsInInstalledApps,
+        checkEarExistsInConfig, 
+        convertWASHomeToUNIXStylePath,
+        runAdminAppUpdate">
+    </target>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!-- Uninstall Target               -->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <target name="uninstall" description="No uninstall action" depends="setEarName, detectCurrentOSFamily,
+        setCurrentOSFamily,
+        setExecutable,
+        checkExecutableExistence,
+        issueWarning,
+        checkInstalledAppsDir,
+	checkIfEarExistsInInstalledApps, 
+        checkEarExistsInConfig,
+        convertWASHomeToUNIXStylePath,
+        runAdminAppUpdate">
+    </target>
+</project>

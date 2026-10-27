@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<healthcontroller:HealthController xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:healthcontroller="http://www.ibm.com/websphere/appserver/schemas/6.0/healthcontroller.xmi" xmi:id="HealthController_1767631622019" enable="true"/>
